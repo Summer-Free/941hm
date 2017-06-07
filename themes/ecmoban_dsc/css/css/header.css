@@ -1,0 +1,295 @@
+.slide-top-bar {
+	height: 59px;
+	overflow: hidden;	
+}
+.slide-top-bar .bar-1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-indent: -9999px;
+	background: url(../../iamges/20170517/topbar-1.jpg) center center no-repeat;
+}
+.slide-top-bar li {
+	position: relative;
+}
+.slide-top-bar .bar-1,
+.slide-top-bar .w1200 {
+	height: 59px;
+}
+.slide-top-bar .w1200 {
+	position: relative;
+}
+.slide-top-bar .close,
+.slide-top-bar .wrap-a {
+	position: absolute;
+}
+.slide-top-bar .close {
+	top: 8px;
+	right: 0;
+	width: 15px;
+	height: 12px;
+	text-indent: -9999px;
+	background-position: -111px 0;
+}
+.slide-top-bar .wrap-a {
+	top: 50%;
+	right: 67px;
+	margin-top: -17px;
+}
+.Franchisee-settled,
+.Factory-settled {
+	width: 106px;
+	height: 34px;
+	text-indent: -9999px;
+}
+.Franchisee-settled {
+	margin-right: 25px;
+}
+.Factory-settled {
+	background-position: 0 -41px;
+}
+#header .top {
+	height: 30px;
+	line-height: 30px;
+	background-color: #f7f7f7;
+}
+#header .top .dropdown {
+	position: relative;
+	display: inline-block;
+	padding: 0 25px;
+}
+#header .top .dropdown i {
+	position: absolute;
+	top: 50%;
+	right: 8px;
+	margin-top: -3px;
+	width: 10px;
+	height: 6px;
+	text-indent: -9999px;
+	background-position: 0 -494px;
+}
+#header .top .dropdown:hover i {
+	background-position: 0 -486px;
+}
+#header .top .float-l {
+	position: relative;
+}
+#header .top .float-l ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	right: -20px;
+	width: 100px;
+	height: 50px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 3px #ccc;
+}
+#header .top .dropdown:hover + ul {
+	display: block;
+}
+#header .top .float-r li {
+	float: left;
+	padding: 0 15px;
+}
+#header .top .float-r li a {
+	display: block;
+}
+#header .nav .logo {
+	margin: 7px 0 7px 30px;
+	width: 89px;
+	height: 78px;
+	text-indent: -9999px;
+	background: url(../../iamges/20170517/logo.png) no-repeat right center;
+}
+#header .wrap-search > form,
+#header .wrap-search > a,
+#header .wrap-search > img {
+	float: right;
+}
+#header .wrap-search > form input {
+	display: block;
+	padding-right: 30px;
+	padding-left: 8px;
+	width: 359px;
+	height: 33px;
+	line-height: 33px;
+	border: 1px solid #9c9c9a;
+}
+#header .wrap-search > form {
+	position: relative;
+	padding-top: 16px;
+	padding-bottom: 13px;
+	margin-right: 20px;
+}
+#header .wrap-search > form .icon-search {
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	margin-top: -4.5px;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+	border:0 none;
+	background-color:transparent;
+	background-position: -12px -485px;
+}
+#header .wrap-search .icon-file {
+	margin-top: 26px;
+	width: 16px;
+	height: 13px;
+	background-position: -46px -487px;
+}
+#header .wrap-search .icon-cart {
+	position: relative;
+	margin-top: 24px;
+	margin-right: 20px;
+	width: 15px;
+	height: 15px;
+	background-position: -29px -485px;	
+}
+#header .wrap-search .tooltip {
+	position: absolute;
+	top: -17px;
+	right: -14px;
+	width: 23px;
+	height: 23px;
+	line-height: 23px;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	background-image: url(../../iamges/20170517/sprite-1.png);
+	background-repeat: no-repeat;
+	background-position: -171px 0;
+}
+#header .wrap-search img {
+	margin-top: 5px;
+}
+#header .nav img.float-r {
+	margin-top: 2px;
+}
+#header .main-nav>li {
+	float: left;
+	margin-right: 47px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+#header .classification {
+	position: relative;
+	width: 151px;
+	cursor: pointer;
+	background-color: #95b0b2;
+}
+#header .main-nav>li.active>a,
+#header .main-nav>li:hover >a,
+#header .classification dd a:hover {
+	color: #47a9fd;
+}
+#header .classification .dropdown-menu {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	z-index: 10;
+	padding: 10px 10px 0;
+	width: 291px;
+	height: 525px;
+	background-color: #d4d6d5;
+}
+#header .classification dl {
+	overflow: hidden;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #fff;
+}
+#header .classification dt,
+#header .classification dd {
+	float: left;
+}
+#header .classification dt {
+	margin-right: 8px;
+}
+#header .classification dd {
+	width: 224px;
+	overflow: hidden;
+}
+#header .classification dd a {
+	float: left;
+	display: block;
+	margin-right: 12px;
+}
+#header .classification .price {
+	margin-bottom: 0;
+	border-bottom: none;
+}
+#header .slide-banner {
+	overflow: hidden;
+	box-shadow: 0 1px 1px #e0e0e0;
+}
+#header .slide-banner .login {
+	position: absolute;
+	top: 120px;
+	right: 0;
+	padding: 15px;
+	width: 180px;
+	height: 272px;
+	text-align: center;
+	border: 1px solid #e0e0e0;
+	background-color: #fff;
+}
+#header .login h4 {
+	margin-bottom: 15px;
+	color: #fdae47;
+	font-weight: normal;
+}
+#header .login img {
+	display: inline;
+}
+#header .login div {
+	padding-top: 14px;
+}
+#header .login div a {
+	float: left;
+	display: inline-block;
+	width: 66px;
+	height: 27px;
+	color: #fff;
+	line-height: 27px;
+	text-align: center;
+	background-color: #47a9fd;
+	border-radius: 8px;
+}
+#header .login .register-btn {
+	float: right;
+}
+#header .login ul {
+	padding-top: 25px;
+}
+#header .login .Notice-a,
+#header .login .use-a,
+#header .login .vip-a {
+	display: inline-block;
+	float: left;
+	background-image: url(../../iamges/20170517/sprite-1.png);
+	background-repeat: no-repeat;
+}
+#header .login .Notice-a {
+	width: 24px;
+	height: 47px;
+	background-position: -476px -453px;
+}
+#header .login .use-a {
+	width: 35px;
+	height: 47px;
+	background-position: -437px -453px;
+}
+#header .login .vip-a {
+	width: 39px;
+	height: 47px;
+	background-position: -396px -453px;
+}
+#header .login .use-a,
+#header .login .Notice-a {
+	margin-right: 25px;
+}

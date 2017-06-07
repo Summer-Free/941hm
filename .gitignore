@@ -1,0 +1,9 @@
+images/
+upload/
+data_base/
+*.php
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.sql

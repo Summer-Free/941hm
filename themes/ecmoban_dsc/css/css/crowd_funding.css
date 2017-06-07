@@ -1,0 +1,215 @@
+/*头部下拉菜单hover效果 需要加上此段代码 start*/
+#header .classification {
+	background-color: transparent;
+}
+#header .classification .dropdown-menu {
+	display: none\9; /*IE8 hack*/
+	background-color: transparent;
+	z-index: 0;
+	opacity: 0;
+	-webkit-transition: all .3s linear;
+	   -moz-transition: all .3s linear;
+	    -ms-transition: all .3s linear;
+	     -o-transition: all .3s linear;
+	        transition: all .3s linear;
+}
+#header .classification:hover > .dropdown-menu {
+	background-color: #d4d6d5;
+	z-index: 10;
+	opacity: 1;
+	display: block\9; /*IE8 hack*/
+}
+#header .classification:hover {
+	background-color: #95b0b2;
+}
+/*头部下拉菜单hover效果 需要加上此端代码 end*/
+
+
+/*除了首页以外的，头部轮播图中按钮的位置调动 start*/
+#header .JS-slide .left-btn {
+	left: 0;
+}
+#header .JS-slide:hover .left-btn {
+	left: 50px;
+}
+#header .JS-slide .right-btn {
+	right: 0;
+}
+#header .JS-slide:hover .right-btn {
+	right: 50px;
+}
+/*除了首页以外的，头部轮播图中按钮的位置调动 end*/
+
+
+#main-body {
+	padding-bottom: 30px;
+	overflow: hidden;
+}
+.section-1 {
+	margin-top: 2px;
+	padding: 34px 26px;
+	border-bottom: 1px solid #e3e3e3;
+	background-color: #fff;
+	box-shadow: 0 1px 4px 0 #e3e3e3;
+}
+
+
+.section-1 .JS-filter-box {
+	position: relative;
+}
+.section-1 .JS-filter-box .JS-main-box {
+	position: relative;
+	padding-left: 20px;
+	width: 387px;
+	height: 53px;
+	font-size: 16px;
+	line-height: 53px;
+	border: 1px solid #333;
+	background-color: #fff; 
+}
+.section-1 .JS-main-box:after {
+	position: absolute;
+	top: 50%;
+	right: 11px;
+	content: "";
+	display: block;
+	margin-top: -3.5px;
+	width: 13px;
+	height: 7px;
+	background: url(../../iamges/20170517/sprite-1.png);
+	background-repeat: no-repeat;
+	background-position: -258px -8px;
+	background-position: -258px 0\9; /*IE8 hack IE8下hover伪元素有问题*/
+	-webkit-transition: all .3s linear;
+	   -moz-transition: all .3s linear;
+	    -ms-transition: all .3s linear;
+	     -o-transition: all .3s linear;
+	        transition: all .3s linear;
+}
+.section-1 .JS-main-box.down:after {
+	background-position: -258px 0;
+}
+.section-1 .JS-main-box + .sub-box {
+	display: none;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	padding-top: 10px;
+	width: 160px;
+	z-index: 5;
+	box-shadow: 0 2px 2px 0 #d9d8d8
+}
+.section-1 .JS-main-box + .sub-box li {
+	padding-left: 20px;
+	height: 43px;
+	line-height: 43px;
+	border-bottom: 1px solid #f1f1f1;
+	cursor: pointer;
+	background-color: #fff;
+}
+.section-1 .JS-main-box + .sub-box li:hover {
+	background-color: #f5f5f5;
+}
+.section-1 .JS-main-box + .sub-box:after {
+	position: absolute;
+	top: -4px;
+	left: 12px;
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border: 7px solid transparent;
+	border-bottom-color: #fff;
+}
+
+
+.section-1>ul>li {
+	float: left;
+	margin-right: 140px;
+}
+.section-1 .JS-filter-box {
+	float: right;
+}
+.section-1 a {
+	padding: 0 30px;
+	height: 53px;
+	line-height: 53px;
+	font-size: 20px;
+}
+.section-1 a:hover {
+	color: #692528;
+}
+.section-2 {
+	padding-top: 12px;
+}
+
+.common-h2 {
+	padding: 23px 0;
+	font-weight: normal;
+}
+.common-h2 span {
+	float: left;
+	padding-left: 8px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 34px;
+	border-left: 9px solid #4aaafd;
+}
+.common-h2 a {
+	position: relative;
+	top: 30px;
+	right: 8px;
+	float: right;
+}
+.common-ul {
+	padding-left: 3px;
+}
+.common-ul li {
+	overflow: hidden\9;
+	float: left;
+	margin-right: 9px;
+	margin-bottom: 10px;
+	width: 292px;
+	height: 351px;
+	border: 1px solid #b9b8b8\9;
+	background-color: #fff;
+	box-shadow: 0 4px 5px 0 #b9b8b8;
+}
+.common-ul h3 {
+	font-size: 16px;
+	font-weight: normal;
+}
+.common-ul .progress {
+	margin: 15px 0;
+	margin: 11px 0 \9;
+	height: 9px;
+	background-color: #e9e8e8;
+	border-radius: 3px;
+}
+.common-ul .progress span {
+	display: block;
+	width: 60%;
+	height: 100%;
+	background: url(../../iamges/20170517/bg-progress-1.png) no-repeat top left;
+}
+.common-ul i {
+	display: block;
+	color: #393939;
+	font-style: normal;
+}
+.common-ul .wrap {
+	padding: 0 10px 10px;
+}
+.common-ul .wrap div span {
+	float: left;
+	color: #a6a5a4;
+	border-right: 1px solid #a6a5a4;
+}
+.common-ul .wrap div .s1 {
+	margin-right: 30px;
+	width: 60px;
+}
+.common-ul .wrap div .s2 {
+	margin-right: 20px;
+	width: 92px;
+}

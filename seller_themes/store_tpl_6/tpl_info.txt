@@ -1,0 +1,10 @@
+------tpl_info------------
+tpl name�����ݹ�����̼ҵ���ģ��NO.6
+tpl url��../seller_themes/store_tpl_6/screenshot.png
+description�����ţ��Թ󣬵ƾߵ���ģ��
+version��v1.0
+author�����ݹ�
+author url��http://www.941hm.com/
+tpl_path��st_one
+win_goods_type��6
+------tpl_info------------
