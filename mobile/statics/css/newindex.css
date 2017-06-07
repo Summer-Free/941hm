@@ -1,6 +1,9 @@
 html * {
 	font-family: "Microsoft Yahei";
 }
+body {
+	background-color: transparent;
+}
 .margin-r-0 {
 	margin-right: 0!important;
 }
@@ -13,6 +16,19 @@ html * {
 .width-60 {
 	width: 60%;
 }
+.btn {
+	padding: 0;
+}
+.common-h2 {
+	margin: 2rem auto;
+	width: 21.66rem;
+	height: 4.38rem;
+	text-indent: -9999px;
+	background-image: url(../img/newapp/sprite-1.png);
+	background-repeat: no-repeat;
+	background-size: 27.777rem 19rem;
+}
+
 
 .i-search-input i.icon-sousuo {
 	margin-top: 0;
@@ -47,8 +63,9 @@ html * {
 	position: relative;
 	background-color: #fff;	
 }
-.newmrms>.width-40 {
+.newmrms>.wrap-pic {
 	float: left;
+	width: 37%;
 }
 .newmrms-product .thumbnail {
 	padding: 0;
@@ -60,16 +77,16 @@ html * {
 	border-top: 1px solid #f2f2f2;
 }
 .newmrms-product .caption h2 {
-	font-size: 1.2rem;
+	padding-top: .5rem;
+	font-size: .78rem;
 	text-align: center;
-	line-height: 2.5;
 }
 .newmrms .wrap-product {
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: -webkit-calc(60%);
-	width: calc(60%);
+	width: -webkit-calc(63%);
+	width: calc(63%);
 }
 .newmrms .wrap-product,
 .newmrms .newmrms-product,
@@ -85,14 +102,196 @@ html * {
 	border-right: 1px solid #f2f2f2;	
 }
 .newmrms-product ins {
-	font-size: 1.8rem;
+	font-size: 1.2rem;
 	text-decoration: none;
 	color: #ff0000;
 }
 .newmrms-product del {
-	font-size: 1.2rem;
+	margin-left: .2rem;
+	font-size: .78rem;
 	color: #333;
 }
+.newmrms-product ins,
+.newmrms-product del {
+	float: left;
+}
 .newmrms-product .caption>div {
-	line-height: ;
+	margin-top: .5rem;
+	line-height: 1.72rem;
+}
+.newmrms-product .caption .btn {
+	float: right;
+	width: 6.55rem;
+	height: 1.72rem;
+	line-height: 1.72rem;
+	font-size: .78rem;
+	color: #fff;
+	background-color: #fb9b64;
+}
+.common-sec ul {
+	padding: 0 .5rem;
+}
+.xpss h2 {
+	background-position: 0 0;
+}
+.xsyh h2 {
+	background-position: 0 -6.11rem;
+}
+.common-sec li {
+	padding-bottom: .3rem;
+	width: 49%;
+	text-align: center;
+	border: 1px solid #e7e7e7;
+	box-shadow: 2px 2px 2px 0 #e7e7e7;
+}
+.common-sec figcaption {
+	padding: 0 1.7rem;
+	font-size: 1.55rem;
+	text-align: left;
+	line-height: 1.8;
+}
+.common-sec .tyg,
+.common-sec .srdz {
+	position: relative;
+	margin: 2.55rem auto 0;
+	width: calc(100% - 2.66rem);
+	background-size: 100%;
+}
+.common-sec .tyg {
+	-webkit-transform: translate3d(.3rem,0,0);
+	        transform: translate3d(.3rem,0,0);
+}
+.common-sec .srdz {
+	-webkit-transform: translate3d(-.3rem,0,0);
+	        transform: translate3d(-.3rem,0,0);	
+}
+.xpss .tyg a {
+	position: absolute;
+	bottom: 4.66rem;
+	width: 9.388rem;
+	height: 3.166rem;
+	line-height: 3.166rem;
+	font-size: .88rem;
+	text-align: center;
+	border-radius: 1.66rem;
+	background-color: rgba(255,255,255,.5);
+}
+.xpss .tyg .online {
+	left: 2.5rem;
+}
+.xpss .tyg .offline {
+	left: 14.94rem;
+}
+.newppj {
+	margin-top: 2rem;
+	border-bottom: 1px solid #e0dfdd;
+}
+.newppj h2 {
+	padding: 0 .8rem;
+	height: 2rem;
+	line-height: 2rem;
+	font-size: 1.11rem;
+	background-color: #9db2c5;
+}
+.newppj h2 a {
+	float: right;
+	font-size: .88rem;
+}
+.ppjlist {
+	padding-top: 2rem;
+}
+.ppjlist li a {
+	float: left;
+	margin-bottom: 1.5rem;
+	width: 25%;
+	text-align: center;
+}
+.ppjlist li a img {
+	max-width: 100%;
+}
+.newyyg h2 {
+	font-size: 1.88rem;
+	line-height: 3.722rem;
+	text-align: center;
+}
+.newlist>li {
+	width: -webkit-calc(98.5% / 2);
+	width:         calc(98.5% / 2);
+	border: 1px solid #e0dfdd;
+	box-shadow: 2px 2px 2px 0 #e7e7e7;
+}
+.newlist li>a img {
+	width: 100%;
+}
+.newlist .content {
+	padding: .5rem;
+	font-size: 1rem;
+}
+.newlist h3 {
+	margin-left: -.5rem;
+	margin-bottom: .5rem;
+	font-size: 1.166rem;
+}
+.newlist .content span {
+	color: #757573;
+}
+.newlist .progress {
+	margin: .5rem 0;
+	height: .666rem;
+}
+.newlist .progress div {
+	height: 100%;
+	border-radius: 4px;
+	background: -webkit-linear-gradient(to right, #f6c964, #fca496);
+	background:         linear-gradient(to right, #f6c964, #fca496);
+}
+.newlist .progress-bar {
+	line-height: .666rem;
+	font-size: .5rem;
+}
+.newlist .condition li {
+	float: left;
+	width: 25%;
+}
+.newlist .condition .li-2 {
+	width: 45%;
+	padding-left: 2rem;
+	border-left: 1px solid #e0dfdd;
+	border-right: 1px solid #e0dfdd;
+}
+.newlist .condition li span {
+	display: block;
+}
+.newlist .condition li:last-child {
+	padding-left: 1.5rem;
+}
+.newlist .other {
+	padding-top: 1rem;
+}
+.newlist .other a {
+	display: inline-block;
+	margin-left: .5rem;
+	width: 9.55rem;
+	height: 2.722rem;
+	line-height: 2.722rem;
+	text-align: center;
+	color: #fff;
+	font-size: 1.166rem;
+	border-radius: .333rem;
+	background-color: #fbab7d;
+}
+.newlist .other .pull-right {
+	margin-right: 5%;
+	padding-left: 2rem;
+	width: 25%;
+	height: 2.722rem;
+	border-left: 1px solid #e0dfdd; 
+}
+.newlist .other .icon-start-black {
+	display: inline-block;
+	margin-top: .3rem;
+	width: 2.33rem;
+	height: 2.05rem;
+	background: url(../img/newapp/black-start.png) no-repeat center center;
+	background-size: 100% 100%;
 }
