@@ -19,6 +19,9 @@ body {
 .btn {
 	padding: 0;
 }
+.margin-b-1 {
+	margin-bottom: 1rem;
+}
 .common-h2 {
 	margin: 2rem auto;
 	width: 21.66rem;
@@ -137,6 +140,9 @@ body {
 .xsyh h2 {
 	background-position: 0 -6.11rem;
 }
+.newtztj h2 {
+	background-position: 0 -12.55rem;
+}
 .common-sec li {
 	padding-bottom: .3rem;
 	width: 49%;
@@ -154,7 +160,8 @@ body {
 .common-sec .srdz {
 	position: relative;
 	margin: 2.55rem auto 0;
-	width: calc(100% - 2.66rem);
+	width: -webkit-calc(100% - 2.66rem);
+	width:         calc(100% - 2.66rem);
 	background-size: 100%;
 }
 .common-sec .tyg {
@@ -209,7 +216,9 @@ body {
 .ppjlist li a img {
 	max-width: 100%;
 }
-.newyyg h2 {
+.newyyg h2,
+.newzcmw h2,
+.newhzdw h2 {
 	font-size: 1.88rem;
 	line-height: 3.722rem;
 	text-align: center;
@@ -228,7 +237,6 @@ body {
 	font-size: 1rem;
 }
 .newlist h3 {
-	margin-left: -.5rem;
 	margin-bottom: .5rem;
 	font-size: 1.166rem;
 }
@@ -294,4 +302,61 @@ body {
 	height: 2.05rem;
 	background: url(../img/newapp/black-start.png) no-repeat center center;
 	background-size: 100% 100%;
+}
+.newsjrz {
+	margin-top: 1rem;
+}
+.newzcmw .progress>div  {
+	background: -webkit-linear-gradient(to right, #47a9fd, #02effe);
+	background:         linear-gradient(to right, #47a9fd, #02effe);
+}
+.newzcmw .progress {
+	margin: 1rem 0;
+}
+.newzcmw>div {
+	padding-top: 2rem;
+}
+.newzcmw figure {
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+.newzcmw>div figure img {
+	max-width: 100%;
+}
+.newzcmw figcaption {
+	padding-top: .5rem;
+	font-size: 1.11rem;
+}
+.newtztj a {
+	display: block;
+	text-align: center;
+}
+.newtztj a img,
+.newhzdw img {
+	max-width: 100%;
+}
+.newhzdw {
+	overflow: hidden;
+	text-align: center;
+}
+.newhzdw,
+.newhzdw h2 {
+	border-bottom: 1px solid #7d7d7d;
+}
+.newcn {
+	padding: .5rem .5rem 0;
+}
+.newcn li {
+	margin-bottom: .5rem;
+	width: -webkit-calc((100% - 2rem) / 2);
+	width:         calc((100% - 2rem) / 2);
+	border: 2px solid #73848d;
+}
+.newcn li img {
+	max-width: 100%;
+	width: 100%;
+}
+.mb-7 {
+	margin-bottom: 5rem;
 }
