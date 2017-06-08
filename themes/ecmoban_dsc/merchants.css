@@ -186,9 +186,9 @@ a.d-offline {background: url(images/im20131028.png) no-repeat scroll 0 0 rgba(0,
 .merContent .left .mc dt{ padding-left:25px; height:40px; line-height:40px; font-size:14px; color:#717171; font-weight:bold; border-bottom:1px solid #efefef;}
 .merContent .left .mc dd{ height:35px; line-height:35px; font-size:14px; padding-left:50px; border-bottom:1px solid #efefef;}
 .merContent .left .mc dd.curr a{ color:#ec5051;}
-.merContent .right{ width:905px; float:right;}
+.merContent .right{ width:924px; float:right;}
 .merContent .right .help-main{ overflow:hidden; position:relative;}
-.merContent .right .help-main img{ max-width:905px;}
+.merContent .right .help-main img{ max-width:100%;}
 .help-main .temp{ margin-bottom:40px;}
 .help-main .mt{ background:url(images/mer_mtbg.jpg) center center no-repeat; margin-bottom:25px;}
 .help-main .mt h3{ width:150px; background:#fff; font-size:18px; line-height:20px; text-align:center; margin:0 auto; color:#ec5051;}
