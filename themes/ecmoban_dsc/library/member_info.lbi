@@ -11,6 +11,6 @@
 {else}
 	<a href="{$site_domain}user.php" class="link-login style-red">请登录</a>
 	{if $shop_reg_closed neq 1}
-    <a href="user.php?act=register" class="link-regist">注册</a>
+    <a href="user.php?act=register" class="link-regist float-r">注册</a>
     {/if}
 {/if}
