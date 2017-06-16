@@ -1,0 +1,126 @@
+/*头部下拉菜单hover效果 需要加上此段代码 start*/
+#header .classification {
+	background-color: transparent;
+}
+#header .classification .dropdown-menu {
+	display: none\9; /*IE8 hack*/
+	background-color: transparent;
+	z-index: 0;
+	opacity: 0;
+	-webkit-transition: all .3s linear;
+	   -moz-transition: all .3s linear;
+	    -ms-transition: all .3s linear;
+	     -o-transition: all .3s linear;
+	        transition: all .3s linear;
+}
+#header .classification:hover > .dropdown-menu {
+	background-color: #d4d6d5;
+	z-index: 10;
+	opacity: 1;
+	display: block\9; /*IE8 hack*/
+}
+#header .classification:hover {
+	background-color: #95b0b2;
+}
+/*头部下拉菜单hover效果 需要加上此端代码 end*/
+
+/*除了首页以外的，头部轮播图中按钮的位置调动 start*/
+#header .JS-slide .left-btn {
+	left: 0;
+}
+#header .JS-slide:hover .left-btn {
+	left: 50px;
+}
+#header .JS-slide .right-btn {
+	right: 0;
+}
+#header .JS-slide:hover .right-btn {
+	right: 50px;
+}
+/*除了首页以外的，头部轮播图中按钮的位置调动 end*/
+
+
+
+.section-1 {
+	padding: 75px 90px;
+}
+.section-1 li {
+	float: left;
+	margin-right: 27px;
+	border: 1px solid #d9dbdd;
+	box-shadow: 0 2px 8px 0 #d9d8d8;
+}
+.section-2 h2 {
+	position: relative;
+	font-weight: normal;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #65707c;
+}
+.section-2 ul {
+	position: relative;
+	bottom: -5px;
+	margin: 0 auto;
+	width: 430px;
+	z-index: 5;
+}
+.section-2 li {
+	float: left;
+	margin-right: 50px;
+	width: 110px;
+	text-align: center;
+	font-size: 25px;
+	color: #65707c;
+	cursor: pointer;
+}
+.section-2 li.active {
+	color: #364554;
+	border-bottom: 3px solid #364554;
+}
+.section-2 .item {
+	display: none;
+}
+.section-2 .item.active {
+	display: block;
+}
+.section-2 .item a {
+	float: left;
+	margin-bottom: 75px;
+}
+.section-2 .js-content {
+	position: relative;
+	height: 870px;
+}
+.section-2 .item {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.section-3 {
+	padding: 165px 110px 165px 83px;
+	background-color: #ecebec;
+}
+.section-3 img {
+	float: left;
+}
+.section-3 dl {
+	float: right;
+	text-align: center;
+}
+.section-3 dt {
+	padding-top: 75px;
+	padding-bottom: 20px;
+	font-size: 32px;
+}
+.section-3 dd {
+	font-size: 25px;
+	line-height: 2;
+}
+.section-3 dd a {
+	display: inline-block;
+	width: 112px;
+	height: 29px;
+	text-indent: -9999px;
+	background-image: url(../../iamges/20170517/sprite-1.png);
+	background-repeat: no-repeat;
+	background-position: -388px 0;
+}

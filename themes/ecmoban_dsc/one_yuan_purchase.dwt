@@ -1,0 +1,895 @@
+<!doctype html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="" name="description" />
+        <meta content="" name="" />
+        <title>941hm_一元购</title>
+
+        <!--基础css-->
+        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/base.css">
+        <!--通用头部-->
+        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/header.css">
+        <!--本页专用-->
+        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/one_yuan_purchase.css">
+        <!--轮播图片-->
+        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/slideFadein_out.css">
+        <!--通用底部-->
+        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/footer.css">              
+    </head> 
+    <body>
+        
+        <!--header start-->
+        <div id="header">
+                
+                <!--top start-->
+                <div class="top">
+                        <div class="w1200 clearfix">
+                                <div class="float-l">
+                                        欢迎浏览941红木网
+                                        <span class="dropdown">用户名<i class="icon-down">箭头</i></span>
+                                        <ul>
+                                                <li style="text-align:center;">some text</li>
+                                        </ul>
+                                </div>
+                                <div class="float-r">
+                                        <ul class="clearfix">
+                                                <li><a href="#">我的足迹</a></li>
+                                                <li><a href="#">我的订单</a></li>
+                                                <li><a href="#">我要加盟</a></li>
+                                                <li><a href="#">商家中心</a></li>
+                                                <li><a href="#">客服中心</a></li>
+                                                <li class="padding-r-0"><a href="#">APP下载</a></li>
+                                        </ul>
+                                </div>
+                        </div>
+                </div>
+                <!--top end-->
+
+                <!--Navigation start-->
+                <div class="nav w1200 clearfix">
+                        <div class="float-l">
+                                <h1 class="logo">941红木</h1>
+                        </div>
+                        <img class="float-r" src="themes/ecmoban_dsc/iamges/20170517/wechat.jpg" alt="二维码">
+                        <div class="float-r margin-r-30">
+                                <div class="wrap-search clearfix">
+                                        <a class="icon-file" href="#"></a>
+                                        <a class="icon-cart" href="#"><span class="tooltip">99</span></a>
+                                        <form class="clearfix" action="" method="">
+                                                <input type="text" />
+                                                <button class="icon-search"></button>
+                                        </form>
+                                </div>  
+                                <div class="nav-content">
+                                        <ul class="main-nav clearfix">
+                                                <li class="classification">
+                                                        全部分类
+                                                        <div class="dropdown-menu">
+                                                                <dl class="position">
+                                                                        <dt>餐厅 :</dt>
+                                                                        <dd>
+                                                                                <a href="#">餐桌</a>
+                                                                                <a href="#">圆桌</a>
+                                                                                <a href="#">酒柜/酒架</a>
+                                                                                <a href="#">四方桌</a>
+                                                                                <a href="#">餐边桌</a>
+                                                                        </dd>
+                                                                        <dt>客厅 :</dt>
+                                                                        <dd>
+                                                                                <a href="#">沙发</a>
+                                                                                <a href="#">电视柜</a>
+                                                                                <a href="#">罗汉床</a>
+                                                                                <a href="#">中堂</a>
+                                                                                <a href="#">花架</a>
+                                                                                <a href="#">鼓凳</a>
+                                                                                <a href="#">二联柜</a>
+                                                                                <a href="#">屏风</a>
+                                                                        </dd>
+                                                                        <dt>书房 :</dt>
+                                                                        <dd>
+                                                                                <a href="#">书桌</a>
+                                                                                <a href="#">书柜</a>
+                                                                                <a href="#">博古架</a>
+                                                                                <a href="#">茶台</a>
+                                                                                <a href="#">茶边柜</a>
+                                                                                <a href="#">条案</a>
+                                                                                <a href="#">麻将桌</a>
+                                                                                <a href="#">电脑桌</a>
+                                                                                <a href="#">大班台</a>
+                                                                        </dd>
+                                                                        <dt>卧室 :</dt>
+                                                                        <dd>
+                                                                                <a href="#">床</a>
+                                                                                <a href="#">贵妃榻</a>
+                                                                                <a href="#">衣柜</a>
+                                                                                <a href="#">斗柜</a>
+                                                                                <a href="#">顶箱柜</a>
+                                                                                <a href="#">梳妆台</a>
+                                                                                <a href="#">床边凳</a>
+                                                                                <a href="#">穿衣镜</a>
+                                                                        </dd>
+                                                                </dl>
+                                                                <dl class="material">
+                                                                        <dt>材质 :</dt>
+                                                                        <dd>
+                                                                                <a href="#">小叶紫檀</a>
+                                                                                <a href="#">黄花梨</a>
+                                                                                <a href="#">刺猬紫檀</a>
+                                                                                <a href="#">缅甸花梨</a>
+                                                                                <a href="#">非洲花梨</a>
+                                                                                <a href="#">非洲酸枝</a>
+                                                                                <a href="#">沉贵宝</a>
+                                                                                <a href="#">安哥拉紫檀</a>
+                                                                                <a href="#">南美酸枝</a>
+                                                                        </dd>
+                                                                </dl>
+                                                                <dl class="style">
+                                                                        <dt>风格 :</dt>
+                                                                        <dd>
+                                                                                <a href="#">古典式</a>
+                                                                                <a href="#">新中式</a>
+                                                                                <a href="#">欧美式</a>
+                                                                                <a href="#">明式</a>
+                                                                        </dd>
+                                                                </dl>
+                                                                <dl class="price">
+                                                                        <dt>价格 :</dt>
+                                                                        <dd>
+                                                                                <a href="#">0-10000</a>
+                                                                                <a href="#">10000-20000</a>
+                                                                                <a href="#">20000-40000</a>
+                                                                                <a href="#">40000-80000</a>
+                                                                                <a href="#">80000以上</a>
+                                                                        </dd>
+                                                                </dl>
+                                                        </div>  
+                                                </li>
+                                                <li><a href="#">首页</a></li>
+                                                <li><a href="#">智能体验馆</a></li>
+                                                <li><a href="#">智能场景定制</a></li>
+                                                <li><a href="#">匠物众筹</a></li>
+                                                <li><a href="#">一元购</a></li>
+                                                <li><a href="#">禅学院</a></li>
+                                                <li><a href="#">保养技师</a></li>
+                                                <li class="margin-r-0"><a href="#">加盟入驻</a></li>
+                                        </ul>
+                                </div>
+                        </div>
+                </div>          
+                <!--Navigation end-->
+
+                <!--slide banner start-->
+                <div class="slide-banner bg-color-f5f5f5">      
+                        <div class="w1200">
+                                <div class="JS-slide">
+                                        <ul class="content">
+                                                <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner1.jpg" alt="" /></a></li>
+                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner1.jpg" alt="" /></a></li>
+                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner1.jpg" alt="" /></a></li>
+                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner1.jpg" alt="" /></a></li>
+                                        </ul>
+                                        <a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
+                                        <a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
+                                        <ul class="point">
+                                                <li class="active"></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                        </ul>
+                                </div>
+                        </div>
+                </div>
+                <!--slide banner end-->
+        </div>
+        <!--header end-->
+
+        <!--main body start-->
+        <div class="w1200 bg-color-f5f5f5" id="main-body">
+            
+            <div class="section-1 clearfix">
+                <ul class="float-l clearfix">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">新手帮助</a></li>
+                    <li class="margin-r-0"><a href="#">我的1元购</a></li>
+                </ul>
+                <div class="JS-filter-box float-r">
+                    <div class="JS-main-box">全部</div>
+                    <ul class="sub-box">
+                        <li>客厅</li>
+                        <li>餐厅</li>
+                        <li>书房</li>
+                        <li>卧室</li>
+                    </ul>
+                </div> 
+            </div>
+
+            <div class="section-2">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-product1.jpg" alt="" /></a>
+                        <div>
+                            <h3>一条长长的描述性标题</h3>
+                            <p class="price">价值 : &yen;11111</p>
+                            <span class="category">椅子</span>
+                            <div class="count-down clearfix">
+                                <span>揭晓倒计时</span>
+                                <span class="time">01:01:01</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-product1.jpg" alt="" /></a>
+                        <div>
+                            <h3>一条长长的描述性标题</h3>
+                            <p class="price">价值 : &yen;11111</p>
+                            <span class="category">椅子</span>
+                            <div class="count-down clearfix">
+                                <span>揭晓倒计时</span>
+                                <span class="time">01:01:01</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-product1.jpg" alt="" /></a>
+                        <div>
+                            <h3>一条长长的描述性标题</h3>
+                            <p class="price">价值 : &yen;11111</p>
+                            <span class="category">椅子</span>
+                            <div class="count-down clearfix">
+                                <span>揭晓倒计时</span>
+                                <span class="time">01:01:01</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="margin-r-0">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-product1.jpg" alt="" /></a>
+                        <div>
+                            <h3>一条长长的描述性标题</h3>
+                            <p class="price">价值 : &yen;11111</p>
+                            <span class="category">椅子</span>
+                            <div class="count-down clearfix">
+                                <span>揭晓倒计时</span>
+                                <span class="time">01:01:01</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section-3">
+                <h2>热门推荐</h2>
+                <ul class="product-list clearfix">
+                    <li class="move">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                        <div class="content">
+                            <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                            <span>价值:&yen;19500</span>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <ul class="condition clearfix">
+                                <li class="li-1">18600<span>已参与</span></li>
+                                <li class="li-2">19500<span>总需人次</span></li>
+                                <li class="li-3">23天<span>剩余</span></li>
+                            </ul>
+                            <div class="other clearfix">
+                                <a href="#">1元购买</a>
+                                <span class="Collection"><i class="icon-start-black"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="move">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                        <div class="content">
+                            <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                            <span>价值:&yen;19500</span>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <ul class="condition clearfix">
+                                <li class="li-1">18600<span>已参与</span></li>
+                                <li class="li-2">19500<span>总需人次</span></li>
+                                <li class="li-3">23天<span>剩余</span></li>
+                            </ul>
+                            <div class="other clearfix">
+                                <a href="#">1元购买</a>
+                                <span class="Collection"><i class="icon-start-black"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="move">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                        <div class="content">
+                            <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                            <span>价值:&yen;19500</span>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <ul class="condition clearfix">
+                                <li class="li-1">18600<span>已参与</span></li>
+                                <li class="li-2">19500<span>总需人次</span></li>
+                                <li class="li-3">23天<span>剩余</span></li>
+                            </ul>
+                            <div class="other clearfix">
+                                <a href="#">1元购买</a>
+                                <span class="Collection"><i class="icon-start-black"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="move margin-r-0">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                        <div class="content">
+                            <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                            <span>价值:&yen;19500</span>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <ul class="condition clearfix">
+                                <li class="li-1">18600<span>已参与</span></li>
+                                <li class="li-2">19500<span>总需人次</span></li>
+                                <li class="li-3">23天<span>剩余</span></li>
+                            </ul>
+                            <div class="other clearfix">
+                                <a href="#">1元购买</a>
+                                <span class="Collection"><i class="icon-start-black"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="move">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                        <div class="content">
+                            <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                            <span>价值:&yen;19500</span>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <ul class="condition clearfix">
+                                <li class="li-1">18600<span>已参与</span></li>
+                                <li class="li-2">19500<span>总需人次</span></li>
+                                <li class="li-3">23天<span>剩余</span></li>
+                            </ul>
+                            <div class="other clearfix">
+                                <a href="#">1元购买</a>
+                                <span class="Collection"><i class="icon-start-black"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="move">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                        <div class="content">
+                            <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                            <span>价值:&yen;19500</span>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <ul class="condition clearfix">
+                                <li class="li-1">18600<span>已参与</span></li>
+                                <li class="li-2">19500<span>总需人次</span></li>
+                                <li class="li-3">23天<span>剩余</span></li>
+                            </ul>
+                            <div class="other clearfix">
+                                <a href="#">1元购买</a>
+                                <span class="Collection"><i class="icon-start-black"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="move">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                        <div class="content">
+                            <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                            <span>价值:&yen;19500</span>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <ul class="condition clearfix">
+                                <li class="li-1">18600<span>已参与</span></li>
+                                <li class="li-2">19500<span>总需人次</span></li>
+                                <li class="li-3">23天<span>剩余</span></li>
+                            </ul>
+                            <div class="other clearfix">
+                                <a href="#">1元购买</a>
+                                <span class="Collection"><i class="icon-start-black"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="move margin-r-0">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                        <div class="content">
+                            <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                            <span>价值:&yen;19500</span>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <ul class="condition clearfix">
+                                <li class="li-1">18600<span>已参与</span></li>
+                                <li class="li-2">19500<span>总需人次</span></li>
+                                <li class="li-3">23天<span>剩余</span></li>
+                            </ul>
+                            <div class="other clearfix">
+                                <a href="#">1元购买</a>
+                                <span class="Collection"><i class="icon-start-black"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="move">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                        <div class="content">
+                            <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                            <span>价值:&yen;19500</span>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <ul class="condition clearfix">
+                                <li class="li-1">18600<span>已参与</span></li>
+                                <li class="li-2">19500<span>总需人次</span></li>
+                                <li class="li-3">23天<span>剩余</span></li>
+                            </ul>
+                            <div class="other clearfix">
+                                <a href="#">1元购买</a>
+                                <span class="Collection"><i class="icon-start-black"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="move">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                        <div class="content">
+                            <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                            <span>价值:&yen;19500</span>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <ul class="condition clearfix">
+                                <li class="li-1">18600<span>已参与</span></li>
+                                <li class="li-2">19500<span>总需人次</span></li>
+                                <li class="li-3">23天<span>剩余</span></li>
+                            </ul>
+                            <div class="other clearfix">
+                                <a href="#">1元购买</a>
+                                <span class="Collection"><i class="icon-start-black"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="move">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                        <div class="content">
+                            <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                            <span>价值:&yen;19500</span>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <ul class="condition clearfix">
+                                <li class="li-1">18600<span>已参与</span></li>
+                                <li class="li-2">19500<span>总需人次</span></li>
+                                <li class="li-3">23天<span>剩余</span></li>
+                            </ul>
+                            <div class="other clearfix">
+                                <a href="#">1元购买</a>
+                                <span class="Collection"><i class="icon-start-black"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="move margin-r-0">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                        <div class="content">
+                            <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                            <span>价值:&yen;19500</span>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <ul class="condition clearfix">
+                                <li class="li-1">18600<span>已参与</span></li>
+                                <li class="li-2">19500<span>总需人次</span></li>
+                                <li class="li-3">23天<span>剩余</span></li>
+                            </ul>
+                            <div class="other clearfix">
+                                <a href="#">1元购买</a>
+                                <span class="Collection"><i class="icon-start-black"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="move">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                        <div class="content">
+                            <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                            <span>价值:&yen;19500</span>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <ul class="condition clearfix">
+                                <li class="li-1">18600<span>已参与</span></li>
+                                <li class="li-2">19500<span>总需人次</span></li>
+                                <li class="li-3">23天<span>剩余</span></li>
+                            </ul>
+                            <div class="other clearfix">
+                                <a href="#">1元购买</a>
+                                <span class="Collection"><i class="icon-start-black"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="move">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                        <div class="content">
+                            <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                            <span>价值:&yen;19500</span>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <ul class="condition clearfix">
+                                <li class="li-1">18600<span>已参与</span></li>
+                                <li class="li-2">19500<span>总需人次</span></li>
+                                <li class="li-3">23天<span>剩余</span></li>
+                            </ul>
+                            <div class="other clearfix">
+                                <a href="#">1元购买</a>
+                                <span class="Collection"><i class="icon-start-black"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="move">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                        <div class="content">
+                            <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                            <span>价值:&yen;19500</span>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <ul class="condition clearfix">
+                                <li class="li-1">18600<span>已参与</span></li>
+                                <li class="li-2">19500<span>总需人次</span></li>
+                                <li class="li-3">23天<span>剩余</span></li>
+                            </ul>
+                            <div class="other clearfix">
+                                <a href="#">1元购买</a>
+                                <span class="Collection"><i class="icon-start-black"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="move margin-r-0">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                        <div class="content">
+                            <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                            <span>价值:&yen;19500</span>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <ul class="condition clearfix">
+                                <li class="li-1">18600<span>已参与</span></li>
+                                <li class="li-2">19500<span>总需人次</span></li>
+                                <li class="li-3">23天<span>剩余</span></li>
+                            </ul>
+                            <div class="other clearfix">
+                                <a href="#">1元购买</a>
+                                <span class="Collection"><i class="icon-start-black"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="move">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                        <div class="content">
+                            <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                            <span>价值:&yen;19500</span>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <ul class="condition clearfix">
+                                <li class="li-1">18600<span>已参与</span></li>
+                                <li class="li-2">19500<span>总需人次</span></li>
+                                <li class="li-3">23天<span>剩余</span></li>
+                            </ul>
+                            <div class="other clearfix">
+                                <a href="#">1元购买</a>
+                                <span class="Collection"><i class="icon-start-black"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="move">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                        <div class="content">
+                            <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                            <span>价值:&yen;19500</span>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <ul class="condition clearfix">
+                                <li class="li-1">18600<span>已参与</span></li>
+                                <li class="li-2">19500<span>总需人次</span></li>
+                                <li class="li-3">23天<span>剩余</span></li>
+                            </ul>
+                            <div class="other clearfix">
+                                <a href="#">1元购买</a>
+                                <span class="Collection"><i class="icon-start-black"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="move">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                        <div class="content">
+                            <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                            <span>价值:&yen;19500</span>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <ul class="condition clearfix">
+                                <li class="li-1">18600<span>已参与</span></li>
+                                <li class="li-2">19500<span>总需人次</span></li>
+                                <li class="li-3">23天<span>剩余</span></li>
+                            </ul>
+                            <div class="other clearfix">
+                                <a href="#">1元购买</a>
+                                <span class="Collection"><i class="icon-start-black"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="move margin-r-0">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                        <div class="content">
+                            <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                            <span>价值:&yen;19500</span>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <ul class="condition clearfix">
+                                <li class="li-1">18600<span>已参与</span></li>
+                                <li class="li-2">19500<span>总需人次</span></li>
+                                <li class="li-3">23天<span>剩余</span></li>
+                            </ul>
+                            <div class="other clearfix">
+                                <a href="#">1元购买</a>
+                                <span class="Collection"><i class="icon-start-black"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="move">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                        <div class="content">
+                            <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                            <span>价值:&yen;19500</span>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <ul class="condition clearfix">
+                                <li class="li-1">18600<span>已参与</span></li>
+                                <li class="li-2">19500<span>总需人次</span></li>
+                                <li class="li-3">23天<span>剩余</span></li>
+                            </ul>
+                            <div class="other clearfix">
+                                <a href="#">1元购买</a>
+                                <span class="Collection"><i class="icon-start-black"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="move">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                        <div class="content">
+                            <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                            <span>价值:&yen;19500</span>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <ul class="condition clearfix">
+                                <li class="li-1">18600<span>已参与</span></li>
+                                <li class="li-2">19500<span>总需人次</span></li>
+                                <li class="li-3">23天<span>剩余</span></li>
+                            </ul>
+                            <div class="other clearfix">
+                                <a href="#">1元购买</a>
+                                <span class="Collection"><i class="icon-start-black"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="move">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                        <div class="content">
+                            <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                            <span>价值:&yen;19500</span>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <ul class="condition clearfix">
+                                <li class="li-1">18600<span>已参与</span></li>
+                                <li class="li-2">19500<span>总需人次</span></li>
+                                <li class="li-3">23天<span>剩余</span></li>
+                            </ul>
+                            <div class="other clearfix">
+                                <a href="#">1元购买</a>
+                                <span class="Collection"><i class="icon-start-black"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="move margin-r-0">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                        <div class="content">
+                            <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                            <span>价值:&yen;19500</span>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <ul class="condition clearfix">
+                                <li class="li-1">18600<span>已参与</span></li>
+                                <li class="li-2">19500<span>总需人次</span></li>
+                                <li class="li-3">23天<span>剩余</span></li>
+                            </ul>
+                            <div class="other clearfix">
+                                <a href="#">1元购买</a>
+                                <span class="Collection"><i class="icon-start-black"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="move">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                        <div class="content">
+                            <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                            <span>价值:&yen;19500</span>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <ul class="condition clearfix">
+                                <li class="li-1">18600<span>已参与</span></li>
+                                <li class="li-2">19500<span>总需人次</span></li>
+                                <li class="li-3">23天<span>剩余</span></li>
+                            </ul>
+                            <div class="other clearfix">
+                                <a href="#">1元购买</a>
+                                <span class="Collection"><i class="icon-start-black"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="move">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                        <div class="content">
+                            <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                            <span>价值:&yen;19500</span>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <ul class="condition clearfix">
+                                <li class="li-1">18600<span>已参与</span></li>
+                                <li class="li-2">19500<span>总需人次</span></li>
+                                <li class="li-3">23天<span>剩余</span></li>
+                            </ul>
+                            <div class="other clearfix">
+                                <a href="#">1元购买</a>
+                                <span class="Collection"><i class="icon-start-black"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="move">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                        <div class="content">
+                            <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                            <span>价值:&yen;19500</span>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <ul class="condition clearfix">
+                                <li class="li-1">18600<span>已参与</span></li>
+                                <li class="li-2">19500<span>总需人次</span></li>
+                                <li class="li-3">23天<span>剩余</span></li>
+                            </ul>
+                            <div class="other clearfix">
+                                <a href="#">1元购买</a>
+                                <span class="Collection"><i class="icon-start-black"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="move margin-r-0">
+                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                        <div class="content">
+                            <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                            <span>价值:&yen;19500</span>
+                            <div class="progress">
+                                <div></div>
+                            </div>
+                            <ul class="condition clearfix">
+                                <li class="li-1">18600<span>已参与</span></li>
+                                <li class="li-2">19500<span>总需人次</span></li>
+                                <li class="li-3">23天<span>剩余</span></li>
+                            </ul>
+                            <div class="other clearfix">
+                                <a href="#">1元购买</a>
+                                <span class="Collection"><i class="icon-start-black"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--main body end-->
+
+        <!--footer start-->
+        <div id="footer">
+                <div class="foot-top">
+                        <div class="w1200">
+                                <ul class="clearfix">
+                                        <li><i class="icon-baoz"></i>正品保障</li>
+                                        <li><i class="icon-qtbt"></i>七天包退</li>
+                                        <li><i class="icon-hprc"></i>好评如潮</li>
+                                        <li><i class="icon-sdfh"></i>闪电发货</li>
+                                        <li class="margin-r-0"><i class="icon-qwry"></i>权威荣誉</li>
+                                </ul>
+                        </div>
+                </div>
+                <div class="foot-btm">
+                        <div class="w1200">
+                                <ul class="clearfix">
+                                        <li>
+                                                <dl>
+                                                        <dt>关于941红木</dt>
+                                                        <dd>
+                                                                <a href="#">&gt; 公司简介</a>
+                                                                <a href="#">&gt; 体验馆</a>
+                                                                <a href="#">&gt; 招商加盟</a>
+                                                                <a href="#">&gt; 诚聘英才</a>
+                                                                <a href="#">&gt; 联系我们</a>
+                                                        </dd>
+                                                </dl>
+                                        </li>
+
+                                        <li>
+                                                <dl>
+                                                        <dt>新手指南</dt>
+                                                        <dd>
+                                                                <a href="#">&gt; 新用户注册</a>
+                                                                <a href="#">&gt; 支付方式说明</a>
+                                                                <a href="#">&gt; 订购家具流程</a>
+                                                                <a href="#">&gt; 体验馆购买指导</a>
+                                                        </dd>
+                                                </dl>
+                                        </li>
+
+                                        <li>
+                                                <dl>
+                                                        <dt>购物保障</dt>
+                                                        <dd>
+                                                                <a href="#">&gt; 正品保证</a>
+                                                                <a href="#">&gt; 注册协议</a>
+                                                                <a href="#">&gt; 免费声明</a>
+                                                                <a href="#">&gt; 隐私保护</a>
+                                                        </dd>
+                                                </dl>
+                                        </li>
+
+                                        <li>
+                                                <dl>
+                                                        <dt>配送安装</dt>
+                                                        <dd>
+                                                                <a href="#">&gt; 收货指南</a>
+                                                                <a href="#">&gt; 物流配送</a>
+                                                        </dd>
+                                                </dl>
+                                        </li>
+
+                                        <li class="margin-r-0">
+                                                <dl>
+                                                        <dt>售后服务</dt>
+                                                        <dd>
+                                                                <a href="#">&gt; 35天无理由退换货</a>
+                                                                <a href="#">&gt; 如何申请退款</a>
+                                                                <a href="#">&gt; 维修补件说明</a>
+                                                                <a href="#">&gt; 家具保修说明</a>
+                                                                <a href="#">&gt; 家具保养说明</a>
+                                                        </dd>
+                                                </dl>
+                                        </li>
+                                </ul>
+                                <div class="copy">
+                                        <p><a href="#">首页</a><a href="#">意见反馈</a></p>
+                                        <p>ICP备案证书号: <a href="#">浙ICP备16002409号-1</a></p>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <!--footer end-->
+
+
+        <!--JQ基础库-->
+        <script type="text/javascript" src="themes/ecmoban_dsc/js/js/jquery-1.9.1.min.js"></script>
+        <!--自定义方法-->
+        <script type="text/javascript" src="themes/ecmoban_dsc/js/js/common.js"></script>    
+        <!--本页JS-->     
+        <script type="text/javascript" src="themes/ecmoban_dsc/js/js/one_yuan_purchase.js"></script>  
+    </body>
+</html>

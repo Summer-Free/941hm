@@ -1,0 +1,79 @@
+.JS-slide {
+	position: relative;
+}
+.JS-slide,
+.JS-slide .content li {
+	height: 525px;
+}
+.JS-slide .content li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.JS-slide .content li.active {
+	display: block;
+}
+.JS-slide .left-btn,
+.JS-slide .right-btn {
+	position: absolute;
+	top: 230px;
+	width: 60px;
+	height: 60px;
+	opacity: 0;
+	background-color: #333;
+	background-color: rgba(0,0,0,.6);
+	filter:Alpha(opacity=0);
+	outline: none;
+	border-radius: 50%;
+}
+.JS-slide .w1200 {
+	position: relative;
+}
+.JS-slide .left-btn {
+	left: 270px;
+}
+.JS-slide .right-btn {
+	right: 160px;
+}
+.JS-slide:hover .left-btn {
+	left: 300px;
+}
+.JS-slide:hover .right-btn {
+	right: 190px;
+}
+.JS-slide:hover .left-btn,
+.JS-slide:hover .right-btn {
+	opacity: 1;
+	filter:Alpha(opacity=100);
+}
+.JS-slide .point {
+	position: absolute;
+	bottom: 18px;
+	left: 50%;
+}
+.JS-slide .point li {
+	float: left;
+	margin-right: 12px;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: #c5c5c5;
+}
+.JS-slide .left-btn,
+.JS-slide .right-btn,
+.JS-slide .point li {
+	-webkit-transition: all .2s linear;
+	   -moz-transition: all .2s linear;
+	    -ms-transition: all .2s linear;
+	     -o-transition: all .2s linear;
+	        transition: all .2s linear;
+}
+.JS-slide .point li:hover,
+.JS-slide .point li.active {
+	background-color: #333;
+}
+.JS-slide .point {
+	overflow: hidden;
+}

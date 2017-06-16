@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="" name="description" />
+        <meta content="" name="" />
+		<title>941hm_以旧换新</title>
+
+        <!--基础css-->
+        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/base.css">
+        <!--通用头部-->
+        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/header.css">
+        <!--本页专用-->
+        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/old_for_new.css">
+        <!--轮播图片-->
+        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/slideFadein_out.css">
+        <!--通用底部-->
+        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/footer.css">   
+	</head>
+	<body>
+        <!--header start-->
+        <div id="header">
+                
+                <!--top start-->
+                <div class="top">
+                        <div class="w1200 clearfix">
+                                <div class="float-l">
+                                        欢迎浏览941红木网
+                                        <span class="dropdown">用户名<i class="icon-down">箭头</i></span>
+                                        <ul>
+                                                <li style="text-align:center;">some text</li>
+                                        </ul>
+                                </div>
+                                <div class="float-r">
+                                        <ul class="clearfix">
+                                            <li><a href="history_list.php">我的足迹</a></li>
+                                            <li><a href="user.php?act=order_list">我的订单</a></li>
+                                            <li><a href="article.php?id=74">我要加盟</a></li>
+                                            <li><a href="merchants.php?id=96">商家中心</a></li>
+                                            <li><a href="#">客服中心</a></li>
+                                            <li class="padding-r-0"><a href="#">APP下载</a></li>
+					</ul>
+                                </div>
+                        </div>
+                </div>
+                <!--top end-->
+
+                <!--Navigation start-->
+                <div class="nav w1200 clearfix">
+                        <div class="float-l">
+                                <h1 class="logo">941红木</h1>
+                        </div>
+                        <img class="float-r" src="themes/ecmoban_dsc/iamges/20170517/wechat.jpg" alt="二维码">
+                        <div class="float-r margin-r-30">
+                                <div class="wrap-search clearfix">
+                                        <a class="icon-file" href="#"></a>
+                                        <a class="icon-cart" href="#"><span class="tooltip">99</span></a>
+                                        <form class="clearfix" action="" method="">
+                                                <input type="text" />
+                                                <button class="icon-search"></button>
+                                        </form>
+                                </div>  
+                                <div class="nav-content">
+                                        <ul class="main-nav clearfix">
+							<li class="classification">
+								全部分类
+								<div class="dropdown-menu">
+									<dl class="position">
+										<dt>餐厅 :</dt>
+										<dd>
+											<a href="category.php?id=453">餐桌</a>
+											<a href="category.php?id=397">圆桌</a>
+											<a href="category.php?id=60">酒柜/酒架</a>
+											<a href="category.php?id=58">四方桌</a>
+											<a href="category.php?id=56">餐边桌</a>
+										</dd>
+										<dt>客厅 :</dt>
+										<dd>
+											<a href="category.php?id=113">沙发</a>
+											<a href="category.php?id=363">电视柜</a>
+											<a href="category.php?id=415">罗汉床</a>
+											<a href="category.php?id=418">中堂</a>
+											<a href="category.php?id=421">花架</a>
+											<a href="category.php?id=422">鼓凳</a>
+											<a href="category.php?id=451">二联柜</a>
+											<a href="category.php?id=452">屏风</a>
+										</dd>
+										<dt>书房 :</dt>
+										<dd>
+											<a href="category.php?id=365">书桌</a>
+											<a href="category.php?id=147">书柜</a>
+											<a href="category.php?id=424">博古架</a>
+											<a href="category.php?id=146">茶台</a>
+											<a href="category.php?id=410">茶边柜</a>
+											<a href="category.php?id=414">条案</a>
+											<a href="category.php?id=417">麻将桌</a>
+											<a href="category.php?id=419">电脑桌</a>
+											<a href="category.php?id=309">大班台</a>
+										</dd>
+										<dt>卧室 :</dt>
+										<dd>
+											<a href="category.php?id=14">床</a>
+											<a href="category.php?id=427">贵妃榻</a>
+											<a href="category.php?id=358">衣柜</a>
+											<a href="category.php?id=10">斗柜</a>
+											<a href="category.php?id=411">顶箱柜</a>
+											<a href="category.php?id=9">梳妆台</a>
+											<a href="category.php?id=12">床边凳</a>
+											<a href="category.php?id=395">穿衣镜</a>
+										</dd>
+									</dl>
+									<dl class="material">
+										<dt>材质 :</dt>
+										<dd>
+											<a href="category.php?id=409">小叶紫檀</a>
+											<a href="category.php?id=407">海南黄花梨</a>
+											<a href="category.php?id=416">刺猬紫檀</a>
+											<a href="category.php?id=399">缅甸花梨</a>
+											<a href="category.php?id=422">非洲花梨</a>
+											<a href="category.php?id=443">非洲酸枝</a>
+											<a href="category.php?id=445">沉贵宝</a>
+											<a href="category.php?id=444">安哥拉紫檀</a>
+											<a href="category.php?id=449">南美酸枝</a>
+										</dd>
+									</dl>
+									<dl class="style">
+										<dt>风格 :</dt>
+										<dd>
+											<a href="category.php?id=22">古典式</a>
+											<a href="category.php?id=23">新中式</a>
+											<a href="category.php?id=24">欧美式</a>
+											<a href="category.php?id=25">明式</a>
+										</dd>
+									</dl>
+									<dl class="price">
+										<dt>价格 :</dt>
+										<dd>
+											<a href="#">0-10000</a>
+											<a href="#">10000-20000</a>
+											<a href="#">20000-40000</a>
+											<a href="#">40000-80000</a>
+											<a href="#">80000以上</a>
+										</dd>
+									</dl>
+								</div>	
+							</li>
+							<li class="active"><a href="index.php">首页</a></li>
+							<li><a href="#">智能体验馆</a></li>
+							<li><a href="#">智能场景定制</a></li>
+							<li><a href="crowd_funding.php">匠物众筹</a></li>
+							<li><a href="one_yuan_purchase.php">一元购</a></li>
+							<li><a href="#">禅学院</a></li>
+							<li><a href="#">保养技师</a></li>
+							<li class="margin-r-0"><a href="article.php?id=117">加盟入驻</a></li>
+						</ul>
+                                </div>
+                        </div>
+                </div>          
+                <!--Navigation end-->
+
+                <!--banner start-->
+                <div class="slide-banner bg-color-f5f5f5">      
+                        <div class="w1200">
+                        	<div class="JS-slide">
+                        		<ul class="content">
+                        			<li class="active">
+										<a href="#" title="家具以旧换新，立即估价"><img src="themes/ecmoban_dsc/iamges/20170517/oldnew-banner-1.jpg" alt="家具以旧换新" /></a>
+									</li>
+								</ul>
+							</div>
+                        </div>
+                </div>
+                <!--banner end-->
+        </div>
+        <!--header end-->
+
+		<!--main body start-->
+		<div class="w1200 bg-color-f5f5f5">
+			<div class="section-1">
+				<div>
+					<span>1</span>
+					<span class="s2">2</span>
+					<span class="s3">3</span>
+					<span class="s4">4</span>
+				</div>
+				<ul>
+					<li class="li1">
+						<span class="img1"></span>
+						描述试用情况
+					</li>
+					<li class="li2">
+						<span class="img2"></span>
+						线上估价，提交订单
+					</li>
+					<li class="li3">
+						<span class="img3"></span>
+						发放抵用消费券
+					</li>
+					<li class="margin-r-0 li4">
+						<span class="img4"></span>
+						在线购物
+					</li>				
+				</ul>
+			</div>
+
+			<div class="section-2 Chinese-style bg-color-ecebec">
+				<h2>浪漫新中式</h2>
+				<ul>
+					<li class="clearfix">
+						<a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/free-product5.png" alt="" /></a>
+						<dl class="float-r product-info">
+							<dt><h3>刺猬紫檀矩形博古架</h3></dt>
+							<dd>原木纹理，色泽润雅，精致工艺</dd>
+							<dd class="price">&yen;6543</dd>
+							<dd>把优雅带回家</dd>
+							<dd><a href="#">立即抢购</a></dd>
+						</dl>
+					</li>
+					<li class="clearfix margin-t-45">
+						<a class="float-r" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/oldnew-product-1.png" alt="" /></a>
+						<dl class="float-l product-info">
+							<dt><h3>刺猬紫檀矩形博古架</h3></dt>
+							<dd>原木纹理，色泽润雅，精致工艺</dd>
+							<dd class="price">&yen;6543</dd>
+							<dd>把优雅带回家</dd>
+							<dd><a href="#">立即抢购</a></dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+
+			<div class="section-2 Qing-style bg-color-f5f5f5">
+				<h2>奢华清式家具</h2>
+				<ul>
+					<li class="clearfix">
+						<a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/free-product5.png" alt="" /></a>
+						<dl class="float-r product-info">
+							<dt><h3>刺猬紫檀矩形博古架</h3></dt>
+							<dd>原木纹理，色泽润雅，精致工艺</dd>
+							<dd class="price">&yen;6543</dd>
+							<dd>把优雅带回家</dd>
+							<dd><a href="#">立即抢购</a></dd>
+						</dl>
+					</li>
+					<li class="clearfix margin-t-45">
+						<a class="float-r" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/oldnew-product-1.png" alt="" /></a>
+						<dl class="float-l product-info">
+							<dt><h3>刺猬紫檀矩形博古架</h3></dt>
+							<dd>原木纹理，色泽润雅，精致工艺</dd>
+							<dd class="price">&yen;6543</dd>
+							<dd>把优雅带回家</dd>
+							<dd><a href="#">立即抢购</a></dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+
+			<div class="section-2 Ming-style bg-color-ecebec">
+				<h2>简约明式家具</h2>
+				<ul>
+					<li class="clearfix">
+						<a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/free-product5.png" alt="" /></a>
+						<dl class="float-r product-info">
+							<dt><h3>刺猬紫檀矩形博古架</h3></dt>
+							<dd>原木纹理，色泽润雅，精致工艺</dd>
+							<dd class="price">&yen;6543</dd>
+							<dd>把优雅带回家</dd>
+							<dd><a href="#">立即抢购</a></dd>
+						</dl>
+					</li>
+					<li class="clearfix margin-t-45">
+						<a class="float-r" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/oldnew-product-1.png" alt="" /></a>
+						<dl class="float-l product-info">
+							<dt><h3>刺猬紫檀矩形博古架</h3></dt>
+							<dd>原木纹理，色泽润雅，精致工艺</dd>
+							<dd class="price">&yen;6543</dd>
+							<dd>把优雅带回家</dd>
+							<dd><a href="#">立即抢购</a></dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--main body end-->
+
+        <!--footer start-->
+        <div id="footer">
+                <div class="foot-top">
+                        <div class="w1200">
+                                <ul class="clearfix">
+                                        <li><i class="icon-baoz"></i>正品保障</li>
+                                        <li><i class="icon-qtbt"></i>七天包退</li>
+                                        <li><i class="icon-hprc"></i>好评如潮</li>
+                                        <li><i class="icon-sdfh"></i>闪电发货</li>
+                                        <li class="margin-r-0"><i class="icon-qwry"></i>权威荣誉</li>
+                                </ul>
+                        </div>
+                </div>
+                <div class="foot-btm">
+                        <div class="w1200">
+                                <ul class="clearfix">
+                                        <li>
+                                                <dl>
+                                                        <dt>关于941红木</dt>
+                                                        <dd>
+                                                                <a href="#">&gt; 公司简介</a>
+                                                                <a href="#">&gt; 体验馆</a>
+                                                                <a href="#">&gt; 招商加盟</a>
+                                                                <a href="#">&gt; 诚聘英才</a>
+                                                                <a href="#">&gt; 联系我们</a>
+                                                        </dd>
+                                                </dl>
+                                        </li>
+
+                                        <li>
+                                                <dl>
+                                                        <dt>新手指南</dt>
+                                                        <dd>
+                                                                <a href="#">&gt; 新用户注册</a>
+                                                                <a href="#">&gt; 支付方式说明</a>
+                                                                <a href="#">&gt; 订购家具流程</a>
+                                                                <a href="#">&gt; 体验馆购买指导</a>
+                                                        </dd>
+                                                </dl>
+                                        </li>
+
+                                        <li>
+                                                <dl>
+                                                        <dt>购物保障</dt>
+                                                        <dd>
+                                                                <a href="#">&gt; 正品保证</a>
+                                                                <a href="#">&gt; 注册协议</a>
+                                                                <a href="#">&gt; 免费声明</a>
+                                                                <a href="#">&gt; 隐私保护</a>
+                                                        </dd>
+                                                </dl>
+                                        </li>
+
+                                        <li>
+                                                <dl>
+                                                        <dt>配送安装</dt>
+                                                        <dd>
+                                                                <a href="#">&gt; 收货指南</a>
+                                                                <a href="#">&gt; 物流配送</a>
+                                                        </dd>
+                                                </dl>
+                                        </li>
+
+                                        <li class="margin-r-0">
+                                                <dl>
+                                                        <dt>售后服务</dt>
+                                                        <dd>
+                                                                <a href="#">&gt; 35天无理由退换货</a>
+                                                                <a href="#">&gt; 如何申请退款</a>
+                                                                <a href="#">&gt; 维修补件说明</a>
+                                                                <a href="#">&gt; 家具保修说明</a>
+                                                                <a href="#">&gt; 家具保养说明</a>
+                                                        </dd>
+                                                </dl>
+                                        </li>
+                                </ul>
+                                <div class="copy">
+                                        <p><a href="#">首页</a><a href="#">意见反馈</a></p>
+                                        <p>ICP备案证书号: <a href="#">浙ICP备16002409号-1</a></p>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <!--footer end-->
+
+        <!--JQ基础库-->
+        <script type="text/javascript" src="themes/ecmoban_dsc/js/js/jquery-1.9.1.min.js"></script>
+        <!--自定义方法-->
+        <script type="text/javascript" src="themes/ecmoban_dsc/js/js/common.js"></script>
+	</body>
+</html>

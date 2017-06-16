@@ -1,0 +1,10 @@
+------tpl_info------------
+tpl name�����ݹ�����̼ҵ���ģ��NO.9
+tpl url��../seller_themes/store_tpl_9/screenshot.png
+description���������㣬Խ��Խ��
+version��v1.0
+author�����ݹ�
+author url��http://www.941hm.com/
+tpl_path��st_one
+win_goods_type��7
+------tpl_info------------

@@ -1,0 +1,66 @@
+#footer .foot-top {
+	height: 75px;
+	line-height: 75px;
+	background-color: #ddd;
+}
+#footer .foot-top li,
+#footer .foot-btm li {
+	float: left;
+	width: 129px;
+	margin-right: 138px;
+}
+#footer .foot-top li {
+	font-size: 16px;
+}
+.icon-baoz,.icon-qtbt,
+.icon-hprc,.icon-sdfh,
+.icon-qwry {
+	position: relative;
+	top: 15px;
+	margin-right: 15px;
+	width: 43px;
+	height: 43px;
+}
+.icon-baoz {
+	background-position: -1px 0;
+}
+.icon-qtbt {
+	background-position: -1px -51px;	
+}
+.icon-hprc {
+	background-position: -1px -102px;		
+}
+.icon-sdfh {
+	background-position: 0 -153px;
+}
+.icon-qwry {
+	background-position: 0 -203px;
+}
+#footer .foot-btm {
+	padding: 50px 0 120px 0;
+	background-color: #000;
+}
+#footer .foot-btm dd a {
+	display: block;
+	line-height: 1.5;
+}
+#footer .foot-btm dd a:hover {
+	color: #fff;
+}
+#footer .foot-btm dd a,
+#footer .copy p,
+#footer .copy a {
+	color: #8b8b8b;
+}
+#footer .foot-btm dt {
+	padding-bottom: 20px;
+	font-size: 18px;
+	color: #fff;
+}
+#footer .copy {
+	padding-top: 50px;
+	text-align: center;
+}
+#footer .copy p {
+	margin-bottom: 10px;
+}

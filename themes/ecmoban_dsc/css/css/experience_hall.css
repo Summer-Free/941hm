@@ -1,0 +1,125 @@
+/*头部下拉菜单hover效果 需要加上此段代码 start*/
+#header .classification {
+	background-color: transparent;
+}
+#header .classification .dropdown-menu {
+	display: none\9; /*IE8 hack*/
+	background-color: transparent;
+	z-index: 0;
+	opacity: 0;
+	-webkit-transition: all .3s linear;
+	   -moz-transition: all .3s linear;
+	    -ms-transition: all .3s linear;
+	     -o-transition: all .3s linear;
+	        transition: all .3s linear;
+}
+#header .classification:hover > .dropdown-menu {
+	background-color: #d4d6d5;
+	z-index: 10;
+	opacity: 1;
+	display: block\9; /*IE8 hack*/
+}
+#header .classification:hover {
+	background-color: #95b0b2;
+}
+/*头部下拉菜单hover效果 需要加上此端代码 end*/
+
+
+/*除了首页以外的，头部轮播图中按钮的位置调动 start*/
+#header .JS-slide .left-btn {
+	left: 0;
+}
+#header .JS-slide:hover .left-btn {
+	left: 50px;
+}
+#header .JS-slide .right-btn {
+	right: 0;
+}
+#header .JS-slide:hover .right-btn {
+	right: 50px;
+}
+/*除了首页以外的，头部轮播图中按钮的位置调动 end*/
+
+
+
+
+#main-body {
+	margin-top: 3px;
+}
+.common-h2 {
+	padding-left: 8px;
+	height: 73px;
+	line-height: 73px;
+	font-size: 16px;
+	color: #393939;
+}
+.section-1 li {
+	float: left;
+	margin-right: 19px;
+}
+.filter-box {
+	position: relative;
+	padding: 40px 0;
+	border: 1px solid #bababa;
+	border-left: none;
+	border-right: none;
+}
+.filter-box .linkage-menu h3 {
+	position: relative;
+	top: -8px;
+	color: #7b7777;
+}
+.filter-box .linkage-menu {
+	position: absolute;
+	top: 20px;
+	left: 8px;
+}
+.filter-box select {
+	border: 1px solid #333;
+}
+#province {
+	margin-right: 5px;
+}
+.filter-box .condition li {
+	float: left;
+	margin-right: 8px;
+	color: #7b7777;
+	cursor: pointer;
+	-webkit-user-select:none;/*webkit浏览器*/
+       -moz-user-select:none;/*火狐*/
+	    -ms-user-select:none;/*IE10*/
+	 -khtml-user-select:none;/*早期浏览器*/
+	        user-select:none;
+}
+.filter-box .condition li.active {
+	color: #46a9fe;
+}
+.section-3 {
+	padding-top: 15px;
+	padding-bottom: 30px;
+}
+.section-3 li {
+	overflow-x: hidden;
+	float: left;
+	margin-right: 28px;
+	margin-bottom: 28px;
+	padding: 16px 12px;
+	width: 586px;
+	height: 242px;
+	background-color: #fff;
+	box-shadow: 0 2px 3px 0 #e3e3e3;
+}
+.section-3 li .wrap {
+	position: relative;
+	width: 235px;
+	height: 210px;
+}
+.section-3 li h2,
+.section-3 li p {
+	font-size: 18px;
+}
+.section-3 li .wrap>div {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}

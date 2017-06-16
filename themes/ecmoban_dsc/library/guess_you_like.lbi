@@ -1,0 +1,10 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="clearfix">
+    <!-- {foreach from=$guess_goods item=goods name=foo} --> 
+    	
+        <a href="{$goods.url}" target="_blank" <!-- {if $smarty.foreach.foo.iteration == 1} -->  class="move left-a margin-r-25" <!-- {elseif $smarty.foreach.foo.iteration == 2 } --> class="move right-a" <!--{/if}--> >
+            <img src="{$goods.goods_thumb}" width="260" height="363">  
+            <span style="font-size:16px;">{$goods.short_name|truncate:13}</span>
+        </a>
+    <!--{/foreach}-->
+</div>
