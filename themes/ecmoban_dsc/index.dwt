@@ -397,22 +397,22 @@
 						<ul class="product-list clearfix">
 	                    <!--{foreach from=$res item=goods name=goods} -->
 	                    	<!-- {if $smarty.foreach.goods.iteration ==1  } -->
-                        		<li class="move">
-                        <!-- {elseif $smarty.foreach.goods.iteration ==2  } -->
-                        		<li class="move">
-                        <!-- {elseif $smarty.foreach.goods.iteration ==3  } -->
-                        		<li class="move">
-                    	<!-- {elseif $smarty.foreach.goods.iteration ==4  } -->
-                        		<li class="move margin-r-0">
-                         <!-- {elseif $smarty.foreach.goods.iteration ==5  } -->
-                         		<li class="move">
-                         <!-- {elseif $smarty.foreach.goods.iteration ==6  } -->
-                         		<li class="move">
-                         <!-- {elseif $smarty.foreach.goods.iteration ==7  } -->
-                         		<li class="move">
-                        <!-- {elseif $smarty.foreach.goods.iteration == 8 } -->
-                        		<li class="move margin-r-0">
-                        <!--{/if}-->
+	                        		<li class="move">
+	                        <!-- {elseif $smarty.foreach.goods.iteration ==2  } -->
+	                        		<li class="move">
+	                        <!-- {elseif $smarty.foreach.goods.iteration ==3  } -->
+	                        		<li class="move">
+	                    	<!-- {elseif $smarty.foreach.goods.iteration ==4  } -->
+	                        		<li class="move margin-r-0">
+	                         <!-- {elseif $smarty.foreach.goods.iteration ==5  } -->
+	                         		<li class="move">
+	                         <!-- {elseif $smarty.foreach.goods.iteration ==6  } -->
+	                         		<li class="move">
+	                         <!-- {elseif $smarty.foreach.goods.iteration ==7  } -->
+	                         		<li class="move">
+	                        <!-- {elseif $smarty.foreach.goods.iteration == 8 } -->
+	                        		<li class="move margin-r-0">
+	                        <!--{/if}-->
 									<a href="goods.php?id={$goods.goods_id}"><img src="{$goods.goods_thumb}" alt="{$goods.goods_name}" width="292px" height="170px"></a>
 									<div class="content">
 										<h3>{$goods.goods_name|truncate:16}</h3>
@@ -431,7 +431,142 @@
 										</div>
 									</div>
 								</li>
-                     <!--{/foreach}-->    
+                     <!--{/foreach}-->
+             		 <!--
+                     		<li class="move">
+                                <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                                <div class="content">
+                                    <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                                    <span>价值:&yen;19500</span>
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                    <ul class="condition clearfix">
+                                        <li class="li-1">18600<span>已参与</span></li>
+                                        <li class="li-2">19500<span>总需人次</span></li>
+                                        <li class="li-3">23天<span>剩余</span></li>
+                                    </ul>
+                                    <div class="other clearfix">
+                                        <a href="#">1元购买</a>
+                                        <span class="Collection"><i class="icon-start-black"></i></span>
+                                    </div>
+                                </div>
+                            </li>
+							<li class="move">
+							<a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+							<div class="content">
+								<h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+								<span>价值:&yen;19500</span>
+								<div class="progress">
+									<div></div>
+								</div>
+								<ul class="condition clearfix">
+									<li class="li-1">18600<span>已参与</span></li>
+									<li class="li-2">19500<span>总需人次</span></li>
+									<li class="li-3">23天<span>剩余</span></li>
+								</ul>
+								<div class="other clearfix">
+									<a href="#">1元购买</a>
+									<span class="Collection"><i class="icon-start-black"></i></span>
+								</div>
+							</div>
+							</li>
+							<li class="move margin-r-0">
+							<a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+							<div class="content">
+								<h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+								<span>价值:&yen;19500</span>
+								<div class="progress">
+									<div></div>
+								</div>
+								<ul class="condition clearfix">
+									<li class="li-1">18600<span>已参与</span></li>
+									<li class="li-2">19500<span>总需人次</span></li>
+									<li class="li-3">23天<span>剩余</span></li>
+								</ul>
+								<div class="other clearfix">
+									<a href="#">1元购买</a>
+									<span class="Collection"><i class="icon-start-black"></i></span>
+								</div>
+							</div>
+							</li>
+                            <li class="move">
+                                <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                                <div class="content">
+                                    <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                                    <span>价值:&yen;19500</span>
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                    <ul class="condition clearfix">
+                                        <li class="li-1">18600<span>已参与</span></li>
+                                        <li class="li-2">19500<span>总需人次</span></li>
+                                        <li class="li-3">23天<span>剩余</span></li>
+                                    </ul>
+                                    <div class="other clearfix">
+                                        <a href="#">1元购买</a>
+                                        <span class="Collection"><i class="icon-start-black"></i></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="move">
+                                <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                                <div class="content">
+                                    <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                                    <span>价值:&yen;19500</span>
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                    <ul class="condition clearfix">
+                                        <li class="li-1">18600<span>已参与</span></li>
+                                        <li class="li-2">19500<span>总需人次</span></li>
+                                        <li class="li-3">23天<span>剩余</span></li>
+                                    </ul>
+                                    <div class="other clearfix">
+                                        <a href="#">1元购买</a>
+                                        <span class="Collection"><i class="icon-start-black"></i></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="move">
+                                <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                                <div class="content">
+                                    <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                                    <span>价值:&yen;19500</span>
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                    <ul class="condition clearfix">
+                                        <li class="li-1">18600<span>已参与</span></li>
+                                        <li class="li-2">19500<span>总需人次</span></li>
+                                        <li class="li-3">23天<span>剩余</span></li>
+                                    </ul>
+                                    <div class="other clearfix">
+                                        <a href="#">1元购买</a>
+                                        <span class="Collection"><i class="icon-start-black"></i></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="move margin-r-0">
+                                <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/product-8.jpg" alt=""></a>
+                                <div class="content">
+                                    <h3>【花雨转角沙发】 非花/缅花 7件套</h3>
+                                    <span>价值:&yen;19500</span>
+                                    <div class="progress">
+                                        <div></div>
+                                    </div>
+                                    <ul class="condition clearfix">
+                                        <li class="li-1">18600<span>已参与</span></li>
+                                        <li class="li-2">19500<span>总需人次</span></li>
+                                        <li class="li-3">23天<span>剩余</span></li>
+                                    </ul>
+                                    <div class="other clearfix">
+                                        <a href="#">1元购买</a>
+                                        <span class="Collection"><i class="icon-start-black"></i></span>
+                                    </div>
+                                </div>
+                            </li>
+                     -->    
 					</ul>
 				</div>
 			</div>

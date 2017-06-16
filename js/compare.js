@@ -275,7 +275,7 @@ Compare = {
       //slideTxtBox.style.display = "none";
       this.compareBox.style.display = "none";
       window.clearInterval(this.timer);
-      this.timer = window.setInterval(this.bind(this.relocation,this), 50);
+      this.timer = 0;
     }
   },
   save : function()
@@ -284,18 +284,5 @@ Compare = {
     date.setTime(date.getTime() + 99999999);
     document.setCookie("compareItems", $.toJSON(this.data));
   },
-   bind : function(obj1,obj2)
-
-{
-
-return function()
-
-{
-
-obj1.apply(obj2, arguments);
-
-}
-
-},
   lastScrollY : 0
 }

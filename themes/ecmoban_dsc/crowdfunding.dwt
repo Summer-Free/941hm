@@ -428,10 +428,9 @@
                                     <!--<i class="icon-v"><div class="alt"></div></i>-->
                                     <i class="icon-crown">
                                     	<div class="alt"></div>
-                                        <!--{foreach from=$init.logo item=logo}-->
-                                            <!--<img src='{$logo.img}' title='{$logo.logo_name}'>-->
-                                            <img src='data/rank_image/1481488609620748004.png' title='{$logo.logo_name}'>
-                                        <!--{/foreach}-->
+                                        {foreach from=$init.logo item=logo}
+                                            <img src='{$logo.img}' title='{$logo.logo_name}'>
+                                        {/foreach}
                                     </i>
                                 </div>
                                 <div class="promoters-title">{$init.intro}</div>

@@ -158,7 +158,7 @@
 .section-4 {
 	border-bottom: 4px solid #dcdcdc;
 }
-.section-4 dt {
+.section-4 h2 {
 	position: relative;
 	margin-bottom: 45px;
 	padding-left: 8px;
@@ -167,33 +167,43 @@
 	font-size: 25px;
 	background-color: #9db2c5;
 }
-.section-4 dt,
-.section-4 dt a {
+.section-4 h2,
+.section-4 h2 a {
 	color: #fff;
 }
-.section-4 dt a {
+.section-4 h2 a {
 	position: absolute;
 	top: 0;
 	right: 30px;
 	font-size: 17px;
 }
-.section-4 dd {
-	padding: 0 8px;
+.section-4 .slide-ppj {
+	height: 180px;
 }
-.section-4 dd a {
+.section-4 li {
+	float: left;
+	width: 1200px;
+}
+.section-4 li>div {
+	padding: 0!important;
+	line-height: 1!important;
+}
+.section-4 li>div a {
 	float: left;
 	height: 58px;
-	margin-right: 27px;
+	margin-right: 30px;
 }
 .section-4 .list-2 {
 	padding-top: 25px;
 	padding-bottom: 45px;
+	margin-top: 25px;
 }
-.section-4 dd img{
+.section-4 li>div img{
 	display: inline;
+	border: none!important;
 }
 .section-4 .list-2 a {
-	margin-right: 36px;
+	margin-right: 39px;
 }
 .section-5 .product-list {
 	padding-top: 8px;

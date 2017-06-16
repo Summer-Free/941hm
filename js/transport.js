@@ -788,24 +788,3 @@ function hideLoader()
     {}
   }
 }
-
-//解决ECshop与jQuery冲突问题
- if (Object.prototype.toJSONString){
-
-var oldToJSONString = Object.toJSONString;
-
-Object.prototype.toJSONString = function(){
-
-if (arguments.length > 0){
-
-return false;
-
-}else{
-
-return oldToJSONString.apply(this, arguments);
-
-}
-
-}
-
-}
