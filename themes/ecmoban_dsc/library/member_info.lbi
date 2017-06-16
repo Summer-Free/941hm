@@ -1,13 +1,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 {if $user_info}
-您好
+
 <span>
-	<a href="{$site_domain}user.php">{$user_info.nick_name}</a>，欢迎来到<a alt="首页" title="首页" href="index.php">
-    	<span>{$shop_name}</span>
+	<a href="{$site_domain}user.php">{$user_info.nick_name}</a>
+    	
     </a>
 </span>
-<span>[<a href="{$site_domain}user.php?act=logout">{$lang.user_logout}</a>]</span>
+<span><a href="{$site_domain}user.php?act=logout" class="link-regist float-r">{$lang.user_logout}</a></span>
 {else}
 	<a href="{$site_domain}user.php" class="link-login style-red">请登录</a>
 	{if $shop_reg_closed neq 1}
