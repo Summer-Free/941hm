@@ -57,21 +57,21 @@ table{border-collapse:collapse;border-spacing:0;}
 .icon-small-star,.icon-fenxian,
 .icon-small-cart,.icon-refresh {
   display: inline-block;
-  background-image: url(../../iamges/20170517/sprite-1.png);
+  background-image: url(../images/sprite-1.png);
   background-repeat: no-repeat;
 }
 .icon-baoz,.icon-qtbt,
 .icon-hprc,.icon-sdfh,
 .icon-qwry {
   display: inline-block;
-  background-image: url(../../iamges/20170517/sprite-foot.png);
+  background-image: url(../images/sprite-foot.png);
   background-repeat: no-repeat;
 }
 .icon-ct,.icon-kt,
 .icon-sf,.icon-ws,
 .icon-xwy {
   display: inline-block;
-  background-image: url(../../iamges/20170517/sprite-5.png);
+  background-image: url(../images/sprite-5.png);
   background-repeat: no-repeat;
 }
 
@@ -165,7 +165,7 @@ table{border-collapse:collapse;border-spacing:0;}
   float: left;
 }
 .float-r {
-  float: right!important;
+  float: right;
 }
 .clearfix:after {
   content: "";
