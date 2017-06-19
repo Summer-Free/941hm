@@ -423,23 +423,23 @@
 						<ul class="product-list clearfix">
 	                    <!--{foreach from=$res item=goods name=goods} -->
 	                    	<!-- {if $smarty.foreach.goods.iteration ==1  } -->
-                        		<li class="move">
+                        		<li class="move" style="height: auto!important;">
                         <!-- {elseif $smarty.foreach.goods.iteration ==2  } -->
-                        		<li class="move">
+                        		<li class="move" style="height: auto!important;">
                         <!-- {elseif $smarty.foreach.goods.iteration ==3  } -->
-                        		<li class="move">
+                        		<li class="move" style="height: auto!important;">
                     	<!-- {elseif $smarty.foreach.goods.iteration ==4  } -->
-                        		<li class="move margin-r-0">
+                        		<li class="move margin-r-0" style="height: auto!important;">
                          <!-- {elseif $smarty.foreach.goods.iteration ==5  } -->
-                         		<li class="move">
+                         		<li class="move" style="height: auto!important;">
                          <!-- {elseif $smarty.foreach.goods.iteration ==6  } -->
-                         		<li class="move">
+                         		<li class="move" style="height: auto!important;">
                          <!-- {elseif $smarty.foreach.goods.iteration ==7  } -->
-                         		<li class="move">
+                         		<li class="move" style="height: auto!important;">
                         <!-- {elseif $smarty.foreach.goods.iteration == 8 } -->
-                        		<li class="move margin-r-0">
+                        		<li class="move margin-r-0" style="height: auto!important;">
                         <!--{/if}-->
-									<a href="goods.php?id={$goods.goods_id}"><img src="{$goods.goods_thumb}" alt="{$goods.goods_name}" width="292px" height="170px"></a>
+									<a href="goods.php?id={$goods.goods_id}"><img src="{$goods.goods_thumb}" alt="{$goods.goods_name}" width="290" /></a>
 									<div class="content">
 										<h3>{$goods.goods_name|truncate:16}</h3>
 										<span>价值:&yen;{$goods.market_price}</span>
@@ -743,6 +743,20 @@
 					<div class="copy">
 						<p><a href="#">首页</a><a href="#">意见反馈</a></p>
 						<p>ICP备案证书号: <a href="#">浙ICP备16002409号-1</a></p>
+						<p class="foot-wrap-icon">
+							<style>
+								.foot-wrap-icon img {
+									float: left;
+									margin-right: 87px;
+								}
+							</style>
+							<img src="themes/ecmoban_dsc/iamges/20170517/360.jpg" alt="" />
+							<img src="themes/ecmoban_dsc/iamges/20170517/cnnic.png" alt="" />
+							<img src="themes/ecmoban_dsc/iamges/20170517/hy.png" alt="" />
+							<img src="themes/ecmoban_dsc/iamges/20170517/sgs.png" alt="" />
+							<img src="themes/ecmoban_dsc/iamges/20170517/Vie.png" height="47" alt="" />
+							<img class="float-l margin-r-0" src="themes/ecmoban_dsc/iamges/20170517/zhanzhang.png" alt="" />
+						</p>
 					</div>
 				</div>
 			</div>

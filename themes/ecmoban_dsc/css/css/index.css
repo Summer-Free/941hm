@@ -203,7 +203,7 @@
 	margin-bottom: 11px;
 	margin-right: 10px;
 	width: 292px;
-	height: 376px;
+	/*height: 376px;*/
 	background-color: #fff;
 	border: 1px solid #b9b8b8;
 	box-shadow: 0 3px 5px 0 #b9b8b8;
@@ -232,7 +232,7 @@
 	width: 66%;
 	height: 100%;
 	border-radius: 8px;
-	background: url(../images/bg-linear-gradient.png) no-repeat;
+	background: url(iamges/20170517/bg-linear-gradient.png) no-repeat;
 }
 .section-5 .condition li {
 	float: left;
