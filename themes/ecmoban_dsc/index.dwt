@@ -240,11 +240,11 @@
 							</a>
 						</li>
 						<li>
-							<a class="margin-b-12" href="#" title="保养技师" style="background-color: #e4eef0;">
-								<img src="themes/ecmoban_dsc/iamges/20170517/byjs.jpg" alt="保养技师" />
-							</a>
-							<a href="gadget.php" title="小玩意儿" style="background-color: #d7fae8;">
+							<a class="margin-b-12" href="gadget.php" title="小玩意儿" style="background-color: #d7fae8;">
 								<img src="themes/ecmoban_dsc/iamges/20170517/xwye.jpg" alt="小玩意儿" />
+							</a>
+							<a href="#" title="保养技师" style="background-color: #e4eef0;">
+								<img src="themes/ecmoban_dsc/iamges/20170517/byjs.jpg" alt="保养技师" />
 							</a>
 						</li>
 						<li>
@@ -314,27 +314,27 @@
 					<div class="New-arrival clearfix">
 						<div class="float-l">
 							<h2>新品上市</h2>
-                                <div class="clearfix">
-                                    <!--{foreach from=$new_p item=new_p name=new_p}-->
-                                            <a href="goods.php?id={$new_p.goods_id}" target="_blank" alt="{$new_p.goods_name|escape:html}" 
-                                            <!-- {if $smarty.foreach.new_p.first} --> class= "move left-a margin-r-25" 
-                                            <!-- {elseif $smarty.foreach.new_p.last } --> class="move right-a" <!--{/if}--> >
-                                                <img src="/{$new_p.goods_thumb}" title="{$new_p.goods_name|escape:html}" width="260" height="363"/>
-                                                <span style="font-size:16px">{$new_p.goods_name|truncate:12}</span>
-                                            </a>    
-                                    <!--{/foreach}-->
-                                </div> 
-                                <div class="clearfix">
-								<!--
-	                                <a href="#" class="move left-a margin-r-25">
-										<img src="themes/ecmoban_dsc/iamges/20170517/product-4.jpg" alt="刺猬紫檀光泽感新中式太师椅">
-										<span>刺猬紫檀光泽感新中式太师椅</span>
-									</a>
-									<a href="#" class="move right-a">
-										<img src="themes/ecmoban_dsc/iamges/20170517/product-5.jpg" alt="风格化传统复古优雅大气官帽椅">
-										<span>风格化传统复古优雅大气官帽椅</span>
-									</a>
-                                -->
+                            <div class="clearfix">
+                                <!--{foreach from=$new_p item=new_p name=new_p}-->
+                                        <a href="goods.php?id={$new_p.goods_id}" target="_blank" alt="{$new_p.goods_name|escape:html}" 
+                                        <!-- {if $smarty.foreach.new_p.first} --> class= "move left-a margin-r-25" 
+                                        <!-- {elseif $smarty.foreach.new_p.last } --> class="move right-a" <!--{/if}--> >
+                                            <img src="{$new_p.goods_thumb}" title="{$new_p.goods_name|escape:html}" width="240" />
+                                            <span>{$new_p.goods_name}</span>
+                                        </a>    
+                                <!--{/foreach}-->
+                            </div> 
+                            <div class="clearfix">
+							<!--
+                                <a href="#" class="move left-a margin-r-25">
+									<img src="themes/ecmoban_dsc/iamges/20170517/product-4.jpg" alt="刺猬紫檀光泽感新中式太师椅">
+									<span>刺猬紫檀光泽感新中式太师椅</span>
+								</a>
+								<a href="#" class="move right-a">
+									<img src="themes/ecmoban_dsc/iamges/20170517/product-5.jpg" alt="风格化传统复古优雅大气官帽椅">
+									<span>风格化传统复古优雅大气官帽椅</span>
+								</a>
+                            -->
 							</div>
 						</div>
 						<div class="float-r">
@@ -359,8 +359,8 @@
 	                        		<!-- {elseif $smarty.foreach.xs_p.iteration ==2  } -->
 	                        			class="move right-a" 
 	                        		<!--{/if}--> >
-										<img src="{$xs_p.original_img}" alt="刺猬紫檀光泽感新中式太师椅" width="260" height="363"/>
-										<span style="font-size:16px">{$xs_p.goods_name|truncate:14}</span>
+										<img src="{$xs_p.original_img}" alt="刺猬紫檀光泽感新中式太师椅" width="240" />
+										<span>{$xs_p.goods_name|truncate:20}</span>
 									</a>
 							<!--{/foreach}-->
                                 </div>
@@ -540,8 +540,8 @@
 
 						<li>
 							<div class="icon">
-								<img src="themes/ecmoban_dsc/iamges/20170517/kt.png" alt="餐厅">
-								<span>餐厅</span>
+								<img src="themes/ecmoban_dsc/iamges/20170517/kt.png" alt="客厅">
+								<span>客厅</span>
 								<div class="show-box">
 									<a href="#">
 										<img src="themes/ecmoban_dsc/iamges/20170517/product-10.jpg" alt="">
@@ -565,8 +565,8 @@
 
 						<li>
 							<div class="icon">
-								<img src="themes/ecmoban_dsc/iamges/20170517/sf.png" alt="餐厅">
-								<span>餐厅</span>
+								<img src="themes/ecmoban_dsc/iamges/20170517/sf.png" alt="书房">
+								<span>书房</span>
 								<div class="show-box">
 									<a href="#">
 										<img src="themes/ecmoban_dsc/iamges/20170517/product-10.jpg" alt="">
@@ -590,8 +590,8 @@
 
 						<li>
 							<div class="icon">
-								<img src="themes/ecmoban_dsc/iamges/20170517/ws.png" alt="餐厅">
-								<span>餐厅</span>
+								<img src="themes/ecmoban_dsc/iamges/20170517/ws.png" alt="卧室">
+								<span>卧室</span>
 								<div class="show-box">
 									<a href="#">
 										<img src="themes/ecmoban_dsc/iamges/20170517/product-10.jpg" alt="">

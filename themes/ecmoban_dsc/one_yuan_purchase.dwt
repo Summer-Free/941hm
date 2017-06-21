@@ -147,14 +147,14 @@
                                                                 </dl>
                                                         </div>  
                                                 </li>
-                                                <li><a href="#">首页</a></li>
+                                                <li><a href="index.php">首页</a></li>
                                                 <li><a href="#">智能体验馆</a></li>
                                                 <li><a href="#">智能场景定制</a></li>
-                                                <li><a href="#">匠物众筹</a></li>
-                                                <li><a href="#">一元购</a></li>
+                                                <li><a href="crowd_funding.php">匠物众筹</a></li>
+                                                <li><a href="one_yuan_purchase.php">一元购</a></li>
                                                 <li><a href="#">禅学院</a></li>
                                                 <li><a href="#">保养技师</a></li>
-                                                <li class="margin-r-0"><a href="#">加盟入驻</a></li>
+                                                <li class="margin-r-0"><a href="article.php?id=117">加盟入驻</a></li>
                                         </ul>
                                 </div>
                         </div>

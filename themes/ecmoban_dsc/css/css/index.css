@@ -92,7 +92,7 @@
 }
 .section-3 .New-arrival h2,
 .section-3 .Personal-tailor h2 {
-	background-image: url(../images/sprite-1.png);
+	background-image: url(../../iamges/20170517/sprite-1.png);
 	background-repeat: no-repeat;
 }
 .section-3 .Personal-tailor h2,
@@ -113,15 +113,21 @@
 .section-3 .Personal-tailor .float-r .left-a,
 .section-3 .Personal-tailor .float-r .right-a {
 	float: left;
-	position: relative;
+	padding-bottom: 10px;
+	width: 260px;
+	height: 365px;
 	border: 1px solid #d9d8d8;
+	background-color: #fff;
 	box-shadow: 0 2px 8px 0 #d9d8d8;
+}
+.section-3 .New-arrival .float-l img,
+.section-3 .Personal-tailor .float-r img {
+	margin: 0 auto;
+	max-width: 100%;
 }
 .section-3 .New-arrival a span,
 .section-3 .Personal-tailor a span {
-	position: absolute;
-	left: 0;
-	bottom: 10px;
+	display: block;
 	padding: 0 25px;
 	font-size: 21px;
 	line-height: 1.8;
@@ -232,7 +238,7 @@
 	width: 66%;
 	height: 100%;
 	border-radius: 8px;
-	background: url(iamges/20170517/bg-linear-gradient.png) no-repeat;
+	background: url(../../iamges/20170517/bg-linear-gradient.png) no-repeat;
 }
 .section-5 .condition li {
 	float: left;
@@ -334,7 +340,7 @@
 .section-6 .Crowd-funding .progress div {
 	width: 66%;
 	height: 100%;
-	background: url(../images/bg-progress-1.png) no-repeat;
+	background: url(../../iamges/20170517/bg-progress-1.png) no-repeat;
 	border-radius: 8px;
 }
 .section-6 .Crowd-funding span {
@@ -424,7 +430,7 @@
 	width: 288px;
 	height: 59px;
 	text-indent: -9999px;
-	background-image: url(../images/sprite-1.png);
+	background-image: url(../../iamges/20170517/sprite-1.png);
 	background-repeat: no-repeat;
 	background-position: 0 -239px;
 }
