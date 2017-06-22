@@ -78,7 +78,7 @@
 			<!--Navigation start-->
 			<div class="nav w1200 clearfix">
 				<div class="float-l">
-					<h1 class="logo">941红木</h1>
+                    <h1 class="logo" style="text-indent: 0;"><a href="index.php" style="display: inline-block;width: 100%;height: 100%;text-indent: -9999px;">941红木</a></h1>
 				</div>
 				<img class="float-r" src="themes/ecmoban_dsc/iamges/20170517/wechat.jpg" alt="二维码">
 				<div class="float-r margin-r-30">
@@ -89,10 +89,12 @@
 							<input type="text" />
 							<button class="icon-search"></button>
 						</form>
+						<h2 class="float-l" style="margin-top: 30px;color: #481010;">全球首家CBBDS传统艺术文化生态链运营模式平台</h2>
 					</div>	
 					<div class="nav-content">
 						<ul class="main-nav clearfix">
-							<li class="classification"><!--全部分类-->
+							<li class="classification">
+							<!--全部分类-->
 								全部分类
 								<div class="dropdown-menu">
 									<dl class="position">
