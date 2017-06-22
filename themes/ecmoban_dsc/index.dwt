@@ -419,7 +419,7 @@
 					</dl>
 				</div>
 				<div class="section-5">
-					<a href="one_yuan_purchase.php" title="点击进入"><img src="themes/ecmoban_dsc/iamges/20170517/yyqg.jpg" alt="万元好物，1元抢购" />
+					<a href="one_yuan_purchase.php" title="点击进入"><img src="themes/ecmoban_dsc/iamges/20170517/yyqg.jpg" alt="万元好物，1元抢购" /></a>
 						<ul class="product-list clearfix">
 	                    <!--{foreach from=$res item=goods name=goods} -->
 	                    	<!-- {if $smarty.foreach.goods.iteration ==1  } -->
@@ -439,7 +439,7 @@
                         <!-- {elseif $smarty.foreach.goods.iteration == 8 } -->
                         		<li class="move margin-r-0" style="height: auto!important;">
                         <!--{/if}-->
-									<a href="goods.php?id={$goods.goods_id}"><img src="{$goods.goods_thumb}" alt="{$goods.goods_name}" width="290" /></a>
+									<a href="goods.php?id={$goods.goods_id}"><img src="{$goods.goods_thumb}" alt="{$goods.goods_name}" width="240" /></a>
 									<div class="content">
 										<h3>{$goods.goods_name|truncate:16}</h3>
 										<span>价值:&yen;{$goods.market_price}</span>

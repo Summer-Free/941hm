@@ -209,10 +209,13 @@
 	margin-bottom: 11px;
 	margin-right: 10px;
 	width: 292px;
-	/*height: 376px;*/
 	background-color: #fff;
 	border: 1px solid #b9b8b8;
 	box-shadow: 0 3px 5px 0 #b9b8b8;
+}
+.section-5 .product-list>li img {
+	margin: 12px auto 0;
+	max-width: 100%;
 }
 .section-5 .product-list h3 {
 	margin-left: -10px;
