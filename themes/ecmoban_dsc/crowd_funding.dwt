@@ -163,24 +163,34 @@
 
                 <!--slide banner start-->
                 <div class="slide-banner bg-color-f5f5f5">      
-                        <div class="w1200">
-                                <div class="JS-slide">
-                                        <ul class="content">
-                                                <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner1.jpg" alt="" /></a></li>
-                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner1.jpg" alt="" /></a></li>
-                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner1.jpg" alt="" /></a></li>
-                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner1.jpg" alt="" /></a></li>
-                                        </ul>
-                                        <a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
-                                        <a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
-                                        <ul class="point">
-                                                <li class="active"></li>
-                                                <li></li>
-                                                <li></li>
-                                                <li></li>
-                                        </ul>
-                                </div>
+                    <div class="w1200">
+                        <div class="JS-slide">
+                            <ul class="content">
+                            <!--{foreach from=$ggzc_res item=ggzc_res name=ggzc_res}-->
+                            <!-- {if $smarty.foreach.ggzc_res.iteration ==1  } -->
+                                <li class="active">
+                            <!-- {elseif $smarty.foreach.ggzc_res.iteration ==2  } -->
+                                <li>
+                            <!-- {elseif $smarty.foreach.ggzc_res.iteration ==3  } -->
+                                <li>
+                            <!-- {elseif $smarty.foreach.ggzc_res.iteration ==4  } --> 
+                                <li>
+                            <!--{/if}-->
+                                    <img src="{$ggzc_res.title_img}" alt="{$ggzc_res.title}" width="1200" height="525" />
+                                </li>
+                            <!--{/foreach}-->
+                               
+                            </ul>
+                            <a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
+                            <a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
+                            <ul class="point">
+                                    <li class="active"></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                            </ul>
                         </div>
+                    </div>
                 </div>
                 <!--slide banner end-->
         </div>
@@ -205,62 +215,39 @@
                     </ul>
                 </div> 
             </div>
-    
+            
+
+                
+           
             <!--热门推荐-->
             <div class="section-2 padding-b-15">
                 <h2 class="common-h2 clearfix"><span>热门推荐</span></h2>
                 <ul class="common-ul clearfix">
-                    <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
+                    <!--{foreach from=$tjzc_res item=tjzc_res name=tjzc_res}-->
+                    <!-- {if $smarty.foreach.tjzc_res.iteration ==1  } -->
+                        <li>
+                    <!-- {elseif $smarty.foreach.tjzc_res.iteration ==2  } -->
+                        <li>
+                    <!-- {elseif $smarty.foreach.tjzc_res.iteration ==3  } -->
+                        <li>
+                    <!-- {elseif $smarty.foreach.tjzc_res.iteration ==4  } -->
+                        <li class="move margin-r-0">
+                    <!--{/if}-->
+                    
+                        <a href="crowdfunding.php?act=detail&id={$tjzc_res.id}"><img src="{$tjzc_res.title_img}" alt="{$tjzc_res.title}" width="292" height="240" /></a>
                         <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
+                            <h3>{$tjzc_res.title}</h3>
                             <p class="progress"><span></span></p>
                             <div class="clearfix">
                                 <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
+                                <span class="s2"><i>{$tjzc_res.join_money}</i>已筹金额</span>
+                                <span class="border-r-0"><i>{$tjzc_res.join_num}</i>支持人数</span>
                             </div>
                         </div>
-                    </li>
-                    <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="margin-r-0">
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
+                        </li>
+                    <!--{/foreach}-->
                 </ul>
             </div>
-            
             <!--最新上架-->
             <div class="section-3 padding-b-15">
                 <h2 class="common-h2 clearfix">
@@ -268,65 +255,47 @@
                     <a href="#">查看更多</a>
                 </h2>
                 <ul class="common-ul clearfix">
-                    <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
+                <!--{foreach from=$newzc_res item=newzc_res name=newzc_res}-->
+                    <!-- {if $smarty.foreach.newzc_res.iteration ==1  } -->
+                        <li>
+                    <!-- {elseif $smarty.foreach.newzc_res.iteration ==2  } -->
+                        <li>
+                    <!-- {elseif $smarty.foreach.newzc_res.iteration ==3  } -->
+                        <li>
+                    <!-- {elseif $smarty.foreach.newzc_res.iteration ==4  } -->
+                        <li class="margin-r-0">
+                    <!--{/if}-->
+                        <a href="crowdfunding.php?act=detail&id={$newzc_res.id}"><img src="{$newzc_res.title_img}" alt="{$newzc_res.title}" width="292" height="240" /></a>
                         <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
+                            <h3>{$newzc_res.title}</h3>
                             <p class="progress"><span></span></p>
                             <div class="clearfix">
                                 <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
+                                <span class="s2"><i>{$newzc_res.join_money}</i>已筹金额</span>
+                                <span class="border-r-0"><i>{$newzc_res.join_num}</i>支持人数</span>
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="margin-r-0">
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
+                <!--{/foreach}-->
+                    
                 </ul>
             </div>
+            
+                
             
             <!--所有产品-->
             <div class="section-4 padding-b-15">
                 <h2 class="common-h2 clearfix"><span>所有产品</span></h2>
                 <ul class="common-ul clearfix">
-                    <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
+                    <!--{foreach from=$allzc_res item=allzc_res name=allzc_res}-->
+                    <!-- {if $allzc_res.id %4 ==  0  } -->
+                        <li class="margin-r-0">
+                    <!-- {elseif $allzc_res.id %4 != 0  } -->
+                        <li>
+                    <!--{/if}-->
+                        <a href="crowdfunding.php?act=detail&id={$allzc_res.id}"><img src="{$allzc_res.title_img}" alt="{$allzc_res.title}" width="292" height="240" /></a>
                         <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
+                            <h3>{$allzc_res.title}</h3>
                             <p class="progress"><span></span></p>
                             <div class="clearfix">
                                 <span class="s1"><i>162%</i>达成率</span>
@@ -335,282 +304,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="margin-r-0">
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="margin-r-0">
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="margin-r-0">
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="margin-r-0">
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="margin-r-0">
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="margin-r-0">
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
-                        <div class="wrap">
-                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
-                            <p class="progress"><span></span></p>
-                            <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
-                            </div>
-                        </div>
-                    </li>
+                    <!--{/foreach}-->
                 </ul>
             </div>
         </div>
@@ -621,11 +315,11 @@
                 <div class="foot-top">
                         <div class="w1200">
                                 <ul class="clearfix">
-                                        <li><i class="icon-baoz"></i>正品保障</li>
-                                        <li><i class="icon-qtbt"></i>七天包退</li>
-                                        <li><i class="icon-hprc"></i>好评如潮</li>
-                                        <li><i class="icon-sdfh"></i>闪电发货</li>
-                                        <li class="margin-r-0"><i class="icon-qwry"></i>权威荣誉</li>
+                                    <li><i class="icon-baoz"></i>正品保障</li>
+                                    <li><i class="icon-qtbt"></i>七天包退</li>
+                                    <li><i class="icon-hprc"></i>好评如潮</li>
+                                    <li><i class="icon-sdfh"></i>闪电发货</li>
+                                    <li class="margin-r-0"><i class="icon-qwry"></i>权威荣誉</li>
                                 </ul>
                         </div>
                 </div>
@@ -636,11 +330,11 @@
                                                 <dl>
                                                         <dt>关于941红木</dt>
                                                         <dd>
-                                                                <a href="#">&gt; 公司简介</a>
-                                                                <a href="#">&gt; 体验馆</a>
-                                                                <a href="#">&gt; 招商加盟</a>
-                                                                <a href="#">&gt; 诚聘英才</a>
-                                                                <a href="#">&gt; 联系我们</a>
+                                                            <a href="#">&gt; 公司简介</a>
+                                                            <a href="#">&gt; 体验馆</a>
+                                                            <a href="#">&gt; 招商加盟</a>
+                                                            <a href="#">&gt; 诚聘英才</a>
+                                                            <a href="#">&gt; 联系我们</a>
                                                         </dd>
                                                 </dl>
                                         </li>
@@ -649,10 +343,10 @@
                                                 <dl>
                                                         <dt>新手指南</dt>
                                                         <dd>
-                                                                <a href="#">&gt; 新用户注册</a>
-                                                                <a href="#">&gt; 支付方式说明</a>
-                                                                <a href="#">&gt; 订购家具流程</a>
-                                                                <a href="#">&gt; 体验馆购买指导</a>
+                                                            <a href="#">&gt; 新用户注册</a>
+                                                            <a href="#">&gt; 支付方式说明</a>
+                                                            <a href="#">&gt; 订购家具流程</a>
+                                                            <a href="#">&gt; 体验馆购买指导</a>
                                                         </dd>
                                                 </dl>
                                         </li>
@@ -661,10 +355,10 @@
                                                 <dl>
                                                         <dt>购物保障</dt>
                                                         <dd>
-                                                                <a href="#">&gt; 正品保证</a>
-                                                                <a href="#">&gt; 注册协议</a>
-                                                                <a href="#">&gt; 免费声明</a>
-                                                                <a href="#">&gt; 隐私保护</a>
+                                                            <a href="#">&gt; 正品保证</a>
+                                                            <a href="#">&gt; 注册协议</a>
+                                                            <a href="#">&gt; 免费声明</a>
+                                                            <a href="#">&gt; 隐私保护</a>
                                                         </dd>
                                                 </dl>
                                         </li>
@@ -673,8 +367,8 @@
                                                 <dl>
                                                         <dt>配送安装</dt>
                                                         <dd>
-                                                                <a href="#">&gt; 收货指南</a>
-                                                                <a href="#">&gt; 物流配送</a>
+                                                            <a href="#">&gt; 收货指南</a>
+                                                            <a href="#">&gt; 物流配送</a>
                                                         </dd>
                                                 </dl>
                                         </li>
@@ -683,11 +377,11 @@
                                                 <dl>
                                                         <dt>售后服务</dt>
                                                         <dd>
-                                                                <a href="#">&gt; 35天无理由退换货</a>
-                                                                <a href="#">&gt; 如何申请退款</a>
-                                                                <a href="#">&gt; 维修补件说明</a>
-                                                                <a href="#">&gt; 家具保修说明</a>
-                                                                <a href="#">&gt; 家具保养说明</a>
+                                                            <a href="#">&gt; 35天无理由退换货</a>
+                                                            <a href="#">&gt; 如何申请退款</a>
+                                                            <a href="#">&gt; 维修补件说明</a>
+                                                            <a href="#">&gt; 家具保修说明</a>
+                                                            <a href="#">&gt; 家具保养说明</a>
                                                         </dd>
                                                 </dl>
                                         </li>

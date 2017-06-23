@@ -78,7 +78,7 @@
 			<!--Navigation start-->
 			<div class="nav w1200 clearfix">
 				<div class="float-l">
-					<h1 class="logo">941红木</h1>
+                        <h1 class="logo" style="text-indent: 0;"><a href="index.php" style="display: inline-block;width: 100%;height: 100%;text-indent: -9999px;">941红木</a></h1>
 				</div>
 				<img class="float-r" src="themes/ecmoban_dsc/iamges/20170517/wechat.jpg" alt="二维码">
 				<div class="float-r margin-r-30">
@@ -89,10 +89,12 @@
 							<input type="text" />
 							<button class="icon-search"></button>
 						</form>
+						<h2 class="float-l" style="margin-top: 30px;color: #481010;">全球首家CBBDS传统艺术文化生态链运营模式平台</h2>
 					</div>	
 					<div class="nav-content">
 						<ul class="main-nav clearfix">
-							<li class="classification"><!--全部分类-->
+							<li class="classification">
+							<!--全部分类-->
 								全部分类
 								<div class="dropdown-menu">
 									<dl class="position">
@@ -109,7 +111,7 @@
 											<a href="category.php?id=113">沙发</a>
 											<a href="category.php?id=363">电视柜</a>
 											<a href="category.php?id=415">罗汉床</a>
-											<a href="category.php?id=418">中堂</a>
+											<a href="category.php?id=422">中堂</a>
 											<a href="category.php?id=421">花架</a>
 											<a href="category.php?id=422">鼓凳</a>
 											<a href="category.php?id=451">二联柜</a>
@@ -117,14 +119,14 @@
 										</dd>
 										<dt>书房 :</dt>
 										<dd>
-											<a href="category.php?id=365">书桌</a>
-											<a href="category.php?id=147">书柜</a>
-											<a href="category.php?id=424">博古架</a>
-											<a href="category.php?id=146">茶台</a>
-											<a href="category.php?id=410">茶边柜</a>
-											<a href="category.php?id=414">条案</a>
-											<a href="category.php?id=417">麻将桌</a>
-											<a href="category.php?id=419">电脑桌</a>
+											<a href="category.php?id=146">书桌</a>
+											<a href="category.php?id=419">书柜</a>
+											<a href="category.php?id=147">博古架</a>
+											<a href="category.php?id=365">茶台</a>
+											<a href="category.php?id=417">茶边柜</a>
+											<a href="category.php?id=426">条案</a>
+											<a href="category.php?id=410">麻将桌</a>
+											<a href="category.php?id=414">电脑桌</a>
 											<a href="category.php?id=309">大班台</a>
 										</dd>
 										<dt>卧室 :</dt>
@@ -146,7 +148,7 @@
 											<a href="category.php?id=407">海南黄花梨</a>
 											<a href="category.php?id=416">刺猬紫檀</a>
 											<a href="category.php?id=399">缅甸花梨</a>
-											<a href="category.php?id=422">非洲花梨</a>
+											<a href="category.php?id=442">非洲花梨</a>
 											<a href="category.php?id=443">非洲酸枝</a>
 											<a href="category.php?id=445">沉贵宝</a>
 											<a href="category.php?id=444">安哥拉紫檀</a>
@@ -240,11 +242,11 @@
 							</a>
 						</li>
 						<li>
-							<a class="margin-b-12" href="#" title="保养技师" style="background-color: #e4eef0;">
-								<img src="themes/ecmoban_dsc/iamges/20170517/byjs.jpg" alt="保养技师" />
-							</a>
-							<a href="gadget.php" title="小玩意儿" style="background-color: #d7fae8;">
+							<a class="margin-b-12" href="gadget.php" title="小玩意儿" style="background-color: #d7fae8;">
 								<img src="themes/ecmoban_dsc/iamges/20170517/xwye.jpg" alt="小玩意儿" />
+							</a>
+							<a href="#" title="保养技师" style="background-color: #e4eef0;">
+								<img src="themes/ecmoban_dsc/iamges/20170517/byjs.jpg" alt="保养技师" />
 							</a>
 						</li>
 						<li>
@@ -314,27 +316,27 @@
 					<div class="New-arrival clearfix">
 						<div class="float-l">
 							<h2>新品上市</h2>
-                                <div class="clearfix">
-                                    <!--{foreach from=$new_p item=new_p name=new_p}-->
-                                            <a href="goods.php?id={$new_p.goods_id}" target="_blank" alt="{$new_p.goods_name|escape:html}" 
-                                            <!-- {if $smarty.foreach.new_p.first} --> class= "move left-a margin-r-25" 
-                                            <!-- {elseif $smarty.foreach.new_p.last } --> class="move right-a" <!--{/if}--> >
-                                                <img src="/{$new_p.goods_thumb}" title="{$new_p.goods_name|escape:html}" width="260" height="363"/>
-                                                <span style="font-size:16px">{$new_p.goods_name|truncate:12}</span>
-                                            </a>    
-                                    <!--{/foreach}-->
-                                </div> 
-                                <div class="clearfix">
-								<!--
-	                                <a href="#" class="move left-a margin-r-25">
-										<img src="themes/ecmoban_dsc/iamges/20170517/product-4.jpg" alt="刺猬紫檀光泽感新中式太师椅">
-										<span>刺猬紫檀光泽感新中式太师椅</span>
-									</a>
-									<a href="#" class="move right-a">
-										<img src="themes/ecmoban_dsc/iamges/20170517/product-5.jpg" alt="风格化传统复古优雅大气官帽椅">
-										<span>风格化传统复古优雅大气官帽椅</span>
-									</a>
-                                -->
+                            <div class="clearfix">
+                                <!--{foreach from=$new_p item=new_p name=new_p}-->
+                                        <a href="goods.php?id={$new_p.goods_id}" target="_blank" alt="{$new_p.goods_name|escape:html}" 
+                                        <!-- {if $smarty.foreach.new_p.first} --> class= "move left-a margin-r-25" 
+                                        <!-- {elseif $smarty.foreach.new_p.last } --> class="move right-a" <!--{/if}--> >
+                                            <img src="{$new_p.goods_thumb}" title="{$new_p.goods_name|escape:html}" width="240" />
+                                            <span>{$new_p.goods_name|truncate:20}</span>
+                                        </a>    
+                                <!--{/foreach}-->
+                            </div> 
+                            <div class="clearfix">
+							<!--
+                                <a href="#" class="move left-a margin-r-25">
+									<img src="themes/ecmoban_dsc/iamges/20170517/product-4.jpg" alt="刺猬紫檀光泽感新中式太师椅">
+									<span>刺猬紫檀光泽感新中式太师椅</span>
+								</a>
+								<a href="#" class="move right-a">
+									<img src="themes/ecmoban_dsc/iamges/20170517/product-5.jpg" alt="风格化传统复古优雅大气官帽椅">
+									<span>风格化传统复古优雅大气官帽椅</span>
+								</a>
+                            -->
 							</div>
 						</div>
 						<div class="float-r">
@@ -359,8 +361,8 @@
 	                        		<!-- {elseif $smarty.foreach.xs_p.iteration ==2  } -->
 	                        			class="move right-a" 
 	                        		<!--{/if}--> >
-										<img src="{$xs_p.original_img}" alt="刺猬紫檀光泽感新中式太师椅" width="260" height="363"/>
-										<span style="font-size:16px">{$xs_p.goods_name|truncate:14}</span>
+										<img src="{$xs_p.original_img}" alt="刺猬紫檀光泽感新中式太师椅" width="240" />
+										<span>{$xs_p.goods_name|truncate:20}</span>
 									</a>
 							<!--{/foreach}-->
                                 </div>
@@ -419,27 +421,27 @@
 					</dl>
 				</div>
 				<div class="section-5">
-					<a href="one_yuan_purchase.php" title="点击进入"><img src="themes/ecmoban_dsc/iamges/20170517/yyqg.jpg" alt="万元好物，1元抢购" />
+					<a href="one_yuan_purchase.php" title="点击进入"><img src="themes/ecmoban_dsc/iamges/20170517/yyqg.jpg" alt="万元好物，1元抢购" /></a>
 						<ul class="product-list clearfix">
 	                    <!--{foreach from=$res item=goods name=goods} -->
 	                    	<!-- {if $smarty.foreach.goods.iteration ==1  } -->
-                        		<li class="move">
+                        		<li class="move" style="height: auto!important;">
                         <!-- {elseif $smarty.foreach.goods.iteration ==2  } -->
-                        		<li class="move">
+                        		<li class="move" style="height: auto!important;">
                         <!-- {elseif $smarty.foreach.goods.iteration ==3  } -->
-                        		<li class="move">
+                        		<li class="move" style="height: auto!important;">
                     	<!-- {elseif $smarty.foreach.goods.iteration ==4  } -->
-                        		<li class="move margin-r-0">
+                        		<li class="move margin-r-0" style="height: auto!important;">
                          <!-- {elseif $smarty.foreach.goods.iteration ==5  } -->
-                         		<li class="move">
+                         		<li class="move" style="height: auto!important;">
                          <!-- {elseif $smarty.foreach.goods.iteration ==6  } -->
-                         		<li class="move">
+                         		<li class="move" style="height: auto!important;">
                          <!-- {elseif $smarty.foreach.goods.iteration ==7  } -->
-                         		<li class="move">
+                         		<li class="move" style="height: auto!important;">
                         <!-- {elseif $smarty.foreach.goods.iteration == 8 } -->
-                        		<li class="move margin-r-0">
+                        		<li class="move margin-r-0" style="height: auto!important;">
                         <!--{/if}-->
-									<a href="goods.php?id={$goods.goods_id}"><img src="{$goods.goods_thumb}" alt="{$goods.goods_name}" width="292px" height="170px"></a>
+									<a href="goods.php?id={$goods.goods_id}"><img src="{$goods.goods_thumb}" alt="{$goods.goods_name}" width="240" /></a>
 									<div class="content">
 										<h3>{$goods.goods_name|truncate:16}</h3>
 										<span>价值:&yen;{$goods.market_price}</span>
@@ -540,8 +542,8 @@
 
 						<li>
 							<div class="icon">
-								<img src="themes/ecmoban_dsc/iamges/20170517/kt.png" alt="餐厅">
-								<span>餐厅</span>
+								<img src="themes/ecmoban_dsc/iamges/20170517/kt.png" alt="客厅">
+								<span>客厅</span>
 								<div class="show-box">
 									<a href="#">
 										<img src="themes/ecmoban_dsc/iamges/20170517/product-10.jpg" alt="">
@@ -565,8 +567,8 @@
 
 						<li>
 							<div class="icon">
-								<img src="themes/ecmoban_dsc/iamges/20170517/sf.png" alt="餐厅">
-								<span>餐厅</span>
+								<img src="themes/ecmoban_dsc/iamges/20170517/sf.png" alt="书房">
+								<span>书房</span>
 								<div class="show-box">
 									<a href="#">
 										<img src="themes/ecmoban_dsc/iamges/20170517/product-10.jpg" alt="">
@@ -590,8 +592,8 @@
 
 						<li>
 							<div class="icon">
-								<img src="themes/ecmoban_dsc/iamges/20170517/ws.png" alt="餐厅">
-								<span>餐厅</span>
+								<img src="themes/ecmoban_dsc/iamges/20170517/ws.png" alt="卧室">
+								<span>卧室</span>
 								<div class="show-box">
 									<a href="#">
 										<img src="themes/ecmoban_dsc/iamges/20170517/product-10.jpg" alt="">
@@ -743,6 +745,20 @@
 					<div class="copy">
 						<p><a href="#">首页</a><a href="#">意见反馈</a></p>
 						<p>ICP备案证书号: <a href="#">浙ICP备16002409号-1</a></p>
+						<p class="foot-wrap-icon">
+							<style>
+								.foot-wrap-icon img {
+									float: left;
+									margin-right: 87px;
+								}
+							</style>
+							<img src="themes/ecmoban_dsc/iamges/20170517/360.jpg" alt="" />
+							<img src="themes/ecmoban_dsc/iamges/20170517/cnnic.png" alt="" />
+							<img src="themes/ecmoban_dsc/iamges/20170517/hy.png" alt="" />
+							<img src="themes/ecmoban_dsc/iamges/20170517/sgs.png" alt="" />
+							<img src="themes/ecmoban_dsc/iamges/20170517/Vie.png" height="47" alt="" />
+							<img class="float-l margin-r-0" src="themes/ecmoban_dsc/iamges/20170517/zhanzhang.png" alt="" />
+						</p>
 					</div>
 				</div>
 			</div>
