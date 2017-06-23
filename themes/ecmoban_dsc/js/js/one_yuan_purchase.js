@@ -40,6 +40,6 @@ $(function() {
 	};
 
 	//调用
-	countDown(".count-down .time","2017/6/13 00:00:00");
+	countDown(".count-down .time","2018/6/13 00:00:00");
 
 });

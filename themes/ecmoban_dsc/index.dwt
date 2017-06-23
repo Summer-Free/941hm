@@ -78,7 +78,9 @@
 			<!--Navigation start-->
 			<div class="nav w1200 clearfix">
 				<div class="float-l">
+
                         <h1 class="logo" style="text-indent: 0;"><a href="index.php" style="display: inline-block;width: 100%;height: 100%;text-indent: -9999px;">941红木</a></h1>
+
 				</div>
 				<img class="float-r" src="themes/ecmoban_dsc/iamges/20170517/wechat.jpg" alt="二维码">
 				<div class="float-r margin-r-30">
@@ -208,7 +210,8 @@
 							<h4>Hi~你好！</h4>		
 							<img src="themes/ecmoban_dsc/iamges/20170517/touxiang.png" alt="头像" />
 							<div class="clearfix">
-								{* 941红木 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'}
+								{* 941红木 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}
+								{insert name='member_info'}
 							</div>	
 							<ul>
 								<li class="clearfix">
@@ -322,21 +325,11 @@
                                         <!-- {if $smarty.foreach.new_p.first} --> class= "move left-a margin-r-25" 
                                         <!-- {elseif $smarty.foreach.new_p.last } --> class="move right-a" <!--{/if}--> >
                                             <img src="{$new_p.goods_thumb}" title="{$new_p.goods_name|escape:html}" width="240" />
-                                            <span>{$new_p.goods_name|truncate:20}</span>
+                                            <span>{$new_p.goods_name|truncate:20}</span
                                         </a>    
                                 <!--{/foreach}-->
                             </div> 
                             <div class="clearfix">
-							<!--
-                                <a href="#" class="move left-a margin-r-25">
-									<img src="themes/ecmoban_dsc/iamges/20170517/product-4.jpg" alt="刺猬紫檀光泽感新中式太师椅">
-									<span>刺猬紫檀光泽感新中式太师椅</span>
-								</a>
-								<a href="#" class="move right-a">
-									<img src="themes/ecmoban_dsc/iamges/20170517/product-5.jpg" alt="风格化传统复古优雅大气官帽椅">
-									<span>风格化传统复古优雅大气官帽椅</span>
-								</a>
-                            -->
 							</div>
 						</div>
 						<div class="float-r">
@@ -391,8 +384,8 @@
 								<img src="themes/ecmoban_dsc/iamges/20170517/oel.jpg" alt="欧尔利"></a>
 							<a href="brandn.php?id=19" title="洛克王">
 								<img src="themes/ecmoban_dsc/iamges/20170517/lkw.jpg" alt="洛克王"></a>
-							<a class="margin-r-0" href="brandn.php?id=6" title="顶峰红木">
-								<img src="themes/ecmoban_dsc/iamges/20170517/dfhm.jpg" alt="顶峰红木">
+							<a class="margin-r-0" href="brandn.php?id=21" title="京华红木">
+								<img src="themes/ecmoban_dsc/iamges/20170517/jhhm.jpg" alt="京华红木">
 							</a>
 						</dd>
 						<dd class="clearfix list-2">	
@@ -414,8 +407,8 @@
 							<a href="brandn.php?id=8" title="乾宝阁">
 								<img src="themes/ecmoban_dsc/iamges/20170517/qbg.jpg" alt="乾宝阁">
 							</a>
-							<a class="margin-r-0" href="brandn.php?id=4" title="儒文阁">
-								<img src="themes/ecmoban_dsc/iamges/20170517/rwg.jpg" alt="儒文阁">
+							<a class="margin-r-0" href="brandn.php?id=39" title="良宵">
+								<img src="themes/ecmoban_dsc/iamges/20170517/lxhm.jpg" alt="良宵">
 							</a>
 						</dd>
 					</dl>

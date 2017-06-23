@@ -51,7 +51,7 @@
                 <!--Navigation start-->
                 <div class="nav w1200 clearfix">
                         <div class="float-l">
-                                <h1 class="logo">941红木</h1>
+                            <h1 class="logo" style="text-indent: 0;"><a href="index.php" style="display: inline-block;width: 100%;height: 100%;text-indent: -9999px;">941红木</a></h1>
                         </div>
                         <img class="float-r" src="themes/ecmoban_dsc/iamges/20170517/wechat.jpg" alt="二维码">
                         <div class="float-r margin-r-30">
@@ -62,6 +62,7 @@
                                                 <input type="text" />
                                                 <button class="icon-search"></button>
                                         </form>
+                                        <h2 class="float-l" style="margin-top: 30px;color: #481010;">全球首家CBBDS传统艺术文化生态链运营模式平台</h2>
                                 </div>  
                                 <div class="nav-content">
                                         <ul class="main-nav clearfix">
@@ -147,10 +148,10 @@
                                                             </dl>
 							</div>	
                                                 </li>
-                                                <li class="active"><a href="index.php">首页</a></li>
+                                                <li><a href="index.php">首页</a></li>
 							<li><a href="#">智能体验馆</a></li>
 							<li><a href="#">智能场景定制</a></li>
-							<li><a href="crowd_funding.php">匠物众筹</a></li>
+							<li class="active"><a href="crowd_funding.php">匠物众筹</a></li>
 							<li><a href="one_yuan_purchase.php">一元购</a></li>
 							<li><a href="#">禅学院</a></li>
 							<li><a href="#">保养技师</a></li>
@@ -389,6 +390,20 @@
                                 <div class="copy">
                                         <p><a href="#">首页</a><a href="#">意见反馈</a></p>
                                         <p>ICP备案证书号: <a href="#">浙ICP备16002409号-1</a></p>
+                                        <p class="foot-wrap-icon">
+                                            <style>
+                                                .foot-wrap-icon img {
+                                                    float: left;
+                                                    margin-right: 87px;
+                                                }
+                                            </style>
+                                            <img src="themes/ecmoban_dsc/iamges/20170517/360.jpg" alt="" />
+                                            <img src="themes/ecmoban_dsc/iamges/20170517/cnnic.png" alt="" />
+                                            <img src="themes/ecmoban_dsc/iamges/20170517/hy.png" alt="" />
+                                            <img src="themes/ecmoban_dsc/iamges/20170517/sgs.png" alt="" />
+                                            <img src="themes/ecmoban_dsc/iamges/20170517/Vie.png" height="47" alt="" />
+                                            <img class="float-l margin-r-0" src="themes/ecmoban_dsc/iamges/20170517/zhanzhang.png" alt="" />
+                                        </p>
                                 </div>
                         </div>
                 </div>
