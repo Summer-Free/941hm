@@ -20,7 +20,7 @@
 		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/footer.css">
 	</head>
 	<body>
-
+		
 		<!--header start-->
 		<div id="header">
 			
@@ -50,6 +50,7 @@
 				</ul>
 			</div>			
 			<!--top slide bar end-->
+			<!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
 			
 			<!--top start-->
 			<div class="top">
@@ -217,7 +218,7 @@
 								<li class="clearfix">
 									<a class="Notice-a" href="article_cat.php?id=13" title="公告"></a>
 									<a class="use-a" href="free_trial.php" title="0元使用"></a>
-									<a class="vip-a" href="#" title="会员中心"></a>
+									<a class="vip-a" href="user.php" title="会员中心"></a>
 								</li>
 							</ul>				
 						</div>
@@ -757,6 +758,8 @@
 			</div>
 		</div>
 		
+		
+		<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
 		<!--JQ基础库-->
 		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/jquery-1.9.1.min.js"></script>
 		<!--自定义方法-->
