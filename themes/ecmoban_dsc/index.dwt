@@ -322,7 +322,7 @@
                                         <!-- {if $smarty.foreach.new_p.first} --> class= "move left-a margin-r-25" 
                                         <!-- {elseif $smarty.foreach.new_p.last } --> class="move right-a" <!--{/if}--> >
                                             <img src="{$new_p.goods_thumb}" title="{$new_p.goods_name|escape:html}" width="240" />
-                                            <span>{$new_p.goods_name}</span>
+                                            <span>{$new_p.goods_name|truncate:20}</span>
                                         </a>    
                                 <!--{/foreach}-->
                             </div> 
@@ -361,7 +361,7 @@
 	                        		<!-- {elseif $smarty.foreach.xs_p.iteration ==2  } -->
 	                        			class="move right-a" 
 	                        		<!--{/if}--> >
-										<img src="{$xs_p.original_img}" alt="刺猬紫檀光泽感新中式太师椅" width="240" />
+										<img src="{$xs_p.original_img}" alt="{$xs_p.goods_name|truncate:20}" width="240" />
 										<span>{$xs_p.goods_name|truncate:20}</span>
 									</a>
 							<!--{/foreach}-->
