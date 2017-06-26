@@ -443,7 +443,7 @@
                         <!--{/if}-->
 									<a href="goods.php?id={$goods.goods_id}"><img src="{$goods.goods_thumb}" alt="{$goods.goods_name}" width="240" /></a>
 									<div class="content">
-										<h3>{$goods.goods_name|truncate:16}</h3>
+										<h3>{$goods.goods_name}</h3>
 										<span>价值:&yen;{$goods.market_price}</span>
 										<div class="progress">
 											<div></div>
