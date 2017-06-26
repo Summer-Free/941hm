@@ -125,7 +125,8 @@
 	top: 46px;
 	left: 0;
 	padding-top: 10px;
-	width: 160px;
+	width: 100%;
+	min-width: 160px;
 	z-index: 5;
 	box-shadow: 0 2px 2px 0 #d9d8d8
 }

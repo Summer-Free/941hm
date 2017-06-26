@@ -315,7 +315,7 @@
 				<div class="section-3 bg-color-f5f5f5">
 					<div class="New-arrival clearfix">
 						<div class="float-l">
-							<h2>新品上市</h2>
+							<h2><a href="goods.php">新品上市</a></h2>
                             <div class="clearfix">
                                 <!--{foreach from=$new_p item=new_p name=new_p}-->
                                         <a href="goods.php?id={$new_p.goods_id}" target="_blank" alt="{$new_p.goods_name|escape:html}" 
@@ -342,7 +342,7 @@
 						<div class="float-r">
 							<img src="themes/ecmoban_dsc/iamges/20170517/tyg.png" alt="体验馆">
 							<div class="wrap-a clearfix">
-								<a class="left-a" href="#">线上体验馆</a>
+								<a class="left-a" href="javascript:void(0);">线上体验馆</a>
 								<a href="experience_hall.php">线下体验馆</a>
 							</div>
 						</div>
@@ -352,7 +352,7 @@
 							<img src="themes/ecmoban_dsc/iamges/20170517/srdz.png" alt="体验馆">
 						</div>
 						<div class="float-r">
-							<h2>私人订制</h2>
+							<h2><a href="goods.php">限时优惠</a></h2>
 								<div class="clearfix">
 	                        <!--{foreach from=$xs_p item=xs_p name=xs_p} -->
 	                        		<a href="goods.php?id={$xs_p.goods_id}"
@@ -465,12 +465,12 @@
 			</div>
 			
 			<!--商家入驻/广告位-->
-			<div class="sidebar"><a href="#" title="商家入驻"><img src="themes/ecmoban_dsc/iamges/20170517/sidebar.jpg" alt="商家入驻"></a></div>
+			<div class="sidebar"><a href="article.php?id=117" title="商家入驻"><img src="themes/ecmoban_dsc/iamges/20170517/sidebar.jpg" alt="商家入驻"></a></div>
 			<div class="w1200 margin-t-8">
 				<div class="section-6 bg-color-f5f5f5">
 					<ul class="Crowd-funding clearfix">
 						<li class="make-new-world">
-							<a href="#" title="点击进入"><img src="themes/ecmoban_dsc/iamges/20170517/make-new-world.jpg" alt="众筹美物"></a>
+							<a href="crowd_funding.php" title="点击进入"><img src="themes/ecmoban_dsc/iamges/20170517/make-new-world.jpg" alt="众筹美物"></a>
 						</li>
 						<!--{foreach from=$zc_p item=zc_p name=zc_p}-->
 							<!-- {if $smarty.foreach.zc_p.iteration ==1  } --> 
@@ -517,8 +517,10 @@
 					<ul class="clearfix">
 						<li>
 							<div class="icon">
-								<img src="themes/ecmoban_dsc/iamges/20170517/ct.png" alt="餐厅">
-								<span>餐厅</span>
+								<a href="category.php?id=2">
+									<img src="themes/ecmoban_dsc/iamges/20170517/ct.png" alt="餐厅">
+									<span>餐厅</span>
+								</a>	
 								<div class="show-box">
 									<a href="#">
 										<img src="themes/ecmoban_dsc/iamges/20170517/product-10.jpg" alt="">
@@ -542,8 +544,10 @@
 
 						<li>
 							<div class="icon">
-								<img src="themes/ecmoban_dsc/iamges/20170517/kt.png" alt="客厅">
-								<span>客厅</span>
+								<a href="category.php?id=3">
+									<img src="themes/ecmoban_dsc/iamges/20170517/kt.png" alt="客厅">
+									<span>客厅</span>
+								</a>
 								<div class="show-box">
 									<a href="#">
 										<img src="themes/ecmoban_dsc/iamges/20170517/product-10.jpg" alt="">
@@ -567,8 +571,10 @@
 
 						<li>
 							<div class="icon">
-								<img src="themes/ecmoban_dsc/iamges/20170517/sf.png" alt="书房">
-								<span>书房</span>
+								<a href="category.php?id=4">
+									<img src="themes/ecmoban_dsc/iamges/20170517/sf.png" alt="书房">
+									<span>书房</span>
+								</a>
 								<div class="show-box">
 									<a href="#">
 										<img src="themes/ecmoban_dsc/iamges/20170517/product-10.jpg" alt="">
@@ -592,8 +598,10 @@
 
 						<li>
 							<div class="icon">
-								<img src="themes/ecmoban_dsc/iamges/20170517/ws.png" alt="卧室">
-								<span>卧室</span>
+								<a href="category.php?id=5">
+									<img src="themes/ecmoban_dsc/iamges/20170517/ws.png" alt="卧室">
+									<span>卧室</span>
+								</a>
 								<div class="show-box">
 									<a href="#">
 										<img src="themes/ecmoban_dsc/iamges/20170517/product-10.jpg" alt="">
@@ -618,7 +626,7 @@
 				</div>
 
 				<div class="section-8 margin-b-30">
-					<h2 class="bg-color-f5f5f5"><i>套装推荐</i></h2>
+					<h2 class="bg-color-f5f5f5"><a href="#">套装推荐</a></h2>
 					<img class="margin-b-30" src="themes/ecmoban_dsc/iamges/20170517/product-11.jpg" alt="">
 					<img src="themes/ecmoban_dsc/iamges/20170517/product-12.jpg" alt="">
 				</div>

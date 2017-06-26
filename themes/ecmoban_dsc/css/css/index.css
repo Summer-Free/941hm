@@ -90,22 +90,23 @@
 .section-3 .Personal-tailor {
 	padding: 64px 22px 54px 10px;
 }
-.section-3 .New-arrival h2,
-.section-3 .Personal-tailor h2 {
+.section-3 .New-arrival h2 a,
+.section-3 .Personal-tailor h2 a {
 	background-image: url(../../iamges/20170517/sprite-1.png);
 	background-repeat: no-repeat;
 }
-.section-3 .Personal-tailor h2,
-.section-3 .New-arrival h2 {
+.section-3 .Personal-tailor h2 a,
+.section-3 .New-arrival h2 a {
+	display: block;
 	margin: 0 auto 38px;
 	width: 288px;
 	height: 59px;
 	text-indent: -9999px;
 }
-.section-3 .New-arrival h2 {
+.section-3 .New-arrival h2 a {
 	background-position: 0 -87px;
 }
-.section-3 .Personal-tailor h2 {
+.section-3 .Personal-tailor h2 a {
 	background-position: 0 -168px;
 }
 .section-3 .New-arrival .float-l .left-a,
@@ -427,7 +428,7 @@
 	padding: 15px 0 30px;
 	text-align: center;
 }
-.section-8 i {
+.section-8 a {
 	display: inline-block;
 	width: 288px;
 	height: 59px;
