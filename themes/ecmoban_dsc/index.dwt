@@ -212,7 +212,7 @@
 								<li class="clearfix">
 									<a class="Notice-a" href="article_cat.php?id=13" title="公告"></a>
 									<a class="use-a" href="free_trial.php" title="0元使用"></a>
-									<a class="vip-a" href="#" title="会员中心"></a>
+									<a class="vip-a" href="user.php" title="会员中心"></a>
 								</li>
 							</ul>				
 						</div>
