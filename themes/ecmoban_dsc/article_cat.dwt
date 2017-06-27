@@ -61,7 +61,7 @@
         <!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
     </div>
 </div>
-<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/page_footer(1).lbi" --><!-- #EndLibraryItem -->
 {* 941红木 提醒您：动态载入user_menu_position.lbi，显示首页分类小广告 *}{insert name='user_menu_position'}
 <script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.purebox.js"></script>
 </body>
