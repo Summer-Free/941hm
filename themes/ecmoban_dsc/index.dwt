@@ -531,7 +531,7 @@
 
 		
 		
-		<!-- #BeginLibraryItem "/library/page_footer(1).lbi" --><!-- #EndLibraryItem -->
+		<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
 		<!--JQ基础库-->
 		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/jquery-1.9.1.min.js"></script>
 		<!--自定义方法-->
