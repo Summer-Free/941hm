@@ -36,6 +36,7 @@
                             <input type="text" />
                             <button class="icon-search"></button>
                         </form>
+                        <h2 class="float-l" style="margin-top: 30px;color: #481010;">全球首家CBBDS传统艺术文化生态链运营模式平台</h2>
                     </div>  
                     <div class="nav-content">
                         <ul class="main-nav clearfix">
