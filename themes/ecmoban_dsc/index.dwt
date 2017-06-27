@@ -291,12 +291,14 @@
 							<h2><a href="goods.php">新品上市</a></h2>
                             <div class="clearfix">
                                 <!--{foreach from=$new_p item=new_p name=new_p}-->
+                                	<li>
                                         <a href="goods.php?id={$new_p.goods_id}" target="_blank" alt="{$new_p.goods_name|escape:html}" 
                                         <!-- {if $smarty.foreach.new_p.first} --> class= "move left-a margin-r-25" 
                                         <!-- {elseif $smarty.foreach.new_p.last } --> class="move right-a" <!--{/if}--> >
                                             <img src="{$new_p.goods_thumb}" title="{$new_p.goods_name|escape:html}" width="240" />
                                             <span>{$new_p.goods_name|truncate:20}</span>
                                         </a>    
+                                    </li>
                                 <!--{/foreach}-->
                             </div> 
                             <div class="clearfix">

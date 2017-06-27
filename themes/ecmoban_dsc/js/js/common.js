@@ -162,7 +162,7 @@
 	$.fn.slideScroll = function(options) {
 
 		var init = {
-			duration: 500,
+			duration: 300,
 			speed: 3000,
 			autoPlay: true
 		};
@@ -205,7 +205,7 @@
 
 			//判断是否自动播放
 			if(ops.autoPlay) {
-
+				console.log(ops.duration)
 				timer = setInterval(action,ops.speed);
 
 			};

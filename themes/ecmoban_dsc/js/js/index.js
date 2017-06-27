@@ -7,8 +7,8 @@ $(function() {
 	$(".slide-banner").slideFade();
 
 	//每日秒杀,图片滚动
-	$(".slide-mrms").slideScroll();
+	$(".slide-mrms").slideScroll({
+		speed: 1500
+	});
 
-	//品牌街,图片滚动
-	$(".section-4 .slide-ppj").slideScroll({speed: 5000,duration: 1500});
 });
