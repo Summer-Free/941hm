@@ -17,7 +17,7 @@ $(function() {
 	});
 
 	//限时优惠,图片滚动
-	$(".Personal-tailor .wrap-slide ").slideScroll({
+	$(".Personal-tailor .wrap-slide").slideScroll({
 		speed: 2000
 	});
 
