@@ -24,11 +24,9 @@ small{font-size:12px;}
 
 ul,ol{list-style:none;}
 
-<<<<<<< .merge_file_a08024
 a{text-decoration:none;}
-=======
+
 a{text-decoration:none;outline: none;}
->>>>>>> .merge_file_a01896
 
 a:hover{text-decoration:none;}
 

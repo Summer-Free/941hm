@@ -90,15 +90,6 @@
 .section-3 .Personal-tailor {
 	padding: 64px 22px 54px 10px;
 }
-<<<<<<< .merge_file_a09152
-.section-3 .New-arrival h2,
-.section-3 .Personal-tailor h2 {
-	background-image: url(../../iamges/20170517/sprite-1.png);
-	background-repeat: no-repeat;
-}
-.section-3 .Personal-tailor h2,
-.section-3 .New-arrival h2 {
-=======
 .section-3 .New-arrival h2 a,
 .section-3 .Personal-tailor h2 a {
 	background-image: url(../../iamges/20170517/sprite-1.png);
@@ -107,23 +98,15 @@
 .section-3 .Personal-tailor h2 a,
 .section-3 .New-arrival h2 a {
 	display: block;
->>>>>>> .merge_file_a08824
 	margin: 0 auto 38px;
 	width: 288px;
 	height: 59px;
 	text-indent: -9999px;
 }
-<<<<<<< .merge_file_a09152
-.section-3 .New-arrival h2 {
-	background-position: 0 -87px;
-}
-.section-3 .Personal-tailor h2 {
-=======
 .section-3 .New-arrival h2 a {
 	background-position: 0 -87px;
 }
 .section-3 .Personal-tailor h2 a {
->>>>>>> .merge_file_a08824
 	background-position: 0 -168px;
 }
 .section-3 .New-arrival .float-l .left-a,
@@ -236,14 +219,11 @@
 	max-width: 100%;
 }
 .section-5 .product-list h3 {
-<<<<<<< .merge_file_a09152
 	margin-left: -10px;
 	margin-bottom: 5px;
 	font-size: 17px;
-=======
 	margin-bottom: 5px;
 	font-size: 16px;
->>>>>>> .merge_file_a08824
 	color: #393939;
 	font-weight: normal;
 }
@@ -451,11 +431,7 @@
 	padding: 15px 0 30px;
 	text-align: center;
 }
-<<<<<<< .merge_file_a09152
-.section-8 i {
-=======
 .section-8 a {
->>>>>>> .merge_file_a08824
 	display: inline-block;
 	width: 288px;
 	height: 59px;

@@ -1557,7 +1557,7 @@ a.btn-stages:hover {
 .form .item label.strengthB b{ width:67%;}
 .form .item label.strengthC b{ width:100%;}
 .ecsc-registLogin{ width:100%; position:relative;padding:50px 0;}
-.ecsc-registLogin .registLogin{ width:100%; height:70px; position:relative; z-index:999;}
+.ecsc-registLogin .registLogin{ width:100%; position:relative; z-index:999;}
 .form .item .hole{ height:40px; line-height:40px; float:left; padding-left:0px; cursor:pointer;}
 .form .agreement{ margin-top:14px; color:#3a78bf; *margin-top:9px;}
 .form .agreement:hover{ color:#ec5051;}
@@ -1566,8 +1566,8 @@ a.btn-stages:hover {
 
 .ecsc-register{ padding-bottom:0;}
 
-.registLogin-header{ position:relative; overflow:hidden;}
-.registLogin-header .logo{ display:block; width:220px; height:70px; float:left;}
+.registLogin-header{ position:relative;padding-bottom: 20px;}
+.registLogin-header .logo{ display:block; width:220px; float:left;}
 .registLogin-header b{ display:inline-block; position:absolute; top:15px; left:255px; width:330px; height:35px; background:url(images/regist-word.png) no-repeat;}
 .registLogin-header .registLogin-header-fr{ position:absolute; right:0; bottom:26px; color:#696969; font-family:"microsoft yahei"; }
 .registLogin-header .jump{ color:#3894ea;}

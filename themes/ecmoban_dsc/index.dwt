@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="zh-cn">
 	<head>
-        <!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem --><!--首页CSS以及部分通用部分的合并LBI-->
+	    <!--首页CSS以及部分通用部分的合并LBI-->
+        <!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem -->
 		<!--首页专用-->
 		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/index.css">
 	</head>
@@ -39,13 +40,7 @@
 			<!--top start-->
             <div class="top">
                 <div class="w1200 clearfix">
-                    <div class="float-l">
-                        欢迎浏览941红木网
-                        <span class="dropdown">用户名<i class="icon-down">箭头</i></span>
-                        <ul>
-                            <li style="text-align:center;">some text</li>
-                        </ul>
-                    </div>
+                    <div class="float-l">欢迎浏览941红木网<span style="padding-left: 18px;">全球首家CBBDS传统艺术文化生态链运营模式平台</span></div>
                     <div class="float-r">
                         <ul class="clearfix">
                             <li><a href="history_list.php">我的足迹</a></li>
@@ -63,7 +58,7 @@
             <!--Navigation start-->
             <div class="nav w1200 clearfix">
                 <div class="float-l">
-                    <h1 class="logo">941红木</h1>
+                    <h1 class="logo"><a href="index.php">941红木</a></h1>
                 </div>
                 <img class="float-r" src="themes/ecmoban_dsc/iamges/20170517/wechat.jpg" alt="二维码">
                 <div class="float-r margin-r-30">
@@ -74,11 +69,11 @@
                             <input type="text" />
                             <button class="icon-search"></button>
                         </form>
-                        <h2 class="float-l" style="margin-top: 30px;color: #481010;">全球首家CBBDS传统艺术文化生态链运营模式平台</h2>
                     </div>  
                     <div class="nav-content">
                         <ul class="main-nav clearfix">
-                            <li class="classification"><!--全部分类-->
+                            <li class="classification">
+                            	<!--全部分类-->
                                 全部分类
                                 <div class="dropdown-menu">
                                     <dl class="position">
@@ -185,31 +180,17 @@
 			<div class="slide-banner">
 				<div class="JS-slide">
 					<ul class="content">
-						<li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/banner-1.jpg" alt=""></a></li>
-						<li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/banner-1.jpg" alt=""></a></li>
-						<li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/banner-1.jpg" alt=""></a></li>
-						<li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/banner-1.jpg" alt=""></a></li>
+						<li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/banner-1.jpg" width="1901" height="525" alt=""></a></li>
+						<li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/banner-1.jpg" width="1901" height="525" alt=""></a></li>
+						<li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/banner-1.jpg" width="1901" height="525" alt=""></a></li>
+						<li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/banner-1.jpg" width="1901" height="525" alt=""></a></li>
 					</ul>
 					<div class="w1200">
 						<a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
 						<a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
-
+						
 						<!--login-->
-						<div class="login">
-							<h4>Hi~你好！</h4>		
-							<img src="themes/ecmoban_dsc/iamges/20170517/touxiang.png" alt="头像" />
-							<div class="clearfix">
-								{* 941红木 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}
-								{insert name='member_info'}
-							</div>	
-							<ul>
-								<li class="clearfix">
-									<a class="Notice-a" href="article_cat.php?id=13" title="公告"></a>
-									<a class="use-a" href="free_trial.php" title="0元使用"></a>
-									<a class="vip-a" href="user.php" title="会员中心"></a>
-								</li>
-							</ul>				
-						</div>
+						{insert name='member_info'}
 					</div>
 					<ul class="point">
 						<li class="active"></li>
@@ -656,11 +637,9 @@
 		</div>
 		<!--main body end-->
 
-		<!--footer start-->
-		
-		
-		
+		<!--footer-->
 		<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+
 		<!--JQ基础库-->
 		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/jquery-1.9.1.min.js"></script>
 		<!--自定义方法-->

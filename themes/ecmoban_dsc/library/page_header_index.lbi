@@ -1,13 +1,7 @@
-<!--top start-->
+            <!--top start-->
             <div class="top">
                 <div class="w1200 clearfix">
-                    <div class="float-l">
-                        欢迎浏览941红木网
-                        <span class="dropdown">用户名<i class="icon-down">箭头</i></span>
-                        <ul>
-                            <li style="text-align:center;">some text</li>
-                        </ul>
-                    </div>
+                    <div class="float-l">欢迎浏览941红木网<span style="padding-left: 18px;">全球首家CBBDS传统艺术文化生态链运营模式平台</span></div>
                     <div class="float-r">
                         <ul class="clearfix">
                             <li><a href="history_list.php">我的足迹</a></li>
@@ -25,7 +19,7 @@
             <!--Navigation start-->
             <div class="nav w1200 clearfix">
                 <div class="float-l">
-                    <h1 class="logo">941红木</h1>
+                    <h1 class="logo"><a href="index.php">941红木</a></h1>
                 </div>
                 <img class="float-r" src="themes/ecmoban_dsc/iamges/20170517/wechat.jpg" alt="二维码">
                 <div class="float-r margin-r-30">

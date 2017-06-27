@@ -1,16 +1,35 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 {if $user_info}
-
-<span>
-	<a href="{$site_domain}user.php">{$user_info.nick_name}</a>
-    	
-    </a>
-</span>
-<span><a href="{$site_domain}user.php?act=logout" class="link-regist float-r">{$lang.user_logout}</a></span>
+	<div class="login">
+		<h4 class="clearfix">
+			<a class="float-l" href="user.php?act=account_safe">账号管理</a>
+			<a class="float-r" href="{$site_domain}user.php?act=logout">退出</a>
+		</h4>		
+		<img src="themes/ecmoban_dsc/iamges/20170517/touxiang.png" alt="头像" />
+		<div class="clearfix" style="text-align:center;color: rgb(253,183,90);">{$user_info.nick_name}</div>	
+		<ul>
+			<li class="clearfix">
+				<a class="Notice-a" href="article_cat.php?id=13" title="公告"></a>
+				<a class="use-a" href="free_trial.php" title="0元使用"></a>
+				<a class="vip-a" href="user.php" title="会员中心"></a>
+			</li>
+		</ul>				
+	</div>
 {else}
-	<a href="{$site_domain}user.php" class="link-login style-red">请登录</a>
-	{if $shop_reg_closed neq 1}
-    <a class="float-r" href="user.php?act=register" class="link-regist float-r">注册</a>
-    {/if}
+<div class="login">
+	<h4>Hi~你好！</h4>		
+	<img src="themes/ecmoban_dsc/iamges/20170517/touxiang.png" alt="头像" />
+	<div class="clearfix">
+		<a class="login-btn" href="{$site_domain}user.php">登录</a>
+		<a class="register-btn" href="user.php?act=register">注册</a>
+	</div>	
+	<ul>
+		<li class="clearfix">
+			<a class="Notice-a" href="article_cat.php?id=13" title="公告"></a>
+			<a class="use-a" href="free_trial.php" title="0元使用"></a>
+			<a class="vip-a" href="user.php" title="会员中心"></a>
+		</li>
+	</ul>				
+</div>
 {/if}

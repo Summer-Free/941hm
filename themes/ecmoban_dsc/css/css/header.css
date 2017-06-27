@@ -1,4 +1,3 @@
-
 .slide-top-bar {
 	height: 59px;
 	overflow: hidden;	
@@ -55,24 +54,6 @@
 	line-height: 30px;
 	background-color: #f7f7f7;
 }
-#header .top .dropdown {
-	position: relative;
-	display: inline-block;
-	padding: 0 25px;
-}
-#header .top .dropdown i {
-	position: absolute;
-	top: 50%;
-	right: 8px;
-	margin-top: -3px;
-	width: 10px;
-	height: 6px;
-	text-indent: -9999px;
-	background-position: 0 -494px;
-}
-#header .top .dropdown:hover i {
-	background-position: 0 -486px;
-}
 #header .top .float-l {
 	position: relative;
 }
@@ -99,6 +80,9 @@
 }
 #header .nav .logo {
 	margin: 7px 0 7px 30px;
+}
+#header .nav .logo a {
+	display: block;
 	width: 89px;
 	height: 78px;
 	text-indent: -9999px;
@@ -145,24 +129,21 @@
 #header .wrap-search .icon-cart {
 	position: relative;
 	margin-top: 24px;
-	margin-right: 20px;
+	margin-right: 25px;
 	width: 15px;
 	height: 15px;
 	background-position: -29px -485px;	
 }
 #header .wrap-search .tooltip {
 	position: absolute;
-	top: -17px;
-	right: -14px;
+	top: -3px;
+	right: -22px;
 	width: 23px;
 	height: 23px;
 	line-height: 23px;
 	font-size: 12px;
-	color: #fff;
+	color: #ff0000;
 	text-align: center;
-	background-image: url(../../iamges/20170517/sprite-1.png);
-	background-repeat: no-repeat;
-	background-position: -171px 0;
 }
 #header .wrap-search img {
 	margin-top: 5px;
@@ -225,7 +206,6 @@
 	border-bottom: none;
 }
 #header .slide-banner {
-	overflow: hidden;
 	box-shadow: 0 1px 1px #e0e0e0;
 }
 #header .slide-banner .login {
