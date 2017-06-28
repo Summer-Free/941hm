@@ -351,11 +351,7 @@
             </div>
         </div>
         <!--main body end-->
-        <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
-        <!--JQ基础库-->
-        <script type="text/javascript" src="themes/ecmoban_dsc/js/js/jquery-1.9.1.min.js"></script>
-        <!--自定义方法-->
-        <script type="text/javascript" src="themes/ecmoban_dsc/js/js/common.js"></script>    
+        <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->  
         <!--本页JS-->     
         <script type="text/javascript" src="themes/ecmoban_dsc/js/js/gadget.js"></script>   
     </body>
