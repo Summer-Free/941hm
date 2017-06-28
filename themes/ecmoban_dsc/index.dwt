@@ -65,10 +65,20 @@
                     <div class="wrap-search clearfix">
                         <a class="icon-file" href="#"></a>
                         <a class="icon-cart" href="#"><span class="tooltip">99</span></a>
-                        <form class="clearfix" action="" method="">
-                            <input type="text" />
-                            <button class="icon-search"></button>
-                        </form>
+                        <div class="ecsc-search">
+	                        <form class="clearfix ecsc-search-form" id="searchForm" name="searchForm" action="search.php" method="get" onSubmit="return checkSearchForm()">
+	                            <input type="text" autocomplete="off" onKeyUp="lookup(this.value);" name="keywords" id="keyword" value="{insert name='rand_keyword'}" class="ecsc-search-input" />
+	                            <input type="hidden" name="store_search_cmt" value="{$search_type|default:0}">
+	                            <button class="icon-search ecsc-search-button" type="submit"></button>
+	                        </form>
+					        <!-- @Author guan 搜索栏提示 start -->
+					            <div class="suggestions_box" id="suggestions" style="display:none;">
+					                <div class="suggestions_list" id="auto_suggestions_list">
+					                &nbsp;
+					                </div>
+					            </div>
+					        <!-- @Author guan 搜索栏提示 end -->
+					    </div>
                     </div>  
                     <div class="nav-content">
                         <ul class="main-nav clearfix">
@@ -649,5 +659,7 @@
 		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/common.js"></script>
 		<!--首页专用JS-->
 		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/index.js"></script>
+		<!--搜索提示框-->
+		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/suggest.js"></script>
 	</body>
 </html>
