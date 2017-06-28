@@ -78,15 +78,20 @@
 #header .top .float-r li a {
 	display: block;
 }
-#header .nav .logo {
-	margin: 7px 0 7px 30px;
+#header h1.logo {
+	position: relative;
 }
 #header .nav .logo a {
-	display: block;
-	width: 89px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 225px;
 	height: 78px;
 	text-indent: -9999px;
-	background: url(../../iamges/20170517/logo.png) no-repeat right center;
+	background: url(../../iamges/20170517/logo.jpg) no-repeat left center;
+}
+#header .wrap-search {
+	padding-bottom: 15px;
 }
 #header .wrap-search > .ecsc-search,
 #header .wrap-search > a,
@@ -166,9 +171,18 @@
 }
 #header .classification {
 	position: relative;
-	width: 151px;
+	width: 291px;
+	color: #fff;
 	cursor: pointer;
-	background-color: #95b0b2;
+	background-color: #47a9fd!important;
+	-webkit-transition: all .3s linear;
+	   -moz-transition: all .3s linear;
+	    -ms-transition: all .3s linear;
+	     -o-transition: all .3s linear;
+	        transition: all .3s linear;
+}
+#header .classification:hover {
+	background-color: #95b0b2!important;
 }
 #header .main-nav>li.active>a,
 #header .main-nav>li:hover >a,
