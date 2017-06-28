@@ -205,7 +205,7 @@
 
 			//判断是否自动播放
 			if(ops.autoPlay) {
-				console.log(ops.duration)
+				
 				timer = setInterval(action,ops.speed);
 
 			};
