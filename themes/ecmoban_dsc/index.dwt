@@ -652,9 +652,13 @@
 		
 		<!--footer-->
 		<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+<<<<<<< HEAD
 
 		
 		<!-- #BeginLibraryItem "/library/page_footer_js.lbi" --><!-- #EndLibraryItem -->
+=======
+		
+>>>>>>> MM
 		<!--首页专用JS-->
 		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/index.js"></script>
 		
