@@ -307,7 +307,7 @@
 	                                        <a href="goods.php?id={$new_p.goods_id}" target="_blank" alt="{$new_p.goods_name|escape:html}" 
 	                                         class= "move left-a" >
 	                                            <img src="{$new_p.goods_thumb}" title="{$new_p.goods_name|escape:html}" width="240" />
-	                                            <span>{$new_p.goods_name|truncate:20}</span>
+	                                            <span class="cut_string">{$new_p.goods_name|truncate:20}</span>
 	                                        </a>    
 	                                    </li>
 	                                <!--{/foreach}-->
@@ -649,11 +649,12 @@
 			</div>
 		</div>
 		<!--main body end-->
-
+		
 		<!--footer-->
 		<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
 		<!-- #BeginLibraryItem "/library/page_footer_js.lbi" --><!-- #EndLibraryItem -->
 		<!--首页专用JS-->
 		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/index.js"></script>
+		
 	</body>
 </html>
