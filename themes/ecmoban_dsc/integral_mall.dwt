@@ -15,20 +15,9 @@
                 <div class="slide-banner bg-color-f5f5f5">      
                         <div class="w1200">
                                 <div class="JS-slide">
-                                        <ul class="content">
-                                                <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/integral-banner1.jpg" alt=""></a></li>
-                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/integral-banner1.jpg" alt=""></a></li>
-                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/integral-banner1.jpg" alt=""></a></li>
-                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/integral-banner1.jpg" alt=""></a></li>
-                                        </ul>
-                                        <a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
-                                        <a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
-                                        <ul class="point">
-                                                <li class="active"></li>
-                                                <li></li>
-                                                <li></li>
-                                                <li></li>
-                                        </ul>
+                                    <ul class="content">
+                                        <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/integral-banner1.jpg" alt=""></a></li>
+                                    </ul>
                                 </div>
                         </div>
                 </div>
@@ -350,11 +339,10 @@
             </div>
         </div>
         <!--main body end-->
+
+        <!--footer-->
         <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
-        <!--JQ基础库-->
-        <script type="text/javascript" src="themes/ecmoban_dsc/js/js/jquery-1.9.1.min.js"></script>
-        <!--自定义方法-->
-        <script type="text/javascript" src="themes/ecmoban_dsc/js/js/common.js"></script>    
+
         <!--本页JS-->     
         <script type="text/javascript" src="themes/ecmoban_dsc/js/js/integral_mall.js"></script>         
     </body> 

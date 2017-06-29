@@ -313,5 +313,30 @@
 	};
 
 
-
 })(jQuery,window,document);
+
+$(function() {
+
+	//当前页面高亮显示
+	function navHighlight() {
+
+		var navItem = $("#header .main-nav>li>a"),
+			curHref = location.href;
+
+			navItem.each(function() {
+
+				var item_href = $(this).attr("href");
+
+				if(curHref.indexOf(item_href) !== -1) {
+					$(this).parent().addClass("active")
+					.siblings().removeClass("active");
+				}else {
+					$(this).parent().removeClass("active");
+				};
+
+			});
+	};
+
+	navHighlight();
+
+});
