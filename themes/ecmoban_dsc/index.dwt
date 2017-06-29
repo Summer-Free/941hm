@@ -67,7 +67,7 @@
                         <a class="icon-cart" href="#"><span class="tooltip">99</span></a>
                         <div class="ecsc-search">
 	                        <form class="clearfix ecsc-search-form" id="searchForm" name="searchForm" action="search.php" method="get" onSubmit="return checkSearchForm()">
-	                            <input type="text" autocomplete="off" onKeyUp="lookup(this.value);" name="keywords" id="keyword" value="{insert name='rand_keyword'}" class="ecsc-search-input" />
+	                            <input type="text" autocomplete="off" onKeyUp="lookup(this.value);" name="keywords" id="keyword" value="请输入搜索内容" class="ecsc-search-input" />
 	                            <input type="hidden" name="store_search_cmt" value="{$search_type|default:0}">
 	                            <button class="icon-search ecsc-search-button" type="submit"></button>
 	                        </form>
