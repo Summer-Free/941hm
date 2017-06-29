@@ -6,9 +6,12 @@
 <div id="site-nav">
     <div class="w1200 dorpdown">
         {* 941红木 提醒您：根据用户id来调用header_region_style.lbi显示不同的界面  *}{insert name='header_region'}
+
         <div class="ecsc-login" id="ECS_MEMBERZONE">
         	
         </div>
+
+
         <ul class="quick-menu fr">
         	<!--{if $navigator_list.top}-->
             <!-- {foreach name=nav_top_list from=$navigator_list.top item=nav key=key} -->
