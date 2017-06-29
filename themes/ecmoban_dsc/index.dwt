@@ -190,10 +190,10 @@
 			<div class="slide-banner">
 				<div class="JS-slide">
 					<ul class="content">
-						<li class="active"><a href="#" style="display: block;width:100%;height: 525px;background: url(themes/ecmoban_dsc/iamges/20170517/banner5.jpg) no-repeat center center;"></a></li>
+						<li class="active"><a href="#" style="display: block;width:100%;height: 525px;background: url(themes/ecmoban_dsc/iamges/20170517/banner4.jpg) no-repeat center center;"></a></li>
 						<li><a href="#" style="display: block;width:100%;height: 525px;background: url(themes/ecmoban_dsc/iamges/20170517/banner2.jpg) no-repeat center center;"></a></li>
 						<li><a href="#" style="display: block;width:100%;height: 525px;background: url(themes/ecmoban_dsc/iamges/20170517/banner3.jpg) no-repeat center center;"></a></li>
-						<li><a href="#" style="display: block;width:100%;height: 525px;background: url(themes/ecmoban_dsc/iamges/20170517/banner4.jpg) no-repeat center center;"></a></li>
+						<li><a href="#" style="display: block;width:100%;height: 525px;background: url(themes/ecmoban_dsc/iamges/20170517/banner5.jpg) no-repeat center center;"></a></li>
 					</ul>
 					<div class="w1200">
 						<a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
