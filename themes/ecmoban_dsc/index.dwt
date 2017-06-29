@@ -662,9 +662,9 @@
 		<script type="text/javascript">
 			//	$(function(){
 			//		var a =$(".cut_string").text();
-			//		var a=a.length();
+			//		var s=a.();
 			//		alert(a); 
-			//  })
+			//	})
 		</script>>
 	</body>
 </html>
