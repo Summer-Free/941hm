@@ -82,6 +82,15 @@
 	width: 46px;
 	background-position: -110px -308px;
 }
+.product-slide .JS-slide {
+	width: 896px;
+}
+.product-slide .JS-slide,
+.product-slide .JS-slide .content li {
+	height: 376px;
+}
+
+
 .section-3 .head {
 	padding: 21px 25px;
 }

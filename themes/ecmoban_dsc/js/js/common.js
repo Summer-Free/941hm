@@ -124,7 +124,7 @@
 			point_li.on("mouseenter",function() {
 
 				//判断是否有动画正在运行，如果无，则执行动画函数，此举是为了防止用户恶意点击
-				if(!pic_li.is("animated")) {
+				if(!pic_li.is(":animated")) {
 
 					var $this_li = $(this),
 						index_li = $this_li.index();

@@ -35,7 +35,32 @@
             </div>
 
             <div class="section-2 clearfix">
-                <a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/integral-active1.jpg" alt="" /></a>
+                <div class="float-l">
+                    <div class="product-slide">
+                        <div class="JS-slide">
+                            <ul class="content">
+                                <li class="active">
+                                    <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/integral-a.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/integral-b.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/integral-c.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/integral-d.jpg" alt="" /></a>
+                                </li>
+                            </ul>
+                            <ul class="point">
+                                <li class="active"></li>
+                                <li class=""></li>
+                                <li class=""></li>
+                                <li class=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <a class="float-r" href="#" title="点击签到"><img src="themes/ecmoban_dsc/iamges/20170517/integral-active2.jpg" alt="" /></a>
             </div>
 
