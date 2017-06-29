@@ -61,7 +61,7 @@
                     <h1 class="logo"><a href="index.php">941红木</a></h1>
                 </div>
                 <img class="float-r" src="themes/ecmoban_dsc/iamges/20170517/wechat.jpg" alt="二维码">
-                <div class="float-r margin-r-30">
+                <div class="float-l">
                     <div class="wrap-search clearfix">
                         <a class="icon-file" href="#"></a>
                         <a class="icon-cart" href="#"><span class="tooltip">99</span></a>
