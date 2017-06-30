@@ -272,3 +272,59 @@ table{border-collapse:collapse;border-spacing:0;}
        -o-transition: all .3s linear;
           transition: all .3s linear;
 }
+
+
+
+/* 页面底部有个隐藏的input  email_sub   和右侧的悬浮框在一个模板*/
+.email_sub{
+  display: block;
+  margin: 0 auto;
+  position: fixed;
+  bottom: -60px;
+  height: 60px;
+  width: 100%;
+  z-index: 10000;
+  opacity: 1;
+  -webkit-transition: bottom .3s ease-out;
+  -moz-transition: bottom .3s ease-out;
+  -ms-transition: bottom .3s ease-out;
+  -o-transition: bottom .3s ease-out;
+  transition: bottom .3s ease-out;
+  box-shadow: -15px -12px 10px -12px #999;
+}
+.email_sub.show{
+  bottom:0;
+}
+.email_sub .w1200{ position:relative; z-index:10;}
+.email_sub_btn{ margin-top:12px; font-size:0; overflow:hidden;}
+.email_sub_btn input{ 
+  float:left;
+  width:350px; 
+  height: 37px;
+  padding:7px 10px; 
+  line-height: 37px;
+  font-size:14px; 
+  border:1px solid #ec5151; 
+  outline:0 none; 
+}
+.email_sub_btn .emp_btn{ 
+  background:#ec5051; 
+  display:inline-block; 
+  height:37px; 
+  line-height:37px; 
+  color:#fff; 
+  font-size:14px; 
+  padding:0 10px; 
+  float:left;
+}
+.attached_bg{ 
+  position:absolute; 
+  top:0; 
+  left:0; 
+  width:100%; 
+  height:60px; 
+  background:#fff;
+  opacity:0.9; 
+  filter:alpha(opacity=90); 
+  z-index:9;
+}

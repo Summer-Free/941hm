@@ -14,6 +14,10 @@
 		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/footer.css">
 		<!--搜索提示框-->
 		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/suggest.css">
+		<!--右侧悬浮栏-->
+		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/quickLinks.css">
+		<!--底部隐藏input(弹窗)-->
+		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/purebox.css">
 		<!--统计代码-->
 		<script type="text/javascript">
          		var _hmt = _hmt || [];

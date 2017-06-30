@@ -100,5 +100,20 @@
         <script type="text/javascript" src="themes/ecmoban_dsc/js/js/jquery-1.9.1.min.js"></script>
         <!--自定义方法-->
         <script type="text/javascript" src="themes/ecmoban_dsc/js/js/common.js"></script>
+        <!--旧的通用js,有很多文件对此有依赖-->
+        <script type="text/javascript" src="themes/ecmoban_dsc/js/js/common-old.js"></script>
         <!--搜索提示框-->
         <script type="text/javascript" src="themes/ecmoban_dsc/js/js/suggest.js"></script>
+        <!--底部隐藏的input 对此有依赖-->
+        <script type="text/javascript" src="themes/ecmoban_dsc/js/js/cart_common.js"></script>
+        <!--右侧悬浮栏-->
+        <script type="text/javascript" src="themes/ecmoban_dsc/js/js/cart_quick_links.js"></script>
+        <!--相关依赖-->
+        <script type="text/javascript" src="themes/ecmoban_dsc/js/js/jquery.purebox.js"></script>
+
+        <!--右侧悬浮购物车个人信息(必须放到最底下,依赖jquery)-->
+        {insert name='user_menu_position'}
+
+           
+
+        
