@@ -51,12 +51,6 @@
 	background-color:transparent;
 	background-position: -12px -485px;
 }
-#header .wrap-search .icon-file {
-	margin-top: 26px;
-	width: 16px;
-	height: 13px;
-	background-position: -46px -487px;
-}
 #header .wrap-search .icon-cart {
 	position: relative;
 	margin-top: 24px;
@@ -76,19 +70,6 @@
 	color: #ff0000;
 	text-align: center;
 }
-#header .wrap-search img {
-	margin-top: 5px;
-}
-#header .nav img.float-r {
-	margin-top: 2px;
-}
-#header .main-nav>li {
-	float: left;
-	margin-right: 47px;
-	height: 30px;
-	line-height: 30px;
-	text-align: center;
-}
 #header .classification {
 	position: relative;
 	width: 291px;
@@ -104,118 +85,16 @@
 #header .classification:hover {
 	background-color: #95b0b2!important;
 }
-#header .main-nav>li.active>a,
-#header .main-nav>li:hover >a,
-#header .classification dd a:hover {
-	color: #47a9fd;
-}
-#header .classification .dropdown-menu {
-	position: absolute;
-	top: 100%;
-	right: 0;
-	z-index: 10;
-	padding: 10px 10px 0;
-	width: 291px;
-	height: 525px;
-	background-color: #d4d6d5;
-}
-#header .classification dl {
-	overflow: hidden;
-	padding-bottom: 5px;
-	margin-bottom: 5px;
-	border-bottom: 1px solid #fff;
-}
-#header .classification dt,
-#header .classification dd {
-	float: left;
-}
-#header .classification dt {
-	margin-right: 8px;
-}
-#header .classification dd {
-	width: 224px;
-	overflow: hidden;
-}
-#header .classification dd a {
-	float: left;
-	display: block;
-	margin-right: 12px;
-}
-#header .classification .price {
-	margin-bottom: 0;
-	border-bottom: none;
-}
 #header .slide-banner {
 	box-shadow: 0 1px 1px #e0e0e0;
 }
-#header .slide-banner .login {
-	position: absolute;
-	top: 120px;
-	right: 0;
-	padding: 15px;
-	width: 180px;
-	height: 272px;
-	text-align: center;
-	border: 1px solid #e0e0e0;
-	background-color: #fff;
-}
-#header .login h4 {
-	margin-bottom: 15px;
-	color: #fdae47;
-	font-weight: normal;
-}
-#header .login img {
-	display: inline;
-}
-#header .login div {
-	padding-top: 14px;
-}
-#header .login div a {
-	float: left;
-	display: inline-block;
-	width: 66px;
-	height: 27px;
-	color: #fff;
-	line-height: 27px;
-	text-align: center;
-	background-color: #47a9fd;
-	border-radius: 8px;
-}
-#header .login .register-btn {
-	float: right;
-}
-#header .login ul {
-	padding-top: 25px;
-}
-#header .login .Notice-a,
-#header .login .use-a,
-#header .login .vip-a {
-	display: inline-block;
-	float: left;
-	background-image: url(../../iamges/20170517/sprite-1.png);
-	background-repeat: no-repeat;
-}
-#header .login .Notice-a {
-	width: 24px;
-	height: 47px;
-	background-position: -476px -453px;
-}
-#header .login .use-a {
-	width: 35px;
-	height: 47px;
-	background-position: -437px -453px;
-}
-#header .login .vip-a {
-	width: 39px;
-	height: 47px;
-	background-position: -396px -453px;
-}
-#header .login .use-a,
-#header .login .Notice-a {
-	margin-right: 24px;
-}
 .slide-top-bar {
 	overflow: hidden;	
+}
+.slide-top-bar .wrap-close {
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 .slide-top-bar,
 .slide-top-bar .JS-slide-top li {

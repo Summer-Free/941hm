@@ -55,7 +55,7 @@
 				$this.off("mouseenter mouseleave");
 
 				//淡出盒子
-				$this.fadeOut(300);
+				$this.slideUp(300);
 
 			});
 	};
