@@ -250,39 +250,19 @@
 					<div class="slide-mrms float-r">
 						<div class="JS-slide-scroll">
 							<ul class="content clearfix">
+							<!--{foreach from=$ms_res item=ms_res name=ms_res}-->
 								<li class="move">
-									<a href="#">
-										<img src="themes/ecmoban_dsc/iamges/20170517/product-1.jpg" alt="" />
-										<p>一些描述一些描述一些描述</p>
+									<a href="goods.php?id={$ms_res.goods_id}">
+										<img src="{$ms_res.goods_thumb}" width="244.2" height="191.2" alt="" />
+										<p>{$ms_res.goods_name|truncate:15}</p>
 										<div>
 											<ins>&yen;9.9</ins>&nbsp;
-											<del>&yen;2345</del>
+											<del>&yen;{$ms_res.market_price}</del>
 											<span>立刻秒</span>
 										</div>
 									</a>
 								</li>
-								<li class="move">
-									<a href="#">
-										<img src="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" alt="" />
-										<p>一些描述一些描述一些描述</p>
-										<div>
-											<ins>&yen;9.9</ins>&nbsp;
-											<del>&yen;2345</del>
-											<span>立刻秒</span>
-										</div>
-									</a>
-								</li>
-								<li class="move">
-									<a href="#">
-										<img src="themes/ecmoban_dsc/iamges/20170517/product-3.jpg" alt="" />
-										<p>一些描述一些描述一些描述</p>
-										<div>
-											<ins>&yen;9.9</ins>&nbsp;
-											<del>&yen;2345</del>
-											<span>立刻秒</span>
-										</div>
-									</a>
-								</li>
+							<!--{/foreach}-->
 							</ul>
 						</div>
 					</div>
