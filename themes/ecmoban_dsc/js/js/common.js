@@ -16,11 +16,11 @@
 			timer = "",
 			action = function() {
 				var m_l = parseInt(ul.css("margin-top"));
-				if(index < li.length ) {
+				if(index < li.length-1 ) {
 					index++;
 					ul.animate({"margin-top": - li_h*index + "px"},ops.duration)
 				}else {
-					ul.animate({"margin-top": - li_h*(li.length + 1) + "px"},ops.duration,function() {
+					ul.animate({"margin-top": - li_h*(li.length) + "px"},ops.duration,function() {
 						ul.css("margin-top",0)
 					});
 					index = 0;
@@ -51,7 +51,7 @@
 			//点击关闭
 			close.on("click",function() {
 
-				//移除盒子的绑定时间，否则定时器会继续运行
+				//移除盒子的绑定时事件，否则定时器会继续运行
 				$this.off("mouseenter mouseleave");
 
 				//淡出盒子
