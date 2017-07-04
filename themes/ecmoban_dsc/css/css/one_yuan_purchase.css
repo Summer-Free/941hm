@@ -429,6 +429,9 @@
 	border: 1px solid #e2e2e2;
 	box-shadow: 0 1px 4px 0 #e3e3e3;
 }
+.section-2 li img {
+	max-width: 100%;
+}
 .section-2 li>div {
 	padding: 20px 8px;
 }
