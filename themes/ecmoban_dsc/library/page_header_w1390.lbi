@@ -35,7 +35,7 @@
             <!-- {/if} -->
         </ul>
         <div class="shopcart-2015" id="ECS_CARTINFO" data-carteveval="0">
-        	{insert name='cart_info'}
+        	
         </div>
     </div>
 </div>
