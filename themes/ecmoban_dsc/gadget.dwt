@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="zh-cn">
     <head>
-        <!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem --><!--首页CSS以及部分通用部分的合并LBI-->
+        <!--首页CSS以及部分通用部分的合并LBI-->
+        <!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem -->
         <!--本页专用-->
         <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/gadget.css">              
     </head>  
