@@ -2,19 +2,20 @@
 
 <div class="preview">
     <div class="gallery_wrap">
-        <a href="{if $pictures.0.img_url}{$pictures.0.img_url}{else}{$goods.goods_img}{/if}" class="MagicZoomPlus" id="Zoomer" rel="hint-text: ; selectors-effect: false; selectors-class: img-hover; zoom-distance: 10;zoom-width: 400; zoom-height: 474;"><img src="themes/ecmoban_dsc/images/loadGoods3.gif" id="J_prodImg" alt="{$goods.goods_name|escape:html}" width="405" height="405"  data-original="{if $pictures.0.img_url}{$pictures.0.img_url}{else}{$goods.goods_img}{/if}"/></a>
+        <a href="{if $pictures.0.img_url}{$pictures.0.img_url}{else}{$goods.goods_img}{/if}" class="MagicZoomPlus" id="Zoomer" rel="hint-text: ; selectors-effect: false; selectors-class: img-hover; zoom-distance: 10;zoom-width: 400; zoom-height: 474;">
+        <img src="{$goods.goods_img}" id="J_prodImg" alt="{$goods.goods_name|escape:html}" width="405" height="405"/></a>
     </div>
     <div class="spec-list">
         <a href="javascript:void(0);" class="spec-prev"></a>
         <a href="javascript:void(0);" class="spec-next"></a>
         <div class="spec-items">
             <ul>
-            	{if !$pictures.0.img_url && $goods.goods_img}
-                <li><a href="{$goods.goods_img}" rel="zoom-id: Zoomer" rev="{$goods.goods_img}"><img src="themes/ecmoban_dsc/images/loadGoods.gif" alt="{$goods.goods_name}" width="60" height="60"  data-original="{$goods.goods_img}"/></a></li>
-                {/if}
+            	
+                <li><a href="{$goods.goods_img}" rel="zoom-id: Zoomer" rev="{$goods.goods_img}"><img src="{$goods.goods_img}" alt="{$goods.goods_name}" width="60" height="60"  /></a></li>
+                
             	<!-- {if $pictures}--> 
                 <!-- {foreach from=$pictures item=picture name=foo}-->
-                <li><a href="{if $picture.img_url}{$picture.img_url}{else}{$picture.thumb_url}{/if}" rel="zoom-id: Zoomer" rev="{if $picture.img_url}{$picture.img_url}{else}{$picture.thumb_url}{/if}"><img src="themes/ecmoban_dsc/images/loadGoods.gif" alt="{$goods.goods_name}" width="60" height="60"  data-original="{if $picture.thumb_url}{$picture.thumb_url}{else}{$picture.img_url}{/if}"/></a></li>
+                <li><a href="{$picture.img_url}" rel="zoom-id: Zoomer" rev="{if $picture.img_url}{$picture.img_url}{else}{$picture.thumb_url}{/if}"><img src="{$picture.img_url}" alt="{$goods.goods_name}" width="60" height="60"/></a></li>
                 <!--{/foreach}--> 
               	<!-- {/if}-->
             </ul>
