@@ -167,7 +167,23 @@
                             <li><a href="#">智能场景定制</a></li>
                             <li><a href="crowd_funding.php">匠物众筹</a></li>
                             <li><a href="one_yuan_purchase.php">一元购</a></li>
-                            <li><a href="zen_institute.php">禅学院</a></li>
+                            <li class="cxy">
+                                <a href="zen_institute.php">禅学院</a>
+                                <!--禅学院下拉菜单 start-->
+                                <div class="cxy-dropdpwn-menu">
+                                    <div class="w1200">
+                                        <ul class="clearfix">
+                                            <li><a href="#">禅茶一味</a></li>
+                                            <li><a href="#">静以修身</a></li>
+                                            <li><a href="#">善缘佛堂</a></li>
+                                            <li><a href="#">匠人匠心</a></li>
+                                            <li><a href="#">回归自然</a></li>
+                                            <li><a href="#">中医养生</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--禅学院下拉菜单 end-->
+                            </li>
                             <li><a href="#">保养技师</a></li>
                             <li class="margin-r-0"><a href="article.php?id=117">加盟入驻</a></li>
                         </ul>

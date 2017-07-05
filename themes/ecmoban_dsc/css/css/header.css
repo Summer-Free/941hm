@@ -384,3 +384,41 @@
 #header .login .Notice-a {
 	margin-right: 24px;
 }
+
+/*禅学院的下拉菜单 start*/
+.cxy-dropdpwn-menu {
+	z-index: 10;
+	position: absolute;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	height: 0;
+	line-height: 74px;
+	background-color: #fff;
+	-webkit-transition: all .3s linear;
+	   -moz-transition: all .3s linear;
+	    -ms-transition: all .3s linear;
+	     -o-transition: all .3s linear;
+	        transition: all .3s linear;
+}
+.cxy-dropdpwn-menu .w1200 {
+	padding: 0 120px;
+}
+.cxy-dropdpwn-menu li {
+	float: left;
+}
+.cxy-dropdpwn-menu li a:hover {
+	color: #47a9fd;
+} 
+.cxy-dropdpwn-menu li a {
+	display: block;
+	width: 160px;
+	text-align: center;
+}
+.cxy:hover>.cxy-dropdpwn-menu {
+	height: 74px;
+	border: 1px solid #333;
+	border-left: none;
+	border-right: none;
+}
+/*禅学院的下拉菜单 end*/
