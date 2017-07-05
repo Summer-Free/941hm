@@ -359,6 +359,7 @@
             </div>
         </div>
         <!--main body end-->
+
         <!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->
         <!--本页JS-->     
         <script type="text/javascript" src="themes/ecmoban_dsc/js/js/daily_spike.js"></script>   
