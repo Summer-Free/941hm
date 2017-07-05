@@ -160,7 +160,7 @@
         <!--main body end-->
 
         <!--footer-->
-        <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->   
+        <!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->  
         
         <!--本页JS-->     
         <script type="text/javascript" src="themes/ecmoban_dsc/js/js/crowd_funding.js"></script>  
