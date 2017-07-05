@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="zh-cn">
+    <head>
+        <!--首页CSS以及部分通用部分的合并LBI-->
+        <!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem -->
+        <!--本页专用-->
+        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/zen_institute.css">      
+    </head> 
+    <body>
+        
+        <!--header start-->
+        <div id="header">
+                <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
+                <!--slide banner start-->
+                <div class="slide-banner bg-color-f5f5f5">      
+                        <div class="w1200">
+                                <div class="JS-slide">
+                                        <ul class="content">
+                                                <li class="active"><a href="#"><img src="images/purchase-banner1.jpg" alt="" /></a></li>
+                                                <li><a href="#"><img src="images/purchase-banner1.jpg" alt="" /></a></li>
+                                                <li><a href="#"><img src="images/purchase-banner1.jpg" alt="" /></a></li>
+                                                <li><a href="#"><img src="images/purchase-banner1.jpg" alt="" /></a></li>
+                                        </ul>
+                                        <a class="left-btn" href="javascript:void(0);"><img src="images/left-Arrow.png" alt="向左"></a>
+                                        <a class="right-btn" href="javascript:void(0);"><img src="images/right-Arrow.png" alt="向右"></a>
+                                        <ul class="point">
+                                                <li class="active"></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                        </ul>
+                                </div>
+                        </div>
+                </div>
+                <!--slide banner end-->
+        </div>
+        <!--header end-->
+
+        <!--main body start-->
+        <div id="main-body">
+            
+            <!--正在直播-->
+            <div class="section">
+                <div class="w1200">
+                    <h2 class="common-h2 clearfix">正在直播 <a href="#">查看更多</a></h2>
+                    <ul class="clearfix">
+                        <li><a href="#"><img src="images/cxy-1.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="images/cxy-1.jpg" alt="" /></a></li>
+                        <li class="margin-r-0"><a href="#"><img src="images/cxy-1.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="images/cxy-1.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="images/cxy-1.jpg" alt="" /></a></li>
+                        <li class="margin-r-0"><a href="#"><img src="images/cxy-1.jpg" alt="" /></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--历史直播-->
+            <div class="section">
+                <div class="w1200">
+                    <h2 class="common-h2 clearfix">历史直播 <a href="#">查看更多</a></h2>
+                    <ul class="clearfix">
+                        <li><a href="#"><img src="images/cxy-1.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="images/cxy-1.jpg" alt="" /></a></li>
+                        <li class="margin-r-0"><a href="#"><img src="images/cxy-1.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="images/cxy-1.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="images/cxy-1.jpg" alt="" /></a></li>
+                        <li class="margin-r-0"><a href="#"><img src="images/cxy-1.jpg" alt="" /></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--线下活动-->
+            <div class="section">
+                <div class="w1200">
+                    <h2 class="common-h2 clearfix">线下活动 <a href="#">查看更多</a></h2>
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#"><img src="images/cxy-1.jpg" alt="" /><h3>活动名称</h3></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/cxy-1.jpg" alt="" /><h3>活动名称</h3></a>
+                        </li>
+                        <li class="margin-r-0">
+                            <a href="#"><img src="images/cxy-1.jpg" alt="" /><h3>活动名称</h3></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/cxy-1.jpg" alt="" /><h3>活动名称</h3></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/cxy-1.jpg" alt="" /><h3>活动名称</h3></a>
+                        </li>
+                        <li class="margin-r-0">
+                            <a href="#"><img src="images/cxy-1.jpg" alt="" /><h3>活动名称</h3></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--文章推荐-->
+            <div class="section border-none">
+                <div class="w1200">
+                    <h2 class="common-h2 clearfix">文章推荐 <a href="#">查看更多</a></h2>
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#"><img src="images/cxy-1.jpg" alt="" /><h3>活动名称</h3></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/cxy-1.jpg" alt="" /><h3>活动名称</h3></a>
+                        </li>
+                        <li class="margin-r-0">
+                            <a href="#"><img src="images/cxy-1.jpg" alt="" /><h3>活动名称</h3></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/cxy-1.jpg" alt="" /><h3>活动名称</h3></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/cxy-1.jpg" alt="" /><h3>活动名称</h3></a>
+                        </li>
+                        <li class="margin-r-0">
+                            <a href="#"><img src="images/cxy-1.jpg" alt="" /><h3>活动名称</h3></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--main body end-->
+    
+        <!--footer start-->
+        <div id="footer">
+                <div class="foot-top">
+                        <div class="w1200">
+                                <ul class="clearfix">
+                                        <li><i class="icon-baoz"></i>正品保障</li>
+                                        <li><i class="icon-qtbt"></i>七天包退</li>
+                                        <li><i class="icon-hprc"></i>好评如潮</li>
+                                        <li><i class="icon-sdfh"></i>闪电发货</li>
+                                        <li class="margin-r-0"><i class="icon-qwry"></i>权威荣誉</li>
+                                </ul>
+                        </div>
+                </div>
+                <div class="foot-btm">
+                        <div class="w1200">
+                                <ul class="clearfix">
+                                        <li>
+                                                <dl>
+                                                        <dt>关于941红木</dt>
+                                                        <dd>
+                                                                <a href="#">&gt; 公司简介</a>
+                                                                <a href="#">&gt; 体验馆</a>
+                                                                <a href="#">&gt; 招商加盟</a>
+                                                                <a href="#">&gt; 诚聘英才</a>
+                                                                <a href="#">&gt; 联系我们</a>
+                                                        </dd>
+                                                </dl>
+                                        </li>
+
+                                        <li>
+                                                <dl>
+                                                        <dt>新手指南</dt>
+                                                        <dd>
+                                                                <a href="#">&gt; 新用户注册</a>
+                                                                <a href="#">&gt; 支付方式说明</a>
+                                                                <a href="#">&gt; 订购家具流程</a>
+                                                                <a href="#">&gt; 体验馆购买指导</a>
+                                                        </dd>
+                                                </dl>
+                                        </li>
+
+                                        <li>
+                                                <dl>
+                                                        <dt>购物保障</dt>
+                                                        <dd>
+                                                                <a href="#">&gt; 正品保证</a>
+                                                                <a href="#">&gt; 注册协议</a>
+                                                                <a href="#">&gt; 免费声明</a>
+                                                                <a href="#">&gt; 隐私保护</a>
+                                                        </dd>
+                                                </dl>
+                                        </li>
+
+                                        <li>
+                                                <dl>
+                                                        <dt>配送安装</dt>
+                                                        <dd>
+                                                                <a href="#">&gt; 收货指南</a>
+                                                                <a href="#">&gt; 物流配送</a>
+                                                        </dd>
+                                                </dl>
+                                        </li>
+
+                                        <li class="margin-r-0">
+                                                <dl>
+                                                        <dt>售后服务</dt>
+                                                        <dd>
+                                                                <a href="#">&gt; 35天无理由退换货</a>
+                                                                <a href="#">&gt; 如何申请退款</a>
+                                                                <a href="#">&gt; 维修补件说明</a>
+                                                                <a href="#">&gt; 家具保修说明</a>
+                                                                <a href="#">&gt; 家具保养说明</a>
+                                                        </dd>
+                                                </dl>
+                                        </li>
+                                </ul>
+                                <div class="copy">
+                                        <p><a href="#">首页</a><a href="#">意见反馈</a></p>
+                                        <p>ICP备案证书号: <a href="#">浙ICP备16002409号-1</a></p>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <!--footer end-->
+
+        <!--JQ基础库-->
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+        <!--自定义方法-->
+        <script type="text/javascript" src="js/common.js"></script>    
+        <!--本页JS-->     
+        <script type="text/javascript" src="js/zen_institute.js"></script>  
+    </body>
+</html>

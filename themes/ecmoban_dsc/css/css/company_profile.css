@@ -1,0 +1,209 @@
+/*头部下拉菜单hover效果 需要加上此段代码 start*/
+#header .classification {
+	background-color: transparent;
+}
+#header .classification .dropdown-menu {
+	display: none\9; /*IE8 hack*/
+	background-color: transparent;
+	z-index: 0;
+	opacity: 0;
+	-webkit-transition: all .3s linear;
+	   -moz-transition: all .3s linear;
+	    -ms-transition: all .3s linear;
+	     -o-transition: all .3s linear;
+	        transition: all .3s linear;
+}
+#header .classification:hover > .dropdown-menu {
+	background-color: #d4d6d5;
+	z-index: 10;
+	opacity: 1;
+	display: block\9; /*IE8 hack*/
+}
+#header .classification:hover {
+	background-color: #95b0b2;
+}
+/*头部下拉菜单hover效果 需要加上此端代码 end*/
+
+
+/*除了首页以外的，头部轮播图中按钮的位置调动 start*/
+#header .JS-slide .left-btn {
+	left: 0;
+}
+#header .JS-slide:hover .left-btn {
+	left: 50px;
+}
+#header .JS-slide .right-btn {
+	right: 0;
+}
+#header .JS-slide:hover .right-btn {
+	right: 50px;
+}
+/*除了首页以外的，头部轮播图中按钮的位置调动 end*/
+
+
+.section-1 {
+	padding: 50px 0 36px 0;
+}
+.section-1 h2 {
+	height: 25px;
+	text-indent: -9999px;
+	background: url(../images/gsjj-pic-3.png) no-repeat center top;
+}
+.section-1 ul {
+	margin: 0 auto;
+	padding-top: 40px;
+	width: 762px;
+}
+.section-1 li {
+	float: left;
+	margin-right: 15px;
+	text-align: center;
+}
+.section-1 li h3 {
+	padding-top: 35px;
+	font-size: 25px;
+}
+.section-2 {
+	position: relative;
+	height: 543px;
+	background-color: #de4446;
+}
+.section-2>h1,
+.section-2>div {
+	position: absolute;	
+}
+.section-2>h1,
+.section-2>.btm {
+	left: 85px;
+}
+.section-2>h1 {
+	top: 65px;
+	width: 305px;
+	font-size: 50px;
+	color: #fff;
+	line-height: 1.2;
+}
+.section-2>.btm {
+	z-index: 1;
+	bottom: 65px;
+	padding: 28px 0 0 70px;
+	width: 982px;
+	height: 281px;
+	background-color: #fff;
+}
+.section-2>.left {
+	z-index: 2;
+	top: 0;
+	right: 133px;
+	padding: 85px 21px;
+	width: 576px;
+	height: 466px;
+	font-size: 25px;
+	color: #fff;
+	line-height: 2.3;
+	background-color: #1c1f27;
+}
+.section-3 {
+	position: relative;
+	margin: 0 auto;
+	padding: 50px 0;
+	width: 1103px;
+	height: 595px;
+	background: url(../images/gsjj-pic-5.png) no-repeat center center;
+}
+.section-3 h2 {
+	text-indent: -9999px;
+}
+.section-3 li {
+	margin-bottom: 17px;
+	width: 477px;
+	height: 116px;
+	text-align: center;
+}
+.section-3 h3 {
+	padding: 22px 0 6px 0;
+	font-size: 34px;
+	line-height: 1;
+}
+.section-3 span {
+	font-size: 25px;
+	color: #de4446;
+}
+.section-3 .left,
+.section-3 .right {
+	position: absolute;
+	top: 164px;
+}
+.section-3 .right {
+	right: 17px;
+}
+.section-4 * {
+	font-size: 25px;
+}
+.section-4 .top {
+	padding: 100px 170px;
+	height: 314px;
+	line-height: 2.2;
+	text-align: center;
+	background-color: #1c1f27;
+}
+.section-4 .top span {
+	color: #de4446;
+}
+.section-4 .top,
+.section-4 .middle span {
+	color: #fff;
+}
+.section-4 .middle {
+	margin: 0 auto;
+	padding: 50px 0 35px 0;
+	width: 714px;
+}
+.section-4 .middle span {
+	float: left;
+	margin-right: 78px;
+	width: 120px;
+	height: 122px;
+	line-height: 122px;
+	text-align: center;
+	background: url(../images/gsjj-pic-6.png) no-repeat 0 0;
+}
+.section-4 .middle .bg-red {
+	background: url(../images/gsjj-pic-6.png) no-repeat 0 -150px;	
+}
+.section-4 .btm {
+	padding: 0 85px;
+	line-height: 2;
+}
+.section-5 {
+	margin-top: 40px;
+	height: 322px;
+	background-color: #d43a3c;
+}
+.section-5 * {
+	font-size: 25px;
+	color: #fff;
+	line-height: 2;
+}
+.section-5 div,
+.section-5 img {
+	float: left;
+}
+.section-5 img {
+	margin: 55px 60px 0 86px;
+}
+.section-5 div {
+	margin-top: 108px;
+}
+.section-6 {
+	padding: 104px 170px 70px 107px;
+}
+.section-6 div {
+	float: left;
+	width: 474px;
+	font-size: 25px;
+	line-height: 2;
+}
+.section-6 img {
+	float: right;
+}
