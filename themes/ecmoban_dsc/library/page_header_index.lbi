@@ -1,3 +1,6 @@
+            <!--除首页以外的通用头部-->
+            <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/common_head.css">
+            
             <!--top start-->
             <div class="top">
                 <div class="w1200 clearfix">

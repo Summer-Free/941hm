@@ -1,29 +1,3 @@
-/*头部下拉菜单hover效果 需要加上此段代码 start*/
-#header .classification {
-	background-color: transparent;
-}
-#header .classification .dropdown-menu {
-	display: none\9; /*IE8 hack*/
-	background-color: transparent;
-	z-index: -1;
-	opacity: 0;
-	-webkit-transition: all .3s linear;
-	   -moz-transition: all .3s linear;
-	    -ms-transition: all .3s linear;
-	     -o-transition: all .3s linear;
-	        transition: all .3s linear;
-}
-#header .classification:hover > .dropdown-menu {
-	background-color: #d4d6d5;
-	z-index: 10;
-	opacity: 1;
-	display: block\9; /*IE8 hack*/
-}
-#header .classification:hover {
-	background-color: #95b0b2;
-}
-/*头部下拉菜单hover效果 需要加上此端代码 end*/
-
 .section-1 {
 	border: 1px solid #f2f2f2;
 }
