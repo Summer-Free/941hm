@@ -8,29 +8,32 @@
                 
     </head> 
     <body>
-        <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->    
-            <!--slide banner start-->
-            <div class="slide-banner bg-color-f5f5f5">      
-                <div class="w1200">
-                    <div class="JS-slide">
-                        <ul class="content">
-                            <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner1.jpg" alt="" /></a></li>
-                            <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner1.jpg" alt="" /></a></li>
-                            <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner1.jpg" alt="" /></a></li>
-                            <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner1.jpg" alt="" /></a></li>
-                        </ul>
-                        <a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
-                        <a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
-                        <ul class="point">
-                            <li class="active"></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
+        <!--header start-->
+        <div id="header">
+                <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
+
+                <!--slide banner start-->
+                <div class="slide-banner bg-color-f5f5f5">      
+                        <div class="w1200">
+                                <div class="JS-slide">
+                                        <ul class="content">
+                                                <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner1.jpg" alt="" /></a></li>
+                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner1.jpg" alt="" /></a></li>
+                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner1.jpg" alt="" /></a></li>
+                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner1.jpg" alt="" /></a></li>
+                                        </ul>
+                                        <a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
+                                        <a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
+                                        <ul class="point">
+                                                <li class="active"></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                        </ul>
+                                </div>
+                        </div>
                 </div>
-            </div>
-            <!--slide banner end-->
+                <!--slide banner end-->
         </div>
         <!--header end-->
 
