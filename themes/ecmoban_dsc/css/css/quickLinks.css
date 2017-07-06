@@ -15,7 +15,6 @@
 	top: 0;
 	left:0px;
 	font-family: 'microsoft yahei',arial;
-	
 }	
 .quick_links_panel a{ 
 	display: block;
@@ -106,7 +105,7 @@
 	width:40px;
 }
 .quick_links a.cart_list{ 
-	background: url(images/ibar_sprites.png) no-repeat;
+	background: url(../../iamges/20170517/ibar_sprites.png) no-repeat;
 	line-height: 16px;
 	height: 133px;
 	background-position: -23px -225px;
