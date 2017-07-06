@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-cn">
+    <head>
+        <!--首页CSS以及部分通用部分的合并LBI-->
+        <!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem -->
+        <!--本页专用-->
+        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/company_profile.css">
+                
+    </head> 
+    <body>
+        
+        <!--header start-->
+        <div id="header">
+                
+                <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
+                <!--slide banner start-->
+                <div class="slide-banner bg-color-f5f5f5">      
+                    <div class="w1200">
+                        <div class="JS-slide">
+                            <ul class="content">
+                                <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gsjj-banner-1.jpg" alt="" /></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--slide banner end-->
+        </div>
+        <!--header end-->
+
+        <!--main body start-->
+        <div class="w1200 bg-color-f5f5f5" id="main-body">
+            <div class="section-1">
+                <h2>我们最引以自豪的，是一直以来的“专注”</h2>
+                <ul class="clearfix">
+                    <li>
+                        <img src="themes/ecmoban_dsc/iamges/20170517/gsjj-pic-1.jpg" alt="">
+                        <h3>专注品牌品质</h3>
+                    </li>
+                    <li>
+                        <img src="themes/ecmoban_dsc/iamges/20170517/gsjj-pic-2.jpg" alt="">
+                        <h3>专注互联网模式</h3>
+                    </li>
+                    <li class="margin-r-0">
+                        <img src="themes/ecmoban_dsc/iamges/20170517/gsjj-pic-3.jpg" alt="">
+                        <h3>专注中国传统文化</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="section-2">
+                <h1>浙江党牌网络科技有限公司</h1>
+                <div class="left">浙江党牌网络科技有限公司位于世界木雕之都浙江东阳，是党牌控股集团旗下全资控股公司，作为集团的拟上市主体将于2018年在新三板挂牌上市，公司是25年红木行业从业经验的生态链平台整合者，是红木产业互联网的践行者与缔造者！</div>
+                <div class="btm"><img src="themes/ecmoban_dsc/iamges/20170517/gsjj-pic-4.png" alt=""></div>
+            </div>
+            <div class="section-3">
+                <dl>
+                    <dt>
+                        <h2>党牌控股集团公司</h2>
+                    </dt>
+                    <dd class="left">
+                        <ul>
+                            <li>
+                                <h3>党牌网络科技有限公司</h3>
+                                <span>上市主体</span>
+                            </li>
+                            <li>
+                                <h3>党牌进出口有限公司</h3>
+                                <span>红木原材料进口</span>
+                            </li>
+                            <li>
+                                <h3>创品资本</h3>
+                                <span>IPO上市</span>
+                            </li>
+                        </ul>
+                    </dd>
+                    <dd class="right">
+                        <ul>
+                            <li>
+                                <h3>久实信息技术（杭州）有限公司</h3>
+                                <span>技术开发平台运营</span>
+                            </li>
+                            <li>
+                                <h3>北京学霸天下科技有限公司</h3>
+                                <span>大数据精准营销</span>
+                            </li>
+                            <li>
+                                <h3>新龙工艺尚红居红木</h3>
+                                <span>家具研发设计生产</span>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+            <div class="section-4">
+                <div class="top">浙江党牌网络科技有限公司是全球首家以<span>CBBDS</span>模式为核心的电子商务服务商致力于打造面向全球消费群体的中国传统文化生态链服务产业集群。</div>
+                <div class="middle clearfix">
+                    <span>O2O</span>
+                    <span class="bg-red">F2F</span>
+                    <span>D2C</span>
+                    <span class="bg-red margin-r-0">S2S</span>
+                </div>
+                <div class="btm">浙江党牌网络科技有限公司将互联网+红木进行实际落地，将O20、F2C、D2C和S2S相关联并结合线上线下进行传统文化价值传递，进行“一站式边体验边购物”体验式生活社交服务。</div>
+            </div>
+            <div class="section-5">
+                <img src="themes/ecmoban_dsc/iamges/20170517/gsjj-pic-7.png" alt="">
+                <div>
+                    <p>线上：全屋智能匹配  板房DIY  以物换物  免费试用  积分兑换</p>
+                    <p>线下：实体触觉体验、生活体验、禅学院</p>
+                </div>
+            </div>
+            <div class="section-6 clearfix">
+                <div>凭借专业的技术，诚信的经营和不断创新的精神公司发展迅速。在发展的同时公司不忘不断总结不断优化为客户的服务、一如既往的热情赢得了新老客户的极高评价及青睐。</div>
+                <img src="themes/ecmoban_dsc/iamges/20170517/gsjj-pic-8.png" alt="" />
+            </div>
+        </div>
+        <!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->      
+        <!--本页JS-->     
+        <script type="text/javascript" src="themes/ecmoban_dsc/js/js/company_profile.js"></script>  
+    </body>
+</html>    
