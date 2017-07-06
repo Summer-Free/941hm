@@ -9,9 +9,7 @@
 	<body>
         <!--header start-->
         <div id="header">
-                
                 <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
-
                 <!--banner start-->
                 <div class="slide-banner bg-color-f5f5f5">      
                         <div class="w1200">
