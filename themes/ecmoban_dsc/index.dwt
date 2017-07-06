@@ -184,7 +184,7 @@
                                 </div>
                                 <!--禅学院下拉菜单 end-->
                             </li>
-                            <li><a href="#">保养技师</a></li>
+                            <li><a href="maintenance_technician.php">保养技师</a></li>
                             <li class="margin-r-0"><a href="article.php?id=117">加盟入驻</a></li>
                         </ul>
                     </div>
@@ -234,7 +234,7 @@
 							<a class="margin-b-12" href="gadget.php" title="小玩意儿" style="background-color: #d7fae8;">
 								<img src="themes/ecmoban_dsc/iamges/20170517/xwye.jpg" alt="小玩意儿" />
 							</a>
-							<a href="#" title="保养技师" style="background-color: #e4eef0;">
+							<a href="maintenance_technician.php" title="保养技师" style="background-color: #e4eef0;">
 								<img src="themes/ecmoban_dsc/iamges/20170517/byjs.jpg" alt="保养技师" />
 							</a>
 						</li>
