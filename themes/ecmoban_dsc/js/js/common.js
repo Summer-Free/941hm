@@ -330,11 +330,19 @@ $(function() {
 				if(curHref.indexOf(item_href) !== -1) {
 					$(this).parent().addClass("active")
 					.siblings().removeClass("active");
-				}else {
+				}
+				else if(curHref == "http://www.941hm.com/" || "http://localhost/941hm/") {
+					navItem.find("[href='index.php']").parent()
+						.addClass("active")
+						.siblings()
+						.removeClass("active");
+				}
+				else {
 					$(this).parent().removeClass("active");
 				};
 
 			});
+
 	};
 
 	navHighlight();
