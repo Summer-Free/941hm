@@ -66,11 +66,8 @@
                             <!--goods页面-->
                             <div class="summary-list">
                             	<div class="summary-price">
-                                	<div class="dt">
-                                    促销价：</div>
-                                	<div class="dd"><strong class="p-price" id="ECS_SHOPPRICE">
-                                            {$goods.shop_price}
-                                    </strong>&nbsp;<a href="#none" user_id="{$user_id}" goods_id="{$goods.goods_id}" class="price_notify">(降价通知)</a></div>
+                                    <div class="dt">{if $goods.gmt_end_time}{$lang.promote_price}{else}{$lang.shop_price}{/if}：</div>
+                                    <div class="dd"><strong class="p-price" id="ECS_SHOPPRICE"></strong>&nbsp;<a href="#none" user_id="{$user_id}" goods_id="{$goods.goods_id}" class="price_notify">(降价通知)</a></div>
                                 </div>
                                 <!-- {if $cfg.show_marketprice} 市场价格-->
                             	<div class="summary-item">
