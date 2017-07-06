@@ -147,7 +147,7 @@
                                 </div>
                                 <!--禅学院下拉菜单 end-->
                             </li>
-                            <li><a href="#">保养技师</a></li>
+                            <li><a href="maintenance_technician.php">保养技师</a></li>
                             <li class="margin-r-0"><a href="article.php?id=117">加盟入驻</a></li>
                         </ul>
                     </div>
