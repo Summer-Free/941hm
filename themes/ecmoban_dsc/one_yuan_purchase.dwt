@@ -12,13 +12,13 @@
 
                 <!--slide banner start-->
                 <div class="slide-banner bg-color-f5f5f5">      
-                        <div class="w1200">
+                        <!-- <div class="w1200"> -->
                                 <div class="JS-slide">
                                         <ul class="content">
-                                                <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner1.jpg" alt="" /></a></li>
-                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner1.jpg" alt="" /></a></li>
-                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner1.jpg" alt="" /></a></li>
-                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner1.jpg" alt="" /></a></li>
+                                                <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner2.jpg" alt="" /></a></li>
+                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner3.jpg" alt="" /></a></li>
+                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner4.jpg" alt="" /></a></li>
+                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner1.jpg" alt="" style="margin: 0 auto" /></a></li>
                                         </ul>
                                         <a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
                                         <a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
@@ -29,7 +29,7 @@
                                                 <li></li>
                                         </ul>
                                 </div>
-                        </div>
+                        <!-- </div> -->
                 </div>
                 <!--slide banner end-->
         </div>
@@ -39,20 +39,14 @@
         <div class="w1200 bg-color-f5f5f5" id="main-body">
             
             <div class="section-1 clearfix">
-                <ul class="float-l clearfix">
-                    <li><a href="#">首页</a></li>
+                <form action="" method="" class="search float-l">
+                    <input type="text" placeholder="请输入商品关键字" />
+                    <button></button>
+                </form>
+                <ul class="float-r clearfix">
                     <li><a href="#">新手帮助</a></li>
-                    <li class="margin-r-0"><a href="#">我的1元购</a></li>
+                    <li class="margin-r-0"><a href="#">我的一元购</a></li>
                 </ul>
-                <div class="JS-filter-box float-r">
-                    <div class="JS-main-box">全部</div>
-                    <ul class="sub-box">
-                        <li>客厅</li>
-                        <li>餐厅</li>
-                        <li>书房</li>
-                        <li>卧室</li>
-                    </ul>
-                </div> 
             </div>
 
             <div class="section-2">
