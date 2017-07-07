@@ -199,7 +199,7 @@
 				<div class="JS-slide">
 					<ul class="content">
 						<li class="active"><a href="goods.php?id=1015" style="display: block;width:100%;height: 525px;background: url(themes/ecmoban_dsc/iamges/20170517/banner4.jpg) no-repeat center center;"></a></li>
-						<li><a href="#" style="display: block;width:100%;height: 525px;background: url(themes/ecmoban_dsc/iamges/20170517/banner2.jpg) no-repeat center center;"></a></li>
+						<li><a href="company_profile.php" style="display: block;width:100%;height: 525px;background: url(themes/ecmoban_dsc/iamges/20170517/banner2.jpg) no-repeat center center;"></a></li>
 						<li><a href="goods.php?id=937" style="display: block;width:100%;height: 525px;background: url(themes/ecmoban_dsc/iamges/20170517/banner3.jpg) no-repeat center center;"></a></li>
 						<li><a href="article.php?id=96" style="display: block;width:100%;height: 525px;background: url(themes/ecmoban_dsc/iamges/20170517/banner5.jpg) no-repeat center center;"></a></li>
 						<li><a href="#" style="display: block;width:100%;height: 525px;background: url(themes/ecmoban_dsc/iamges/20170517/banner6.jpg) no-repeat center center;"></a></li>
