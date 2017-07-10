@@ -12,34 +12,24 @@
                 <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
                 <!--slide banner start-->
                 <div class="slide-banner bg-color-f5f5f5">      
-                    <div class="w1200">
+                    <!-- <div class="w1200"> -->
                         <div class="JS-slide">
                             <ul class="content">
-                            <!--{foreach from=$ggzc_res item=ggzc_res name=ggzc_res}-->
-                            <!-- {if $smarty.foreach.ggzc_res.iteration ==1  } -->
-                                <li class="active">
-                            <!-- {elseif $smarty.foreach.ggzc_res.iteration ==2  } -->
-                                <li>
-                            <!-- {elseif $smarty.foreach.ggzc_res.iteration ==3  } -->
-                                <li>
-                            <!-- {elseif $smarty.foreach.ggzc_res.iteration ==4  } --> 
-                                <li>
-                            <!--{/if}-->
-                                    <img src="{$ggzc_res.title_img}" alt="{$ggzc_res.title}" width="1200" height="525" />
-                                </li>
-                            <!--{/foreach}-->
-                               
+                                <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/crowd-pic1.jpg" alt="" /></a></li>
+                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/crowd-pic2.jpg" alt="" /></a></li>
+                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/crowd-pic3.jpg" alt="" /></a></li>
+                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/crowd-pic4.jpg" alt="" /></a></li>
                             </ul>
                             <a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
                             <a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
                             <ul class="point">
-                                    <li class="active"></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
+                                <li class="active"></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
                             </ul>
                         </div>
-                    </div>
+                    <!-- </div> -->
                 </div>
                 <!--slide banner end-->
         </div>
