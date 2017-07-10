@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="zh-cn">
+    <head>
+        <!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem --> 
+        <!--本页专用-->
+        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/company_honor.css">             
+    </head> 
+    <body>
+
+        <!--header start-->
+        <div id="header">
+                <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
+                <!--slide banner start-->
+                <div class="slide-banner bg-color-f5f5f5">      
+                    <div class="w1200">
+                        <div class="JS-slide">
+                            <ul class="content">
+                                <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gsry-pic1.jpg" alt="" /></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--slide banner end-->
+        </div>
+        <!--header end-->
+        
+        <!--main body start-->
+        <div class="w1200" id="main-body">
+            <div class="section-1">
+                <div></div>
+                <dl>
+                    <dt><h1>浙江党牌网络科技有限公司</h1></dt>
+                    <dd>浙江党牌控股集团公司董事长党俊良先生</dd>
+                    <dd>专注红木行业20年</dd>
+                    <dd>身兼东阳市政协委员</dd>
+                    <dd>浙商经济发展中心理事会副主席等多项职位</dd>
+                    <dd>成功打造红木行业生态链第一品牌</dd>
+                    <dd>带领公司获得多项荣誉，走向辉煌</dd>
+                </dl>
+            </div>
+            <div class="section-2">
+                <div class="top clearfix">
+                    <img src="themes/ecmoban_dsc/iamges/20170517/gsry-pic2.jpg" alt="全国质量、服务、信誉AAA级企业" />
+                    <dl>
+                        <dt>2011</dt>
+                        <dd>新龙工艺品有限公司被考核认定为</dd>
+                        <dd>全国质量、服务、信誉AAA级企业</dd>
+                    </dl>
+                </div>
+                <div class="middle clearfix">
+                    <dl>
+                        <dt>2012</dt>
+                        <dd>浙江党牌有限公司被授予</dd>
+                        <dd>浙江省优秀品牌单位的荣誉</dd>
+                    </dl>
+                    <img src="themes/ecmoban_dsc/iamges/20170517/gsry-pic3.jpg" alt="浙江省优秀品牌单位" />
+                </div>
+                <div class="btm clearfix">
+                    <img src="themes/ecmoban_dsc/iamges/20170517/gsry-pic4.jpg" alt="浙江省红木产业协会的常务理事单位" />
+                    <dl>
+                        <dt>2012</dt>
+                        <dd>新龙工艺品有限公司成为</dd>
+                        <dd>浙江省红木产业协会的常务理事单位</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="section-3">
+                <div class="top clearfix">
+                    <dl>
+                        <dt>2013</dt>
+                        <dd>党牌网络科技有限公司被授予</dd>
+                        <dd>中国红木家具优秀企业的荣誉</dd>
+                    </dl>
+                    <img src="themes/ecmoban_dsc/iamges/20170517/gsry-pic5.jpg" alt="中国红木家具优秀企业" />
+                </div>
+                <div class="middle clearfix">
+                    <img src="themes/ecmoban_dsc/iamges/20170517/gsry-pic6.jpg" alt="浙江市场消费者最满意品牌" />
+                    <dl>
+                        <dt>2013</dt>
+                        <dd>浙江党牌进出口有限公司</dd>
+                        <dd>被认定为浙江市场消费者最满意品牌</dd>
+                    </dl>
+                </div>
+                <div class="btm">
+                    <dl>
+                        <dt>2014</dt>
+                        <dd>
+                            <p>新龙工艺品有限公司</p>  
+                            <p>信用等级被评估为AAA级</p>  
+                        </dd>
+                        <dd>
+                            <p>党牌网络科技有限公司成为</p>  
+                            <p>东阳市木材行业协会副会长单位</p>  
+                        </dd>
+                        <dd>
+                            <p>党牌网络科技有限公司参赛产品获得</p>  
+                            <p>民族民间木文化艺术品博览会金奖与银奖</p>  
+                        </dd>
+                        <dd>
+                            <p>“非常看”成为中国红木行业</p>  
+                            <p>最具影响力品牌</p>  
+                        </dd>
+                        <dd class="position">
+                            <p>党牌进出口有限公司成为中国红木委</p>  
+                            <p>与红木检测中心东阳党牌办事处</p>  
+                        </dd>
+                    </dl>
+                </div> 
+            </div>
+            <div class="section-4">
+                <div class="clearfix"> 
+                    <div class="left float-l clearfix">
+                        <img class="float-r" src="themes/ecmoban_dsc/iamges/20170517/gsry-pic7.jpg" alt="东阳新龙工艺品有限公司信用等级AAA" />
+                        <img class="float-r" src="themes/ecmoban_dsc/iamges/20170517/gsry-pic8.jpg" width="600" alt="中国红木委红木与红木制品检测中心东阳党牌办事处" />
+                    </div>
+                    <div class="right float-r">
+                         <img src="themes/ecmoban_dsc/iamges/20170517/gsry-pic9.jpg" alt="东阳市木材行业协会华东分会副会长单位" />
+                         <div class="clearfix">
+                            <img class="float-l" src="themes/ecmoban_dsc/iamges/20170517/gsry-pic10.jpg" alt="第二届中国(东阳)民族民间木文化艺术品博览会金奖" />
+                            <img class="float-l" src="themes/ecmoban_dsc/iamges/20170517/gsry-pic11.jpg" alt="第二届中国(东阳)民族民间木文化艺术品博览会银奖" />
+                         </div>
+                         <img src="themes/ecmoban_dsc/iamges/20170517/gsry-pic12.jpg" alt="非常看中国红木行业最具影响力品牌" />
+                    </div>
+                </div>
+            </div>
+            <div class="section-5 clearfix">
+                <div class="left float-l clearfix">
+                    <dl class="float-r">
+                        <dt>2015</dt>
+                        <dd>
+                            <p>尚红居牌红木家具被授予</p>
+                            <p>中国著名品牌的荣誉</p>
+                        </dd>
+                    </dl>
+                    <img class="float-r" src="themes/ecmoban_dsc/iamges/20170517/gsry-pic13.jpg" alt="东阳市新龙工艺品有限公司中国著名品牌" />
+                    <img class="float-r" src="themes/ecmoban_dsc/iamges/20170517/gsry-pic14.jpg" alt="中国红木古典家具理事会" />
+                </div>
+                <div class="right float-l">
+                    <ul>
+                        <li>
+                            <p>党牌进出口有限公司成为</p>
+                            <p>浙江省优秀品牌单位</p>
+                        </li>
+                        <li>
+                            <p>党牌进出口有限公司成为</p>
+                            <p>中国红木古典家具理事单位</p>
+                        </li>
+                        <li class="last-li">
+                            <p>尚红居牌红木家具被授予</p>
+                            <p>中国绿色环保产品的荣誉</p>
+                        </li>
+                    </ul>
+                    <img src="themes/ecmoban_dsc/iamges/20170517/gsry-pic15.jpg" alt="东阳市新龙工艺品有限公司中国绿色环保产品 " />
+                </div>
+            </div>
+            <div class="section-6">
+                <div class="content clearfix">
+                    <div class="left float-l">
+                        <img src="themes/ecmoban_dsc/iamges/20170517/gsry-pic16.jpg" alt="常务理事" />
+                        <dl>
+                            <dt>2016</dt>
+                            <dd>
+                                <p>党牌进出口有限公司成为</p>
+                                <p>东阳市木材行业协会副会长单位</p>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="right float-l">
+                        <dl>
+                            <dt>2016</dt>
+                            <dd>党俊良先生被授予成为常务理事</dd>
+                        </dl>
+                        <img src="themes/ecmoban_dsc/iamges/20170517/gsry-pic17.jpg" alt="东阳市木材行业协会副会长单位" />
+                    </div>
+                </div>
+            </div>
+            <div class="section-7">
+                <div class="div1 clearfix">
+                    <img class="float-l" src="themes/ecmoban_dsc/iamges/20170517/gsry-pic18.jpg" alt="2017中国民营经济影响力人物" />
+                    <img class="float-l img2" src="themes/ecmoban_dsc/iamges/20170517/gsry-pic19.jpg" alt="2017中国最佳商业模式创新奖" />
+                </div>
+                <div class="div2 clearfix">
+                    <img class="float-r" src="themes/ecmoban_dsc/iamges/20170517/gsry-pic21.jpg" alt="华尊奖影响力中国--中国红木电商领域最佳商业模式创新奖" />
+                    <img class="float-r" src="themes/ecmoban_dsc/iamges/20170517/gsry-pic20.jpg" alt="中国红木电商领域最具影响力十大领军人物" />
+                </div>
+                <dl>
+                    <dt>2017</dt>
+                    <dd class="fff">
+                        <p>党俊良先生成为2017</p>
+                        <p>民营经济影响力人物</p>
+                    </dd>
+                    <dd class="fff">
+                        <p>浙江党牌网络科技有限公司获得</p>
+                        <p>2017中国最佳商业模式创新奖</p>
+                    </dd>
+                    <dd>
+                        <p>党俊良先生成为中国红木电商领域</p>
+                        <p>最具影响力十大领军人物</p>
+                    </dd>
+                    <dd>
+                        <p>党牌控股集团有限公司获得</p>
+                        <p>中国红木电商领域最佳商业模式创新奖</p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="section-8">
+                <ul class="clearfix">
+                    <li>
+                        <img src="themes/ecmoban_dsc/iamges/20170517/gsry-pic22.jpg" alt="党俊良先生与浪莎董事长翁荣金先生" />
+                        <h3>
+                            <p>党俊良先生与浪莎董事长</p>
+                            <p>翁荣金先生</p>
+                        </h3>
+                    </li>
+                    <li class="position-1">
+                        <img src="themes/ecmoban_dsc/iamges/20170517/gsry-pic23.jpg" alt="党俊良先生与中国质量万里行促进会会长" />
+                        <h3>党俊良先生与中国质量万里行促进会会长</h3>
+                    </li>
+                    <li class="position-2">
+                        <img src="themes/ecmoban_dsc/iamges/20170517/gsry-pic24.jpg" alt="党俊良先生与危地马拉客户" />
+                        <h3>党俊良先生与危地马拉客户</h3>
+                    </li>
+                    <li class="position-3">
+                        <img src="themes/ecmoban_dsc/iamges/20170517/gsry-pic25.jpg" alt="党俊良先生在圭亚那考察" />
+                        <h3>党俊良先生在圭亚那考察</h3>
+                    </li>
+                    <li>
+                        <img src="themes/ecmoban_dsc/iamges/20170517/gsry-pic26.jpg" alt="党俊良先生在巴拿马考察" />
+                        <h3>党俊良先生在巴拿马考察</h3>
+                    </li>
+                    <li class="position-4">
+                        <img src="themes/ecmoban_dsc/iamges/20170517/gsry-pic27.jpg" alt="党俊良先生参加华西论坛" />
+                        <h3>党俊良先生参加华西论坛</h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--main body end-->
+
+        <!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->    
+    </body>
+</html>    
