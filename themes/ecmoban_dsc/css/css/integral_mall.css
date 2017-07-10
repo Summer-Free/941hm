@@ -163,9 +163,11 @@
 .product-list .detail>div {
 	overflow: hidden;
 	padding-top: 15px;
+	text-align: center;
 }
 .product-list .detail a {
-	width: 134px;
+	display: inline-block;
+	width: 170px;
 	height: 38px;
 	line-height: 38px;
 	text-align: center;
