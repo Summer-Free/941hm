@@ -300,6 +300,7 @@
 }
 #header .classification dt {
 	margin-right: 8px;
+	color: #333;
 }
 #header .classification dd {
 	width: 224px;
