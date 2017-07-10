@@ -1,5 +1,4 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
 <!--{if $custom_categories && $cat_info.cat_type eq 1}-->
 <div class="nch-module nch-module-style01">
 	<div class="title">
@@ -16,7 +15,7 @@
                     {/foreach}
                 </dl>
             </li>
-            <!-- {/foreach} -->
+            {/foreach}
         </ul>
     </div>
 </div>
@@ -53,11 +52,14 @@
     <div class="content">
 		<ul class="nch-sidebar-article-list">
         	<!-- {foreach from=$new_article item=article} -->
-            <li><a  href="{$article.url}" title="{$article.title|escape:html}" class="nch_art_tit"  style="background:none; border-bottom:1px dashed #ccc;">{$article.title}</a></li>
+                <li>
+                    <a  href="{$article.url}" title="{$article.title|escape:html}" class="nch_art_tit"  style="background:none; border-bottom:1px dashed #ccc;">{$article.title}</a>
+                </li>
             <!-- {/foreach} -->
         </ul>
 	</div>
 </div>
+
 {/if}
 <script type="text/javascript">
 	$(".nch_art_tit").click(function(){
