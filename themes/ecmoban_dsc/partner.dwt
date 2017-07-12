@@ -341,7 +341,12 @@
                         var bm_phone=$("#bm_phone").val();
                         var reg = /^[\u4e00-\u9fa5]{2,4}$/i; 
                         var bm_address=$("#bm_address").val();
-                        if (!reg.test(bm_name))
+                        if（bm_name == ""）
+                        {
+                            alert("用户名不能为空"); 
+                            return false;
+                        }    
+                        else if (!reg.test(bm_name))
                         {
                             alert("请输入2-4个汉字！"); 
                             return false;
