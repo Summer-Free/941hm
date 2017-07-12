@@ -319,8 +319,11 @@
                         </div>
                         <div class="clearfix">
                             <label for="">所在省 :</label>
-                            <select name="" id="province">
+                            <select name="province" id="province">
                                 <option value="null">请选择省</option>
+                                <!--{foreach from=$proice_res item=proice_res name=proice_res}-->
+                                    <option value="{$proice_res.region_id}">{$proice_res.region_name}</option>
+                                <!--{/foreach}-->
                             </select>
                         </div>
                         <div class="clearfix">
@@ -350,7 +353,13 @@
                             bm_phone = $("#bm_phone").val(),
                             reg = /^[\u4e00-\u9fa5]{2,4}$/i,
                             city = $("#city option:selected").val(),
+<<<<<<< HEAD
+                            province = $("#province option:selected").val();
+                            //console.log(province)
+                            //console.log(city)
+=======
                             province = $("#province option:selected").val(); 
+>>>>>>> ba7a3385d6828439ceb01e45e75c23ee681b75e5
                         if (!reg.test(bm_name))
                         {
                             alert("请输入2-4个汉字！"); 
@@ -369,8 +378,12 @@
                         else if(city == "null") {
                             alert("请选择您所在城市!");  
                             return false; 
+<<<<<<< HEAD
+                        }
+=======
                         };
 
+>>>>>>> ba7a3385d6828439ceb01e45e75c23ee681b75e5
                 })
             })
         </script> 
