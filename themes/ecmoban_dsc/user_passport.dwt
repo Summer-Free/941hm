@@ -154,152 +154,153 @@ if(length>1){
             <span class="registLogin-header-fr">有账号<a href="user.php" class="jump">在此登录</a></span>
         </div>
     </div>
-   <div class="registLogin-layout w1000">
-        <div class="regist-banner"><a href="#" target="_blank"><img src="images/regist-banner.jpg" /></a></div>
-        <div class="regist-wrap">
-        	<!--{if $shop_reg_closed neq 1}-->
-            <div class="regist-form" style="overflow:visible;">
-                <div class="mc" style="overflow:visible;">
-                    <div class="form formtwo">
-                        <form action="user.php" method="post" name="formUser" onsubmit="return mobileRegister();">
-                        <div class="item">
-                        	<div class="label">用　户　名</div>
-                            <div class="item-info">
-                                <input type="text" id="username" name="username" onblur="is_registered(this.value, 1);"  maxlength="35" class="text" value="" />
-                                <i class="i-name"></i>
-                            </div>
-                            <label id="username_notice_1" class="error"></label>
-                        </div>
-                        
-                        <div class="item" id="phone_yz">
-                        	<div class="label">手 机 号 码</div>
-                            <div class="item-info">
-                                <input type="text" id="mobile_phone" name="mobile_phone" onblur="checkPhone(this.value);" maxlength="20" class="text" value="" />
-                                <i class="i-phone"></i>
-                            </div>
-                            <label id="phone_notice" class="error"></label>
-                            <span class="tx_rm">或 <a href="javascript:void(0)" class="email_open">邮箱验证</a></span>
-                        </div>
-                        
-                        <div class="item" id="email_yz" style="display:none;">
-                        	<div class="label">邮 箱 验 证</div>
-                            <div class="item-info">
-                                <input type="text" id="regName" name="email" onblur="checkEmail(this.value);" class="text" value="" />
-                                <i class="i-email"></i>
-                            </div>
-                            <label id="email_notice" class="error"></label>
-                            <span class="tx_rm">或 <a href="javascript:void(0)" class="email_off">手机验证</a></span>
-                        </div>
-                        
-                        <div class="item">
-                        	<div class="label">设 置 密 码</div>
-                            <div class="item-info">
-                                <input type="password" id="pwd" name="password" maxlength="30" class="text " value="" />
-                                <i class="i-pass"></i>
-                            </div>
-                            <label id="phone_password" class="error"></label>
-                        </div>
-                        <div class="item">
-                        	<div class="label">确 认 密 码</div>
-                            <div class="item-info">
-                                <input type="password" id="pwdRepeat" name="confirm_password" maxlength="30" class="text " value="" />
-                                <i class="i-pass"></i>
-                            </div>
-                            <label id="phone_confirm_password" class="error"></label>
-                        </div>
-                        
-                        <!-- {foreach from=$extend_info_list item=field} -->
-                        <!-- {if $field.id eq 6} -->
-                        <div class="item" style=" overflow:visible;">
-                        	<div class="label">提 示 问 题</div>
-                            <div class="item-info">
-                                <div id="divselect2" class="divselect">
-                                  <div class="cite">{$lang.passwd_question}</div>
-                                  <ul>
-                                     {foreach from=$passwd_questions item=val key=key}
-                                     <li><a href="javascript:;" selectid="{$key}">{$val}</a></li>
-                                     {/foreach}
-                                  </ul>
+    <div>
+       <div class="registLogin-layout w1200" style="background: url(themes/ecmoban_dsc/iamges/20170517/register.jpg) no-repeat;">
+            <div class="regist-wrap">
+            	<!--{if $shop_reg_closed neq 1}-->
+                <div class="regist-form" style="overflow:visible;">
+                    <div class="mc" style="overflow:visible;">
+                        <div class="form formtwo">
+                            <form action="user.php" method="post" name="formUser" onsubmit="return mobileRegister();">
+                            <div class="item">
+                            	<div class="label">用　户　名</div>
+                                <div class="item-info">
+                                    <input type="text" id="username" name="username" onblur="is_registered(this.value, 1);"  maxlength="35" class="text" value="" />
+                                    <i class="i-name"></i>
                                 </div>
-                                <input name="sel_question" type="hidden" value="4" id="passwd_quesetion2">
+                                <label id="username_notice_1" class="error"></label>
                             </div>
-                        </div>
-                        <div class="item">
-                        <label class="sel_question error"></label>
-                        </div>
-                        <div class="item">
-                        	<div class="label">问 题 答 案</div>
-                            <div class="item-info">
-                                <input type="text" name="passwd_answer" maxlength="20" class="text" value="" placeholder="{$lang.passwd_answer}" />
+                            
+                            <div class="item" id="phone_yz">
+                            	<div class="label">手 机 号 码</div>
+                                <div class="item-info">
+                                    <input type="text" id="mobile_phone" name="mobile_phone" onblur="checkPhone(this.value);" maxlength="20" class="text" value="" />
+                                    <i class="i-phone"></i>
+                                </div>
+                                <label id="phone_notice" class="error"></label>
+                                <span class="tx_rm">或 <a href="javascript:void(0)" class="email_open">邮箱验证</a></span>
                             </div>
-                             <label id="passwd_answer" class="error"></label>
-                        </div>
-                        <!-- {else} -->
-                        {if $field.reg_field_name neq '手机'}
-                        <div class="item">
-                        	<div class="label">{$field.reg_field_name}</div>
-                            <div class="item-info">
-                                <input name="extend_field{$field.id}" id="extend_field{$field.id}" onblur="is_extend_field(this.value, {$field.id}, 'formUser');" type="text" maxlength="35" class="text" />
-                            </div>    
-                            <label class="extend_field{$field.id} error"></label>
-                            <input type="hidden" name="extend_field" id="exis_need{$field.id}" value="<!-- {if $field.is_need} -->1<!-- {else} -->0<!-- {/if} -->" />
-                        </div>
-                        {/if}
-                        <!-- {/if} -->
-                        <!-- {/foreach} -->
-                        
-                        <!-- 判断是否启用验证码{if $enabled_captcha} -->
-                        <div class="item">
-                        	<div class="label lh37">验　证　码</div>
-                            <div class="item-info">
-                                <input type="text" id="captcha" name="captcha" maxlength="6" class="text text-1 text-4" value=""/>
-                                <img src="captcha_verify.php?captcha=is_register_phone&{$rand}" alt="captcha" id="authcode_img" style="vertical-align: middle;cursor: pointer;" onClick="this.src='captcha_verify.php?captcha=is_register_phone&'+Math.random()" />
+                            
+                            <div class="item" id="email_yz" style="display:none;">
+                            	<div class="label">邮 箱 验 证</div>
+                                <div class="item-info">
+                                    <input type="text" id="regName" name="email" onblur="checkEmail(this.value);" class="text" value="" />
+                                    <i class="i-email"></i>
+                                </div>
+                                <label id="email_notice" class="error"></label>
+                                <span class="tx_rm">或 <a href="javascript:void(0)" class="email_off">手机验证</a></span>
                             </div>
-                            <label id="phone_captcha" class="error"></label>
-                        </div>
-                        <!--{/if}-->
-                        {if $sms_register}
-                         <div class="item" id="code_mobile">
-                         	<div class="label lh37">手机验证码</div>
-                            <div class="item-info phone_code">
-                                <input type="text" id="sms" name="mobile_code" maxlength="6" class="text text-1 text-4" value="" />
-                                <a href="javascript:void(0);" id="zphone" class="sms-btn">获取短信验证码</a>
+                            
+                            <div class="item">
+                            	<div class="label">设 置 密 码</div>
+                                <div class="item-info">
+                                    <input type="password" id="pwd" name="password" maxlength="30" class="text " value="" />
+                                    <i class="i-pass"></i>
+                                </div>
+                                <label id="phone_password" class="error"></label>
                             </div>
-                            <label id="code_notice" class="error"></label>
-                        </div>
-                        {/if}
-                        <div class="item yd_item">
-                        	<div class="label">&nbsp;</div>
-                        	<div class="item-info">
-                                <input type="checkbox" id="clause2" class="fl agreement" checked="checked" value="1" name="mobileagreement">
-                                <label for="clause2" class="hole">阅读并同意《<a target="_blank" href="article.php?id=57" class="agreement">服务协议</a>》</label>
+                            <div class="item">
+                            	<div class="label">确 认 密 码</div>
+                                <div class="item-info">
+                                    <input type="password" id="pwdRepeat" name="confirm_password" maxlength="30" class="text " value="" />
+                                    <i class="i-pass"></i>
+                                </div>
+                                <label id="phone_confirm_password" class="error"></label>
                             </div>
-                            <label id="mobileagreement" class="error"></label>
-                        </div>
-                        <div class="item">
-                        	<div class="label">&nbsp;</div>
-                            <div class="item-info">
-                                <input type="hidden" name="flag" id="flag" value='register' />
-                                <input name="register_type" type="hidden" value="1" />
-                                <input type="hidden" name="seccode" id="seccode" value="{$sms_security_code}" />
-                                <input name="act" type="hidden" value="act_register" >
-                                <input name="register_mode" type="hidden" value="1" >
-                                <input id="phone_code_callback" type="hidden" value="" >
-                                <input id="phone_captcha_verification" type="hidden" value="" />
-                                <input id="phone_verification" type="hidden" value="0" />
-                                <input id="email_verification" type="hidden" value="0" />
-                                <input id="enabled_captcha" type="hidden" value="{$enabled_captcha}" />
-                                
-                                <input type="submit" id="registsubmit" name="Submit" maxlength="8" class="btn-regist" value="同意协议并注册"/>
+                            
+                            <!-- {foreach from=$extend_info_list item=field} -->
+                            <!-- {if $field.id eq 6} -->
+                            <div class="item" style=" overflow:visible;">
+                            	<div class="label">提 示 问 题</div>
+                                <div class="item-info">
+                                    <div id="divselect2" class="divselect">
+                                      <div class="cite">{$lang.passwd_question}</div>
+                                      <ul>
+                                         {foreach from=$passwd_questions item=val key=key}
+                                         <li><a href="javascript:;" selectid="{$key}">{$val}</a></li>
+                                         {/foreach}
+                                      </ul>
+                                    </div>
+                                    <input name="sel_question" type="hidden" value="4" id="passwd_quesetion2">
+                                </div>
                             </div>
+                            <div class="item">
+                            <label class="sel_question error"></label>
+                            </div>
+                            <div class="item">
+                            	<div class="label">问 题 答 案</div>
+                                <div class="item-info">
+                                    <input type="text" name="passwd_answer" maxlength="20" class="text" value="" placeholder="{$lang.passwd_answer}" />
+                                </div>
+                                 <label id="passwd_answer" class="error"></label>
+                            </div>
+                            <!-- {else} -->
+                            {if $field.reg_field_name neq '手机'}
+                            <div class="item">
+                            	<div class="label">{$field.reg_field_name}</div>
+                                <div class="item-info">
+                                    <input name="extend_field{$field.id}" id="extend_field{$field.id}" onblur="is_extend_field(this.value, {$field.id}, 'formUser');" type="text" maxlength="35" class="text" />
+                                </div>    
+                                <label class="extend_field{$field.id} error"></label>
+                                <input type="hidden" name="extend_field" id="exis_need{$field.id}" value="<!-- {if $field.is_need} -->1<!-- {else} -->0<!-- {/if} -->" />
+                            </div>
+                            {/if}
+                            <!-- {/if} -->
+                            <!-- {/foreach} -->
+                            
+                            <!-- 判断是否启用验证码{if $enabled_captcha} -->
+                            <div class="item">
+                            	<div class="label lh37">验　证　码</div>
+                                <div class="item-info">
+                                    <input type="text" id="captcha" name="captcha" maxlength="6" class="text text-1 text-4" value=""/>
+                                    <img src="captcha_verify.php?captcha=is_register_phone&{$rand}" alt="captcha" id="authcode_img" style="vertical-align: middle;cursor: pointer;" onClick="this.src='captcha_verify.php?captcha=is_register_phone&'+Math.random()" />
+                                </div>
+                                <label id="phone_captcha" class="error"></label>
+                            </div>
+                            <!--{/if}-->
+                            {if $sms_register}
+                             <div class="item" id="code_mobile">
+                             	<div class="label lh37">手机验证码</div>
+                                <div class="item-info phone_code">
+                                    <input type="text" id="sms" name="mobile_code" maxlength="6" class="text text-1 text-4" value="" />
+                                    <a href="javascript:void(0);" id="zphone" class="sms-btn">获取短信验证码</a>
+                                </div>
+                                <label id="code_notice" class="error"></label>
+                            </div>
+                            {/if}
+                            <div class="item yd_item">
+                            	<div class="label">&nbsp;</div>
+                            	<div class="item-info">
+                                    <input type="checkbox" id="clause2" class="fl agreement" checked="checked" value="1" name="mobileagreement">
+                                    <label for="clause2" class="hole">阅读并同意《<a target="_blank" href="article.php?id=57" class="agreement">服务协议</a>》</label>
+                                </div>
+                                <label id="mobileagreement" class="error"></label>
+                            </div>
+                            <div class="item">
+                            	<div class="label">&nbsp;</div>
+                                <div class="item-info">
+                                    <input type="hidden" name="flag" id="flag" value='register' />
+                                    <input name="register_type" type="hidden" value="1" />
+                                    <input type="hidden" name="seccode" id="seccode" value="{$sms_security_code}" />
+                                    <input name="act" type="hidden" value="act_register" >
+                                    <input name="register_mode" type="hidden" value="1" >
+                                    <input id="phone_code_callback" type="hidden" value="" >
+                                    <input id="phone_captcha_verification" type="hidden" value="" />
+                                    <input id="phone_verification" type="hidden" value="0" />
+                                    <input id="email_verification" type="hidden" value="0" />
+                                    <input id="enabled_captcha" type="hidden" value="{$enabled_captcha}" />
+                                    
+                                    <input type="submit" id="registsubmit" name="Submit" maxlength="8" class="btn-regist" value="同意协议并注册"/>
+                                </div>
+                            </div>
+                            </form>
                         </div>
-                        </form>
                     </div>
                 </div>
+                <!--{else}-->
+                <div style="text-align:center; line-height:485px; font-size:14px; font-weight:bold;">{$lang.shop_reg_closed}</div>
+                <!--{/if}-->
             </div>
-            <!--{else}-->
-            <div style="text-align:center; line-height:485px; font-size:14px; font-weight:bold;">{$lang.shop_reg_closed}</div>
-            <!--{/if}-->
         </div>
     </div>
 </div>
