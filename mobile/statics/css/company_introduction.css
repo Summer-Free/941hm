@@ -1,0 +1,25 @@
+.sec-1 {
+	padding: 1.888rem 0;
+}
+.sec-1 h2 {
+	position: relative;
+	font-size: 1.33rem;
+	height: 0;
+	border-top: 1px solid #333;
+}
+.sec-1 h2 span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding-left: 1rem;
+	background-color: #fff;
+	transform: translate3d(-50%,-50%,0);
+}
+.sec-1 ul {
+	padding: 1.888rem 3.888rem 0;
+	text-align: center;
+}
+.sec-1 h3 {
+	font-size: 1.333rem;
+	line-height: 1.5;
+}
