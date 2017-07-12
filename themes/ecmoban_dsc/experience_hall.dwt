@@ -206,7 +206,7 @@
                 <div class="filter-box clearfix">
                     <div class="linkage-menu">
                         <h3>选择城市</h3>
-                        <form action="" method="">
+                        <form action="" method="" id="address">
                             <select name="" id="province">
                                 <option value="null">请选择省</option>
                             </select>

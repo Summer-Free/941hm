@@ -542,7 +542,8 @@
 	line-height: 56px;
 }
 .section-11 input,
-.section-11 button {
+.section-11 button,
+#province,#city {
 	width: 331px;
 	height: 56px;
 	line-height: 56px;
