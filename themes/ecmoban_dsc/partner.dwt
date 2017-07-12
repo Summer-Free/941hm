@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="zh-cn">
+    <head>
+         <!--首页CSS以及部分通用部分的合并LBI-->
+        <!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem -->
+        <!--首页专用-->
+        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/partner.css">          
+    </head> 
+    <body>
+        
+        <!--header start-->
+        <div id="header">
+                <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
+                <!--slide banner start-->
+                <div class="slide-banner bg-color-f5f5f5">      
+                    <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/partner-pic1.jpg" alt="" /></a></li>
+                </div>
+                <!--slide banner end-->
+        </div>
+        <!--header end-->
+
+        <!--main body start-->
+        <div id="main-body">
+            <div class="section-1">
+                <img src="themes/ecmoban_dsc/iamges/20170517/partner-pic2.jpg" alt="生态资源整合 跨界全网共享 互联网+红木玩转传统文化" />
+            </div>
+            <div class="section-2">
+                <div class="w1200 clearfix">
+                    <div>
+                        <dl class="clearfix">
+                            <dt class="top">线上模式</dt>
+                            <dd>
+                                <h2>941红木生态</h2>
+                                <p>为用户提供方便、便捷、专业的家居服务，服务范围覆盖全国，高效的订单流程和物流配送为消费者提供完善的购物体验</p>
+                            </dd>
+                            <dd>
+                                <h2>3D智能体验馆</h2>
+                                <p>为用户提供足不出户就可360度无死角了解产品，同小区或优秀装修样板房一键3D互动视觉体验</p>
+                            </dd>
+                            <dd class="margin-b-0">
+                                <h2>智能场景定制</h2>
+                                <p>为用户提供DIY场景定制服务，只需上传平面图即可生成3D模型图，房子布局想怎样就怎样</p>
+                            </dd> 
+                            <dt class="btm">线下模式</dt>
+                            <dd><p>为用户提供传统文化生活体验服务：禅茶一味、静以修身、善缘佛堂、匠人匠心、回归自然......</p></dd>
+                        </dl>
+                    </div>
+                    <img src="themes/ecmoban_dsc/iamges/20170517/partner-pic1.png" alt="" />
+                </div>
+            </div>
+            <div class="section-3">
+                <div class="w1200">
+                    <h2 class="big">941红木生态，用“互联网+”重构家居生活行业模式</h2>
+                    <ul class="clearfix">
+                        <li>
+                            <div>
+                                <p><span class="icon-dw"></span></p>
+                                <h3>定位</h3>
+                            </div>
+                            <p>互联网家居O2O服务平台，</p>
+                            <p>为消费者打造方便、快捷、优质家装服务</p>
+                        </li>
+                        <li>
+                            <div>
+                                <p><span class="icon-cp"></span></p>
+                                <h3>产品</h3>
+                            </div>
+                            <p>安装、配送、维修保养等一站式</p>
+                            <p>家居售前售后服务体系</p>
+                        </li>
+                        <li>
+                            <div>
+                                <p><span class="icon-gl"></span></p>
+                                <h3>管理</h3>
+                            </div>
+                            <p>智能ERP一体化系统，</p>
+                            <p>提供标准化、流程化管理</p>
+                        </li>
+                        <li>
+                            <div>
+                                <p><span class="icon-fw"></span></p>
+                                <h3>服务</h3>
+                            </div>
+                            <p>广告全网覆盖，大平台大流量导入</p>
+                            <p>一品一标一码，让消费者买得放心</p>
+                            <p>跨界共享营销，让顾客主动找上门</p>
+                        </li>
+                        <li>
+                            <div>
+                                <p><span class="icon-zjjy"></span></p>
+                                <h3>资金交易</h3>
+                            </div>
+                            <p>银行账户、支付宝、财付通、易付宝等</p>
+                            <p>第三方保障结算确保交易资金安全</p>
+                        </li>
+                        <li>
+                            <div>
+                                <p><span class="icon-qyyj"></span></p>
+                                <h3>企业愿景</h3>
+                            </div>
+                            <p>成为中国传统文化生态链服务提供商</p>
+                            <p>成为中国传统艺术文化继承与传播的交流平台</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section-4">
+                <div class="w1200 clearfix">
+                    <h2 class="big">市场前景</h2>
+                    <div>
+                        <h3>家居“存量+增量”双重需求驱动</h3>
+                        <p class="margin-b-80">家居需求来自于一是新开发建筑的初始装饰需求；二是存量建筑改建、扩建、改变建筑使用性质或初始装饰自然老旧而形成的更新需求。</p>
+                        <h3>“黄金十年”到“白金十年”的转变</h3>
+                        <p>数据显示，普通住宅二次装修的时间点在5-8年，而2003-2007年是商品房销售的高潮，距今已有8-12年，二次家居市场需求不可估量，万亿后家居市场蓝海空白亟需填充。</p>
+                    </div>
+                    <img src="themes/ecmoban_dsc/iamges/20170517/partner-pic4.jpg" alt="" />
+                </div>
+            </div>
+            <div class="section-5">
+                <div class="w1200">
+                    <dl>
+                        <dt><h2 class="big">项目优势</h2></dt>
+                        <dd class="blue dd-1">
+                            <h3>国家政策鼓励</h3>
+                            <span>政府工作报告大力推崇互联网+，颠覆传统行业</span>
+                        </dd>
+                        <dd class="red dd-2">
+                            <h3>市场潜力巨大</h3>
+                            <span>家居市场容量已超过4万亿规模，潜力巨大</span>
+                        </dd>
+                        <dd class="yellow dd-3">
+                            <h3>生态资源整合</h3>
+                            <span>整合了1000多家生态工厂资源，产品品类扩大至几百个</span>
+                        </dd>
+                        <dd class="green dd-4">
+                            <h3>媒体营销优势</h3>
+                            <span>O2O社交营销，网络营销等多渠道媒体营销</span>
+                        </dd>
+                        <dd class="dd-5">
+                            <h3>服务流程标准化</h3>
+                            <span>从线上下单到服务完成实现统一标准化</span>
+                        </dd>
+                        <dd class="green dd-6">
+                            <h3>产品研发创新</h3>
+                            <span>专业家具设计团队，实时更新主流产品</span>
+                        </dd>
+                        <dd class="yellow dd-7">
+                            <h3>生活社交</h3>
+                            <span>禅学院定期组织生活体验服务</span>
+                        </dd>
+                        <dd class="red dd-8">
+                            <h3>总部支持</h3>
+                            <span>享有总部品牌部署及运营指导，0风险、高回报</span>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="section-6">
+                <div class="w1200">
+                    <h2 class="big top">定位精选，根据区域市场环境定制合理项目规划方案</h2>
+                    <h2 class="big">三大核心优势</h2>
+                    <ul>
+                        <li class="clearfix">
+                            <p>根据有关调查显示，整个家居市场规模40,000亿，其中服务市场规模占比5%左右，加上家居后服务市场，服务市场的总体市场规模达4000亿。</p>
+                            <h3>蓝海空白市场</h3>
+                        </li>
+                        <li class="clearfix li1">
+                            <p>公司定位于“互联网+红木+传统文化”利用平台思维，创新商业模式，制定行业新的规则，重新塑造红木家居行业生态链，在工厂与买家之间搭建直营平台，剔除中间环节，降低产品价格，让消费者买到质优价廉的红木家居产品。</p>
+                            <h3>创新商业模式</h3>
+                        </li>
+                        <li class="clearfix li2">
+                            <p>941红木生态拥有成熟专业的技术、市场、管理和运营团队，消费者线上通过941红木生态链服务网3D视觉体验、全屋智能匹配、板房DIY、以物换物、免费试用、积分兑换等互动，结合线下触觉体验、生活体验、禅学院等进行“一站式边体验边购物”服务</p>
+                            <h3>丰富运营经验</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section-7">
+                <div class="w1200 clearfix">
+                    <h2 class="big">盈利模式</h2>
+                    <div class="left">
+                        <h3>线上平台</h3>
+                        <p>视觉体验、板房DIY</p>
+                        <p>以物换物、免费试用</p>
+                        <p>积分兑换、匠物众筹</p>
+                        <p>全屋智能匹配</p>
+                    </div>
+                    <div class="middle">
+                        <ul>
+                            <li>
+                                <dl class="clearfix">
+                                    <dt>销售差价</dt>
+                                    <dd>订单销售差价</dd>
+                                    <dd>市场管理佣金</dd>
+                                    <dd>客户服务佣金</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl class="clearfix">
+                                    <dt>增值服务</dt>
+                                    <dd>商家入驻费用</dd>
+                                    <dd>商家会员</dd>
+                                    <dd>消费者会员费</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl class="clearfix">
+                                    <dt>广告费用</dt>
+                                    <dd style="text-indent: -9999px;">placeholder</dd>
+                                    <dd>线下活动广告赞助商</dd>
+                                    <dd>店面跨界产品广告</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <h3>线下商家</h3>
+                        <p>禅茶一味、静以修身</p>
+                        <p>善缘佛堂、匠人匠心</p>
+                        <p>回归自然、禅学院</p>
+                        <p>传统文化社交</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-8">
+                <div class="w1200">
+                    <h2 class="big">八大扶持政策 降低运营风险 实现盈利目标</h2>
+                    <ul class="clearfix">
+                        <li class="green">
+                            <h3>零元加盟支持</h3>
+                            <p>在招商推广期内</p>
+                            <p>您只需致电咨询</p>
+                            <p>可获得我们政策</p>
+                            <p>免加盟费</p>
+                        </li>
+                        <li class="red">
+                            <h3>统一店面支持</h3>
+                            <p>使用统一品牌形象装修</p>
+                            <p>全程免费支持店面设计</p>
+                        </li>
+                        <li>
+                            <h3>专业运营培训</h3>
+                            <p>总部专业运营团队为您</p>
+                            <p>做全方位帮助和指导</p>
+                        </li>
+                        <li class="yellow">
+                            <h3>广告投放支持</h3>
+                            <p>各地加盟伙伴，在进行</p>
+                            <p>品牌宣传时，户外宣传</p>
+                            <p>广告费用公司给予20%</p>
+                            <p>的支持</p>
+                        </li>
+                        <li>
+                            <h3>装修补助支持</h3>
+                            <p>根据店铺销售情况给加</p>
+                            <p>盟伙伴提供店面装修补助</p>
+                        </li>
+                        <li class="yellow">
+                            <h3>网络推广支持</h3>
+                            <p>运营过程中，941红木</p>
+                            <p>将会全程提供指导和咨</p>
+                            <p>询服务，携手共赢</p>
+                        </li>
+                        <li class="red">
+                            <h3>信息资源共享</h3>
+                            <p>加盟伙伴本地买家下单</p>
+                            <p>或咨询，我们全部通知</p>
+                        </li>
+                        <li>
+                            <h3>物质物料支持</h3>
+                            <p>941红木免费提供产品</p>
+                            <p>手册、色卡、制服及品</p>
+                            <p>牌推广用品</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section-9">
+                <div class="w1200">
+                    <h2>941红木生态以城市为单位</h2>
+                    <h2 class="big">一个城市，一位合伙人</h2>
+                    <h2>未来，城市合伙人将遍布全国</h2>
+                    <div class="clearfix">
+                        <dl>
+                            <dt>941红木生态城市合伙人招募条件</dt>
+                            <dd>认同941红木生态的理念和文化价值</dd>
+                            <dd>有创业激情，有志在红木行业长远发展</dd>
+                            <dd>有一定家居建材经验，能整合当地优质资源</dd>
+                            <dd>有互联网思维，愿用鼠标键盘改变一个行业</dd>
+                            <dd>有团队管理经验，招揽优秀人才</dd>
+                        </dl>
+                        <img src="themes/ecmoban_dsc/iamges/20170517/partner-pic8.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="section-10">
+                <div class="w1200">
+                    <div>
+                        <h3>站在“互联网+”的风口上顺势而为，会使中国经济飞起来。</h3>
+                        <p>独具慧眼，辨识商机</p>
+                        <p>百城战略，携手共赢</p>
+                        <p>未来十年，互联网+风口正盛</p>
+                        <p>加入941红木生态，掘金万亿“家居后”市场</p>
+                        <p>移动互联网家居大潮时不待人，</p>
+                        <h2>你还在犹豫吗？</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="section-11">
+                <div class="w1200">
+                    <h2 class="big">报名入口</h2>
+                    <form action="partner.php" method="post">
+                        <div class="clearfix">
+                            <label for="">姓名 :</label>
+                            <input type="text" id="bm_name" name="bm_name" />
+                        </div>
+                        <div class="clearfix">
+                            <label for="">联系方式 :</label>
+                            <input type="text" id="bm_phone" name="bm_phone" />
+                        </div>
+                        <div class="clearfix">
+                            <label for="">所在区域 :</label>
+                            <input type="text" id="bm_address" name="bm_address" />
+                        </div>
+                        
+                        <div class="clearfix">
+                            <label></label>
+                            <button type="submit" id="check_submit">提交</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--main body end--> 
+        <!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->
+        <!--本页JS-->     
+        <script type="text/javascript" src="themes/ecmoban_dsc/js/js/partner.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $("#check_submit").click(function(){
+                        var bm_name=$("#bm_name").val();
+                        var bm_phone=$("#bm_phone").val();
+                        var reg = /^[\u4e00-\u9fa5]{2,4}$/i; 
+                        var bm_address=$("#bm_address").val();
+                        if (!reg.test(bm_name))
+                        {
+                            alert("请输入2-4个汉字！"); 
+                            return false;
+                        }
+                        else if(!(/^1[34578]\d{9}$/.test(bm_phone)))
+                        { 
+                            alert("手机号码有误，请重填");  
+                            return false; 
+                        }
+                        else if(!reg.test(bm_address))
+                        { 
+                            alert("请输入有效的地址信息，方便我们联系您！");  
+                            return false; 
+                        }
+
+                        
+                        //alert(bm_address);
+                })
+            })
+        </script> 
+    </body>
+</html>    

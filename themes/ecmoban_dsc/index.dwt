@@ -1,4 +1,4 @@
-<!doctype html>
+	<!doctype html>
 <html lang="zh-cn">
 	<head>
 	    <!--首页CSS以及部分通用部分的合并LBI-->
@@ -43,7 +43,7 @@
                         <ul class="clearfix">
                             <li><a href="history_list.php">我的足迹</a></li>
                             <li><a href="user.php?act=order_list">我的订单</a></li>
-                            <li><a href="article.php?id=74">我要加盟</a></li>
+                            <li><a href="article.php?id=74">厂家入驻</a></li>
                             <li><a href="merchants.php?id=96">商家中心</a></li>
                             <li><a href="#">客服中心</a></li>
                             <li class="padding-r-0"><a href="#">APP下载</a></li>
@@ -186,7 +186,7 @@
                                 <!--禅学院下拉菜单 end-->
                             </li>
                             <li><a href="maintenance_technician.php">保养技师</a></li>
-                            <li><a href="article.php?id=117">加盟入驻</a></li>
+                            <li><a href="article.php?id=117">商家入驻</a></li>
                             <li class="margin-r-0"><a href="company_profile.php">公司简介</a></li>
                         </ul>
                     </div>
@@ -645,10 +645,7 @@
 		<!--main body end-->
 		
 		<!--footer-->
-
 		<!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->	
-		
-
 		<!--首页专用JS-->
         <script type="text/javascript" src="themes/ecmoban_dsc/js/js/index.js"></script>
 	</body>
