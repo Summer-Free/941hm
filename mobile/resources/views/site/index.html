@@ -68,32 +68,32 @@
         </ul>
     </nav>
     <!--index-new-->
-				<section class="dis-box index-new mb-1 position-rel">
-					<div class="index-new-left">
-						<div class="new-icon">
-							<img src="{__TPL__}img/new-icon.png">
+	<section class="dis-box index-new mb-1 position-rel">
+		<div class="index-new-left">
+			<div class="new-icon">
+				<img src="{__TPL__}img/new-icon.png">
+			</div>
+		</div>
+		<div class="box-flex">
+			<!-- Swiper -->
+			<div class="swiper-container index-new-list">
+				<div class="swiper-wrapper">
+                    {foreach $article as $vo}
+					<div class="swiper-slide swiper-no-swiping">
+						<a class="product-div-link" href="{$vo['url']}"></a>
+						<div class="index-new-cont">
+							<h4 class="col-3 f-05 onelist-hidden">{$vo['title']}</h4>
+							<p class="col-9 f-02">{$vo['add_time']}</p>
 						</div>
 					</div>
-					<div class="box-flex">
-						<!-- Swiper -->
-						<div class="swiper-container index-new-list">
-							<div class="swiper-wrapper">
-                                {foreach $article as $vo}
-								<div class="swiper-slide swiper-no-swiping">
-									<a class="product-div-link" href="{$vo['url']}"></a>
-									<div class="index-new-cont">
-										<h4 class="col-3 f-05 onelist-hidden">{$vo['title']}</h4>
-										<p class="col-9 f-02">{$vo['add_time']}</p>
-									</div>
-								</div>
-                                {/foreach}
-							</div>
-						</div>
-					</div>
-					<div class="index-new-right">
-						<span class="t-jiantou t-remark fr"><a href="{U('article/index/index')}">更多<i class="iconfont icon-more f-2"></i></a></span>
-					</div>
-				</section>
+                    {/foreach}
+				</div>
+			</div>
+		</div>
+		<div class="index-new-right">
+			<span class="t-jiantou t-remark fr"><a href="{U('article/index/index')}">更多<i class="iconfont icon-more f-2"></i></a></span>
+		</div>
+	</section>
     <script type="text/javascript">
         var gmt_end_time = {if $end_time}{$end_time}{else}0{/if};
         var day = '<em class="color-whie hour">';
@@ -106,16 +106,15 @@
             catch (e) {}
         }
     </script>
-    <!--discount-->
+    <!--discount 每日秒杀-->
     <div class="box mb-1 title inx-ms">
         <div class="box padding-all b-color-f">
-            <h3 class="color-red position-rel" >
-                <span class="fl inx-ms-time">限时<i class="iconfont">&#xe60b;</i>秒杀</span>
+            <h3 class="color-red position-rel clearfix" >
+                <span class="fl inx-ms-time">每日<i class="iconfont">&#xe60b;</i>秒杀</span>
                 <span class="color-dark" id="leftTime"></span>
                 <span class="t-jiantou t-remark fr"><a href="{U('category/index/products',array('intro'=>'promotion'))}">更多<i class="iconfont icon-more"></i></a></span>
             </h3>
         </div>
-
         <div class="b-color-f">
             <div class="swiper-container recom-container">
                 <div class="swiper-wrapper">
@@ -143,6 +142,299 @@
             {insert_ads(array('id'=>257, 'num'=>3))}
         </div>
     </div>
+    
+    <!--每日秒杀相关产品-->
+    <section class="product-list-medium">
+        <ul class="clearfix">
+          <!-- {foreach $best_goods as $key => $best} -->
+          <li>
+            <div class="product-div">
+              <a class="product-div-link" href="{$best.url}"></a>
+              <img class="product-list-img" src="{$best.goods_thumb}" />
+              <div class="product-text">
+                  <h4>{$best.goods_name}</h4>
+                  <p><span class="p-price t-first ">{$best.current_price}</span></p>
+              </div>
+            </div>
+          </li>
+          <!-- {/foreach} -->
+        </ul>
+    </section>
+
+    <!--匠物众筹-->
+    <div class="box mb-1 title inx-ms">
+        <div class="box padding-all b-color-f">
+            <h3 class="color-red position-rel clearfix" >
+                <span class="fl inx-ms-time">匠物<i class="iconfont">&#xe60b;</i>众筹</span>
+                <span class="color-dark" id="leftTime"></span>
+                <span class="t-jiantou t-remark fr"><a href="{U('category/index/products',array('intro'=>'promotion'))}">更多<i class="iconfont icon-more"></i></a></span>
+            </h3>
+        </div>
+        <div class="b-color-f">
+            <div class="swiper-container recom-container">
+                <div class="swiper-wrapper">
+                    <ul class="swiper-slide recom-list">
+                        <!-- {foreach $promotion_goods as $key => $promotion} -->
+                        <li>
+                            <a href="{$promotion.url}">
+                                <img src="{$promotion.goods_thumb}" />
+                                <p class="index-price text-c">{$promotion.current_price}<br><del>{$promotion.shop_price}</del></p>
+                            </a>
+                        </li>
+                        <!-- {if ($key+1)%3 == 0 && $key !== (count($promotion_goods)-1)} -->
+                    </ul><ul class="swiper-slide recom-list">
+                    <!-- {/if} -->
+                    <!-- {/foreach} -->
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--banner3-->
+    <div class="index-banner swiper-container box mb-1 banner-second">
+        <div class="swiper-wrapper">
+            {insert_ads(array('id'=>257, 'num'=>3))}
+        </div>
+    </div>
+    
+    <!--匠物众筹相关产品-->
+    <section class="product-list-medium">
+        <ul class="clearfix">
+          <!-- {foreach $best_goods as $key => $best} -->
+          <li>
+            <div class="product-div">
+              <a class="product-div-link" href="{$best.url}"></a>
+              <img class="product-list-img" src="{$best.goods_thumb}" />
+              <div class="product-text">
+                  <h4>{$best.goods_name}</h4>
+                  <p><span class="p-price t-first ">{$best.current_price}</span></p>
+              </div>
+            </div>
+          </li>
+          <!-- {/foreach} -->
+        </ul>
+    </section>
+
+    <!--餐厅-->
+    <div class="box mb-1 title inx-ms">
+        <div class="box padding-all b-color-f">
+            <h3 class="color-red position-rel clearfix" >
+                <span class="fl inx-ms-time">餐厅<i class="iconfont">&#xe60b;</i>系列</span>
+                <span class="color-dark" id="leftTime"></span>
+                <span class="t-jiantou t-remark fr"><a href="{U('category/index/products',array('intro'=>'promotion'))}">更多<i class="iconfont icon-more"></i></a></span>
+            </h3>
+        </div>
+        <div class="b-color-f">
+            <div class="swiper-container recom-container">
+                <div class="swiper-wrapper">
+                    <ul class="swiper-slide recom-list">
+                        <!-- {foreach $promotion_goods as $key => $promotion} -->
+                        <li>
+                            <a href="{$promotion.url}">
+                                <img src="{$promotion.goods_thumb}" />
+                                <p class="index-price text-c">{$promotion.current_price}<br><del>{$promotion.shop_price}</del></p>
+                            </a>
+                        </li>
+                        <!-- {if ($key+1)%3 == 0 && $key !== (count($promotion_goods)-1)} -->
+                    </ul><ul class="swiper-slide recom-list">
+                    <!-- {/if} -->
+                    <!-- {/foreach} -->
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--banner4-->
+    <div class="index-banner swiper-container box mb-1 banner-second">
+        <div class="swiper-wrapper">
+            {insert_ads(array('id'=>257, 'num'=>3))}
+        </div>
+    </div>
+    
+    <!--餐厅系列相关产品-->
+    <section class="product-list-medium">
+        <ul class="clearfix">
+          <!-- {foreach $best_goods as $key => $best} -->
+          <li>
+            <div class="product-div">
+              <a class="product-div-link" href="{$best.url}"></a>
+              <img class="product-list-img" src="{$best.goods_thumb}" />
+              <div class="product-text">
+                  <h4>{$best.goods_name}</h4>
+                  <p><span class="p-price t-first ">{$best.current_price}</span></p>
+              </div>
+            </div>
+          </li>
+          <!-- {/foreach} -->
+        </ul>
+    </section>
+
+    <!--客厅-->
+    <div class="box mb-1 title inx-ms">
+        <div class="box padding-all b-color-f">
+            <h3 class="color-red position-rel clearfix" >
+                <span class="fl inx-ms-time">客厅<i class="iconfont">&#xe60b;</i>系列</span>
+                <span class="color-dark" id="leftTime"></span>
+                <span class="t-jiantou t-remark fr"><a href="{U('category/index/products',array('intro'=>'promotion'))}">更多<i class="iconfont icon-more"></i></a></span>
+            </h3>
+        </div>
+        <div class="b-color-f">
+            <div class="swiper-container recom-container">
+                <div class="swiper-wrapper">
+                    <ul class="swiper-slide recom-list">
+                        <!-- {foreach $promotion_goods as $key => $promotion} -->
+                        <li>
+                            <a href="{$promotion.url}">
+                                <img src="{$promotion.goods_thumb}" />
+                                <p class="index-price text-c">{$promotion.current_price}<br><del>{$promotion.shop_price}</del></p>
+                            </a>
+                        </li>
+                        <!-- {if ($key+1)%3 == 0 && $key !== (count($promotion_goods)-1)} -->
+                    </ul><ul class="swiper-slide recom-list">
+                    <!-- {/if} -->
+                    <!-- {/foreach} -->
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--banner5-->
+    <div class="index-banner swiper-container box mb-1 banner-second">
+        <div class="swiper-wrapper">
+            {insert_ads(array('id'=>257, 'num'=>3))}
+        </div>
+    </div>
+    
+    <!--客厅系列相关产品-->
+    <section class="product-list-medium">
+        <ul class="clearfix">
+          <!-- {foreach $best_goods as $key => $best} -->
+          <li>
+            <div class="product-div">
+              <a class="product-div-link" href="{$best.url}"></a>
+              <img class="product-list-img" src="{$best.goods_thumb}" />
+              <div class="product-text">
+                  <h4>{$best.goods_name}</h4>
+                  <p><span class="p-price t-first ">{$best.current_price}</span></p>
+              </div>
+            </div>
+          </li>
+          <!-- {/foreach} -->
+        </ul>
+    </section>
+
+    <!--书房-->
+    <div class="box mb-1 title inx-ms">
+        <div class="box padding-all b-color-f">
+            <h3 class="color-red position-rel clearfix" >
+                <span class="fl inx-ms-time">书房<i class="iconfont">&#xe60b;</i>系列</span>
+                <span class="color-dark" id="leftTime"></span>
+                <span class="t-jiantou t-remark fr"><a href="{U('category/index/products',array('intro'=>'promotion'))}">更多<i class="iconfont icon-more"></i></a></span>
+            </h3>
+        </div>
+        <div class="b-color-f">
+            <div class="swiper-container recom-container">
+                <div class="swiper-wrapper">
+                    <ul class="swiper-slide recom-list">
+                        <!-- {foreach $promotion_goods as $key => $promotion} -->
+                        <li>
+                            <a href="{$promotion.url}">
+                                <img src="{$promotion.goods_thumb}" />
+                                <p class="index-price text-c">{$promotion.current_price}<br><del>{$promotion.shop_price}</del></p>
+                            </a>
+                        </li>
+                        <!-- {if ($key+1)%3 == 0 && $key !== (count($promotion_goods)-1)} -->
+                    </ul><ul class="swiper-slide recom-list">
+                    <!-- {/if} -->
+                    <!-- {/foreach} -->
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--banner6-->
+    <div class="index-banner swiper-container box mb-1 banner-second">
+        <div class="swiper-wrapper">
+            {insert_ads(array('id'=>257, 'num'=>3))}
+        </div>
+    </div>
+    
+    <!--书房系列相关产品-->
+    <section class="product-list-medium">
+        <ul class="clearfix">
+          <!-- {foreach $best_goods as $key => $best} -->
+          <li>
+            <div class="product-div">
+              <a class="product-div-link" href="{$best.url}"></a>
+              <img class="product-list-img" src="{$best.goods_thumb}" />
+              <div class="product-text">
+                  <h4>{$best.goods_name}</h4>
+                  <p><span class="p-price t-first ">{$best.current_price}</span></p>
+              </div>
+            </div>
+          </li>
+          <!-- {/foreach} -->
+        </ul>
+    </section>
+
+    <!--卧室-->
+    <div class="box mb-1 title inx-ms">
+        <div class="box padding-all b-color-f">
+            <h3 class="color-red position-rel clearfix" >
+                <span class="fl inx-ms-time">卧室<i class="iconfont">&#xe60b;</i>系列</span>
+                <span class="color-dark" id="leftTime"></span>
+                <span class="t-jiantou t-remark fr"><a href="{U('category/index/products',array('intro'=>'promotion'))}">更多<i class="iconfont icon-more"></i></a></span>
+            </h3>
+        </div>
+        <div class="b-color-f">
+            <div class="swiper-container recom-container">
+                <div class="swiper-wrapper">
+                    <ul class="swiper-slide recom-list">
+                        <!-- {foreach $promotion_goods as $key => $promotion} -->
+                        <li>
+                            <a href="{$promotion.url}">
+                                <img src="{$promotion.goods_thumb}" />
+                                <p class="index-price text-c">{$promotion.current_price}<br><del>{$promotion.shop_price}</del></p>
+                            </a>
+                        </li>
+                        <!-- {if ($key+1)%3 == 0 && $key !== (count($promotion_goods)-1)} -->
+                    </ul><ul class="swiper-slide recom-list">
+                    <!-- {/if} -->
+                    <!-- {/foreach} -->
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--banner6-->
+    <div class="index-banner swiper-container box mb-1 banner-second">
+        <div class="swiper-wrapper">
+            {insert_ads(array('id'=>257, 'num'=>3))}
+        </div>
+    </div>
+    
+    <!--卧室系列相关产品-->
+    <section class="product-list-medium">
+        <ul class="clearfix">
+          <!-- {foreach $best_goods as $key => $best} -->
+          <li>
+            <div class="product-div">
+              <a class="product-div-link" href="{$best.url}"></a>
+              <img class="product-list-img" src="{$best.goods_thumb}" />
+              <div class="product-text">
+                  <h4>{$best.goods_name}</h4>
+                  <p><span class="p-price t-first ">{$best.current_price}</span></p>
+              </div>
+            </div>
+          </li>
+          <!-- {/foreach} -->
+        </ul>
+    </section>
 
     <!--recom-->
     <div class="box mb-1 title inx-ms">
@@ -155,7 +447,7 @@
         </div>
 
         <section class="product-list-medium">
-            <ul>
+            <ul class="clearfix">
               <!-- {foreach $best_goods as $key => $best} -->
               <li>
                 <div class="product-div">
