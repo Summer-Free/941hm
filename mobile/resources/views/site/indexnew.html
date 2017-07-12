@@ -1,0 +1,455 @@
+﻿{include file="page_header-nav"}
+<body>
+<div class="con mb-7">
+    {if $app}
+    <div class="ect-header-banner dis-box">
+        <a href="javascript:;"><i class="iconfont icon-guanbi1"></i></a>
+        <div class="box-flex">
+            <img src="{__TPL__}img/more_icon.png" class="fl" />
+            <div class="ect-header-text fl">
+                <h4>享受更加流畅的商城体验</h4>
+                <p>赶快下载YZG多商户APP</p>
+            </div>
+        </div>
+        <a class="btn-submit1" href="http://test.b2b2c.ecjia.com/sites/touch/index.php?m=touch&c=index&a=download">立即下载</a>
+    </div>
+    {/if}
+    <div class="index-banner swiper-container box position-rel banner-first">
+        <div class="swiper-wrapper">
+        {insert_ads(array('id'=>256, 'num'=>6))}
+        </div>
+        <!-- 分页器 -->
+        <div class="swiper-pagination br-half text-c banner-first-pagination"></div>
+
+        <!--search-->
+        <section class="search box banner-search">
+            <div class="text-all position-rel dis-box j-text-all">
+                <a href="{U('location/index/index')}"><div class="dis-box search-logo"><div class="location-left-cont onelist-hidden">{$current_city.region_name}</div><div class="box-flex"><i class="iconfont icon-moreunfold"></i></div></div></a>
+                <div class="box-flex input-text n-input-text i-search-input">
+                    <a class="a-search-input j-search-input" href="#open_search"></a>
+                    <i class="iconfont icon-sousuo"></i>
+                    <div class="j-input-text nav-soso">商品/店铺搜索</div>
+                    <i class="iconfont icon-guanbi is-null j-is-null"></i>
+                </div>
+                <div class="search-left index-xiaoxi position-rel">
+                    <a href="{U('user/index/messagelist')}"><i class="iconfont icon-xiaoxi1"></i><em class="position-abo active"></em></a>
+                </div>
+            </div>
+        </section>
+
+        <!--linear-->
+        <div class="linear"></div>
+    </div>
+
+    <!--navigation-->
+    <nav class="newnav clearfix">
+        <figure>
+            <a href="#">
+                <img src="/941hm/mobile/statics/img/newapp/icon-1.png" width="60%" />
+                <figcaption>积 分 商 城</figcaption>
+            </a>
+        </figure>
+        <figure>
+            <a href="#">
+                <img src="/941hm/mobile/statics/img/newapp/icon-2.png" width="60%" />
+                <figcaption>保 养 技 师</figcaption>
+            </a>
+        </figure>
+        <figure class="margin-r-0">
+            <a href="#">
+                <img src="/941hm/mobile/statics/img/newapp/icon-3.png" width="60%" />
+                <figcaption>小 玩 意 儿</figcaption>
+            </a>
+        </figure>
+        <figure>
+            <a href="#">
+                <img src="/941hm/mobile/statics/img/newapp/icon-4.png" width="60%" />
+                <figcaption>以 物 换 物</figcaption>
+            </a>
+        </figure>
+        <figure>
+            <a href="#">
+                <img src="/941hm/mobile/statics/img/newapp/icon-5.png" width="60%" />
+                <figcaption>免 费 试 用</figcaption>
+            </a>
+        </figure>
+        <figure class="margin-r-0">
+            <a href="#">
+                <img src="/941hm/mobile/statics/img/newapp/icon-6.png" width="60%" />
+                <figcaption>风 格 馆</figcaption>
+            </a>
+        </figure>
+    </nav>
+    
+    <!--每日秒杀-->
+    <section class="newmrms clearfix">
+        <div class="wrap-pic"><img src="/941hm/mobile/statics/img/newapp/mrms.jpg" alt="" class="img-responsive"></div>
+        <div class="wrap-product">
+            <div class="newmrms-product swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" class="thumbnail">
+                            <img src="/941hm/mobile/statics/img/newapp/product-1.jpg" alt="每日秒杀" />
+                        </a>
+                        <div class="caption">
+                            <h2>啦啦啦啦啦啦啦</h2>
+                            <div class="clearfix">
+                                <ins>9.9</ins>
+                                <del>1111</del>
+                                <a class="btn btn-warning" href="#">立刻秒</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="thumbnail">
+                            <img src="/941hm/mobile/statics/img/newapp/product-1.jpg" alt="每日秒杀" />
+                        </a>
+                        <div class="caption">
+                            <h2>啦啦啦啦啦啦啦</h2>
+                            <div class="clearfix">
+                                <ins>9.9</ins>
+                                <del>1111</del>
+                                <a class="btn btn-warning" href="#">立刻秒</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="thumbnail">
+                            <img src="/941hm/mobile/statics/img/newapp/product-1.jpg" alt="每日秒杀" />
+                        </a>
+                        <div class="caption">
+                            <h2>啦啦啦啦啦啦啦</h2>
+                            <div class="clearfix">
+                                <ins>9.9</ins>
+                                <del>1111</del>
+                                <a class="btn btn-warning" href="#">立刻秒</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        var gmt_end_time = {if $end_time}{$end_time}{else}0{/if};
+        var day = '<em class="color-whie hour">';
+        var hour = '</em> : <em class="color-whie mini">';
+        var minute = '</em> : <em class="color-whie sec">';
+        var second = '</em>';
+        var end = '';
+        onload = function(){
+            try {onload_leftTime();}
+            catch (e) {}
+        }
+    </script>
+    
+    <!--新品上市-->
+    <section class="xpss common-sec">
+        <h2 class="common-h2">新品上市</h2>
+        <ul class="clearfix">
+            <li class="pull-left">
+                <figure class="margin-r-0">
+                    <a href="#">
+                        <img class="img-responsive" src="/941hm/mobile/statics/img/newapp/product-2.jpg" />
+                        <figcaption>刺猬紫檀光泽感新中式太师椅</figcaption>
+                    </a>
+                </figure>
+            </li>
+            <li class="pull-right">
+                <figure class="margin-r-0">
+                    <a href="#">
+                        <img class="img-responsive" src="/941hm/mobile/statics/img/newapp/product-2.jpg" />
+                        <figcaption>刺猬紫檀光泽感新中式太师椅</figcaption>
+                    </a>
+                </figure>
+            </li>
+        </ul>
+        <div class="tyg">
+            <img class="img-responsive" src="/941hm/mobile/statics/img/newapp/bg-tyg.jpg" alt="体验馆" />
+            <a class="online" href="#">线上体验馆</a>
+            <a class="offline" href="#">线下体验馆</a>
+        </div>
+    </section>
+
+    <!--限时优惠-->
+    <section class="xsyh common-sec">
+        <h2 class="common-h2">限时优惠</h2>
+        <ul class="clearfix">
+            <li class="pull-left">
+                <figure class="margin-r-0">
+                    <a href="#">
+                        <img class="img-responsive" src="/941hm/mobile/statics/img/newapp/product-2.jpg" />
+                        <figcaption>刺猬紫檀光泽感新中式太师椅</figcaption>
+                    </a>
+                </figure>
+            </li>
+            <li class="pull-right">
+                <figure class="margin-r-0">
+                    <a href="#">
+                        <img class="img-responsive" src="/941hm/mobile/statics/img/newapp/product-2.jpg" />
+                        <figcaption>刺猬紫檀光泽感新中式太师椅</figcaption>
+                    </a>
+                </figure>
+            </li>
+        </ul>
+        <div class="srdz">
+            <a href="#"><img class="img-responsive" src="/941hm/mobile/statics/img/newapp/bg-srdz.jpg" alt="体验馆" /></a>
+        </div>
+    </section>
+
+    <!--品牌街-->
+    <section class="newppj">
+        <h2 class="clearfix">品牌街 <a href="#">查看更多</a></h2>
+        <div class="ppjlist swiper-container">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide clearfix">
+                    <a href="#"><img src="/941hm/mobile/statics/img/newapp/pp-1.png" alt="美满居" /></a>
+                    <a href="#"><img src="/941hm/mobile/statics/img/newapp/pp-1.png" alt="美满居" /></a>
+                    <a href="#"><img src="/941hm/mobile/statics/img/newapp/pp-1.png" alt="美满居" /></a>
+                    <a href="#"><img src="/941hm/mobile/statics/img/newapp/pp-1.png" alt="美满居" /></a>
+                    <a href="#"><img src="/941hm/mobile/statics/img/newapp/pp-1.png" alt="美满居" /></a>
+                    <a href="#"><img src="/941hm/mobile/statics/img/newapp/pp-1.png" alt="美满居" /></a>
+                    <a href="#"><img src="/941hm/mobile/statics/img/newapp/pp-1.png" alt="美满居" /></a>
+                    <a href="#"><img src="/941hm/mobile/statics/img/newapp/pp-1.png" alt="美满居" /></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!--一元购-->
+    <section class="newyyg">
+        <h2>一 元 购</h2>
+        <ul class="newlist clearfix">
+            <li class="pull-left">
+                <a href="#"><img src="/941hm/mobile/statics/img/newapp/product-3.jpg" alt=""></a>
+                <div class="content">
+                    <h3>花雨转角沙发非花/缅花7件套</h3>
+                    <span>价值:&yen;19500</span>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:55%;">55%</div>
+                    </div>
+                    <ul class="condition clearfix">
+                        <li>18600<span>已参与</span></li>
+                        <li class="li-2">19500<span>总需人次</span></li>
+                        <li>23天<span>剩余</span></li>
+                    </ul>
+                    <div class="other clearfix">
+                        <a href="#">1元购买</a>
+                        <span class="pull-right"><i class="icon-start-black"></i></span>
+                    </div>
+                </div>
+            </li>
+            <li class="pull-right">
+                <a href="#"><img src="/941hm/mobile/statics/img/newapp/product-3.jpg" alt=""></a>
+                <div class="content">
+                    <h3>花雨转角沙发非花/缅花7件套</h3>
+                    <span>价值:&yen;19500</span>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:55%;">55%</div>
+                    </div>
+                    <ul class="condition clearfix">
+                        <li>18600<span>已参与</span></li>
+                        <li class="li-2">19500<span>总需人次</span></li>
+                        <li>23天<span>剩余</span></li>
+                    </ul>
+                    <div class="other clearfix">
+                        <a href="#">1元购买</a>
+                        <span class="pull-right"><i class="icon-start-black"></i></span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!--商家入驻广告-->
+    <section class="newsjrz">
+        <a href="#"><img src="/941hm/mobile/statics/img/newapp/sidebar-1.jpg" alt="商家入驻" width="100%" /></a>
+    </section>
+
+    <!--众筹美物-->
+    <section class="newzcmw">
+        <h2>众筹美物</h2>
+        <ul class="newlist clearfix">
+            <li class="pull-left">
+                <a href="#"><img src="/941hm/mobile/statics/img/newapp/product-4.jpg" alt=""></a>
+                <div class="content">
+                    <h3>花雨转角沙发非花/缅花7件套</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:55%;">55%</div>
+                    </div>
+                    <ul class="condition clearfix">
+                        <li>18600<span>已参与</span></li>
+                        <li class="li-2">19500<span>总需人次</span></li>
+                        <li>23天<span>剩余</span></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="pull-right">
+                <a href="#"><img src="/941hm/mobile/statics/img/newapp/product-4.jpg" alt=""></a>
+                <div class="content">
+                    <h3>花雨转角沙发非花/缅花7件套</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:55%;">55%</div>
+                    </div>
+                    <ul class="condition clearfix">
+                        <li>18600<span>已参与</span></li>
+                        <li class="li-2">19500<span>总需人次</span></li>
+                        <li>23天<span>剩余</span></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <div class="clearfix">
+            <figure class="margin-r-0">
+                <a href="#">
+                    <img src="/941hm/mobile/statics/img/newapp/ct.png" width="60%" alt="餐厅" />
+                    <figcaption>餐厅</figcaption>
+                </a>
+            </figure>
+            <figure class="margin-r-0">
+                <a href="#">
+                    <img src="/941hm/mobile/statics/img/newapp/kt.png" width="60%" alt="客厅" />
+                    <figcaption>客厅</figcaption>
+                </a>
+            </figure>
+            <figure class="margin-r-0">
+                <a href="#">
+                    <img src="/941hm/mobile/statics/img/newapp/sf.png" width="60%" alt="书房" />
+                    <figcaption>书房</figcaption>
+                </a>
+            </figure>
+            <figure class="margin-r-0">
+                <a href="#">
+                    <img src="/941hm/mobile/statics/img/newapp/ws.png" width="60%" alt="卧室" />
+                    <figcaption>卧室</figcaption>
+                </a>
+            </figure>
+        </div>
+    </section>
+
+    <!--套装推荐-->
+    <section class="newtztj">
+        <h2 class="common-h2">套装推荐</h2>
+        <a class="margin-b-1" href="#"><img src="/941hm/mobile/statics/img/newapp/tj-1.jpg" alt="" /></a>
+        <a href="#"><img src="/941hm/mobile/statics/img/newapp/tj-2.jpg" alt="" /></a>
+    </section>
+
+    <!--合作单位-->
+    <section class="newhzdw">
+        <h2>合作单位</h2>
+        <img src="/941hm/mobile/statics/img/newapp/hzdw.png" alt="合作单位" />
+    </section>
+
+    <!--公司承诺-->
+    <section class="newcn">
+        <ul>
+            <li class="pull-left"><img src="/941hm/mobile/statics/img/newapp/zpbz.png" alt="正品保障" /></li>
+            <li class="pull-right"><img src="/941hm/mobile/statics/img/newapp/zswx.png" alt="终身维修" /></li>
+            <li class="pull-left"><span><img src="/941hm/mobile/statics/img/newapp/xxpf.png" alt="先行赔付" /></li>
+            <li class="pull-right"><span><img src="/941hm/mobile/statics/img/newapp/yjhx.png" alt="以旧换新" /></li>
+        </ul>
+    </section>
+
+    <!--底部菜单-->
+	<footer class="footer-nav dis-box">
+		<a href="{U('site/index/index')}" class="box-flex nav-list active">
+			<i class="nav-box i-home"></i><span>首页</span>
+		</a>
+		<a href="{U('category/index/index')}" class="box-flex nav-list">
+			<i class="nav-box i-cate"></i><span>分类</span>
+		</a>
+		<a href="javascript:;" class="box-flex nav-list j-search-input">
+			<i class="nav-box i-shop"></i><span>搜索</span>
+		</a>
+		<a href="{U('cart/index/index')}" class="box-flex position-rel nav-list">
+			<i class="nav-box i-flow"></i><span>购物车</span>
+		</a>
+		{if $filter}
+		<a href="{U('drp/user/index')}" class="box-flex nav-list">
+			<i class="nav-box i-user"></i><span>{$custom}中心</span>
+		</a>
+		{elseif $community}
+		<a href="{U('community/index/index')}" class="box-flex nav-list">
+			<i class="nav-box i-user"></i><span>社区</span>
+		</a>
+		{else}
+		<a href="{U('user/index/index')}" class="box-flex nav-list">
+			<i class="nav-box i-user"></i><span>我</span>
+		</a>
+		{/if}
+	</footer>
+</div>
+
+<script type="text/javascript ">
+    $(function($) {
+    				var swiper = new Swiper('.index-new-list', {
+					pagination: '.swiper-pagination',
+					paginationClickable: true,
+					direction: 'vertical',
+					loop: true,
+					grabCursor: true,
+					autoplayDisableOnInteraction: false,
+					autoplay: 4000,
+					speed: 700,
+					freeMode: true,
+					noSwiping : true,
+				});
+        var mySwiper = new Swiper('.banner-first', {
+            autoplay: 4000,
+            loop: true,
+            pagination: '.banner-first-pagination'
+        });
+        var mySwiper = new Swiper('.banner-second', {
+            autoplay: 5000,
+            pagination: '.banner-second-pagination'
+        });
+        var mySwiper = new Swiper('.banner-third', {
+            autoplay: 5000,
+            pagination: '.banner-third-pagination'
+        });
+        var mySwiper = new Swiper('.recom-container', {
+            pagination: '.recom-pagination',
+            slidesPerView: 1,
+            paginationClickable: true
+        });
+        var mySwiper = new Swiper('.brand-container', {
+            pagination: '.brand-pagination',
+            slidesPerView: 1,
+            paginationClickable: true
+        });
+        var mySwiper = new Swiper('.hot-container', {
+            slidesPerView: 4,
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev'
+        });
+
+        //2017-6-6 添加
+        //每日秒杀
+        var mySwiper = new Swiper('.newmrms-product', {
+            slidesPerView: 2,
+            loop: true,
+            autoplay: 4000,
+            autoplayDisableOnInteraction: false
+        });
+
+        //品牌街
+        var mySwiper = new Swiper('.ppjlist', {
+            slidesPerView: 1,
+            loop: true,
+            autoplay: 4000,
+            autoplayDisableOnInteraction: false
+        });
+    });
+
+
+
+
+        autoplayDisableOnInteraction: false
+
+
+
+</script>
+</body>
+</html>
