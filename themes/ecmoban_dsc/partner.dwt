@@ -308,7 +308,7 @@
             <div class="section-11">
                 <div class="w1200">
                     <h2 class="big">报名入口</h2>
-                    <form action="partner.php" method="post">
+                    <form action="partner.php" method="post" id="form_info">
                         <div class="clearfix">
                             <label for="">姓名 :</label>
                             <input type="text" id="bm_name" name="bm_name" />
@@ -318,8 +318,16 @@
                             <input type="text" id="bm_phone" name="bm_phone" />
                         </div>
                         <div class="clearfix">
-                            <label for="">所在区域 :</label>
-                            <input type="text" id="bm_address" name="bm_address" />
+                            <label for="">所在省 :</label>
+                            <select name="" id="province">
+                                <option value="null">请选择省</option>
+                            </select>
+                        </div>
+                        <div class="clearfix">
+                            <label for="">所在市 :</label>
+                            <select name="" id="city">
+                                <option value="null">请选择市</option>
+                            </select>
                         </div>
                         
                         <div class="clearfix">
@@ -336,17 +344,16 @@
         <script type="text/javascript" src="themes/ecmoban_dsc/js/js/partner.js"></script>
         <script type="text/javascript">
             $(function(){
-                $("#check_submit").click(function(){
-                        var bm_name=$("#bm_name").val();
-                        var bm_phone=$("#bm_phone").val();
-                        var reg = /^[\u4e00-\u9fa5]{2,4}$/i; 
-                        var bm_address=$("#bm_address").val();
-                        if（bm_name == ""）
-                        {
-                            alert("用户名不能为空"); 
-                            return false;
-                        }    
-                        else if (!reg.test(bm_name))
+                $("#check_submit").click(function(e){
+                        e.preventDefault();
+                        var bm_name = $("#bm_name").val(),
+                            bm_phone = $("#bm_phone").val(),
+                            reg = /^[\u4e00-\u9fa5]{2,4}$/i,
+                            city = $("#city option:selected").val(),
+                            province = $("#province option:selected").val();
+                            console.log(province)
+                            console.log(city)
+                        if (!reg.test(bm_name))
                         {
                             alert("请输入2-4个汉字！"); 
                             return false;
@@ -356,14 +363,16 @@
                             alert("手机号码有误，请重填");  
                             return false; 
                         }
-                        else if(!reg.test(bm_address))
+                        else if(province == "null")
                         { 
-                            alert("请输入有效的地址信息，方便我们联系您！");  
+                            alert("请选择您所在省份!");  
+                            return false; 
+                        }
+                        else if(city == "null") {
+                            alert("请选择您所在城市!");  
                             return false; 
                         }
 
-                        
-                        //alert(bm_address);
                 })
             })
         </script> 
