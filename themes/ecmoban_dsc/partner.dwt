@@ -13,7 +13,7 @@
                 <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
                 <!--slide banner start-->
                 <div class="slide-banner bg-color-f5f5f5">      
-                    <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/partner-pic1.jpg" alt="" /></a></li>
+                    <a href="#" style="display: block; height: 601px; background: url(themes/ecmoban_dsc/iamges/20170517/partner-pic1.jpg) no-repeat center center"></a></li>
                 </div>
                 <!--slide banner end-->
         </div>
@@ -21,8 +21,7 @@
 
         <!--main body start-->
         <div id="main-body">
-            <div class="section-1">
-                <img src="themes/ecmoban_dsc/iamges/20170517/partner-pic2.jpg" alt="生态资源整合 跨界全网共享 互联网+红木玩转传统文化" />
+            <div class="section-1" style="height: 704px;background: url(themes/ecmoban_dsc/iamges/20170517/partner-pic2.jpg) no-repeat center center;">
             </div>
             <div class="section-2">
                 <div class="w1200 clearfix">

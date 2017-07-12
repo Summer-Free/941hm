@@ -343,7 +343,7 @@
 }
 .section-7 {
 	height: 849px;
-	background: url(../../iamges/20170517/partner-pic6.jpg) no-repeat top left;
+	background: url(../../iamges/20170517/partner-pic6.jpg) no-repeat center center;
 }
 .section-7 .w1200 {
 	position: relative;
@@ -368,21 +368,21 @@
 }
 .section-7 .left {
 	bottom: 260px;
-	left: 50px;
+	left: 38px;
 }
 .section-7 p {
 	line-height: 1.5;
 }
 .section-7 .right {
 	bottom: 260px;
-	right: 28px;	
+	right: 39px;	
 }
 .section-7 .middle {
 	top: 313px;
-	left: 473px;
-	width: 240px;
+	left: 458px;
+	width: 260px;
 }
-.section-7 .middle * {
+.section-7 .middle dl * {
 	float: left;
 	font-size: 18px;
 	color: #f99021;
@@ -454,7 +454,7 @@
 .section-9 {
 	padding-top: 65px;
 	height: 992px;
-	background: url(../../iamges/20170517/partner-pic9.jpg) no-repeat top left;
+	background: url(../../iamges/20170517/partner-pic9.jpg) no-repeat center center;
 }
 .section-9 h2 {
 	padding-bottom: 15px;
@@ -492,7 +492,7 @@
 .section-10 {
 	height: 701px;
 	text-align: center;
-	background: url(../../iamges/20170517/partner-pic10.jpg) no-repeat top left;
+	background: url(../../iamges/20170517/partner-pic10.jpg) no-repeat center center;
 }
 .section-10 .w1200 {
 	position: relative;
@@ -522,7 +522,7 @@
 .section-11 {
 	padding-top: 65px;
 	height: 598px;
-	background: url(../../iamges/20170517/partner-pic12.jpg) no-repeat top left;
+	background: url(../../iamges/20170517/partner-pic12.jpg) no-repeat center center;
 }
 .section-11 form * {
 	font-size: 30px;
