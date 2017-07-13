@@ -209,14 +209,14 @@
     <!--匠物众筹相关产品-->
     <section class="product-list-medium">
         <ul class="clearfix">
-          <!-- {foreach $best_goods as $key => $best} -->
+          <!-- {foreach $zc_list as $key => $zc_list} -->
           <li>
             <div class="product-div">
-              <a class="product-div-link" href="{$best.url}"></a>
-              <img class="product-list-img" src="{$best.goods_thumb}" />
+              <a class="product-div-link" href="{$zc_list.url}"></a>
+              <img class="product-list-img" src="../{$zc_list.title_img}" />
               <div class="product-text">
-                  <h4>{$best.goods_name}</h4>
-                  <p><span class="p-price t-first ">{$best.current_price}</span></p>
+                  <h4>{$zc_list.title}</h4>
+                  <!--<p><span class="p-price t-first ">{$best.current_price}</span></p>-->
               </div>
             </div>
           </li>
