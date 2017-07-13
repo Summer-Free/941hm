@@ -122,6 +122,7 @@ body {
 	text-align: center;
 }
 .sec-3 .col-xs-4 .wrap>div {
+	padding-top: .3rem;
 	width: 3.777rem;
 	height: 3.777rem;
 	background-color: #fff;
@@ -199,4 +200,32 @@ body {
 	height: 15.111rem;
 	background: url(/941hm/mobile/statics/img/newapp/par-pic7.jpg) no-repeat top center;
 	background-size: 100% 100%;
+}
+.sec-8 h2 {
+	margin-bottom: 1rem;
+	color: #f99021;
+	font-weight: 600;
+	text-align: center;
+}
+.sec-8 .form-group {
+	margin-bottom: .6rem;
+}
+.sec-8 label {
+	text-align: right;
+}
+.sec-8 label,
+.sec-8 input,
+.sec-8 button,
+.sec-8 select {
+	padding: 0;
+	height: 1.555rem;
+	font-size: 1.333rem;
+	line-height: 1.555rem;
+}
+.sec-8 input {
+	padding-left: .5rem;
+}
+.sec-8 button {
+	color: #fff;
+	background-color: #f99021;
 }
