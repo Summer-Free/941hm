@@ -23,12 +23,12 @@
             </div>
             <div class="swiper-slide">
                 <a href="#">
-                    <img src="/941hm/mobile/statics/img/newapp/banner1.jpg" alt="" />
+                    <img src="/941hm/mobile/statics/img/newapp/banner2.jpg" alt="" />
                 </a>
             </div>
             <div class="swiper-slide">
                 <a href="#">
-                    <img src="/941hm/mobile/statics/img/newapp/banner1.jpg" alt="" />
+                    <img src="/941hm/mobile/statics/img/newapp/banner3.jpg" alt="" />
                 </a>
             </div>
         </div>
@@ -222,7 +222,7 @@
             <h3 class="color-red position-rel clearfix" >
                 <span class="fl inx-ms-time">餐厅<i class="iconfont">&#xe60b;</i>系列</span>
                 <span class="color-dark" id="leftTime"></span>
-                <span class="t-jiantou t-remark fr"><a href="{U('category/index/products',array('intro'=>'promotion'))}">更多<i class="iconfont icon-more"></i></a></span>
+                <span class="t-jiantou t-remark fr"><a href="../mobile/index.php?r=category/index/products&id=453">更多<i class="iconfont icon-more"></i></a></span>
             </h3>
         </div>
         <div class="b-color-f">
@@ -256,14 +256,14 @@
     <!--餐厅系列相关产品-->
     <section class="product-list-medium">
         <ul class="clearfix">
-          <!-- {foreach $best_goods as $key => $best} -->
+          <!-- {foreach $sql_ct as $key => $sql_ct} -->
           <li>
             <div class="product-div">
-              <a class="product-div-link" href="{$best.url}"></a>
-              <img class="product-list-img" src="{$best.goods_thumb}" />
+              <a class="product-div-link" href="../mobile/index.php?r=goods&id={$sql_ct.goods_id}&u=0"></a>
+              <img class="product-list-img" src="../{$sql_ct.goods_thumb}" />
               <div class="product-text">
-                  <h4>{$best.goods_name}</h4>
-                  <p><span class="p-price t-first ">{$best.current_price}</span></p>
+                  <h4>{$sql_ct.goods_name}</h4>
+                  <p><span class="p-price t-first "><em>￥</em>{$sql_ct.market_price}</span></p>
               </div>
             </div>
           </li>
@@ -277,7 +277,7 @@
             <h3 class="color-red position-rel clearfix" >
                 <span class="fl inx-ms-time">客厅<i class="iconfont">&#xe60b;</i>系列</span>
                 <span class="color-dark" id="leftTime"></span>
-                <span class="t-jiantou t-remark fr"><a href="{U('category/index/products',array('intro'=>'promotion'))}">更多<i class="iconfont icon-more"></i></a></span>
+                <span class="t-jiantou t-remark fr"><a href="../mobile/index.php?r=category/index/products&id=113">更多<i class="iconfont icon-more"></i></a></span>
             </h3>
         </div>
         <div class="b-color-f">
@@ -311,14 +311,14 @@
     <!--客厅系列相关产品-->
     <section class="product-list-medium">
         <ul class="clearfix">
-          <!-- {foreach $best_goods as $key => $best} -->
+          <!-- {foreach $sql_kt as $key => $sql_kt} -->
           <li>
             <div class="product-div">
-              <a class="product-div-link" href="{$best.url}"></a>
-              <img class="product-list-img" src="{$best.goods_thumb}" />
+              <a class="product-div-link" href="../mobile/index.php?r=goods&id={$sql_kt.goods_id}&u=0"></a>
+              <img class="product-list-img" src="../{$sql_kt.goods_thumb}" />
               <div class="product-text">
-                  <h4>{$best.goods_name}</h4>
-                  <p><span class="p-price t-first ">{$best.current_price}</span></p>
+                  <h4>{$sql_kt.goods_name}</h4>
+                  <p><span class="p-price t-first "><em>￥</em>{$sql_kt.market_price}</span></p>
               </div>
             </div>
           </li>
@@ -332,7 +332,7 @@
             <h3 class="color-red position-rel clearfix" >
                 <span class="fl inx-ms-time">书房<i class="iconfont">&#xe60b;</i>系列</span>
                 <span class="color-dark" id="leftTime"></span>
-                <span class="t-jiantou t-remark fr"><a href="{U('category/index/products',array('intro'=>'promotion'))}">更多<i class="iconfont icon-more"></i></a></span>
+                <span class="t-jiantou t-remark fr"><a href="../mobile/index.php?r=category/index/products&id=146">更多<i class="iconfont icon-more"></i></a></span>
             </h3>
         </div>
         <div class="b-color-f">
@@ -366,14 +366,14 @@
     <!--书房系列相关产品-->
     <section class="product-list-medium">
         <ul class="clearfix">
-          <!-- {foreach $best_goods as $key => $best} -->
+          <!-- {foreach $sql_sf as $key => $sql_sf} -->
           <li>
             <div class="product-div">
-              <a class="product-div-link" href="{$best.url}"></a>
-              <img class="product-list-img" src="{$best.goods_thumb}" />
+              <a class="product-div-link" href="../mobile/index.php?r=goods&id={$sql_sf.goods_id}&u=0"></a>
+              <img class="product-list-img" src="../{$sql_sf.goods_thumb}" />
               <div class="product-text">
-                  <h4>{$best.goods_name}</h4>
-                  <p><span class="p-price t-first ">{$best.current_price}</span></p>
+                  <h4>{$sql_sf.goods_name}</h4>
+                  <p><span class="p-price t-first "><em>￥</em>{$sql_sf.market_price}</span></p>
               </div>
             </div>
           </li>
@@ -387,7 +387,7 @@
             <h3 class="color-red position-rel clearfix" >
                 <span class="fl inx-ms-time">卧室<i class="iconfont">&#xe60b;</i>系列</span>
                 <span class="color-dark" id="leftTime"></span>
-                <span class="t-jiantou t-remark fr"><a href="{U('category/index/products',array('intro'=>'promotion'))}">更多<i class="iconfont icon-more"></i></a></span>
+                <span class="t-jiantou t-remark fr"><a href="../mobile/index.php?r=category/index/products&id=14">更多<i class="iconfont icon-more"></i></a></span>
             </h3>
         </div>
         <div class="b-color-f">
@@ -421,14 +421,14 @@
     <!--卧室系列相关产品-->
     <section class="product-list-medium">
         <ul class="clearfix">
-          <!-- {foreach $best_goods as $key => $best} -->
+          <!-- {foreach $sql_ws as $key => $sql_ws} -->
           <li>
             <div class="product-div">
-              <a class="product-div-link" href="{$best.url}"></a>
-              <img class="product-list-img" src="{$best.goods_thumb}" />
+              <a class="product-div-link" href="../mobile/index.php?r=goods&id={$sql_ws.goods_id}&u=0"></a>
+              <img class="product-list-img" src="../{$sql_ws.goods_thumb}" />
               <div class="product-text">
-                  <h4>{$best.goods_name}</h4>
-                  <p><span class="p-price t-first ">{$best.current_price}</span></p>
+                  <h4>{$sql_ws.goods_name}</h4>
+                  <p><span class="p-price t-first "><em>￥</em>{$sql_ws.market_price}</span></p>
               </div>
             </div>
           </li>
@@ -442,7 +442,7 @@
             <h3 class="recom-title">
                 精品推荐
                 <span>精品商品尽收眼底赶快行动吧</span>
-                <span class="t-jiantou t-remark fr"><a href="{U('category/index/products',array('intro'=>'best'))}">更多<i class="iconfont icon-more"></i></a></span>
+                <span class="t-jiantou t-remark fr"><a href="../mobile/index.php?r=category">更多<i class="iconfont icon-more"></i></a></span>
             </h3>
         </div>
 
