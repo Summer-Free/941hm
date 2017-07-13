@@ -353,37 +353,29 @@
                             bm_phone = $("#bm_phone").val(),
                             reg = /^[\u4e00-\u9fa5]{2,4}$/i,
                             city = $("#city option:selected").val(),
-<<<<<<< HEAD
                             province = $("#province option:selected").val();
-                            //console.log(province)
-                            //console.log(city)
-=======
-                            province = $("#province option:selected").val(); 
->>>>>>> ba7a3385d6828439ceb01e45e75c23ee681b75e5
                         if (!reg.test(bm_name))
-                        {
-                            alert("请输入2-4个汉字！"); 
-                            return false;
-                        }
+                            {
+                                alert("请输入2-4个汉字！"); 
+                                return false;
+                            }
                         else if(!(/^1[34578]\d{9}$/.test(bm_phone)))
-                        { 
-                            alert("手机号码有误，请重填");  
-                            return false; 
-                        }
+                            { 
+                                alert("手机号码有误，请重填");  
+                                return false; 
+                            }
                         else if(province == "null")
-                        { 
-                            alert("请选择您所在省份!");  
-                            return false; 
-                        }
-                        else if(city == "null") {
+                            { 
+                                alert("请选择您所在省份!");  
+                                return false; 
+                            }
+                        else if(city == "null") 
+                        {
                             alert("请选择您所在城市!");  
                             return false; 
-<<<<<<< HEAD
-                        }
-=======
+                        
                         };
 
->>>>>>> ba7a3385d6828439ceb01e45e75c23ee681b75e5
                 })
             })
         </script> 
