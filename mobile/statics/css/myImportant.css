@@ -27,3 +27,7 @@
 .index-new-cont p {
 	margin-top: 0;
 }
+.index-new-cont h4 {
+	width: 9rem;
+	text-overflow: ellipsis;
+}
