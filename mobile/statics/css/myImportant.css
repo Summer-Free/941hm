@@ -1,0 +1,17 @@
+.ul-5 li {
+    width: 25%;
+    float: left;
+}
+.product-list-medium ul {
+    border-bottom: 1px solid #ccc;
+}
+.product-list-medium ul li {
+    float: left;
+    width: 50%;
+    padding: .2rem 0;
+    border-top: 1px solid #ccc;
+}
+.product-list-medium ul li:nth-child(2n-1) {
+    padding-right: 0.2rem;
+    border-right: 1px solid #ccc;
+}
