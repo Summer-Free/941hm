@@ -80,10 +80,11 @@
 				<div class="swiper-wrapper">
                     {foreach $article as $vo}
 					<div class="swiper-slide swiper-no-swiping">
-						<a class="product-div-link" href="{$vo['url']}"></a>
-						<div class="index-new-cont">
-							{$vo['title']}
-							{$vo['add_time']}
+						<div class="index-new-cont clearfix">
+                            <a href="{$vo['url']}">
+                                <h4 class="pull-left col-3 f-05 onelist-hidden">{$vo['title']}</h4>
+                                <p class="pull-right col-9 f-02">{$vo['add_time']}</p>
+                            </a>
 						</div>
 					</div>
                     {/foreach}

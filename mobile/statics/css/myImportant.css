@@ -18,3 +18,12 @@
 .product-text h4 {
 	padding: 0;
 }
+.index-new-cont {
+	margin: 0;
+}
+.index-new-cont * {
+	line-height: 4.6rem!important;
+}
+.index-new-cont p {
+	margin-top: 0;
+}
