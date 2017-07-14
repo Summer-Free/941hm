@@ -15,3 +15,6 @@
     padding-right: 0.2rem;
     border-right: 1px solid #ccc;
 }
+.product-text h4 {
+	padding: 0;
+}
