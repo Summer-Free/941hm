@@ -1,11 +1,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>{$page_title}</title>
 <link rel="stylesheet" type="text/css" href="themes/ecmoban_dsc/base.css" />
 <link rel="stylesheet" type="text/css" href="themes/ecmoban_dsc/user.css" />
-<link rel="stylesheet" href="themes/ecmoban_dsc/purebox.css">
+
+<!--2017/07/14 添加-->
+<!-- #BeginLibraryItem "/library/header_title_djj.lbi" --><!-- #EndLibraryItem -->
+<!--首页CSS以及部分通用部分的合并LBI-->
+
 {* 包含脚本文件 *}
 {insert_scripts files='common.js,user.js,kauidiWindow.js'}
 {insert_scripts files='jquery-1.9.1.min.js,jquery.json.js,transport_jquery.js,utils.js,region.js,shopping_flow.js'}
@@ -16,16 +19,23 @@
 
 <script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.yomi.js"></script>
 <script type="text/javascript" src="themes/ecmoban_dsc/js/rotate3di.js"></script>
-<script type="text/javascript" src="themes/ecmoban_dsc/js/ecsc-nav.js"></script>
+<!-- <script type="text/javascript" src="themes/ecmoban_dsc/js/ecsc-nav.js"></script> -->
 <script type="text/javascript" src="themes/ecmoban_dsc/js/checkAll.js"></script>
 <script type="text/javascript" src="themes/ecmoban_dsc/js/scroll_city.js"></script>
 <script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.poshytip.js"></script>
 
+{insert_scripts files='suggest.js,warehouse_area.js'}
 </head>
 
 <body id="user">
 {* 941红木 提醒您：动态载入position_get_adv.lbi，显示首页分类小广告 *}{insert name='get_adv' logo_name=$top_banner}
-<!-- #BeginLibraryItem "/library/page_header_user.lbi" --><!-- #EndLibraryItem -->
+
+<!--header start-->
+<div id="header">
+    <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
+</div>
+<!--header end-->
+
 <div class="main w1200 user_tran">
     <div class="user-left">
         <!-- #BeginLibraryItem "/library/user_menu.lbi" --><!-- #EndLibraryItem -->
@@ -5607,10 +5617,9 @@ function oath_removeResponse(result){
     <!-- {/if} -->
     <!--#我的众筹 end-->    
 </div>
-<!-- #BeginLibraryItem "/library/page_footer_flow.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/page_footer_djj.lbi" --><!-- #EndLibraryItem -->
 
 <!-- #BeginLibraryItem "/library/common_html.lbi" --><!-- #EndLibraryItem -->
-<script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.purebox.js"></script>
 <script type="text/javascript">
 $(".user-bonus-temp").slide({titCell:".bonus-tabs li",mainCell:".bonus_content_list",trigger:"click"});
 $(".ul-payment-list").tabso({ cntSelect:".payment-info-list",tabEvent:"click",tabStyle:"normal",onStyle:"item-selected"});

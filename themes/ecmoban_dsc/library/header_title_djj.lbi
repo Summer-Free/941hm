@@ -1,0 +1,27 @@
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<meta content="941红木网-红木家具O2O购物平台，提供欧式家具,明式家具,新中式家具,各种款式的红木家具价格与图片,厂家直销,售后无忧，941红木2017年消费者最受欢迎的红木家具品牌。" name="description" />
+		<meta content="红木家具,红木家具商城,941红木网,红木O2O商城,红木家具价格及图片,红木家具品牌" name="Keywords" />
+		<!--基础css-->
+		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/base.css">
+		<!--通用头部-->
+		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/header.css">
+		<!--轮播图片-->
+		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/slideFadein_out.css">
+		<!--通用底部-->
+		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/footer.css">
+		<!--搜索提示框-->
+		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/suggest.css">
+		<!--右侧悬浮栏-->
+		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/quickLinks.css">
+		<!--底部隐藏input(弹窗)-->
+		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/purebox.css">
+		<!--统计代码-->
+		<script type="text/javascript">
+         		var _hmt = _hmt || [];
+				(function() {
+					  var hm = document.createElement("script");
+					  hm.src = "https://hm.baidu.com/hm.js?49a2fe95c7db7c2caf78bc0d55c31d53";
+					  var s = document.getElementsByTagName("script")[0]; 
+					  s.parentNode.insertBefore(hm, s);
+				})();
+         </script>

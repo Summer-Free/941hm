@@ -138,8 +138,9 @@ table{border-collapse:collapse;border-spacing:0;}
 
 /*width style*/
 .w1200 {
-  margin: 0 auto;
+  margin: 0 auto!important;
   width: 1200px;
+  background-color: transparent!important;
 }
 .w151 {
   width: 151px;
