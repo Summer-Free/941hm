@@ -339,7 +339,11 @@
               <img class="product-list-img" src="../{$sql_ws.goods_thumb}" />
               <div class="product-text">
                   <h4>{$sql_ws.goods_name}</h4>
-                  <p><span class="p-price t-first "><em>￥</em>{$sql_ws.market_price}</span></p>
+                  <p><span class="p-price t-first "><em>￥</em>
+                  <!--{if $key.market_price == 0}-->
+                        {$sql_ws.shop_price}
+                  <!--{/if}-->
+                  {$sql_ws.market_price}</span></p>
               </div>
             </div>
           </li>

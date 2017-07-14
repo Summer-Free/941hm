@@ -111,9 +111,7 @@
             </div>
         </div>
     </div>
-    
     <script type="text/javascript">
-        
 		{if $order_type}
         $(function(){
                 if({$order_where} == 1){
