@@ -92,7 +92,7 @@ body {
 	color: #f99021;
 }
 .sec-3 {
-	background: url(/941hm/mobile/statics/img/newapp/par-pic2.jpg) no-repeat top center;
+	background: url(../img/newapp/par-pic2.jpg) no-repeat top center;
 	background-size: 100% 100%;
 }
 .sec-3 h2,.sec-5 h2 {
@@ -146,7 +146,7 @@ body {
 .sec-6 {
 	padding: 1rem 0;
 	height: 21.5rem;
-	background: url(/941hm/mobile/statics/img/newapp/par-pic5.jpg) no-repeat top center;
+	background: url(../img/newapp/par-pic5.jpg) no-repeat top center;
 	background-size: 100% 100%;
 }
 .sec-6 h2,
@@ -164,7 +164,7 @@ body {
 }
 .sec-6 dd {
 	padding-left: .8rem;
-	background: url(/941hm/mobile/statics/img/newapp/par-pic1.png) no-repeat left center;
+	background: url(../img/newapp/par-pic1.png) no-repeat left center;
 	background-size: .666rem .8333rem;
 }
 .sec-6>div {
@@ -174,7 +174,7 @@ body {
 .sec-7 {
 	padding: 1rem 0;
 	height: 15.111rem;
-	background: url(/941hm/mobile/statics/img/newapp/par-pic6.jpg) no-repeat top center;
+	background: url(../img/newapp/par-pic6.jpg) no-repeat top center;
 	background-size: 100% 100%;
 }
 .sec-7 h2 {
@@ -198,7 +198,7 @@ body {
 .sec-8 {
 	padding: 1rem 0;
 	height: 15.111rem;
-	background: url(/941hm/mobile/statics/img/newapp/par-pic7.jpg) no-repeat top center;
+	background: url(../img/newapp/par-pic7.jpg) no-repeat top center;
 	background-size: 100% 100%;
 }
 .sec-8 h2 {

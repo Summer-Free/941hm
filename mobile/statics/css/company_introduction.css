@@ -82,7 +82,7 @@ body {
 }
 .sec-2 .col-xs-12 {
 	height: 9.11rem;
-	background: #fff url(/941hm/mobile/statics/img/newapp/com-pic1.png) no-repeat 2.5rem 50%;
+	background: #fff url(../mobile/statics/img/newapp/com-pic1.png) no-repeat 2.5rem 50%;
 	background-size: 7.611rem 7.222rem;
 }
 .sec-2 .col-xs-7 {
@@ -125,7 +125,7 @@ body {
 	height: 4.77rem;
 	line-height: 4.77rem;
 	color: #fff;
-	background-image: url(/941hm/mobile/statics/img/newapp/com-pic3.png);
+	background-image: url(../mobile/statics/img/newapp/com-pic3.png);
 	background-repeat: no-repeat;
 	background-size: 10rem 4.77rem;
 	background-position: 0 0;
@@ -149,7 +149,7 @@ body {
 
 @media (max-width: 320px) {
 	.sec-2 .col-xs-12 {
-		background: #fff url(/941hm/mobile/statics/img/newapp/com-pic1.png) no-repeat 1rem 50%;
+		background: #fff url(../mobile/statics/img/newapp/com-pic1.png) no-repeat 1rem 50%;
 		background-size: 7.611rem 7.222rem;
 	}
 	.sec-2 .col-xs-7 {
