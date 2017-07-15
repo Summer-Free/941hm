@@ -31,3 +31,6 @@
 	width: 14rem;
 	text-overflow: ellipsis;
 }
+.footer-nav {
+    z-index: 1000;
+}
