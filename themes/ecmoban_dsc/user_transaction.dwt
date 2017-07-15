@@ -27,6 +27,15 @@
 {insert_scripts files='suggest.js,warehouse_area.js'}
 </head>
 
+<!--2017/07/15 解决样式冲突-->
+<style>
+    .user-order-all .u-operate {
+        width: 139px;
+    }
+    .user_address_info .thead {
+        width: 901px;
+    }
+</style>
 <body id="user">
 {* 941红木 提醒您：动态载入position_get_adv.lbi，显示首页分类小广告 *}{insert name='get_adv' logo_name=$top_banner}
 
@@ -2356,7 +2365,7 @@
                         </div>
                     </div>
                     <div class="tbody">
-                        <div class="tr">
+                        <div class="tr clearfix">
                             <div class="td td_l">
                                 <div class="label">收货人：</div>
                                 <div class="value">{$consignee.consignee}</div>
@@ -2366,7 +2375,7 @@
                                 <div class="value">{$consignee.tel}</div>
                             </div>
                         </div>
-                        <div class="tr">
+                        <div class="tr clearfix">
                             <div class="td td_l">
                                 <div class="label">收货地址：</div>
                                 <div class="value qmark-tip" title="{$consignee.region}&nbsp;{$consignee.address}">{$consignee.region}&nbsp;{$consignee.address}</div>
@@ -2376,7 +2385,7 @@
                                 <div class="value">{$consignee.mobile}</div>
                             </div>
                         </div>
-                        <div class="tr">
+                        <div class="tr clearfix">
                             <div class="td td_l">
                                 <div class="label">邮政编码：</div>
                                 <div class="value">{$consignee.zipcode}</div>
@@ -2386,7 +2395,7 @@
                                 <div class="value">{$consignee.email} </div>
                             </div>
                         </div>
-                        <div class="tr">
+                        <div class="tr clearfix">
                             <div class="td td_l">
                                 <div class="label">地址别名：</div>
                                 <div class="value">{$consignee.sign_building}</div>

@@ -863,8 +863,8 @@ table.user-product-list{ margin:0;}
 .user_address_info .thead .cz_r a:hover{ color:#ec5051;}
 .user_address_info .tbody .tr{ width:100%;}
 .user_address_info .tbody .td{ border:1px solid #dcdcdc; margin:-1px -1px 0 0; height:38px; line-height:38px; float:left;}
-.user_address_info .tbody .td_l{ width:450px;}
-.user_address_info .tbody .td_r{ width:449px;}
+.user_address_info .tbody .td_l{ width:452px;}
+.user_address_info .tbody .td_r{ width:450px;}
 .user_address_info .tbody .label{ width:96px; text-align:right; float:left; color:#888;}
 .user_address_info .tbody .value{ text-align:left; float:left; color:#666;}
 .user_address_info .tbody .td_r .label{ width:120px;}
@@ -881,7 +881,7 @@ table.user-product-list{ margin:0;}
 .user_lack .user-product-list .u-number{ width:88px;}
 .user_lack .user-product-list .u-time{ width:112px;}
 .user_lack .user-product-list .u-beizhu{ width:298px;}
-.user_lack .user-product-list .u-operate{ width:82px;}
+.user_lack .user-product-list .u-operate{ width:86px;}
 .user_lack .user-product-list .product-item{ width:240px; padding-right:0; padding-left:20px;}
 .user_lack .user-product-list .td.u-beizhu span{ line-height:25px; height:82px; vertical-align:middle; text-align:left; display:table-cell; padding:0 25px; *display:block; *margin-top:10px;}
 .user_lack .user-product-list .td.u-operate i{}
