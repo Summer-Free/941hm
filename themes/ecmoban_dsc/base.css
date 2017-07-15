@@ -395,7 +395,7 @@ overflow:hidden;}
 .header .site-commitment a{ display:block; width:190px; height:55px;}
 .header .site-commitment .site-commitment-front,.header .site-commitment .site-commitment-back{ z-index:9;}
 
-.nav{ height:44px; line-height:44px; margin-top:10px;}
+/*.nav{ height:44px; line-height:44px; margin-top:10px;}*/
 .categorys{ float:left; position:relative; z-index:105; width:230px; height:44px; overflow:visible;}
 .categorys .dt a{ display:block; width:190px; height:44px; font:400 15px/44px "microsoft yahei"; padding:0 20px; background:#2b2b2b; color:#fff;}
 .categorys .dt i.icon,.categorys .dt i.cat_icon{ position:absolute; width:18px; height:18px; left:15px; top:8px; background-position:0 -3px;}

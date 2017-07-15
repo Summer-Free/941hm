@@ -99,8 +99,7 @@
         
         <!--自定义方法-->
         <script type="text/javascript" src="themes/ecmoban_dsc/js/js/common.js"></script>
-        <!--旧的通用js,有很多文件对此有依赖-->
-        <script type="text/javascript" src="themes/ecmoban_dsc/js/js/common-old.js"></script>
+
         <!--底部隐藏的input 对此有依赖-->
         <script type="text/javascript" src="themes/ecmoban_dsc/js/js/cart_common.js"></script>
         <!--右侧悬浮栏-->

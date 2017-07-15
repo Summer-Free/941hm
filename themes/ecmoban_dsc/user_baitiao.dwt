@@ -1,11 +1,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>{$page_title}</title>
     <link rel="stylesheet" type="text/css" href="themes/ecmoban_dsc/base.css" />
     <link rel="stylesheet" type="text/css" href="themes/ecmoban_dsc/user.css" />
-    <link rel="stylesheet" href="themes/ecmoban_dsc/purebox.css">
+    <!-- <link rel="stylesheet" href="themes/ecmoban_dsc/purebox.css"> -->
+
+    <!--2017/07/14 添加-->
+    <!-- #BeginLibraryItem "/library/header_title_djj.lbi" --><!-- #EndLibraryItem -->
+    <!--首页CSS以及部分通用部分的合并LBI-->
+
     {* 包含脚本文件 *}
     {insert_scripts files='jquery-1.9.1.min.js,jquery.json.js,transport_jquery.js,common.js,utils.js'}
     <script type="text/javascript" src="themes/ecmoban_dsc/js/sc_memake.js"></script>
@@ -15,14 +21,126 @@
     
     <script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.yomi.js"></script>
     <script type="text/javascript" src="themes/ecmoban_dsc/js/rotate3di.js"></script>
-    <script type="text/javascript" src="themes/ecmoban_dsc/js/ecsc-nav.js"></script>
+    <!-- <script type="text/javascript" src="themes/ecmoban_dsc/js/ecsc-nav.js"></script> -->
     <script type="text/javascript" src="themes/ecmoban_dsc/js/checkAll.js"></script>
     <script type="text/javascript" src="themes/ecmoban_dsc/js/scroll_city.js"></script>
     <script type="text/javascript" src="themes/ecmoban_dsc/js/ZeroClipboard/ZeroClipboard.js"></script>
+
+    {insert_scripts files='suggest.js,warehouse_area.js'}
 </head>
 
+
+<script type="text/javascript">
+
+function changenum(rec_id, diff, warehouse_id, area_id)
+{
+    var cValue = $('#cart_value').val();
+                var goods_number =Number($('#goods_number_' + rec_id).text()) + Number(diff);
+ 
+    if(goods_number < 1)
+    {
+        return false;   
+    }
+    else
+    {
+        change_goods_number(rec_id,goods_number, warehouse_id, area_id, cValue);
+    }
+}
+function change_goods_number(rec_id, goods_number, warehouse_id, area_id, cValue)
+{
+    if(cValue != '' || cValue == 'undefined'){
+       var cValue = $('#cart_value').val(); 
+    }   
+    
+    Ajax.call('flow.php?step=ajax_update_cart', 'rec_id=' + rec_id +'&goods_number=' + goods_number +'&cValue=' + cValue +'&warehouse_id=' + warehouse_id +'&area_id=' + area_id, change_goods_number_response, 'POST','JSON');                
+}
+function change_goods_number_response(result)
+{    
+    var rec_id = result.rec_id;           
+    if (result.error == 0)
+    {
+       $('#goods_number_' +rec_id).val(result.goods_number);//更新数量
+       $('#goods_subtotal_' +rec_id).html(result.goods_subtotal);//更新小计
+       if (result.goods_number <= 0)
+        {// 数量为零则隐藏所在行
+            $('#tr_goods_' +rec_id).style.display = 'none';
+            $('#tr_goods_' +rec_id).innerHTML = '';
+        }
+        $('#total_desc').html(result.flow_info);//更新合计
+        if($('ECS_CARTINFO'))
+        {//更新购物车数量
+            $('#ECS_CARTINFO').html(result.cart_info);
+        }
+
+        if(result.group.length > 0){
+            for(var i=0; i<result.group.length; i++){
+                $("#" + result.group[i].rec_group).html(result.group[i].rec_group_number);//配件商品数量
+                $("#" + result.group[i].rec_group_talId).html(result.group[i].rec_group_subtotal);//配件商品金额
+            
+            }
+        }
+
+        $("#goods_price_" + rec_id).html(result.goods_price);
+        
+        //ecmoban941红木 --zhuo 优惠活动 start
+        $('#favourable_list').html(result.favourable_list_content);
+        $('#your_discount').html(result.your_discount);
+        if(result.discount){
+            $('#cart_discount').css({"display" : ""});
+        }else{
+            $('#cart_discount').css({"display" : "none"});
+        }
+        //ecmoban941红木 --zhuo 优惠活动 end
+        
+        $(".cart_num").html(result.subtotal_number);
+    }
+    else if (result.message != '')
+    {
+        $('#goods_number_' +rec_id).val(result.cart_Num);//更新数量
+        alert(result.message);
+    }                
+}
+
+
+function deleteCartGoods(rec_id,index)
+{
+    Ajax.call('delete_cart_goods.php', 'id='+rec_id+'&index='+index, deleteCartGoodsResponse, 'POST', 'JSON');
+}
+
+/**
+ * 接收返回的信息
+ */
+function deleteCartGoodsResponse(res)
+{
+  if (res.error)
+  {
+    alert(res.err_msg);
+  }
+  else if(res.index==1)
+  {
+        Ajax.call('get_ajax_content.php?act=get_content', 'data_type=cart_list', return_cart_list, 'POST', 'JSON');
+  }
+  else
+  {
+      $("#ECS_CARTINFO").html(res.content);
+      $(".cart_num").html(res.cart_num);
+  }
+}
+
+function return_cart_list(result)
+{
+    $(".cart_num").html(result.cart_num);
+    $(".pop_panel").html(result.content);
+}
+</script> 
 <body id="user">
-<!-- #BeginLibraryItem "/library/page_header_user.lbi" --><!-- #EndLibraryItem -->
+
+<!--header start-->
+<div id="header">
+    <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
+</div>
+<!--header end-->
+
 <div class="main w1200 user_home user_tran">
     <div class="user-left">
         <!-- #BeginLibraryItem "/library/user_menu.lbi" --><!-- #EndLibraryItem -->
@@ -175,7 +293,50 @@
     {/if}
     <!--@author-bylu 白条还款页 end-->
 </div>
-<!-- #BeginLibraryItem "/library/page_footer_flow.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/page_footer_djj.lbi" --><!-- #EndLibraryItem -->
+
 <!-- #BeginLibraryItem "/library/common_html.lbi" --><!-- #EndLibraryItem -->
+
+
+<script type="text/javascript">
+/*首页分类树*/
+$(function(){
+    $('#cata-nav .item').unbind('mouseenter').bind('mouseenter',function(){
+        var T = $(this);
+        var cat_id = T.children('.item-left').children('.cata-nav-name').data('id');
+        var eveval = T.children('.item-left').children('.cata-nav-name').attr('eveval');
+        
+        if(eveval != 1){
+            T.children('.item-left').children('.cata-nav-name').attr('eveval', '1');
+            /*加载中by wu*/
+            $('#subitems_' + cat_id).html('<img src="themes/ecmoban_dsc/images/loadGoods.gif" width="200" height="200" class="lazy" style="margin:100px 281px">');
+            $.ajax({
+               type: "GET",
+               url: "ajax_dialog.php",
+               data: "act=getCategoryCallback&cat_id=" + cat_id,
+               dataType:'json',
+               success: function(data){
+                    var strLength = Number(data.topic_content.length)
+                    if(strLength == 2 || strLength == 0){
+                        $('#channels_' + data.cat_id).parent('.item-channels').hide();
+                    }
+                    $('#channels_' + data.cat_id).html(data.topic_content);
+                    $('#subitems_' + data.cat_id).html(data.cat_content);
+                    $('#item_brands' + data.cat_id).html(data.brands_ad_content);
+               }
+            });
+        }
+        
+        T.addClass("selected");
+        T.children('.cata-nav-layer').show();
+    });
+    
+    $('#cata-nav .item').unbind('mouseleave').bind('mouseleave',function(){
+        $(this).removeClass("selected");
+        $(this).children(".cata-nav-layer").hide();
+    });
+});
+</script>
+
 </body>
 </html>

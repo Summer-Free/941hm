@@ -1,6 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title>{$page_title}</title>
 <link rel="stylesheet" type="text/css" href="themes/ecmoban_dsc/base.css" />
 <link rel="stylesheet" type="text/css" href="themes/ecmoban_dsc/user.css" />
@@ -34,6 +36,70 @@
     }
     .user_address_info .thead {
         width: 901px;
+    }
+    .user_return .user-single-list .u-operate {
+        width: 172px;
+    }
+    .safe-item .fore1 {
+        width: 200px;
+    }
+    .bonus-container {
+        width: 902px;
+        height: 192px;
+    }
+    .bonus-explain p,
+    .user-bonus-temp .bonus-help-content ul li a {
+        font-size: 12px;
+    }
+    .bonus-form .item .value input {
+        height: 28px;
+    }
+    .bonus-form .item .value a {
+        height: 26px;
+        line-height: 26px;
+    }
+    .user-bonus-temp .u-state {
+        width: 128px;
+    }
+    .user-bonus-temp .user-bonus-help {
+        width: 902px;
+    }
+    .coupon-item .c-type,
+    .coupon-items02 .coupon-item .c-msg {
+        height: 145px;
+    }
+    .user-main .td_bf, .user-item-temp .td_bf {
+        width: 902px;
+    }
+    .user-trackpack .u-state {
+        width: 288px;
+    }
+    .user-fund-management .user-fund-tabs li {
+        width: 110px;
+        font-size: 12px;
+    }
+    .user-fund-management .u-operation {
+        width: 129px;
+    }
+    .user-fund-management .th.u-desc {
+        width: 599px;
+    }
+    .user-fund-sumu .td .item .value input {
+        height: 30px;
+        line-height: 26px;
+    }
+    .user-fund-sumu .td .item .value .text-desc {
+        width: 744px;
+        height: 72px;
+    }
+    .user-payment-method .payment-info .payment-info-desc .payment-left {
+        width: 135px;
+    }
+    .user-payment-method .payment-info .payment-info-desc .payment-right {
+        width: 720px;
+    }
+    .user-payment-method .payment-info .payment-info-desc {
+        width: 100%;
     }
 </style>
 <body id="user">
@@ -3908,230 +3974,73 @@
     </div>
     <script type="text/javascript">
     
-    // 邮件的发送 qin
-    function sendChangeEmail(mail_type)
-    {
-        var authCode = $('#authCode').val();
-        var mail_address = $('#change_email').val();
-        var mail_address_data = '';
-        // var mail_address = $('#change_email').val(); 暂时没有
-        var mail_url = '';
-        var location_href_url = '';
-        if (mail_type == 'change_pwd')
+        // 邮件的发送 qin
+        function sendChangeEmail(mail_type)
         {
-            mail_url = "user.php?is_ajax=1&act=account_safe&type=change_email&step=second_email_verify&mail_type=change_pwd";
-            location_href_url = "user.php?act=account_safe&type=change_password&step=first&sign=validate_mail_ok";
-        }
-        if (mail_type == 'change_mail')
-        {
-            mail_url = "user.php?is_ajax=1&act=account_safe&type=change_email&step=second_email_verify&mail_type=change_mail";
-            location_href_url = "user.php?act=account_safe&type=change_email&step=first&sign=validate_mail_ok";
-        }
-        else if (mail_type == 'change_mobile')
-        {
-            mail_url = "user.php?is_ajax=1&act=account_safe&type=change_email&step=second_email_verify&mail_type=change_mobile";
-            location_href_url = "user.php?act=account_safe&type=change_phone&step=first&sign=validate_mail_ok";
-        }
-        else if (mail_type == 'change_paypwd')
-        {
-            mail_url = "user.php?is_ajax=1&act=account_safe&type=change_email&step=second_email_verify&mail_type=change_paypwd";
-            location_href_url = "user.php?act=account_safe&type=payment_password&step=first&sign=validate_mail_ok";
-        }
-
-
-        else if (mail_type == 'validate_mail')
-        {
-            mail_url = "user.php?is_ajax=1&act=account_safe&type=change_email&step=second_email_verify&mail_type=validate_mail";
-            location_href_url = "user.php?act=account_safe&type=change_email&step=first&sign=validate_mail_ok";
-        }
-        else if (mail_type == 'edit_mail')
-        { // 更改邮箱
-            // 验证邮箱地址
-            if (mail_address.length == 0)
+            var authCode = $('#authCode').val();
+            var mail_address = $('#change_email').val();
+            var mail_address_data = '';
+            // var mail_address = $('#change_email').val(); 暂时没有
+            var mail_url = '';
+            var location_href_url = '';
+            if (mail_type == 'change_pwd')
             {
-                $("#change_email_notice").removeClass().addClass("error");
-                $("#change_email_notice").html("<i></i>"+"邮箱不能为空");
-                msg += '邮箱不能为空' + '\n';
+                mail_url = "user.php?is_ajax=1&act=account_safe&type=change_email&step=second_email_verify&mail_type=change_pwd";
+                location_href_url = "user.php?act=account_safe&type=change_password&step=first&sign=validate_mail_ok";
             }
-            else
+            if (mail_type == 'change_mail')
             {
-                // 检查邮箱格式 
-                // .............
-                if (0)
+                mail_url = "user.php?is_ajax=1&act=account_safe&type=change_email&step=second_email_verify&mail_type=change_mail";
+                location_href_url = "user.php?act=account_safe&type=change_email&step=first&sign=validate_mail_ok";
+            }
+            else if (mail_type == 'change_mobile')
+            {
+                mail_url = "user.php?is_ajax=1&act=account_safe&type=change_email&step=second_email_verify&mail_type=change_mobile";
+                location_href_url = "user.php?act=account_safe&type=change_phone&step=first&sign=validate_mail_ok";
+            }
+            else if (mail_type == 'change_paypwd')
+            {
+                mail_url = "user.php?is_ajax=1&act=account_safe&type=change_email&step=second_email_verify&mail_type=change_paypwd";
+                location_href_url = "user.php?act=account_safe&type=payment_password&step=first&sign=validate_mail_ok";
+            }
+
+
+            else if (mail_type == 'validate_mail')
+            {
+                mail_url = "user.php?is_ajax=1&act=account_safe&type=change_email&step=second_email_verify&mail_type=validate_mail";
+                location_href_url = "user.php?act=account_safe&type=change_email&step=first&sign=validate_mail_ok";
+            }
+            else if (mail_type == 'edit_mail')
+            { // 更改邮箱
+                // 验证邮箱地址
+                if (mail_address.length == 0)
                 {
                     $("#change_email_notice").removeClass().addClass("error");
-                    $("#change_email_notice").html("<i></i>"+"邮箱格式不正确");
-                    msg += '邮箱格式不正确' + '\n';
+                    $("#change_email_notice").html("<i></i>"+"邮箱不能为空");
+                    msg += '邮箱不能为空' + '\n';
                 }
                 else
                 {
-                    $("#change_email_notice").html("<i></i>");
-                }
-            }
-            mail_url = "user.php?is_ajax=1&act=account_safe&type=change_email&step=second_email_verify&mail_type=edit_mail";
-            location_href_url = "user.php?act=account_safe&type=change_email&step=second&sign=edit_email_ok";
-        }
-
-        var msg = '';
-        
-        if(authCode.length == 0)
-        {
-            $("#code_notice").removeClass().addClass("error");
-            $("#code_notice").html("<i></i>"+"验证码不能为空");
-            msg += '验证码不能为空' + '\n';
-        }
-        else
-        {
-            //验证验证码是否正确
-            $.ajax({
-                cache: false,
-                async: false,
-                type: 'POST',
-                data: { authCode: authCode },
-                url: "user.php?act=account_safe&type=change_password&verify=authcode",
-                success: function (res) {
-                    var result = eval("("+res+")");
-                    if (result.error)
+                    // 检查邮箱格式 
+                    // .............
+                    if (0)
                     {
-                        $("#code_notice").removeClass().addClass("error");
-                        $("#code_notice").html("<i></i>"+result.message);
-                        msg += result.message + '\n';
-                        
-                        return false;
+                        $("#change_email_notice").removeClass().addClass("error");
+                        $("#change_email_notice").html("<i></i>"+"邮箱格式不正确");
+                        msg += '邮箱格式不正确' + '\n';
                     }
                     else
                     {
-                        $("#code_notice").removeClass().addClass("error");
-                        $("#code_notice").html("<i></i>");
+                        $("#change_email_notice").html("<i></i>");
                     }
                 }
-            });  
-        }
-
-        if (msg.length > 0)
-        {
-            return false;
-        }
-
-        //发送验证邮件
-        $.ajax({
-            cache: false,
-            async: false,
-            type: 'POST',
-            data: { mail_address_data: mail_address },
-            url: mail_url,
-            success: function (res) {
-                var result = eval("("+res+")");
-                if (result.error)
-                {
-                    $("#code_notice").removeClass().addClass("error");
-                    $("#code_notice").html("<i></i>"+result.message);
-                    msg += result.message + '\n';
-                    
-                    return false;
-                }
-                else
-                {
-                    // alert(location_href_url);
-                    window.location.href=location_href_url;
-                }
+                mail_url = "user.php?is_ajax=1&act=account_safe&type=change_email&step=second_email_verify&mail_type=edit_mail";
+                location_href_url = "user.php?act=account_safe&type=change_email&step=second&sign=edit_email_ok";
             }
-        });
-    }
 
-    // 验证 qin
-    function submitSurplus(obj)
-    {
-        var form_name = $(obj).attr("name");
-        var frm  = document.forms[form_name];
-
-        var mobile_code  = frm.elements['mobile_code'] ? frm.elements['mobile_code'].value : ''; // 手机验证码身份验证
-        var authCode  = frm.elements['authCode'] ? frm.elements['authCode'].value : ''; // 验证码身份验证
-        var pay_password  = frm.elements['pay_password'] ? frm.elements['pay_password'].value : ''; // 支付密码身份验证
-
-        var new_password  = frm.elements['new_password'] ? frm.elements['new_password'].value : 'ha'; // 修改密码
-        var re_new_password  = frm.elements['re_new_password'] ? frm.elements['re_new_password'].value : 'hahaha'; // 确认密码
-
-        var msg = "";
-
-        // 手机验证码
-        if(frm.elements['mobile_code'])
-        {
-            if(mobile_code == '')
-            {
-                $("#phone_captcha").removeClass().addClass("error");
-                $("#phone_captcha").html("<i></i>"+"短信验证码不能为空");
-                msg += '短信验证码不能为空' + '\n';
-            }
-            else
-            {
-                //验证短信是否正确
-                $.ajax({
-                   cache: false,
-                   async: false,
-                   type: 'POST',
-                   data: { mobile_code: mobile_code },
-                   url: "user.php?act=account_safe&type=change_password&verify=mobilecode",
-                   success: function (res) {
-                        var result = eval("("+res+")");
-                        if (result.error)
-                        {
-                            $("#phone_captcha").removeClass().addClass("error");
-                            $("#phone_captcha").html("<i></i>"+result.message);
-                            msg += result.message + '\n';
-
-                            return false;
-                        }
-                        else
-                        {
-                            $("#phone_captcha").removeClass().addClass("error");
-                            $("#phone_captcha").html("<i></i>");
-                        }
-                    }
-                  });  
-            }
-        }
-        // 支付密码
-        if(frm.elements['pay_password'])
-        {
-            if(pay_password == '')
-            {
-                $("#pay_password_notice").removeClass().addClass("error");
-                $("#pay_password_notice").html("<i></i>"+"支付密码不能为空");
-                msg += '支付密码不能为空' + '\n';
-            }
-            else
-            {
-                //验证支付密码是否正确
-                $.ajax({
-                    cache: false,
-                    async: false,
-                    type: 'GET',
-                    data: { payPwd: pay_password },
-                    url: "user.php?act=account_safe&type=change_password&verify=pay_pwd",
-                    success: function (res) {
-                        var result = eval("("+res+")");
-                        if (result.error)
-                        {
-                            $("#pay_password_notice").removeClass().addClass("error");
-                            $("#pay_password_notice").html("<i></i>"+result.message);
-                            msg += result.message + '\n';
-                            
-                            return false;
-                        }
-                        else
-                        {
-                            $("#pay_password_notice").removeClass().addClass("error");
-                            $("#pay_password_notice").html("<i></i>");
-                        }
-                    }
-                });  
-            }
-        }
-        // 验证码
-        if(frm.elements['authCode'])
-        {
-            if(authCode == '')
+            var msg = '';
+            
+            if(authCode.length == 0)
             {
                 $("#code_notice").removeClass().addClass("error");
                 $("#code_notice").html("<i></i>"+"验证码不能为空");
@@ -4143,7 +4052,7 @@
                 $.ajax({
                     cache: false,
                     async: false,
-                    type: 'GET',
+                    type: 'POST',
                     data: { authCode: authCode },
                     url: "user.php?act=account_safe&type=change_password&verify=authcode",
                     success: function (res) {
@@ -4164,102 +4073,259 @@
                     }
                 });  
             }
-        }
-        // 修改密码 验证
-        if(frm.elements['new_password'])
-        {
-            // 判断两个密码是否相同
-            if (new_password.length==0 || re_new_password.length==0)
+
+            if (msg.length > 0)
             {
-                $("#new_password_error").removeClass().addClass("error");
-                $("#new_password_error").html("<i></i>"+"密码不能为空");
-                msg += '密码不能为空' + '\n';
+                return false;
             }
-            else
+
+            //发送验证邮件
+            $.ajax({
+                cache: false,
+                async: false,
+                type: 'POST',
+                data: { mail_address_data: mail_address },
+                url: mail_url,
+                success: function (res) {
+                    var result = eval("("+res+")");
+                    if (result.error)
+                    {
+                        $("#code_notice").removeClass().addClass("error");
+                        $("#code_notice").html("<i></i>"+result.message);
+                        msg += result.message + '\n';
+                        
+                        return false;
+                    }
+                    else
+                    {
+                        // alert(location_href_url);
+                        window.location.href=location_href_url;
+                    }
+                }
+            });
+        }
+
+        // 验证 qin
+        function submitSurplus(obj)
+        {
+            var form_name = $(obj).attr("name");
+            var frm  = document.forms[form_name];
+
+            var mobile_code  = frm.elements['mobile_code'] ? frm.elements['mobile_code'].value : ''; // 手机验证码身份验证
+            var authCode  = frm.elements['authCode'] ? frm.elements['authCode'].value : ''; // 验证码身份验证
+            var pay_password  = frm.elements['pay_password'] ? frm.elements['pay_password'].value : ''; // 支付密码身份验证
+
+            var new_password  = frm.elements['new_password'] ? frm.elements['new_password'].value : 'ha'; // 修改密码
+            var re_new_password  = frm.elements['re_new_password'] ? frm.elements['re_new_password'].value : 'hahaha'; // 确认密码
+
+            var msg = "";
+
+            // 手机验证码
+            if(frm.elements['mobile_code'])
             {
-                if (new_password != re_new_password)
+                if(mobile_code == '')
                 {
-                    $("#new_password_error").removeClass().addClass("error");
-                    $("#new_password_error").html("<i></i>"+"密码不一样");
-                    msg += '验证码不一样' + '\n';
+                    $("#phone_captcha").removeClass().addClass("error");
+                    $("#phone_captcha").html("<i></i>"+"短信验证码不能为空");
+                    msg += '短信验证码不能为空' + '\n';
                 }
                 else
                 {
-                    $("#new_password_error").html("<i></i>");
+                    //验证短信是否正确
+                    $.ajax({
+                       cache: false,
+                       async: false,
+                       type: 'POST',
+                       data: { mobile_code: mobile_code },
+                       url: "user.php?act=account_safe&type=change_password&verify=mobilecode",
+                       success: function (res) {
+                            var result = eval("("+res+")");
+                            if (result.error)
+                            {
+                                $("#phone_captcha").removeClass().addClass("error");
+                                $("#phone_captcha").html("<i></i>"+result.message);
+                                msg += result.message + '\n';
+
+                                return false;
+                            }
+                            else
+                            {
+                                $("#phone_captcha").removeClass().addClass("error");
+                                $("#phone_captcha").html("<i></i>");
+                            }
+                        }
+                      });  
                 }
             }
-            
-        }
+            // 支付密码
+            if(frm.elements['pay_password'])
+            {
+                if(pay_password == '')
+                {
+                    $("#pay_password_notice").removeClass().addClass("error");
+                    $("#pay_password_notice").html("<i></i>"+"支付密码不能为空");
+                    msg += '支付密码不能为空' + '\n';
+                }
+                else
+                {
+                    //验证支付密码是否正确
+                    $.ajax({
+                        cache: false,
+                        async: false,
+                        type: 'GET',
+                        data: { payPwd: pay_password },
+                        url: "user.php?act=account_safe&type=change_password&verify=pay_pwd",
+                        success: function (res) {
+                            var result = eval("("+res+")");
+                            if (result.error)
+                            {
+                                $("#pay_password_notice").removeClass().addClass("error");
+                                $("#pay_password_notice").html("<i></i>"+result.message);
+                                msg += result.message + '\n';
+                                
+                                return false;
+                            }
+                            else
+                            {
+                                $("#pay_password_notice").removeClass().addClass("error");
+                                $("#pay_password_notice").html("<i></i>");
+                            }
+                        }
+                    });  
+                }
+            }
+            // 验证码
+            if(frm.elements['authCode'])
+            {
+                if(authCode == '')
+                {
+                    $("#code_notice").removeClass().addClass("error");
+                    $("#code_notice").html("<i></i>"+"验证码不能为空");
+                    msg += '验证码不能为空' + '\n';
+                }
+                else
+                {
+                    //验证验证码是否正确
+                    $.ajax({
+                        cache: false,
+                        async: false,
+                        type: 'GET',
+                        data: { authCode: authCode },
+                        url: "user.php?act=account_safe&type=change_password&verify=authcode",
+                        success: function (res) {
+                            var result = eval("("+res+")");
+                            if (result.error)
+                            {
+                                $("#code_notice").removeClass().addClass("error");
+                                $("#code_notice").html("<i></i>"+result.message);
+                                msg += result.message + '\n';
+                                
+                                return false;
+                            }
+                            else
+                            {
+                                $("#code_notice").removeClass().addClass("error");
+                                $("#code_notice").html("<i></i>");
+                            }
+                        }
+                    });  
+                }
+            }
+            // 修改密码 验证
+            if(frm.elements['new_password'])
+            {
+                // 判断两个密码是否相同
+                if (new_password.length==0 || re_new_password.length==0)
+                {
+                    $("#new_password_error").removeClass().addClass("error");
+                    $("#new_password_error").html("<i></i>"+"密码不能为空");
+                    msg += '密码不能为空' + '\n';
+                }
+                else
+                {
+                    if (new_password != re_new_password)
+                    {
+                        $("#new_password_error").removeClass().addClass("error");
+                        $("#new_password_error").html("<i></i>"+"密码不一样");
+                        msg += '验证码不一样' + '\n';
+                    }
+                    else
+                    {
+                        $("#new_password_error").html("<i></i>");
+                    }
+                }
+                
+            }
 
-        // 实名认证模块
-        var real_name  = frm.elements['real_name'] ? frm.elements['real_name'].value : ''; // 真实姓名
-        var self_num  = frm.elements['self_num'] ? frm.elements['self_num'].value : ''; // 身份证号
-        var bank_card  = frm.elements['bank_card'] ? frm.elements['bank_card'].value : ''; // 银行卡号
-        var bank_name  = frm.elements['bank_name'] ? frm.elements['bank_name'].value : ''; // 银行卡号
+            // 实名认证模块
+            var real_name  = frm.elements['real_name'] ? frm.elements['real_name'].value : ''; // 真实姓名
+            var self_num  = frm.elements['self_num'] ? frm.elements['self_num'].value : ''; // 身份证号
+            var bank_card  = frm.elements['bank_card'] ? frm.elements['bank_card'].value : ''; // 银行卡号
+            var bank_name  = frm.elements['bank_name'] ? frm.elements['bank_name'].value : ''; // 银行卡号
 
-        if(frm.elements['real_name'])
-        {
-            if(real_name == '')
+            if(frm.elements['real_name'])
             {
-                $("#real_name_notice").removeClass().addClass("error");
-                $("#real_name_notice").html("<i></i>"+"真实姓名不能为空");
-                msg += '真实姓名不能为空' + '\n';
+                if(real_name == '')
+                {
+                    $("#real_name_notice").removeClass().addClass("error");
+                    $("#real_name_notice").html("<i></i>"+"真实姓名不能为空");
+                    msg += '真实姓名不能为空' + '\n';
+                }
+                else
+                {
+                    $("#real_name_notice").html("<i></i>");
+                }
+            }
+            if(frm.elements['self_num'])
+            {
+                if(self_num == '')
+                {
+                    $("#self_num_notice").removeClass().addClass("error");
+                    $("#self_num_notice").html("<i></i>"+"身份证号不能为空");
+                    msg += '身份证号不能为空' + '\n';
+                }
+                else
+                {
+                    $("#self_num_notice").html("<i></i>");
+                }
+            }
+            if(frm.elements['bank_name'])
+            {
+                if(bank_card == '')
+                {
+                    $("#bank_name_notice").removeClass().addClass("error");
+                    $("#bank_name_notice").html("<i></i>"+"银行不能为空");
+                    msg += '银行不能为空' + '\n';
+                }
+                else
+                {
+                    $("#bank_name_notice").html("<i></i>");
+                }
+            }
+            if(frm.elements['bank_card'])
+            {
+                if(bank_card == '')
+                {
+                    $("#bank_card_notice").removeClass().addClass("error");
+                    $("#bank_card_notice").html("<i></i>"+"银行卡号不能为空");
+                    msg += '银行卡号不能为空' + '\n';
+                }
+                else
+                {
+                    $("#bank_card_notice").html("<i></i>");
+                }
+            }
+            //alert(msg)
+            if (msg.length > 0)
+            {
+                return false;
             }
             else
             {
-                $("#real_name_notice").html("<i></i>");
+                return true;
             }
         }
-        if(frm.elements['self_num'])
-        {
-            if(self_num == '')
-            {
-                $("#self_num_notice").removeClass().addClass("error");
-                $("#self_num_notice").html("<i></i>"+"身份证号不能为空");
-                msg += '身份证号不能为空' + '\n';
-            }
-            else
-            {
-                $("#self_num_notice").html("<i></i>");
-            }
-        }
-        if(frm.elements['bank_name'])
-        {
-            if(bank_card == '')
-            {
-                $("#bank_name_notice").removeClass().addClass("error");
-                $("#bank_name_notice").html("<i></i>"+"银行不能为空");
-                msg += '银行不能为空' + '\n';
-            }
-            else
-            {
-                $("#bank_name_notice").html("<i></i>");
-            }
-        }
-        if(frm.elements['bank_card'])
-        {
-            if(bank_card == '')
-            {
-                $("#bank_card_notice").removeClass().addClass("error");
-                $("#bank_card_notice").html("<i></i>"+"银行卡号不能为空");
-                msg += '银行卡号不能为空' + '\n';
-            }
-            else
-            {
-                $("#bank_card_notice").html("<i></i>");
-            }
-        }
-        //alert(msg)
-        if (msg.length > 0)
-        {
-            return false;
-        }
-        else
-        {
-            return true;
-        }
-    }
-</script>
+    </script>
     <!--{/if}-->
     <!--账号安全 end-->
     
@@ -4376,54 +4442,54 @@
         </div>
     </div>
     
-<script type="text/javascript">
-//购物车弹出框效果
-$(document).on("click","*[data-dialog='oathdialog']",function(){
-	
-	var ok_title = "确定";
-	var cl_title = "取消";
-	var title = '解绑成功';
-	var id = $(this).data('id');
-	var username = $(this).data('username');
-	var identity = $(this).data('identity');
-	var width = 455; 
-	var height = 58;
-	var divId = $(this).data('divid');
-	
-	var content = '<div id="' + divId + '">' +
-						'<div class="tip-box icon-box">' +
-							'<span class="warn-icon m-icon"></span>' +
-							'<div class="item-fore">' +
-								'<h3 class="ftx-04">您确定要' + title + identity + '账号？</h3>' + 
-								'<div class="ftx-03">解绑后请用{$dwt_shop_name}账号：' + username + '登录.</div>' +
-							'</div>' +
-						'</div>' +
-					'</div>';
-	
-	pb({
-		id:divId,
-		title:title,
-		width:width,
-		height:height,
-		ok_title:ok_title, 	//按钮名称
-		cl_title:cl_title, 	//按钮名称
-		content:content, 	//调取内容
-		drag:false,
-		foot:true,
-		onOk:function(){
-			Ajax.call('user.php?act=oath_remove', 'id=' + id + '&identity=' + identity, oath_removeResponse, 'POST','JSON');                
-		},
-		onCancel:function(){
-		}
-	});
-	
-	$('.pb-ok').addClass('color_df3134');
-});
+    <script type="text/javascript">
+        //购物车弹出框效果
+        $(document).on("click","*[data-dialog='oathdialog']",function(){
+        	
+        	var ok_title = "确定";
+        	var cl_title = "取消";
+        	var title = '解绑成功';
+        	var id = $(this).data('id');
+        	var username = $(this).data('username');
+        	var identity = $(this).data('identity');
+        	var width = 455; 
+        	var height = 58;
+        	var divId = $(this).data('divid');
+        	
+        	var content = '<div id="' + divId + '">' +
+        						'<div class="tip-box icon-box">' +
+        							'<span class="warn-icon m-icon"></span>' +
+        							'<div class="item-fore">' +
+        								'<h3 class="ftx-04">您确定要' + title + identity + '账号？</h3>' + 
+        								'<div class="ftx-03">解绑后请用{$dwt_shop_name}账号：' + username + '登录.</div>' +
+        							'</div>' +
+        						'</div>' +
+        					'</div>';
+        	
+        	pb({
+        		id:divId,
+        		title:title,
+        		width:width,
+        		height:height,
+        		ok_title:ok_title, 	//按钮名称
+        		cl_title:cl_title, 	//按钮名称
+        		content:content, 	//调取内容
+        		drag:false,
+        		foot:true,
+        		onOk:function(){
+        			Ajax.call('user.php?act=oath_remove', 'id=' + id + '&identity=' + identity, oath_removeResponse, 'POST','JSON');                
+        		},
+        		onCancel:function(){
+        		}
+        	});
+        	
+        	$('.pb-ok').addClass('color_df3134');
+        });
 
-function oath_removeResponse(result){
-	location.reload();
-}
-</script>    
+        function oath_removeResponse(result){
+        	location.reload();
+        }
+    </script>    
     <!--{/if}-->
     <!--账号绑定 end-->
     
@@ -4463,7 +4529,7 @@ function oath_removeResponse(result){
                         <div class="value">
                             <input type="text" class="text2 captcha_error" autocomplete="off" name="captcha"/>
                             <div class="yzm">
-                            <img src="captcha_verify.php?captcha=is_bonus&width=100&height=28&font_size=14&{$rand}" alt="captcha" class="fl" onClick="this.src='captcha_verify.php?captcha=is_bonus&width=100&height=28&font_size=14&'+Math.random()" />
+                                <img src="captcha_verify.php?captcha=is_bonus&width=100&height=28&font_size=14&{$rand}" alt="captcha" class="fl" onClick="this.src='captcha_verify.php?captcha=is_bonus&width=100&height=28&font_size=14&'+Math.random()" />
                             </div>
                         </div>
                     </div>
@@ -4500,15 +4566,18 @@ function oath_removeResponse(result){
                             <!-- {if $bonus.available_list} -->
                             <!--{foreach from=$bonus.available_list item=item}-->
                             <div class="tr">
-                                <div class="td u-card-number"><span>{$item.bonus_sn|default:N/A}</span><i class="qmark-icon qmark-wen-tip" title="{if $item.usebonus_type}全场通用{else}{$item.shop_name}{/if}"></i></div>
+                                <div class="td u-card-number">
+                                    <span>{$item.bonus_sn|default:N/A}</span>
+                                    <i class="qmark-icon qmark-wen-tip" title="{if $item.usebonus_type}全场通用{else}{$item.shop_name}{/if}"></i>
+                                </div>
                                 <div class="td u-par">{$item.type_money}</div>
                                 <div class="td u-price">{$item.min_goods_amount}</div>
                                 <div class="td u-bind-time">
-                                {if $item.bind_time}
-                                <p class="date">{$item.bind_time}</p>
-                                {else}
-                                <p class="date">{$item.use_startdate}</p>
-                                {/if}
+                                    {if $item.bind_time}
+                                    <p class="date">{$item.bind_time}</p>
+                                    {else}
+                                    <p class="date">{$item.use_startdate}</p>
+                                    {/if}
                                 </div>
                                 <div class="td u-use-time">{$item.use_enddate}</div>
                                 <div class="td u-state">{$item.status}</div>
@@ -4525,15 +4594,18 @@ function oath_removeResponse(result){
                             <!-- {if $bonus1.expire_list} -->
                             <!--{foreach from=$bonus1.expire_list item=item}-->
                             <div class="tr">
-                                <div class="td u-card-number"><span>{$item.bonus_sn|default:N/A}</span><i class="qmark-icon qmark-wen-tip" title="{if $item.usebonus_type}全场通用{else}{$item.shop_name}{/if}"></i></div>
+                                <div class="td u-card-number">
+                                    <span>{$item.bonus_sn|default:N/A}</span>
+                                    <i class="qmark-icon qmark-wen-tip" title="{if $item.usebonus_type}全场通用{else}{$item.shop_name}{/if}"></i>
+                                </div>
                                 <div class="td u-par">{$item.type_money}</div>
                                 <div class="td u-price">{$item.min_goods_amount}</div>
                                 <div class="td u-bind-time">
-                                {if $item.bind_time}
-                                <p class="date">{$item.bind_time}</p>
-                                {else}
-                                <p class="date">{$item.use_startdate}</p>
-                                {/if}
+                                    {if $item.bind_time}
+                                    <p class="date">{$item.bind_time}</p>
+                                    {else}
+                                    <p class="date">{$item.use_startdate}</p>
+                                    {/if}
                                 </div>
                                 <div class="td u-use-time">{$item.use_enddate}</div>
                                 <div class="td u-state">{$item.status}</div>
@@ -4550,15 +4622,18 @@ function oath_removeResponse(result){
                             <!-- {if $bonus2.useup_list} -->
                             <!--{foreach from=$bonus2.useup_list item=item}-->
                             <div class="tr">
-                                <div class="td u-card-number"><span>{$item.bonus_sn|default:N/A}</span><i class="qmark-icon qmark-wen-tip" title="{if $item.usebonus_type}全场通用{else}{$item.shop_name}{/if}"></i></div>
+                                <div class="td u-card-number">
+                                    <span>{$item.bonus_sn|default:N/A}</span>
+                                    <i class="qmark-icon qmark-wen-tip" title="{if $item.usebonus_type}全场通用{else}{$item.shop_name}{/if}"></i>
+                                </div>
                                 <div class="td u-par">{$item.type_money}</div>
                                 <div class="td u-price">{$item.min_goods_amount}</div>
                                 <div class="td u-bind-time">
-                                {if $item.bind_time}
-                                <p class="date">{$item.bind_time}</p>
-                                {else}
-                                <p class="date">{$item.use_startdate}</p>
-                                {/if}
+                                    {if $item.bind_time}
+                                    <p class="date">{$item.bind_time}</p>
+                                    {else}
+                                    <p class="date">{$item.use_startdate}</p>
+                                    {/if}
                                 </div>
                                 <div class="td u-use-time">{$item.use_enddate}</div>
                                 <div class="td u-state">{$item.status}</div>
@@ -4727,7 +4802,8 @@ function oath_removeResponse(result){
                     });
                 }
             }
-    </script>
+        </script>
+    </div>
     <!--{/if}--> 
     <!--#我的红包界面 end -->
 
@@ -5013,6 +5089,7 @@ function oath_removeResponse(result){
     {/if}
     <!--{/if}--> 
     <!--#跟踪包裹界面 end -->
+
     <!-- 资金管理界面 start-->
     <!--{if $action eq "account_raply" || $action eq "account_log" || $action eq "account_deposit" || $action eq "account_detail"}-->
     <div class="user-right">
@@ -5630,156 +5707,156 @@ function oath_removeResponse(result){
 
 <!-- #BeginLibraryItem "/library/common_html.lbi" --><!-- #EndLibraryItem -->
 <script type="text/javascript">
-$(".user-bonus-temp").slide({titCell:".bonus-tabs li",mainCell:".bonus_content_list",trigger:"click"});
-$(".ul-payment-list").tabso({ cntSelect:".payment-info-list",tabEvent:"click",tabStyle:"normal",onStyle:"item-selected"});
-function qmark_tip(){
-    //提示
-    $('.qmark-wen-tip').poshytip({
-        className: 'tip-yellowsimple',
-        showTimeout:300,
-        alignTo: 'target',
-        alignX: 'center',
-        alignY: 'top',
-        offsetY: 8
-    });
-	 $('.qmark-tip').poshytip({
-        className: 'tip-yellowsimple',
-        showTimeout:300,
-        alignTo: 'target',
-        alignX: 'center',
-        alignY: 'top',
-        offsetY: 0
-    });
-}
-qmark_tip();
+    $(".user-bonus-temp").slide({titCell:".bonus-tabs li",mainCell:".bonus_content_list",trigger:"click"});
+    $(".ul-payment-list").tabso({ cntSelect:".payment-info-list",tabEvent:"click",tabStyle:"normal",onStyle:"item-selected"});
+    function qmark_tip(){
+        //提示
+        $('.qmark-wen-tip').poshytip({
+            className: 'tip-yellowsimple',
+            showTimeout:300,
+            alignTo: 'target',
+            alignX: 'center',
+            alignY: 'top',
+            offsetY: 8
+        });
+    	 $('.qmark-tip').poshytip({
+            className: 'tip-yellowsimple',
+            showTimeout:300,
+            alignTo: 'target',
+            alignX: 'center',
+            alignY: 'top',
+            offsetY: 0
+        });
+    }
+    qmark_tip();
 
-{foreach from=$lang.clips_js item=item key=key}
-var {$key} = "{$item}";
-{/foreach}
+    {foreach from=$lang.clips_js item=item key=key}
+    var {$key} = "{$item}";
+    {/foreach}
 
-$(function(){
-    $('a').find('font').hover(
-        function(){
-                $(this).css({'color' : '#ec5151'});
-        },
-        function(){
-                $(this).css({'color' : '#666'});
+    $(function(){
+        $('a').find('font').hover(
+            function(){
+                    $(this).css({'color' : '#ec5151'});
+            },
+            function(){
+                    $(this).css({'color' : '#666'});
+            }
+        );
+        
+        $(".ui-grey-checkbox").click(function(){
+            if($(this).parent().hasClass("selected")){
+                $(this).parent().removeClass("selected");
+            }else{
+                $(this).parent().addClass("selected");
+            }
+        });
+    });
+
+    $("#qt").each(function(){
+        var length = $(this).find("span").length;
+        $(this).find("span").eq(length-1).addClass("last-child");
+        if(length>1){
+            $(this).find("span").eq(0).addClass("first-child");
         }
-    );
-    
-    $(".ui-grey-checkbox").click(function(){
-        if($(this).parent().hasClass("selected")){
-            $(this).parent().removeClass("selected");
+    });
+
+    /**
+        @941红木-bylu start
+        ajax修改订单表中在线支付的支付方式(这里是当点击了余额支付,才修改)
+    */
+    $('#formFee').submit(function(){
+        var order_sn=$(this).attr('order_sn');
+        $.ajax({
+            url:"flow.php?act=onlinepay_edit&onlinepay_type=balance&order_sn={$order.order_sn}"
+        })
+    });
+
+    if($('.weizf').length>0){
+        $('.weizf').click(function(){
+            $(this).next().show();
+        });
+    }
+    /* @941红木-bylu end */
+
+    $('#wxpay_img').hide();
+    $('#wxpay').click(function(){
+        $('#wxpay_img').show();
+    });
+
+    /* 虚拟商品卡密start */
+    var hoverTimer, outTimer,hoverTimer2;
+    $(document).on('mouseenter','.virtual_title',function(){
+        clearTimeout(outTimer);
+        var parents = $(this).parents('.virtual_div');
+        hoverTimer = setTimeout(function(){
+            parents.find(".virtual_info").show();
+        },200);
+    });
+
+    $(document).on('mouseleave','.virtual_title',function(){
+        clearTimeout(hoverTimer);
+        var parents = $(this).parents('.virtual_div');
+        outTimer = setTimeout(function(){
+            parents.find(".virtual_info").hide();
+        },100); 
+    });
+    $(document).on('mouseenter','.virtual_info',function(){
+        clearTimeout(outTimer);
+        hoverTimer2 = setTimeout(function(){
+            $(this).show();
+        });
+    });
+    $(document).on('mouseleave','.virtual_info',function(){
+        $(this).hide();
+    });
+    /* 虚拟商品卡密end*/
+
+
+    /*账号安全*/
+    function nextStep(obj){
+        var obj = $(obj);
+        var form = obj.parents(".form");
+        form.hide();
+        form.next('.form').show();
+    }
+
+    $(".support-bank").hover(function(){
+        $(this).addClass("support-bank-hover");
+    },function(){
+        $(this).removeClass("support-bank-hover");
+    });
+
+    $(".section-tab li").click(function(){
+        var index = $(this).index();
+        $(this).addClass("current").siblings().removeClass("current");
+        $(".section-main").find(".suport-bank-tab").eq(index).show().siblings().hide();
+    });
+
+    $(".none-message").hover(function(){
+        $(this).find(".none-reason").show();
+    },function(){
+        $(this).find(".none-reason").hide();
+    });
+
+    $(".bind-op-btn a").click(function(){
+        var t = $(this).attr("t");
+        var text = '';
+        if(t == "unbind"){
+            text = "解绑";
+        }else if(t == "bind"){
+            text = "绑定";
+        }
+        var bind_cont = $(this).parents(".bind-list").find(".bind-cont");
+        if(bind_cont.css('display') == 'block'){
+            bind_cont.hide();
+            $(this).html(text);
         }else{
-            $(this).parent().addClass("selected");
+            $(this).html("收起");
+            bind_cont.show();
         }
     });
-});
-
-$("#qt").each(function(){
-    var length = $(this).find("span").length;
-    $(this).find("span").eq(length-1).addClass("last-child");
-    if(length>1){
-        $(this).find("span").eq(0).addClass("first-child");
-    }
-});
-
-/**
-    @941红木-bylu start
-    ajax修改订单表中在线支付的支付方式(这里是当点击了余额支付,才修改)
-*/
-$('#formFee').submit(function(){
-    var order_sn=$(this).attr('order_sn');
-    $.ajax({
-        url:"flow.php?act=onlinepay_edit&onlinepay_type=balance&order_sn={$order.order_sn}"
-    })
-});
-
-if($('.weizf').length>0){
-    $('.weizf').click(function(){
-        $(this).next().show();
-    });
-}
-/* @941红木-bylu end */
-
-$('#wxpay_img').hide();
-$('#wxpay').click(function(){
-    $('#wxpay_img').show();
-});
-
-/* 虚拟商品卡密start */
-var hoverTimer, outTimer,hoverTimer2;
-$(document).on('mouseenter','.virtual_title',function(){
-    clearTimeout(outTimer);
-    var parents = $(this).parents('.virtual_div');
-    hoverTimer = setTimeout(function(){
-        parents.find(".virtual_info").show();
-    },200);
-});
-
-$(document).on('mouseleave','.virtual_title',function(){
-    clearTimeout(hoverTimer);
-    var parents = $(this).parents('.virtual_div');
-    outTimer = setTimeout(function(){
-        parents.find(".virtual_info").hide();
-    },100); 
-});
-$(document).on('mouseenter','.virtual_info',function(){
-    clearTimeout(outTimer);
-    hoverTimer2 = setTimeout(function(){
-        $(this).show();
-    });
-});
-$(document).on('mouseleave','.virtual_info',function(){
-    $(this).hide();
-});
-/* 虚拟商品卡密end*/
-
-
-/*账号安全*/
-function nextStep(obj){
-    var obj = $(obj);
-    var form = obj.parents(".form");
-    form.hide();
-    form.next('.form').show();
-}
-
-$(".support-bank").hover(function(){
-    $(this).addClass("support-bank-hover");
-},function(){
-    $(this).removeClass("support-bank-hover");
-});
-
-$(".section-tab li").click(function(){
-    var index = $(this).index();
-    $(this).addClass("current").siblings().removeClass("current");
-    $(".section-main").find(".suport-bank-tab").eq(index).show().siblings().hide();
-});
-
-$(".none-message").hover(function(){
-    $(this).find(".none-reason").show();
-},function(){
-    $(this).find(".none-reason").hide();
-});
-
-$(".bind-op-btn a").click(function(){
-    var t = $(this).attr("t");
-    var text = '';
-    if(t == "unbind"){
-        text = "解绑";
-    }else if(t == "bind"){
-        text = "绑定";
-    }
-    var bind_cont = $(this).parents(".bind-list").find(".bind-cont");
-    if(bind_cont.css('display') == 'block'){
-        bind_cont.hide();
-        $(this).html(text);
-    }else{
-        $(this).html("收起");
-        bind_cont.show();
-    }
-});
-/*账户安全end*/
+    /*账户安全end*/
 
 
 

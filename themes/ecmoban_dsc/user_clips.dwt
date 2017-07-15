@@ -1,6 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title>{$page_title}</title>
 <link rel="stylesheet" type="text/css" href="themes/ecmoban_dsc/base.css" />
 <link rel="stylesheet" type="text/css" href="themes/ecmoban_dsc/user.css" />
@@ -25,9 +27,51 @@
 <script type="text/javascript" src="themes/ecmoban_dsc/js/checkAll.js"></script>
 <script type="text/javascript" src="themes/ecmoban_dsc/js/scroll_city.js"></script>
 <script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.poshytip.js"></script>
+<script type="text/javascript" src="themes/ecmoban_dsc/js/ZeroClipboard/ZeroClipboard.js"></script>
 
 {insert_scripts files='suggest.js,warehouse_area.js'}
 </head>
+
+<!--2017/07/15 解决样式冲突-->
+<style>
+    .btn-10, .pb-ft a {
+        height: 27px;
+        line-height: 22px;
+    }
+    :root .ui-grey-checkbox+label {
+        background: url(images/checkbox-grey-icon.png) no-repeat left center;
+    }
+    .ui-grey-checkbox+label {
+        background: url(images/checkbox-grey-icon.png) no-repeat left center;
+    }
+    :root .ui-grey-checkbox:checked+label {
+        background: url(images/checked-grey-icon.png) no-repeat left center;
+    }
+    .message-board-content {
+        width: 902px;
+        height: 420px;
+    }
+    .message-board-content {
+        padding: 57px 108px 18px 279px;
+    }
+    .user-message-list .item .value .text {
+        height: 30px;
+        line-height: 24px;
+    }
+    .message-board-content .item .value .text, 
+    .message-board-content .item .value textarea {
+        width: 100%;
+    }
+    .user-vip-list .u-price-percent {
+        width: 270px;
+    }
+    .aff-list .aff-list-top {
+        height: 53px;
+    }
+    .aff-list .aff-btn .sub {
+        margin-top: 17px;
+    }
+</style>
 
 <body id="user">
 
@@ -637,7 +681,7 @@
         <div class="user-main">
             <div class="user-message-board">
                 <div class="message-board-content user-message-list">
-                    <form action="user.php" method="post" enctype="multipart/form-data" name="formMsg" onSubmit="return submitMsg()">
+                    <form class="clearfix" action="user.php" method="post" enctype="multipart/form-data" name="formMsg" onSubmit="return submitMsg()">
                     	{if $order_info}
                         <div class="item">
                             <div class="label">{$lang.order_number}：</div>
@@ -1484,6 +1528,7 @@
     <!--{/if}-->
 </div>
 <!-- #BeginLibraryItem "/library/page_footer_djj.lbi" --><!-- #EndLibraryItem -->
+
 <!-- #BeginLibraryItem "/library/common_html.lbi" --><!-- #EndLibraryItem -->
 <script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.purebox.js"></script>
 {insert_scripts files='jquery.form.js'}
