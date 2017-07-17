@@ -102,6 +102,9 @@
     .goods-spread li .p-name a {
         line-height: 1.2;
     }
+    .goods-list-love .goods-list .gl-item .gl-i-wrap {
+        width: 100%;
+    }
 </style>
 </head>
 
