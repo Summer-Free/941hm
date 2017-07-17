@@ -15,7 +15,7 @@
                         <div class="w1200">
                                 <div class="JS-slide">
                                         <ul class="content">
-                                                <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-banner1.jpg" alt=""></a></li>
+                                                <li class="active"><a href="goods.php?goods_id="><img src="themes/ecmoban_dsc/iamges/20170517/gadget-banner1.jpg" alt=""></a></li>
                                                 <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-banner1.jpg" alt=""></a></li>
                                                 <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-banner1.jpg" alt=""></a></li>
                                                 <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-banner1.jpg" alt=""></a></li>
@@ -42,6 +42,8 @@
             <div class="section-1 clearfix">
                 <img class="float-l"  src="themes/ecmoban_dsc/iamges/20170517/recommend.jpg" alt="每日推荐" />
                 <ul class="same-list float-l clearfix">
+                <!--{foreach from=$mrtj_sql item=mrtj_sql name=mrtj_sql}-->
+                <!--{/foreach}-->                           
                     <li>
                         <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
                         <div>
@@ -126,228 +128,128 @@
             <div class="section-3">
                 <h2>精选好茶</h2>
                 <ul class="same-list clearfix">
+                <!--{foreach from=$jxhc_sql item=jxhc_sql name=jxhc_sql}-->
+                    <!-- {if $smarty.foreach.jxhc_sql.iteration ==1  } -->
                     <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
-                        <div>
-                            <a href="#">青花瓷龙泉窑复古艺术花瓶摆件</a>
-                            <p class="clearfix">
-                                <span class="price">&yen;2332</span>
-                                <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
-                            </p>
-                        </div>
-                    </li>
+                    <!-- {elseif $smarty.foreach.jxhc_sql.iteration ==2} -->
                     <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
-                        <div>
-                            <a href="#">青花瓷龙泉窑复古艺术花瓶摆件</a>
-                            <p>
-                                <span class="price">&yen;2332</span>
-                                <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
-                            </p>
-                        </div>
-                    </li>
+                    <!-- {elseif $smarty.foreach.jxhc_sql.iteration ==3} -->
                     <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
-                        <div>
-                            <a href="#">青花瓷龙泉窑复古艺术花瓶摆件</a>
-                            <p>
-                                <span class="price">&yen;2332</span>
-                                <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
-                            </p>
-                        </div>
-                    </li>
+                    <!-- {elseif $smarty.foreach.jxhc_sql.iteration ==4} -->
                     <li class="margin-r-0">
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
+                    <!--{/if}-->   
+                        <a href="goods.php?id={$jxhc_sql.goods_id}"><img src="{$jxhc_sql.goods_thumb}" alt="{$jxhc_sql.goods_name}" width="220" height="198" /></a>
                         <div>
-                            <a href="#">青花瓷龙泉窑复古艺术花瓶摆件</a>
-                            <p>
-                                <span class="price">&yen;2332</span>
+                            <a href="goods.php?id={$jxhc_sql.goods_id}">{$jxhc_sql.goods_name}</a>
+                            <p class="clearfix">
+                                <span class="price">&yen;{$jxhc_sql.shop_price}</span>
                                 <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
                             </p>
                         </div>
                     </li>
+                <!--{/foreach}-->
                 </ul>
             </div>
 
             <div class="section-4">
                 <h2>优质手串</h2>
                 <ul class="same-list clearfix">
+                <!--{foreach from=$yzsc_sql item=yzsc_sql name=yzsc_sql}-->
+                    <!-- {if $smarty.foreach.yzsc_sql.iteration ==1  } -->
                     <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
-                        <div>
-                            <a href="#">青花瓷龙泉窑复古艺术花瓶摆件</a>
-                            <p class="clearfix">
-                                <span class="price">&yen;2332</span>
-                                <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
-                            </p>
-                        </div>
-                    </li>
+                    <!-- {elseif $smarty.foreach.yzsc_sql.iteration ==2} -->
                     <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
-                        <div>
-                            <a href="#">青花瓷龙泉窑复古艺术花瓶摆件</a>
-                            <p>
-                                <span class="price">&yen;2332</span>
-                                <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
-                            </p>
-                        </div>
-                    </li>
+                    <!-- {elseif $smarty.foreach.yzsc_sql.iteration ==3} -->
                     <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
-                        <div>
-                            <a href="#">青花瓷龙泉窑复古艺术花瓶摆件</a>
-                            <p>
-                                <span class="price">&yen;2332</span>
-                                <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
-                            </p>
-                        </div>
-                    </li>
+                    <!-- {elseif $smarty.foreach.yzsc_sql.iteration ==4} -->
                     <li class="margin-r-0">
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
+                    <!--{/if}-->
+                        <a href="goods.php?id={$yzsc_sql.goods_id}"><img src="{$yzsc_sql.goods_thumb}" alt="{$yzsc_sql.goods_name}" width="220" height="198" /></a>
                         <div>
-                            <a href="#">青花瓷龙泉窑复古艺术花瓶摆件</a>
-                            <p>
-                                <span class="price">&yen;2332</span>
+                            <a href="goods.php?id={$yzsc_sql.goods_id}">{$yzsc_sql.goods_name}</a>
+                            <p class="clearfix">
+                                <span class="price">&yen;{$yzsc_sql.shop_price}</span>
                                 <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
                             </p>
                         </div>
                     </li>
+                <!--{/foreach}-->
                 </ul>
             </div>
 
             <div class="section-5">
                 <h2>优雅瓷器</h2>
                 <ul class="same-list clearfix">
+                <!--{foreach from=$yzcq_sql item=yzcq_sql name=yzcq_sql}-->
+                    <!-- {if $smarty.foreach.yzcq_sql.iteration ==1  } -->
                     <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
-                        <div>
-                            <a href="#">青花瓷龙泉窑复古艺术花瓶摆件</a>
-                            <p class="clearfix">
-                                <span class="price">&yen;2332</span>
-                                <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
-                            </p>
-                        </div>
-                    </li>
+                    <!-- {elseif $smarty.foreach.yzcq_sql.iteration ==2} -->
                     <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
-                        <div>
-                            <a href="#">青花瓷龙泉窑复古艺术花瓶摆件</a>
-                            <p>
-                                <span class="price">&yen;2332</span>
-                                <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
-                            </p>
-                        </div>
-                    </li>
+                    <!-- {elseif $smarty.foreach.yzcq_sql.iteration ==3} -->
                     <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
-                        <div>
-                            <a href="#">青花瓷龙泉窑复古艺术花瓶摆件</a>
-                            <p>
-                                <span class="price">&yen;2332</span>
-                                <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
-                            </p>
-                        </div>
-                    </li>
+                    <!-- {elseif $smarty.foreach.yzcq_sql.iteration ==4} -->
                     <li class="margin-r-0">
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
+                    <!--{/if}-->
+                        <a href="goods.php?id={$yzcq_sql.goods_id}"><img src="{$yzcq_sql.goods_thumb}" alt="{$yzcq_sql.goods_name}" width="220" height="198" /></a>
                         <div>
-                            <a href="#">青花瓷龙泉窑复古艺术花瓶摆件</a>
-                            <p>
-                                <span class="price">&yen;2332</span>
+                            <a href="goods.php?id={$yzcq_sql.goods_id}">{$yzcq_sql.goods_name}</a>
+                            <p class="clearfix">
+                                <span class="price">&yen;{$yzcq_sql.shop_price}</span>
                                 <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
                             </p>
                         </div>
                     </li>
+                <!--{/foreach}-->
                 </ul>
             </div>
             <div class="section-6">
                 <h2>风格茶台</h2>
                 <ul class="same-list clearfix">
+                <!--{foreach from=$fgct_sql item=fgct_sql name=fgct_sql}-->
+                    <!-- {if $smarty.foreach.fgct_sql.iteration ==1  } -->
                     <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
-                        <div>
-                            <a href="#">青花瓷龙泉窑复古艺术花瓶摆件</a>
-                            <p class="clearfix">
-                                <span class="price">&yen;2332</span>
-                                <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
-                            </p>
-                        </div>
-                    </li>
+                    <!-- {elseif $smarty.foreach.fgct_sql.iteration ==2} -->
                     <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
-                        <div>
-                            <a href="#">青花瓷龙泉窑复古艺术花瓶摆件</a>
-                            <p>
-                                <span class="price">&yen;2332</span>
-                                <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
-                            </p>
-                        </div>
-                    </li>
+                    <!-- {elseif $smarty.foreach.fgct_sql.iteration ==3} -->
                     <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
-                        <div>
-                            <a href="#">青花瓷龙泉窑复古艺术花瓶摆件</a>
-                            <p>
-                                <span class="price">&yen;2332</span>
-                                <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
-                            </p>
-                        </div>
-                    </li>
+                    <!-- {elseif $smarty.foreach.fgct_sql.iteration ==4} -->
                     <li class="margin-r-0">
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
+                    <!--{/if}-->
+                        <a href="goods.php?id={$fgct_sql.goods_id}"><img src="{$fgct_sql.goods_thumb}" alt="{$fgct_sql.goods_name}" width="220" height="198" /></a>
                         <div>
-                            <a href="#">青花瓷龙泉窑复古艺术花瓶摆件</a>
-                            <p>
-                                <span class="price">&yen;2332</span>
+                            <a href="goods.php?id={$fgct_sql.goods_id}">{$fgct_sql.goods_name}</a>
+                            <p class="clearfix">
+                                <span class="price">&yen;{$fgct_sql.shop_price}</span>
                                 <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
                             </p>
                         </div>
                     </li>
+                <!--{/foreach}-->
                 </ul>
             </div>
             <div class="section-7">
                 <h2>手工艺品</h2>
                 <ul class="same-list clearfix">
+                <!--{foreach from=$sgyp_sql item=sgyp_sql name=sgyp_sql}-->
+                    <!-- {if $smarty.foreach.sgyp_sql.iteration ==1  } -->
                     <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
-                        <div>
-                            <a href="#">青花瓷龙泉窑复古艺术花瓶摆件</a>
-                            <p class="clearfix">
-                                <span class="price">&yen;2332</span>
-                                <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
-                            </p>
-                        </div>
-                    </li>
+                    <!-- {elseif $smarty.foreach.sgyp_sql.iteration ==2} -->
                     <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
-                        <div>
-                            <a href="#">青花瓷龙泉窑复古艺术花瓶摆件</a>
-                            <p>
-                                <span class="price">&yen;2332</span>
-                                <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
-                            </p>
-                        </div>
-                    </li>
+                    <!-- {elseif $smarty.foreach.sgyp_sql.iteration ==3} -->
                     <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
-                        <div>
-                            <a href="#">青花瓷龙泉窑复古艺术花瓶摆件</a>
-                            <p>
-                                <span class="price">&yen;2332</span>
-                                <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
-                            </p>
-                        </div>
-                    </li>
+                    <!-- {elseif $smarty.foreach.sgyp_sql.iteration ==4} -->
                     <li class="margin-r-0">
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
+                    <!--{/if}-->
+                        <a href="goods.php?id={$sgyp_sql.goods_id}"><img src="{$sgyp_sql.goods_thumb}" alt="{$sgyp_sql.goods_name}" width="220" height="198" /></a>
                         <div>
-                            <a href="#">青花瓷龙泉窑复古艺术花瓶摆件</a>
-                            <p>
-                                <span class="price">&yen;2332</span>
+                            <a href="goods.php?id={$sgyp_sql.goods_id}">{$sgyp_sql.goods_name}</a>
+                            <p class="clearfix">
+                                <span class="price">&yen;{$sgyp_sql.shop_price}</span>
                                 <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
                             </p>
                         </div>
                     </li>
+                <!--{/foreach}-->
                 </ul>
             </div>
         </div>
