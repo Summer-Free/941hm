@@ -8,9 +8,14 @@
 <link rel="stylesheet" type="text/css" href="themes/ecmoban_dsc/base.css" />
 <link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
 <link href="themes/ecmoban_dsc/select.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="themes/ecmoban_dsc/quickLinks.css" />
+<!-- <link rel="stylesheet" type="text/css" href="themes/ecmoban_dsc/quickLinks.css" /> -->
 <link rel="alternate" type="application/rss+xml" title="RSS|{$page_title}" href="{$feed_url}" />
-<link rel="stylesheet" href="themes/ecmoban_dsc/purebox.css">
+<!-- <link rel="stylesheet" href="themes/ecmoban_dsc/purebox.css"> -->
+
+<!--2017/07/14 添加-->
+<!-- #BeginLibraryItem "/library/header_title_djj.lbi" --><!-- #EndLibraryItem -->
+<!--首页CSS以及部分通用部分的合并LBI-->
+
 {* 包含脚本文件 *}
 {insert_scripts files='jquery-1.9.1.min.js,jquery.json.js,transport_jquery.js,cart_common.js,cart_quick_links.js'}
 {insert_scripts files='common.js,global.js,utils.js,compare.js,search_category_menu.js,jd_choose.js,pinyin.js,parabola.js'}
@@ -22,16 +27,31 @@
 <script type="text/javascript" src="themes/ecmoban_dsc/js/rotate3di.js"></script>
 <script type="text/javascript" src="themes/ecmoban_dsc/js/scroll_city.js"></script>
 <script type="text/javascript" src="themes/ecmoban_dsc/js/notLogin.js"></script>
+{insert_scripts files='suggest.js,warehouse_area.js'}
 
-<style>.suspension{ display:none;}</style>
+<script type="text/javascript" src="js/jquery.lazyload.js"></script>
+
+<style>
+	.suspension{ display:none;}
+	#content .category_left {
+		width: 998px;
+	}
+	.goods-spread li .p-name {
+		height: 46px;
+	}
+</style>
 </head>
 
 <body>
-<!-- #BeginLibraryItem "/library/page_header_w1390.lbi" --><!-- #EndLibraryItem -->
-<div class="ecsc-breadcrumb w1390">
-    <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+
+<!--header start-->
+<div id="header">
+    <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
 </div>
-<div id="content" class="w1390">
+<!--header end-->
+
+
+<div id="content" class="w1200">
     <!-- TemplateBeginEditable name="商品列表" -->
 	<!-- #BeginLibraryItem "/library/goods_list.lbi" --> <!-- #EndLibraryItem -->
     <!-- TemplateEndEditable --> 
@@ -44,7 +64,49 @@
     <!-- @authro guan start	添加对比文件 start -->	 
 <!-- #BeginLibraryItem "/library/duibi.lbi" --><!-- #EndLibraryItem -->
 <!-- @authro guan start	添加对比文件 end -->
-<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+
+<!--2017/07/17 更换-->
+<!-- #BeginLibraryItem "/library/page_footer_djj.lbi" --><!-- #EndLibraryItem -->
+<script type="text/javascript">
+	$("#clear_price").click(function(){
+		$("#price-min").val('');
+		$("#price-max").val('');
+	});
+		
+	$(".QR_code li").hover(function(){
+		var index = $(this).index();
+		$(this).addClass("current").siblings().removeClass("current");
+		$(".QR_code .code_tp").eq(index).removeClass("hide").siblings().addClass("hide");
+	})
+
+	function checkSearchForm(){
+		var keywords = $("input[name='keywords']").val();
+		if(keywords == ''){
+			
+			divId = "keywords_html";
+			var content = '<div id="' + divId + '">' + 
+								'<div class="tip-box icon-box">' +
+									'<span class="warn-icon m-icon"></span>' + 
+									'<div class="item-fore">' +
+										'<h3 class="rem ftx-04">您搜索内容的关键字不能空</h3>' +
+									'</div>' +
+								'</div>' +
+							'</div>';
+			
+			pb({
+				id:divId,
+				title:'提示',
+				width:445,
+				height:58,
+				content:content, 	//调取内容
+				drag:false,
+				foot:false
+			});	
+			
+			return false;
+		}
+	}
+</script>
 
 <div id="del_history" class="hide">
     <div class="tip-box icon-box">

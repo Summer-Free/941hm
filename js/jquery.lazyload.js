@@ -241,9 +241,9 @@
 
 })(jQuery, window, document);
 
-$(function(){   
-	$("img.lazy").lazyload({ 
-		effect : "fadeIn",
-		threshold:1000
-	});
-})
+// $(function(){   
+// 	$("img.lazy").lazyload({ 
+// 		effect : "fadeIn",
+// 		threshold:1000
+// 	});
+// })

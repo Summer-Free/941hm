@@ -2,7 +2,7 @@
 
 <!-- {if $hot_goods} -->
 <div class="ecsc-hot-sales">
-    <div class="hotsale w1390">
+    <div class="hotsale w1200">
         <div class="hatsale-mt">热门推荐</div>
         <div class="bd">
             <ul>

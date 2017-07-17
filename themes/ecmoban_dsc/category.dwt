@@ -17,13 +17,18 @@
 <link href="{$cat_style}" rel="stylesheet" type="text/css" />
 <!-- {/if} -->
 <link href="themes/ecmoban_dsc/select.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="themes/ecmoban_dsc/quickLinks.css" />
+<!-- <link rel="stylesheet" type="text/css" href="themes/ecmoban_dsc/quickLinks.css" /> -->
 <link rel="alternate" type="application/rss+xml" title="RSS|{$page_title}" href="{$feed_url}" />
-<link rel="stylesheet" href="themes/ecmoban_dsc/purebox.css">
+<!-- <link rel="stylesheet" href="themes/ecmoban_dsc/purebox.css"> -->
 <link rel="stylesheet" href="themes/ecmoban_dsc/js/perfect-scrollbar/perfect-scrollbar.min.css">
+
+<!--2017/07/17 添加-->
+<!-- #BeginLibraryItem "/library/header_title_djj.lbi" --><!-- #EndLibraryItem -->
+<!--首页CSS以及部分通用部分的合并LBI-->
+
 {* 包含脚本文件 *}
 {insert_scripts files='jquery-1.9.1.min.js,jquery.json.js,transport_jquery.js,cart_common.js,cart_quick_links.js'}
-{insert_scripts files='common.js,global.js,utils.js,compare.js,search_category_menu.js,jd_choose.js,pinyin.js,warehouse.js,parabola.js'}
+{insert_scripts files='common.js,utils.js,compare.js,search_category_menu.js,jd_choose.js,pinyin.js,warehouse.js,parabola.js'}
 <script type="text/javascript" src="themes/ecmoban_dsc/js/sc_common.js"></script>
 <script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.SuperSlide.2.1.1.js"></script>
 <script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.tabso_yeso.js"></script>
@@ -33,28 +38,96 @@
 <script type="text/javascript" src="themes/ecmoban_dsc/js/notLogin.js"></script>
 <script type="text/javascript" src="themes/ecmoban_dsc/js/asyLoadfloor.js"></script>
 <script type="text/javascript" src="themes/ecmoban_dsc/js/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+{insert_scripts files='suggest.js,warehouse_area.js,jquery.lazyload.js'}
 
-<style>.suspension{ display:none;}</style>
+<style>
+    .suspension{ display:none;}
+    .hotsale .bd {
+        width: 1160px!important;
+    }
+    .hotsale .bd,
+    .hotsale li {
+        height: 148px;
+    }
+    .hotsale .item {
+        padding: 10px!important;
+    }
+    .hotsale .hatsale-mt {
+        width: 40px;
+    }
+    .hotsale .item .p-name a {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    .hotsale li {
+        margin-left: 52px!important;
+    }
+    .hotsale .prev, .hotsale .next {
+        background-color: #333;
+    }
+    .hotsale .next {
+        right: 15px;
+    }
+    .choose_more {
+        width: 50px;
+    }
+    .choose_more,.choose_open {
+        height: 22px;
+        font-size: 12px;
+    }
+    .choose_open {
+        width: 22px;
+    }
+    .price_class.price_ok,.store-checkbox label {
+        font-size: 12px;
+    }
+    .goods-list .gl-item .p-img a {
+        text-align: center;
+    }
+    .goods-list .gl-item .p-img a img {
+        display: inline-block;
+    }
+    #content .category_left {
+        width: 998px;
+    }
+    .goods-list .gl-item {
+        width: 249.5px;
+    }
+    .goods-list .gl-item .gl-i-wrap {
+        width: 100%;
+    }
+    .goods-spread li .p-name {
+        height: 34px;
+    }
+    .goods-spread li .p-name a {
+        line-height: 1.2;
+    }
+</style>
 </head>
 
 <body>
-<!-- #BeginLibraryItem "/library/page_header_w1390.lbi" --><!-- #EndLibraryItem -->
+
+<!--header start-->
+<div id="header">
+    <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
+</div>
+<!--header end-->
 
 <!-- #BeginLibraryItem "/library/category_recommend_hot.lbi" --><!-- #EndLibraryItem -->
 
 {* DSC 提醒您：动态载入category_top_ad.lbi，显示首页分类小广告 *}{insert name='get_adv_child' ad_arr=$category_top_ad id=$cate_info.cat_id}
 
-<div class="ecsc-breadcrumb w1390">
+<div class="ecsc-breadcrumb w1200">
     <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
     <div class="pre-num">{$lang.total}{$pager.record_count}{$lang.jian_goods}</div>
 </div>
 <div id="filter">
-    <div class="filter-section-wrapper mt-component-2 w1390">
+    <div class="filter-section-wrapper mt-component-2 w1200">
 		<!-- #BeginLibraryItem "/library/category_screening.lbi" --><!-- #EndLibraryItem -->
     </div>
     
 </div>
-<div id="content" class="w1390">
+<div id="content" class="w1200">
 		<!-- TemplateBeginEditable name="商品列表" -->
 <!-- #BeginLibraryItem "/library/goods_list.lbi" -->
 
@@ -70,7 +143,7 @@
         <li class="gl-item">
             <div class="gl-i-wrap">
                 <div class="p-img">
-                    <a href="{$goods.url}" target="_blank"><img src="themes/ecmoban_dsc/images/loadGoods.gif" width="220" height="220" class="lazy" data-original="{$goods.goods_thumb}"/></a>
+                    <a href="{$goods.url}" target="_blank"><img width="220" height="220" class="lazy" data-original="{$goods.goods_thumb}"/></a>
                     <div class="p-btns">
                     	{if $goods.prod eq 1}
                             {if $goods.goods_number > 0}
@@ -274,7 +347,50 @@ function selectPage(sel)
 
 {* 941红木 提醒您：动态载入user_menu_position.lbi，显示首页分类小广告 *}{insert name='user_menu_position'}
 
-<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+
+<!--2017/07/17 更换-->
+<!-- #BeginLibraryItem "/library/page_footer_djj.lbi" --><!-- #EndLibraryItem -->
+<script type="text/javascript">
+    $("#clear_price").click(function(){
+        $("#price-min").val('');
+        $("#price-max").val('');
+    });
+        
+    $(".QR_code li").hover(function(){
+        var index = $(this).index();
+        $(this).addClass("current").siblings().removeClass("current");
+        $(".QR_code .code_tp").eq(index).removeClass("hide").siblings().addClass("hide");
+    })
+
+    function checkSearchForm(){
+        var keywords = $("input[name='keywords']").val();
+        if(keywords == ''){
+            
+            divId = "keywords_html";
+            var content = '<div id="' + divId + '">' + 
+                                '<div class="tip-box icon-box">' +
+                                    '<span class="warn-icon m-icon"></span>' + 
+                                    '<div class="item-fore">' +
+                                        '<h3 class="rem ftx-04">您搜索内容的关键字不能空</h3>' +
+                                    '</div>' +
+                                '</div>' +
+                            '</div>';
+            
+            pb({
+                id:divId,
+                title:'提示',
+                width:445,
+                height:58,
+                content:content,    //调取内容
+                drag:false,
+                foot:false
+            }); 
+            
+            return false;
+        }
+    }
+</script>
+
 <input name="script_name" value="{$script_name}" type="hidden" />
 <script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.purebox.js"></script>
 <script type="text/javascript">
@@ -322,7 +438,7 @@ function selectStoreTab(a){
 	$("#stock_list").find(".mc").eq(a).removeClass("hide").siblings(".mc").addClass("hide");
 }
 
-$(".hotsale").slide({mainCell:".bd ul",effect:"left",pnLoop:false,autoPlay:false,autoPage:true,scroll:1,vis:4});
+$(".hotsale").slide({mainCell:".bd ul",effect:"left",pnLoop:false,autoPlay:false,autoPage:true,scroll:1,vis:3});
 $(".share-content").slide({mainCell:".bd ul",effect:"left",pnLoop:false,autoPlay:false,autoPage:true,scroll:1,vis:7});
 
 //异步加载更多商品 by wu start	
@@ -350,6 +466,15 @@ $(function(){
 		{/if}
 	});
 });
+    
+    //2017-07-17 添加图片懒加载
+    // $(function() { 
+    //     $("img.lazy").lazyload({
+    //         placeholder : "themes/ecmoban_dsc/images/loadGoods.gif",
+    //         effect: "fadeIn", 
+    //         hreshold: 200,
+    //     });
+    // });
 </script>
 </body>
 </html>
