@@ -398,7 +398,7 @@
 						<a href="#">查看更多</a>
 					</div>
 					<ul class="bg-color-f5f5f5 clearfix">
-					<!--{foreach from=$ct_sql item=ct_sql name=ct_sq}-->
+					<!--{foreach from=$ct_sql item=ct_sql name=ct_sql}-->
 					<!-- {if $smarty.foreach.ct_sql.iteration %4 !=0  } -->
                     <li>
                 	<!-- {elseif $smarty.foreach.ct_sql.iteration %4==0} -->
