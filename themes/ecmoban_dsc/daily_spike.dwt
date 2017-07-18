@@ -47,45 +47,9 @@
             <div class="section-2">
                 <ul class="clearfix">
                 <!--{foreach from=$ms_all_sql item=ms_all_sql name=ms_all_sql}-->
-                <!-- {if $smarty.foreach.ms_all_sql.iteration ==1  } -->
+                <!-- {if $smarty.foreach.ms_all_sql.iteration %2 ==1  } -->
                     <li class="float-l clearfix">
-                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==2} -->
-                    <li class="float-r margin-r-0 clearfix">
-                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==3} -->
-                    <li class="float-l clearfix">
-                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==4} -->
-                    <li class="float-r margin-r-0 clearfix">
-                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==5} -->
-                    <li class="float-l clearfix">
-                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==6} -->
-                    <li class="float-r margin-r-0 clearfix">
-                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==7} -->
-                    <li class="float-l clearfix">
-                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==8} -->
-                    <li class="float-r margin-r-0 clearfix">
-                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==9} -->
-                    <li class="float-l clearfix">
-                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==10} -->
-                    <li class="float-r margin-r-0 clearfix">
-                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==11} -->
-                    <li class="float-l clearfix">
-                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==12} -->
-                    <li class="float-r margin-r-0 clearfix">
-                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==13} -->
-                    <li class="float-l clearfix">
-                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==14} -->
-                    <li class="float-r margin-r-0 clearfix">
-                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==15} -->
-                    <li class="float-l clearfix">
-                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==16} -->
-                    <li class="float-r margin-r-0 clearfix">
-                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==17} -->
-                    <li class="float-l clearfix">
-                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==18} -->
-                    <li class="float-r margin-r-0 clearfix">
-                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==19} -->
-                    <li class="float-l clearfix">
-                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==20} -->
+                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration %2==0} -->
                     <li class="float-r margin-r-0 clearfix">
                     <!--{/if}-->
                         <a class="float-l" href="goods.php?id={$ms_all_sql.goods_id}"><img src="{$ms_all_sql.goods_thumb}" alt="{$ms_all_sql.goods_name}" /></a>
