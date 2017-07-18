@@ -404,11 +404,13 @@
                 	<!-- {elseif $smarty.foreach.ct_sql.iteration %4==0} -->
                     <li class="margin-r-0 clearfix">
                 	<!--{/if}-->
-							<a href="goosd.php?id={$ct_sql.goods_id}">
-								<div><img src="{$ct_sql.goods_thumb}" alt="{$ct_sql.goods_name}" /></div>
-								<h3 class="ct_name">{$ct_sql.goods_name}s</h3>
-							</a>
-						</li>
+						<a href="goosd.php?id={$ct_sql.goods_id}">
+							<div>
+								<img src="{$ct_sql.goods_thumb}" alt="{$ct_sql.goods_name}" />
+							</div>
+							<h3><font size="4">{$ct_sql.goods_name|truncate:30}</font></h3>
+						</a>
+					</li>
 					<!--{/foreach}-->
 					</ul>
 				</div>
@@ -420,15 +422,15 @@
 						<a href="#">查看更多</a>
 					</div>
 					<ul class="bg-color-f5f5f5 clearfix">
-					<!--{foreach from=$kt_sql item=ct_sql name=ct_sq}-->
-						<!-- {if $smarty.foreach.ct_sql.iteration %4 !=0  } -->
+					<!--{foreach from=$kt_sql item=kt_sql name=kt_sql}-->
+						<!-- {if $smarty.foreach.kt_sql.iteration %4 !=0  } -->
 	                    <li>
-	                	<!-- {elseif $smarty.foreach.ct_sql.iteration %4==0} -->
+	                	<!-- {elseif $smarty.foreach.kt_sql.iteration %4==0} -->
 	                    <li class="float-r margin-r-0 clearfix">
 	                	<!--{/if}-->
-							<a href="goosd.php?id={$ct_sql.goods_id}">
-								<div><img src="{$ct_sql.goods_thumb}" alt="{$ct_sql.goods_name}" /></div>
-								<h3 class="ct_name">{$ct_sql.goods_name}s</h3>
+							<a href="goosd.php?id={$kt_sql.goods_id}">
+								<div><img src="{$kt_sql.goods_thumb}" alt="{$kt_sql.goods_name}" /></div>
+								<h3><font size="4">{$kt_sql.goods_name|truncate:30}</font></h3>
 							</a>
 						</li>
 					<!--{/foreach}-->
@@ -450,7 +452,7 @@
 		                	<!--{/if}-->
 								<a href="goosd.php?id={$sf_sql.goods_id}">
 									<div><img src="{$sf_sql.goods_thumb}" alt="{$sf_sql.goods_name}" /></div>
-									<h3 class="ct_name">{$sf_sql.goods_name}</h3>
+								<h3><font size="4">{$sf_sql.goods_name|truncate:30}</font></h3>
 								</a>
 							</li>
 						<!--{/foreach}-->
@@ -465,14 +467,14 @@
 					</div>
 					<ul class="bg-color-f5f5f5 clearfix">
 						<!--{foreach from=$ws_sql item=ws_sql name=ws_sql}-->
-							<!-- {if $smarty.foreach.ws_sql.iteration %4 !=0  } -->
+							<!-- {if $smarty.foreach.ws_sql.iteration %4 !=0 && $smarty.foreach.ws_sql.iteration !=0} -->
 		                    <li>
 		                	<!-- {elseif $smarty.foreach.ws_sql.iteration %4==0} -->
 		                    <li class="float-r margin-r-0 clearfix">
 		                	<!--{/if}-->
 								<a href="goosd.php?id={$ws_sql.goods_id}">
 									<div><img src="{$ws_sql.goods_thumb}" alt="{$ws_sql.goods_name}" /></div>
-									<h3 class="ct_name">{$ws_sql.goods_name}</h3>
+									<h3><font size="4">{$ws_sql.goods_name|truncate:30}</font></h3>
 								</a>
 							</li>
 						<!--{/foreach}-->
