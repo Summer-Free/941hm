@@ -257,6 +257,7 @@ table{border-collapse:collapse;border-spacing:0;}
           transition: all .2s linear;
 }
 .move:hover {
+  border: 1px solid #95b0b2!important;
   box-shadow: 0 0 15px 0 #d7d6d6;
   -webkit-transform: translateX(1px) translateY(-1px);
      -moz-transform: translateX(1px) translateY(-1px);

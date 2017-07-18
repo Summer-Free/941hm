@@ -400,9 +400,9 @@
 					<ul class="bg-color-f5f5f5 clearfix">
 					<!--{foreach from=$ct_sql item=ct_sql name=ct_sql}-->
 					<!-- {if $smarty.foreach.ct_sql.iteration %4 !=0  } -->
-                    <li>
+                    <li class="move">
                 	<!-- {elseif $smarty.foreach.ct_sql.iteration %4==0} -->
-                    <li class="margin-r-0">
+                    <li class="move margin-r-0">
                 	<!--{/if}-->
 						<a href="goosd.php?id={$ct_sql.goods_id}">
 							<div><img src="{$ct_sql.goods_thumb}" alt="{$ct_sql.goods_name}" /></div>
@@ -422,9 +422,9 @@
 					<ul class="bg-color-f5f5f5 clearfix">
 					<!--{foreach from=$kt_sql item=kt_sql name=kt_sql}-->
 					<!-- {if $smarty.foreach.kt_sql.iteration %4 !=0  } -->
-                    <li>
+                    <li class="move">
                 	<!-- {elseif $smarty.foreach.kt_sql.iteration %4==0} -->
-                    <li class="margin-r-0">
+                    <li class="move margin-r-0">
                 	<!--{/if}-->
 						<a href="goosd.php?id={$kt_sql.goods_id}">
 							<div><img src="{$kt_sql.goods_thumb}" alt="{$kt_sql.goods_name}" /></div>
@@ -444,9 +444,9 @@
 					<ul class="bg-color-f5f5f5 clearfix">
 						<!--{foreach from=$sf_sql item=sf_sql name=sf_sql}-->
 							<!-- {if $smarty.foreach.sf_sql.iteration %4 !=0  } -->
-		                    <li>
+		                    <li class="move">
 		                	<!-- {elseif $smarty.foreach.sf_sql.iteration %4==0} -->
-		                    <li class="margin-r-0">
+		                    <li class="move margin-r-0">
 		                	<!--{/if}-->
 								<a href="goosd.php?id={$sf_sql.goods_id}">
 									<div><img src="{$sf_sql.goods_thumb}" alt="{$sf_sql.goods_name}" /></div>
@@ -466,9 +466,9 @@
 					<ul class="bg-color-f5f5f5 clearfix">
 						<!--{foreach from=$ws_sql item=ws_sql name=ws_sql}-->
 							<!-- {if $smarty.foreach.ws_sql.iteration %4 !=0 && $smarty.foreach.ws_sql.iteration !=0} -->
-		                    <li>
+		                    <li class="move">
 		                	<!-- {elseif $smarty.foreach.ws_sql.iteration %4==0} -->
-		                    <li class="margin-r-0">
+		                    <li class="move margin-r-0">
 		                	<!--{/if}-->
 								<a href="goosd.php?id={$ws_sql.goods_id}">
 									<div><img src="{$ws_sql.goods_thumb}" alt="{$ws_sql.goods_name}" /></div>
