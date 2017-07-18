@@ -307,11 +307,7 @@
 	                        </div>
 						</div>
 						<div class="float-r">
-							<img src="themes/ecmoban_dsc/iamges/20170517/tyg.png" alt="体验馆">
-							<div class="wrap-a clearfix">
-								<a class="left-a" href="javascript:void(0);">线上体验馆</a>
-								<a href="experience_hall.php">线下体验馆</a>
-							</div>
+							<a href="experience_hall.php"><img src="themes/ecmoban_dsc/iamges/20170517/tyg.png" alt="线下体验馆"></a>
 						</div>
 					</div>
 					<div class="Personal-tailor clearfix">
