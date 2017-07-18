@@ -1,166 +1,18 @@
 <!doctype html>
 <html lang="zh-cn">
     <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <meta content="" name="description" />
-        <meta content="" name="" />
-        <title>941hm_每日秒杀</title>
-
-        <!--基础css-->
-        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/base.css">
-        <!--通用头部-->
-        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/header.css">
+        <!--首页CSS以及部分通用部分的合并LBI-->
+        <!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem -->
+		
         <!--本页专用-->
-        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/daily_spike.css">
-        <!--轮播图片-->
-        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/slideFadein_out.css">
-        <!--通用底部-->
-        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/footer.css">              
+        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/daily_spike.css">           
     </head>  
     <body>
         
         <!--header start-->
         <div id="header">
                 
-                <!--top start-->
-                <div class="top">
-                        <div class="w1200 clearfix">
-                                <div class="float-l">
-                                        欢迎浏览941红木网
-                                        <span class="dropdown">用户名<i class="icon-down">箭头</i></span>
-                                        <ul>
-                                                <li style="text-align:center;">some text</li>
-                                        </ul>
-                                </div>
-                                <div class="float-r">
-                                        <ul class="clearfix">
-                                                <li><a href="#">我的足迹</a></li>
-                                                <li><a href="#">我的订单</a></li>
-                                                <li><a href="#">我要加盟</a></li>
-                                                <li><a href="#">商家中心</a></li>
-                                                <li><a href="#">客服中心</a></li>
-                                                <li class="padding-r-0"><a href="#">APP下载</a></li>
-                                        </ul>
-                                </div>
-                        </div>
-                </div>
-                <!--top end-->
-
-                <!--Navigation start-->
-                <div class="nav w1200 clearfix">
-                        <div class="float-l">
-                            <h1 class="logo" style="text-indent: 0;"><a href="index.php" style="display: inline-block;width: 100%;height: 100%;text-indent: -9999px;">941红木</a></h1>
-                        </div>
-                        <img class="float-r" src="themes/ecmoban_dsc/iamges/20170517/wechat.jpg" alt="二维码">
-                        <div class="float-r margin-r-30">
-                                <div class="wrap-search clearfix">
-                                        <a class="icon-file" href="#"></a>
-                                        <a class="icon-cart" href="#"><span class="tooltip">99</span></a>
-                                        <form class="clearfix" action="" method="">
-                                                <input type="text" />
-                                                <button class="icon-search"></button>
-                                        </form>
-                                        <h2 class="float-l" style="margin-top: 30px;color: #481010;">全球首家CBBDS传统艺术文化生态链运营模式平台</h2>
-                                </div>  
-                                <div class="nav-content">
-                                        <ul class="main-nav clearfix">
-                                                <li class="classification">
-                                                        全部分类
-                                                        <div class="dropdown-menu">
-                                                                <dl class="position">
-                                                                        <dt>餐厅 :</dt>
-                                                                        <dd>
-                                                                                <a href="#">餐桌</a>
-                                                                                <a href="#">圆桌</a>
-                                                                                <a href="#">酒柜/酒架</a>
-                                                                                <a href="#">四方桌</a>
-                                                                                <a href="#">餐边桌</a>
-                                                                        </dd>
-                                                                        <dt>客厅 :</dt>
-                                                                        <dd>
-                                                                                <a href="#">沙发</a>
-                                                                                <a href="#">电视柜</a>
-                                                                                <a href="#">罗汉床</a>
-                                                                                <a href="#">中堂</a>
-                                                                                <a href="#">花架</a>
-                                                                                <a href="#">鼓凳</a>
-                                                                                <a href="#">二联柜</a>
-                                                                                <a href="#">屏风</a>
-                                                                        </dd>
-                                                                        <dt>书房 :</dt>
-                                                                        <dd>
-                                                                                <a href="#">书桌</a>
-                                                                                <a href="#">书柜</a>
-                                                                                <a href="#">博古架</a>
-                                                                                <a href="#">茶台</a>
-                                                                                <a href="#">茶边柜</a>
-                                                                                <a href="#">条案</a>
-                                                                                <a href="#">麻将桌</a>
-                                                                                <a href="#">电脑桌</a>
-                                                                                <a href="#">大班台</a>
-                                                                        </dd>
-                                                                        <dt>卧室 :</dt>
-                                                                        <dd>
-                                                                                <a href="#">床</a>
-                                                                                <a href="#">贵妃榻</a>
-                                                                                <a href="#">衣柜</a>
-                                                                                <a href="#">斗柜</a>
-                                                                                <a href="#">顶箱柜</a>
-                                                                                <a href="#">梳妆台</a>
-                                                                                <a href="#">床边凳</a>
-                                                                                <a href="#">穿衣镜</a>
-                                                                        </dd>
-                                                                </dl>
-                                                                <dl class="material">
-                                                                        <dt>材质 :</dt>
-                                                                        <dd>
-                                                                                <a href="#">小叶紫檀</a>
-                                                                                <a href="#">黄花梨</a>
-                                                                                <a href="#">刺猬紫檀</a>
-                                                                                <a href="#">缅甸花梨</a>
-                                                                                <a href="#">非洲花梨</a>
-                                                                                <a href="#">非洲酸枝</a>
-                                                                                <a href="#">沉贵宝</a>
-                                                                                <a href="#">安哥拉紫檀</a>
-                                                                                <a href="#">南美酸枝</a>
-                                                                        </dd>
-                                                                </dl>
-                                                                <dl class="style">
-                                                                        <dt>风格 :</dt>
-                                                                        <dd>
-                                                                                <a href="#">古典式</a>
-                                                                                <a href="#">新中式</a>
-                                                                                <a href="#">欧美式</a>
-                                                                                <a href="#">明式</a>
-                                                                        </dd>
-                                                                </dl>
-                                                                <dl class="price">
-                                                                        <dt>价格 :</dt>
-                                                                        <dd>
-                                                                                <a href="#">0-10000</a>
-                                                                                <a href="#">10000-20000</a>
-                                                                                <a href="#">20000-40000</a>
-                                                                                <a href="#">40000-80000</a>
-                                                                                <a href="#">80000以上</a>
-                                                                        </dd>
-                                                                </dl>
-                                                        </div>  
-                                                </li>
-                                                <li><a href="#">首页</a></li>
-                                                <li><a href="#">智能体验馆</a></li>
-                                                <li><a href="#">智能场景定制</a></li>
-                                                <li><a href="#">匠物众筹</a></li>
-                                                <li><a href="#">一元购</a></li>
-                                                <li><a href="#">禅学院</a></li>
-                                                <li><a href="#">保养技师</a></li>
-                                                <li class="margin-r-0"><a href="#">加盟入驻</a></li>
-                                        </ul>
-                                </div>
-                        </div>
-                </div>          
-                <!--Navigation end-->
+                <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
 
                 <!--slide banner start-->
                 <div class="slide-banner bg-color-f5f5f5">      
@@ -189,172 +41,63 @@
         
         <!--main body start-->
         <div class="w1200 bg-color-f5f5f5" id="main-body">
-            
-            <div class="section-1 clearfix">
-                <a href="#" title="去餐厅">
-                    <i class="icon-ct"></i>
-                    <span>餐厅</span>
-                </a>
-                <a href="#" title="去客厅">
-                    <i class="icon-kt"></i>
-                    <span>客厅</span>
-                </a>
-                <a href="#" title="去书房">
-                    <i class="icon-sf"></i>
-                    <span>书房</span>
-                </a>
-                <a href="#" title="去卧室">
-                    <i class="icon-ws"></i>
-                    <span>卧室</span>
-                </a>
-                <a class="margin-r-0" href="#" title="去看小玩意儿">
-                    <i class="icon-xwy"></i>
-                    <span>小玩意儿</span>
-                </a>
-            </div>
-
+            <span>&nbsp;</span>
+            <br>
+            <span>&nbsp;</span>
             <div class="section-2">
                 <ul class="clearfix">
+                <!--{foreach from=$ms_all_sql item=ms_all_sql name=ms_all_sql}-->
+                <!-- {if $smarty.foreach.ms_all_sql.iteration ==1  } -->
                     <li class="float-l clearfix">
-                        <a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/spike-product-1.jpg" alt="" /></a>
-                        <div class="float-r">
-                            <h2>热门秒杀新中式紫光檀博古架置物</h2>
-                            <p class="hot">爆款直降 极速送达</p>
-                            <del>&yen;3333</del>
-                            <ins>&yen;50</ins>
-                            <a href="#">立刻秒</a>
-                        </div>
-                    </li>
+                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==2} -->
                     <li class="float-r margin-r-0 clearfix">
-                        <a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/spike-product-1.jpg" alt="" /></a>
-                        <div class="float-r">
-                            <h2>热门秒杀新中式紫光檀博古架置物</h2>
-                            <p class="hot">爆款直降 极速送达</p>
-                            <del>&yen;3333</del>
-                            <ins>&yen;50</ins>
-                            <a href="#">立刻秒</a>
-                        </div>
-                    </li>
+                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==3} -->
                     <li class="float-l clearfix">
-                        <a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/spike-product-1.jpg" alt="" /></a>
-                        <div class="float-r">
-                            <h2>热门秒杀新中式紫光檀博古架置物</h2>
-                            <p class="hot">爆款直降 极速送达</p>
-                            <del>&yen;3333</del>
-                            <ins>&yen;50</ins>
-                            <a href="#">立刻秒</a>
-                        </div>
-                    </li>
+                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==4} -->
                     <li class="float-r margin-r-0 clearfix">
-                        <a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/spike-product-1.jpg" alt="" /></a>
-                        <div class="float-r">
-                            <h2>热门秒杀新中式紫光檀博古架置物</h2>
-                            <p class="hot">爆款直降 极速送达</p>
-                            <del>&yen;3333</del>
-                            <ins>&yen;50</ins>
-                            <a href="#">立刻秒</a>
-                        </div>
-                    </li>
+                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==5} -->
                     <li class="float-l clearfix">
-                        <a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/spike-product-1.jpg" alt="" /></a>
-                        <div class="float-r">
-                            <h2>热门秒杀新中式紫光檀博古架置物</h2>
-                            <p class="hot">爆款直降 极速送达</p>
-                            <del>&yen;3333</del>
-                            <ins>&yen;50</ins>
-                            <a href="#">立刻秒</a>
-                        </div>
-                    </li>
+                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==6} -->
                     <li class="float-r margin-r-0 clearfix">
-                        <a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/spike-product-1.jpg" alt="" /></a>
-                        <div class="float-r">
-                            <h2>热门秒杀新中式紫光檀博古架置物</h2>
-                            <p class="hot">爆款直降 极速送达</p>
-                            <del>&yen;3333</del>
-                            <ins>&yen;50</ins>
-                            <a href="#">立刻秒</a>
-                        </div>
-                    </li>
+                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==7} -->
                     <li class="float-l clearfix">
-                        <a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/spike-product-1.jpg" alt="" /></a>
-                        <div class="float-r">
-                            <h2>热门秒杀新中式紫光檀博古架置物</h2>
-                            <p class="hot">爆款直降 极速送达</p>
-                            <del>&yen;3333</del>
-                            <ins>&yen;50</ins>
-                            <a href="#">立刻秒</a>
-                        </div>
-                    </li>
+                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==8} -->
                     <li class="float-r margin-r-0 clearfix">
-                        <a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/spike-product-1.jpg" alt="" /></a>
-                        <div class="float-r">
-                            <h2>热门秒杀新中式紫光檀博古架置物</h2>
-                            <p class="hot">爆款直降 极速送达</p>
-                            <del>&yen;3333</del>
-                            <ins>&yen;50</ins>
-                            <a href="#">立刻秒</a>
-                        </div>
-                    </li>
+                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==9} -->
                     <li class="float-l clearfix">
-                        <a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/spike-product-1.jpg" alt="" /></a>
-                        <div class="float-r">
-                            <h2>热门秒杀新中式紫光檀博古架置物</h2>
-                            <p class="hot">爆款直降 极速送达</p>
-                            <del>&yen;3333</del>
-                            <ins>&yen;50</ins>
-                            <a href="#">立刻秒</a>
-                        </div>
-                    </li>
+                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==10} -->
                     <li class="float-r margin-r-0 clearfix">
-                        <a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/spike-product-1.jpg" alt="" /></a>
-                        <div class="float-r">
-                            <h2>热门秒杀新中式紫光檀博古架置物</h2>
-                            <p class="hot">爆款直降 极速送达</p>
-                            <del>&yen;3333</del>
-                            <ins>&yen;50</ins>
-                            <a href="#">立刻秒</a>
-                        </div>
-                    </li>
+                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==11} -->
                     <li class="float-l clearfix">
-                        <a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/spike-product-1.jpg" alt="" /></a>
-                        <div class="float-r">
-                            <h2>热门秒杀新中式紫光檀博古架置物</h2>
-                            <p class="hot">爆款直降 极速送达</p>
-                            <del>&yen;3333</del>
-                            <ins>&yen;50</ins>
-                            <a href="#">立刻秒</a>
-                        </div>
-                    </li>
+                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==12} -->
                     <li class="float-r margin-r-0 clearfix">
-                        <a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/spike-product-1.jpg" alt="" /></a>
-                        <div class="float-r">
-                            <h2>热门秒杀新中式紫光檀博古架置物</h2>
-                            <p class="hot">爆款直降 极速送达</p>
-                            <del>&yen;3333</del>
-                            <ins>&yen;50</ins>
-                            <a href="#">立刻秒</a>
-                        </div>
-                    </li>
+                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==13} -->
                     <li class="float-l clearfix">
-                        <a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/spike-product-1.jpg" alt="" /></a>
-                        <div class="float-r">
-                            <h2>热门秒杀新中式紫光檀博古架置物</h2>
-                            <p class="hot">爆款直降 极速送达</p>
-                            <del>&yen;3333</del>
-                            <ins>&yen;50</ins>
-                            <a href="#">立刻秒</a>
-                        </div>
-                    </li>
+                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==14} -->
                     <li class="float-r margin-r-0 clearfix">
-                        <a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/spike-product-1.jpg" alt="" /></a>
+                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==15} -->
+                    <li class="float-l clearfix">
+                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==16} -->
+                    <li class="float-r margin-r-0 clearfix">
+                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==17} -->
+                    <li class="float-l clearfix">
+                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==18} -->
+                    <li class="float-r margin-r-0 clearfix">
+                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==19} -->
+                    <li class="float-l clearfix">
+                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration ==20} -->
+                    <li class="float-r margin-r-0 clearfix">
+                    <!--{/if}-->
+                        <a class="float-l" href="goods.php?id={$ms_all_sql.goods_id}"><img src="{$ms_all_sql.goods_thumb}" alt="{$ms_all_sql.goods_name}" /></a>
                         <div class="float-r">
-                            <h2>热门秒杀新中式紫光檀博古架置物</h2>
+                            <h2>{$ms_all_sql.goods_name}</h2>
                             <p class="hot">爆款直降 极速送达</p>
-                            <del>&yen;3333</del>
-                            <ins>&yen;50</ins>
-                            <a href="#">立刻秒</a>
+                            <del>&yen;{$ms_all_sql.market_price}</del>
+                            <ins>&yen;{$ms_all_sql.shop_price}</ins>
+                            <a href="goods.php?id={$ms_all_sql.goods_id}">立刻秒</a>
                         </div>
                     </li>
+                <!--{/foreach}-->
                 </ul>
             </div>
         </div>
