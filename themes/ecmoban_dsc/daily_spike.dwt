@@ -49,10 +49,10 @@
                 <!--{foreach from=$ms_all_sql item=ms_all_sql name=ms_all_sql}-->
                 <!-- {if $smarty.foreach.ms_all_sql.iteration %2 ==1  } -->
                     <li class="float-l clearfix">
-                    <!-- {elseif $smarty.foreach.ms_all_sql.iteration %2==0} -->
+                <!-- {elseif $smarty.foreach.ms_all_sql.iteration %2==0} -->
                     <li class="float-r margin-r-0 clearfix">
-                    <!--{/if}-->
-                        <a class="float-l" href="goods.php?id={$ms_all_sql.goods_id}"><img src="{$ms_all_sql.goods_thumb}" alt="{$ms_all_sql.goods_name}" /></a>
+                <!--{/if}-->
+                        <a class="float-l" href="goods.php?id={$ms_all_sql.goods_id}"><img src="{$ms_all_sql.goods_thumb}" alt="{$ms_all_sql.goods_name}" width="300" height="233" /></a>
                         <div class="float-r">
                             <h2>{$ms_all_sql.goods_name}</h2>
                             <p class="hot">爆款直降 极速送达</p>

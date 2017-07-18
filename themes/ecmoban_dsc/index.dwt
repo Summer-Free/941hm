@@ -402,54 +402,18 @@
 						<a href="#">查看更多</a>
 					</div>
 					<ul class="bg-color-f5f5f5 clearfix">
-						<li>
-							<a href="#">
+					<!--{foreach from=$ct_sql item=ct_sql name=ct_sq}-->
+					<!-- {if $smarty.foreach.ct_sql.iteration %4 !=0  } -->
+                    <li>
+                	<!-- {elseif $smarty.foreach.ct_sql.iteration %4==0} -->
+                    <li class="float-r margin-r-0 clearfix">
+                	<!--{/if}-->
+							<a href="goosd.php?id={}">
 								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
 								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
 							</a>
 						</li>
-						<li>
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
-						<li class="margin-r-0">
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
-						<li class="margin-r-0">
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
+					<!--{/foreach}-->
 					</ul>
 				</div>
 
