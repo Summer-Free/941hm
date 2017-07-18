@@ -229,7 +229,7 @@
 				<div class="section-1 bg-color-f5f5f5">
 					<ul class="clearfix">
 						<li>
-							<a href="integral_mall.php" title="积分商城" style="background-color: #faf9f7;">
+							<a href="exchange.php" title="积分商城" style="background-color: #faf9f7;">
 								<img src="themes/ecmoban_dsc/iamges/20170517/jfsc.jpg" alt="积分商城" />
 							</a>
 						</li>
@@ -404,9 +404,9 @@
                 	<!-- {elseif $smarty.foreach.ct_sql.iteration %4==0} -->
                     <li class="float-r margin-r-0 clearfix">
                 	<!--{/if}-->
-							<a href="goosd.php?id={}">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							<a href="goosd.php?id={$ct_sql.goods_id}">
+								<div><img src="{$ct_sql.goods_thumb}" alt="{$ct_sql.goods_name}" /></div>
+								<h3 class="ct_name">{$ct_sql.goods_name}s</h3>
 							</a>
 						</li>
 					<!--{/foreach}-->
@@ -420,54 +420,18 @@
 						<a href="#">查看更多</a>
 					</div>
 					<ul class="bg-color-f5f5f5 clearfix">
-						<li>
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+					<!--{foreach from=$kt_sql item=ct_sql name=ct_sq}-->
+						<!-- {if $smarty.foreach.ct_sql.iteration %4 !=0  } -->
+	                    <li>
+	                	<!-- {elseif $smarty.foreach.ct_sql.iteration %4==0} -->
+	                    <li class="float-r margin-r-0 clearfix">
+	                	<!--{/if}-->
+							<a href="goosd.php?id={$ct_sql.goods_id}">
+								<div><img src="{$ct_sql.goods_thumb}" alt="{$ct_sql.goods_name}" /></div>
+								<h3 class="ct_name">{$ct_sql.goods_name}s</h3>
 							</a>
 						</li>
-						<li>
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
-						<li class="margin-r-0">
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
-						<li class="margin-r-0">
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
+					<!--{/foreach}-->
 					</ul>
 				</div>
 
@@ -478,54 +442,18 @@
 						<a href="#">查看更多</a>
 					</div>
 					<ul class="bg-color-f5f5f5 clearfix">
-						<li>
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
-						<li class="margin-r-0">
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
-						<li class="margin-r-0">
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
+						<!--{foreach from=$sf_sql item=sf_sql name=sf_sql}-->
+							<!-- {if $smarty.foreach.sf_sql.iteration %4 !=0  } -->
+		                    <li>
+		                	<!-- {elseif $smarty.foreach.sf_sql.iteration %4==0} -->
+		                    <li class="float-r margin-r-0 clearfix">
+		                	<!--{/if}-->
+								<a href="goosd.php?id={$sf_sql.goods_id}">
+									<div><img src="{$sf_sql.goods_thumb}" alt="{$sf_sql.goods_name}" /></div>
+									<h3 class="ct_name">{$sf_sql.goods_name}</h3>
+								</a>
+							</li>
+						<!--{/foreach}-->
 					</ul>
 				</div>
 
@@ -536,54 +464,18 @@
 						<a href="#">查看更多</a>
 					</div>
 					<ul class="bg-color-f5f5f5 clearfix">
-						<li>
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
-						<li class="margin-r-0">
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
-						<li class="margin-r-0">
-							<a href="#">
-								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
-								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
-							</a>
-						</li>
+						<!--{foreach from=$ws_sql item=ws_sql name=ws_sql}-->
+							<!-- {if $smarty.foreach.ws_sql.iteration %4 !=0  } -->
+		                    <li>
+		                	<!-- {elseif $smarty.foreach.ws_sql.iteration %4==0} -->
+		                    <li class="float-r margin-r-0 clearfix">
+		                	<!--{/if}-->
+								<a href="goosd.php?id={$ws_sql.goods_id}">
+									<div><img src="{$ws_sql.goods_thumb}" alt="{$ws_sql.goods_name}" /></div>
+									<h3 class="ct_name">{$ws_sql.goods_name}</h3>
+								</a>
+							</li>
+						<!--{/foreach}-->
 					</ul>
 				</div>
 
@@ -680,5 +572,17 @@
 		<!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->	
 		<!--首页专用JS-->
         <script type="text/javascript" src="themes/ecmoban_dsc/js/js/index.js"></script>
+        <script type="text/javascript">
+			$(function(){
+				var a=$(".ct_name").length;
+        		//alert(a)
+        		/*for (var i=0; i<=a-1; i++)
+        		{
+        			var s=$(".ct_name")[i].text();
+
+        			alert(s);
+        		}*/	
+			})      
+        </script>
 	</body>
 </html>
