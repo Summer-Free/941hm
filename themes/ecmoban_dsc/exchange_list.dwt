@@ -1,11 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="Keywords" content="{$keywords}" />
 <meta name="Description" content="{$description}" />
 <!-- TemplateBeginEditable name="doctitle" -->
-<title>{$page_title}</title>
+<!-- <title>{$page_title}</title> -->
 <!-- TemplateEndEditable -->
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
@@ -15,11 +14,15 @@
 <link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
 <link href="themes/ecmoban_dsc/select.css" rel="stylesheet" type="text/css" />
 <link rel="alternate" type="application/rss+xml" title="RSS|{$page_title}" href="{$feed_url}" />
-<link rel="stylesheet" type="text/css" href="themes/ecmoban_dsc/quickLinks.css" />
-<link rel="stylesheet" href="themes/ecmoban_dsc/purebox.css">
+<!-- <link rel="stylesheet" type="text/css" href="themes/ecmoban_dsc/quickLinks.css" /> -->
+<!-- <link rel="stylesheet" href="themes/ecmoban_dsc/purebox.css"> -->
+
+<!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem -->
+<!--首页CSS以及部分通用部分的合并LBI-->
+
 {* 包含脚本文件 *}
 {insert_scripts files='jquery-1.9.1.min.js,jquery.json.js,transport_jquery.js'}
-{insert_scripts files='common.js,global.js,utils.js,compare.js,search_category_menu.js,cart_common.js,cart_quick_links.js'}
+{insert_scripts files='common.js,global.js,utils.js,compare.js,search_category_menu.js'}
 
 <script type="text/javascript" src="themes/ecmoban_dsc/js/sc_common.js"></script>
 <script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.SuperSlide.2.1.1.js"></script>
@@ -28,221 +31,306 @@
 <script type="text/javascript" src="themes/ecmoban_dsc/js/rotate3di.js"></script>
 <script type="text/javascript" src="themes/ecmoban_dsc/js/scroll_city.js"></script>
 <script type="text/javascript" src="themes/ecmoban_dsc/js/notLogin.js"></script>
+{insert_scripts files='suggest.js,jquery.lazyload.js,warehouse_area.js'}
+
+<!--2017-07-18 新增模块样式-->
+<style>
+    .product-slide .JS-slide {
+        width: 896px;
+    }
+    .product-slide .JS-slide,
+    .product-slide .JS-slide .content li {
+        height: 376px;
+    }
+    .section-2 {
+        padding: 20px 0;
+    }
+    .section-2 .float-r {
+        position: relative;
+        width: 293px;
+        height: 376px;
+        background: url(themes/ecmoban_dsc/iamges/20170517/integral-bg1.jpg) no-repeat top center;
+    }
+    .section-2 .float-r span {
+        position: absolute;
+        left: 50%;
+        bottom: 30px;
+        margin-left: -94.5px;
+        width: 189px;
+        height: 45px;
+        text-indent: -9999px;
+        cursor: pointer;
+        background: url(themes/ecmoban_dsc/iamges/20170517/integral-bg1.png) no-repeat top center;
+    }
+    .icon.icon-down {
+        background: url(images/ecsc_icon.png) no-repeat;
+    }
+    .filter-mode .filter-jf li a {
+        font-size: 12px;
+    }
+    .p-list-wrap .item {
+        box-sizing: content-box;
+    }
+    #footer dl {
+        text-align: left;
+    }
+</style>
 </head>
 
 <body class="integral">
-<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
-<!--当前位置 start-->
-<div class="w1200">
- <div class="nch-breadcrumb-layout">
-	<div class="nch-breadcrumb wrapper" id="ur_here">
-         <div id="ur_here">
-          <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
-         </div>
+
+    <!--header start-->
+    <div id="header">
+        <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
     </div>
- </div>       
-</div>
-<!--当前位置 end-->
-<div id="filter" class="w1200">
-	<div class="street-filter-wapper">
-    	<!--{if $category_list}-->
-        <div class="filter_classify">
-            <div class="s-line">
-                <div class="sl-key">分类：</div>
-                <div class="sl-value">
-                	<ul class="sl-v-list">
-                    <li style="width:80px;"><a href="exchange.php" class="a_span a_span1">全部</a></li>
-                    <!--{foreach from=$category_list item=cat}-->
-                    <li><a href="exchange.php?sort={$pager.search.sort}&cat_id={$cat.cat_id}#exchange_list">{$cat.cat_alias_name}</a></li>
-                    <!--{/foreach}-->
+    <!--header end-->
+
+    <div class="w1200">
+
+    <!--当前位置 start-->
+     <div class="nch-breadcrumb-layout">
+    	<div class="nch-breadcrumb wrapper" id="ur_here">
+             <div id="ur_here">
+              <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+             </div>
+        </div>
+     </div>    
+    <!--当前位置 end-->
+
+    <!--2017-07-18 新增模块-->
+    <div class="section-2 clearfix">
+        <div class="float-l">
+            <div class="product-slide">
+                <div class="JS-slide">
+                    <ul class="content">
+                        <li class="active">
+                            <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/integral-a.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/integral-b.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/integral-c.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/integral-d.jpg" alt="" /></a>
+                        </li>
+                    </ul>
+                    <ul class="point">
+                        <li class="active"></li>
+                        <li class=""></li>
+                        <li class=""></li>
+                        <li class=""></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <!--{/if}-->
+        <div class="float-r"><span>点击签到</span></div>
+    </div>  
     </div>
-</div>        
-<div id="filter">
-    <div class="component-filter-sort w1200 mt0">
-		<div class="filter-mode">
-            <ul class="filter-jf">
-              <li class="first"><a href="exchange.php?sort=goods_id&order=<!--{if $pager.search.sort eq 'goods_id' && $pager.search.order eq 'ASC'}-->DESC<!--{else}-->ASC<!--{/if}-->#exchange_list" class="button-strip-item {if $pager.search.sort eq 'goods_id'} current{/if}" >默认排序<b class="icon <!--{if $pager.search.sort eq 'goods_id' && $pager.search.order eq 'ASC'}-->icon-up<!--{else}-->icon-down<!--{/if}-->"></b></a></li>
-                <li><a href="exchange.php?sort=sales_volume&order=<!--{if $pager.search.sort eq 'sales_volume' && $pager.search.order eq 'ASC'}-->DESC<!--{else}-->ASC<!--{/if}-->#exchange_list" class="button-strip-item {if $pager.search.sort eq 'sales_volume'}current{/if}">兑换量<b class="icon <!--{if $pager.search.sort eq 'sales_volume' && $pager.search.order eq 'ASC'}-->icon-up<!--{else}-->icon-down<!--{/if}-->"></b></a></li>
-                <li><a href="exchange.php?sort=exchange_integral&order=<!--{if $pager.search.sort eq 'exchange_integral' && $pager.search.order eq 'ASC'}-->DESC<!--{else}-->ASC<!--{/if}-->#exchange_list" class="button-strip-item {if $pager.search.sort eq 'exchange_integral'}current{/if}">积分值<b class="icon <!--{if $pager.search.sort eq 'exchange_integral' && $pager.search.order eq 'ASC'}-->icon-up<!--{else}-->icon-down<!--{/if}-->"></b></a></li>
-            </ul>
-			<!--{if !$category_load_type} 瀑布流 by wu start-->
-            <!-- {if $pager.page_count} -->
-            <div class="button-page">
-                <span class="pageState"><span>{$pager.page}</span>/{$pager.page_count}</span>
-                <!-- {if $pager.page_next} --><a href="{$pager.page_next}" title="下一页" class="demo">&gt;</a><!-- {else} --><a href="javascript:;">&gt;</a><!-- {/if} -->
-                <!-- {if $pager.page_prev} --><a href="{$pager.page_prev}" title="上一页">&lt;</a><!-- {else} --><a href="javascript:;">&lt;</a><!-- {/if} -->
+    
+    <div id="filter">
+        <div class="component-filter-sort w1200 mt0">
+    		<div class="filter-mode">
+                <ul class="filter-jf">
+                  <li class="first"><a href="exchange.php?sort=goods_id&order=<!--{if $pager.search.sort eq 'goods_id' && $pager.search.order eq 'ASC'}-->DESC<!--{else}-->ASC<!--{/if}-->#exchange_list" class="button-strip-item {if $pager.search.sort eq 'goods_id'} current{/if}" >默认排序<b class="icon <!--{if $pager.search.sort eq 'goods_id' && $pager.search.order eq 'ASC'}-->icon-up<!--{else}-->icon-down<!--{/if}-->"></b></a></li>
+                    <li><a href="exchange.php?sort=sales_volume&order=<!--{if $pager.search.sort eq 'sales_volume' && $pager.search.order eq 'ASC'}-->DESC<!--{else}-->ASC<!--{/if}-->#exchange_list" class="button-strip-item {if $pager.search.sort eq 'sales_volume'}current{/if}">兑换量<b class="icon <!--{if $pager.search.sort eq 'sales_volume' && $pager.search.order eq 'ASC'}-->icon-up<!--{else}-->icon-down<!--{/if}-->"></b></a></li>
+                    <li><a href="exchange.php?sort=exchange_integral&order=<!--{if $pager.search.sort eq 'exchange_integral' && $pager.search.order eq 'ASC'}-->DESC<!--{else}-->ASC<!--{/if}-->#exchange_list" class="button-strip-item {if $pager.search.sort eq 'exchange_integral'}current{/if}">积分值<b class="icon <!--{if $pager.search.sort eq 'exchange_integral' && $pager.search.order eq 'ASC'}-->icon-up<!--{else}-->icon-down<!--{/if}-->"></b></a></li>
+                </ul>
+    			<!--{if !$category_load_type} 瀑布流 by wu start-->
+                <!-- {if $pager.page_count} -->
+                <div class="button-page">
+                    <span class="pageState"><span>{$pager.page}</span>/{$pager.page_count}</span>
+                    <!-- {if $pager.page_next} --><a href="{$pager.page_next}" title="下一页" class="demo">&gt;</a><!-- {else} --><a href="javascript:;">&gt;</a><!-- {/if} -->
+                    <!-- {if $pager.page_prev} --><a href="{$pager.page_prev}" title="上一页">&lt;</a><!-- {else} --><a href="javascript:;">&lt;</a><!-- {/if} -->
+                </div>
+                <!-- {/if} -->
+    			<!--{/if} 瀑布流 by wu end-->
             </div>
-            <!-- {/if} -->
-			<!--{/if} 瀑布流 by wu end-->
         </div>
     </div>
-</div>
-<div class="plist-wrap w1200">
-  <div class="p-list-wrap">
-      <ul>
-      <!--{foreach from=$goods_list item=goods}-->
-          <!-- {if $goods.goods_id} -->
-          <li>
-              <div class="item">
-                  <div class="p-img"><a href="{$goods.url}" target="_blank"><img src="themes/ecmoban_dsc/images/loadGoods.gif" width="157" height="157" class="lazy" data-original="{$goods.goods_thumb}"/></a></div>
-                    <div class="p-name"><a href="{$goods.url}" target="_blank">{$goods.name|escape:html}</a></div>
-                    <div class="p-price">
-                      <div class="ftx-08">参考价：<del>{$goods.market_price}</del></div>
-                        <div class="ftx-08 mt5">换购价：<strong>{$goods.exchange_integral}积分</strong></div>
-                    </div>
-                    <!--<div class="p-time">&nbsp;&nbsp;</div>-->
-                    <div class="btns mt10">
-                      <div class="num"><em>{$goods.sales_volume|default:0}</em>人兑换</div>
-                        <a href="{$goods.url}" class="btn-9" target="_blank">立即兑换</a>
-                    </div>
-                </div>
-            </li>
-                <!--{/if}-->
-            <!--{/foreach}-->
-        </ul>
-    </div>
-</div>
-
-<div class="w1200 content">
-	<div style="margin-top:30px;">
-<!-- TemplateBeginEditable name="列表分页" -->
-<!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
-<!-- TemplateEndEditable --> 
-	</div>
-</div>
-<!--瀑布流 by wu start-->
-<div id="floor_loading" style="display:none">
-	<div style="width:120px; height:100px; margin:auto;"><img src="themes/ecmoban_dsc/images/loading.gif"></div>
-</div>
-<!--瀑布流 by wu end-->	        
-<div class="guess-love w1200">
-  <div class="in-title"><h3>精品推荐</h3></div>
-    <div class="plist-wrap">
+    <div class="plist-wrap w1200">
       <div class="p-list-wrap">
-             <ul ectype="items">
-             <!--{foreach from=$best_goods item=goods}-->
-                <li>
-                    <div class="item">
-                        <div class="p-img"><a href="{$goods.url}" target="_blank"><img src="themes/ecmoban_dsc/images/loadGoods.gif" width="194" height="194" class="lazy" data-original="{$goods.thumb}"/></a></div>
+          <ul>
+          <!--{foreach from=$goods_list item=goods}-->
+              <!-- {if $goods.goods_id} -->
+              <li>
+                  <div class="item">
+                      <div class="p-img"><a href="{$goods.url}" target="_blank"><img src="themes/ecmoban_dsc/images/loadGoods.gif" width="157" height="157" class="lazy" data-original="{$goods.goods_thumb}"/></a></div>
                         <div class="p-name"><a href="{$goods.url}" target="_blank">{$goods.name|escape:html}</a></div>
                         <div class="p-price">
-                            <div class="ftx-08">参考价：<del>{$goods.market_price}</del></div>
-                            <div class="ftx-08">换购积分：<strong>{$goods.exchange_integral}积分</strong></div>
+                          <div class="ftx-08">参考价：<del>{$goods.market_price}</del></div>
+                            <div class="ftx-08 mt5">换购价：<strong>{$goods.exchange_integral}积分</strong></div>
                         </div>
-                        <div class="btns">
+                        <!--<div class="p-time">&nbsp;&nbsp;</div>-->
+                        <div class="btns mt10">
+                          <div class="num"><em>{$goods.sales_volume|default:0}</em>人兑换</div>
                             <a href="{$goods.url}" class="btn-9" target="_blank">立即兑换</a>
                         </div>
+                    </div>
+                </li>
+                    <!--{/if}-->
+                <!--{/foreach}-->
+            </ul>
+        </div>
+    </div>
+
+    <div class="w1200 content">
+    	<div style="margin-top:30px;">
+    <!-- TemplateBeginEditable name="列表分页" -->
+    <!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
+    <!-- TemplateEndEditable --> 
+    	</div>
+    </div>
+    <!--瀑布流 by wu start-->
+    <div id="floor_loading" style="display:none">
+    	<div style="width:120px; height:100px; margin:auto;"><img src="themes/ecmoban_dsc/images/loading.gif"></div>
+    </div>
+    <!--瀑布流 by wu end-->	        
+    <div class="guess-love w1200">
+      <div class="in-title"><h3>精品推荐</h3></div>
+        <div class="plist-wrap">
+          <div class="p-list-wrap">
+                 <ul ectype="items">
+                 <!--{foreach from=$best_goods item=goods}-->
+                    <li>
+                        <div class="item">
+                            <div class="p-img"><a href="{$goods.url}" target="_blank"><img src="themes/ecmoban_dsc/images/loadGoods.gif" width="194" height="194" class="lazy" data-original="{$goods.thumb}"/></a></div>
+                            <div class="p-name"><a href="{$goods.url}" target="_blank">{$goods.name|escape:html}</a></div>
+                            <div class="p-price">
+                                <div class="ftx-08">参考价：<del>{$goods.market_price}</del></div>
+                                <div class="ftx-08">换购积分：<strong>{$goods.exchange_integral}积分</strong></div>
+                            </div>
+                            <div class="btns">
+                                <a href="{$goods.url}" class="btn-9" target="_blank">立即兑换</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--{/foreach}-->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ecsc-share-t6 mt25 pb20 w1200">
+      <div class="ec-title"><h3>热门兑换</h3></div>
+        <div class="share-content">
+            <ul>
+            <!--{foreach from=$hot_goods item=goods}-->
+                <li>
+                    <div class="produc-content">
+                        <div class="p-img"><a href="{$goods.url}" target="_blank"><img src="themes/ecmoban_dsc/images/loadGoods.gif" width="142" height="142" class="lazy" data-original="{$goods.thumb}"/></a></div>
+                        <div class="p-price"><em>积分</em>{$goods.exchange_integral}</div>
+                        <div class="btns"><a href="{$goods.url}" target="_blank" class="btn-9">立即兑换</a></div>
                     </div>
                 </li>
                 <!--{/foreach}-->
             </ul>
         </div>
     </div>
-</div>
-<div class="ecsc-share-t6 mt25 pb20 w1200">
-  <div class="ec-title"><h3>热门兑换</h3></div>
-    <div class="share-content">
-        <ul>
-        <!--{foreach from=$hot_goods item=goods}-->
-            <li>
-                <div class="produc-content">
-                    <div class="p-img"><a href="{$goods.url}" target="_blank"><img src="themes/ecmoban_dsc/images/loadGoods.gif" width="142" height="142" class="lazy" data-original="{$goods.thumb}"/></a></div>
-                    <div class="p-price"><em>积分</em>{$goods.exchange_integral}</div>
-                    <div class="btns"><a href="{$goods.url}" target="_blank" class="btn-9">立即兑换</a></div>
-                </div>
-            </li>
-            <!--{/foreach}-->
-        </ul>
-    </div>
-</div>
-<!-- #BeginLibraryItem "/library/page_footer.lbi" -->
-<div id="footer">
-  <div class="global-footer-lazy">
-      <div class="ecsc-service-flow">
-          <div class="ecsc-service-item"><a href="#" target="_blank"><i class="ecsc-zp"></i><span>正品保障</span></a></div>
-            <div class="ecsc-service-item"><a href="#" target="_blank"><i class="ecsc-qt"></i><span>七天包退</span></a></div>
-            <div class="ecsc-service-item"><a href="#" target="_blank"><i class="ecsc-hp"></i><span>好评如潮</span></a></div>
-            <div class="ecsc-service-item"><a href="#" target="_blank"><i class="ecsc-sd"></i><span>闪电发货</span></a></div>
-            <div class="ecsc-service-item last"><a href="#" target="_blank"><i class="ecsc-ry"></i><span>权威荣誉</span></a></div>
-        </div>
-    </div>
-    <div class="footer-desc">
-      <div class="footer-desc-list">
-          <dl class="novice">
-              <dt>新手上路</dt>
-                <dd><a href="#" target="_blank"><i>></i>售后流程</a></dd>
-                <dd><a href="#" target="_blank"><i>></i>购物流程</a></dd>
-                <dd><a href="#" target="_blank"><i>></i>订购方式</a></dd>
-                <dd><a href="#" target="_blank"><i>></i>隐私声明</a></dd>
-            </dl>
-            <dl class="nous">
-              <dt>手机常识</dt>
-                <dd><a href="#" target="_blank"><i>></i>如何分辨原装电池</a></dd>
-                <dd><a href="#" target="_blank"><i>></i>如何分辨水货手机</a></dd>
-                <dd><a href="#" target="_blank"><i>></i>如何享用全国联保</a></dd>
-                <dd><a href="#" target="_blank"><i>></i>如何分辨水货手机</a></dd>
-            </dl>
-            <dl class="distribution">
-              <dt>配送方式</dt>
-                <dd><a href="#" target="_blank"><i>></i>货到付款区域</a></dd>
-                <dd><a href="#" target="_blank"><i>></i>配送支付智能查询</a></dd>
-                <dd><a href="#" target="_blank"><i>></i>支付方式说明</a></dd>
-                <dd><a href="#" target="_blank"><i>></i>配送支付说明</a></dd>
-            </dl>
-            <dl class="member">
-              <dt>会员中心</dt>
-                <dd><a href="#" target="_blank"><i>></i>个人资料</a></dd>
-                <dd><a href="#" target="_blank"><i>></i>资金管理</a></dd>
-                <dd><a href="#" target="_blank"><i>></i>我的收藏</a></dd>
-                <dd><a href="#" target="_blank"><i>></i>我的订单</a></dd>
-            </dl>
-            <dl class="service">
-              <dt>服务保证</dt>
-                <dd><a href="#" target="_blank"><i>></i>退换货原则</a></dd>
-                <dd><a href="#" target="_blank"><i>></i>售后服务保证</a></dd>
-                <dd><a href="#" target="_blank"><i>></i>产品质量保证</a></dd>
-                <dd><a href="#" target="_blank"><i>></i>产品质量保证</a></dd>
-            </dl>
-            <dl class="contact-us">
-              <dt>联系我们</dt>
-                <dd><a href="#" target="_blank"><i>></i>网站故障报告</a></dd>
-                <dd><a href="#" target="_blank"><i>></i>选机咨询</a></dd>
-                <dd><a href="#" target="_blank"><i>></i>投诉与建议</a></dd>
-                <dd><a href="#" target="_blank"><i>></i>产品质量保证</a></dd>
-            </dl>
-        </div>
-        <div class="footer-desc-copyright">
-          <p class="footer-ecscinfo"><a href="#" target="_blank">首页</a>|<a href="#" target="_blank">隐私保护</a>|<a href="#" target="_blank">联系我们</a>|<a href="#" target="_blank">免责条款</a>|<a href="#" target="_blank">公司简介</a>|<a href="#" target="_blank">商家入驻</a>|<a href="#" target="_blank">销售联盟</a>|<a href="#" target="_blank">热门搜索</a>|<a href="#" target="_blank">商品专题</a>|<a href="#" target="_blank">品牌大全</a>
-            </p>
-            <p class="footer-otherlink"><a href="#" target="_blank">商创网络</a>|<a href="#" target="_blank">941红木</a>|<a href="#" target="_blank">商创</a>|<a href="#" target="_blank">聚划算</a>|<a href="#" target="_blank">全球速卖通</a>|<a href="#" target="_blank">阿里巴巴国际交易市场</a>|<a href="#" target="_blank">1688</a>|<a href="#" target="_blank">阿里妈妈</a>|<a href="#" target="_blank">虾米</a>|<a href="#" target="_blank">天天动听</a>|<a href="#" target="_blank">来往</a>|<a href="#" target="_blank">钉钉</a>|<a href="#" target="_blank">1l Main</a>|<a href="#" target="_blank">支付宝</a></p>
-            <b>Copyright© ECMOBAN商创版2.0 2007-2015，All Rights Reserved</b>
-            <p class="footer-fp-img">
-              <a href="#" target="_blank"><img src="images/banquan_1.jpg"></a>
-                <a href="#" target="_blank"><img src="images/banquan_2.jpg"></a>
-                <a href="#" target="_blank"><img src="images/banquan_3.jpg"></a>
-                <a href="#" target="_blank"><img src="images/banquan_4.jpg"></a>
-                <a href="#" target="_blank"><img src="images/banquan_5.jpg"></a>
-            </p>
-        </div>
-    </div>
-</div>
-<!-- #EndLibraryItem -->
 
-{* 941红木 提醒您：动态载入user_menu_position.lbi，显示首页分类小广告 *}{insert name='user_menu_position'}
-<script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.purebox.js"></script>
-<!--瀑布流 by wu start-->
-{if $category_load_type}
-<script type="text/javascript" src="themes/ecmoban_dsc/js/asyLoadfloor.js"></script>
-<script>
-	var query_string = '{$query_string}';
-	$.goodsLoad('.p-list-wrap:first','','',query_string,0);
-</script>
-{/if}
-<!--瀑布流 by wu end-->
+    <!--2017/07/17 更换-->
+    <!-- #BeginLibraryItem "/library/page_footer_djj.lbi" --><!-- #EndLibraryItem -->
+
+    {* 941红木 提醒您：动态载入user_menu_position.lbi，显示首页分类小广告 *}{insert name='user_menu_position'}
+    <!--瀑布流 by wu start-->
+    {if $category_load_type}
+    <script type="text/javascript" src="themes/ecmoban_dsc/js/asyLoadfloor.js"></script>
+    <script>
+    	var query_string = '{$query_string}';
+    	$.goodsLoad('.p-list-wrap:first','','',query_string,0);
+    </script>
+    {/if}
+    <!--瀑布流 by wu end-->
+
+
+
+    <script type="text/javascript">
+        /*首页分类树*/
+        $(function(){
+            $('#cata-nav .item').unbind('mouseenter').bind('mouseenter',function(){
+                var T = $(this);
+                var cat_id = T.children('.item-left').children('.cata-nav-name').data('id');
+                var eveval = T.children('.item-left').children('.cata-nav-name').attr('eveval');
+                
+                if(eveval != 1){
+                    T.children('.item-left').children('.cata-nav-name').attr('eveval', '1');
+                    /*加载中by wu*/
+                    $('#subitems_' + cat_id).html('<img src="themes/ecmoban_dsc/images/loadGoods.gif" width="200" height="200" class="lazy" style="margin:100px 281px">');
+                    $.ajax({
+                       type: "GET",
+                       url: "ajax_dialog.php",
+                       data: "act=getCategoryCallback&cat_id=" + cat_id,
+                       dataType:'json',
+                       success: function(data){
+                            var strLength = Number(data.topic_content.length)
+                            if(strLength == 2 || strLength == 0){
+                                $('#channels_' + data.cat_id).parent('.item-channels').hide();
+                            }
+                            $('#channels_' + data.cat_id).html(data.topic_content);
+                            $('#subitems_' + data.cat_id).html(data.cat_content);
+                            $('#item_brands' + data.cat_id).html(data.brands_ad_content);
+                       }
+                    });
+                }
+                
+                T.addClass("selected");
+                T.children('.cata-nav-layer').show();
+            });
+            
+            $('#cata-nav .item').unbind('mouseleave').bind('mouseleave',function(){
+                $(this).removeClass("selected");
+                $(this).children(".cata-nav-layer").hide();
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+    $("#clear_price").click(function(){
+        $("#price-min").val('');
+        $("#price-max").val('');
+    });
+        
+    $(".QR_code li").hover(function(){
+        var index = $(this).index();
+        $(this).addClass("current").siblings().removeClass("current");
+        $(".QR_code .code_tp").eq(index).removeClass("hide").siblings().addClass("hide");
+    })
+    function checkSearchForm(){
+        var keywords = $("input[name='keywords']").val();
+        if(keywords == ''){
+            
+            divId = "keywords_html";
+            var content = '<div id="' + divId + '">' + 
+                                '<div class="tip-box icon-box">' +
+                                    '<span class="warn-icon m-icon"></span>' + 
+                                    '<div class="item-fore">' +
+                                        '<h3 class="rem ftx-04">您搜索内容的关键字不能空</h3>' +
+                                    '</div>' +
+                                '</div>' +
+                            '</div>';
+            
+            pb({
+                id:divId,
+                title:'提示',
+                width:445,
+                height:58,
+                content:content,    //调取内容
+                drag:false,
+                foot:false
+            }); 
+            
+            return false;
+        }
+    }
+    </script>
+
+    <script>
+        $(function() {
+
+            //签到左侧的积分
+            $(".section-2 .product-slide").slideFade();
+        });
+    </script>
 </body>
 </html>
+
