@@ -24,8 +24,7 @@
 						</div>
 					</li>
 					<li>
-						<a class="bar bar-2" href="company_profile.php 
-" title="941红木网: 全球首家红木行业生态链服务商">941红木网: 全球首家红木行业生态链服务商</a>
+						<a class="bar bar-2" href="company_profile.php" title="941红木网: 全球首家红木行业生态链服务商">941红木网: 全球首家红木行业生态链服务商</a>
 					</li>
 				</ul>
 				<div class="wrap-close">
@@ -390,53 +389,244 @@
 						</dd>
 					</dl>
 				</div>
-				<div class="section-5">
-					<a href="one_yuan_purchase.php" title="点击进入"><img src="themes/ecmoban_dsc/iamges/20170517/yyqg.jpg" alt="万元好物，1元抢购" /></a>
-						<ul class="product-list clearfix">
-	                    <!--{foreach from=$res item=goods name=goods} -->
-	                    	<!-- {if $smarty.foreach.goods.iteration ==1  } -->
-                        		<li class="move" style="height: auto!important;">
-                        <!-- {elseif $smarty.foreach.goods.iteration ==2  } -->
-                        		<li class="move" style="height: auto!important;">
-                        <!-- {elseif $smarty.foreach.goods.iteration ==3  } -->
-                        		<li class="move" style="height: auto!important;">
-                    	<!-- {elseif $smarty.foreach.goods.iteration ==4  } -->
-                        		<li class="move margin-r-0" style="height: auto!important;">
-                         <!-- {elseif $smarty.foreach.goods.iteration ==5  } -->
-                         		<li class="move" style="height: auto!important;">
-                         <!-- {elseif $smarty.foreach.goods.iteration ==6  } -->
-                         		<li class="move" style="height: auto!important;">
-                         <!-- {elseif $smarty.foreach.goods.iteration ==7  } -->
-                         		<li class="move" style="height: auto!important;">
-                        <!-- {elseif $smarty.foreach.goods.iteration == 8 } -->
-                        		<li class="move margin-r-0" style="height: auto!important;">
-                        <!--{/if}-->
-									<a href="goods.php?id={$goods.goods_id}"><img src="{$goods.goods_thumb}" alt="{$goods.goods_name}" width="240" /></a>
-									<div class="content">
-										<h3>{$goods.goods_name}</h3>
-										<span>价值:&yen;{$goods.market_price}</span>
-										<div class="progress">
-											<div></div>
-										</div>
-										<ul class="condition clearfix">
-											<li class="li-1">18600<span>已参与</span></li>
-											<li class="li-2">19500<span>总需人次</span></li>
-											<li class="li-3">23天<span>剩余</span></li>
-										</ul>
-										<div class="other clearfix">
-											<a href="#">1元购买</a>
-											<span class="Collection"><i class="icon-start-black"></i></span>
-										</div>
-									</div>
-								</li>
-                     <!--{/foreach}-->    
-					</ul>
-				</div>
 			</div>
 			
 			<!--商家入驻/广告位-->
 			<div class="sidebar"><a href="article.php?id=117" title="商家入驻"><img src="themes/ecmoban_dsc/iamges/20170517/sidebar.jpg" alt="商家入驻"></a></div>
 			<div class="w1200 margin-t-8">
+
+				<!--餐厅系列-->
+				<div class="section-11 common-temp">
+					<div class="head clearfix">
+						<h2>餐厅系列</h2>
+						<a href="#">查看更多</a>
+					</div>
+					<ul class="bg-color-f5f5f5 clearfix">
+						<li>
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+						<li class="margin-r-0">
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+						<li class="margin-r-0">
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<!--客厅系列-->
+				<div class="section-12 common-temp">
+					<div class="head clearfix">
+						<h2>客厅系列</h2>
+						<a href="#">查看更多</a>
+					</div>
+					<ul class="bg-color-f5f5f5 clearfix">
+						<li>
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+						<li class="margin-r-0">
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+						<li class="margin-r-0">
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<!--书房系列-->
+				<div class="section-13 common-temp">
+					<div class="head clearfix">
+						<h2>书房系列</h2>
+						<a href="#">查看更多</a>
+					</div>
+					<ul class="bg-color-f5f5f5 clearfix">
+						<li>
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+						<li class="margin-r-0">
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+						<li class="margin-r-0">
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<!--卧室系列-->
+				<div class="section-14 common-temp">
+					<div class="head clearfix">
+						<h2>卧室系列</h2>
+						<a href="#">查看更多</a>
+					</div>
+					<ul class="bg-color-f5f5f5 clearfix">
+						<li>
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+						<li class="margin-r-0">
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+						<li class="margin-r-0">
+							<a href="#">
+								<div><img src="themes/ecmoban_dsc/iamges/20170517/ct-pic1.jpg" alt="" /></div>
+								<h3>财源滚滚孔雀大床 三件套 缅甸花梨 YKJ/MH/C/3J</h3>
+							</a>
+						</li>
+					</ul>
+				</div>
+
 				<div class="section-6 bg-color-f5f5f5">
 					<ul class="Crowd-funding clearfix">
 						<li class="make-new-world">
@@ -481,124 +671,6 @@
 						</li>
 						<!--{/foreach}-->						
 					</ul>
-				</div>
-
-				<div class="section-7 bg-color-f5f5f5">
-					<ul class="clearfix">
-						<li>
-							<div class="icon">
-								<a href="category.php?id=2">
-									<img src="themes/ecmoban_dsc/iamges/20170517/ct.png" alt="餐厅">
-									<span>餐厅</span>
-								</a>	
-								<div class="show-box">
-									<a href="#">
-										<img src="themes/ecmoban_dsc/iamges/20170517/product-10.jpg" alt="">
-										<h5>新中式刺猬紫檀茶几柜</h5>
-									</a>
-									<a class="margin-r-0" href="#">
-										<img src="themes/ecmoban_dsc/iamges/20170517/product-10.jpg" alt="">
-										<h5>新中式刺猬紫檀茶几柜</h5>
-									</a>
-									<a href="#">
-										<img src="themes/ecmoban_dsc/iamges/20170517/product-10.jpg" alt="">
-										<h5>新中式刺猬紫檀茶几柜</h5>
-									</a>
-									<a class="margin-r-0" href="#">
-										<img src="themes/ecmoban_dsc/iamges/20170517/product-10.jpg" alt="">
-										<h5>新中式刺猬紫檀茶几柜</h5>
-									</a>
-								</div>
-							</div>
-						</li>
-
-						<li>
-							<div class="icon">
-								<a href="category.php?id=3">
-									<img src="themes/ecmoban_dsc/iamges/20170517/kt.png" alt="客厅">
-									<span>客厅</span>
-								</a>
-								<div class="show-box">
-									<a href="#">
-										<img src="themes/ecmoban_dsc/iamges/20170517/product-10.jpg" alt="">
-										<h5>新中式刺猬紫檀茶几柜</h5>
-									</a>
-									<a class="margin-r-0" href="#">
-										<img src="themes/ecmoban_dsc/iamges/20170517/product-10.jpg" alt="">
-										<h5>新中式刺猬紫檀茶几柜</h5>
-									</a>
-									<a href="#">
-										<img src="themes/ecmoban_dsc/iamges/20170517/product-10.jpg" alt="">
-										<h5>新中式刺猬紫檀茶几柜</h5>
-									</a>
-									<a class="margin-r-0" href="#">
-										<img src="themes/ecmoban_dsc/iamges/20170517/product-10.jpg" alt="">
-										<h5>新中式刺猬紫檀茶几柜</h5>
-									</a>
-								</div>
-							</div>
-						</li>
-
-						<li>
-							<div class="icon">
-								<a href="category.php?id=4">
-									<img src="themes/ecmoban_dsc/iamges/20170517/sf.png" alt="书房">
-									<span>书房</span>
-								</a>
-								<div class="show-box">
-									<a href="#">
-										<img src="themes/ecmoban_dsc/iamges/20170517/product-10.jpg" alt="">
-										<h5>新中式刺猬紫檀茶几柜</h5>
-									</a>
-									<a class="margin-r-0" href="#">
-										<img src="themes/ecmoban_dsc/iamges/20170517/product-10.jpg" alt="">
-										<h5>新中式刺猬紫檀茶几柜</h5>
-									</a>
-									<a href="#">
-										<img src="themes/ecmoban_dsc/iamges/20170517/product-10.jpg" alt="">
-										<h5>新中式刺猬紫檀茶几柜</h5>
-									</a>
-									<a class="margin-r-0" href="#">
-										<img src="themes/ecmoban_dsc/iamges/20170517/product-10.jpg" alt="">
-										<h5>新中式刺猬紫檀茶几柜</h5>
-									</a>
-								</div>
-							</div>
-						</li>
-
-						<li>
-							<div class="icon">
-								<a href="category.php?id=5">
-									<img src="themes/ecmoban_dsc/iamges/20170517/ws.png" alt="卧室">
-									<span>卧室</span>
-								</a>
-								<div class="show-box">
-									<a href="#">
-										<img src="themes/ecmoban_dsc/iamges/20170517/product-10.jpg" alt="">
-										<h5>新中式刺猬紫檀茶几柜</h5>
-									</a>
-									<a class="margin-r-0" href="#">
-										<img src="themes/ecmoban_dsc/iamges/20170517/product-10.jpg" alt="">
-										<h5>新中式刺猬紫檀茶几柜</h5>
-									</a>
-									<a href="#">
-										<img src="themes/ecmoban_dsc/iamges/20170517/product-10.jpg" alt="">
-										<h5>新中式刺猬紫檀茶几柜</h5>
-									</a>
-									<a class="margin-r-0" href="#">
-										<img src="themes/ecmoban_dsc/iamges/20170517/product-10.jpg" alt="">
-										<h5>新中式刺猬紫檀茶几柜</h5>
-									</a>
-								</div>
-							</div>
-						</li>						
-					</ul>
-				</div>
-
-				<div class="section-8 margin-b-30">
-					<h2 class="bg-color-f5f5f5"><a href="#">套装推荐</a></h2>
-					<img class="margin-b-30" src="themes/ecmoban_dsc/iamges/20170517/product-11.jpg" alt="">
-					<img src="themes/ecmoban_dsc/iamges/20170517/product-12.jpg" alt="">
 				</div>
 
 				<div class="section-9 margin-b-30">
