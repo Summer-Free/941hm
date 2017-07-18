@@ -465,7 +465,7 @@
 					</div>
 					<ul class="bg-color-f5f5f5 clearfix">
 						<!--{foreach from=$ws_sql item=ws_sql name=ws_sql}-->
-							<!-- {if $smarty.foreach.ws_sql.iteration %4 !=0} -->
+							<!-- {if $smarty.foreach.ws_sql.iteration %4 !=0 && $smarty.foreach.ws_sql.iteration !=0} -->
 		                    <li>
 		                	<!-- {elseif $smarty.foreach.ws_sql.iteration %4==0} -->
 		                    <li class="margin-r-0">
