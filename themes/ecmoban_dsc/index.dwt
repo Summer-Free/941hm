@@ -402,7 +402,7 @@
 					<!-- {if $smarty.foreach.ct_sql.iteration %4 !=0  } -->
                     <li>
                 	<!-- {elseif $smarty.foreach.ct_sql.iteration %4==0} -->
-                    <li class="float-r margin-r-0 clearfix">
+                    <li class="margin-r-0 clearfix">
                 	<!--{/if}-->
 							<a href="goosd.php?id={$ct_sql.goods_id}">
 								<div><img src="{$ct_sql.goods_thumb}" alt="{$ct_sql.goods_name}" /></div>
