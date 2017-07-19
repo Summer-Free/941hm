@@ -55,7 +55,7 @@
             <!-- #BeginLibraryItem "/library/goods_gallery.lbi" --><!-- #EndLibraryItem -->
             <div class="m-item-inner">
                 <div class="itemInfo">
-                    <a class="goods_buy" href="javascript:addToCart({$goods.goods_id},1)">立即购买</a>
+                    <form action="javascript:addToCart({$goods.goods_id})" method="post" name="ECS_FORMBUY" id="ECS_FORMBUY" >
                         <div class="name">
                             <h1>{$goods.goods_style_name}</h1>
                             <!--{if $goods.goods_brief}-->
@@ -133,7 +133,6 @@
                                                 </em>
                                             </div>
                                             <!-- {/if} -->
-                                            
                                             <!-- {foreach from=$promotion item=item key=key name=nopromotion} -->
                                             	<!-- {if $item.type eq "favourable"} -->
                                                 <div class="prom-item">
