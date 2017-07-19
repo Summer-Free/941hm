@@ -4,7 +4,7 @@
     	<!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem -->
         <!--首页CSS以及部分通用部分的合并LBI-->
         <!--本页专用-->
-        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/latest_listing.css">
+        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/limited_time_offer.css">
     </head> 
     <body>
         <!--header start-->
@@ -45,6 +45,7 @@
 							<h3>产品名称产品名称产品名称产品名称产品名称产品名称</h3>
 							<p class="clearfix">
 								<span class="price float-l">价格: &yen;999999</span>
+								<del class="float-r">原价 : &yen;999999</del>
 							</p>
 							<span class="btn">立即购买</span>
 						</div>
@@ -57,6 +58,7 @@
 							<h3>产品名称产品名称产品名称产品名称产品名称产品名称</h3>
 							<p class="clearfix">
 								<span class="price float-l">价格: &yen;999999</span>
+								<del class="float-r">原价 : &yen;999999</del>
 							</p>
 							<span class="btn">立即购买</span>
 						</div>
@@ -69,6 +71,7 @@
 							<h3>产品名称产品名称产品名称产品名称产品名称产品名称</h3>
 							<p class="clearfix">
 								<span class="price float-l">价格: &yen;999999</span>
+								<del class="float-r">原价 : &yen;999999</del>
 							</p>
 							<span class="btn">立即购买</span>
 						</div>
@@ -81,6 +84,7 @@
 							<h3>产品名称产品名称产品名称产品名称产品名称产品名称</h3>
 							<p class="clearfix">
 								<span class="price float-l">价格: &yen;999999</span>
+								<del class="float-r">原价 : &yen;999999</del>
 							</p>
 							<span class="btn">立即购买</span>
 						</div>
@@ -93,6 +97,7 @@
 							<h3>产品名称产品名称产品名称产品名称产品名称产品名称</h3>
 							<p class="clearfix">
 								<span class="price float-l">价格: &yen;999999</span>
+								<del class="float-r">原价 : &yen;999999</del>
 							</p>
 							<span class="btn">立即购买</span>
 						</div>
@@ -105,6 +110,7 @@
 							<h3>产品名称产品名称产品名称产品名称产品名称产品名称</h3>
 							<p class="clearfix">
 								<span class="price float-l">价格: &yen;999999</span>
+								<del class="float-r">原价 : &yen;999999</del>
 							</p>
 							<span class="btn">立即购买</span>
 						</div>
@@ -117,6 +123,7 @@
 							<h3>产品名称产品名称产品名称产品名称产品名称产品名称</h3>
 							<p class="clearfix">
 								<span class="price float-l">价格: &yen;999999</span>
+								<del class="float-r">原价 : &yen;999999</del>
 							</p>
 							<span class="btn">立即购买</span>
 						</div>
@@ -129,6 +136,7 @@
 							<h3>产品名称产品名称产品名称产品名称产品名称产品名称</h3>
 							<p class="clearfix">
 								<span class="price float-l">价格: &yen;999999</span>
+								<del class="float-r">原价 : &yen;999999</del>
 							</p>
 							<span class="btn">立即购买</span>
 						</div>
@@ -142,7 +150,7 @@
 		<!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->
 
 		<!--页面专用JS-->
-		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/latest_listing.js"></script>	
+		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/limited_time_offer.js"></script>	
 	
     </body>
 </html>    
