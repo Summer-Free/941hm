@@ -59,12 +59,15 @@
 }
 .slide-mrms .JS-slide-scroll li span {
 	display: inline-block;
-	width: 117px;
+	width: 66px;
 	height: 33px;
 	color: #fff;
 	text-align: center;
 	background-color: #fb9b64;
-	border-radius: 10px;
+	border-radius: 4px;
+}
+.slide-mrms .JS-slide-scroll del {
+	margin-left: 8px;
 }
 .JS-slide-scroll {
 	position: relative;
