@@ -269,10 +269,10 @@
 							<!--{foreach from=$ms_res item=ms_res name=ms_res}-->
 								<li class="move">
 									<a href="goods.php?id={$ms_res.goods_id}">
-										<img src="{$ms_res.goods_thumb}" width="244.2" height="191.2" alt="" />
+										<img src="{$ms_res.goods_thumb}" width="244.2" height="191.2" alt="{$ms_res.goods_name}" />
 										<p>{$ms_res.goods_name|truncate:15}</p>
 										<div>
-											<ins>&yen;9.9</ins>&nbsp;
+											<ins>&yen;{$ms_res.shop_price}</ins>&nbsp;
 											<del>&yen;{$ms_res.market_price}</del>
 											<span>立刻秒</span>
 										</div>
