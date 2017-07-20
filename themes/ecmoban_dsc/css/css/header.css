@@ -397,7 +397,6 @@
 	overflow: hidden;
 	height: 0;
 	line-height: 50px;
-	background-color: #fff;
 	-webkit-transition: all .3s linear;
 	   -moz-transition: all .3s linear;
 	    -ms-transition: all .3s linear;
@@ -409,6 +408,7 @@
 	border: 1px solid #333;
 	border-left: none;
 	border-right: none;
+	background-color: #fff!important;
 }
 .cxy-dropdpwn-menu li {
 	float: left;
