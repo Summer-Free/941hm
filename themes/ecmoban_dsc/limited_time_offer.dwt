@@ -38,110 +38,27 @@
 
 			<!--产品列表-->
 			<ul class="common-product-list-1 clearfix">
-				<li class="move">
-					<a href="#">
-						<div class="global-product-img"><img src="themes/ecmoban_dsc/iamges/20170517/last-pic1.jpg" alt="" /></div>
-						<div class="btm">
-							<h3>产品名称产品名称产品名称产品名称产品名称产品名称</h3>
-							<p class="clearfix">
-								<span class="price float-l">价格: &yen;999999</span>
-								<del class="float-r">原价 : &yen;999999</del>
-							</p>
-							<span class="btn">立即购买</span>
-						</div>
-					</a>
-				</li>
-				<li class="move">
-					<a href="#">
-						<div class="global-product-img"><img src="themes/ecmoban_dsc/iamges/20170517/last-pic1.jpg" alt="" /></div>
-						<div class="btm">
-							<h3>产品名称产品名称产品名称产品名称产品名称产品名称</h3>
-							<p class="clearfix">
-								<span class="price float-l">价格: &yen;999999</span>
-								<del class="float-r">原价 : &yen;999999</del>
-							</p>
-							<span class="btn">立即购买</span>
-						</div>
-					</a>
-				</li>
-				<li class="move">
-					<a href="#">
-						<div class="global-product-img"><img src="themes/ecmoban_dsc/iamges/20170517/last-pic1.jpg" alt="" /></div>
-						<div class="btm">
-							<h3>产品名称产品名称产品名称产品名称产品名称产品名称</h3>
-							<p class="clearfix">
-								<span class="price float-l">价格: &yen;999999</span>
-								<del class="float-r">原价 : &yen;999999</del>
-							</p>
-							<span class="btn">立即购买</span>
-						</div>
-					</a>
-				</li>
-				<li class="move margin-r-0">
-					<a href="#">
-						<div class="global-product-img"><img src="themes/ecmoban_dsc/iamges/20170517/last-pic1.jpg" alt="" /></div>
-						<div class="btm">
-							<h3>产品名称产品名称产品名称产品名称产品名称产品名称</h3>
-							<p class="clearfix">
-								<span class="price float-l">价格: &yen;999999</span>
-								<del class="float-r">原价 : &yen;999999</del>
-							</p>
-							<span class="btn">立即购买</span>
-						</div>
-					</a>
-				</li>
-				<li class="move">
-					<a href="#">
-						<div class="global-product-img"><img src="themes/ecmoban_dsc/iamges/20170517/last-pic1.jpg" alt="" /></div>
-						<div class="btm">
-							<h3>产品名称产品名称产品名称产品名称产品名称产品名称</h3>
-							<p class="clearfix">
-								<span class="price float-l">价格: &yen;999999</span>
-								<del class="float-r">原价 : &yen;999999</del>
-							</p>
-							<span class="btn">立即购买</span>
-						</div>
-					</a>
-				</li>
-				<li class="move">
-					<a href="#">
-						<div class="global-product-img"><img src="themes/ecmoban_dsc/iamges/20170517/last-pic1.jpg" alt="" /></div>
-						<div class="btm">
-							<h3>产品名称产品名称产品名称产品名称产品名称产品名称</h3>
-							<p class="clearfix">
-								<span class="price float-l">价格: &yen;999999</span>
-								<del class="float-r">原价 : &yen;999999</del>
-							</p>
-							<span class="btn">立即购买</span>
-						</div>
-					</a>
-				</li>
-				<li class="move">
-					<a href="#">
-						<div class="global-product-img"><img src="themes/ecmoban_dsc/iamges/20170517/last-pic1.jpg" alt="" /></div>
-						<div class="btm">
-							<h3>产品名称产品名称产品名称产品名称产品名称产品名称</h3>
-							<p class="clearfix">
-								<span class="price float-l">价格: &yen;999999</span>
-								<del class="float-r">原价 : &yen;999999</del>
-							</p>
-							<span class="btn">立即购买</span>
-						</div>
-					</a>
-				</li>
-				<li class="move margin-r-0">
-					<a href="#">
-						<div class="global-product-img"><img src="themes/ecmoban_dsc/iamges/20170517/last-pic1.jpg" alt="" /></div>
-						<div class="btm">
-							<h3>产品名称产品名称产品名称产品名称产品名称产品名称</h3>
-							<p class="clearfix">
-								<span class="price float-l">价格: &yen;999999</span>
-								<del class="float-r">原价 : &yen;999999</del>
-							</p>
-							<span class="btn">立即购买</span>
-						</div>
-					</a>
-				</li>
+				<!--{foreach item=xsyh_res from=$xsyh_res name=xsyh_res} -->
+					<!-- {if $smarty.foreach.xsyh_res.iteration %4 !=0  } -->
+                		<li class="move">
+                	<!-- {elseif $smarty.foreach.xsyh_res.iteration %4==0} -->
+                		<li class="move margin-r-0">
+                	<!--{/if}--> 
+						<a href="goods.php?id={$xsyh_res.goods_id}">
+							<div class="global-product-img">
+								<img src="{$xsyh_res.goods_thumb}" alt="" />
+							</div>
+							<div class="btm">
+								<h3>{$xsyh_res.goods_name|truncate:15}</h3>
+								<p class="clearfix">
+									<span class="price float-l">价格: &yen;{$xsyh_res.shop_price}
+									</span>
+								</p>
+								<span class="btn">立即购买</span>
+							</div>
+						</a>
+							</li>
+				<!--{/foreach}-->
 			</ul>
         </div>
         <!--main body end-->
