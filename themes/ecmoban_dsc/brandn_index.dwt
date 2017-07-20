@@ -13,8 +13,13 @@
 <link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
 <link href="themes/ecmoban_dsc/select.css" rel="stylesheet" type="text/css" />
 <link rel="alternate" type="application/rss+xml" title="RSS|{$page_title}" href="{$feed_url}" />
-<link rel="stylesheet" type="text/css" href="themes/ecmoban_dsc/quickLinks.css" />
-<link rel="stylesheet" href="themes/ecmoban_dsc/purebox.css">
+<!-- <link rel="stylesheet" type="text/css" href="themes/ecmoban_dsc/quickLinks.css" />
+<link rel="stylesheet" href="themes/ecmoban_dsc/purebox.css"> -->
+
+<!--2017/07/20 添加-->
+<!-- #BeginLibraryItem "/library/header_title_djj.lbi" --><!-- #EndLibraryItem -->
+<!--首页CSS以及部分通用部分的合并LBI-->
+
 {* 包含脚本文件 *}
 {insert_scripts files='jquery-1.9.1.min.js,jquery.json.js,transport_jquery.js'}
 {insert_scripts files='common.js,global.js,utils.js,compare.js,search_category_menu.js,cart_common.js,cart_quick_links.js'}
@@ -26,156 +31,228 @@
 <script type="text/javascript" src="themes/ecmoban_dsc/js/rotate3di.js"></script>
 <script type="text/javascript" src="themes/ecmoban_dsc/js/scroll_city.js"></script>
 <script type="text/javascript" src="themes/ecmoban_dsc/js/notLogin.js"></script>
+
+{insert_scripts files='suggest.js,jquery.lazyload.js'}
+
+<style>
+    .ppk-main * {
+        box-sizing: content-box;
+    }
+    #footer {
+        text-align: left;
+    }
+</style>
 </head>
 
 <body>
-<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
 
-<div class="ppk-breadcrumb">
-	<div class="w1200">
-    	<!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+    <!--header start-->
+    <div id="header">
+        <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
     </div>
-</div>
-<div class="ppk-main" style="background:url(images/ppj-bg.jpg) 50% 0% no-repeat;">
-	<div class="w1210">
-    	<div class="m-left">
-        	<div class="attention-rate">
-            	<h3>{$lang.brand_home}</h3>
-                <span class="spacer"></span>
-                <div class="pinpai-logo"><img src="data/brandlogo/{$brand.brand_logo}" /></div>
-                <span class="spacer"></span>
-                <div class="follow-info">
-                    <span class="follow-sum"><p id="collect_count">{$brand.collect_count}</p><i>{$lang.ren}</i></span><em>{$lang.follow}</em>
+    <!--header end-->
+
+    <div class="ppk-breadcrumb">
+    	<div class="w1200">
+        	<!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+        </div>
+    </div>
+    <div class="ppk-main" style="background:url(images/ppj-bg.jpg) 50% 0% no-repeat;">
+    	<div class="w1210">
+        	<div class="m-left">
+            	<div class="attention-rate">
+                	<h3>{$lang.brand_home}</h3>
+                    <span class="spacer"></span>
+                    <div class="pinpai-logo"><img src="data/brandlogo/{$brand.brand_logo}" /></div>
+                    <span class="spacer"></span>
+                    <div class="follow-info">
+                        <span class="follow-sum"><p id="collect_count">{$brand.collect_count}</p><i>{$lang.ren}</i></span><em>{$lang.follow}</em>
+                    </div>
+                    <div class="go-follow  {if $brand.is_collect}logined{/if}" id="collect_brand" data-bid="{$brand_id}">
+                        <i></i><span class="follow">{if $brand.is_collect}{$lang.follow_yes}{else}{$lang.follow}{/if}</span>
+                    </div>
                 </div>
-                <div class="go-follow  {if $brand.is_collect}logined{/if}" id="collect_brand" data-bid="{$brand_id}">
-                    <i></i><span class="follow">{if $brand.is_collect}{$lang.follow_yes}{else}{$lang.follow}{/if}</span>
+                <script type="text/javascript">
+                    $(document).on("click","#collect_brand",function(){
+    					{if $user_id}
+    						var brand_id = $("#collect_brand").data('bid');
+    						if($(this).hasClass("logined")){
+    							$(this).removeClass("logined");
+    							$(this).find(".follow").html('{$lang.follow}');
+    	
+    							Ajax.call('brandn.php', 'act=cancel&id=' + brand_id, collect_brandResponse, 'POST', 'JSON');
+    						}else{
+    							$(this).addClass("logined");
+    							$(this).find(".follow").html('{$lang.follow_yes}');
+    	
+    							Ajax.call('brandn.php', 'act=collect&id=' + brand_id, collect_brandResponse, 'POST', 'JSON');
+    						}
+    					{else}
+    						var back_url = "brandn.php?id=" + {$brand_id};
+                			$.notLogin("get_ajax_content.php?act=get_login_dialog",back_url);	
+    					{/if}
+                    });
+    				
+                    function collect_brandResponse(result)
+                    {
+                        if (result.error > 0) {
+                            alert(result.message);
+                        }
+                        else
+                        {
+                            
+                            $("#collect_count").html(result.collect_count);
+                        }
+                    }
+
+                    function cancel_brandResponse(result)
+                    {
+                        if (result.error > 0) {
+                            alert(result.message);
+                        }
+                        else
+                        {
+                            $("#collect_count").html(result.collect_count);
+                        }
+                    }
+                </script>
+                <div class="pinpai-detail">
+                	{insert name='get_adv_child' ad_arr=$brandn_left_ad id=0}
+                	<div class="item types clearfix">
+                    	<b></b>
+                        <h3>{$lang.brand_category}</h3>
+                        <div class="type-items clearfix">
+                        <!-- {foreach from=$brand_cat_list item=brand_cat name=brand} -->
+                        	<!--{if !$smarty.foreach.brand.first}-->
+                        	<a href="{$brand_cat.url}" target="_blank">{$brand_cat.cat_name}</a>
+                            <!--{/if}-->
+                        <!-- {/foreach} -->
+                        </div>
+                    </div>
                 </div>
             </div>
-            <script type="text/javascript">
-                $(document).on("click","#collect_brand",function(){
-					{if $user_id}
-						var brand_id = $("#collect_brand").data('bid');
-						if($(this).hasClass("logined")){
-							$(this).removeClass("logined");
-							$(this).find(".follow").html('{$lang.follow}');
-	
-							Ajax.call('brandn.php', 'act=cancel&id=' + brand_id, collect_brandResponse, 'POST', 'JSON');
-						}else{
-							$(this).addClass("logined");
-							$(this).find(".follow").html('{$lang.follow_yes}');
-	
-							Ajax.call('brandn.php', 'act=collect&id=' + brand_id, collect_brandResponse, 'POST', 'JSON');
-						}
-					{else}
-						var back_url = "brandn.php?id=" + {$brand_id};
-            			$.notLogin("get_ajax_content.php?act=get_login_dialog",back_url);	
-					{/if}
-                });
-				
-                function collect_brandResponse(result)
-                {
-                    if (result.error > 0) {
-                        alert(result.message);
-                    }
-                    else
-                    {
-                        
-                        $("#collect_count").html(result.collect_count);
-                    }
-                }
-
-                function cancel_brandResponse(result)
-                {
-                    if (result.error > 0) {
-                        alert(result.message);
-                    }
-                    else
-                    {
-                        $("#collect_count").html(result.collect_count);
-                    }
-                }
-            </script>
-            <div class="pinpai-detail">
-            	{insert name='get_adv_child' ad_arr=$brandn_left_ad id=0}
-            	<div class="item types clearfix">
-                	<b></b>
-                    <h3>{$lang.brand_category}</h3>
-                    <div class="type-items clearfix">
-                    <!-- {foreach from=$brand_cat_list item=brand_cat name=brand} -->
-                    	<!--{if !$smarty.foreach.brand.first}-->
-                    	<a href="{$brand_cat.url}" target="_blank">{$brand_cat.cat_name}</a>
-                        <!--{/if}-->
-                    <!-- {/foreach} -->
+            <div class="m-right">
+            	<div class="subnavwrap">
+                    <b></b>
+                    <div class="subnav">
+    					<a href="brandn.php?id={$brand_id}" {if $act eq 'index'} class="curr" {/if}><i></i><span>{$lang.home}</span></a>
+    					<a href="brandn.php?act=new&id={$brand_id}" {if $act eq 'new'} class="curr" {/if}><i></i><span>{$lang.look_new}</span></a>
+    					<a href="brandn.php?act=hot&id={$brand_id}" {if $act eq 'hot'} class="curr" {/if}><i></i><span>{$lang.look_hot}</span></a>
+    					<a href="brandn.php?act=cat&id={$brand_id}" {if $act eq 'cat'} class="curr" {/if}><i></i><span>{$lang.all_category}</span></a>
+    	      		</div>
+                </div>
+                {insert name='get_adv_child' ad_arr=$brandn_top_ad id=0}
+                <div class="brand-common favor sm">
+                	<div class="smt">
+                        <h3>{$lang.best}</h3>
+                    	<a href="javascript:;" class="get-extra" onclick="change_best()">{$lang.change_a_lot}<i></i></a>
+                    </div>
+                    <div class="smc" id="change_index">
+                    	<!-- #BeginLibraryItem "/library/brandn_best_goods.lbi" --><!-- #EndLibraryItem -->
+                    </div>
+                </div>
+                <div class="brand-common new sm">
+                	<div class="smt">
+                        <h3>{$lang.look_hot}</h3>
+                    	<a href="brandn.php?act=hot&id={$brand_id}">{$lang.see_all}<i>&gt;</i></a>
+                    </div>
+                    <div class="smc">
+                    	<ul class="common-items clearfix">
+                        	<!-- {foreach from=$hot_goods item=hot_goods name=hot_goods} -->
+                        	<!-- {if $smarty.foreach.hot_goods.iteration lte 8} -->
+                            <li class="common-item">
+                            	<a href="{$hot_goods.url}" target="_blank">
+                                	<div class="item-img"><img src="{$hot_goods.thumb}" width="200" width="200" /></div>
+                                    <div class="item-info">
+                                    	<div class="item-price"><span class="price current">{$hot_goods.shop_price}</span></div>
+                                        <p class="item-title">{$hot_goods.short_style_name}</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- {/if} -->
+                            <!-- {/foreach} -->
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="m-right">
-        	<div class="subnavwrap">
-                <b></b>
-                <div class="subnav">
-					<a href="brandn.php?id={$brand_id}" {if $act eq 'index'} class="curr" {/if}><i></i><span>{$lang.home}</span></a>
-					<a href="brandn.php?act=new&id={$brand_id}" {if $act eq 'new'} class="curr" {/if}><i></i><span>{$lang.look_new}</span></a>
-					<a href="brandn.php?act=hot&id={$brand_id}" {if $act eq 'hot'} class="curr" {/if}><i></i><span>{$lang.look_hot}</span></a>
-					<a href="brandn.php?act=cat&id={$brand_id}" {if $act eq 'cat'} class="curr" {/if}><i></i><span>{$lang.all_category}</span></a>
-	      		</div>
-            </div>
-            {insert name='get_adv_child' ad_arr=$brandn_top_ad id=0}
-            <div class="brand-common favor sm">
-            	<div class="smt">
-                    <h3>{$lang.best}</h3>
-                	<a href="javascript:;" class="get-extra" onclick="change_best()">{$lang.change_a_lot}<i></i></a>
-                </div>
-                <div class="smc" id="change_index">
-                	<!-- #BeginLibraryItem "/library/brandn_best_goods.lbi" --><!-- #EndLibraryItem -->
-                </div>
-            </div>
-            <div class="brand-common new sm">
-            	<div class="smt">
-                    <h3>{$lang.look_hot}</h3>
-                	<a href="brandn.php?act=hot&id={$brand_id}">{$lang.see_all}<i>&gt;</i></a>
-                </div>
-                <div class="smc">
-                	<ul class="common-items clearfix">
-                    	<!-- {foreach from=$hot_goods item=hot_goods name=hot_goods} -->
-                    	<!-- {if $smarty.foreach.hot_goods.iteration lte 8} -->
-                        <li class="common-item">
-                        	<a href="{$hot_goods.url}" target="_blank">
-                            	<div class="item-img"><img src="{$hot_goods.thumb}" width="200" width="200" /></div>
-                                <div class="item-info">
-                                	<div class="item-price"><span class="price current">{$hot_goods.shop_price}</span></div>
-                                    <p class="item-title">{$hot_goods.short_style_name}</p>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- {/if} -->
-                        <!-- {/foreach} -->
-                    </ul>
-                </div>
-            </div>
+    </div>
+
+    <!--2017/07/20 更换-->
+    <!-- #BeginLibraryItem "/library/page_footer_djj.lbi" --><!-- #EndLibraryItem -->
+
+    <div id="pd_coupons" style="display: none;">
+        <span class="success-icon m-icon"></span>
+        <div class="item-fore">
+            <h3>领取成功！感谢您的参与，祝您购物愉快~</h3>
+            <div class="txt ftx-03">本活动为概率性事件，不能保证所有客户成功领取优惠券</div>
         </div>
     </div>
-</div>
-<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
-<script type="text/javascript">
-    function change_best()
-    {
-        var brand_id = $("#collect_brand").data('bid');
-        var cat_id = '';
-        $.ajax({
-            async:false,
-            cache:false,
-            data:{id:brand_id, cat:cat_id},
-            type:'POST',
-            dataType:'JSON',
-            url:"brandn.php?act=change_index",
-            success:function(result){
-                $('#change_index').html(result.content);
-            }
+    <input name="seller_kf_IM" ru_id="" value="" type="hidden" rev="">
+    <input name="seller_kf_qq" value="3427085557" type="hidden">
+    <input name="seller_kf_tel" value="400-666-9338" type="hidden">
+
+    <script type="text/javascript">
+        function change_best()
+        {
+            var brand_id = $("#collect_brand").data('bid');
+            var cat_id = '';
+            $.ajax({
+                async:false,
+                cache:false,
+                data:{id:brand_id, cat:cat_id},
+                type:'POST',
+                dataType:'JSON',
+                url:"brandn.php?act=change_index",
+                success:function(result){
+                    $('#change_index').html(result.content);
+                }
+            });
+        }
+        
+    </script>
+    <script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.purebox.js"></script>
+
+    <script type="text/javascript">
+        $("#clear_price").click(function(){
+            $("#price-min").val('');
+            $("#price-max").val('');
         });
-    }
-    
-</script>
-<script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.purebox.js"></script>
+            
+        $(".QR_code li").hover(function(){
+            var index = $(this).index();
+            $(this).addClass("current").siblings().removeClass("current");
+            $(".QR_code .code_tp").eq(index).removeClass("hide").siblings().addClass("hide");
+        })
+
+        function checkSearchForm(){
+            var keywords = $("input[name='keywords']").val();
+            if(keywords == ''){
+                
+                divId = "keywords_html";
+                var content = '<div id="' + divId + '">' + 
+                                    '<div class="tip-box icon-box">' +
+                                        '<span class="warn-icon m-icon"></span>' + 
+                                        '<div class="item-fore">' +
+                                            '<h3 class="rem ftx-04">您搜索内容的关键字不能空</h3>' +
+                                        '</div>' +
+                                    '</div>' +
+                                '</div>';
+                
+                pb({
+                    id:divId,
+                    title:'提示',
+                    width:445,
+                    height:58,
+                    content:content,    //调取内容
+                    drag:false,
+                    foot:false
+                }); 
+                
+                return false;
+            }
+        }
+    </script>
+    <!--[if lte IE 8]><script type="text/javascript" src="js/IE7Fix.js"></script><![endif]-->
 </body>
 </html>

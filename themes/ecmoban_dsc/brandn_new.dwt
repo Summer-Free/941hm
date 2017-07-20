@@ -13,8 +13,13 @@
 <link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
 <link href="themes/ecmoban_dsc/select.css" rel="stylesheet" type="text/css" />
 <link rel="alternate" type="application/rss+xml" title="RSS|{$page_title}" href="{$feed_url}" />
-<link rel="stylesheet" type="text/css" href="themes/ecmoban_dsc/quickLinks.css" />
-<link rel="stylesheet" href="themes/ecmoban_dsc/purebox.css">
+<!-- <link rel="stylesheet" type="text/css" href="themes/ecmoban_dsc/quickLinks.css" />
+<link rel="stylesheet" href="themes/ecmoban_dsc/purebox.css"> -->
+
+<!--2017/07/20 添加-->
+<!-- #BeginLibraryItem "/library/header_title_djj.lbi" --><!-- #EndLibraryItem -->
+<!--首页CSS以及部分通用部分的合并LBI-->
+
 {* 包含脚本文件 *}
 {insert_scripts files='jquery-1.9.1.min.js,jquery.json.js,transport_jquery.js'}
 {insert_scripts files='common.js,global.js,utils.js,compare.js,search_category_menu.js,cart_common.js,cart_quick_links.js'}
@@ -25,49 +30,78 @@
 <script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.yomi.js"></script>
 <script type="text/javascript" src="themes/ecmoban_dsc/js/rotate3di.js"></script>
 <script type="text/javascript" src="themes/ecmoban_dsc/js/scroll_city.js"></script>
+
+{insert_scripts files='suggest.js,jquery.lazyload.js,warehouse_area.js'}
+
+<style>
+    .ppk-main * {
+        box-sizing: content-box;
+    }
+    #footer {
+        text-align: left;
+    }
+</style>
 </head>
 
 <body>
-<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
 
-<div class="ppk-breadcrumb">
-    <div class="w1200">
-        <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+    <!--header start-->
+    <div id="header">
+        <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
     </div>
-</div>
-<div class="ppk-main" style="background:url(images/ppj-bg2.jpg) top center no-repeat;">
-    <div class="w1210">
-        <!-- #BeginLibraryItem "/library/brandn_header.lbi" --><!-- #EndLibraryItem -->
-        <div class="m-bottom brandn-common-items">
-            <div class="brand-new sm new-all">
-                <div class="smt">
-                    <h4>{$lang.all_attribute}</h4>
-                </div>
-                <div class="smc">
-                    <ul class="common-items clearfix brandn-common-items">
-                        <!-- {foreach from=$new_goods item=new_goods name=new_goods} -->
-                        <li class="common-item">
-                            <a href="{$new_goods.url}" target="_blank">
-                                <div class="item-img"><img src="{$new_goods.thumb}" width="200" width="200" /></div>
-                                <div class="item-info">
-                                    <div class="item-price"><span class="price current">{$new_goods.shop_price}</span></div>
-                                    <p class="item-title">{$new_goods.short_style_name}</p>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- {/foreach} -->
-                    </ul>
-                </div>
-                <div style="clear:both; margin:50px 0px;">
-                	<!-- TemplateBeginEditable name="列表分页" -->
-					<!-- #BeginLibraryItem "/library/pages.lbi" --> <!-- #EndLibraryItem -->
-                    <!-- TemplateEndEditable --> 
+    <!--header end-->
+
+    <div class="ppk-breadcrumb">
+        <div class="w1200">
+            <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+        </div>
+    </div>
+    <div class="ppk-main" style="background:url(images/ppj-bg2.jpg) top center no-repeat;">
+        <div class="w1210">
+            <!-- #BeginLibraryItem "/library/brandn_header.lbi" --><!-- #EndLibraryItem -->
+            <div class="m-bottom brandn-common-items">
+                <div class="brand-new sm new-all">
+                    <div class="smt">
+                        <h4>{$lang.all_attribute}</h4>
+                    </div>
+                    <div class="smc">
+                        <ul class="common-items clearfix brandn-common-items">
+                            <!-- {foreach from=$new_goods item=new_goods name=new_goods} -->
+                            <li class="common-item">
+                                <a href="{$new_goods.url}" target="_blank">
+                                    <div class="item-img"><img src="{$new_goods.thumb}" width="200" width="200" /></div>
+                                    <div class="item-info">
+                                        <div class="item-price"><span class="price current">{$new_goods.shop_price}</span></div>
+                                        <p class="item-title">{$new_goods.short_style_name}</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- {/foreach} -->
+                        </ul>
+                    </div>
+                    <div style="clear:both; margin:50px 0px;">
+                    	<!-- TemplateBeginEditable name="列表分页" -->
+    					<!-- #BeginLibraryItem "/library/pages.lbi" --> <!-- #EndLibraryItem -->
+                        <!-- TemplateEndEditable --> 
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+
+    <!--2017/07/20 更换-->
+    <!-- #BeginLibraryItem "/library/page_footer_djj.lbi" --><!-- #EndLibraryItem -->
+
+    <div id="pd_coupons" style="display: none;">
+        <span class="success-icon m-icon"></span>
+        <div class="item-fore">
+            <h3>领取成功！感谢您的参与，祝您购物愉快~</h3>
+            <div class="txt ftx-03">本活动为概率性事件，不能保证所有客户成功领取优惠券</div>
+        </div>
+    </div>
+    <input name="seller_kf_IM" ru_id="" value="" type="hidden" rev="">
+    <input name="seller_kf_qq" value="3427085557" type="hidden">
+    <input name="seller_kf_tel" value="400-666-9338" type="hidden">
 
 </body>
 </html>
