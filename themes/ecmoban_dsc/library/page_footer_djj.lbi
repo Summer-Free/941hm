@@ -96,6 +96,12 @@
             </div>
         </div>
 
+        <!--1.0底部升级至2.0后，底部文字不美观-->
+        <style>
+            #footer {
+                text-align: left;
+            }
+        </style>
         
         <!--自定义方法-->
         <script type="text/javascript" src="themes/ecmoban_dsc/js/js/common.js"></script>
