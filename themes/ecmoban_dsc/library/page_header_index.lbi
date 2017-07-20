@@ -137,7 +137,7 @@
                                 <a href="zen_institute.php">禅学院</a>
                                 <!--禅学院下拉菜单 start-->
                                 <div class="cxy-dropdpwn-menu">
-                                    <div class="w1200">
+                                    <div class="w1200 submenu">
                                         <ul class="clearfix">
                                             <li><a href="#">禅茶一味</a></li>
                                             <li><a href="#">静以修身</a></li>

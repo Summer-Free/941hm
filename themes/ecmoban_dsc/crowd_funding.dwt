@@ -45,7 +45,7 @@
                 </form>
                 <ul class="float-r clearfix">
                     <li><a href="#">新手帮助</a></li>
-                    <li class="margin-r-0"><a href="#">我的众筹</a></li>
+                    <li class="margin-r-0"><a href="user.php?act=crowdfunding" target="_blank">我的众筹</a></li>
                 </ul>
             </div>
            

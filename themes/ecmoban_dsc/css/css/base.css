@@ -348,6 +348,7 @@ table{border-collapse:collapse;border-spacing:0;}
   margin: 0 10px 10px 0;
   width: 292px;
   font-size: 16px;
+  border: 1px solid transparent;
   background-color: #fff;
   box-shadow: 0 3px 10px #d9d8d8;
 }

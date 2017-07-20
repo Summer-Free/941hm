@@ -6,7 +6,12 @@
 <link rel="stylesheet" type="text/css" href="themes/ecmoban_dsc/base.css" />
 <link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
 <link href="themes/ecmoban_dsc/css/zc.index.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="themes/ecmoban_dsc/purebox.css">
+<!-- <link rel="stylesheet" href="themes/ecmoban_dsc/purebox.css"> -->
+
+<!--2017/07/20 添加-->
+<!-- #BeginLibraryItem "/library/header_title_djj.lbi" --><!-- #EndLibraryItem -->
+<!--首页CSS以及部分通用部分的合并LBI-->
+
 {insert_scripts files='jquery-1.9.1.min.js,jquery.json.js,transport_jquery.js'}
 {insert_scripts files='common.js,global.js,utils.js,compare.js,region.js'}
 <script type="text/javascript" src="themes/ecmoban_dsc/js/sc_common.js"></script>
@@ -15,9 +20,22 @@
 <script type="text/javascript" src="themes/ecmoban_dsc/js/rotate3di.js"></script>
 <script type="text/javascript" src="themes/ecmoban_dsc/js/scroll_city.js"></script>
 
+{insert_scripts files='suggest.js,jquery.lazyload.js,warehouse_area.js'}
+
+<style>
+    .detail * {
+        box-sizing: content-box;
+    }
+</style>
 </head>
 <body class="page-header">
-<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+
+    <!--header start-->
+    <div id="header">
+        <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
+    </div>
+    <!--header end-->
+
 	<!-- 众筹首页 start -->
     <!-- {if $action eq 'default'} -->
     <div class="z_container">
@@ -145,139 +163,139 @@
         </div>
     </div>
 	<script type="text/javascript">
-	$(".banner_c").slide({titCell:".ban_nav ul",mainCell:".wrap_c ul",effect:"left",autoPlay:false,autoPage:true,scroll:1,vis:1,prevCell:".btn_Left",nextCell:".btn_Right"});
+    	$(".banner_c").slide({titCell:".ban_nav ul",mainCell:".wrap_c ul",effect:"left",autoPlay:false,autoPage:true,scroll:1,vis:1,prevCell:".btn_Left",nextCell:".btn_Right"});
 
-    $('#parent_catagory li').on('click',function(){
-        $('.s-list a').removeClass('curr');
-        var code = $(this).find('a').attr('code');
-        var wenzi = $.trim($('#w').val());
-        if(code==0){
-            $.post('crowdfunding.php?act=quanbu',{code:code,wenzi:wenzi},function(data){
+        $('#parent_catagory li').on('click',function(){
+            $('.s-list a').removeClass('curr');
+            var code = $(this).find('a').attr('code');
+            var wenzi = $.trim($('#w').val());
+            if(code==0){
+                $.post('crowdfunding.php?act=quanbu',{code:code,wenzi:wenzi},function(data){
+                    $('#projectlist').remove();
+                    $('#data-more').remove();
+                    $('.z_main').append(data);
+                },'json');
+            }else{
+                $.post('crowdfunding.php?act=cate',{code:code,wenzi:wenzi},function(data){
+                    $('#projectlist').remove();
+                    $('#data-more').remove();
+                    $('.z_main').append(data);
+                },'json');
+            }
+        });
+
+        $('.s-list a').on('click',function(){
+            var code = $(this).attr('code');
+            var wenzi = $.trim($('#w').val());
+            $(this).parent().siblings().find('a').removeClass('curr');
+            $(this).addClass('curr');
+            $.post('crowdfunding.php?act=cate_child',{code:code,wenzi:wenzi},function(data){
                 $('#projectlist').remove();
                 $('#data-more').remove();
                 $('.z_main').append(data);
             },'json');
-        }else{
-            $.post('crowdfunding.php?act=cate',{code:code,wenzi:wenzi},function(data){
-                $('#projectlist').remove();
-                $('#data-more').remove();
-                $('.z_main').append(data);
-            },'json');
-        }
-    });
+        })
 
-    $('.s-list a').on('click',function(){
-        var code = $(this).attr('code');
-        var wenzi = $.trim($('#w').val());
-        $(this).parent().siblings().find('a').removeClass('curr');
-        $(this).addClass('curr');
-        $.post('crowdfunding.php?act=cate_child',{code:code,wenzi:wenzi},function(data){
-            $('#projectlist').remove();
-            $('#data-more').remove();
-            $('.z_main').append(data);
-        },'json');
-    })
+        $('body').on('click','#data-more',function(){
+            var wenzi = $.trim($('#w').val());
+            var pid = $('#parent_catagory').find('li[class=current]').children('a').attr('code');
+            var tid = $('.s-list').find('a[class=curr]').attr('code');
+            var len = $('#projectlist').find('div[class=Module_c]').length;
 
-    $('body').on('click','#data-more',function(){
-        var wenzi = $.trim($('#w').val());
-        var pid = $('#parent_catagory').find('li[class=current]').children('a').attr('code');
-        var tid = $('.s-list').find('a[class=curr]').attr('code');
-        var len = $('#projectlist').find('div[class=Module_c]').length;
-
-        if(tid){
-            $.post('crowdfunding.php?act=gengduo_tid',{id:tid,len:len,wenzi:wenzi},function(data){
-                $('#projectlist').append(data);
-                var zx_tig = $('#zx_tig').attr('zx_tig');
-                if(zx_tig<=0){
-                    $('#data-more').hide();
+            if(tid){
+                $.post('crowdfunding.php?act=gengduo_tid',{id:tid,len:len,wenzi:wenzi},function(data){
+                    $('#projectlist').append(data);
+                    var zx_tig = $('#zx_tig').attr('zx_tig');
+                    if(zx_tig<=0){
+                        $('#data-more').hide();
+                    }
+                    $('#zx_tig').remove();
+                },'json');
+            }else{
+                if(pid==0){
+                    $.post('crowdfunding.php?act=gengduo_pid_zero',{id:pid,len:len,wenzi:wenzi},function(data){
+                        $('#projectlist').append(data);
+                        var zx_tig = $('#zx_tig').attr('zx_tig');
+                        if(zx_tig<=0){
+                            $('#data-more').hide();
+                        }
+                        $('#zx_tig').remove();
+                    },'json');
+                }else{
+                    $.post('crowdfunding.php?act=gengduo_pid',{id:pid,len:len,wenzi:wenzi},function(data){
+                        $('#projectlist').append(data);
+                        var zx_tig = $('#zx_tig').attr('zx_tig');
+                        if(zx_tig<=0){
+                            $('#data-more').hide();
+                        }
+                        $('#zx_tig').remove();
+                    },'json');
                 }
-                $('#zx_tig').remove();
-            },'json');
-        }else{
-            if(pid==0){
-                $.post('crowdfunding.php?act=gengduo_pid_zero',{id:pid,len:len,wenzi:wenzi},function(data){
-                    $('#projectlist').append(data);
-                    var zx_tig = $('#zx_tig').attr('zx_tig');
-                    if(zx_tig<=0){
-                        $('#data-more').hide();
-                    }
-                    $('#zx_tig').remove();
-                },'json');
-            }else{
-                $.post('crowdfunding.php?act=gengduo_pid',{id:pid,len:len,wenzi:wenzi},function(data){
-                    $('#projectlist').append(data);
-                    var zx_tig = $('#zx_tig').attr('zx_tig');
-                    if(zx_tig<=0){
-                        $('#data-more').hide();
-                    }
-                    $('#zx_tig').remove();
-                },'json');
             }
-        }
-    })
+        })
 
-    $('body').on('click','#sort li',function(){
-        var wenzi = $.trim($('#w').val());
-        var sig = $(this).find('a').attr('code');
-        var pid = $('#parent_catagory').find('li[class=current]').children('a').attr('code');
-        var tid = $('.s-list').find('a[class=curr]').attr('code');
-        var len = $('#projectlist').find('div[class=Module_c]').length;
+        $('body').on('click','#sort li',function(){
+            var wenzi = $.trim($('#w').val());
+            var sig = $(this).find('a').attr('code');
+            var pid = $('#parent_catagory').find('li[class=current]').children('a').attr('code');
+            var tid = $('.s-list').find('a[class=curr]').attr('code');
+            var len = $('#projectlist').find('div[class=Module_c]').length;
 
-        if(tid){
-            $.post('crowdfunding.php?act=paixu_tid',{id:tid,len:len,sig:sig,wenzi:wenzi},function(data){
-                $('#projectlist').remove();
-                $('#data-more').remove();
-                $('.z_main').append(data);
-            },'json');
-        }else{
-            if(pid==0){
-                $.post('crowdfunding.php?act=paixu_pid_zero',{id:pid,len:len,sig:sig,wenzi:wenzi},function(data){
+            if(tid){
+                $.post('crowdfunding.php?act=paixu_tid',{id:tid,len:len,sig:sig,wenzi:wenzi},function(data){
                     $('#projectlist').remove();
                     $('#data-more').remove();
                     $('.z_main').append(data);
                 },'json');
             }else{
-                $.post('crowdfunding.php?act=paixu_pid',{id:pid,len:len,sig:sig,wenzi:wenzi},function(data){
-                    $('#projectlist').remove();
-                    $('#data-more').remove();
-                    $('.z_main').append(data);
-                },'json');
+                if(pid==0){
+                    $.post('crowdfunding.php?act=paixu_pid_zero',{id:pid,len:len,sig:sig,wenzi:wenzi},function(data){
+                        $('#projectlist').remove();
+                        $('#data-more').remove();
+                        $('.z_main').append(data);
+                    },'json');
+                }else{
+                    $.post('crowdfunding.php?act=paixu_pid',{id:pid,len:len,sig:sig,wenzi:wenzi},function(data){
+                        $('#projectlist').remove();
+                        $('#data-more').remove();
+                        $('.z_main').append(data);
+                    },'json');
+                }
+
             }
+            
+        })
 
-        }
-        
-    })
+        $('#sousuo').on('click',function(){
+            var wenzi = $.trim($('#w').val());
+            var sig = $('#sort').find('li[class=current]').find('a').attr('code');
+            var pid = $('#parent_catagory').find('li[class=current]').children('a').attr('code');
+            var tid = $('.s-list').find('a[class=curr]').attr('code');
+            var len = $('#projectlist').find('div[class=Module_c]').length;
 
-    $('#sousuo').on('click',function(){
-        var wenzi = $.trim($('#w').val());
-        var sig = $('#sort').find('li[class=current]').find('a').attr('code');
-        var pid = $('#parent_catagory').find('li[class=current]').children('a').attr('code');
-        var tid = $('.s-list').find('a[class=curr]').attr('code');
-        var len = $('#projectlist').find('div[class=Module_c]').length;
-
-        if(tid){
-            $.post('crowdfunding.php?act=paixu_tid',{id:tid,len:len,sig:sig,wenzi:wenzi},function(data){
-                $('#projectlist').remove();
-                $('#data-more').remove();
-                $('.z_main').append(data);
-            },'json');
-        }else{
-            if(pid==0){
-                $.post('crowdfunding.php?act=paixu_pid_zero',{id:pid,len:len,sig:sig,wenzi:wenzi},function(data){
+            if(tid){
+                $.post('crowdfunding.php?act=paixu_tid',{id:tid,len:len,sig:sig,wenzi:wenzi},function(data){
                     $('#projectlist').remove();
                     $('#data-more').remove();
                     $('.z_main').append(data);
                 },'json');
             }else{
-                $.post('crowdfunding.php?act=paixu_pid',{id:pid,len:len,sig:sig,wenzi:wenzi},function(data){
-                    $('#projectlist').remove();
-                    $('#data-more').remove();
-                    $('.z_main').append(data);
-                },'json');
+                if(pid==0){
+                    $.post('crowdfunding.php?act=paixu_pid_zero',{id:pid,len:len,sig:sig,wenzi:wenzi},function(data){
+                        $('#projectlist').remove();
+                        $('#data-more').remove();
+                        $('.z_main').append(data);
+                    },'json');
+                }else{
+                    $.post('crowdfunding.php?act=paixu_pid',{id:pid,len:len,sig:sig,wenzi:wenzi},function(data){
+                        $('#projectlist').remove();
+                        $('#data-more').remove();
+                        $('.z_main').append(data);
+                    },'json');
+                }
             }
-        }
 
-    })
+        })
 	</script>	
 	<!-- {/if} -->
 	<!-- 众筹首页 end -->
@@ -1375,159 +1393,158 @@
         {/if}
     </div>
 	<script type="text/javascript">
-	$('#parent_catagory li').on('click',function(){
-		$('.s-list a').removeClass('curr');
-		var code = $(this).find('a').attr('code');
-		var wenzi = $.trim($('#w').val());
-		if(code==0){
-			$.post('crowdfunding.php?act=search_quanbu',{code:code,wenzi:wenzi},function(data){
-				$('.query-result-outer').remove();
-				$('#page_div').remove();
-				$('.query-result').append(data);
-			},'json');
-		}else{
-			$.post('crowdfunding.php?act=search_cate',{code:code,wenzi:wenzi},function(data){
-				$('.query-result-outer').remove();
-				$('#page_div').remove();
-				$('.query-result').append(data);
-			},'json');
-		}
-	})
+    	$('#parent_catagory li').on('click',function(){
+    		$('.s-list a').removeClass('curr');
+    		var code = $(this).find('a').attr('code');
+    		var wenzi = $.trim($('#w').val());
+    		if(code==0){
+    			$.post('crowdfunding.php?act=search_quanbu',{code:code,wenzi:wenzi},function(data){
+    				$('.query-result-outer').remove();
+    				$('#page_div').remove();
+    				$('.query-result').append(data);
+    			},'json');
+    		}else{
+    			$.post('crowdfunding.php?act=search_cate',{code:code,wenzi:wenzi},function(data){
+    				$('.query-result-outer').remove();
+    				$('#page_div').remove();
+    				$('.query-result').append(data);
+    			},'json');
+    		}
+    	})
 
-	$('.s-list a').on('click',function(){
-		var code = $(this).attr('code');
-		var wenzi = $.trim($('#w').val());
-		$(this).parent().siblings().find('a').removeClass('curr');
-		$(this).addClass('curr');
-		$.post('crowdfunding.php?act=search_cate_child',{code:code,wenzi:wenzi},function(data){
-			$('.query-result-outer').remove();
-			$('#page_div').remove();
-			$('.query-result').append(data);
-		},'json');
-	})
+    	$('.s-list a').on('click',function(){
+    		var code = $(this).attr('code');
+    		var wenzi = $.trim($('#w').val());
+    		$(this).parent().siblings().find('a').removeClass('curr');
+    		$(this).addClass('curr');
+    		$.post('crowdfunding.php?act=search_cate_child',{code:code,wenzi:wenzi},function(data){
+    			$('.query-result-outer').remove();
+    			$('#page_div').remove();
+    			$('.query-result').append(data);
+    		},'json');
+    	})
 
-	$('body').on('click','#sort li',function(){
-		var wenzi = $.trim($('#w').val());
-		var sig = $(this).find('a').attr('code');
-		var pid = $('#parent_catagory').find('li[class=current]').children('a').attr('code');
-		var tid = $('.s-list').find('a[class=curr]').attr('code');
+    	$('body').on('click','#sort li',function(){
+    		var wenzi = $.trim($('#w').val());
+    		var sig = $(this).find('a').attr('code');
+    		var pid = $('#parent_catagory').find('li[class=current]').children('a').attr('code');
+    		var tid = $('.s-list').find('a[class=curr]').attr('code');
 
-		if(tid){
-			$.post('crowdfunding.php?act=search_paixu_tid',{id:tid,sig:sig,wenzi:wenzi},function(data){
-				$('.query-result-outer').remove();
-				$('#page_div').remove();
-				$('.query-result').append(data);
-			},'json');
-		}else{
-			if(pid==0){
-				$.post('crowdfunding.php?act=search_paixu_pid_zero',{id:pid,sig:sig,wenzi:wenzi},function(data){
-					$('.query-result-outer').remove();
-					$('#page_div').remove();
-					$('.query-result').append(data);
-				},'json');
-			}else{
-				$.post('crowdfunding.php?act=search_paixu_pid',{id:pid,sig:sig,wenzi:wenzi},function(data){
-					$('.query-result-outer').remove();
-					$('#page_div').remove();
-					$('.query-result').append(data);
-				},'json');
-			}
-		}
-	})
+    		if(tid){
+    			$.post('crowdfunding.php?act=search_paixu_tid',{id:tid,sig:sig,wenzi:wenzi},function(data){
+    				$('.query-result-outer').remove();
+    				$('#page_div').remove();
+    				$('.query-result').append(data);
+    			},'json');
+    		}else{
+    			if(pid==0){
+    				$.post('crowdfunding.php?act=search_paixu_pid_zero',{id:pid,sig:sig,wenzi:wenzi},function(data){
+    					$('.query-result-outer').remove();
+    					$('#page_div').remove();
+    					$('.query-result').append(data);
+    				},'json');
+    			}else{
+    				$.post('crowdfunding.php?act=search_paixu_pid',{id:pid,sig:sig,wenzi:wenzi},function(data){
+    					$('.query-result-outer').remove();
+    					$('#page_div').remove();
+    					$('.query-result').append(data);
+    				},'json');
+    			}
+    		}
+    	})
 
 
-	$('#sousuo').on('click',function(){
-		var wenzi = $.trim($('#w').val());
-		var sig = $('#sort').find('li[class=current]').find('a').attr('code');
-		var pid = $('#parent_catagory').find('li[class=current]').children('a').attr('code');
-		var tid = $('.s-list').find('a[class=curr]').attr('code');
+    	$('#sousuo').on('click',function(){
+    		var wenzi = $.trim($('#w').val());
+    		var sig = $('#sort').find('li[class=current]').find('a').attr('code');
+    		var pid = $('#parent_catagory').find('li[class=current]').children('a').attr('code');
+    		var tid = $('.s-list').find('a[class=curr]').attr('code');
 
-		if(tid){
-			$.post('crowdfunding.php?act=search_paixu_tid',{id:tid,sig:sig,wenzi:wenzi},function(data){
-					$('.query-result-outer').remove();
-					$('#page_div').remove();
-					$('.query-result').append(data);
-			},'json');
-		}else{
-			if(pid==0){
-				$.post('crowdfunding.php?act=search_paixu_pid_zero',{id:pid,sig:sig,wenzi:wenzi},function(data){
-					$('.query-result-outer').remove();
-					$('#page_div').remove();
-					$('.query-result').append(data);
-				},'json');
-			}else{
-				$.post('crowdfunding.php?act=search_paixu_pid',{id:pid,sig:sig,wenzi:wenzi},function(data){
-					$('.query-result-outer').remove();
-					$('#page_div').remove();
-					$('.query-result').append(data);
-				},'json');
-			}
-		}
+    		if(tid){
+    			$.post('crowdfunding.php?act=search_paixu_tid',{id:tid,sig:sig,wenzi:wenzi},function(data){
+    					$('.query-result-outer').remove();
+    					$('#page_div').remove();
+    					$('.query-result').append(data);
+    			},'json');
+    		}else{
+    			if(pid==0){
+    				$.post('crowdfunding.php?act=search_paixu_pid_zero',{id:pid,sig:sig,wenzi:wenzi},function(data){
+    					$('.query-result-outer').remove();
+    					$('#page_div').remove();
+    					$('.query-result').append(data);
+    				},'json');
+    			}else{
+    				$.post('crowdfunding.php?act=search_paixu_pid',{id:pid,sig:sig,wenzi:wenzi},function(data){
+    					$('.query-result-outer').remove();
+    					$('#page_div').remove();
+    					$('.query-result').append(data);
+    				},'json');
+    			}
+    		}
 
-	})
+    	})
 
-	$('body').on('click','#page_div a',function(){
-		var page = $("#page_div a[class='current']").text();
-		var last_page = $('#page_div a').last().prev().text();
-		var val = $(this).text();
-		var res_page = null;
+    	$('body').on('click','#page_div a',function(){
+    		var page = $("#page_div a[class='current']").text();
+    		var last_page = $('#page_div a').last().prev().text();
+    		var val = $(this).text();
+    		var res_page = null;
 
-		if(page==val){
-			return false;
-		}
+    		if(page==val){
+    			return false;
+    		}
 
-		if(page==1 && val=='上一页'){
-			return false;
-		}
+    		if(page==1 && val=='上一页'){
+    			return false;
+    		}
 
-		if(page==last_page && val=='下一页'){
-			return false;
-		}
+    		if(page==last_page && val=='下一页'){
+    			return false;
+    		}
 
-		if(val=='上一页'){
-			res_page = parseInt(page)-1;
-		}
+    		if(val=='上一页'){
+    			res_page = parseInt(page)-1;
+    		}
 
-		if(val=='下一页'){
-			res_page = parseInt(page)+1;
-		}
+    		if(val=='下一页'){
+    			res_page = parseInt(page)+1;
+    		}
 
-		if(val!='上一页' && val!='下一页'){
-			res_page = $(this).text();
-		}
+    		if(val!='上一页' && val!='下一页'){
+    			res_page = $(this).text();
+    		}
 
-		var wenzi = $.trim($('#w').val());
-		var sig = $('#sort').find('li[class=current]').find('a').attr('code');
-		var pid = $('#parent_catagory').find('li[class=current]').children('a').attr('code');
-		var tid = $('.s-list').find('a[class=curr]').attr('code');
+    		var wenzi = $.trim($('#w').val());
+    		var sig = $('#sort').find('li[class=current]').find('a').attr('code');
+    		var pid = $('#parent_catagory').find('li[class=current]').children('a').attr('code');
+    		var tid = $('.s-list').find('a[class=curr]').attr('code');
 
-		if(tid){
-			$.post('crowdfunding.php?act=page_tid',{id:tid,sig:sig,wenzi:wenzi,page:res_page},function(data){
-					$('.query-result-outer').remove();
-					$('#page_div').remove();
-					$('.query-result').append(data);
-			},'json');
-		}else{
-			if(pid==0){
-				$.post('crowdfunding.php?act=page_pid_zero',{id:pid,sig:sig,wenzi:wenzi,page:res_page},function(data){
-					$('.query-result-outer').remove();
-					$('#page_div').remove();
-					$('.query-result').append(data);
-				},'json');
-			}else{
-				$.post('crowdfunding.php?act=page_pid',{id:pid,sig:sig,wenzi:wenzi,page:res_page},function(data){
-					$('.query-result-outer').remove();
-					$('#page_div').remove();
-					$('.query-result').append(data);
-				},'json');
-			}
-		}
-	});
+    		if(tid){
+    			$.post('crowdfunding.php?act=page_tid',{id:tid,sig:sig,wenzi:wenzi,page:res_page},function(data){
+    					$('.query-result-outer').remove();
+    					$('#page_div').remove();
+    					$('.query-result').append(data);
+    			},'json');
+    		}else{
+    			if(pid==0){
+    				$.post('crowdfunding.php?act=page_pid_zero',{id:pid,sig:sig,wenzi:wenzi,page:res_page},function(data){
+    					$('.query-result-outer').remove();
+    					$('#page_div').remove();
+    					$('.query-result').append(data);
+    				},'json');
+    			}else{
+    				$.post('crowdfunding.php?act=page_pid',{id:pid,sig:sig,wenzi:wenzi,page:res_page},function(data){
+    					$('.query-result-outer').remove();
+    					$('#page_div').remove();
+    					$('.query-result').append(data);
+    				},'json');
+    			}
+    		}
+    	});
 	</script>
 
 	<!-- {/if} -->
 	<!-- 众筹项目搜索页 end -->	
-    <script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.purebox.js"></script>
 
     <!--@author-bylu start (众筹在线客服)-->
     <script type="text/javascript">
@@ -1553,6 +1570,50 @@
     </script>
     <!--@author-bylu end-->
 	
-	<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+    <!--2017/07/20 更换-->
+    <!-- #BeginLibraryItem "/library/page_footer_djj.lbi" --><!-- #EndLibraryItem -->
+
+
+    <script type="text/javascript">
+        $("#clear_price").click(function(){
+            $("#price-min").val('');
+            $("#price-max").val('');
+        });
+            
+        $(".QR_code li").hover(function(){
+            var index = $(this).index();
+            $(this).addClass("current").siblings().removeClass("current");
+            $(".QR_code .code_tp").eq(index).removeClass("hide").siblings().addClass("hide");
+        })
+
+        function checkSearchForm(){
+            var keywords = $("input[name='keywords']").val();
+            if(keywords == ''){
+                
+                divId = "keywords_html";
+                var content = '<div id="' + divId + '">' + 
+                                    '<div class="tip-box icon-box">' +
+                                        '<span class="warn-icon m-icon"></span>' + 
+                                        '<div class="item-fore">' +
+                                            '<h3 class="rem ftx-04">您搜索内容的关键字不能空</h3>' +
+                                        '</div>' +
+                                    '</div>' +
+                                '</div>';
+                
+                pb({
+                    id:divId,
+                    title:'提示',
+                    width:445,
+                    height:58,
+                    content:content,    //调取内容
+                    drag:false,
+                    foot:false
+                }); 
+                
+                return false;
+            }
+        }
+    </script>
+    <!--[if lte IE 8]><script type="text/javascript" src="js/IE7Fix.js"></script><![endif]-->
 </body>
 </html>

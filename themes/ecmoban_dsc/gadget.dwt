@@ -41,88 +41,54 @@
             <!--每日推荐-->
             <div class="section-1 clearfix">
                 <img class="float-l"  src="themes/ecmoban_dsc/iamges/20170517/recommend.jpg" alt="每日推荐" />
-                <ul class="same-list float-l clearfix">
-                <!--{foreach from=$mrtj_sql item=mrtj_sql name=mrtj_sql}-->
-                <!--{/foreach}-->                           
-                    <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
-                        <div>
-                            <a href="#">青花瓷龙泉窑复古艺术花瓶摆件</a>
-                            <p class="clearfix">
-                                <span class="price">&yen;2332</span>
-                                <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
-                        <div>
-                            <a href="#">青花瓷龙泉窑复古艺术花瓶摆件</a>
-                            <p>
-                                <span class="price">&yen;2332</span>
-                                <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
-                        <div>
-                            <a href="#">青花瓷龙泉窑复古艺术花瓶摆件</a>
-                            <p>
-                                <span class="price">&yen;2332</span>
-                                <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
-                            </p>
-                        </div>
-                    </li>
-                    <li class="margin-r-0">
-                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
-                        <div>
-                            <a href="#">青花瓷龙泉窑复古艺术花瓶摆件</a>
-                            <p>
-                                <span class="price">&yen;2332</span>
-                                <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            
-            <!--产品轮播-->
-            <div class="section-2">
-                <div class="JS-slide-scroll">
-                    <ul class="content clearfix">
-                        <li>
-                            <a href="#">
-                                <h2>优质手串1</h2>
-                                <img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-2.jpg" alt="" />
-                                <span>一些描述一</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <h2>优质手串2</h2>
-                                <img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-2.jpg" alt="" />
-                                <span>一些描述一</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <h2>优质手串3</h2>
-                                <img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-2.jpg" alt="" />
-                                <span>一些描述一</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <h2>优质手串4</h2>
-                                <img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-2.jpg" alt="" />
-                                <span>一些描述一</span>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="same-list float-l clearfix">
+                    <div class="JS-slide-scroll">
+                        <ul class="content clearfix">
+                            <!--{foreach from=$mrtj_sql item=mrtj_sql name=mrtj_sql}-->
+                            <!--{/foreach}-->  
+                            <li>
+                                <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
+                                <div>
+                                    <a href="#">青花瓷龙泉窑复古艺术花瓶摆件</a>
+                                    <p class="clearfix">
+                                        <span class="price">&yen;2332</span>
+                                        <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
+                                <div>
+                                    <a href="#">青花瓷龙泉窑复古艺术花瓶摆件</a>
+                                    <p>
+                                        <span class="price">&yen;2332</span>
+                                        <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
+                                <div>
+                                    <a href="#">青花瓷龙泉窑复古艺术花瓶摆件</a>
+                                    <p>
+                                        <span class="price">&yen;2332</span>
+                                        <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="margin-r-0">
+                                <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-product-1.jpg" alt="" /></a>
+                                <div>
+                                    <a href="#">青花瓷龙泉窑复古艺术花瓶摆件</a>
+                                    <p>
+                                        <span class="price">&yen;2332</span>
+                                        <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
-                <a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
             </div>
 
             <div class="section-3">

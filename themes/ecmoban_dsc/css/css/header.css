@@ -386,6 +386,8 @@
 	margin-right: 24px;
 }
 
+
+
 /*禅学院的下拉菜单 start*/
 .cxy-dropdpwn-menu {
 	z-index: 10;
@@ -394,7 +396,7 @@
 	right: 0;
 	overflow: hidden;
 	height: 0;
-	line-height: 74px;
+	line-height: 50px;
 	background-color: #fff;
 	-webkit-transition: all .3s linear;
 	   -moz-transition: all .3s linear;
@@ -402,8 +404,11 @@
 	     -o-transition: all .3s linear;
 	        transition: all .3s linear;
 }
-.cxy-dropdpwn-menu .w1200 {
-	padding: 0 120px;
+.cxy-dropdpwn-menu .submenu {
+	height: 50px;
+	border: 1px solid #333;
+	border-left: none;
+	border-right: none;
 }
 .cxy-dropdpwn-menu li {
 	float: left;
@@ -413,13 +418,11 @@
 } 
 .cxy-dropdpwn-menu li a {
 	display: block;
-	width: 160px;
+	width: 199px;
+	font-size: 13px;
 	text-align: center;
 }
 .cxy:hover>.cxy-dropdpwn-menu {
-	height: 74px;
-	border: 1px solid #333;
-	border-left: none;
-	border-right: none;
+	height: 50px;
 }
 /*禅学院的下拉菜单 end*/

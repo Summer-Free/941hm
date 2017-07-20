@@ -58,7 +58,10 @@
         margin-left: -94.5px;
         width: 189px;
         height: 45px;
-        text-indent: -9999px;
+        font-size: 16px;
+        line-height: 45px;
+        text-align: center;
+        color: #fff;
         cursor: pointer;
         background: url(themes/ecmoban_dsc/iamges/20170517/integral-bg1.png) no-repeat top center;
     }
@@ -73,6 +76,16 @@
     }
     #footer dl {
         text-align: left;
+    }
+    .animate {
+        position: absolute;
+        left: 50%;
+        bottom: 80px;
+        font-size: 18px;
+        font-weight: 900;
+        color: #ff0000;
+        opacity: 0;
+        filter: Alpha(opacity=0);
     }
 </style>
 </head>
@@ -125,7 +138,10 @@
                 </div>
             </div>
         </div>
-        <div class="float-r"><span>点击签到</span></div>
+        <div class="float-r">
+            <em class="animate">+ 5积分</em>
+            <span class="sign">点击签到</span>
+        </div>
     </div>  
     </div>
     
@@ -329,6 +345,19 @@
 
             //签到左侧的积分
             $(".section-2 .product-slide").slideFade();
+
+            //点击签到
+            $(".sign").on("click",function() {
+                var $this = $(this);
+                var em = $(".animate")
+
+                //积分 + 5的动画
+                em.animate({bottom: 110,opacity: 1},1000);
+                em.animate({opacity: 0},500);
+                em.animate({bottom: 80},100);
+
+                $this.text("已签到");
+            });
         });
     </script>
 </body>
