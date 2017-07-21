@@ -405,7 +405,7 @@
                 	<!-- {elseif $smarty.foreach.ct_sql.iteration %4==0} -->
                     <li class="move margin-r-0">
                 	<!--{/if}-->
-						<a href="goosd.php?id={$ct_sql.goods_id}">
+						<a href="goods.php?id={$ct_sql.goods_id}">
 							<div><img src="{$ct_sql.goods_thumb}" alt="{$ct_sql.goods_name}" /></div>
 							<h3><font size="4">{$ct_sql.goods_name|truncate:30}</font></h3>
 						</a>
@@ -427,7 +427,7 @@
                 	<!-- {elseif $smarty.foreach.kt_sql.iteration %4==0} -->
                     <li class="move margin-r-0">
                 	<!--{/if}-->
-						<a href="goosd.php?id={$kt_sql.goods_id}">
+						<a href="goods.php?id={$kt_sql.goods_id}">
 							<div><img src="{$kt_sql.goods_thumb}" alt="{$kt_sql.goods_name}" /></div>
 							<h3><font size="4">{$kt_sql.goods_name|truncate:30}</font></h3>
 						</a>
@@ -449,7 +449,7 @@
 		                	<!-- {elseif $smarty.foreach.sf_sql.iteration %4==0} -->
 		                    <li class="move margin-r-0">
 		                	<!--{/if}-->
-								<a href="goosd.php?id={$sf_sql.goods_id}">
+								<a href="goods.php?id={$sf_sql.goods_id}">
 									<div><img src="{$sf_sql.goods_thumb}" alt="{$sf_sql.goods_name}" /></div>
 								<h3><font size="4">{$sf_sql.goods_name|truncate:30}</font></h3>
 								</a>
@@ -471,7 +471,7 @@
 		                	<!-- {elseif $smarty.foreach.ws_sql.iteration %4==0} -->
 		                    <li class="move margin-r-0">
 		                	<!--{/if}-->
-								<a href="goosd.php?id={$ws_sql.goods_id}">
+								<a href="goods.php?id={$ws_sql.goods_id}">
 									<div><img src="{$ws_sql.goods_thumb}" alt="{$ws_sql.goods_name}" /></div>
 									<h3><font size="4">{$ws_sql.goods_name|truncate:30}</font></h3>
 								</a>
