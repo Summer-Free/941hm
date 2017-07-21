@@ -15,7 +15,7 @@
 }
 #header .classification:hover > .dropdown-menu {
 	background-color: #d4d6d5;
-	z-index: 10;
+	z-index: 1000;
 	opacity: 1;
 	display: block\9; /*IE8 hack*/
 }
