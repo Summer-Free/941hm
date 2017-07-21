@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* quick_links */
+.mui-mbar-tabs * {box-sizing: content-box;}
 .pop_panel ul li{float:left; position:relative;}
 .pop_panel .delete_cart{ position:absolute; bottom:5px; right:0px;}
 .cart_go_btn{ font-family:microsoft yahei, Verdana, Geneva, sans-serif; font-size:16px; text-decoration:none}
@@ -322,7 +323,7 @@ i.ibar_recharge-arrow {width: 6px;height: 3px;background: url(../images/arrow-do
 .mui-mbar-tabs font {color: #fff;}
 
 .ecs-tbar-tipbox2{width: 270px;position: absolute;left: 0;top: 50%;margin-top: -60px; text-align:center;}
-.b-face-fd{ background:url(images/toolbar-face.png) no-repeat; display:inline-block;}
+.b-face-fd{ background:url(../../images/toolbar-face.png) no-repeat; display:inline-block;}
 .b-face-fd{ width:112px; height:85px;}
 .ecs-tbar-tipbox2 .tip-text{ line-height:20px; margin-top:10px;}
 .ecs-tbar-tipbox2 .tip-text a{ color:#ec5051;}

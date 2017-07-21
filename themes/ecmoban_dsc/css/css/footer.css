@@ -64,3 +64,7 @@
 #footer .copy p {
 	margin-bottom: 10px;
 }
+.foot-wrap-icon img {
+    float: left;
+    margin-right: 87px;
+}

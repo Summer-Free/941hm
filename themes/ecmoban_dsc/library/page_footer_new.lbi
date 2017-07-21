@@ -20,8 +20,8 @@
                                     <a href="company_profile.php">&gt; 公司简介</a>
                                     <a href="company_honor.php">&gt; 公司荣誉</a>
                                     <a href="#">&gt; 体验馆</a>
-                                    <a href="#">&gt; 招商加盟</a>
-                                    <a href="#">&gt; 诚聘英才</a>
+                                    <a href="partner.php">&gt; 商家入驻</a>
+                                    <a href="article.php?id=74">&gt; 厂家入驻</a>
                                     <a href="#">&gt; 联系我们</a>
                                 </dd>
                             </dl>
@@ -78,12 +78,6 @@
                         <p><a href="#">首页</a><a href="#">意见反馈</a></p>
                         <p>ICP备案证书号: <a href="#">浙ICP备16002409号-1</a></p>
                         <p class="foot-wrap-icon">
-                            <style>
-                                .foot-wrap-icon img {
-                                    float: left;
-                                    margin-right: 87px;
-                                }
-                            </style>
                             <img src="themes/ecmoban_dsc/iamges/20170517/360.jpg" alt="" />
                             <img src="themes/ecmoban_dsc/iamges/20170517/cnnic.png" alt="" />
                             <img src="themes/ecmoban_dsc/iamges/20170517/hy.png" alt="" />
@@ -97,8 +91,6 @@
         </div>
 
         
-        <!--JQ基础库-->
-        <script type="text/javascript" src="themes/ecmoban_dsc/js/js/jquery-1.9.1.min.js"></script>
         <!--自定义方法-->
         <script type="text/javascript" src="themes/ecmoban_dsc/js/js/common.js"></script>
         <!--旧的通用js,有很多文件对此有依赖-->
@@ -115,6 +107,18 @@
         <!--右侧悬浮购物车个人信息(必须放到最底下,依赖jquery)-->
         {insert name='user_menu_position'}
         
+
+        <!--统计代码-->
+        <script type="text/javascript">
+                var _hmt = _hmt || [];
+                (function() {
+                      var hm = document.createElement("script");
+                      hm.src = "https://hm.baidu.com/hm.js?49a2fe95c7db7c2caf78bc0d55c31d53";
+                      var s = document.getElementsByTagName("script")[0]; 
+                      s.parentNode.insertBefore(hm, s);
+                })();
+         </script>
+
         <!--右侧机器人-->
         <style>
             #MEIQIA-BTN-HOLDER {

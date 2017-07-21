@@ -1040,7 +1040,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ec5051', endC
 .choose .choose-btns{ width: 524px;padding: 10px 0 8px 3px;border-bottom: none; float:left; font-family:"microsoft yahei"; margin-top:10px; position:relative;}
 .choose .buynow{ color:#ec5051; width:auto; *filter:chroma(color=#000000); *width:64px;}
 .choose .btn-append{color:#fff;}
-.buynow{ font-size:16px; color:#ec5051; padding:0 17px; height:38px; line-height:34px; *line-height:34px; border:1px solid #d1c0a5; background:#f9e5c8; float:left; border-radius:5px; margin-right:15px; cursor:pointer;filter:chroma(color=#333000); outline:0; *width:100px;}
+.buynow{ font-size:16px; color:#ec5051; padding:0 17px; height:38px; line-height:38px; *line-height:34px; border:1px solid #d1c0a5; background:#f9e5c8; float:left; border-radius:5px; margin-right:15px; cursor:pointer;filter:chroma(color=#333000); outline:0; *width:100px;}
 .buynow:hover{ background: #f4dbb9;}
 .btn-append{ font-size:16px; padding:0 18px 0 42px; height:40px; line-height:40px; *line-height:36px; border-radius:5px; background:#eb4f50; float:left; position:relative; margin-right:15px;}
 .btn-append i{ display:inline-block; position:absolute; top: 10px;left: 18px;width: 18px;height: 18px;background-position: -6px -8px;}

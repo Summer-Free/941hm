@@ -20,8 +20,8 @@
                                     <a href="company_profile.php">&gt; 公司简介</a>
                                     <a href="company_honor.php">&gt; 公司荣誉</a>
                                     <a href="#">&gt; 体验馆</a>
-                                    <a href="#">&gt; 招商加盟</a>
-                                    <a href="#">&gt; 诚聘英才</a>
+                                    <a href="partner.php">&gt; 商家入驻</a>
+                                    <a href="article.php?id=74">&gt; 厂家入驻</a>
                                     <a href="#">&gt; 联系我们</a>
                                 </dd>
                             </dl>
@@ -78,12 +78,6 @@
                         <p><a href="#">首页</a><a href="#">意见反馈</a></p>
                         <p>ICP备案证书号: <a href="#">浙ICP备16002409号-1</a></p>
                         <p class="foot-wrap-icon">
-                            <style>
-                                .foot-wrap-icon img {
-                                    float: left;
-                                    margin-right: 87px;
-                                }
-                            </style>
                             <img src="themes/ecmoban_dsc/iamges/20170517/360.jpg" alt="" />
                             <img src="themes/ecmoban_dsc/iamges/20170517/cnnic.png" alt="" />
                             <img src="themes/ecmoban_dsc/iamges/20170517/hy.png" alt="" />

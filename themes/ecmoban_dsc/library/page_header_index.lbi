@@ -7,12 +7,12 @@
                     <div class="float-l">欢迎浏览941红木网<span style="padding-left: 18px;">全球首家红木行业生态链服务商</span></div>
                     <div class="float-r">
                         <ul class="clearfix">
-                            <li><a href="history_list.php">我的足迹</a></li>
+                            <li><a href="flow.php?step=cart">我的购物车</a></li>
                             <li><a href="user.php?act=order_list">我的订单</a></li>
                             <li><a href="article.php?id=74">厂家入驻</a></li>
                             <li><a href="merchants.php?id=96">商家中心</a></li>
-                            <li><a href="#">客服中心</a></li>
-                            <li class="padding-r-0"><a href="#">APP下载</a></li>
+                            <li><a href="#" target="_blank">帮助中心</a></li>
+                            <li class="padding-r-0"><a href="#">商城资讯</a></li>
                         </ul>
                     </div>
                 </div>
@@ -27,8 +27,6 @@
                 <img class="float-r" src="themes/ecmoban_dsc/iamges/20170517/wechat.jpg" alt="二维码">
                 <div class="float-l">
                     <div class="wrap-search clearfix">
-                        <a class="icon-file" href="#"></a>
-                        <a class="icon-cart" href="#"><span class="tooltip">99</span></a>
                         <div class="ecsc-search">
                             <form class="clearfix ecsc-search-form" id="searchForm" name="searchForm" action="search.php" method="get" onSubmit="return checkSearchForm()">
                                 <input type="text" autocomplete="off" onKeyUp="lookup(this.value);" name="keywords" id="keyword" value="请输入搜索内容" class="ecsc-search-input" />

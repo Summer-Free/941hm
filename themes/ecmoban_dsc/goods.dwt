@@ -49,7 +49,8 @@
     .ecsc-goods-love.ecsc-goods-love-new {
         font-size: 12px;
     }
-    #p-box *,.ecsc-breadcrumb *,.ecsc-goods-layout * {
+    #p-box *,.ecsc-breadcrumb *,.ecsc-goods-layout *,
+    .ecsc-goods-love.ecsc-goods-love-new * {
         box-sizing: content-box;
     }
     .ecsc-layout-210 .history .item .p-name a,
@@ -1042,9 +1043,10 @@ function changePriceResponse(res)
 	}
 	
 	if(document.getElementById('ECS_SHOPPRICE')){ 
-		if(document.getElementById('ECS_MARKETPRICE')){
-			document.getElementById('ECS_MARKETPRICE').innerHTML = res.result_market;
-		}
+        // 2017/07/21 注释  此处控制  数量 * 单价 的结果
+		// if(document.getElementById('ECS_MARKETPRICE')){
+		// 	document.getElementById('ECS_MARKETPRICE').innerHTML = res.result_market;
+		// }
 		
 		if(res.onload == 'onload'){
 			document.getElementById('ECS_SHOPPRICE').innerHTML = res.result;
@@ -1054,6 +1056,7 @@ function changePriceResponse(res)
 			{else}
 				if(res.show_goods == 1){
 					document.getElementById('ECS_SHOPPRICE').innerHTML = res.spec_price;
+
 				}else{
 					document.getElementById('ECS_SHOPPRICE').innerHTML = res.result;
 				}
@@ -1286,7 +1289,7 @@ function quantity(){
 			$("#quantity").val(perNumber);
 		}
 
-	})
+	});
 }
 quantity();
 
