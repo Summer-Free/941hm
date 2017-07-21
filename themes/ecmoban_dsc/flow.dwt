@@ -14,7 +14,7 @@
 <link rel="stylesheet" type="text/css" href="themes/ecmoban_dsc/base.css" />
 <link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
 <link rel="alternate" type="application/rss+xml" title="RSS|{$page_title}" href="{$feed_url}" />
-<link rel="stylesheet" href="themes/ecmoban_dsc/purebox.css">
+<!-- <link rel="stylesheet" href="themes/ecmoban_dsc/purebox.css"> -->
 <link href="themes/ecmoban_dsc/animate.min.css" type="text/css" rel="stylesheet">
 <link rel="stylesheet" href="themes/ecmoban_dsc/js/jquery-ui/jquery-ui.min.css">
 {if $step eq 'cart'}
@@ -26,6 +26,10 @@
 {insert_scripts files='region.js,utils.js'}
 {/if}
 
+<!--2017/07/21 添加-->
+<!-- #BeginLibraryItem "/library/header_title_djj.lbi" --><!-- #EndLibraryItem -->
+<!--首页CSS以及部分通用部分的合并LBI-->
+
 {insert_scripts files='jquery-1.9.1.min.js,jquery.json.js,transport_jquery.js,common.js,shopping_flow.js'}
 <script type="text/javascript" src="themes/ecmoban_dsc/js/sc_common.js"></script>
 <script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.SuperSlide.2.1.1.js"></script>
@@ -34,10 +38,20 @@
 <script type="text/javascript" src="themes/ecmoban_dsc/js/notLogin.js"></script>
 <script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.nyroModal.js"></script>
 <script type="text/javascript" src="themes/ecmoban_dsc/js/jquery-ui/jquery-ui.min.js"></script>
+{insert_scripts files='suggest.js,warehouse_area.js'}
 <script type="text/javascript">
 	var flow_no_payment = "{$lang.flow_no_payment}";
 	var flow_no_shipping = "{$lang.flow_no_shipping}";
 </script>
+
+<style>
+    #container *,#loginDialogBody * {
+        box-sizing: content-box;
+    }
+    #container,#loginDialogBody {
+        font-size: 12px;
+    }
+</style>
 </head>
 
 <body>
@@ -59,8 +73,14 @@
 <div id="payAfter_zezhao"></div>
 <!--@941红木-bylu 网银支付跳转弹窗 end-->
 
-<!-- #BeginLibraryItem "/library/page_header_flow.lbi" --><!-- #EndLibraryItem -->
-<!-- {if $step eq "cart"} -->
+    <!--header start-->
+    <div id="header">
+        <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
+    </div>
+    <!--header end-->
+
+
+    <!-- {if $step eq "cart"} -->
 	<script type="text/javascript">
     {foreach from=$lang.password_js item=item key=key}
         var {$key} = "{$item}";
@@ -1440,8 +1460,11 @@
 <!--@author-bylu 付款成功页 end-->
 
 <!-- #BeginLibraryItem "/library/cart_html.lbi" --><!-- #EndLibraryItem -->
-<!-- #BeginLibraryItem "/library/page_footer_flow.lbi" --><!-- #EndLibraryItem -->
 
+<!--2017/07/21 更换-->
+<!-- #BeginLibraryItem "/library/page_footer_djj.lbi" --><!-- #EndLibraryItem -->
+
+<!--[if lte IE 8]><script type="text/javascript" src="js/IE7Fix.js"></script><![endif]-->
 <script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.purebox.js"></script>
 <script type="text/javascript">
 var process_request = "{$lang.process_request}";
@@ -2012,7 +2035,7 @@ function checkOrder(){
 	timer = setTimeout("checkOrder()", 5000);
 }
 
-//微信扫码
+//微信扫码  2017/07/21 得知此处控制微信支付弹窗中的内容
 $("[data-type='wxpay']").on("click",function(){
 	var content = $("#wxpay_dialog").html();
 	pb({

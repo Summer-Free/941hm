@@ -49,7 +49,7 @@
     .ecsc-goods-love.ecsc-goods-love-new {
         font-size: 12px;
     }
-    #p-box *,.ecsc-breadcrumb * {
+    #p-box *,.ecsc-breadcrumb *,.ecsc-goods-layout * {
         box-sizing: content-box;
     }
     .ecsc-layout-210 .history .item .p-name a,

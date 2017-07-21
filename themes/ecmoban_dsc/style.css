@@ -2565,7 +2565,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ec5051', endC
 .tab-con .p-list-cont.bRightNone{ border:0;}
 .tab-con .p-list-cont ul{ width:100%;}
 .tab-con .p-list-cont li{ float:left; width:199px; height:auto; border:1px solid #dcdcdc; margin:0 -1px 0 0;}
-.tab-con .p-list-cont li .p-item{ padding:18px 16px; float:left; *padding:16px 16px 15px 16px;}
+.tab-con .p-list-cont li .p-item{ padding:15px 16px; float:left; *padding:16px 16px 15px 16px;}
 .tab-con .p-list-cont li .p-img{ width:169px; height:169px; margin-bottom:8px;}
 .tab-con .p-list-cont li .p-price{ color:#ec5051; font-size:16px; text-align:center; padding-top:0; margin-bottom:4px;}
 .tab-con .p-list-cont li .p-name{ height:36px; line-height:18px; margin-bottom:5px; overflow:hidden;}
