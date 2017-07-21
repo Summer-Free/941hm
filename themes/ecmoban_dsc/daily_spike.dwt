@@ -15,14 +15,14 @@
                 <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
 
                 <!--slide banner start-->
-                <div class="slide-banner bg-color-f5f5f5">      
+                <div class="slide-banner">      
                         <div class="w1200">
                                 <div class="JS-slide">
                                         <ul class="content">
                                                 <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/spike-banner1.jpg" alt=""></a></li>
-                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/spike-banner1.jpg" alt=""></a></li>
-                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/spike-banner1.jpg" alt=""></a></li>
-                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/spike-banner1.jpg" alt=""></a></li>
+                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/spike-banner2.jpg" alt=""></a></li>
+                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/spike-banner3.jpg" alt=""></a></li>
+                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/spike-banner4.jpg" alt=""></a></li>
                                         </ul>
                                         <a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
                                         <a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
