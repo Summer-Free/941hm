@@ -449,7 +449,7 @@
 			//将省市从JSON中取出，展示到前端元素		
 			$.each(data,function(idx,pro) {
 
-				$select1.append("<option value='"+ idx + "'>" + pro.province + "</option>")
+				$select1.append("<option data-value='"+ idx + "'>" + pro.province + "</option>")
 				
 			});
 
@@ -457,14 +457,14 @@
 			$select1.on("change",function() {
 
 				var $this = $(this),
-					index = $this.find("option:selected").attr("value"); //选中值的对应value属性值
+					index = $this.find("option:selected").data("value"); //选中值的对应value属性值
 					
 					if(index !== "null") {
 
 						var cityArry = data[index].city;
 
 						//每次选中一个值后，都将下一级的select清空
-						$select2.html("<option value='null'>请选择市</option>");		
+						$select2.html("<option data-value='null'>请选择市</option>");		
 
 						//将对应的市区级数据，展示到前端
 						$.each(cityArry,function(idx,city) {
@@ -476,7 +476,7 @@
 					}else {
 
 						//如果选择的是无效省份，将下一级的select清空
-						$select2.html("<option value='null'>请选择市</option>");	
+						$select2.html("<option data-value='null'>请选择市</option>");	
 
 					};
 
