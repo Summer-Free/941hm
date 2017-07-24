@@ -43,7 +43,7 @@
         height: 376px;
     }
     .section-2 {
-        padding: 20px 0;
+        padding: 20px 0 0 0;
     }
     .section-2 .float-r {
         position: relative;
@@ -87,6 +87,28 @@
         opacity: 0;
         filter: Alpha(opacity=0);
     }
+    .section-3 {
+        margin-bottom: 12px;
+        padding: 0 12px;
+        height: 68px;
+        line-height: 68px;
+        border: 1px solid #e1e0e5;
+        border-top: none;
+        box-shadow: 0 3px 3px #e1e0e5;
+    }
+    .section-3 h2 {
+        float: left;
+        font-size: 25px;
+    }
+    .section-3 h2 span {
+        color: #ff0000;
+    }
+    .section-3 a {
+        float: right;
+    }
+    .section-3 a:hover {
+        color: #47a9fd;
+    }
 </style>
 </head>
 
@@ -100,49 +122,54 @@
 
     <div class="w1200">
 
-    <!--当前位置 start-->
-     <div class="nch-breadcrumb-layout">
-    	<div class="nch-breadcrumb wrapper" id="ur_here">
-             <div id="ur_here">
-              <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
-             </div>
-        </div>
-     </div>    
-    <!--当前位置 end-->
+        <!--当前位置 start-->
+         <div class="nch-breadcrumb-layout">
+        	<div class="nch-breadcrumb wrapper" id="ur_here">
+                 <div id="ur_here">
+                  <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+                 </div>
+            </div>
+         </div>    
+        <!--当前位置 end-->
 
-    <!--2017-07-18 新增模块-->
-    <div class="section-2 clearfix">
-        <div class="float-l">
-            <div class="product-slide">
-                <div class="JS-slide">
-                    <ul class="content">
-                        <li class="active">
-                            <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/integral-a.jpg" alt="" /></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/integral-b.jpg" alt="" /></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/integral-c.jpg" alt="" /></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/integral-d.jpg" alt="" /></a>
-                        </li>
-                    </ul>
-                    <ul class="point">
-                        <li class="active"></li>
-                        <li class=""></li>
-                        <li class=""></li>
-                        <li class=""></li>
-                    </ul>
+        <!--2017-07-18 新增模块-->
+        <div class="section-2 clearfix">
+            <div class="float-l">
+                <div class="product-slide">
+                    <div class="JS-slide">
+                        <ul class="content">
+                            <li class="active">
+                                <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/integral-a.jpg" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/integral-b.jpg" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/integral-c.jpg" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/integral-d.jpg" alt="" /></a>
+                            </li>
+                        </ul>
+                        <ul class="point">
+                            <li class="active"></li>
+                            <li class=""></li>
+                            <li class=""></li>
+                            <li class=""></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+            <div class="float-r">
+                <em class="animate">+ 5积分</em>
+                <span class="sign">点击签到</span>
+            </div>
+        </div>  
+
+        <div class="section-3 clearfix">
+            <h2>您的积分 : <span>5000</span></h2>
+            <a href="#">兑换规则</a>
         </div>
-        <div class="float-r">
-            <em class="animate">+ 5积分</em>
-            <span class="sign">点击签到</span>
-        </div>
-    </div>  
     </div>
     
     <div id="filter">
