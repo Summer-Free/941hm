@@ -64,6 +64,10 @@
         color: #fff;
         cursor: pointer;
         background: url(themes/ecmoban_dsc/iamges/20170517/integral-bg1.png) no-repeat top center;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+             -o-user-select: none;
+                user-select: none;
     }
     .icon.icon-down {
         background: url(images/ecsc_icon.png) no-repeat;
@@ -85,7 +89,7 @@
         font-weight: 900;
         color: #ff0000;
         opacity: 0;
-        filter: Alpha(opacity=0);
+        filter: Alpha(opacity=0)\9;
     }
     .section-3 {
         margin-bottom: 12px;
@@ -162,7 +166,7 @@
             </div>
             <div class="float-r">
                 <em class="animate">+ 5积分</em>
-                <span class="sign">点击签到</span>
+                <span class="sign" onselectstart="return false;" unselectable="on">点击签到</span>
             </div>
         </div>  
 
@@ -380,16 +384,19 @@
                     $val = $(".section-3 h2 span"),
                     newVal = Number($val.text());
 
-                //积分 + 5的动画
-                $em.animate({bottom: 110,opacity: 1},1000);
-                $em.animate({opacity: 0},500);
-                $em.animate({bottom: 80},100,function() {
+                if(!$em.is(":animated")) {
 
-                    //改变积分的最终值
-                    newVal += 5;
-                    $val.text(newVal);
+                    //积分 + 5的动画
+                    $em.animate({bottom: 110,opacity: 1},1000);
+                    $em.animate({opacity: 0},500);
+                    $em.animate({bottom: 80},100,function() {
 
-                });
+                        //改变积分的最终值
+                        newVal += 5;
+                        $val.text(newVal);
+
+                    });
+                };
 
                 //改变按钮状态
                 $this.text("已签到");

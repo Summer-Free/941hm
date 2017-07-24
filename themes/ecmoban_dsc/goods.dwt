@@ -1043,10 +1043,11 @@ function changePriceResponse(res)
 	}
 	
 	if(document.getElementById('ECS_SHOPPRICE')){ 
-        // 2017/07/21 注释  此处控制  数量 * 单价 的结果
-		// if(document.getElementById('ECS_MARKETPRICE')){
-		// 	document.getElementById('ECS_MARKETPRICE').innerHTML = res.result_market;
-		// }
+
+        // 2017/07/21 注释  此处控制  数量 * 市场价 的结果
+		if(document.getElementById('ECS_MARKETPRICE')){
+			document.getElementById('ECS_MARKETPRICE').innerHTML = res.result_market;
+		}
 		
 		if(res.onload == 'onload'){
 			document.getElementById('ECS_SHOPPRICE').innerHTML = res.result;
@@ -1238,7 +1239,9 @@ function quantity(){
 		if(quantity>perMinNumber){
 			quantity-=1;
 			$("#quantity").val(quantity);
-            changePrice('onload');//@author bylu 数量减少后获取白条分期新价格;
+
+            // 2017-07-24注释 控制  最终价格 = 商品数量 * 个数
+            // changePrice('onload');//@author bylu 数量减少后获取白条分期新价格;
 
 		}else{
 			$("#quantity").val(perMinNumber);
@@ -1281,7 +1284,9 @@ function quantity(){
 				err = 0;
 			}
 			$("#quantity").val(quantity);
-            changePrice('onload');//@author bylu 数量增加后获取白条分期新价格;
+
+            // 2017-07-24注释 控制  最终价格 = 商品数量 * 个数
+            // changePrice('onload');//@author bylu 数量增加后获取白条分期新价格;
 		}else{
 			if(perNumber == 0){
 				perNumber = 1;

@@ -32,7 +32,7 @@
 	border: 1px solid #9c9c9a;
 }
 #header .wrap-search > .ecsc-search {
-	padding-top: 16px;
+	padding-top: 19px;
 	padding-bottom: 13px;
 }
 #header .wrap-search form {
@@ -227,7 +227,7 @@
 }
 #header .main-nav>li {
 	float: left;
-	margin-right: 37px;
+	margin-right: 34px;
 	height: 30px;
 	line-height: 30px;
 	text-align: center;
