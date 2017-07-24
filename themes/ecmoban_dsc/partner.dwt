@@ -308,7 +308,7 @@
             <div class="section-11">
                 <div class="w1200">
                     <h2 class="big">报名入口</h2>
-                    <form action="partner.php" method="post" id="form_info">
+                    <form action="#" method="post" id="form_info">
                         <div class="clearfix">
                             <label for="">姓名 :</label>
                             <input type="text" id="bm_name" name="bm_name" />
@@ -320,22 +320,19 @@
                         <div class="clearfix">
                             <label for="">所在省 :</label>
                             <select name="province" id="province">
-                                <option value="null">请选择省</option>
-                                <!--{foreach from=$proice_res item=proice_res name=proice_res}-->
-                                    <option value="{$proice_res.region_id}">{$proice_res.region_name}</option>
-                                <!--{/foreach}-->
+                                <option data-value="null">请选择省</option>
                             </select>
                         </div>
                         <div class="clearfix">
                             <label for="">所在市 :</label>
-                            <select name="" id="city">
-                                <option value="null">请选择市</option>
+                            <select name="city" id="city">
+                                <option data-value="null">请选择市</option>
                             </select>
                         </div>
                         
                         <div class="clearfix">
                             <label></label>
-                            <button type="submit" id="check_submit">提交</button>
+                            <button type="button" id="check_submit">提交</button>
                         </div>
                     </form>
                 </div>
@@ -354,7 +351,6 @@
                             reg = /^[\u4e00-\u9fa5]{2,4}$/i,
                             city = $("#city option:selected").val(),
                             province = $("#province option:selected").val();
-
                         if (!reg.test(bm_name))
                             {
                                 alert("请输入2-4个汉字！"); 
@@ -363,7 +359,7 @@
                         else if(!(/^1[34578]\d{9}$/.test(bm_phone)))
                             { 
                                 alert("手机号码有误，请重填");  
-                                return false; 
+                                return false;
                             }
                         else if(province == "null")
                             { 
@@ -371,12 +367,11 @@
                                 return false; 
                             }
                         else if(city == "null") 
-                        {
-                            alert("请选择您所在城市!");  
-                            return false;
-                        }
-                        };
-
+                            {
+                                alert("请选择您所在城市!");  
+                                return false;
+                            };
+                        $("#form_info").submit();
                 })
             })
         </script> 
