@@ -11,7 +11,7 @@
                             <li><a href="user.php?act=order_list">我的订单</a></li>
                             <li><a href="article.php?id=74">厂家入驻</a></li>
                             <li><a href="merchants.php?id=96">商家中心</a></li>
-                            <li><a href="#" target="_blank">帮助中心</a></li>
+                            <li><a href="article_cat.php?id=1008" target="_blank">帮助中心</a></li>
                             <li class="padding-r-0"><a href="#">商城资讯</a></li>
                         </ul>
                     </div>
