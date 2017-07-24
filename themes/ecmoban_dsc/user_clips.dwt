@@ -47,21 +47,6 @@
     :root .ui-grey-checkbox:checked+label {
         background: url(images/checked-grey-icon.png) no-repeat left center;
     }
-    .message-board-content {
-        width: 902px;
-        height: 420px;
-    }
-    .message-board-content {
-        padding: 57px 108px 18px 279px;
-    }
-    .user-message-list .item .value .text {
-        height: 30px;
-        line-height: 24px;
-    }
-    .message-board-content .item .value .text, 
-    .message-board-content .item .value textarea {
-        width: 100%;
-    }
     .user-vip-list .u-price-percent {
         width: 270px;
     }
@@ -70,6 +55,13 @@
     }
     .aff-list .aff-btn .sub {
         margin-top: 17px;
+    }
+    #header .nav {
+        margin-top: 0;
+        background-color: transparent;
+    }
+    #user-info *,.main * {
+        box-sizing: content-box;
     }
 </style>
 

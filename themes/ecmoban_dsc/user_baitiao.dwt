@@ -27,6 +27,15 @@
     <script type="text/javascript" src="themes/ecmoban_dsc/js/ZeroClipboard/ZeroClipboard.js"></script>
 
     {insert_scripts files='suggest.js,warehouse_area.js'}
+
+    <style>
+        .main * {
+            box-sizing: content-box;
+        }
+        #header .nav {
+            background-color: transparent;
+        }
+    </style>
 </head>
 
 

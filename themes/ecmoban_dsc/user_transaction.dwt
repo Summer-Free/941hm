@@ -35,13 +35,7 @@
         width: 139px;
     }
     .user_address_info .thead {
-        width: 901px;
-    }
-    .user_return .user-single-list .u-operate {
-        width: 172px;
-    }
-    .safe-item .fore1 {
-        width: 200px;
+        width: 900px;
     }
     .bonus-container {
         width: 902px;
@@ -58,31 +52,12 @@
         height: 26px;
         line-height: 26px;
     }
-    .user-bonus-temp .u-state {
-        width: 128px;
-    }
     .user-bonus-temp .user-bonus-help {
         width: 902px;
-    }
-    .coupon-item .c-type,
-    .coupon-items02 .coupon-item .c-msg {
-        height: 145px;
-    }
-    .user-main .td_bf, .user-item-temp .td_bf {
-        width: 902px;
-    }
-    .user-trackpack .u-state {
-        width: 288px;
     }
     .user-fund-management .user-fund-tabs li {
         width: 110px;
         font-size: 12px;
-    }
-    .user-fund-management .u-operation {
-        width: 129px;
-    }
-    .user-fund-management .th.u-desc {
-        width: 599px;
     }
     .user-fund-sumu .td .item .value input {
         height: 30px;
@@ -100,6 +75,12 @@
     }
     .user-payment-method .payment-info .payment-info-desc {
         width: 100%;
+    }
+    .main * {
+        box-sizing: content-box;
+    }
+    #header .nav {
+        background-color: transparent;
     }
 </style>
 <body id="user">
