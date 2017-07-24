@@ -5,13 +5,13 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 225px;
-	height: 78px;
+	width: 291px;
+	height: 108px;
 	text-indent: -9999px;
-	background: url(../../iamges/20170517/logo.gif) no-repeat left center;
+	background: url(../../iamges/20170517/logo.png) no-repeat left center;
 }
 #header .wrap-search {
-	padding-bottom: 15px;
+	margin: 39px 15px 0 0;
 }
 #header .wrap-search > .ecsc-search,
 #header .wrap-search > a,
@@ -30,10 +30,6 @@
 	line-height: 33px;
 	color: #999;
 	border: 1px solid #9c9c9a;
-}
-#header .wrap-search > .ecsc-search {
-	padding-top: 19px;
-	padding-bottom: 13px;
 }
 #header .wrap-search form {
 	position: relative;
@@ -64,17 +60,10 @@
 #header .classification {
 	position: relative;
 	width: 291px;
-	color: #fff;
 	cursor: pointer;
-	background-color: #47a9fd!important;
-	-webkit-transition: all .3s linear;
-	   -moz-transition: all .3s linear;
-	    -ms-transition: all .3s linear;
-	     -o-transition: all .3s linear;
-	        transition: all .3s linear;
 }
 #header .classification:hover {
-	background-color: #95b0b2!important;
+	color: #fff;
 }
 .slide-top-bar {
 	overflow: hidden;	
@@ -227,7 +216,7 @@
 }
 #header .main-nav>li {
 	float: left;
-	margin-right: 34px;
+	margin-right: 46px;
 	height: 30px;
 	line-height: 30px;
 	text-align: center;
@@ -235,7 +224,7 @@
 #header .main-nav>li.active>a,
 #header .main-nav>li:hover >a,
 #header .classification dd a:hover {
-	color: #47a9fd;
+	color: #fff;
 }
 #header .classification .dropdown-menu {
 	position: absolute;

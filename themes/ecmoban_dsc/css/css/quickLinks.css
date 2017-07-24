@@ -307,7 +307,7 @@ i.ibar_recharge-arrow {width: 6px;height: 3px;background: url(../images/arrow-do
 .ibar_recharge-btn {text-align: center;padding-top: 3px;}
 .ibar_recharge-btn input {border: 0;color: #fff;display: inline-block;width: 115px;height: 31px;font-size: 16px;background: #f32166;background: -webkit-linear-gradient(top,#fb2f72,#ec5151);cursor: pointer;}
 .ibar_recharge-btn input:hover {background: -webkit-linear-gradient(top,#fa578c,#f73776);}
-.ibar_login_box {width: 287px;height: 205px;padding: 10px;background: #fff;box-shadow: 0 0 5px rgba(0,0,0,.4);border-radius: 5px 0 0 5px;border-left: 1px solid #ccc\0;border-top: 1px solid #ccc\0;border-bottom: 1px solid #ccc\0;z-index: 3;position: absolute;top: 0px;left: -287px;left: -288px\0;display: none;}
+.ibar_login_box {width: 287px;height: 205px;padding: 10px;background: #fff;box-shadow: 0 0 5px rgba(0,0,0,.4);border-radius: 5px 0 0 5px;border-left: 1px solid #ccc\0;border-top: 1px solid #ccc\0;border-bottom: 1px solid #ccc\0;z-index: 3;position: absolute;top: 0px;left: -307px;left: -288px\0;display: none;}
 .ibar_login_box .avatar_box {width: 267px;overflow: hidden;height:120px;}
 .status_login .avatar_imgbox {float: left;margin: 6px 20px 0 5px;display: inline;}
 .ibar_login_box .avatar_imgbox {width: 100px;height: 100px;border-radius: 50%;overflow: hidden;}
