@@ -551,7 +551,6 @@
 }
 .section-11 input {
 	padding-left: 8px;
-	border: 1px solid #a8acb3;
 }
 .section-11 input:focus {
 	border-color: #f99021;
@@ -571,4 +570,8 @@
 }
 .section-11 form {
 	padding: 40px 0 0 70px;
+}
+.section-11 select,
+.section-11 input {
+	border: 1px solid #a8acb3;
 }
