@@ -164,6 +164,12 @@ table{border-collapse:collapse;border-spacing:0;}
   border-right: none!important;
 }
 
+
+/* font color*/
+.color-ff0000 {
+  color: #ff0000;
+}
+
 /*font-size*/
 .font-size-16 {
   font-size: 16px;
@@ -211,6 +217,9 @@ table{border-collapse:collapse;border-spacing:0;}
 .margin-t-8 {
   margin-top: 8px;
 }
+.margin-t-12 {
+  margin-top: 12px;
+}
 .margin-t-15 {
   margin-top: 15px;
 }
@@ -225,6 +234,9 @@ table{border-collapse:collapse;border-spacing:0;}
 }
 .margin-r-0 {
   margin-right: 0!important;
+}
+.margin-r-12 {
+  margin-right: 12px!important;
 }
 .margin-r-25 {
   margin-right: 25px;
@@ -273,6 +285,15 @@ table{border-collapse:collapse;border-spacing:0;}
        -o-transform: translateX(1px) translateY(-1px);
           transform: translateX(1px) translateY(-1px);
 }
+
+/*定位相关样式*/
+.position-re {
+  position: relative;
+}
+.position-ab {
+  position: absolute;
+}
+
 
 /*transition style*/
 .transition {

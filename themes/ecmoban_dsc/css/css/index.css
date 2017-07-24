@@ -29,7 +29,7 @@
 	float: left;
 	margin-right: 8px;
 	width: 241px;
-	height: 280px;
+	height: 300px;
 	border: 1px solid #d7d6d6;
 	background-color: #fff;
 }
@@ -41,13 +41,22 @@
 #main-body .section-2 li {
 	box-shadow: 0 2px 5px #d7d6d6;
 }
+#main-body .section-2>h2 {
+	margin-bottom: 12px;
+	border: 1px solid #e2e2e5;
+	border-top: none;
+	box-shadow: 0 3px 3px #e2e2e5;
+}
+#main-body .section-2>h2 img {
+	max-width: 100%;
+}
 .slide-mrms .JS-slide-scroll li div,
 .slide-mrms .JS-slide-scroll li p {
 	padding: 0 8px;
-	line-height: 33px;
+	line-height: 32px;
 }
 .slide-mrms .JS-slide-scroll li p {
-	line-height: 40px;
+	line-height: 32px;
 }
 .slide-mrms .JS-slide-scroll li img {
 	border: 2px solid #f2f2f2;
@@ -58,9 +67,11 @@
 	text-decoration: none;
 }
 .slide-mrms .JS-slide-scroll li span {
-	display: inline-block;
-	width: 66px;
+	display: block;
+	margin: 5px auto 0;
+	width: 223px;
 	height: 33px;
+	line-height: 33px;
 	color: #fff;
 	text-align: center;
 	background-color: #fb9b64;
@@ -85,23 +96,31 @@
 }
 #main-body .slide-mrms {
 	width: 741px;
-	height: 281px;
+	height: 300px;
 }
 .section-3 .New-arrival {
-	padding: 64px 10px 0 22px;
+	padding: 0 10px 0 22px;
 }
 .section-3 .Personal-tailor {
-	padding: 64px 22px 54px 10px;
+	padding: 0 22px 54px 10px;
+	height: 560px;
 }
 .section-3 .New-arrival h2 a,
 .section-3 .Personal-tailor h2 a {
 	background-image: url(../../iamges/20170517/sprite-1.png);
 	background-repeat: no-repeat;
 }
+.section-3 .New-arrival>.float-r {
+	padding-top: 42px;
+}
+.section-3 .Personal-tailor>.float-r {
+	position: relative;
+	top: -90px;
+}
 .section-3 .Personal-tailor h2 a,
 .section-3 .New-arrival h2 a {
 	display: block;
-	margin: 0 auto 38px;
+	margin: 20px auto;
 	width: 288px;
 	height: 59px;
 	text-indent: -9999px;
@@ -114,17 +133,15 @@
 }
 .New-arrival .wrap-slide,
 .Personal-tailor .wrap-slide {
-	width: 545px;
-	height: 365px;
+	width: 532px;
+	height: 542px;
 }
 .section-3 .New-arrival .float-l .left-a,
 .section-3 .New-arrival .float-l .right-a,
 .section-3 .Personal-tailor .float-r .left-a,
 .section-3 .Personal-tailor .float-r .right-a {
 	display: block;
-	padding-bottom: 10px;
 	width: 260px;
-	height: 365px;
 	border: 1px solid #d9d8d8;
 	background-color: #fff;
 	box-shadow: 0 2px 8px 0 #d9d8d8;
@@ -134,23 +151,39 @@
 	margin: 0 auto;
 	max-width: 100%;
 }
-.section-3 .New-arrival a span,
-.section-3 .Personal-tailor a span {
-	display: block;
-	padding: 0 25px;
-	font-size: 21px;
+.section-3 .New-arrival a>div,
+.section-3 .Personal-tailor a>div {
+	padding: 0 8px;
+}
+.section-3 h3 {
+	width: 100%;
+}
+.section-3 .New-arrival a *,
+.section-3 .Personal-tailor a * {
 	line-height: 1.8;
+}
+.section-3 ins {
+	font-size: 18px;
+	color: #ff0000;
+}
+.section-3 del {
+	position: relative;
+	top: 8px;
+	font-size: 12px;
 }
 .section-4 {
 	border-bottom: 4px solid #dcdcdc;
 }
+.section-4 dl {
+	padding-bottom: 30px;
+}
 .section-4 dt {
 	position: relative;
-	margin-bottom: 45px;
+	margin-bottom: 30px;
 	padding-left: 8px;
 	height: 57px;
 	line-height: 57px;
-	font-size: 25px;
+	font-size: 18px;
 	background-color: #95b0b2;
 }
 .section-4 dt,
@@ -161,25 +194,10 @@
 	position: absolute;
 	top: 0;
 	right: 30px;
-	font-size: 17px;
-}
-.section-4 dd {
-	padding: 0 8px;
+	font-size: 14px;
 }
 .section-4 dd a {
 	float: left;
-	height: 58px;
-	margin-right: 27px;
-}
-.section-4 .list-2 {
-	padding-top: 25px;
-	padding-bottom: 45px;
-}
-.section-4 dd img{
-	display: inline;
-}
-.section-4 .list-2 a {
-	margin-right: 29px;
 }
 .icon-start-black {
 	cursor: pointer;
@@ -316,7 +334,7 @@
 }
 .section-10  dt {
 	padding-bottom: 15px;
-	font-size: 25px;
+	font-size: 18px;
 	border-bottom: 1px solid #333;
 }
 .section-10 dd a {
@@ -376,12 +394,12 @@
 }
 .common-temp .head h2 {
 	float: left;
-	font-size: 25px;
+	font-size: 18px;
 }
 .common-temp .head a {
 	float: right;
 	color: #fff;
-	font-size: 16px;
+	font-size: 14px;
 }
 .common-temp ul {
 	padding: 5px 0;
@@ -392,14 +410,16 @@
 	width: 293px;
 	box-shadow: 0 3px 10px #d9d8d8;
 }
-.common-temp li div>img {
+.common-temp li img {
 	display: inline-block;
 	width: 100%;
 	max-width: 100%;
 }
 .common-temp li h3 {
-	padding: 10px 30px;
-	font-size: 20px;
+	font-size: 16px;
 	line-height: 1.8;
+}
+.common-temp li div {
+	padding: 10px;
 	background-color: #fff;
 }
