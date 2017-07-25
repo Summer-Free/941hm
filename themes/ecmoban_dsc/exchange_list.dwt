@@ -171,7 +171,15 @@
         </div>  
 
         <div class="section-3 clearfix">
-            <h2>您的积分 : <span>5000</span></h2>
+            <h2>您的积分 :
+                <span> 
+                    <!--{if $info.integral == 0}-->
+                        0
+                    <!--{else}-->
+                        {$info.integral}
+                    <!--{/if}-->
+                </span>
+            </h2>
             <a href="#">兑换规则</a>
         </div>
     </div>
@@ -266,7 +274,7 @@
                 <li>
                     <div class="produc-content">
                         <div class="p-img"><a href="{$goods.url}" target="_blank"><img src="themes/ecmoban_dsc/images/loadGoods.gif" width="142" height="142" class="lazy" data-original="{$goods.thumb}"/></a></div>
-                        <div class="p-price"><em>积分</em>{$goods.exchange_integral}</div>
+                        <div class="p-price" id="val"><em>积分</em>{$goods.exchange_integral}</div>
                         <div class="btns"><a href="{$goods.url}" target="_blank" class="btn-9">立即兑换</a></div>
                     </div>
                 </li>
@@ -394,10 +402,17 @@
                         //改变积分的最终值
                         newVal += 5;
                         $val.text(newVal);
-
-                    });
+                        $.ajax({
+                        type:"POST",
+                        url:"exchange.php",
+                        data:{newVal:newVal},
+                        success:function(msg)
+                        {
+                            $("#val").html(msg);
+                        }
+                        })  
+                            });
                 };
-
                 //改变按钮状态
                 $this.text("已签到");
 
