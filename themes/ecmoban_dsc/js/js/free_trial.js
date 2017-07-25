@@ -24,7 +24,7 @@ $(function() {
 
 	};
 
-	//调用
-	tabjs(".js-tab",".js-content");
+	//调用  2017-07-25注释
+	// tabjs(".js-tab",".js-content");
 
 });

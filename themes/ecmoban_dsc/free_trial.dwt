@@ -10,7 +10,7 @@
         <div id="header">
                 <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
                 <!--slide banner start-->
-                <div class="slide-banner bg-color-f5f5f5">      
+                <div class="slide-banner">      
                         <div class="w1200">
                                 <div class="JS-slide">
                                         <ul class="content">
@@ -36,100 +36,51 @@
 
         <!--main body start-->
         <div class="w1200 bg-color-f5f5f5" id="main-body">
-                <div class="section-1">
-                        <ul class="clearfix">
-                                <li><a href="#" title="我的试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-pic1.jpg" alt=""></a></li>
-                                <li><a href="#" title="试用流程"><img src="themes/ecmoban_dsc/iamges/20170517/free-pic2.jpg" alt=""></a></li>
-                                <li class="margin-r-0"><a href="exchange.php" target="_blank" title="积分换购"><img src="themes/ecmoban_dsc/iamges/20170517/free-pic3.jpg" alt=""></a></li>
-                        </ul>
-                </div>
+            <div class="section-1">
+                    <ul class="clearfix">
+                            <li><a href="#" title="我的试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-pic1.jpg" alt=""></a></li>
+                            <li><a href="#" title="试用流程"><img src="themes/ecmoban_dsc/iamges/20170517/free-pic2.jpg" alt=""></a></li>
+                            <li class="margin-r-0"><a href="exchange.php" target="_blank" title="积分换购"><img src="themes/ecmoban_dsc/iamges/20170517/free-pic3.jpg" alt=""></a></li>
+                    </ul>
+            </div>
 
-                <div class="section-2">
-                        <!--切换面板-->
-                        <h2>
-                                <ul class="js-tab clearfix">
-                                        <li class="active">休闲餐桌</li>
-                                        <li>复古沙发</li>
-                                        <li class="margin-r-0">文艺书桌</li>
-                                </ul>
-                        </h2>
-                        <!--切换内容-->
-                        <div class="js-content">
-                                <div class="active item clearfix">
-                                        <a href="#" title="立即试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-product1.jpg" alt="" /></a>
-                                        <a href="#" title="立即试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-product2.jpg" alt="" /></a>
-                                        <a href="#" title="立即试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-product3.jpg" alt="" /></a>
-                                        <a href="#" title="立即试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-product4.jpg" alt="" /></a>
-                                </div>
-                                <div class="item clearfix">
-                                        <a href="#" title="立即试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-product1.jpg" alt="" /></a>
-                                        <a href="#" title="立即试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-product2.jpg" alt="" /></a>
-                                        <a href="#" title="立即试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-product3.jpg" alt="" /></a>
-                                        <a href="#" title="立即试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-product4.jpg" alt="" /></a>
-                                </div>
-                                <div class="item clearfix">
-                                        <a href="#" title="立即试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-product1.jpg" alt="" /></a>
-                                        <a href="#" title="立即试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-product2.jpg" alt="" /></a>
-                                        <a href="#" title="立即试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-product3.jpg" alt="" /></a>
-                                        <a href="#" title="立即试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-product4.jpg" alt="" /></a>
-                                </div>
-                        </div>
-                </div>
+            <div class="section-2 clearfix">
+                <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/free-product1.jpg" alt="" /></a>
+                <a href="#" class="margin-r-0"><img src="themes/ecmoban_dsc/iamges/20170517/free-product2.jpg" alt="" /></a>
+                <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/free-product3.jpg" alt="" /></a>
+                <a href="#" class="margin-r-0"><img src="themes/ecmoban_dsc/iamges/20170517/free-product4.jpg" alt="" /></a>
+            </div>
 
-                <div class="section-3 clearfix">
-                        <img src="themes/ecmoban_dsc/iamges/20170517/free-product5.png" alt="">
-                        <dl>
-                                <dt>刺猬紫檀矩形博古架</dt>
-                                <dd>原木纹理，色泽润雅，精致工艺</dd>
-                                <dd>试用好评率100%</dd>
-                                <dd>申请即可试用</dd>
-                                <dd><a href="#">立即使用</a></dd>
-                        </dl>
-                </div>
+            <div class="section-3 clearfix">
+                <img src="themes/ecmoban_dsc/iamges/20170517/free-product5.png" alt="">
+                <dl>
+                    <dt>刺猬紫檀琴桌两件套</dt>
+                    <dd>原木纹理，色泽润雅，精致工艺</dd>
+                    <dd>试用好评率100%</dd>
+                    <dd>申请即可试用</dd>
+                    <dd><a href="#">立即使用</a></dd>
+                </dl>
+            </div>
 
-                <div class="section-2 padding-t-60">
-                        <!--切换面板-->
-                        <h2>
-                                <ul class="js-tab clearfix">
-                                        <li class="active">休闲餐桌</li>
-                                        <li>复古沙发</li>
-                                        <li class="margin-r-0">文艺书桌</li>
-                                </ul>
-                        </h2>
-                        <!--切换内容-->
-                        <div class="js-content">
-                                <div class="active item clearfix">
-                                        <a href="#" title="立即试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-product1.jpg" alt="" /></a>
-                                        <a href="#" title="立即试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-product2.jpg" alt="" /></a>
-                                        <a href="#" title="立即试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-product3.jpg" alt="" /></a>
-                                        <a href="#" title="立即试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-product4.jpg" alt="" /></a>
-                                </div>
-                                <div class="item clearfix">
-                                        <a href="#" title="立即试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-product1.jpg" alt="" /></a>
-                                        <a href="#" title="立即试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-product2.jpg" alt="" /></a>
-                                        <a href="#" title="立即试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-product3.jpg" alt="" /></a>
-                                        <a href="#" title="立即试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-product4.jpg" alt="" /></a>
-                                </div>
-                                <div class="item clearfix">
-                                        <a href="#" title="立即试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-product1.jpg" alt="" /></a>
-                                        <a href="#" title="立即试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-product2.jpg" alt="" /></a>
-                                        <a href="#" title="立即试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-product3.jpg" alt="" /></a>
-                                        <a href="#" title="立即试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-product4.jpg" alt="" /></a>
-                                </div>
-                        </div>
-                </div>
+            <div class="section-4 padding-t-60 clearfix">
+                <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/free-product5.jpg" alt="" /></a>
+                <a href="#" class="margin-r-0"><img src="themes/ecmoban_dsc/iamges/20170517/free-product6.jpg" alt="" /></a>
+                <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/free-product7.jpg" alt="" /></a>
+                <a href="#" class="margin-r-0"><img src="themes/ecmoban_dsc/iamges/20170517/free-product8.jpg" alt="" /></a>
+            </div>
 
-                <div class="section-3 clearfix">
-                        <img src="themes/ecmoban_dsc/iamges/20170517/free-product5.png" alt="">
-                        <dl>
-                                <dt>刺猬紫檀矩形博古架</dt>
-                                <dd>原木纹理，色泽润雅，精致工艺</dd>
-                                <dd>试用好评率100%</dd>
-                                <dd>申请即可试用</dd>
-                                <dd><a href="#">立即使用</a></dd>
-                        </dl>
-                </div>
+            <div class="section-3 clearfix">
+                <img src="themes/ecmoban_dsc/iamges/20170517/free-product6.png" alt="">
+                <dl>
+                    <dt>刺猬紫檀二联柜</dt>
+                    <dd>时尚典雅，纹理细腻，造型流畅</dd>
+                    <dd>申请率90%</dd>
+                    <dd>申请即可试用</dd>
+                    <dd><a href="#">立即使用</a></dd>
+                </dl>
+            </div>
         </div>
+        
         <!--main body end-->
         <!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->
         <!--本页专用JS-->

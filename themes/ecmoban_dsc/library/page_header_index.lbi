@@ -21,7 +21,7 @@
 
             <!--Navigation start-->
             <div class="nav">
-                <div class="w1200 clearfix padding-tb-5">
+                <div class="w1200 clearfix">
                     <div class="float-l">
                         <h1 class="logo"><a href="index.php">941红木</a></h1>
                     </div>

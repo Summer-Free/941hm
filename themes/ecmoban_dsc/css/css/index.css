@@ -422,3 +422,8 @@
 .common-temp li div {
 	padding: 10px;
 }
+.common-temp li div span {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
