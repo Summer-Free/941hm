@@ -441,7 +441,7 @@
 							<img src="{$ct_sql.goods_thumb}" alt="{$ct_sql.goods_name}" title="{$ct_sql.goods_name}" />
 							<div>
 								<h3>{$ct_sql.goods_name|truncate:17}</h3>
-								<span class="color-ff0000">&yen; 999999</span>
+								<span class="color-ff0000">&yen;{$ct_sql.shop_price}</span>
 							</div>
 						</a>
 					</li>
@@ -466,7 +466,7 @@
 							<img src="{$kt_sql.goods_thumb}" alt="{$kt_sql.goods_name}" title="{$kt_sql.goods_name}" />
 							<div>
 								<h3>{$kt_sql.goods_name|truncate:17}</h3>
-								<span class="color-ff0000">&yen; 999999</span>
+								<span class="color-ff0000">&yen;{$kt_sql.shop_price}</span>
 							</div>
 						</a>
 					</li>
@@ -491,7 +491,7 @@
 									<img src="{$sf_sql.goods_thumb}" alt="{$sf_sql.goods_name}" title="{$sf_sql.goods_name}" />
 									<div>
 										<h3>{$sf_sql.goods_name|truncate:17}</h3>
-										<span class="color-ff0000">&yen; 999999</span>
+										<span class="color-ff0000">&yen;{$sf_sql.shop_price}</span>
 									</div>
 								</a>
 							</li>
@@ -516,7 +516,7 @@
 									<img src="{$ws_sql.goods_thumb}" alt="{$ws_sql.goods_name}" title="{$ws_sql.goods_name}" />
 									<div>
 										<h3>{$ws_sql.goods_name|truncate:17}</h3>
-										<span class="color-ff0000">&yen; 999999</span>
+										<span class="color-ff0000">&yen;{$ws_sql.shop_price}</span>
 									</div>
 								</a>
 							</li>
