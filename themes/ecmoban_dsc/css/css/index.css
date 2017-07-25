@@ -36,6 +36,7 @@
 #main-body .section-2 li a {
 	display: block;
 	overflow: hidden;
+	background-color: #fff;
 }
 #main-body .section-2 .mrms,
 #main-body .section-2 li {
@@ -57,9 +58,6 @@
 }
 .slide-mrms .JS-slide-scroll li p {
 	line-height: 32px;
-}
-.slide-mrms .JS-slide-scroll li img {
-	border: 2px solid #f2f2f2;
 }
 .slide-mrms .JS-slide-scroll ins {
 	font-size: 21px;
@@ -409,6 +407,7 @@
 	margin: 0 9px 8px 0;
 	width: 293px;
 	box-shadow: 0 3px 10px #d9d8d8;
+	background-color: #fff;
 }
 .common-temp li img {
 	display: inline-block;
@@ -418,8 +417,8 @@
 .common-temp li h3 {
 	font-size: 16px;
 	line-height: 1.8;
+	text-indent: -8px;
 }
 .common-temp li div {
 	padding: 10px;
-	background-color: #fff;
 }

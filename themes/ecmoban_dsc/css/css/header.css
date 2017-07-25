@@ -6,12 +6,12 @@
 	top: 0;
 	left: 0;
 	width: 291px;
-	height: 108px;
+	height: 93px;
 	text-indent: -9999px;
 	background: url(../../iamges/20170517/logo.png) no-repeat left center;
 }
 #header .wrap-search {
-	margin: 39px 15px 0 0;
+	margin: 34px 15px 0 0;
 }
 #header .wrap-search > .ecsc-search,
 #header .wrap-search > a,
@@ -212,7 +212,7 @@
 	margin-top: 5px;
 }
 #header .nav img.float-r {
-	margin-top: 2px;
+	margin: 0 -5px 0 0;
 }
 #header .main-nav>li {
 	float: left;
