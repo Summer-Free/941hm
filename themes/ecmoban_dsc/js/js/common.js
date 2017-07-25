@@ -484,6 +484,191 @@
 
 	};
 
+	//锚点导航相关效果
+	$.fn.navFixed = function() {
+
+		var $this = $(this),
+			$li = $this.children(),
+			$div = $this.siblings().children(),
+			this_top = $this.offset().top,
+			div_id = "";
+
+		$(window).scroll(function() {
+
+			var window_top = $(window).scrollTop();
+
+			//当页面滚动到锚点导航时,让导航固定在顶部
+			(window_top > this_top)?$this.css("position","fixed"):$this.css("position","absolute");
+
+			//当页面滚动的距离大于元素与页面顶部的距离时，获取当前元素的 id
+			$.each($div,function(index,div) {
+
+				var div_top = $(div).offset().top;
+
+				if(window_top >= div_top - 80) {
+
+					div_id = $($div[index]).attr("id");
+
+				};
+
+			});
+
+			//找到锚点的href属性等于 上面获取的 id的元素，并添加类名
+			$.each($li,function(index,li) {
+
+				var href = $(li).find("a").attr("href").split("#");
+
+				if(href[href.length - 1] == div_id) {
+
+					$($li[index]).addClass("current").siblings().removeClass("current");
+
+				};
+
+			});
+
+		});
+	};
+
+	//锚点平滑滚动
+	$.fn.anchorScroll = function() {
+
+		var $this = $(this);
+
+		$this.on("click",function() {
+
+		    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+
+		      var $target = $(this.hash),
+		      	  $this_a = $(this),
+		      	  $li = $this_a.parent(),
+		      	  $col_a = $(this);
+
+		      $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+
+		        if ($target.length) {
+
+			        var targetOffset = $target.offset().top - 80; //锚点定位在元素上方80PX处
+
+			        $('html,body').animate({scrollTop: targetOffset},500,function() {
+
+			        	if($this_a.index() < $col_a.length) {
+
+							$li.addClass("current").siblings().removeClass("current");
+
+			        	};
+
+			        });
+
+			        return false;
+
+		        };
+
+		    };
+		});
+	};
+
+	//给元素赋值高度,(由于定位造成的高度塌陷)
+	$.fn.getHeight = function() {
+
+		var	$this = $(this),
+			$div = $this.children(".content").height() + 30;
+
+		$this.height($div); //30 是距离底部的高度
+	};
+
+	//弹窗弹出和点击关闭按钮关闭
+	$.fn.dialogShow = function(options) {
+
+		var base = {
+						dialog: "",    //弹窗选择器
+						closeBtn: ""   //关闭按钮选择器
+					},
+			ops = $.extend(base,options),
+			$dialog = $(ops.dialog),
+			$close = $(ops.closeBtn),
+			$this = $(this);
+
+		$this.on("click",function() {
+			$dialog.show();
+		});
+
+		$close.on("click",function() {
+			$dialog.hide();
+		});
+
+	};
+
+	//倒计时函数
+	$.fn.countDown = function(options) {
+
+		var base = {
+						startTime: "", //开始时间 不设置则从现在开始
+						endTime: "",   //结束时间
+						tian: false,   //是否显示天
+						miao: true,    //是否显示秒
+						tianZ: "",     //是否加上天字
+						shiZ: "",      //是否加上时字
+						fenZ: "",      //是否加上分字
+						miaoZ: "",     //是否加上秒字
+					},
+			ops = $.extend(base,options),
+			$this = $(this),
+			timer = "",
+			action = function() {
+
+				var date = new Date(), //获取当前时间戳
+					cur_date = new Date(ops.startTime).getTime() || date.getTime(),
+					E_date = new Date(ops.endTime).getTime(),
+					result_time = E_date - cur_date, //获取结束时间和当前时间的剩余时间
+					d = "",
+					h = "",
+					m = "",
+					s = "";
+
+					h = Math.floor(result_time/(1000*60*60));
+					m = Math.floor(result_time/(1000*60)) - h*60;
+					s = Math.floor(result_time/1000)- h*60*60 - m*60;
+
+					//当时间是个位数时，在前面添加 0，（为了美观）
+					h = h < 10 ? "0"+h:h; 
+					m = m < 10 ? "0"+m:m;
+					s = s < 10 ? "0"+s:s;
+
+					if(ops.tian) {
+
+						d = Math.floor(result_time/(1000*60*60*24));
+						h = Math.floor(result_time/(1000*60*60)) - d*24;
+
+						if(ops.miao) {
+
+							$this.text(d + ops.tianZ + " : " + h + ops.shiZ + " : " + m + ops.fenZ + " : " + s + ops.miaoZ);
+						}else {
+							$this.text(d + ops.tianZ + " : " + h + ops.shiZ + " : " + m + ops.fenZ);
+						}
+
+					};
+
+					if(ops.miao) {
+
+						if(ops.tian) {
+
+							d = Math.floor(result_time/(1000*60*60*24));
+							h = Math.floor(result_time/(1000*60*60)) - d*24;
+
+							$this.text(d + ops.tianZ + " : " + h + ops.shiZ + " : " + m + ops.fenZ + " : " + s + ops.miaoZ);
+						}else {
+							$this.text(h + ops.shiZ + " : " + m + ops.fenZ + " : " + s + ops.miaoZ);
+						}
+
+					};
+
+			};
+
+			//开启定时器，
+			timer = setInterval(action,1000);
+
+	};
+
 })(jQuery,window,document);
 
 $(function() {

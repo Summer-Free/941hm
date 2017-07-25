@@ -218,7 +218,7 @@ table{border-collapse:collapse;border-spacing:0;}
   margin-top: 8px;
 }
 .margin-t-12 {
-  margin-top: 12px;
+  margin-top: 12px!important;
 }
 .margin-t-15 {
   margin-top: 15px;

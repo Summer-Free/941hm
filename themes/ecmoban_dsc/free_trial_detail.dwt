@@ -1,8 +1,11 @@
 <!doctype html>
 <html lang="zh-cn">
      <head>
+		<!--三级联动插件-->
+		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/city-picker.css"> 
         <!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem --><!--首页CSS以及部分通用部分的合并LBI-->
-        <!--本页专用-->
+		
+        <!--本页专用-->         
         <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/free_trial_detail.css">               
      </head>  
      <body>
@@ -14,14 +17,245 @@
         <!--header end-->
 
         <!--main body start-->
-        <div class="w1200 bg-color-f5f5f5" id="main-body">
-			
+        <div class="w1200 margin-t-12" id="main-body">
+            <div class="section-1 clearfix">
+                <div class="left float-l clearfix">
+                    <div class="product-pic float-l">
+                        <div class="big-pic">
+                            <img src="themes/ecmoban_dsc/iamges/20170517/detail-1.jpg" width="420" alt="" />
+                        </div>
+                    </div>
+                    <div class="product-detail float-r">
+                        <h2>【背书沙发】六件套 紫包金 WJHX/ZBJ/SF/6J/069</h2>
+                        <div class="detail">
+							市场价 : <span class="color-ff0000">36000元</span>
+							提供数量 : <em>3</em>
+                        </div>
+                        <div class="status bg-color-f5f5f5">
+							<div class="time">距结束 : <span>23天4时57分</span></div>
+							<div class="time" style="display: none;">申请已结束，请留意短信通知！</div>
+							<div class="btn" style="display: none;">免费申请</div>
+							<div class="btn bg-linear">免费申请</div>
+							<div class="btn" style="display: none;">已申请</div>
+                        </div>
+                        <div class="tip">
+                        	<div><em class="color-ff0000">400</em>人已申请，赶快去申请吧！</div>
+							<span>承&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;诺</span>
+							<span>正品保障</span>
+							<span>免运费</span>
+							<span>官方售后</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right float-r">
+					<img src="themes/ecmoban_dsc/iamges/20170517/free-product9.jpg" alt="" />
+					<p>温馨提示：试用商品无需退还，并由我们941红木提供官方售后服务。申请成功需要提交真实原创的试用报告。</p>
+                </div>
+            </div>
+
+            <div class="section-2 margin-t-25 clearfix">
+                <div class="left float-l">
+                	<div class="online margin-b-12"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/online-service.png" alt=""></a></div>
+                    <div class="new margin-b-12">
+                        <h3>热门试用</h3>
+                        <ul class="common-ul clearfix">
+                            <li>
+                                <a href="#">
+                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
+                                    <span>&yen;<em>75400.00</em></span>
+                                </a>
+                            </li>
+                            <li class="margin-r-0">
+                                <a href="#">
+                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
+                                    <span>&yen;<em>75400.00</em></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
+                                    <span>&yen;<em>75400.00</em></span>
+                                </a>
+                            </li>
+                            <li class="margin-r-0">
+                                <a href="#">
+                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
+                                    <span>&yen;<em>75400.00</em></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
+                                    <span>&yen;<em>75400.00</em></span>
+                                </a>
+                            </li>
+                            <li class="margin-r-0">
+                                <a href="#">
+                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
+                                    <span>&yen;<em>75400.00</em></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
+                                    <span>&yen;<em>75400.00</em></span>
+                                </a>
+                            </li>
+                            <li class="margin-r-0">
+                                <a href="#">
+                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
+                                    <span>&yen;<em>75400.00</em></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hot">
+                        <h3>最新试用</h3>
+                        <ul class="common-ul clearfix">
+                            <li>
+                                <a href="#">
+                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
+                                    <span>&yen;<em>75400.00</em></span>
+                                </a>
+                            </li>
+                            <li class="margin-r-0">
+                                <a href="#">
+                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
+                                    <span>&yen;<em>75400.00</em></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
+                                    <span>&yen;<em>75400.00</em></span>
+                                </a>
+                            </li>
+                            <li class="margin-r-0">
+                                <a href="#">
+                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
+                                    <span>&yen;<em>75400.00</em></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
+                                    <span>&yen;<em>75400.00</em></span>
+                                </a>
+                            </li>
+                            <li class="margin-r-0">
+                                <a href="#">
+                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
+                                    <span>&yen;<em>75400.00</em></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
+                                    <span>&yen;<em>75400.00</em></span>
+                                </a>
+                            </li>
+                            <li class="margin-r-0">
+                                <a href="#">
+                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
+                                    <span>&yen;<em>75400.00</em></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right float-r">
+                    <ul class="tab-nav clearfix">
+                        <li class="current"><a href="#baby-details">商品详情</a></li>
+                        <li><a href="#trial-report">试用报告</a></li>
+                    </ul>
+                    <div class="content">
+                        <div id="baby-details">
+                            <img src="themes/ecmoban_dsc/iamges/20170517/tab-pic-1.jpg" alt="">
+                            <img src="themes/ecmoban_dsc/iamges/20170517/tab-pic-2.jpg" alt="">
+                            <img src="themes/ecmoban_dsc/iamges/20170517/tab-pic-3.jpg" alt="">
+                            <img src="themes/ecmoban_dsc/iamges/20170517/tab-pic-4.jpg" alt="">
+                            <img src="themes/ecmoban_dsc/iamges/20170517/tab-pic-5.jpg" alt="">
+                        </div>
+                        <div id="trial-report" style="height: 500px;">试用报告内容</div>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
+		<!--申请表单弹窗-->
+		<div class="dialog-form">
+			<div class="bg"></div>
+			<div class="dialog-content">
+				<div class="close"></div>
+				<h3>请填写收货人信息</h3>
+				<form action="" method="">
+					<div>
+						<label for="#name">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名 : </label>
+						<input type="text" id="name" />
+					</div>
+					<div>
+						<label for="#phone">手&nbsp;&nbsp;机&nbsp;&nbsp;号 : </label>
+						<input type="text" id="phone" />
+					</div>
+					<div>
+						<label>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址 : </label>
+						<div class="city-picker-select"></div>
+					</div>
+					<div>
+						<label for="#detail-address">纤细地址 : </label>
+						<input type="text" id="detail-address" />
+					</div>
+					<div class="last-group">
+						<label></label>
+						<button class="bg-linear" type="submit">立即申请</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
         <!--main body end-->
         <!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->
+   
+   		<!--三级联动插件-->
+   		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/citydata.js"></script> 
+   		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/cityPicker-1.0.0.js"></script> 
         <!--本页专用JS-->
         <script type="text/javascript" src="themes/ecmoban_dsc/js/js/free_trial_detail.js"></script> 
+
+		<style>
+			.city-picker-select {
+				display: inline-block;
+				margin-bottom: 0;
+			}
+			.city-picker-select select {
+				width: 70px;
+				height: 30px;
+			}
+		</style>
+        <script>
+        	$(function() {
+
+				//原生城市-无联动
+				var select = $('.city-picker-select').cityPicker({
+					dataJson: cityData,
+					renderMode: false,
+					linkage: false
+				});
+
+				//设置城市
+				select.setCityVal([{
+					'id': '330000',
+					'name': '山西省'
+				}, {
+					'id': '330100',
+					'name': '杭州市'
+				}, {
+					'id': '330108',
+					'name': '滨江区'
+				}]);
+
+        	});
+        </script>
      </body>
 </html>     

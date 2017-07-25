@@ -177,109 +177,13 @@ $(function() {
 	//调用
 	operation(".section-1 .JS-count");
 
-
-	//锚点平滑滚动
-	$('.section-2 .tab-nav li a').click(function() {
-
-	    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-
-	      var $target = $(this.hash),
-	      	  $this_a = $(this),
-	      	  $li = $this_a.parent(),
-	      	  $col_a = $(".section-2 .tab-nav li a");
-
-	      $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
-
-	        if ($target.length) {
-
-		        var targetOffset = $target.offset().top - 80; //锚点定位在元素上方80PX处
-
-		        $('html,body').animate({scrollTop: targetOffset},500,function() {
-
-		        	if($this_a.index() < $col_a.length) {
-
-						$li.addClass("current").siblings().removeClass("current");
-
-		        	};
-
-		        });
-
-		        return false;
-
-	        };
-
-	    };
-
-	});
-
-
-	//获取页面中最大高度
-	function getHeight(obj) {
-		
-		var	$this = $(obj),
-			$div = $this.children(".content");
-
-		$this.height($div.height() + 30); //30 是距离底部的高度
-
-	};
+	//锚点平滑滚动调用
+	$('.section-2 .tab-nav li a').anchorScroll();
 
 	//给元素赋值高度,(由于定位造成的高度塌陷)
-	getHeight(".section-2 .right");
+	$(".section-2 .right").getHeight();
 
-
-	//锚点导航相关效果
-	function navFixed(selector) {
-
-		var $this = $(selector),
-			$baby_details = $("#baby-details"),
-			$comments = $("#comments"),
-			$service = $("#service"),
-			$li = $this.children(),
-			$div = $(".section-2 .right .content>div"),
-			this_top = $this.offset().top,
-			bady_top = $baby_details.offset().top,
-			comments_top = $comments.offset().top,
-			service_top = $service.offset().top,
-			div_id = "";
-
-		$(window).scroll(function() {
-
-			var window_top = $(window).scrollTop();
-
-			//当页面滚动到锚点导航时,让导航固定在顶部
-			(window_top > this_top)?$this.css("position","fixed"):$this.css("position","absolute");
-
-			//当页面滚动的距离大于元素与页面顶部的距离时，获取当前元素的 id
-			$.each($div,function(index,div) {
-
-				var div_top = $(div).offset().top;
-
-				if(window_top >= div_top - 80) {
-
-					div_id = $($div[index]).attr("id");
-
-				};
-
-			});
-
-			//找到锚点的href属性等于 上面获取的 id的元素，并添加类名
-			$.each($li,function(index,li) {
-
-				var href = $(li).find("a").attr("href").split("#");
-
-				if(href[href.length - 1] == div_id) {
-
-					$($li[index]).addClass("current").siblings().removeClass("current");
-
-				};
-
-			});
-
-		});
-
-	};
-
-	//调用
-	navFixed(".section-2 .right .tab-nav");
+	//锚点效果调用
+	$(".section-2 .right .tab-nav").navFixed();
 
 });

@@ -1,0 +1,259 @@
+.section-1 {
+	border: 1px solid #f2f2f2;
+}
+.section-1>.left {
+	padding: 15px 0 15px 20px;
+	width: 977px;
+}
+.section-1 .big-pic {
+	overflow: hidden;
+	width: 420px;
+	height: 420px;
+	border: 1px solid #f2f2f2;
+}
+.section-1 .foot .icon-small-star {
+	position: relative;
+	top: 2px;
+	margin-right: 10px;
+}
+#bdshare {
+	position: relative;
+	left: -165px;
+	float: right!important;
+	padding-bottom: 0;
+}
+#bdshare a {
+	display: inline-block;
+	padding: 0;
+	font-family: "Microsoft Yahei";
+	border-right: none;
+	background: none!important;
+}
+#bdshare .icon-fenxian {
+	position: relative;
+	top: 2px;
+	margin-right: 8px;
+}
+.section-1 .product-detail {
+	padding-right: 16px;
+	width: 521px;
+}
+.section-1 .product-detail h2 {
+	position: relative;
+	left: -10px;
+	font-size: 20px;
+}
+.section-1 .detail {
+	height: 65px;
+	line-height: 65px;
+	font-size: 16px;
+}
+.section-1 .detail span {
+	display: inline-block;
+	margin-right: 12px;
+	font-size: 25px;
+}
+.section-1 .status {
+	padding: 52px 0;
+	height: 191px;
+	font-size: 16px;
+	text-align: center;
+}
+.section-1 .status .btn,
+.dialog-form .bg-linear {
+	display: inline-block;
+	margin-top: 25px;
+	width: 189px;
+	height: 44px;
+	line-height: 44px;
+	color: #fff;
+	background-color: #333;
+	box-shadow: 0 3px 3px #a3a3ad;
+}
+.section-1 .status .bg-linear,
+.dialog-form .bg-linear {
+	cursor: pointer;
+	background-color: transparent;
+	background-image: url(../../iamges/20170517/bg-linear.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+.section-1 .tip div {
+	margin-bottom: 45px;
+	padding-top: 20px;
+	height: 80px;
+	line-height: 60px;
+	font-size: 16px;
+	text-align: center;
+	border-bottom: 1px solid #f2f2f2;
+}
+.section-1 .tip span {
+	display: inline-block;
+	padding-right: 30px;
+}
+.section-1>.right {
+	width: 221px;
+	height: 451px;
+	font-size: 12px;
+	border-left: 1px solid #f2f2f2;
+}
+.section-1>.right p {
+	padding: 5px 0 0 8px;
+	line-height: 1.8;
+}
+.section-1>.right img {
+	max-width: 100%;
+	border-bottom: 1px solid #f2f2f2;
+}
+.common-ul li {
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 28px;
+	text-align: center;
+}
+.common-ul li span,
+.common-ul li span em {
+	color: #ff0000;	
+}
+.section-2 .left {
+	width: 198px;
+}
+.section-2 .left h3 {
+	margin-bottom: 8px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 16px;
+	background-color: #f6f6f6;
+}
+.section-2 .left .online {
+	padding-top: 25.5px;
+	height: 80px;
+	text-align: center;
+	border: 1px solid #f2f2f2;
+}
+.section-2 .left .online a {
+	display: inline-block;
+}
+.section-2 .left .new,
+.section-2 .left .hot,
+.section-2 .left .recent-browse {
+	border: 1px solid #ededed;
+}
+.section-2 .left .new ul,
+.section-2 .left .hot ul,
+.section-2 .left .recent-browse ul {
+	padding: 0 8px;
+}
+.section-2 .right {
+	position: relative;
+	padding-top: 50px;
+	width: 994px;
+}
+.section-2 .right .tab-nav {
+	z-index: 10;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 994px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #f6f6f6;
+	box-shadow: 0 3px 3px #f6f6f6;
+}
+.section-2 .right .tab-nav li {
+	float: left;
+	width: 139px;
+	border-right: 1px solid #ededed;
+	cursor: pointer;
+}
+.section-2 .right .tab-nav * {
+	font-size: 16px;
+}
+.section-2 .right .tab-nav span {
+	color: #c20000;
+}
+.section-2 .tab-nav li.current,
+.section-2 .tab-nav li.current a {
+	background-color: #fff;
+}
+.section-2 .tab-nav li.current {
+	border-top: 2px solid #cc0000;
+}
+.section-2 .tab-nav li.current * {
+	color: #cc0000;
+}
+.section-2 .tab-nav li {
+	height: 50px;
+}
+.section-2 .tab-nav li a {
+	display: block;
+}
+.section-2 .right .content {
+	position: absolute;
+	top: 57px;
+	left: 0;
+}
+
+
+/*表单弹出窗口*/
+.dialog-form {
+	display: none;
+}
+.dialog-form .bg {
+	z-index: 9999999;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #333;
+	opacity: .5;
+	filter: Alpha(opacity=50);	
+}
+.dialog-form .dialog-content {
+	z-index: 999999999;
+	position: fixed;
+	top: 260px;
+	left: 50%;
+	margin-left: -400px;
+	padding: 30px 0 0 30px;
+	width: 800px;
+	height: 500px;
+	background-color: #fff;
+	box-shadow: 5px 5px 3px #c1c1c1;
+}
+.dialog-form .close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 10px;
+	height: 10px;
+	background: url(../../iamges/20170517/close.png) no-repeat;
+	cursor: pointer;
+}
+.dialog-form form {
+	padding: 115px 0 0 210px;
+}
+.dialog-form .bg-linear {
+	font-size: 16px;
+	border: none;
+}
+.dialog-form label {
+	display: inline-block;
+	padding-right: 5px;
+	width: 88px;
+	text-align: right;
+}
+.dialog-form form>div {
+	margin-bottom: 15px;
+}
+.dialog-form form input {
+	width: 233px;
+	border: none;
+	border-bottom: 1px solid #333;
+}
+.dialog-form .last-group {
+	margin-top: 65px;
+}
