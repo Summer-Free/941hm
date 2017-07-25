@@ -428,7 +428,7 @@
 				<div class="section-11 common-temp">
 					<div class="head clearfix">
 						<h2>餐厅系列</h2>
-						<a href="#">查看更多</a>
+						<a href="category.php?id=2">查看更多</a>
 					</div>
 					<ul class="bg-color-f5f5f5 clearfix">
 					<!--{foreach from=$ct_sql item=ct_sql name=ct_sql}-->
@@ -453,7 +453,7 @@
 				<div class="section-12 common-temp">
 					<div class="head clearfix">
 						<h2>客厅系列</h2>
-						<a href="#">查看更多</a>
+						<a href="category.php?id=3">查看更多</a>
 					</div>
 					<ul class="bg-color-f5f5f5 clearfix">
 					<!--{foreach from=$kt_sql item=kt_sql name=kt_sql}-->
@@ -478,7 +478,7 @@
 				<div class="section-13 common-temp">
 					<div class="head clearfix">
 						<h2>书房系列</h2>
-						<a href="#">查看更多</a>
+						<a href="category.php?id=4">查看更多</a>
 					</div>
 					<ul class="bg-color-f5f5f5 clearfix">
 						<!--{foreach from=$sf_sql item=sf_sql name=sf_sql}-->
@@ -503,7 +503,7 @@
 				<div class="section-14 common-temp">
 					<div class="head clearfix">
 						<h2>卧室系列</h2>
-						<a href="#">查看更多</a>
+						<a href="category.php?id=5">查看更多</a>
 					</div>
 					<ul class="bg-color-f5f5f5 clearfix">
 						<!--{foreach from=$ws_sql item=ws_sql name=ws_sql}-->
