@@ -307,8 +307,8 @@
 		                                            <h3 class="float-l cut_string" name="box">
 													 {$new_p.goods_name|truncate:17} 
 		                                            </h3>
-													<ins class="float-l">&yen;999999</ins>
-													<del class="float-r">&yen;999999</del>
+													<ins class="float-l">&yen;{$new_p.shop_price}</ins>
+													<del class="float-r">&yen;{$new_p.market_price}</del>
 												</div>
 	                                        </a>   
 	                                        <a class= "move left-a margin-b-12" href="goods.php?id={$new_p.goods_id}" target="_blank" alt="{$new_p.goods_name|escape:html}">
@@ -317,8 +317,8 @@
 		                                            <h3 class="float-l cut_string" name="box">
 													 {$new_p.goods_name|truncate:17} 
 		                                            </h3>
-													<ins class="float-l">&yen;999999</ins>
-													<del class="float-r">&yen;999999</del>
+													<ins class="float-l">&yen;{$new_p.shop_price}</ins>
+													<del class="float-r">&yen;{$new_p.market_price}</del>
 												</div>
 	                                        </a>  
 	                                    </li>
@@ -348,8 +348,8 @@
 													<h3 id="cut_string">
 													{$xs_p.goods_name|truncate:17}
 													</h3>
-													<ins class="float-l">&yen;999999</ins>
-													<del class="float-r">&yen;999999</del>
+													<ins class="float-l">&yen;{$xs_p.shop_price}</ins>
+													<del class="float-r">&yen;{$xs_p.market_price}</del>
 												</div>
 											</a>
 			                        		<a class="move left-a margin-b-12" href="goods.php?id={$xs_p.goods_id}">
@@ -358,8 +358,8 @@
 													<h3 id="cut_string">
 													{$xs_p.goods_name|truncate:17}
 													</h3>
-													<ins class="float-l">&yen;999999</ins>
-													<del class="float-r">&yen;999999</del>
+													<ins class="float-l">&yen;{$xs_p.shop_price}</ins>
+													<del class="float-r">&yen;{$xs_p.market_price}</del>
 												</div>
 											</a>
 										</li>
