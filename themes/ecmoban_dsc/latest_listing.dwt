@@ -44,20 +44,20 @@
                 	<!-- {elseif $smarty.foreach.res.iteration %4==0} -->
                 		<li class="move margin-r-0">
                 	<!--{/if}--> 
-						<a href="goods.php?id={$res.goods_id}">
-							<div class="global-product-img">
-								<img src="{$res.goods_thumb}" alt="" />
-							</div>
-							<div class="btm">
-								<h3>{$res.goods_name|truncate:15}</h3>
-								<p class="clearfix">
-									<span class="price float-l">价格: &yen;{$res.shop_price}
-									</span>
-								</p>
-								<span class="btn">立即购买</span>
-							</div>
-						</a>
-							</li>
+							<a href="goods.php?id={$res.goods_id}">
+								<div class="global-product-img">
+									<img src="{$res.goods_thumb}" alt="" />
+								</div>
+								<div class="btm">
+									<h3>{$res.goods_name|truncate:15}</h3>
+									<p class="clearfix">
+										<span class="price float-l">价格: &yen;{$res.shop_price}
+										</span>
+									</p>
+									<span class="btn">立即购买</span>
+								</div>
+							</a>
+						</li>
 				<!--{/foreach}-->
 				<!--
 					<li class="move">
