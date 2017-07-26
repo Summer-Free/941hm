@@ -359,17 +359,17 @@
 							<div class="wrap-slide">	
 	                            <div class="JS-slide-scroll">
 	                            	<ul class="content clearfix">	
-			                        <!--{foreach from=$xs_p item=xs_p name=xs_p} -->
+			                        <!--{foreach from=$xs_p06 item=xs_p06 name=xs_p06} -->
 			                        	<li class="float-l margin-r-12">
 			                        	
-			                        		<a class="move left-a margin-b-12" href="goods.php?id={$xs_p.goods_id}">
-												<img src="{$xs_p.goods_thumb}" alt="{$xs_p.goods_name|truncate:20}" width="240" height="200" />
+			                        		<a class="move left-a margin-b-12" href="goods.php?id={$xs_p06.goods_id}">
+												<img src="{$xs_p06.goods_thumb}" alt="{$xs_p06.goods_name|truncate:20}" width="240" height="200" />
 	                                            <div class="clearfix">
 													<h3 id="cut_string">
-													{$xs_p.goods_name|truncate:17}
+													{$xs_p06.goods_name|truncate:17}
 													</h3>
-													<ins class="float-l">&yen;{$xs_p.shop_price}</ins>
-													<del class="float-r">&yen;{$xs_p.market_price}</del>
+													<ins class="float-l">&yen;{$xs_p06.shop_price}</ins>
+													<del class="float-r">&yen;{$xs_p06.market_price}</del>
 												</div>
 											</a>
 										</li>
@@ -378,17 +378,17 @@
                                 </div>
 	                            <div class="JS-slide-scroll">
 	                            	<ul class="content clearfix">	
-			                        <!--{foreach from=$xs_p item=xs_p name=xs_p} -->
+			                        <!--{foreach from=$xs_p12 item=xs_p12 name=xs_p12} -->
 			                        	<li class="float-l margin-r-12">
 			                        	
-			                        		<a class="move left-a margin-b-12" href="goods.php?id={$xs_p.goods_id}">
-												<img src="{$xs_p.goods_thumb}" alt="{$xs_p.goods_name|truncate:20}" width="240" height="200" />
+			                        		<a class="move left-a margin-b-12" href="goods.php?id={$xs_p12.goods_id}">
+												<img src="{$xs_p12.goods_thumb}" alt="{$xs_p12.goods_name|truncate:20}" width="240" height="200" />
 	                                            <div class="clearfix">
 													<h3 id="cut_string">
-													{$xs_p.goods_name|truncate:17}
+													{$xs_p12.goods_name|truncate:17}
 													</h3>
-													<ins class="float-l">&yen;{$xs_p.shop_price}</ins>
-													<del class="float-r">&yen;{$xs_p.market_price}</del>
+													<ins class="float-l">&yen;{$xs_p12.shop_price}</ins>
+													<del class="float-r">&yen;{$xs_p12.market_price}</del>
 												</div>
 											</a>
 										</li>
