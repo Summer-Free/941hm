@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="zh-cn">
-     <head>
+     <head>        
         <!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem --><!--首页CSS以及部分通用部分的合并LBI-->
         <!--本页专用-->
         <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/free_trial.css">               
@@ -39,16 +39,16 @@
             <div class="section-1">
                     <ul class="clearfix">
                             <li><a href="#" title="我的试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-pic1.jpg" alt=""></a></li>
-                            <li><a href="#" title="试用流程"><img src="themes/ecmoban_dsc/iamges/20170517/free-pic2.jpg" alt=""></a></li>
+                            <li><a href="article.php?id=170" title="试用流程"><img src="themes/ecmoban_dsc/iamges/20170517/free-pic2.jpg" alt=""></a></li>
                             <li class="margin-r-0"><a href="exchange.php" target="_blank" title="积分换购"><img src="themes/ecmoban_dsc/iamges/20170517/free-pic3.jpg" alt=""></a></li>
                     </ul>
             </div>
 
             <div class="section-2 clearfix">
-                <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/free-product1.jpg" alt="" /></a>
-                <a href="#" class="margin-r-0"><img src="themes/ecmoban_dsc/iamges/20170517/free-product2.jpg" alt="" /></a>
-                <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/free-product3.jpg" alt="" /></a>
-                <a href="#" class="margin-r-0"><img src="themes/ecmoban_dsc/iamges/20170517/free-product4.jpg" alt="" /></a>
+                <a href="free_trial_detail.php?id=1235"><img src="themes/ecmoban_dsc/iamges/20170517/free-product1.jpg" alt="" /></a>
+                <a href="free_trial_detail.php?id=974" class="margin-r-0"><img src="themes/ecmoban_dsc/iamges/20170517/free-product2.jpg" alt="" /></a>
+                <a href="free_trial_detail.php?id=1054"><img src="themes/ecmoban_dsc/iamges/20170517/free-product3.jpg" alt="" /></a>
+                <a href="free_trial_detail.php?id=1039" class="margin-r-0"><img src="themes/ecmoban_dsc/iamges/20170517/free-product4.jpg" alt="" /></a>
             </div>
 
             <div class="section-3 clearfix">
@@ -58,15 +58,15 @@
                     <dd>原木纹理，色泽润雅，精致工艺</dd>
                     <dd>试用好评率100%</dd>
                     <dd>申请即可试用</dd>
-                    <dd><a href="#">立即使用</a></dd>
+                    <dd><a href="free_trial_detail.php?id=1035">立即使用</a></dd>
                 </dl>
             </div>
 
             <div class="section-4 padding-t-60 clearfix">
-                <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/free-product5.jpg" alt="" /></a>
-                <a href="#" class="margin-r-0"><img src="themes/ecmoban_dsc/iamges/20170517/free-product6.jpg" alt="" /></a>
-                <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/free-product7.jpg" alt="" /></a>
-                <a href="#" class="margin-r-0"><img src="themes/ecmoban_dsc/iamges/20170517/free-product8.jpg" alt="" /></a>
+                <a href="free_trial_detail.php?id=1034"><img src="themes/ecmoban_dsc/iamges/20170517/free-product5.jpg" alt="" /></a>
+                <a href="free_trial_detail.php?id=1018" class="margin-r-0"><img src="themes/ecmoban_dsc/iamges/20170517/free-product6.jpg" alt="" /></a>
+                <a href="free_trial_detail.php?id=992"><img src="themes/ecmoban_dsc/iamges/20170517/free-product7.jpg" alt="" /></a>
+                <a href="free_trial_detail.php?id=848" class="margin-r-0"><img src="themes/ecmoban_dsc/iamges/20170517/free-product8.jpg" alt="" /></a>
             </div>
 
             <div class="section-3 clearfix">
@@ -76,7 +76,7 @@
                     <dd>时尚典雅，纹理细腻，造型流畅</dd>
                     <dd>申请率90%</dd>
                     <dd>申请即可试用</dd>
-                    <dd><a href="#">立即使用</a></dd>
+                    <dd><a href="free_trial_detail.php?id=1032">立即使用</a></dd>
                 </dl>
             </div>
         </div>
