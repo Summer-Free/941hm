@@ -403,12 +403,12 @@
                         newVal += 5;
                         $val.text(newVal);
                         $.ajax({
-                        type:"POST",
+                        type:"GET",
                         url:"exchange.php",
-                        data:{newVal:newVal},
+                        data:"act=score" + newVal,
                         success:function(msg)
                         {
-                            $("#val").html(msg);
+                            alert(msg);
                         }
                         })  
                             });

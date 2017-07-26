@@ -282,6 +282,15 @@
 										</div>
 										<span class="btn">立刻秒</span>
 									</a>
+									<a href="goods.php?id={$ms_res.goods_id}">
+										<img src="{$ms_res.goods_thumb}" width="244.2" height="191.2" alt="{$ms_res.goods_name}" />
+										<p>{$ms_res.goods_name|truncate:15}</p>
+										<div class="clearfix">
+											<ins class="float-l">&yen;{$ms_res.shop_price}</ins>
+											<del class="float-r">&yen;{$ms_res.market_price}</del>
+										</div>
+										<span class="btn">立刻秒</span>
+									</a>
 								</li>
 							<!--{/foreach}-->
 							</ul>
@@ -295,39 +304,41 @@
 							<h2><a href="latest_listing.php">新品上市</a></h2>
 							<div class="wrap-slide">	
 	                            <div class="JS-slide-scroll">
+	                            	
 	                            	<ul class="content clearfix">	
-	                                	<!--{foreach from=$new_p item=new_p name=new_p}-->
+	                                	<!--{foreach from=$new_p06 item=new_p06 name=new_p06}-->
 	                                	<li class="float-l margin-r-12">
-	                                        <a class= "move left-a margin-b-12" href="goods.php?id={$new_p.goods_id}" target="_blank" alt="{$new_p.goods_name|escape:html}">
-	                                            <img src="{$new_p.goods_thumb}" title="{$new_p.goods_name|escape:html}" width="240" height="200" />
+	                                        <a class= "move left-a margin-b-12" href="goods.php?id={$new_p06.goods_id}" target="_blank" alt="{$new_p06.goods_name|escape:html}">
+	                                            <img src="{$new_p06.goods_thumb}" title="{$new_p06.goods_name|escape:html}" width="240" height="200" />
 	                                            <div class="clearfix">
 		                                            <h3 class="float-l cut_string" name="box">
-													 {$new_p.goods_name|truncate:17} 
+													 {$new_p06.goods_name|truncate:17} 
 		                                            </h3>
-													<ins class="float-l">&yen;{$new_p.shop_price}</ins>
-													<del class="float-r">&yen;{$new_p.market_price}</del>
+													<ins class="float-l">&yen;{$new_p06.shop_price}</ins>
+													<del class="float-r">&yen;{$new_p06.market_price}</del>
 												</div>
-	                                        </a>   
+	                                        </a>                                          
 	                                    </li>   
-	                                    <!--{/foreach}-->     
+	                                    <!--{/foreach}-->        
 	                               </ul>
+	                               
 	                            </div> 
 	                            <div class="JS-slide-scroll">
 	                            	<ul class="content clearfix">	
-	                                	<!--{foreach from=$new_p item=new_p name=new_p}-->
+	                                	<!--{foreach from=$new_p12 item=new_p12 name=new_p12}-->
 	                                	<li class="float-l margin-r-12">
-	                                        <a class= "move left-a margin-b-12" href="goods.php?id={$new_p.goods_id}" target="_blank" alt="{$new_p.goods_name|escape:html}">
-	                                            <img src="{$new_p.goods_thumb}" title="{$new_p.goods_name|escape:html}" width="240" height="200" />
+	                                        <a class= "move left-a margin-b-12" href="goods.php?id={$new_p12.goods_id}" target="_blank" alt="{$new_p12.goods_name|escape:html}">
+	                                            <img src="{$new_p12.goods_thumb}" title="{$new_p12.goods_name|escape:html}" width="240" height="200" />
 	                                            <div class="clearfix">
 		                                            <h3 class="float-l cut_string" name="box">
-													 {$new_p.goods_name|truncate:17} 
+													 {$new_p12.goods_name|truncate:17} 
 		                                            </h3>
-													<ins class="float-l">&yen;{$new_p.shop_price}</ins>
-													<del class="float-r">&yen;{$new_p.market_price}</del>
+													<ins class="float-l">&yen;{$new_p12.shop_price}</ins>
+													<del class="float-r">&yen;{$new_p12.market_price}</del>
 												</div>
-	                                        </a>   
-	                                    </li>   
-	                                    <!--{/foreach}-->      
+	                                        </a> 
+	                                    </li>
+	                                    <!--{/foreach}-->        
 	                               </ul>
 	                            </div> 
 	                        </div>

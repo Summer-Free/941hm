@@ -20,15 +20,16 @@
         <div class="w1200 margin-t-12" id="main-body">
             <div class="section-1 clearfix">
                 <div class="left float-l clearfix">
+                    <!--{foreach from=$xq_arr item=xq_arr name=xq_arr}-->
                     <div class="product-pic float-l">
                         <div class="big-pic">
-                            <img src="themes/ecmoban_dsc/iamges/20170517/detail-1.jpg" width="420" alt="" />
+                            <img src="{$xq_arr.goods_thumb}" width="420" alt="" />
                         </div>
                     </div>
                     <div class="product-detail float-r">
-                        <h2>【背书沙发】六件套 紫包金 WJHX/ZBJ/SF/6J/069</h2>
+                        <h2>{$xq_arr.goods_name|truncate:30}</h2>
                         <div class="detail">
-							市场价 : <span class="color-ff0000">36000元</span>
+							市场价 : <span class="color-ff0000">{$xq_arr.market_price}元</span>
 							提供数量 : <em>3</em>
                         </div>
                         <div class="status bg-color-f5f5f5">
@@ -46,6 +47,7 @@
 							<span>官方售后</span>
                         </div>
                     </div>
+                    <!--{/foreach}-->
                 </div>
                 <div class="right float-r">
 					<img src="themes/ecmoban_dsc/iamges/20170517/free-product9.jpg" alt="" />
@@ -170,11 +172,9 @@
                     </ul>
                     <div class="content">
                         <div id="baby-details">
-                            <img src="themes/ecmoban_dsc/iamges/20170517/tab-pic-1.jpg" alt="">
-                            <img src="themes/ecmoban_dsc/iamges/20170517/tab-pic-2.jpg" alt="">
-                            <img src="themes/ecmoban_dsc/iamges/20170517/tab-pic-3.jpg" alt="">
-                            <img src="themes/ecmoban_dsc/iamges/20170517/tab-pic-4.jpg" alt="">
-                            <img src="themes/ecmoban_dsc/iamges/20170517/tab-pic-5.jpg" alt="">
+                            <!--{foreach from=$desc_arr item=desc_arr name=desc_arr}-->
+                                {$desc_arr.goods_desc}
+                            <!--{/foreach}-->
                         </div>
                         <div id="trial-report" style="height: 500px;">试用报告内容</div>
                     </div>
