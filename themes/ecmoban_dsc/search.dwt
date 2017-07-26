@@ -36,15 +36,21 @@
 
 <style>
 	.suspension{ display:none;}
-	.ecsc-breadcrumb.w1390 *,#filter *,
+	.ecsc-breadcrumb *,#filter *,
 	#content * {
 		box-sizing: content-box;
 	}
-	.ecsc-breadcrumb.w1390,#filter,#content {
+	.ecsc-breadcrumb,#filter,#content {
 		font-size: 12px;
 	}
 	.goods-spread li .p-name a {
 		line-height: 1.5;
+	}
+	.ecsc-breadcrumb.w1200 {
+		padding: 10px 0;
+	}
+	#content .category_left {
+		width: 980px;
 	}
 </style>
 </head>
@@ -57,18 +63,18 @@
 	</div>
 	<!--header end-->
 
-<div class="ecsc-breadcrumb w1390">
+<div class="ecsc-breadcrumb w1200">
     <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
 </div>
 
 <div id="filter">
-    <div class="filter-section-wrapper mt-component-2 w1390">
+    <div class="filter-section-wrapper mt-component-2 w1200">
 		<!-- #BeginLibraryItem "/library/category_screening.lbi" --><!-- #EndLibraryItem -->
     </div>
     
 </div>
 
-<div id="content" class="w1390">
+<div id="content" class="w1200">
 	<!-- TemplateBeginEditable name="商品列表" -->
     <!-- #BeginLibraryItem "/library/goods_list.lbi" --> <!-- #EndLibraryItem -->
     <!-- TemplateEndEditable -->
