@@ -10,7 +10,7 @@
                             <li><a href="flow.php?step=cart">我的购物车</a></li>
                             <li><a href="user.php?act=order_list">我的订单</a></li>
                             <li><a href="article.php?id=74">厂家入驻</a></li>
-                            <li><a href="merchants.php?id=96">商家中心</a></li>
+                            <li><a class="showMsg" href="#">商家中心</a></li>
                             <li><a href="article_cat.php?id=1008" target="_blank">帮助中心</a></li>
                             <li class="padding-r-0"><a href="article_cat.php?id=1007">商城资讯</a></li>
                         </ul>
@@ -132,14 +132,14 @@
                                     </div>  
                                 </li>
                                 <li><a href="index.php">首页</a></li>
-                                <li><a href="#">智能体验馆</a></li>
-                                <li><a href="#">智能场景定制</a></li>
+                                <li><a class="showMsg" href="#">智能体验馆</a></li>
+                                <li><a class="showMsg" href="#">智能场景定制</a></li>
                                 <li><a href="crowd_funding.php">匠物众筹</a></li>
-                                <li><a href="one_yuan_purchase.php">一元购</a></li>
-                                <li class="cxy">
-                                    <a href="zen_institute.php">禅学院</a>
+                                <li><a href="daily_spike.php">每日秒杀</a></li>
+<!--                                 <li class="cxy">
+                                    <a href="zen_institute.php">禅学院</a> -->
                                     <!--禅学院下拉菜单 start-->
-                                    <div class="cxy-dropdpwn-menu">
+<!--                                     <div class="cxy-dropdpwn-menu">
                                         <div class="w1200 submenu">
                                             <ul class="clearfix">
                                                 <li><a href="#">禅茶一味</a></li>
@@ -150,10 +150,10 @@
                                                 <li><a href="#">中医养生</a></li>
                                             </ul>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <!--禅学院下拉菜单 end-->
-                                </li>
-                                <li><a href="maintenance_technician.php">保养技师</a></li>
+                                <!-- </li> -->
+                                <li><a href="latest_listing.php">新品上市</a></li>
                                 <li><a href="partner.php">商家入驻</a></li>
                                 <li class="margin-r-0"><a href="company_profile.php">公司简介</a></li>
                             </ul>

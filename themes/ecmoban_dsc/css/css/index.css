@@ -134,6 +134,10 @@
 	width: 532px;
 	height: 542px;
 }
+.New-arrival .JS-slide-scroll,
+.Personal-tailor .JS-slide-scroll {
+	height: 271px;
+}
 .section-3 .New-arrival .float-l .left-a,
 .section-3 .New-arrival .float-l .right-a,
 .section-3 .Personal-tailor .float-r .left-a,

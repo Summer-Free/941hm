@@ -701,6 +701,31 @@ $(function() {
 
 	};
 
+	//调用
 	navHighlight();
+
+	//添加了 类名为 showMsg 的元素将会触发弹窗
+	$(".showMsg").on("click",function(e) {
+
+		e.preventDefault();
+
+		$("#showMsg").remove();
+
+		clearInterval(timer);
+
+		var dialog = "<div id='showMsg' style='z-index: 9999;position: fixed;top: 50%;left: 50%;margin: -33.5px 0 0 -161px;width: 322px;height: 67px;line-height: 67px;text-align: center;background-color: #fff;'>我们正在全力开发中,敬请期待!</div>",
+			timer = "",
+			action = function() {
+				$("#showMsg").animate({ opacity: 1},1500);
+				$("#showMsg").animate({ opacity: 0},500,function() {
+					$(this).remove();
+				});
+			};
+
+		$(document.body).append(dialog);
+
+		timer = setInterval(action,2000);
+
+	});
 
 });
