@@ -118,50 +118,50 @@
 
 	<script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.purebox.js"></script>
 	<script type="text/javascript">
-	//商品列表页 商品小图轮播 图片数量大于6个
-	sildeImg(0);
+		//商品列表页 商品小图轮播 图片数量大于6个
+		sildeImg(0);
 
-	function delHistory(goods_id){
-		var divId = 'del_history';
-		var content = $('#del_history').html();
-		
-		pb({
-			id:divId,
-			title:'删除历史商品',
-			width:450,
-			height:50,
-			ok_title:'确定', 	//按钮名称
-			cl_title:'取消', 	//按钮名称
-			content:content, 	//调取内容
-			drag:false,
-			foot:true,
-			onOk:function(){
-				Ajax.call('history_list.php', 'act=delHistory&goods_id=' + goods_id, delHistory_Response, 'GET', 'JSON');	
-			}
-		});
-		
-		$('#' + divId + ' .ftx-04').css({'padding': '11px 0px 0px 10px'});
-		$('#' + divId + ' .pb-ft .pb-ok').addClass('color_df3134');
-	}
-	function delHistory_Response(res)
-	{
-		location.reload();
-	}
-	$(function(){
-		var obj = $("#filter-sortbar .styles").find(".item");
-		var imtes = $(".category_left");
-		obj.click(function(){
-			var index = $(this).index();
-			$(this).addClass("current").siblings().removeClass("current");
-			imtes.find(".car_goods_list").eq(index).show().siblings(".car_goods_list").hide();
-			//需要开启异步加载
-			{if $category_load_type}
-				if(index == 1){
-					$.goodsLoad('.goods_switch_list .goods-list','.item','.goods-spread',query_string,1);
+		function delHistory(goods_id){
+			var divId = 'del_history';
+			var content = $('#del_history').html();
+			
+			pb({
+				id:divId,
+				title:'删除历史商品',
+				width:450,
+				height:50,
+				ok_title:'确定', 	//按钮名称
+				cl_title:'取消', 	//按钮名称
+				content:content, 	//调取内容
+				drag:false,
+				foot:true,
+				onOk:function(){
+					Ajax.call('history_list.php', 'act=delHistory&goods_id=' + goods_id, delHistory_Response, 'GET', 'JSON');	
 				}
-			{/if}
+			});
+			
+			$('#' + divId + ' .ftx-04').css({'padding': '11px 0px 0px 10px'});
+			$('#' + divId + ' .pb-ft .pb-ok').addClass('color_df3134');
+		}
+		function delHistory_Response(res)
+		{
+			location.reload();
+		}
+		$(function(){
+			var obj = $("#filter-sortbar .styles").find(".item");
+			var imtes = $(".category_left");
+			obj.click(function(){
+				var index = $(this).index();
+				$(this).addClass("current").siblings().removeClass("current");
+				imtes.find(".car_goods_list").eq(index).show().siblings(".car_goods_list").hide();
+				//需要开启异步加载
+				{if $category_load_type}
+					if(index == 1){
+						$.goodsLoad('.goods_switch_list .goods-list','.item','.goods-spread',query_string,1);
+					}
+				{/if}
+			});
 		});
-	});
 	</script>
 </body>
 </html>

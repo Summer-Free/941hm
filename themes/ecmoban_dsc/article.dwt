@@ -2,35 +2,53 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="Keywords" content="{$keywords}" />
-<meta name="Description" content="{$description}" />
-<!-- TemplateBeginEditable name="doctitle" -->
-<title>{$page_title}</title>
-<!-- TemplateEndEditable -->
-<!-- TemplateBeginEditable name="head" -->
-<!-- TemplateEndEditable -->
-<link rel="shortcut icon" href="favicon.ico" />
-<link rel="icon" href="animated_favicon.gif" type="image/gif" />
-<link rel="stylesheet" type="text/css" href="themes/ecmoban_dsc/base.css" />
-<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="themes/ecmoban_dsc/quickLinks.css" />
-<link rel="stylesheet" href="themes/ecmoban_dsc/purebox.css">
-{* 包含脚本文件 *}
-{insert_scripts files='jquery-1.9.1.min.js,jquery.json.js,transport_jquery.js'}
-{insert_scripts files='common.js,global.js,utils.js,compare.js,search_category_menu.js,cart_common.js,cart_quick_links.js'}
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="{$keywords}" />
+    <meta name="Description" content="{$description}" />
+    <!-- TemplateBeginEditable name="doctitle" -->
+    <title>{$page_title}</title>
+    <!-- TemplateEndEditable -->
+    <!-- TemplateBeginEditable name="head" -->
+    <!-- TemplateEndEditable -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="icon" href="animated_favicon.gif" type="image/gif" />
+    <link rel="stylesheet" type="text/css" href="themes/ecmoban_dsc/base.css" />
+    <link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+    <!-- <link rel="stylesheet" type="text/css" href="themes/ecmoban_dsc/quickLinks.css" /> -->
+    <!-- <link rel="stylesheet" href="themes/ecmoban_dsc/purebox.css"> -->
 
-<script type="text/javascript" src="themes/ecmoban_dsc/js/sc_common.js"></script>
-<script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.SuperSlide.2.1.1.js"></script>
-<script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.tabso_yeso.js"></script>
-<script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.yomi.js"></script>
-<script type="text/javascript" src="themes/ecmoban_dsc/js/rotate3di.js"></script>
-<script type="text/javascript" src="themes/ecmoban_dsc/js/scroll_city.js"></script>
-<script type="text/javascript" src="themes/ecmoban_dsc/js/notLogin.js"></script>
+    <!--2017/07/26 添加-->
+    <!-- #BeginLibraryItem "/library/header_title_djj.lbi" --><!-- #EndLibraryItem -->
+    <!--首页CSS以及部分通用部分的合并LBI-->
+
+    {* 包含脚本文件 *}
+    {insert_scripts files='jquery-1.9.1.min.js,jquery.json.js,transport_jquery.js'}
+    {insert_scripts files='common.js,global.js,utils.js,compare.js,search_category_menu.js,cart_common.js,cart_quick_links.js'}
+
+    <script type="text/javascript" src="themes/ecmoban_dsc/js/sc_common.js"></script>
+    <script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.tabso_yeso.js"></script>
+    <script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.yomi.js"></script>
+    <script type="text/javascript" src="themes/ecmoban_dsc/js/rotate3di.js"></script>
+    <script type="text/javascript" src="themes/ecmoban_dsc/js/scroll_city.js"></script>
+    <script type="text/javascript" src="themes/ecmoban_dsc/js/notLogin.js"></script>
+    {insert_scripts files='suggest.js,jquery.lazyload.js,warehouse_area.js'}
+
+    <style>
+        .nch-breadcrumb-layout *,
+        .nch-container * {
+            box-sizing: content-box;
+        }
+    </style>
 </head>
 <body>
 
-<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+    <!--header start-->
+    <div id="header">
+        <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
+    </div>
+    <!--header end-->
+
 <!--当前位置 start-->
 <div class="w1200">
     <div class="nch-breadcrumb-layout">
@@ -76,13 +94,69 @@
 		{if $full_page}	
     </div>
 </div>
-<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+
+<!--2017/07/26 更换-->
+<!-- #BeginLibraryItem "/library/page_footer_djj.lbi" --><!-- #EndLibraryItem -->
+
+<div id="pd_coupons" style="display: none;">
+    <span class="success-icon m-icon"></span>
+    <div class="item-fore">
+        <h3>领取成功！感谢您的参与，祝您购物愉快~</h3>
+        <div class="txt ftx-03">本活动为概率性事件，不能保证所有客户成功领取优惠券</div>
+    </div>
+</div>
+<input name="seller_kf_IM" ru_id="" value="" type="hidden" rev="">
+<input name="seller_kf_qq" value="3427085557" type="hidden">
+<input name="seller_kf_tel" value="400-666-9338" type="hidden">
+<script type="text/javascript">
+$("#clear_price").click(function(){
+    $("#price-min").val('');
+    $("#price-max").val('');
+});
+    
+$(".QR_code li").hover(function(){
+    var index = $(this).index();
+    $(this).addClass("current").siblings().removeClass("current");
+    $(".QR_code .code_tp").eq(index).removeClass("hide").siblings().addClass("hide");
+})
+function checkSearchForm(){
+    var keywords = $("input[name='keywords']").val();
+    if(keywords == ''){
+        
+        divId = "keywords_html";
+        var content = '<div id="' + divId + '">' + 
+                            '<div class="tip-box icon-box">' +
+                                '<span class="warn-icon m-icon"></span>' + 
+                                '<div class="item-fore">' +
+                                    '<h3 class="rem ftx-04">您搜索内容的关键字不能空</h3>' +
+                                '</div>' +
+                            '</div>' +
+                        '</div>';
+        
+        pb({
+            id:divId,
+            title:'提示',
+            width:445,
+            height:58,
+            content:content,    //调取内容
+            drag:false,
+            foot:false
+        }); 
+        
+        return false;
+    }
+}
+</script>
+<!--[if lte IE 8]><script type="text/javascript" src="js/IE7Fix.js"></script><![endif]-->
+
 {* 941红木 提醒您：动态载入user_menu_position.lbi，显示首页分类小广告 *}{insert name='user_menu_position'}
 <script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.purebox.js"></script>
 
 <script>
-//ajax调取文章内容
+
 $(document).ready(function(){
+
+    //ajax调取文章内容
 	$.ajax({
 		type:'get',
 		url:"article.php",
@@ -92,7 +166,18 @@ $(document).ready(function(){
 			$("#floor_loading").remove();
 			$(".nch-article-con").html(data.content);
 		}
-	})
+	});
+
+    //如果页面是帮助中心,则文章页左侧相关下拉菜单默认张开
+    if(location.href.indexOf("article_cat.php?id=1008")) {
+        $(".nch-sidebar-article-class").find("a[href='article_cat.php?id=1008']").parents("li").addClass("hover");
+    };
+
+    //如果页面是商城咨询,则文章页左侧相关下拉菜单默认张开
+    if(location.href.indexOf("article_cat.php?id=1007")) {
+        $(".nch-sidebar-article-class").find("a[href='article_cat.php?id=1007']").parents("li").addClass("hover");
+    };
+
 })
 </script>
 
