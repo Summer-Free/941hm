@@ -96,7 +96,7 @@
 		                                        <a href="category.php?id=397">圆桌</a>
 		                                        <a href="category.php?id=60">酒柜/酒架</a>
 		                                        <a href="category.php?id=58">四方桌</a>
-		                                        <a href="category.php?id=56">餐边桌</a>
+		                                        <a href="category.php?id=56">餐边柜</a>
 		                                    </dd>
 		                                    <dt>客厅 :</dt>
 		                                    <dd>
@@ -108,6 +108,8 @@
 		                                        <a href="category.php?id=452">鼓凳</a>
 		                                        <a href="category.php?id=418">二联柜</a>
 		                                        <a href="category.php?id=421">屏风</a>
+		                                        <a href="category.php?id=362">玄关桌柜</a>
+		                                        <a href="category.php?id=377">鞋柜</a>
 		                                    </dd>
 		                                    <dt>书房 :</dt>
 		                                    <dd>
@@ -120,6 +122,7 @@
 		                                        <a href="category.php?id=410">麻将桌</a>
 		                                        <a href="category.php?id=414">电脑桌</a>
 		                                        <a href="category.php?id=309">大班台</a>
+		                                        <a href="category.php?id=424">休闲桌椅 </a>
 		                                    </dd>
 		                                    <dt>卧室 :</dt>
 		                                    <dd>
@@ -131,13 +134,15 @@
 		                                        <a href="category.php?id=9">梳妆台</a>
 		                                        <a href="category.php?id=12">床边凳</a>
 		                                        <a href="category.php?id=395">穿衣镜</a>
+		                                        <a href="category.php?id=13">衣帽架</a>
+		                                        <a href="category.php?id=457">月牙桌</a>
 		                                    </dd>
 		                                </dl>
 		                                <dl class="material">
 		                                    <dt>材质 :</dt>
 		                                    <dd>
 		                                        <a href="category.php?id=409">小叶紫檀</a>
-		                                        <a href="category.php?id=407">海南黄花梨</a>
+		                                        <a href="category.php?id=407">黄花梨</a>
 		                                        <a href="category.php?id=416">刺猬紫檀</a>
 		                                        <a href="category.php?id=399">缅甸花梨</a>
 		                                        <a href="category.php?id=442">非洲花梨</a>
@@ -145,6 +150,8 @@
 		                                        <a href="category.php?id=445">沉贵宝</a>
 		                                        <a href="category.php?id=444">安哥拉紫檀</a>
 		                                        <a href="category.php?id=449">南美酸枝</a>
+		                                        <a href="category.php?id=446">黄金檀</a>
+		                                        <a href="category.php?id=447">巴西花梨</a>
 		                                    </dd>
 		                                </dl>
 		                                <dl class="style">
@@ -154,16 +161,6 @@
 		                                        <a href="category.php?id=23">新中式</a>
 		                                        <a href="category.php?id=24">欧美式</a>
 		                                        <a href="category.php?id=25">明式</a>
-		                                    </dd>
-		                                </dl>
-		                                <dl class="price">
-		                                    <dt>价格 :</dt>
-		                                    <dd>
-		                                        <a href="#">0-10000</a>
-		                                        <a href="#">10000-20000</a>
-		                                        <a href="#">20000-40000</a>
-		                                        <a href="#">40000-80000</a>
-		                                        <a href="#">80000以上</a>
 		                                    </dd>
 		                                </dl>
 		                            </div>  
@@ -305,9 +302,8 @@
 					<div class="New-arrival clearfix">
 						<div class="float-l">
 							<h2><a href="latest_listing.php">新品上市</a></h2>
-							<div class="wrap-slide">	
+							<div class="wrap-slide top">	
 	                            <div class="JS-slide-scroll">
-	                            	
 	                            	<ul class="content clearfix">	
 	                                	<!--{foreach from=$new_p06 item=new_p06 name=new_p06}-->
 	                                	<li class="float-l margin-r-12">
@@ -323,9 +319,10 @@
 	                                        </a>                                          
 	                                    </li>   
 	                                    <!--{/foreach}-->        
-	                               </ul>
-	                               
+	                                </ul>
 	                            </div> 
+	                        </div>
+	                        <div class="wrap-slide btm">
 	                            <div class="JS-slide-scroll">
 	                            	<ul class="content clearfix">	
 	                                	<!--{foreach from=$new_p12 item=new_p12 name=new_p12}-->
@@ -356,7 +353,7 @@
 						</div>
 						<div class="float-r">
 							<h2><a href="limited_time_offer.php">限时优惠</a></h2>
-							<div class="wrap-slide">	
+							<div class="wrap-slide top">	
 	                            <div class="JS-slide-scroll">
 	                            	<ul class="content clearfix">	
 			                        <!--{foreach from=$xs_p06 item=xs_p06 name=xs_p06} -->
@@ -376,6 +373,8 @@
 									<!--{/foreach}-->
 									</ul>
                                 </div>
+                            </div>    
+                            <div class="wrap-slide btm">
 	                            <div class="JS-slide-scroll">
 	                            	<ul class="content clearfix">	
 			                        <!--{foreach from=$xs_p12 item=xs_p12 name=xs_p12} -->
@@ -395,7 +394,7 @@
 									<!--{/foreach}-->
 									</ul>
                                 </div>
-                            </div>    
+                            </div>
 						</div>
 					</div>
 				</div>
