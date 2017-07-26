@@ -44,7 +44,8 @@
 	display: block;
 	line-height: 1.5;
 }
-#footer .foot-btm dd a:hover {
+#footer .foot-btm dd a:hover,
+#footer .copy a:hover {
 	color: #fff;
 }
 #footer .foot-btm dd a,

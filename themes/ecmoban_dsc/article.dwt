@@ -168,16 +168,6 @@ $(document).ready(function(){
 		}
 	});
 
-    //如果页面是帮助中心,则文章页左侧相关下拉菜单默认张开
-    if(location.href.indexOf("article_cat.php?id=1008")) {
-        $(".nch-sidebar-article-class").find("a[href='article_cat.php?id=1008']").parents("li").addClass("hover");
-    };
-
-    //如果页面是商城咨询,则文章页左侧相关下拉菜单默认张开
-    if(location.href.indexOf("article_cat.php?id=1007")) {
-        $(".nch-sidebar-article-class").find("a[href='article_cat.php?id=1007']").parents("li").addClass("hover");
-    };
-
 })
 </script>
 
