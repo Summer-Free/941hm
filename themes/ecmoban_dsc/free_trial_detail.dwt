@@ -189,7 +189,7 @@
 			<div class="dialog-content">
 				<div class="close"></div>
 				<h3>请填写收货人信息</h3>
-				<form action="" method="">
+				<form action="" method="post" onSubmit="return confirm();" >
 					<div>
 						<label for="#name">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名 : </label>
 						<input type="text" id="name" />
@@ -208,7 +208,7 @@
 					</div>
 					<div class="last-group">
 						<label></label>
-						<button class="bg-linear" type="submit">立即申请</button>
+						<button class="bg-linear" type="submit" id="send">立即申请</button>
 					</div>
 				</form>
 			</div>
@@ -242,7 +242,6 @@
 					renderMode: false,
 					linkage: false
 				});
-
 				//设置城市
 				select.setCityVal([{
 					'id': '330000',
@@ -254,7 +253,42 @@
 					'id': '330108',
 					'name': '滨江区'
 				}]);
-
+                $("#send").click(function(){
+                    var name=$("#name").val();
+                    var phone=$("#phone").val();
+                    var province=$(".city-picker-select .province").find("option:selected").val();//获取省的ID
+                    var city=$(".city-picker-select .city").find("option:selected").val();//获取市的ID 
+                    var district=$(".city-picker-select .district").find("option:selected").val();//获取区(县)的ID
+                    var address=$("#detail-address").val();
+                    reg = /^[\u4e00-\u9fa5]{2,4}$/i;
+                    if (!reg.test(name))
+                            {
+                                alert("请输入2-4个汉字！"); 
+                                return false;
+                            }
+                    else if(!(/^1[34578]\d{9}$/.test(phone)))
+                    {
+                        alert("手机号码有误，请重填");  
+                        return false;
+                    }
+                    else if(province)
+                    {
+                        alert("请选择省");  
+                        return false;
+                    }
+                    else if(city)
+                    {
+                        alert("请选择市");  
+                        return false;
+                    }
+                    else if(district)
+                    {
+                        alert("请选择区(县)");  
+                        return false;
+                    }
+                    //通过以上验证，将数据传入PHP文件
+                    
+                })
         	});
         </script>
      </body>
