@@ -253,12 +253,13 @@
 					'id': '330108',
 					'name': '滨江区'
 				}]);
-                $("#send").click(function(){
+                $("#send").click(function(e){
+                    e.preventDefault();
                     var name=$("#name").val();
                     var phone=$("#phone").val();
-                    var province=$(".city-picker-select .province").find("option:selected").val();//获取省的ID
-                    var city=$(".city-picker-select .city").find("option:selected").val();//获取市的ID 
-                    var district=$(".city-picker-select .district").find("option:selected").val();//获取区(县)的ID
+                    var province=$(".city-picker-select .province").find("option:selected").data("title");//获取省的ID
+                    var city=$(".city-picker-select .city").find("option:selected").data("title");//获取市的ID 
+                    var district=$(".city-picker-select .district").find("option:selected").data("title");//获取区(县)的ID
                     var address=$("#detail-address").val();
                     reg = /^[\u4e00-\u9fa5]{2,4}$/i;
                     if (!reg.test(name))
