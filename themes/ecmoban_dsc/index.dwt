@@ -403,44 +403,44 @@
 					<dl>
 						<dt>品牌街 <a href="brand.php">查看更多</a></dt>
 						<dd class="clearfix">
-							<a href="brandn.php?id=7" title="美满居">
+							<a href="brandn.php?id=20" title="美满居">
 								<img src="themes/ecmoban_dsc/iamges/20170517/mmj.jpg" alt="美满居">
 							</a>
-							<a href="brandn.php?id=15" title="金莎驰">
+							<a href="brandn.php?id=40" title="金莎驰">
 								<img src="themes/ecmoban_dsc/iamges/20170517/jsc.jpg" alt="金莎驰">
 							</a>
 							<a href="brandn.php?id=3" title="国清红木">
 								<img src="themes/ecmoban_dsc/iamges/20170517/gqhm.jpg" alt="国清红木">
 							</a>
-							<a href="brandn.php?id=46" title="鼎艺红木">
+							<a href="brandn.php?id=63" title="鼎艺红木">
 								<img src="themes/ecmoban_dsc/iamges/20170517/dyhm.jpg" alt="鼎艺红木">
 							</a>
-							<a href="brandn.php?id=11" title="欧尔利">
+							<a href="brandn.php?id=85" title="欧尔利">
 								<img src="themes/ecmoban_dsc/iamges/20170517/oel.jpg" alt="欧尔利"></a>
 							<a href="brandn.php?id=19" title="洛克王">
 								<img src="themes/ecmoban_dsc/iamges/20170517/lkw.jpg" alt="洛克王"></a>
-							<a class="margin-r-0" href="brandn.php?id=21" title="京华红木">
+							<a class="margin-r-0" href="brandn.php?id=49" title="京华红木">
 								<img src="themes/ecmoban_dsc/iamges/20170517/jhhm.jpg" alt="京华红木">
 							</a>
 							<a href="brandn.php?id=26" title="博古王">
 								<img src="themes/ecmoban_dsc/iamges/20170517/bgw.jpg" alt="博古王">
 							</a>
-							<a href="brandn.php?id=5" title="时利和红木">
+							<a href="brandn.php?id=17" title="时利和红木">
 								<img src="themes/ecmoban_dsc/iamges/20170517/slhhm.jpg" alt="时利和红木">
 							</a>
-							<a href="brandn.php?id=30" title="雅康居">
+							<a href="brandn.php?id=58" title="雅康居">
 								<img src="themes/ecmoban_dsc/iamges/20170517/ykj.jpg" alt="雅康居">
 							</a>
-							<a href="brandn.php?id=10" title="鼎康红木">
+							<a href="brandn.php?id=87" title="鼎康红木">
 								<img src="themes/ecmoban_dsc/iamges/20170517/dkhm.jpg" alt="鼎康红木">
 							</a>
-							<a href="brandn.php?id=14" title="亿古红木">
+							<a href="brandn.php?id=88" title="亿古红木">
 								<img src="themes/ecmoban_dsc/iamges/20170517/yghm.jpg" alt="亿古红木">
 							</a>
-							<a href="brandn.php?id=8" title="乾宝阁">
+							<a href="brandn.php?id=21" title="乾宝阁">
 								<img src="themes/ecmoban_dsc/iamges/20170517/qbg.jpg" alt="乾宝阁">
 							</a>
-							<a class="margin-r-0" href="brandn.php?id=39" title="良宵">
+							<a class="margin-r-0" href="brandn.php?id=68" title="良宵">
 								<img src="themes/ecmoban_dsc/iamges/20170517/lxhm.jpg" alt="良宵">
 							</a>
 						</dd>
