@@ -61,107 +61,35 @@
                     <div class="new margin-b-12">
                         <h3>热门试用</h3>
                         <ul class="common-ul clearfix">
+                            <!--{foreach from=$hot_arr item=hot_arr name=hot_arr}-->
+                            <!-- {if $smarty.foreach.hot_arr.iteration %2 !=0  } -->
                             <li>
-                                <a href="#">
-                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
-                                    <span>&yen;<em>75400.00</em></span>
-                                </a>
-                            </li>
+                            <!-- {elseif $smarty.foreach.hot_arr.iteration %2==0} -->
                             <li class="margin-r-0">
-                                <a href="#">
-                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
-                                    <span>&yen;<em>75400.00</em></span>
+                            <!--{/if}-->
+                                <a href="free_trial_detail.php?id={$hot_arr.goods_id}">
+                                    <img src="{$hot_arr.goods_thumb}" alt="{$hot_arr.goods_name}" width="87" height="87" />
+                                    <span>&yen;<em>{$hot_arr.market_price}</em></span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
-                                    <span>&yen;<em>75400.00</em></span>
-                                </a>
-                            </li>
-                            <li class="margin-r-0">
-                                <a href="#">
-                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
-                                    <span>&yen;<em>75400.00</em></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
-                                    <span>&yen;<em>75400.00</em></span>
-                                </a>
-                            </li>
-                            <li class="margin-r-0">
-                                <a href="#">
-                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
-                                    <span>&yen;<em>75400.00</em></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
-                                    <span>&yen;<em>75400.00</em></span>
-                                </a>
-                            </li>
-                            <li class="margin-r-0">
-                                <a href="#">
-                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
-                                    <span>&yen;<em>75400.00</em></span>
-                                </a>
-                            </li>
+                            <!--{/foreach}-->
                         </ul>
                     </div>
                     <div class="hot">
                         <h3>最新试用</h3>
                         <ul class="common-ul clearfix">
+                            <!--{foreach from=$new_arr item=new_arr name=new_arr}-->
+                            <!-- {if $smarty.foreach.new_arr.iteration %2 !=0  } -->
                             <li>
-                                <a href="#">
-                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
-                                    <span>&yen;<em>75400.00</em></span>
-                                </a>
-                            </li>
+                            <!-- {elseif $smarty.foreach.new_arr.iteration %2==0} -->
                             <li class="margin-r-0">
-                                <a href="#">
-                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
-                                    <span>&yen;<em>75400.00</em></span>
+                            <!--{/if}-->
+                                <a href="free_trial_detail.php?id={$new_arr.goods_id}">
+                                    <img src="{$new_arr.goods_thumb}" alt="{$new_arr.goods_name}" width="87" height="87" />
+                                    <span>&yen;<em>{$new_arr.market_price}</em></span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
-                                    <span>&yen;<em>75400.00</em></span>
-                                </a>
-                            </li>
-                            <li class="margin-r-0">
-                                <a href="#">
-                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
-                                    <span>&yen;<em>75400.00</em></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
-                                    <span>&yen;<em>75400.00</em></span>
-                                </a>
-                            </li>
-                            <li class="margin-r-0">
-                                <a href="#">
-                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
-                                    <span>&yen;<em>75400.00</em></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
-                                    <span>&yen;<em>75400.00</em></span>
-                                </a>
-                            </li>
-                            <li class="margin-r-0">
-                                <a href="#">
-                                    <img src="themes/ecmoban_dsc/iamges/20170517/detail-pic-1.jpg" alt="" />
-                                    <span>&yen;<em>75400.00</em></span>
-                                </a>
-                            </li>
+                            <!--{/foreach}-->
                         </ul>
                     </div>
                 </div>
