@@ -164,13 +164,14 @@
         <script>
         	$(function() {
 
-				//原生城市-无联动
+				//启用三级联动插件
 				var select = $('.city-picker-select').cityPicker({
 					dataJson: cityData,
 					renderMode: false,
 					linkage: false
 				});
 
+                //默认城市配置参数
                 var data = [
                     {
                         'id': '330000',
@@ -186,17 +187,15 @@
                     }
                 ];
 
-				//设置城市
+				//启用默认城市
 				select.setCityVal(data);
 
                 function submitForm() {
 
-                        //获取省的ID
-                    var province = data[0].name,
-                        //获取市的ID
-                        city = data[1].name,
-                        //获取区(县)的ID
-                        district = data[2].name;
+                        
+                    var province = data[0].name, //获取省的ID
+                        city = data[1].name,//获取市的ID
+                        district = data[2].name;//获取区(县)的ID
 
                         $(".city-picker-select .province").on("change",function() {
                             province = $(this).find("option:selected").data("title");
