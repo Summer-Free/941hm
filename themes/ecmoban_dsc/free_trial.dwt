@@ -8,40 +8,40 @@
      <body>
         <!--header start-->
         <div id="header">
-                <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
-                <!--slide banner start-->
-                <div class="slide-banner">      
-                    <div class="w1200">
-                        <div class="JS-slide">
-                            <ul class="content">
-                                <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/free-banner1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/free-banner2.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/free-banner3.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/free-banner4.jpg" alt=""></a></li>
-                            </ul>
-                            <a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
-                            <a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
-                            <ul class="point">
-                                <li class="active"></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </div>
+            <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
+            <!--slide banner start-->
+            <div class="slide-banner">      
+                <div class="w1200">
+                    <div class="JS-slide">
+                        <ul class="content">
+                            <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/free-banner1.jpg" alt=""></a></li>
+                            <li><a href="goods.php?id=981"><img src="themes/ecmoban_dsc/iamges/20170517/free-banner2.jpg" alt=""></a></li>
+                            <li><a href="goods.php?id=1007"><img src="themes/ecmoban_dsc/iamges/20170517/free-banner3.jpg" alt=""></a></li>
+                            <li><a href="goods.php?id=651"><img src="themes/ecmoban_dsc/iamges/20170517/free-banner4.jpg" alt=""></a></li>
+                        </ul>
+                        <a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
+                        <a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
+                        <ul class="point">
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
                     </div>
                 </div>
-                <!--slide banner end-->
+            </div>
+            <!--slide banner end-->
         </div>
         <!--header end-->
 
         <!--main body start-->
         <div class="w1200 bg-color-f5f5f5" id="main-body">
             <div class="section-1">
-                    <ul class="clearfix">
-                            <li><a href="#" title="我的试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-pic1.jpg" alt=""></a></li>
-                            <li><a href="article.php?id=170" title="试用流程"><img src="themes/ecmoban_dsc/iamges/20170517/free-pic2.jpg" alt=""></a></li>
-                            <li class="margin-r-0"><a href="exchange.php" target="_blank" title="积分换购"><img src="themes/ecmoban_dsc/iamges/20170517/free-pic3.jpg" alt=""></a></li>
-                    </ul>
+                <ul class="clearfix">
+                    <li><a href="#" title="我的试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-pic1.jpg" alt=""></a></li>
+                    <li><a href="article.php?id=170" title="试用流程" target="_blank"><img src="themes/ecmoban_dsc/iamges/20170517/free-pic2.jpg" alt=""></a></li>
+                    <li class="margin-r-0"><a href="exchange.php" target="_blank" title="积分换购"><img src="themes/ecmoban_dsc/iamges/20170517/free-pic3.jpg" alt=""></a></li>
+                </ul>
             </div>
 
             <div class="section-2 clearfix">

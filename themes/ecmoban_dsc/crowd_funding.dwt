@@ -16,9 +16,9 @@
                         <div class="JS-slide">
                             <ul class="content">
                                 <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/crowd-pic3.jpg" alt="" /></a></li>
-                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/crowd-pic2.jpg" alt="" /></a></li>
-                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/crowd-pic1.jpg" alt="" /></a></li>
-                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/crowd-pic4.jpg" alt="" /></a></li>
+                                <li><a href="goods.php?id=845"><img src="themes/ecmoban_dsc/iamges/20170517/crowd-pic2.jpg" alt="" /></a></li>
+                                <li><a href="goods.php?id=1023"><img src="themes/ecmoban_dsc/iamges/20170517/crowd-pic1.jpg" alt="" /></a></li>
+                                <li><a href="goods.php?id=668"><img src="themes/ecmoban_dsc/iamges/20170517/crowd-pic4.jpg" alt="" /></a></li>
                             </ul>
                             <a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
                             <a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
@@ -43,9 +43,9 @@
                     <input type="text" placeholder="请输入商品关键字" />
                     <button></button>
                 </form>
-                <ul class="float-r clearfix">
-                    <li><a href="#">新手帮助</a></li>
-                    <li class="margin-r-0"><a href="user.php?act=crowdfunding" target="_blank">我的众筹</a></li>
+                <ul class="float-l clearfix">
+                    <li><a href="article.php?id=171" target="_blank"><i class="icon1"></i>新手帮助</a></li>
+                    <li class="margin-r-0"><a href="user.php?act=crowdfunding" target="_blank"><i class="icon2"></i>我的众筹</a></li>
                 </ul>
             </div>
            
