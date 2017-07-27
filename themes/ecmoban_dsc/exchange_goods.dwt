@@ -38,6 +38,12 @@
 
 {insert_scripts files='suggest.js,jquery.lazyload.js,warehouse.js'}
 
+<style>
+    .ecsc-breadcrumb *,#p-box *,
+    .ecsc-goods-layout * {
+        box-sizing: content-box;
+    }
+</style>
 </head>
 
 <body>
