@@ -136,7 +136,7 @@
 					</div>
 					<div class="last-group">
 						<label></label>
-						<button class="bg-linear" type="submit" id="send">立即申请</button>
+						<button class="bg-linear" type="button" id="send">立即申请</button>
 					</div>
 				</form>
 			</div>
@@ -208,12 +208,13 @@
                         $(".city-picker-select .district").on("change",function() {
                             district = $(this).find("option:selected").data("title");
                         });
-                    $("#send").click(function(e){
+                    $("#send").click(function(e)
+                    {
                         e.preventDefault();
                         var name=$("#name").val();
                             phone=$("#phone").val(),
                             address=$("#detail-address").val();
-
+                            province=province;
                             reg = /^[\u4e00-\u9fa5]{2,4}$/i;
                             if (!reg.test(name))
                             {
@@ -240,7 +241,7 @@
                                 alert("请选择区(县)");  
                                 return false;
                             };
-
+                            $('#form_info').submit();
                     });
                 };
 
