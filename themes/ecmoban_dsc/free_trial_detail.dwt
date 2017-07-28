@@ -117,7 +117,7 @@
 			<div class="dialog-content">
 				<div class="close"></div>
 				<h3>请填写收货人信息</h3>
-				<form action="" method="post" onSubmit="return confirm();" >
+				<form action="#" method="post" id="form_info">
 					<div>
 						<label for="#name">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名 : </label>
 						<input type="text" id="name" />
@@ -200,23 +200,23 @@
                         alert("手机号码有误，请重填");  
                         return false;
                     }
-                    else if(province)
+                    else if(province==null)
                     {
                         alert("请选择省");  
                         return false;
                     }
-                    else if(city)
+                    else if(city==null)
                     {
                         alert("请选择市");  
                         return false;
                     }
-                    else if(district)
+                    else if(district==null)
                     {
                         alert("请选择区(县)");  
                         return false;
                     }
                     //通过以上验证，将数据传入PHP文件
-                    
+                    $("#form_info").submit();
                 })
         	});
         </script>
