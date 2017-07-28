@@ -1,80 +1,22 @@
-#main-body {
-	margin-top: 3px;
+.section-2 {
+	padding: 15px 0 0;
 }
-.common-h2 {
-	padding-left: 8px;
-	height: 73px;
-	line-height: 73px;
-	font-size: 16px;
-	color: #393939;
-}
-.section-1 li {
+.section-2 li {
 	float: left;
-	margin-right: 19px;
-}
-.filter-box {
-	position: relative;
-	padding: 40px 0;
-	border: 1px solid #bababa;
-	border-left: none;
-	border-right: none;
-}
-.filter-box .linkage-menu h3 {
-	position: relative;
-	top: -8px;
-	color: #7b7777;
-}
-.filter-box .linkage-menu {
-	position: absolute;
-	top: 20px;
-	left: 8px;
-}
-.filter-box select {
-	border: 1px solid #333;
-}
-#province {
-	margin-right: 5px;
-}
-.filter-box .condition li {
-	float: left;
-	margin-right: 8px;
-	color: #7b7777;
-	cursor: pointer;
-	-webkit-user-select:none;/*webkit浏览器*/
-       -moz-user-select:none;/*火狐*/
-	    -ms-user-select:none;/*IE10*/
-	 -khtml-user-select:none;/*早期浏览器*/
-	        user-select:none;
-}
-.filter-box .condition li.active {
-	color: #46a9fe;
-}
-.section-3 {
-	padding-top: 15px;
-	padding-bottom: 30px;
-}
-.section-3 li {
-	overflow-x: hidden;
-	float: left;
-	margin-right: 28px;
-	margin-bottom: 28px;
-	padding: 16px 12px;
-	width: 586px;
-	height: 242px;
+	margin: 0 10px 12px 0;
+	padding: 10px 10px 0;
+	width: 292px;
+	box-shadow: 0 1px 1px 1px #cecece;
 	background-color: #fff;
-	box-shadow: 0 2px 3px 0 #e3e3e3;
 }
-.section-3 li .wrap {
-	position: relative;
-	width: 235px;
-	height: 210px;
+.section-2 li img {
+	max-width: 100%;
+	width: 100%;
 }
-.section-3 li h2,
-.section-3 li p {
-	font-size: 18px;
+.section-2 li>div {
+	padding: 12px 0;
+	text-align: center;
 }
-.section-3 li .wrap>div {
-	position: absolute;
-	left: 0;
-	bottom: 0;
+.section-2 li>div * {
+	line-height: 1.8;
 }

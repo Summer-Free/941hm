@@ -14,205 +14,186 @@
         <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/experience_hall.css">         
     </head>  
     <body>
-        
 
         <!--header start-->
         <div id="header">   
-                <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
-                <!--slide banner start-->
-                <div class="slide-banner bg-color-f5f5f5">      
-                    <div class="w1200">
-                        <div class="JS-slide">
-                            <ul class="content">
-                                <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/crowd-pic3.jpg" alt="" /></a></li>
-                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/crowd-pic2.jpg" alt="" /></a></li>
-                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/crowd-pic1.jpg" alt="" /></a></li>
-                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/crowd-pic4.jpg" alt="" /></a></li>
-                            </ul>
-                            <a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
-                            <a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
-                            <ul class="point">
-                                <li class="active"></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!--slide banner end-->
+            <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
         </div>
         <!--header end-->
 
         <!--main body start-->
         <div class="w1200 bg-color-f5f5f5" id="main-body">
-            
+
+            <!--面包屑导航-->
+            <ul class="breadcrumb clearfix">
+                <li><a href="index.php">首页</a>&gt;</li>
+                <li>新品上市</li>
+            </ul>
+
             <div class="section-1">
-                <h2 class="common-h2">线上体验馆</h2>
-                <ul class="clearfix">
-                    <li><a href="#" title="明式家具"><img src="themes/ecmoban_dsc/iamges/20170517/experience-msjj.jpg" alt="明式家具" /></a></li>
-                    <li><a href="#" title="淸式家具"><img src="themes/ecmoban_dsc/iamges/20170517/experience-qsjj.jpg" alt="淸式家具" /></a></li>
-                    <li><a href="#" title="新古典家具"><img src="themes/ecmoban_dsc/iamges/20170517/experience-xgdjj.jpg" alt="新古典家具" /></a></li>
-                    <li><a href="#" title="新中式家具"><img src="themes/ecmoban_dsc/iamges/20170517/experience-xzsjj.jpg" alt="新中式家具" /></a></li>
-                    <li class="margin-r-0"><a href="#" title="欧式家具"><img src="themes/ecmoban_dsc/iamges/20170517/experience-qsjj.jpg" alt="欧式家具" /></a></li>
-                </ul>
-            </div>
+                <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/exchange-pic1.jpg" alt="" /></a>
+            </div>   
 
             <div class="section-2">
-                <h2 class="common-h2">线下体验馆</h2>
-                <div class="filter-box clearfix">
-                    <div class="linkage-menu">
-                        <h3>选择城市</h3>
-                        <form action="" method="" id="address">
-                            <select name="" id="province">
-                                <option value="null">请选择省</option>
-                            </select>
-                            <select name="" id="city">
-                                <option value="null">请选择市</option>
-                            </select>
-                        </form>
-                    </div>
-                    <ul class="condition float-r">
-                        <li class="active">综合排序</li>
-                        <li>销量最高</li>
-                        <li>离我最近</li>
-                        <li>评分最高</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="section-3">
                 <ul class="clearfix">
-                    <li class="clearfix">
-                        <a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/experience-1.jpg" alt="" /></a>
-                        <div class="wrap float-r">
-                            <h2>龙阳旗舰店体验馆</h2>
-                            <div>
-                                <p>营业时间：9:00-17:00</p>
-                                <p>服务电话：123-234-888</p>
-                                <p>展馆地址：浙江省杭州市东阳中山南路建设大厦6楼564号</p>
-                            </div>
+                    <li>
+                        <img src="themes/ecmoban_dsc/iamges/20170517/exchange-pic2.jpg" alt="">
+                        <div>
+                            <p>941红木家具体验馆杭州西湖分店</p>
+                            <p>营业时间：9:00 - 17:00</p>
+                            <address>展馆地址：浙江省杭州市西湖区</address>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="themes/ecmoban_dsc/iamges/20170517/exchange-pic3.jpg" alt="">
+                        <div>
+                            <p>941红木家具体验馆杭州西湖分店</p>
+                            <p>营业时间：9:00 - 17:00</p>
+                            <address>展馆地址：浙江省杭州市西湖区</address>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="themes/ecmoban_dsc/iamges/20170517/exchange-pic4.jpg" alt="">
+                        <div>
+                            <p>941红木家具体验馆杭州西湖分店</p>
+                            <p>营业时间：9:00 - 17:00</p>
+                            <address>展馆地址：浙江省杭州市西湖区</address>
                         </div>
                     </li>
                     <li class="margin-r-0">
-                        <a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/experience-1.jpg" alt="" /></a>
-                        <div class="wrap float-r">
-                            <h2>龙阳旗舰店体验馆</h2>
-                            <div>
-                                <p>营业时间：9:00-17:00</p>
-                                <p>服务电话：123-234-888</p>
-                                <p>展馆地址：浙江省杭州市东阳中山南路建设大厦6楼564号</p>
-                            </div>
+                        <img src="themes/ecmoban_dsc/iamges/20170517/exchange-pic5.jpg" alt="">
+                        <div>
+                            <p>941红木家具体验馆杭州西湖分店</p>
+                            <p>营业时间：9:00 - 17:00</p>
+                            <address>展馆地址：浙江省杭州市西湖区</address>
                         </div>
                     </li>
-                    <li class="clearfix">
-                        <a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/experience-1.jpg" alt="" /></a>
-                        <div class="wrap float-r">
-                            <h2>龙阳旗舰店体验馆</h2>
-                            <div>
-                                <p>营业时间：9:00-17:00</p>
-                                <p>服务电话：123-234-888</p>
-                                <p>展馆地址：浙江省杭州市东阳中山南路建设大厦6楼564号</p>
-                            </div>
+                    <li>
+                        <img src="themes/ecmoban_dsc/iamges/20170517/exchange-pic6.jpg" alt="">
+                        <div>
+                            <p>941红木家具体验馆杭州西湖分店</p>
+                            <p>营业时间：9:00 - 17:00</p>
+                            <address>展馆地址：浙江省杭州市西湖区</address>
                         </div>
                     </li>
-                    <li class="margin-r-0">
-                        <a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/experience-1.jpg" alt="" /></a>
-                        <div class="wrap float-r">
-                            <h2>龙阳旗舰店体验馆</h2>
-                            <div>
-                                <p>营业时间：9:00-17:00</p>
-                                <p>服务电话：123-234-888</p>
-                                <p>展馆地址：浙江省杭州市东阳中山南路建设大厦6楼564号</p>
-                            </div>
+                    <li>
+                        <img src="themes/ecmoban_dsc/iamges/20170517/exchange-pic7.jpg" alt="">
+                        <div>
+                            <p>941红木家具体验馆杭州西湖分店</p>
+                            <p>营业时间：9:00 - 17:00</p>
+                            <address>展馆地址：浙江省杭州市西湖区</address>
                         </div>
                     </li>
-                    <li class="clearfix">
-                        <a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/experience-1.jpg" alt="" /></a>
-                        <div class="wrap float-r">
-                            <h2>龙阳旗舰店体验馆</h2>
-                            <div>
-                                <p>营业时间：9:00-17:00</p>
-                                <p>服务电话：123-234-888</p>
-                                <p>展馆地址：浙江省杭州市东阳中山南路建设大厦6楼564号</p>
-                            </div>
+                    <li>
+                        <img src="themes/ecmoban_dsc/iamges/20170517/exchange-pic8.jpg" alt="">
+                        <div>
+                            <p>941红木家具体验馆杭州西湖分店</p>
+                            <p>营业时间：9:00 - 17:00</p>
+                            <address>展馆地址：浙江省杭州市西湖区</address>
                         </div>
                     </li>
                     <li class="margin-r-0">
-                        <a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/experience-1.jpg" alt="" /></a>
-                        <div class="wrap float-r">
-                            <h2>龙阳旗舰店体验馆</h2>
-                            <div>
-                                <p>营业时间：9:00-17:00</p>
-                                <p>服务电话：123-234-888</p>
-                                <p>展馆地址：浙江省杭州市东阳中山南路建设大厦6楼564号</p>
-                            </div>
+                        <img src="themes/ecmoban_dsc/iamges/20170517/exchange-pic10.jpg" alt="">
+                        <div>
+                            <p>941红木家具体验馆杭州西湖分店</p>
+                            <p>营业时间：9:00 - 17:00</p>
+                            <address>展馆地址：浙江省杭州市西湖区</address>
                         </div>
                     </li>
-                    <li class="clearfix">
-                        <a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/experience-1.jpg" alt="" /></a>
-                        <div class="wrap float-r">
-                            <h2>龙阳旗舰店体验馆</h2>
-                            <div>
-                                <p>营业时间：9:00-17:00</p>
-                                <p>服务电话：123-234-888</p>
-                                <p>展馆地址：浙江省杭州市东阳中山南路建设大厦6楼564号</p>
-                            </div>
+                    <li>
+                        <img src="themes/ecmoban_dsc/iamges/20170517/exchange-pic11.jpg" alt="">
+                        <div>
+                            <p>941红木家具体验馆杭州西湖分店</p>
+                            <p>营业时间：9:00 - 17:00</p>
+                            <address>展馆地址：浙江省杭州市西湖区</address>
                         </div>
                     </li>
-                    <li class="margin-r-0">
-                        <a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/experience-1.jpg" alt="" /></a>
-                        <div class="wrap float-r">
-                            <h2>龙阳旗舰店体验馆</h2>
-                            <div>
-                                <p>营业时间：9:00-17:00</p>
-                                <p>服务电话：123-234-888</p>
-                                <p>展馆地址：浙江省杭州市东阳中山南路建设大厦6楼564号</p>
-                            </div>
+                    <li>
+                        <img src="themes/ecmoban_dsc/iamges/20170517/exchange-pic12.jpg" alt="">
+                        <div>
+                            <p>941红木家具体验馆杭州西湖分店</p>
+                            <p>营业时间：9:00 - 17:00</p>
+                            <address>展馆地址：浙江省杭州市西湖区</address>
                         </div>
                     </li>
-                    <li class="clearfix">
-                        <a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/experience-1.jpg" alt="" /></a>
-                        <div class="wrap float-r">
-                            <h2>龙阳旗舰店体验馆</h2>
-                            <div>
-                                <p>营业时间：9:00-17:00</p>
-                                <p>服务电话：123-234-888</p>
-                                <p>展馆地址：浙江省杭州市东阳中山南路建设大厦6楼564号</p>
-                            </div>
+                    <li>
+                        <img src="themes/ecmoban_dsc/iamges/20170517/exchange-pic13.jpg" alt="">
+                        <div>
+                            <p>941红木家具体验馆杭州西湖分店</p>
+                            <p>营业时间：9:00 - 17:00</p>
+                            <address>展馆地址：浙江省杭州市西湖区</address>
                         </div>
                     </li>
                     <li class="margin-r-0">
-                        <a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/experience-1.jpg" alt="" /></a>
-                        <div class="wrap float-r">
-                            <h2>龙阳旗舰店体验馆</h2>
-                            <div>
-                                <p>营业时间：9:00-17:00</p>
-                                <p>服务电话：123-234-888</p>
-                                <p>展馆地址：浙江省杭州市东阳中山南路建设大厦6楼564号</p>
-                            </div>
+                        <img src="themes/ecmoban_dsc/iamges/20170517/exchange-pic14.jpg" alt="">
+                        <div>
+                            <p>941红木家具体验馆杭州西湖分店</p>
+                            <p>营业时间：9:00 - 17:00</p>
+                            <address>展馆地址：浙江省杭州市西湖区</address>
                         </div>
                     </li>
-                    <li class="clearfix">
-                        <a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/experience-1.jpg" alt="" /></a>
-                        <div class="wrap float-r">
-                            <h2>龙阳旗舰店体验馆</h2>
-                            <div>
-                                <p>营业时间：9:00-17:00</p>
-                                <p>服务电话：123-234-888</p>
-                                <p>展馆地址：浙江省杭州市东阳中山南路建设大厦6楼564号</p>
-                            </div>
+                    <li>
+                        <img src="themes/ecmoban_dsc/iamges/20170517/exchange-pic15.jpg" alt="">
+                        <div>
+                            <p>941红木家具体验馆杭州西湖分店</p>
+                            <p>营业时间：9:00 - 17:00</p>
+                            <address>展馆地址：浙江省杭州市西湖区</address>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="themes/ecmoban_dsc/iamges/20170517/exchange-pic16.jpg" alt="">
+                        <div>
+                            <p>941红木家具体验馆杭州西湖分店</p>
+                            <p>营业时间：9:00 - 17:00</p>
+                            <address>展馆地址：浙江省杭州市西湖区</address>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="themes/ecmoban_dsc/iamges/20170517/exchange-pic17.jpg" alt="">
+                        <div>
+                            <p>941红木家具体验馆杭州西湖分店</p>
+                            <p>营业时间：9:00 - 17:00</p>
+                            <address>展馆地址：浙江省杭州市西湖区</address>
                         </div>
                     </li>
                     <li class="margin-r-0">
-                        <a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/experience-1.jpg" alt="" /></a>
-                        <div class="wrap float-r">
-                            <h2>龙阳旗舰店体验馆</h2>
-                            <div>
-                                <p>营业时间：9:00-17:00</p>
-                                <p>服务电话：123-234-888</p>
-                                <p>展馆地址：浙江省杭州市东阳中山南路建设大厦6楼564号</p>
-                            </div>
+                        <img src="themes/ecmoban_dsc/iamges/20170517/exchange-pic18.jpg" alt="">
+                        <div>
+                            <p>941红木家具体验馆杭州西湖分店</p>
+                            <p>营业时间：9:00 - 17:00</p>
+                            <address>展馆地址：浙江省杭州市西湖区</address>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="themes/ecmoban_dsc/iamges/20170517/exchange-pic19.jpg" alt="">
+                        <div>
+                            <p>941红木家具体验馆杭州西湖分店</p>
+                            <p>营业时间：9:00 - 17:00</p>
+                            <address>展馆地址：浙江省杭州市西湖区</address>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="themes/ecmoban_dsc/iamges/20170517/exchange-pic20.jpg" alt="">
+                        <div>
+                            <p>941红木家具体验馆杭州西湖分店</p>
+                            <p>营业时间：9:00 - 17:00</p>
+                            <address>展馆地址：浙江省杭州市西湖区</address>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="themes/ecmoban_dsc/iamges/20170517/exchange-pic21.jpg" alt="">
+                        <div>
+                            <p>941红木家具体验馆杭州西湖分店</p>
+                            <p>营业时间：9:00 - 17:00</p>
+                            <address>展馆地址：浙江省杭州市西湖区</address>
+                        </div>
+                    </li>
+                    <li class="margin-r-0">
+                        <img src="themes/ecmoban_dsc/iamges/20170517/exchange-pic22.jpg" alt="">
+                        <div>
+                            <p>941红木家具体验馆杭州西湖分店</p>
+                            <p>营业时间：9:00 - 17:00</p>
+                            <address>展馆地址：浙江省杭州市西湖区</address>
                         </div>
                     </li>
                 </ul>
