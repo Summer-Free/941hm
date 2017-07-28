@@ -120,7 +120,7 @@
 				<form action="#" method="post" id="form_info">
 					<div>
 						<label for="#name">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名 : </label>
-						<input type="text" id="name" />
+						<input type="text" id="name" name="name"/>
 					</div>
 					<div>
 						<label for="#phone">手&nbsp;&nbsp;机&nbsp;&nbsp;号 : </label>
@@ -208,7 +208,6 @@
                         $(".city-picker-select .district").on("change",function() {
                             district = $(this).find("option:selected").data("title");
                         });
-
                     $("#send").click(function(e){
                         e.preventDefault();
                         var name=$("#name").val();
@@ -245,6 +244,9 @@
                         
                     });
                 };
+
+                //调用提交表单函数
+                submitForm();
 
         	});
         </script>
