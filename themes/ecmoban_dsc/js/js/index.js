@@ -11,10 +11,6 @@ $(function() {
 		speed: 1500
 	});
 
-
-});
-
-window.onload = function() {
 	//新品上市(上),图片滚动
 	$(".New-arrival .wrap-slide.top").slideScroll({
 		speed: 2000
@@ -34,4 +30,5 @@ window.onload = function() {
 	$(".Personal-tailor .wrap-slide.btm").slideScroll({
 		speed: 2000
 	});
-};
+
+});

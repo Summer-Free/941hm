@@ -234,38 +234,38 @@
 					<ul class="clearfix">
 						<li>
 							<a href="exchange.php" title="积分商城" style="background-color: #faf9f7;">
-								<img src="themes/ecmoban_dsc/iamges/20170517/jfsc.jpg" alt="积分商城" />
+								<img class="lazy" width="200" height="400" data-original="themes/ecmoban_dsc/iamges/20170517/jfsc.jpg" alt="积分商城" />
 							</a>
 						</li>
 						<li>
 							<a class="margin-b-12" href="gadget.php" title="小玩意儿" style="background-color: #d7fae8;">
-								<img src="themes/ecmoban_dsc/iamges/20170517/xwye.jpg" alt="小玩意儿" />
+								<img class="lazy" width="381" height="193" data-original="themes/ecmoban_dsc/iamges/20170517/xwye.jpg" alt="小玩意儿" />
 							</a>
 							<a class="showMsg" href="maintenance_technician.php" title="保养技师" style="background-color: #e4eef0;">
-								<img src="themes/ecmoban_dsc/iamges/20170517/byjs.jpg" alt="保养技师" />
+								<img class="lazy" width="381" height="193" data-original="themes/ecmoban_dsc/iamges/20170517/byjs.jpg" alt="保养技师" />
 							</a>
 						</li>
 						<li>
 							<a class="showMsg" href="old_for_new.php" title="以物换物" style="background-color: #f5f5f5;">
-								<img src="themes/ecmoban_dsc/iamges/20170517/ywhw.jpg" alt="以物换物" />
+								<img class="lazy" width="200" height="400" data-original="themes/ecmoban_dsc/iamges/20170517/ywhw.jpg" alt="以物换物" />
 							</a>
 						</li>
 						<li class="margin-r-0">
 							<a class="margin-b-12" href="free_trial.php" title="免费试用" style="background-color: #f6dcdc;">
-								<img src="themes/ecmoban_dsc/iamges/20170517/mfsy.jpg" alt="免费试用" />
+								<img class="lazy" width="390" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/mfsy.jpg" alt="免费试用" />
 							</a>
 							<a class="showMsg" href="style_museum.php" title="风格馆" style="background-color: #fbd7b3;">
-								<img src="themes/ecmoban_dsc/iamges/20170517/fgg.jpg" alt="风格馆" />
+								<img class="lazy" width="390" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/fgg.jpg" alt="风格馆" />
 							</a>
 						</li>
 					</ul>
 				</div>
 
 				<div class="section-2 margin-t-12 bg-color-f5f5f5 clearfix">
-					<h2><a href="article_cat.php?id=1000"><img src="themes/ecmoban_dsc/iamges/20170517/h2-pic1.jpg" alt="每日资讯" /></a></h2>
+					<h2><a href="article_cat.php?id=1000"><img class="lazy" width="1198" height="76" data-original="themes/ecmoban_dsc/iamges/20170517/h2-pic1.jpg" alt="每日资讯" /></a></h2>
 					<div class="mrms float-l">
 						<a href="daily_spike.php" title="每日秒杀">
-							<img src="themes/ecmoban_dsc/iamges/20170517/mrms.jpg" alt="每日秒杀" />
+							<img class="lazy" width="450" height="300" data-original="themes/ecmoban_dsc/iamges/20170517/mrms.jpg" alt="每日秒杀" />
 						</a>
 					</div>
 					<div class="slide-mrms float-r">
@@ -274,16 +274,7 @@
 							<!--{foreach from=$ms_res item=ms_res name=ms_res}-->
 								<li class="move">
 									<a href="goods.php?id={$ms_res.goods_id}">
-										<img src="{$ms_res.goods_thumb}" width="244.2" height="191.2" alt="{$ms_res.goods_name}" />
-										<p>{$ms_res.goods_name|truncate:15}</p>
-										<div class="clearfix">
-											<ins class="float-l">&yen;{$ms_res.shop_price}</ins>
-											<del class="float-r">&yen;{$ms_res.market_price}</del>
-										</div>
-										<span class="btn">立刻秒</span>
-									</a>
-									<a href="goods.php?id={$ms_res.goods_id}">
-										<img src="{$ms_res.goods_thumb}" width="244.2" height="191.2" alt="{$ms_res.goods_name}" />
+										<img class="lazy" data-original="{$ms_res.goods_thumb}" width="244" height="191" alt="{$ms_res.goods_name}" />
 										<p>{$ms_res.goods_name|truncate:15}</p>
 										<div class="clearfix">
 											<ins class="float-l">&yen;{$ms_res.shop_price}</ins>
@@ -308,7 +299,7 @@
 	                                	<!--{foreach from=$new_p06 item=new_p06 name=new_p06}-->
 	                                	<li class="float-l margin-r-12">
 	                                        <a class= "move left-a margin-b-12" href="goods.php?id={$new_p06.goods_id}" target="_blank" alt="{$new_p06.goods_name|escape:html}">
-	                                            <img src="{$new_p06.goods_thumb}" title="{$new_p06.goods_name|escape:html}" width="240" height="200" />
+	                                            <img class="lazy" width="240" height="200" data-original="{$new_p06.goods_thumb}" title="{$new_p06.goods_name|escape:html}" />
 	                                            <div class="clearfix">
 		                                            <h3 class="float-l cut_string" name="box">
 													 {$new_p06.goods_name|truncate:17} 
@@ -328,7 +319,7 @@
 	                                	<!--{foreach from=$new_p12 item=new_p12 name=new_p12}-->
 	                                	<li class="float-l margin-r-12">
 	                                        <a class= "move left-a margin-b-12" href="goods.php?id={$new_p12.goods_id}" target="_blank" alt="{$new_p12.goods_name|escape:html}">
-	                                            <img src="{$new_p12.goods_thumb}" title="{$new_p12.goods_name|escape:html}" width="240" height="200" />
+	                                            <img class="lazy" width="240" height="200" data-original="{$new_p12.goods_thumb}" title="{$new_p12.goods_name|escape:html}" />
 	                                            <div class="clearfix">
 		                                            <h3 class="float-l cut_string" name="box">
 													 {$new_p12.goods_name|truncate:17} 
@@ -344,12 +335,12 @@
 	                        </div>
 						</div>
 						<div class="float-r">
-							<a href="experience_hall.php"><img src="themes/ecmoban_dsc/iamges/20170517/tyg.png" alt="线下体验馆"></a>
+							<a href="experience_hall.php"><img class="lazy" width="599" height="520" data-original="themes/ecmoban_dsc/iamges/20170517/tyg.png" alt="线下体验馆"></a>
 						</div>
 					</div>
 					<div class="Personal-tailor clearfix">
 						<div class="float-l">
-							<a class="showMsg" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/srdz.png" alt="体验馆"></a>
+							<a class="showMsg" href="#"><img class="lazy" width="591" height="524" data-original="themes/ecmoban_dsc/iamges/20170517/srdz.png" alt="私人订制"></a>
 						</div>
 						<div class="float-r">
 							<h2><a href="limited_time_offer.php">限时优惠</a></h2>
@@ -358,9 +349,8 @@
 	                            	<ul class="content clearfix">	
 			                        <!--{foreach from=$xs_p06 item=xs_p06 name=xs_p06} -->
 			                        	<li class="float-l margin-r-12">
-			                        	
 			                        		<a class="move left-a margin-b-12" href="goods.php?id={$xs_p06.goods_id}">
-												<img src="{$xs_p06.goods_thumb}" alt="{$xs_p06.goods_name|truncate:20}" width="240" height="200" />
+												<img class="lazy" width="240" height="200" data-original="{$xs_p06.goods_thumb}" alt="{$xs_p06.goods_name|truncate:20}" />
 	                                            <div class="clearfix">
 													<h3 id="cut_string">
 													{$xs_p06.goods_name|truncate:17}
@@ -381,7 +371,7 @@
 			                        	<li class="float-l margin-r-12">
 			                        	
 			                        		<a class="move left-a margin-b-12" href="goods.php?id={$xs_p12.goods_id}">
-												<img src="{$xs_p12.goods_thumb}" alt="{$xs_p12.goods_name|truncate:20}" width="240" height="200" />
+												<img class="lazy" width="240" height="200" data-original="{$xs_p12.goods_thumb}" alt="{$xs_p12.goods_name|truncate:20}" />
 	                                            <div class="clearfix">
 													<h3 id="cut_string">
 													{$xs_p12.goods_name|truncate:17}
@@ -404,44 +394,44 @@
 						<dt>品牌街 <a href="brand.php">查看更多</a></dt>
 						<dd class="clearfix">
 							<a href="brandn.php?id=20" title="美满居">
-								<img src="themes/ecmoban_dsc/iamges/20170517/mmj.jpg" alt="美满居">
+								<img class="lazy" width="171" height="80" data-original="themes/ecmoban_dsc/iamges/20170517/mmj.jpg" alt="美满居">
 							</a>
 							<a href="brandn.php?id=40" title="金莎驰">
-								<img src="themes/ecmoban_dsc/iamges/20170517/jsc.jpg" alt="金莎驰">
+								<img class="lazy" width="171" height="80" data-original="themes/ecmoban_dsc/iamges/20170517/jsc.jpg" alt="金莎驰">
 							</a>
 							<a href="brandn.php?id=3" title="国清红木">
-								<img src="themes/ecmoban_dsc/iamges/20170517/gqhm.jpg" alt="国清红木">
+								<img class="lazy" width="171" height="80" data-original="themes/ecmoban_dsc/iamges/20170517/gqhm.jpg" alt="国清红木">
 							</a>
 							<a href="brandn.php?id=63" title="鼎艺红木">
-								<img src="themes/ecmoban_dsc/iamges/20170517/dyhm.jpg" alt="鼎艺红木">
+								<img class="lazy" width="171" height="80" data-original="themes/ecmoban_dsc/iamges/20170517/dyhm.jpg" alt="鼎艺红木">
 							</a>
 							<a href="brandn.php?id=85" title="欧尔利">
-								<img src="themes/ecmoban_dsc/iamges/20170517/oel.jpg" alt="欧尔利"></a>
+								<img class="lazy" width="171" height="80" data-original="themes/ecmoban_dsc/iamges/20170517/oel.jpg" alt="欧尔利"></a>
 							<a href="brandn.php?id=19" title="洛克王">
-								<img src="themes/ecmoban_dsc/iamges/20170517/lkw.jpg" alt="洛克王"></a>
+								<img class="lazy" width="171" height="80" data-original="themes/ecmoban_dsc/iamges/20170517/lkw.jpg" alt="洛克王"></a>
 							<a class="margin-r-0" href="brandn.php?id=49" title="京华红木">
-								<img src="themes/ecmoban_dsc/iamges/20170517/jhhm.jpg" alt="京华红木">
+								<img class="lazy" width="171" height="80" data-original="themes/ecmoban_dsc/iamges/20170517/jhhm.jpg" alt="京华红木">
 							</a>
 							<a href="brandn.php?id=26" title="博古王">
-								<img src="themes/ecmoban_dsc/iamges/20170517/bgw.jpg" alt="博古王">
+								<img class="lazy" width="171" height="80" data-original="themes/ecmoban_dsc/iamges/20170517/bgw.jpg" alt="博古王">
 							</a>
 							<a href="brandn.php?id=17" title="时利和红木">
-								<img src="themes/ecmoban_dsc/iamges/20170517/slhhm.jpg" alt="时利和红木">
+								<img class="lazy" width="171" height="80" data-original="themes/ecmoban_dsc/iamges/20170517/slhhm.jpg" alt="时利和红木">
 							</a>
 							<a href="brandn.php?id=58" title="雅康居">
-								<img src="themes/ecmoban_dsc/iamges/20170517/ykj.jpg" alt="雅康居">
+								<img class="lazy" width="171" height="80" data-original="themes/ecmoban_dsc/iamges/20170517/ykj.jpg" alt="雅康居">
 							</a>
 							<a href="brandn.php?id=87" title="鼎康红木">
-								<img src="themes/ecmoban_dsc/iamges/20170517/dkhm.jpg" alt="鼎康红木">
+								<img class="lazy" width="171" height="80" data-original="themes/ecmoban_dsc/iamges/20170517/dkhm.jpg" alt="鼎康红木">
 							</a>
 							<a href="brandn.php?id=88" title="亿古红木">
-								<img src="themes/ecmoban_dsc/iamges/20170517/yghm.jpg" alt="亿古红木">
+								<img class="lazy" width="171" height="80" data-original="themes/ecmoban_dsc/iamges/20170517/yghm.jpg" alt="亿古红木">
 							</a>
 							<a href="brandn.php?id=21" title="乾宝阁">
-								<img src="themes/ecmoban_dsc/iamges/20170517/qbg.jpg" alt="乾宝阁">
+								<img class="lazy" width="171" height="80" data-original="themes/ecmoban_dsc/iamges/20170517/qbg.jpg" alt="乾宝阁">
 							</a>
 							<a class="margin-r-0" href="brandn.php?id=68" title="良宵">
-								<img src="themes/ecmoban_dsc/iamges/20170517/lxhm.jpg" alt="良宵">
+								<img class="lazy" width="171" height="80" data-original="themes/ecmoban_dsc/iamges/20170517/lxhm.jpg" alt="良宵">
 							</a>
 						</dd>
 					</dl>
@@ -449,7 +439,7 @@
 			</div>
 			
 			<!--商家入驻/广告位-->
-			<div class="sidebar"><a href="article.php?id=117" title="商家入驻"><img src="themes/ecmoban_dsc/iamges/20170517/sidebar.jpg" alt="商家入驻"></a></div>
+			<div class="sidebar"><a href="article.php?id=117" title="商家入驻"><img class="lazy" width="1920" height="188" data-original="themes/ecmoban_dsc/iamges/20170517/sidebar.jpg" alt="商家入驻"></a></div>
 			<div class="w1200 margin-t-8">
 
 				<!--餐厅系列-->
@@ -466,7 +456,7 @@
                     <li class="move margin-r-0">
                 	<!--{/if}-->
 						<a href="goods.php?id={$ct_sql.goods_id}">
-							<img src="{$ct_sql.goods_thumb}" alt="{$ct_sql.goods_name}" title="{$ct_sql.goods_name}" />
+							<img class="lazy" width="291" height="291" data-original="{$ct_sql.goods_thumb}" alt="{$ct_sql.goods_name}" title="{$ct_sql.goods_name}" />
 							<div>
 								<h3>{$ct_sql.goods_name|truncate:17}</h3>
 								<span class="color-ff0000">&yen;{$ct_sql.shop_price}</span>
@@ -491,7 +481,7 @@
                     <li class="move margin-r-0">
                 	<!--{/if}-->
 						<a href="goods.php?id={$kt_sql.goods_id}">
-							<img src="{$kt_sql.goods_thumb}" alt="{$kt_sql.goods_name}" title="{$kt_sql.goods_name}" />
+							<img class="lazy" width="291" height="291" data-original="{$kt_sql.goods_thumb}" alt="{$kt_sql.goods_name}" title="{$kt_sql.goods_name}" />
 							<div>
 								<h3>{$kt_sql.goods_name|truncate:17}</h3>
 								<span class="color-ff0000">&yen;{$kt_sql.shop_price}</span>
@@ -516,7 +506,7 @@
 		                    <li class="move margin-r-0">
 		                	<!--{/if}-->
 								<a href="goods.php?id={$sf_sql.goods_id}">
-									<img src="{$sf_sql.goods_thumb}" alt="{$sf_sql.goods_name}" title="{$sf_sql.goods_name}" />
+									<img class="lazy" width="291" height="291" data-original="{$sf_sql.goods_thumb}" alt="{$sf_sql.goods_name}" title="{$sf_sql.goods_name}" />
 									<div>
 										<h3>{$sf_sql.goods_name|truncate:17}</h3>
 										<span class="color-ff0000">&yen;{$sf_sql.shop_price}</span>
@@ -541,7 +531,7 @@
 		                    <li class="move margin-r-0">
 		                	<!--{/if}-->
 								<a href="goods.php?id={$ws_sql.goods_id}">
-									<img src="{$ws_sql.goods_thumb}" alt="{$ws_sql.goods_name}" title="{$ws_sql.goods_name}" />
+									<img class="lazy" width="291" height="291" data-original="{$ws_sql.goods_thumb}" alt="{$ws_sql.goods_name}" title="{$ws_sql.goods_name}" />
 									<div>
 										<h3>{$ws_sql.goods_name|truncate:17}</h3>
 										<span class="color-ff0000">&yen;{$ws_sql.shop_price}</span>
@@ -555,7 +545,7 @@
 				<div class="section-6 bg-color-f5f5f5">
 					<ul class="Crowd-funding clearfix">
 						<li class="make-new-world">
-							<a href="crowd_funding.php" title="点击进入"><img src="themes/ecmoban_dsc/iamges/20170517/make-new-world.jpg" alt="众筹美物"></a>
+							<a href="crowd_funding.php" title="点击进入"><img class="lazy" width="596" height="351" data-original="themes/ecmoban_dsc/iamges/20170517/make-new-world.jpg" alt="众筹美物"></a>
 						</li>
 						<!--{foreach from=$zc_p item=zc_p name=zc_p}-->
 							<!-- {if $smarty.foreach.zc_p.iteration ==1  } --> 
@@ -572,7 +562,7 @@
 								<li class="move margin-r-0">
 							<!--{/if}--> 
 						
-							<a href="crowdfunding.php?act=detail&id={$zc_p.id}" title="点击进入"><img src="{$zc_p.title_img}" alt="古典雅致侍女屏风" width="274" height="213"></a>
+							<a href="crowdfunding.php?act=detail&id={$zc_p.id}" title="点击进入"><img class="lazy" width="274" height="213" data-original="{$zc_p.title_img}" alt="古典雅致侍女屏风"></a>
 							<div class="content">
 								<h4>{$zc_p.title}</h4>
 								<div class="progress">
@@ -645,5 +635,15 @@
 		<!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->	
 		<!--首页专用JS-->
         <script type="text/javascript" src="themes/ecmoban_dsc/js/js/index.js"></script>
+        <script type="text/javascript" src="js/jquery.lazyload.js"></script>  
+        
+        <!--开启懒加载-->
+        <script type="text/javascript">
+            $("img.lazy").lazyload({
+            	placeholder: "themes/ecmoban_dsc/images/loadGoods.gif",
+                effect : "fadeIn",
+                threshold : 1000
+            });
+        </script>
 	</body>
 </html>

@@ -40,7 +40,7 @@
             
             <!--每日推荐-->
             <div class="section-1 clearfix">
-                <img class="float-l"  src="themes/ecmoban_dsc/iamges/20170517/recommend.jpg" alt="每日推荐" />
+                <img class="float-l lazy" width="302" height="280" data-original="themes/ecmoban_dsc/iamges/20170517/recommend.jpg" alt="每日推荐" />
                 <div class="same-list float-l clearfix">
                     <div class="JS-slide-scroll">
                         <ul class="content clearfix">
@@ -50,7 +50,7 @@
                             <!-- {elseif $smarty.foreach.mrtj_sql.iteration %4 !=0  } -->
                                 <li>
                             <!--{/if}--> 
-                                <a href="goods.php?id={$mrtj_sql.goods_id}"><img src="{$mrtj_sql.goods_thumb}" alt="{$mrtj_sql.goods_name}" width="220" height="198" /></a>
+                                <a href="goods.php?id={$mrtj_sql.goods_id}"><img class="lazy" width="220" height="198" data-original="{$mrtj_sql.goods_thumb}" alt="{$mrtj_sql.goods_name}"  /></a>
                                     <div>
                                         <a href="goods.php?id={$mrtj_sql.goods_id}">{$mrtj_sql.goods_name|truncate:12}</a>
                                         <p class="clearfix">
@@ -78,7 +78,7 @@
                     <!-- {elseif $smarty.foreach.jxhc_sql.iteration ==4} -->
                     <li class="margin-r-0">
                     <!--{/if}-->   
-                        <a href="goods.php?id={$jxhc_sql.goods_id}"><img src="{$jxhc_sql.goods_thumb}" alt="{$jxhc_sql.goods_name}" width="220" height="198" /></a>
+                        <a href="goods.php?id={$jxhc_sql.goods_id}"><img class="lazy" width="220" height="198" data-original="{$jxhc_sql.goods_thumb}" alt="{$jxhc_sql.goods_name}" width="220" height="198" /></a>
                         <div>
                             <a href="goods.php?id={$jxhc_sql.goods_id}">{$jxhc_sql.goods_name}</a>
                             <p class="clearfix">
@@ -104,7 +104,7 @@
                     <!-- {elseif $smarty.foreach.yzsc_sql.iteration ==4} -->
                     <li class="margin-r-0">
                     <!--{/if}-->
-                        <a href="goods.php?id={$yzsc_sql.goods_id}"><img src="{$yzsc_sql.goods_thumb}" alt="{$yzsc_sql.goods_name}" width="220" height="198" /></a>
+                        <a href="goods.php?id={$yzsc_sql.goods_id}"><img class="lazy" width="220" height="198" data-original="{$yzsc_sql.goods_thumb}" alt="{$yzsc_sql.goods_name}" width="220" height="198" /></a>
                         <div>
                             <a href="goods.php?id={$yzsc_sql.goods_id}">{$yzsc_sql.goods_name}</a>
                             <p class="clearfix">
@@ -130,7 +130,7 @@
                     <!-- {elseif $smarty.foreach.yzcq_sql.iteration ==4} -->
                     <li class="margin-r-0">
                     <!--{/if}-->
-                        <a href="goods.php?id={$yzcq_sql.goods_id}"><img src="{$yzcq_sql.goods_thumb}" alt="{$yzcq_sql.goods_name}" width="220" height="198" /></a>
+                        <a href="goods.php?id={$yzcq_sql.goods_id}"><img class="lazy" width="220" height="198" data-original="{$yzcq_sql.goods_thumb}" alt="{$yzcq_sql.goods_name}" width="220" height="198" /></a>
                         <div>
                             <a href="goods.php?id={$yzcq_sql.goods_id}">{$yzcq_sql.goods_name|truncate:12}</a>
                             <p class="clearfix">
@@ -155,7 +155,7 @@
                     <!-- {elseif $smarty.foreach.fgct_sql.iteration ==4} -->
                     <li class="margin-r-0">
                     <!--{/if}-->
-                        <a href="goods.php?id={$fgct_sql.goods_id}"><img src="{$fgct_sql.goods_thumb}" alt="{$fgct_sql.goods_name}" width="220" height="198" /></a>
+                        <a href="goods.php?id={$fgct_sql.goods_id}"><img class="lazy" width="220" height="198" data-original="{$fgct_sql.goods_thumb}" alt="{$fgct_sql.goods_name}" width="220" height="198" /></a>
                         <div>
                             <a href="goods.php?id={$fgct_sql.goods_id}">{$fgct_sql.goods_name}</a>
                             <p class="clearfix">
@@ -180,7 +180,7 @@
                     <!-- {elseif $smarty.foreach.sgyp_sql.iteration ==4} -->
                     <li class="margin-r-0">
                     <!--{/if}-->
-                        <a href="goods.php?id={$sgyp_sql.goods_id}"><img src="{$sgyp_sql.goods_thumb}" alt="{$sgyp_sql.goods_name}" width="220" height="198" /></a>
+                        <a href="goods.php?id={$sgyp_sql.goods_id}"><img class="lazy" width="220" height="198" data-original="{$sgyp_sql.goods_thumb}" alt="{$sgyp_sql.goods_name}" width="220" height="198" /></a>
                         <div>
                             <a href="goods.php?id={$sgyp_sql.goods_id}">{$sgyp_sql.goods_name}</a>
                             <p class="clearfix">
@@ -196,6 +196,16 @@
         <!--main body end-->
         <!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->  
         <!--本页JS-->     
-        <script type="text/javascript" src="themes/ecmoban_dsc/js/js/gadget.js"></script>   
+        <script type="text/javascript" src="themes/ecmoban_dsc/js/js/gadget.js"></script>  
+        <script type="text/javascript" src="js/jquery.lazyload.js"></script>  
+        
+        <!--开启懒加载-->
+        <script type="text/javascript">
+            $("img.lazy").lazyload({
+                placeholder: "themes/ecmoban_dsc/images/loadGoods.gif",
+                effect : "fadeIn",
+                threshold : 1000
+            });
+        </script>
     </body>
 </html>

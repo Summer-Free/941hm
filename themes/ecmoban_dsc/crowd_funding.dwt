@@ -64,7 +64,7 @@
                         <li class="move margin-r-0">
                     <!--{/if}-->
                     
-                        <a href="crowdfunding.php?act=detail&id={$tjzc_res.id}"><img src="{$tjzc_res.title_img}" alt="{$tjzc_res.title}" width="292" height="240" /></a>
+                        <a href="crowdfunding.php?act=detail&id={$tjzc_res.id}"><img class="lazy" width="292" height="240" data-original="{$tjzc_res.title_img}" alt="{$tjzc_res.title}" /></a>
                         <div class="wrap">
                             <h3>{$tjzc_res.title}</h3>
                             <p class="progress"><span></span></p>
@@ -95,7 +95,7 @@
                     <!-- {elseif $smarty.foreach.newzc_res.iteration ==4  } -->
                         <li class="margin-r-0">
                     <!--{/if}-->
-                        <a href="crowdfunding.php?act=detail&id={$newzc_res.id}"><img src="{$newzc_res.title_img}" alt="{$newzc_res.title}" width="292" height="240" /></a>
+                        <a href="crowdfunding.php?act=detail&id={$newzc_res.id}"><img class="lazy" width="292" height="240" data-original="{$newzc_res.title_img}" alt="{$newzc_res.title}" /></a>
                         <div class="wrap">
                             <h3>{$newzc_res.title}</h3>
                             <p class="progress"><span></span></p>
@@ -123,7 +123,7 @@
                     <!-- {elseif $allzc_res.id %4 != 0  } -->
                         <li>
                     <!--{/if}-->
-                        <a href="crowdfunding.php?act=detail&id={$allzc_res.id}"><img src="{$allzc_res.title_img}" alt="{$allzc_res.title}" width="292" height="240" /></a>
+                        <a href="crowdfunding.php?act=detail&id={$allzc_res.id}"><img class="lazy" width="292" height="240" data-original="{$allzc_res.title_img}" alt="{$allzc_res.title}" /></a>
                         <div class="wrap">
                             <h3>{$allzc_res.title}</h3>
                             <p class="progress"><span></span></p>
@@ -145,5 +145,15 @@
         
         <!--本页JS-->     
         <script type="text/javascript" src="themes/ecmoban_dsc/js/js/crowd_funding.js"></script>  
+        <script type="text/javascript" src="js/jquery.lazyload.js"></script>  
+        
+        <!--开启懒加载-->
+        <script type="text/javascript">
+            $("img.lazy").lazyload({
+                placeholder: "themes/ecmoban_dsc/images/loadGoods.gif",
+                effect : "fadeIn",
+                threshold : 1000
+            });
+        </script>
     </body>
 </html>

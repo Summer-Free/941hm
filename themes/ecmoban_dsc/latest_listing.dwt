@@ -32,7 +32,7 @@
                 	<!--{/if}--> 
 							<a href="goods.php?id={$res.goods_id}">
 								<div class="global-product-img">
-									<img src="{$res.goods_thumb}" alt="" />
+									<img class="lazy" width="290" height="290" data-original="{$res.goods_thumb}" alt="" />
 								</div>
 								<div class="btm">
 									<h3>{$res.goods_name|truncate:15}</h3>
@@ -45,92 +45,6 @@
 							</a>
 						</li>
 				<!--{/foreach}-->
-				<!--
-					<li class="move">
-					<a href="#">
-						<div class="global-product-img"><img src="themes/ecmoban_dsc/iamges/20170517/last-pic1.jpg" alt="" /></div>
-						<div class="btm">
-							<h3>产品名称产品名称产品名称产品名称产品名称产品名称</h3>
-							<p class="clearfix">
-								<span class="price float-l">价格: &yen;999999</span>
-							</p>
-							<span class="btn">立即购买</span>
-						</div>
-					</a>
-				</li>
-				<li class="move">
-					<a href="#">
-						<div class="global-product-img"><img src="themes/ecmoban_dsc/iamges/20170517/last-pic1.jpg" alt="" /></div>
-						<div class="btm">
-							<h3>产品名称产品名称产品名称产品名称产品名称产品名称</h3>
-							<p class="clearfix">
-								<span class="price float-l">价格: &yen;999999</span>
-							</p>
-							<span class="btn">立即购买</span>
-						</div>
-					</a>
-				</li>
-				<li class="move margin-r-0">
-					<a href="#">
-						<div class="global-product-img"><img src="themes/ecmoban_dsc/iamges/20170517/last-pic1.jpg" alt="" /></div>
-						<div class="btm">
-							<h3>产品名称产品名称产品名称产品名称产品名称产品名称</h3>
-							<p class="clearfix">
-								<span class="price float-l">价格: &yen;999999</span>
-							</p>
-							<span class="btn">立即购买</span>
-						</div>
-					</a>
-				</li>
-				<li class="move">
-					<a href="#">
-						<div class="global-product-img"><img src="themes/ecmoban_dsc/iamges/20170517/last-pic1.jpg" alt="" /></div>
-						<div class="btm">
-							<h3>产品名称产品名称产品名称产品名称产品名称产品名称</h3>
-							<p class="clearfix">
-								<span class="price float-l">价格: &yen;999999</span>
-							</p>
-							<span class="btn">立即购买</span>
-						</div>
-					</a>
-				</li>
-				<li class="move">
-					<a href="#">
-						<div class="global-product-img"><img src="themes/ecmoban_dsc/iamges/20170517/last-pic1.jpg" alt="" /></div>
-						<div class="btm">
-							<h3>产品名称产品名称产品名称产品名称产品名称产品名称</h3>
-							<p class="clearfix">
-								<span class="price float-l">价格: &yen;999999</span>
-							</p>
-							<span class="btn">立即购买</span>
-						</div>
-					</a>
-				</li>
-				<li class="move">
-					<a href="#">
-						<div class="global-product-img"><img src="themes/ecmoban_dsc/iamges/20170517/last-pic1.jpg" alt="" /></div>
-						<div class="btm">
-							<h3>产品名称产品名称产品名称产品名称产品名称产品名称</h3>
-							<p class="clearfix">
-								<span class="price float-l">价格: &yen;999999</span>
-							</p>
-							<span class="btn">立即购买</span>
-						</div>
-					</a>
-				</li>
-				<li class="move margin-r-0">
-					<a href="#">
-						<div class="global-product-img"><img src="themes/ecmoban_dsc/iamges/20170517/last-pic1.jpg" alt="" /></div>
-						<div class="btm">
-							<h3>产品名称产品名称产品名称产品名称产品名称产品名称</h3>
-							<p class="clearfix">
-								<span class="price float-l">价格: &yen;999999</span>
-							</p>
-							<span class="btn">立即购买</span>
-						</div>
-					</a>
-				</li>
-				-->
 
 			</ul>
         </div>
@@ -141,6 +55,15 @@
 
 		<!--页面专用JS-->
 		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/latest_listing.js"></script>	
-	
+	    <script type="text/javascript" src="js/jquery.lazyload.js"></script>  
+        
+        <!--开启懒加载-->
+        <script type="text/javascript">
+            $("img.lazy").lazyload({
+            	placeholder: "themes/ecmoban_dsc/images/loadGoods.gif",
+                effect : "fadeIn",
+                threshold : 1000
+            });
+        </script>
     </body>
 </html>    

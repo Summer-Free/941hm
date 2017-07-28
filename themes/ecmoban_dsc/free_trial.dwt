@@ -38,21 +38,21 @@
         <div class="w1200 bg-color-f5f5f5" id="main-body">
             <div class="section-1">
                 <ul class="clearfix">
-                    <li><a href="#" title="我的试用"><img src="themes/ecmoban_dsc/iamges/20170517/free-pic1.jpg" alt=""></a></li>
-                    <li><a href="article.php?id=170" title="试用流程" target="_blank"><img src="themes/ecmoban_dsc/iamges/20170517/free-pic2.jpg" alt=""></a></li>
-                    <li class="margin-r-0"><a href="exchange.php" target="_blank" title="积分换购"><img src="themes/ecmoban_dsc/iamges/20170517/free-pic3.jpg" alt=""></a></li>
+                    <li><a href="#" title="我的试用"><img class="lazy" width="320" height="478" data-original="themes/ecmoban_dsc/iamges/20170517/free-pic1.jpg" alt=""></a></li>
+                    <li><a href="article.php?id=170" title="试用流程" target="_blank"><img class="lazy" width="320" height="478" data-original="themes/ecmoban_dsc/iamges/20170517/free-pic2.jpg" alt=""></a></li>
+                    <li class="margin-r-0"><a href="exchange.php" target="_blank" title="积分换购"><img class="lazy" width="320" height="478" data-original="themes/ecmoban_dsc/iamges/20170517/free-pic3.jpg" alt=""></a></li>
                 </ul>
             </div>
 
             <div class="section-2 clearfix">
-                <a href="free_trial_detail.php?id=1235" id="jumpHere"><img src="themes/ecmoban_dsc/iamges/20170517/free-product1.jpg" alt="" /></a>
-                <a href="free_trial_detail.php?id=974" class="margin-r-0"><img src="themes/ecmoban_dsc/iamges/20170517/free-product2.jpg" alt="" /></a>
-                <a href="free_trial_detail.php?id=1054"><img src="themes/ecmoban_dsc/iamges/20170517/free-product3.jpg" alt="" /></a>
-                <a href="free_trial_detail.php?id=1039" class="margin-r-0"><img src="themes/ecmoban_dsc/iamges/20170517/free-product4.jpg" alt="" /></a>
+                <a href="free_trial_detail.php?id=1235" id="jumpHere"><img class="lazy" width="490" height="344" data-original="themes/ecmoban_dsc/iamges/20170517/free-product1.jpg" alt="" /></a>
+                <a href="free_trial_detail.php?id=974" class="margin-r-0"><img class="lazy" width="490" height="344" data-original="themes/ecmoban_dsc/iamges/20170517/free-product2.jpg" alt="" /></a>
+                <a href="free_trial_detail.php?id=1054"><img class="lazy" width="490" height="344" data-original="themes/ecmoban_dsc/iamges/20170517/free-product3.jpg" alt="" /></a>
+                <a href="free_trial_detail.php?id=1039" class="margin-r-0"><img class="lazy" width="490" height="344" data-original="themes/ecmoban_dsc/iamges/20170517/free-product4.jpg" alt="" /></a>
             </div>
 
             <div class="section-3 clearfix">
-                <img src="themes/ecmoban_dsc/iamges/20170517/free-product5.png" alt="">
+                <img class="lazy" width="576" height="395" data-original="themes/ecmoban_dsc/iamges/20170517/free-product5.png" alt="">
                 <dl>
                     <dt>刺猬紫檀琴桌两件套</dt>
                     <dd>原木纹理，色泽润雅，精致工艺</dd>
@@ -63,14 +63,14 @@
             </div>
 
             <div class="section-4 padding-t-60 clearfix">
-                <a href="free_trial_detail.php?id=1034"><img src="themes/ecmoban_dsc/iamges/20170517/free-product5.jpg" alt="" /></a>
-                <a href="free_trial_detail.php?id=1018" class="margin-r-0"><img src="themes/ecmoban_dsc/iamges/20170517/free-product6.jpg" alt="" /></a>
-                <a href="free_trial_detail.php?id=992"><img src="themes/ecmoban_dsc/iamges/20170517/free-product7.jpg" alt="" /></a>
-                <a href="free_trial_detail.php?id=848" class="margin-r-0"><img src="themes/ecmoban_dsc/iamges/20170517/free-product8.jpg" alt="" /></a>
+                <a href="free_trial_detail.php?id=1034"><img class="lazy" width="530" height="350" data-original="themes/ecmoban_dsc/iamges/20170517/free-product5.jpg" alt="" /></a>
+                <a href="free_trial_detail.php?id=1018" class="margin-r-0"><img class="lazy" width="530" height="350" data-original="themes/ecmoban_dsc/iamges/20170517/free-product6.jpg" alt="" /></a>
+                <a href="free_trial_detail.php?id=992"><img class="lazy" width="530" height="350" data-original="themes/ecmoban_dsc/iamges/20170517/free-product7.jpg" alt="" /></a>
+                <a href="free_trial_detail.php?id=848" class="margin-r-0"><img class="lazy" width="530" height="350" data-original="themes/ecmoban_dsc/iamges/20170517/free-product8.jpg" alt="" /></a>
             </div>
 
             <div class="section-3 clearfix">
-                <img src="themes/ecmoban_dsc/iamges/20170517/free-product6.png" alt="">
+                <img class="lazy" width="537" height="462" data-original="themes/ecmoban_dsc/iamges/20170517/free-product6.png" alt="">
                 <dl>
                     <dt>刺猬紫檀二联柜</dt>
                     <dd>时尚典雅，纹理细腻，造型流畅</dd>
@@ -85,6 +85,16 @@
         <!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->
         <!--本页专用JS-->
         <script type="text/javascript" src="themes/ecmoban_dsc/js/js/free_trial.js"></script> 
+        <script type="text/javascript" src="js/jquery.lazyload.js"></script>  
+        
+        <!--开启懒加载-->
+        <script type="text/javascript">
+            $("img.lazy").lazyload({
+                placeholder: "themes/ecmoban_dsc/images/loadGoods.gif",
+                effect : "fadeIn",
+                threshold : 1000
+            });
+        </script>
      </body>
 </html>
     

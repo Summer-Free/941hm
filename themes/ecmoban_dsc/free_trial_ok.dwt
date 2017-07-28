@@ -23,7 +23,7 @@
                 <p>您的申请已提交，请注意查看短信通知</p>
                 <p>剩余时间：<span class="time">0天0时0秒</span></p>
                 <a href="#">查看我的试用</a>
-                <a class="margin-r-0" href="#">查看其它试用商品</a>
+                <a class="margin-r-0" href="free_trial.php">查看其它试用商品</a>
             </div>   
         </div>
 

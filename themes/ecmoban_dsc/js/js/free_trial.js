@@ -4,11 +4,11 @@ $(function() {
 	$(".slide-banner").slideFade();
 
 	//进入页面后，跳到指定位置
-	function anchorJump(id) {
-		location.href = location.href + id;
+	function anchorJump(href,id) {
+		location.href = href + id;
 	};
 
 	//调用
-	anchorJump("#jumpHere");
+	anchorJump("free_trial.php","#jumpHere");
 
 });
