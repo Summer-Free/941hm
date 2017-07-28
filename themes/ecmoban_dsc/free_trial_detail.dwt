@@ -23,7 +23,7 @@
                     <!--{foreach from=$xq_arr item=xq_arr name=xq_arr}-->
                     <div class="product-pic float-l">
                         <div class="big-pic">
-                            <img src="{$xq_arr.goods_thumb}" width="420" alt="" />
+                            <img src="{$xq_arr.original_img}" width="420" alt="{$xq_arr.goods_name}" />
                         </div>
                     </div>
                     <div class="product-detail float-r">
@@ -68,7 +68,7 @@
                             <li class="margin-r-0">
                             <!--{/if}-->
                                 <a href="free_trial_detail.php?id={$hot_arr.goods_id}">
-                                    <img src="{$hot_arr.goods_thumb}" alt="{$hot_arr.goods_name}" width="87" height="87" />
+                                    <img src="{$hot_arr.original_img}" alt="{$hot_arr.goods_name}" width="87" height="87" />
                                     <span>&yen;<em>{$hot_arr.market_price}</em></span>
                                 </a>
                             </li>
@@ -85,7 +85,7 @@
                             <li class="margin-r-0">
                             <!--{/if}-->
                                 <a href="free_trial_detail.php?id={$new_arr.goods_id}">
-                                    <img src="{$new_arr.goods_thumb}" alt="{$new_arr.goods_name}" width="87" height="87" />
+                                    <img src="{$new_arr.original_img}" alt="{$new_arr.goods_name}" width="87" height="87" />
                                     <span>&yen;<em>{$new_arr.market_price}</em></span>
                                 </a>
                             </li>
@@ -117,14 +117,14 @@
 			<div class="dialog-content">
 				<div class="close"></div>
 				<h3>请填写收货人信息</h3>
-				<form action="" method="post" onSubmit="return confirm();" >
+				<form action="#" method="post" id="form_info">
 					<div>
 						<label for="#name">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名 : </label>
 						<input type="text" id="name" />
 					</div>
 					<div>
 						<label for="#phone">手&nbsp;&nbsp;机&nbsp;&nbsp;号 : </label>
-						<input type="text" id="phone" />
+						<input type="text" id="phone" name="phone" />
 					</div>
 					<div>
 						<label>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址 : </label>
@@ -132,7 +132,7 @@
 					</div>
 					<div>
 						<label for="#detail-address">详细地址 : </label>
-						<input type="text" id="detail-address" />
+						<input type="text" id="detail-address" name="detail-address" />
 					</div>
 					<div class="last-group">
 						<label></label>
@@ -190,8 +190,8 @@
 				//启用默认城市
 				select.setCityVal(data);
 
+				//提交表单相关函数
                 function submitForm() {
-
                         
                     var province = data[0].name, //获取省的ID
                         city = data[1].name,//获取市的ID
@@ -240,14 +240,11 @@
                             {
                                 alert("请选择区(县)");  
                                 return false;
-                            }
+
+                            };
                         
-                    })
+                    });
                 };
-
-                //触发提交表单函数
-                submitForm();
-
 
         	});
         </script>
