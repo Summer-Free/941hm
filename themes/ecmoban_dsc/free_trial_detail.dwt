@@ -23,7 +23,7 @@
                     <!--{foreach from=$xq_arr item=xq_arr name=xq_arr}-->
                     <div class="product-pic float-l">
                         <div class="big-pic">
-                            <img src="{$xq_arr.original_img}" width="420" alt="{$xq_arr.goods_name}" />
+                            <img class="lazy" width="420" height="420" data-original="{$xq_arr.original_img}" alt="{$xq_arr.goods_name}" />
                         </div>
                     </div>
                     <div class="product-detail float-r">
@@ -68,7 +68,7 @@
                             <li class="margin-r-0">
                             <!--{/if}-->
                                 <a href="free_trial_detail.php?id={$hot_arr.goods_id}">
-                                    <img src="{$hot_arr.original_img}" alt="{$hot_arr.goods_name}" width="87" height="87" />
+                                    <img class="lazy" width="87" height="87" data-original="{$hot_arr.original_img}" alt="{$hot_arr.goods_name}" />
                                     <span>&yen;<em>{$hot_arr.market_price}</em></span>
                                 </a>
                             </li>
@@ -85,7 +85,7 @@
                             <li class="margin-r-0">
                             <!--{/if}-->
                                 <a href="free_trial_detail.php?id={$new_arr.goods_id}">
-                                    <img src="{$new_arr.original_img}" alt="{$new_arr.goods_name}" width="87" height="87" />
+                                    <img class="lazy" width="87" height="87" data-original="{$new_arr.original_img}" alt="{$new_arr.goods_name}" />
                                     <span>&yen;<em>{$new_arr.market_price}</em></span>
                                 </a>
                             </li>
@@ -247,6 +247,16 @@
                 submitForm();
 
         	});
+        </script>
+        <script type="text/javascript" src="js/jquery.lazyload.js"></script>  
+        
+        <!--开启懒加载-->
+        <script type="text/javascript">
+            $("img.lazy").lazyload({
+                placeholder: "themes/ecmoban_dsc/images/loadGoods.gif",
+                effect : "fadeIn",
+                threshold : 1000
+            });
         </script>
      </body>
 </html>     
