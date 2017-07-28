@@ -31,7 +31,20 @@
             </ul>
 
             <div class="section-1">
-                <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/exchange-pic1.jpg" alt="" /></a>
+                <div class="JS-slide">
+                    <ul class="content">
+                        <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/exchange-banner1.jpg" alt="" /></a></li>
+                        <li><a href="goods.php?id=651"><img src="themes/ecmoban_dsc/iamges/20170517/exchange-banner2.jpg" alt="" /></a></li>
+                        <li><a href="goods.php?id=1039"><img src="themes/ecmoban_dsc/iamges/20170517/exchange-banner3.jpg" alt="" /></a></li>
+                        <li><a href="goods.php?id=981"><img src="themes/ecmoban_dsc/iamges/20170517/exchange-banner4.jpg" alt="" style="margin: 0 auto" /></a></li>
+                    </ul>
+                    <ul class="point">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
             </div>   
 
             <div class="section-2">

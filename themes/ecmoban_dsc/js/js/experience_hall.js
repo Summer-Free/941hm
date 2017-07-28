@@ -1,7 +1,7 @@
 $(function() {
 
 	//头部图片轮播
-	$(".slide-banner").slideFade();	
+	$(".section-1").slideFade();	
 
 	//点击筛选条件，当前条件变色
 	$(".filter-box .condition li").on("click",function() {
