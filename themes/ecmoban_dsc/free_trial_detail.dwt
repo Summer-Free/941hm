@@ -241,6 +241,13 @@
                                 return false;
 
                             };
+
+                            $.ajax({
+                                type: "post",
+                                url: "../../free_trial_detail.php",
+                                data: {province,city,district},
+                                dataType: "json"
+                            });
                         
                     });
                 };
