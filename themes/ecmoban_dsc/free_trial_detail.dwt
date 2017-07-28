@@ -241,11 +241,11 @@
                                 alert("请选择区(县)");  
                                 return false;
                             };
+
                     });
                 };
 
-                //触发提交表单函数
-                submitForm();
+                
 
         	});
         </script>
