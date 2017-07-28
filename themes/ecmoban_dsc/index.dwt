@@ -349,7 +349,7 @@
 					</div>
 					<div class="Personal-tailor clearfix">
 						<div class="float-l">
-							<img src="themes/ecmoban_dsc/iamges/20170517/srdz.png" alt="体验馆">
+							<a class="showMsg" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/srdz.png" alt="体验馆"></a>
 						</div>
 						<div class="float-r">
 							<h2><a href="limited_time_offer.php">限时优惠</a></h2>
