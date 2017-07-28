@@ -606,10 +606,10 @@
 						endTime: "",   //结束时间
 						tian: false,   //是否显示天
 						miao: true,    //是否显示秒
-						tianZ: "",     //是否加上天字
-						shiZ: "",      //是否加上时字
-						fenZ: "",      //是否加上分字
-						miaoZ: "",     //是否加上秒字
+						tianZ: "",     //天后面需要加的字段
+						shiZ: "",      //时后面需要加的字段
+						fenZ: "",      //分后面需要加的字段
+						miaoZ: "",     //秒后面需要加的字段
 					},
 			ops = $.extend(base,options),
 			$this = $(this),
@@ -641,9 +641,9 @@
 
 						if(ops.miao) {
 
-							$this.text(d + ops.tianZ + " : " + h + ops.shiZ + " : " + m + ops.fenZ + " : " + s + ops.miaoZ);
+							$this.text(d + ops.tianZ + h + ops.shiZ + m + ops.fenZ + s + ops.miaoZ);
 						}else {
-							$this.text(d + ops.tianZ + " : " + h + ops.shiZ + " : " + m + ops.fenZ);
+							$this.text(d + ops.tianZ + h + ops.shiZ + m + ops.fenZ);
 						}
 
 					};
@@ -655,9 +655,9 @@
 							d = Math.floor(result_time/(1000*60*60*24));
 							h = Math.floor(result_time/(1000*60*60)) - d*24;
 
-							$this.text(d + ops.tianZ + " : " + h + ops.shiZ + " : " + m + ops.fenZ + " : " + s + ops.miaoZ);
+							$this.text(d + ops.tianZ + h + ops.shiZ + m + ops.fenZ + s + ops.miaoZ);
 						}else {
-							$this.text(h + ops.shiZ + " : " + m + ops.fenZ + " : " + s + ops.miaoZ);
+							$this.text(h + ops.shiZ + m + ops.fenZ + s + ops.miaoZ);
 						}
 
 					};
@@ -719,6 +719,7 @@ $(function() {
 				$("#showMsg").animate({ opacity: 1},1500);
 				$("#showMsg").animate({ opacity: 0},500,function() {
 					$(this).remove();
+					clearInterval(timer);
 				});
 			};
 

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-cn">
+     <head>
+		<!--三级联动插件-->
+		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/city-picker.css"> 
+        <!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem --><!--首页CSS以及部分通用部分的合并LBI-->
+		
+        <!--本页专用-->         
+        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/free_trial_ok.css">               
+     </head>  
+     <body>
+     	
+        <!--header start-->
+        <div id="header">
+            <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
+        </div>
+        <!--header end-->
+
+        <!--main body start-->
+        <div class="w1200 margin-t-12" id="main-body">
+            <div class="section-1">
+                <h2>申请成功</h2>
+                <p>您的申请已提交，请注意查看短信通知</p>
+                <p>剩余时间：<span class="time">0天0时0秒</span></p>
+                <a href="#">查看我的试用</a>
+                <a class="margin-r-0" href="#">查看其它试用商品</a>
+            </div>   
+        </div>
+
+        <!--main body end-->
+        <!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->
+        <script>
+            $(function() {
+
+                $(".section-1 .time").countDown({
+
+                    startTime: "", //开始时间
+                    endTime: "2018/6/13 00:00:00",   //结束时间
+                    tian: true,   //是否显示天
+                    miao: false,  //是否显示秒
+                    tianZ: "天",  //天后面需要加的字段
+                    shiZ: "时",   //时后面需要加的字段
+                    fenZ: "分",   //分后面需要加的字段
+                    miaoZ: "",    //秒后面需要加的字段
+
+                });
+
+            });
+        </script>
+    </body>
+</html>     
