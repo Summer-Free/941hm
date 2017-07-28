@@ -136,7 +136,7 @@
 					</div>
 					<div class="last-group">
 						<label></label>
-						<button class="bg-linear" type="button" id="send">立即申请</button>
+						<button class="bg-linear" type="button" onclick="return checksub();">立即申请</button>
 					</div>
 				</form>
 			</div>
@@ -208,13 +208,14 @@
                         $(".city-picker-select .district").on("change",function() {
                             district = $(this).find("option:selected").data("title");
                         });
-                    $("#send").click(function(e)
+                    function checksub()
                     {
-                        e.preventDefault();
-                        var name=$("#name").val();
-                            phone=$("#phone").val(),
-                            address=$("#detail-address").val();
-                            province=province;
+                        name=$("#name").val();
+                        phone=$("#phone").val();
+                        province=province;
+                        city=city;
+                        district=district;
+                        address=$("#detail-address").val();
                             reg = /^[\u4e00-\u9fa5]{2,4}$/i;
                             if (!reg.test(name))
                             {
@@ -240,14 +241,19 @@
                             {
                                 alert("请选择区(县)");  
                                 return false;
-                            };
-                            $('#form_info').submit();
+
+                            }
+                            else
+                            {	 Ajax.call( 'zixun.php?act=act_sub', 'msg_phone=' + msg_phone+'&user_email='+user_email+'&msg_content='+msg_content+'&msg_title='+msg_title, act_callback , 'POST', 'TEXT', true, true );
+                            	Ajax.call('free_trial_detail.php?act=send_info','name='+name+'&phone');
+	                        }; 
                     });
                 };
 
+                //调用提交表单函数
                 submitForm();
-
         	});
+
         </script>
      </body>
 </html>     
