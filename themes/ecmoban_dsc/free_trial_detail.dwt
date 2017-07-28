@@ -124,7 +124,7 @@
 					</div>
 					<div>
 						<label for="#phone">手&nbsp;&nbsp;机&nbsp;&nbsp;号 : </label>
-						<input type="text" id="phone" />
+						<input type="text" id="phone" name="phone" />
 					</div>
 					<div>
 						<label>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址 : </label>
@@ -132,7 +132,7 @@
 					</div>
 					<div>
 						<label for="#detail-address">详细地址 : </label>
-						<input type="text" id="detail-address" />
+						<input type="text" id="detail-address" name="detail-address" />
 					</div>
 					<div class="last-group">
 						<label></label>
