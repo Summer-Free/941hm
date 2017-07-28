@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="" name="description" />
+        <meta content="" name="" />
+        <title>941hm_众筹_搜索</title>
+
+        <!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem --><!--首页CSS以及部分通用部分的合并LBI-->   
+        
+        <!--本页专用-->
+        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/crowd_funding_search.css">         
+    </head>  
+    <body>
+
+        <!--header start-->
+        <div id="header">   
+            <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
+        </div>
+        <!--header end-->
+
+        <!--main body start-->
+        <div class="w1200 bg-color-f5f5f5" id="main-body">
+
+            <!--面包屑导航-->
+            <ul class="breadcrumb clearfix">
+                <li><a href="index.php">匠物众筹</a>&gt;</li>
+                <li>所有商品</li>
+            </ul>
+
+            <div class="section-1">
+                <form action="" method="">
+                    <input type="text" placeholder="请输入商品关键字" />
+                    <button></button>
+                </form>
+            </div>   
+
+            <div class="section-2">
+                <div class="filter clearfix">
+                    <span class="float-l">排序方式 : </span>
+                    <div class="JS-filter-box float-l">
+                        <div class="JS-main-box">达成率最高</div>
+                        <ul class="sub-box">
+                            <li>达成率最高</li>
+                            <li>最新上架</li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="common-ul clearfix">
+                    <li>
+                        <a href="#"><img class="lazy" width="290" height="240" src="themes/ecmoban_dsc/images/loadGoods.gif" data-original="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
+                        <div class="wrap">
+                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
+                            <p class="progress"><span></span></p>
+                            <div class="clearfix">
+                                <span class="s1"><i>162%</i>达成率</span>
+                                <span class="s2"><i>19500</i>已筹金额</span>
+                                <span class="border-r-0"><i>19500</i>支持人数</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img class="lazy" width="290" height="240" src="themes/ecmoban_dsc/images/loadGoods.gif" data-original="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
+                        <div class="wrap">
+                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
+                            <p class="progress"><span></span></p>
+                            <div class="clearfix">
+                                <span class="s1"><i>162%</i>达成率</span>
+                                <span class="s2"><i>19500</i>已筹金额</span>
+                                <span class="border-r-0"><i>19500</i>支持人数</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img class="lazy" width="290" height="240" src="themes/ecmoban_dsc/images/loadGoods.gif" data-original="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
+                        <div class="wrap">
+                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
+                            <p class="progress"><span></span></p>
+                            <div class="clearfix">
+                                <span class="s1"><i>162%</i>达成率</span>
+                                <span class="s2"><i>19500</i>已筹金额</span>
+                                <span class="border-r-0"><i>19500</i>支持人数</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="margin-r-0">
+                        <a href="#"><img class="lazy" width="290" height="240" src="themes/ecmoban_dsc/images/loadGoods.gif" data-original="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
+                        <div class="wrap">
+                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
+                            <p class="progress"><span></span></p>
+                            <div class="clearfix">
+                                <span class="s1"><i>162%</i>达成率</span>
+                                <span class="s2"><i>19500</i>已筹金额</span>
+                                <span class="border-r-0"><i>19500</i>支持人数</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img class="lazy" width="290" height="240" src="themes/ecmoban_dsc/images/loadGoods.gif" data-original="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
+                        <div class="wrap">
+                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
+                            <p class="progress"><span></span></p>
+                            <div class="clearfix">
+                                <span class="s1"><i>162%</i>达成率</span>
+                                <span class="s2"><i>19500</i>已筹金额</span>
+                                <span class="border-r-0"><i>19500</i>支持人数</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img class="lazy" width="290" height="240" src="themes/ecmoban_dsc/images/loadGoods.gif" data-original="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
+                        <div class="wrap">
+                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
+                            <p class="progress"><span></span></p>
+                            <div class="clearfix">
+                                <span class="s1"><i>162%</i>达成率</span>
+                                <span class="s2"><i>19500</i>已筹金额</span>
+                                <span class="border-r-0"><i>19500</i>支持人数</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img class="lazy" width="290" height="240" src="themes/ecmoban_dsc/images/loadGoods.gif" data-original="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
+                        <div class="wrap">
+                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
+                            <p class="progress"><span></span></p>
+                            <div class="clearfix">
+                                <span class="s1"><i>162%</i>达成率</span>
+                                <span class="s2"><i>19500</i>已筹金额</span>
+                                <span class="border-r-0"><i>19500</i>支持人数</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="margin-r-0">
+                        <a href="#"><img class="lazy" width="290" height="240" src="themes/ecmoban_dsc/images/loadGoods.gif" data-original="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
+                        <div class="wrap">
+                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
+                            <p class="progress"><span></span></p>
+                            <div class="clearfix">
+                                <span class="s1"><i>162%</i>达成率</span>
+                                <span class="s2"><i>19500</i>已筹金额</span>
+                                <span class="border-r-0"><i>19500</i>支持人数</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img class="lazy" width="290" height="240" src="themes/ecmoban_dsc/images/loadGoods.gif" data-original="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
+                        <div class="wrap">
+                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
+                            <p class="progress"><span></span></p>
+                            <div class="clearfix">
+                                <span class="s1"><i>162%</i>达成率</span>
+                                <span class="s2"><i>19500</i>已筹金额</span>
+                                <span class="border-r-0"><i>19500</i>支持人数</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img class="lazy" width="290" height="240" src="themes/ecmoban_dsc/images/loadGoods.gif" data-original="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
+                        <div class="wrap">
+                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
+                            <p class="progress"><span></span></p>
+                            <div class="clearfix">
+                                <span class="s1"><i>162%</i>达成率</span>
+                                <span class="s2"><i>19500</i>已筹金额</span>
+                                <span class="border-r-0"><i>19500</i>支持人数</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img class="lazy" width="290" height="240" src="themes/ecmoban_dsc/images/loadGoods.gif" data-original="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
+                        <div class="wrap">
+                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
+                            <p class="progress"><span></span></p>
+                            <div class="clearfix">
+                                <span class="s1"><i>162%</i>达成率</span>
+                                <span class="s2"><i>19500</i>已筹金额</span>
+                                <span class="border-r-0"><i>19500</i>支持人数</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="margin-r-0">
+                        <a href="#"><img class="lazy" width="290" height="240" src="themes/ecmoban_dsc/images/loadGoods.gif" data-original="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
+                        <div class="wrap">
+                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
+                            <p class="progress"><span></span></p>
+                            <div class="clearfix">
+                                <span class="s1"><i>162%</i>达成率</span>
+                                <span class="s2"><i>19500</i>已筹金额</span>
+                                <span class="border-r-0"><i>19500</i>支持人数</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img class="lazy" width="290" height="240" src="themes/ecmoban_dsc/images/loadGoods.gif" data-original="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
+                        <div class="wrap">
+                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
+                            <p class="progress"><span></span></p>
+                            <div class="clearfix">
+                                <span class="s1"><i>162%</i>达成率</span>
+                                <span class="s2"><i>19500</i>已筹金额</span>
+                                <span class="border-r-0"><i>19500</i>支持人数</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img class="lazy" width="290" height="240" src="themes/ecmoban_dsc/images/loadGoods.gif" data-original="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
+                        <div class="wrap">
+                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
+                            <p class="progress"><span></span></p>
+                            <div class="clearfix">
+                                <span class="s1"><i>162%</i>达成率</span>
+                                <span class="s2"><i>19500</i>已筹金额</span>
+                                <span class="border-r-0"><i>19500</i>支持人数</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img class="lazy" width="290" height="240" src="themes/ecmoban_dsc/images/loadGoods.gif" data-original="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
+                        <div class="wrap">
+                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
+                            <p class="progress"><span></span></p>
+                            <div class="clearfix">
+                                <span class="s1"><i>162%</i>达成率</span>
+                                <span class="s2"><i>19500</i>已筹金额</span>
+                                <span class="border-r-0"><i>19500</i>支持人数</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="margin-r-0">
+                        <a href="#"><img class="lazy" width="290" height="240" src="themes/ecmoban_dsc/images/loadGoods.gif" data-original="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
+                        <div class="wrap">
+                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
+                            <p class="progress"><span></span></p>
+                            <div class="clearfix">
+                                <span class="s1"><i>162%</i>达成率</span>
+                                <span class="s2"><i>19500</i>已筹金额</span>
+                                <span class="border-r-0"><i>19500</i>支持人数</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img class="lazy" width="290" height="240" src="themes/ecmoban_dsc/images/loadGoods.gif" data-original="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
+                        <div class="wrap">
+                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
+                            <p class="progress"><span></span></p>
+                            <div class="clearfix">
+                                <span class="s1"><i>162%</i>达成率</span>
+                                <span class="s2"><i>19500</i>已筹金额</span>
+                                <span class="border-r-0"><i>19500</i>支持人数</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img class="lazy" width="290" height="240" src="themes/ecmoban_dsc/images/loadGoods.gif" data-original="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
+                        <div class="wrap">
+                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
+                            <p class="progress"><span></span></p>
+                            <div class="clearfix">
+                                <span class="s1"><i>162%</i>达成率</span>
+                                <span class="s2"><i>19500</i>已筹金额</span>
+                                <span class="border-r-0"><i>19500</i>支持人数</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img class="lazy" width="290" height="240" src="themes/ecmoban_dsc/images/loadGoods.gif" data-original="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
+                        <div class="wrap">
+                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
+                            <p class="progress"><span></span></p>
+                            <div class="clearfix">
+                                <span class="s1"><i>162%</i>达成率</span>
+                                <span class="s2"><i>19500</i>已筹金额</span>
+                                <span class="border-r-0"><i>19500</i>支持人数</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="margin-r-0">
+                        <a href="#"><img class="lazy" width="290" height="240" src="themes/ecmoban_dsc/images/loadGoods.gif" data-original="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
+                        <div class="wrap">
+                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
+                            <p class="progress"><span></span></p>
+                            <div class="clearfix">
+                                <span class="s1"><i>162%</i>达成率</span>
+                                <span class="s2"><i>19500</i>已筹金额</span>
+                                <span class="border-r-0"><i>19500</i>支持人数</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img class="lazy" width="290" height="240" src="themes/ecmoban_dsc/images/loadGoods.gif" data-original="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
+                        <div class="wrap">
+                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
+                            <p class="progress"><span></span></p>
+                            <div class="clearfix">
+                                <span class="s1"><i>162%</i>达成率</span>
+                                <span class="s2"><i>19500</i>已筹金额</span>
+                                <span class="border-r-0"><i>19500</i>支持人数</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img class="lazy" width="290" height="240" src="themes/ecmoban_dsc/images/loadGoods.gif" data-original="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
+                        <div class="wrap">
+                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
+                            <p class="progress"><span></span></p>
+                            <div class="clearfix">
+                                <span class="s1"><i>162%</i>达成率</span>
+                                <span class="s2"><i>19500</i>已筹金额</span>
+                                <span class="border-r-0"><i>19500</i>支持人数</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img class="lazy" width="290" height="240" src="themes/ecmoban_dsc/images/loadGoods.gif" data-original="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
+                        <div class="wrap">
+                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
+                            <p class="progress"><span></span></p>
+                            <div class="clearfix">
+                                <span class="s1"><i>162%</i>达成率</span>
+                                <span class="s2"><i>19500</i>已筹金额</span>
+                                <span class="border-r-0"><i>19500</i>支持人数</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="margin-r-0">
+                        <a href="#"><img class="lazy" width="290" height="240" src="themes/ecmoban_dsc/images/loadGoods.gif" data-original="themes/ecmoban_dsc/iamges/20170517/funding-product1.jpg" alt="" /></a>
+                        <div class="wrap">
+                            <h3>新中式印花牡丹太师椅 黑色/白色</h3>
+                            <p class="progress"><span></span></p>
+                            <div class="clearfix">
+                                <span class="s1"><i>162%</i>达成率</span>
+                                <span class="s2"><i>19500</i>已筹金额</span>
+                                <span class="border-r-0"><i>19500</i>支持人数</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--main body end-->
+
+        <!--footer-->
+        <!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem --> 
+  
+        <!--本页JS-->     
+        <script type="text/javascript" src="themes/ecmoban_dsc/js/js/crowd_funding_search.js"></script>  
+        <script type="text/javascript" src="js/jquery.lazyload.js"></script>  
+        
+        <!--开启懒加载-->
+        <script type="text/javascript">
+            $("img.lazy").lazyload({
+                effect : "fadeIn"
+            });
+        </script>
+    </body>
+</html>
