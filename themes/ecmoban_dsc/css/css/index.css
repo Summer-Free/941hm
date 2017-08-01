@@ -14,18 +14,11 @@
 	margin: 0;
 	display: block;
 }
-#main-body .section-2 li {
-	-webkit-transition: all .2s linear;
-	   -moz-transition: all .2s linear;
-	    -ms-transition: all .2s linear;
-	     -o-transition: all .2s linear;
-	        transition: all .2s linear;	
-}
 #main-body .section-2 {
 	padding-top: 2px;
 	padding-bottom: 2px;
 }
-#main-body .section-2 li {
+#main-body .section-2 .slide-mrms li {
 	float: left;
 	margin-right: 8px;
 	width: 241px;
@@ -39,17 +32,23 @@
 	background-color: #fff;
 }
 #main-body .section-2 .mrms,
-#main-body .section-2 li {
+#main-body .section-2 .slide-mrms li {
 	box-shadow: 0 2px 5px #d7d6d6;
 }
 #main-body .section-2>h2 {
 	margin-bottom: 12px;
+	padding-left: 208px;
 	border: 1px solid #e2e2e5;
 	border-top: none;
 	box-shadow: 0 3px 3px #e2e2e5;
+	background: #fff url(../../iamges/20170517/h2-pic1.jpg) no-repeat top left;
 }
-#main-body .section-2>h2 img {
-	max-width: 100%;
+.section-2>h2 li {
+	float: left;
+	margin-right: 36px;
+	height: 47px;
+	line-height: 47px;
+	font-size: 18px;
 }
 .slide-mrms .JS-slide-scroll li div,
 .slide-mrms .JS-slide-scroll li p {

@@ -262,7 +262,13 @@
 				</div>
 
 				<div class="section-2 margin-t-12 bg-color-f5f5f5 clearfix">
-					<h2><a href="article_cat.php?id=1000"><img class="lazy" width="1198" height="76" data-original="themes/ecmoban_dsc/iamges/20170517/h2-pic1.jpg" alt="每日资讯" /></a></h2>
+					<h2>
+						<ul class="clearfix">
+							<li><a href="#">我我我我我我我我我我我我我我我我</a></li>
+							<li><a href="#">我我我我我我我我我我我我我我我我</a></li>
+							<li class="margin-r-0"><a href="#">我我我我我我我我我我我我我我我我</a></li>
+						</ul>
+					</h2>
 					<div class="mrms float-l">
 						<a href="daily_spike.php" title="每日秒杀">
 							<img class="lazy" width="450" height="300" data-original="themes/ecmoban_dsc/iamges/20170517/mrms.jpg" alt="每日秒杀" />
