@@ -264,9 +264,13 @@
 				<div class="section-2 margin-t-12 bg-color-f5f5f5 clearfix">
 					<h2>
 						<ul class="clearfix">
-							<li><a href="#">我我我我我我我我我我我我我我我我</a></li>
-							<li><a href="#">我我我我我我我我我我我我我我我我</a></li>
-							<li class="margin-r-0"><a href="#">我我我我我我我我我我我我我我我我</a></li>
+						<!--{foreach from=$mrzx_sql item=mrzx_sql name=mrzx_sql}-->
+							<!-- {if $smarty.foreach.mrzx_sql.iteration !=3  } -->
+							<li><a href="article.php?id={$mrzx_sql.article_id}">{$mrzx_sql.title}</a></li>
+							<!-- {elseif $smarty.foreach.ct_sql.iteration %4==0} -->
+							<li class="margin-r-0"><a href="article.php?id={$article_id}">{$mrzx_sql.title}</a></li>
+							<!--{/if}-->
+						<!--{/foreach}-->
 						</ul>
 					</h2>
 					<div class="mrms float-l">
