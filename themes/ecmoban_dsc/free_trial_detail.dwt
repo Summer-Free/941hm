@@ -36,7 +36,7 @@
 							<div class="time">距结束 : <span>23天4时57分</span></div>
 							<div class="time" style="display: none;">申请已结束，请留意短信通知！</div>
 							<div class="btn" style="display: none;">免费申请</div>
-							<div class="btn bg-linear">免费申请</div>
+                            <div class="btn bg-linear" data-value="{$user_id}">免费申请</div>
 							<div class="btn" style="display: none;">已申请</div>
                         </div>
                         <div class="tip">

@@ -1,9 +1,18 @@
 $(function() {
 
 	//点击免费申请按钮,弹出申请表单
-	$(".section-1 .status .bg-linear").dialogShow({
-		dialog: ".dialog-form",
-		closeBtn: ".dialog-form .close"
+	$(".section-1 .status .bg-linear").on("click",function() {
+		var _this = $(this),
+			  val = _this.data("value");
+
+		if(val) {
+			_this.dialogShow({
+					dialog: ".dialog-form",
+					closeBtn: ".dialog-form .close"
+				});
+		}else {
+			location.href="user.php";			
+		};
 	});
 
 	//如果元素存在，则开启倒计时
