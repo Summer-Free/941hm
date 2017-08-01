@@ -129,8 +129,8 @@
                             <p class="progress"><span></span></p>
                             <div class="clearfix">
                                 <span class="s1"><i>162%</i>达成率</span>
-                                <span class="s2"><i>19500</i>已筹金额</span>
-                                <span class="border-r-0"><i>19500</i>支持人数</span>
+                                <span class="s2"><i>{$allzc_res.join_money}</i>已筹金额</span>
+                                <span class="border-r-0"><i>{$allzc_res.join_num}</i>支持人数</span>
                             </div>
                         </div>
                     </li>
