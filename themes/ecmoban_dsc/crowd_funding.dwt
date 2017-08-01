@@ -66,7 +66,7 @@
                         <a href="crowdfunding.php?act=detail&id={$tjzc_res.id}"><img class="lazy" width="292" height="240" data-original="{$tjzc_res.title_img}" alt="{$tjzc_res.title}" /></a>
                         <div class="wrap">
                             <h3>{$tjzc_res.title}</h3>
-                            <p class="progress"><span style="width: 10%;"></span></p>
+                            <p class="progress"><span style="width: {$tjzc_res.baifen_bi}%;"></span></p>
                             <div class="clearfix">
                                 <span class="s1">
                                     <i>
@@ -106,7 +106,7 @@
                         <a href="crowdfunding.php?act=detail&id={$newzc_res.id}"><img class="lazy" width="292" height="240" data-original="{$newzc_res.title_img}" alt="{$newzc_res.title}" /></a>
                         <div class="wrap">
                             <h3>{$newzc_res.title}</h3>
-                            <p class="progress"><span></span></p>
+                            <p class="progress"><span style="width:  {$newzc_res.baifen_bi}%;"></span></p>
                             <div class="clearfix">
                                 <span class="s1">
                                     <i>
@@ -142,7 +142,7 @@
                         <a href="crowdfunding.php?act=detail&id={$allzc_res.id}"><img class="lazy" width="292" height="240" data-original="{$allzc_res.title_img}" alt="{$allzc_res.title}" /></a>
                         <div class="wrap">
                             <h3>{$allzc_res.title}</h3>
-                            <p class="progress"><span></span></p>
+                            <p class="progress"><span style="width:  {$allzc_res.baifen_bi}%;"></p>
                             <div class="clearfix">
                                 <span class="s1">
                                 <i>
