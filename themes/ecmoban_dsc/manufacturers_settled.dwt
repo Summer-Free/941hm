@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="zh-cn">
+    <head>
+		<!--三级联动插件-->
+		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/city-picker.css"> 
+    	<!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem -->
+        <!--首页CSS以及部分通用部分的合并LBI-->
+        <!--本页专用-->
+        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/manufacturers_settled.css">
+    </head> 
+    <body>
+
+        <!--header start-->
+        <div id="header">
+            <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
+        </div>
+        <!--header end-->
+
+        <!--main body start-->
+        <div class="w1200 bg-color-f5f5f5" id="main-body">
+			<div style="height: 131px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_01.jpg" alt=""></div>
+			<div style="height: 230px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_02.jpg" alt=""></div>
+			<div style="height: 305px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_03.jpg" alt=""></div>
+			<div style="height: 294px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_04.jpg" alt=""></div>
+			<div style="height: 346px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_05.jpg" alt=""></div>
+			<div style="height: 284px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_06.jpg" alt=""></div>
+			<div style="height: 330px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_07.jpg" alt=""></div>
+			<div style="height: 314px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_08.jpg" alt=""></div>
+			<div style="height: 329px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_09.jpg" alt=""></div>
+			<div style="height: 278px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_10.jpg" alt=""></div>
+			<div style="height: 259px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_11.jpg" alt=""></div>
+			<div style="height: 285px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_12.jpg" alt=""></div>
+			<div style="height: 240px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_13.jpg" alt=""></div>
+			<div style="height: 283px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_14.jpg" alt=""></div>
+			<div style="height: 370px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_15.jpg" alt=""></div>
+			<div style="height: 307px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_16.jpg" alt=""></div>
+			<div style="height: 367px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_17.jpg" alt=""></div>
+			<div style="height: 328px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_18.jpg" alt=""></div>
+			<div style="height: 365px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_19.jpg" alt=""></div>
+			<div style="height: 316px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_20.jpg" alt=""></div>
+			<div style="height: 323px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_21.jpg" alt=""></div>
+			<div style="height: 389px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_22.jpg" alt=""></div>
+			<div style="height: 412px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_23.jpg" alt=""></div>
+			<div style="height: 231px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_24.jpg" alt=""></div>
+			<div style="height: 157px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_25.jpg" alt=""></div>
+			<form action="#" method="post" id="form_info">
+                <div class="clearfix">
+                    <label for="">姓名 :</label>
+                    <input type="text" id="bm_name" name="bm_name">
+                </div>
+                <div class="clearfix">
+                    <label for="">联系方式 :</label>
+                    <input type="text" id="bm_phone" name="bm_phone">
+                </div>
+                <div class="clearfix">
+                    <label for="">地址 :</label>
+                    <div class="city-picker-select"></div>
+                </div>
+                <div class="clearfix">
+                    <label for="detail-address">详细地址 :</label>
+                    <input type="text" name="detail-address" id="detail-address">
+                </div>
+                <div class="clearfix">
+                    <label></label>
+                    <button type="button" id="check_submit">提交</button>
+                </div>
+            </form>
+        </div>
+
+        <!--footer-->
+        <!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->    
+        <!--本页JS-->     
+        <script type="text/javascript" src="themes/ecmoban_dsc/js/js/manufacturers_settled.js"></script>  
+        <!--懒加载-->
+        <script type="text/javascript" src="js/jquery.lazyload.js"></script>  
+   		<!--三级联动插件-->
+   		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/citydata.js"></script> 
+   		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/cityPicker-1.0.0.js"></script> 
+        <!--开启懒加载-->
+        <script type="text/javascript">
+            $("img.lazy").lazyload({
+            	placeholder: "themes/ecmoban_dsc/iamges/20170517/ajax-loader.gif",
+                effect : "fadeIn",
+                threshold : 1000
+            });
+            
+        	$(function() {
+
+				//启用三级联动插件
+				var select = $('.city-picker-select').cityPicker({
+					dataJson: cityData,
+					renderMode: false,
+					linkage: false
+				});
+
+                //默认城市配置参数
+                var data = [
+                    {
+                        'id': '330000',
+                        'name': '浙江省'  
+                    },
+                    {
+                        'id': '330100',
+                        'name': '杭州市'  
+                    },
+                    {
+                        'id': '330108',
+                        'name': '滨江区' 
+                    }
+                ];
+
+				//启用默认城市
+				select.setCityVal(data);
+
+				//提交表单相关函数
+                function submitForm() {
+                        
+                    var province = data[0].name, //获取省的ID
+                        city = data[1].name,//获取市的ID
+                        district = data[2].name;//获取区(县)的ID
+
+                        $(".city-picker-select .province").on("change",function() {
+                            province = $(this).find("option:selected").data("title");
+                        });
+
+                        $(".city-picker-select .city").on("change",function() {
+                            city = $(this).find("option:selected").data("title");
+                        });
+
+                        $(".city-picker-select .district").on("change",function() {
+                            district = $(this).find("option:selected").data("title");
+                        });
+                    $("#send").click(function(e)
+                    {
+                        e.preventDefault();
+                        var name=$("#name").val();
+                            phone=$("#phone").val(),
+                            address=$("#detail-address").val();
+                            reg = /^[\u4e00-\u9fa5]{2,4}$/i;
+                            if (!reg.test(name))
+                            {
+                                alert("请输入2-4个汉字！"); 
+                                return false;
+                            }
+                            else if(!(/^1[34578]\d{9}$/.test(phone)))
+                            {
+                                alert("手机号码有误，请重填");  
+                                return false;
+                            }
+                            else if(!province)
+                            {
+                                alert("请选择省");  
+                                return false;
+                            }
+                            else if(!city)
+                            {
+                                alert("请选择市");  
+                                return false;
+                            }
+                            else if(!district)
+                            {
+                                alert("请选择区(县)");  
+                                return false;
+                            };
+                            $('#form_info').submit();
+                    });
+                };
+
+                submitForm();
+
+        	});
+        </script>
+        <script>
+
+        </script>
+    </body>
+</html>

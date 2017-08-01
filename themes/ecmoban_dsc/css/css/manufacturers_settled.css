@@ -1,0 +1,45 @@
+#form_info {
+	padding: 130px 0 0 80px;
+	height: 509px;
+	background: url(../../iamges/20170517/cjrz-pic_26.jpg) no-repeat top left;
+}
+#form_info * {
+    font-size: 30px;
+    color: #000;
+}
+#form_info>div {
+    margin-bottom: 12px;
+    height: 56px;
+    line-height: 56px;
+}
+#form_info label {
+    width: 150px;
+    min-height: 56px;
+}
+#form_info label, #form_info input {
+    float: left;
+}
+#form_info select, #form_info input {
+    border: 1px solid #a8acb3;
+}
+#form_info input {
+    padding-left: 8px;
+}
+#form_info input, #form_info button {
+    width: 439px;
+    height: 56px;
+    line-height: 56px;
+    border-radius: 8px;
+}
+#form_info button {
+    color: #fff;
+    text-align: center;
+    border: none;
+    background-color: #f99021;
+    cursor: pointer;
+}
+.city-picker-select select {
+	width: 140px;
+	height: 56px;
+	line-height: 56px;
+}
