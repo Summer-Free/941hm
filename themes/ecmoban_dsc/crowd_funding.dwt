@@ -67,7 +67,7 @@
                         <a href="crowdfunding.php?act=detail&id={$tjzc_res.id}"><img class="lazy" width="292" height="240" data-original="{$tjzc_res.title_img}" alt="{$tjzc_res.title}" /></a>
                         <div class="wrap">
                             <h3>{$tjzc_res.title}</h3>
-                            <p class="progress"><span></span></p>
+                            <p class="progress"><span style="width: 10%;"></span></p>
                             <div class="clearfix">
                                 <span class="s1"><i>162%</i>达成率</span>
                                 <span class="s2"><i>{$tjzc_res.join_money}</i>已筹金额</span>
