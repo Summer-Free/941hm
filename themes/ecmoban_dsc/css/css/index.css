@@ -58,6 +58,7 @@
 }
 .slide-mrms .JS-slide-scroll li p {
 	line-height: 32px;
+	text-indent: -6px;
 }
 .slide-mrms .JS-slide-scroll ins {
 	font-size: 21px;
@@ -159,6 +160,7 @@
 }
 .section-3 h3 {
 	width: 100%;
+	text-indent: -6px;
 }
 .section-3 .New-arrival a *,
 .section-3 .Personal-tailor a * {
