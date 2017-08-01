@@ -63,13 +63,21 @@
                     <!-- {elseif $smarty.foreach.tjzc_res.iteration ==4  } -->
                         <li class="margin-r-0">
                     <!--{/if}-->
-                    
                         <a href="crowdfunding.php?act=detail&id={$tjzc_res.id}"><img class="lazy" width="292" height="240" data-original="{$tjzc_res.title_img}" alt="{$tjzc_res.title}" /></a>
                         <div class="wrap">
                             <h3>{$tjzc_res.title}</h3>
                             <p class="progress"><span></span></p>
                             <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
+                                <span class="s1">
+                                    <i>
+                                    <!-- {if $tjzc_res.baifen_bi >0  } -->
+                                        {$tjzc_res.baifen_bi}%
+                                    <!-- {elseif $tjzc_res.baifen_bi ==0} -->   
+                                        0%
+                                    <!--{/if}-->
+                                    </i>
+                                        达成率
+                                </span>
                                 <span class="s2"><i>{$tjzc_res.join_money}</i>已筹金额</span>
                                 <span class="border-r-0"><i>{$tjzc_res.join_num}</i>支持人数</span>
                             </div>
@@ -100,7 +108,15 @@
                             <h3>{$newzc_res.title}</h3>
                             <p class="progress"><span></span></p>
                             <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
+                                <span class="s1">
+                                    <i>
+                                    <!-- {if $newzc_res.baifen_bi >0  } -->
+                                        {$newzc_res.baifen_bi}%
+                                    <!-- {elseif $newzc_res.baifen_bi ==0} -->   
+                                        0%
+                                    <!--{/if}-->
+                                    </i>达成率
+                                </span>
                                 <span class="s2"><i>{$newzc_res.join_money}</i>已筹金额</span>
                                 <span class="border-r-0"><i>{$newzc_res.join_num}</i>支持人数</span>
                             </div>
@@ -128,9 +144,16 @@
                             <h3>{$allzc_res.title}</h3>
                             <p class="progress"><span></span></p>
                             <div class="clearfix">
-                                <span class="s1"><i>162%</i>达成率</span>
+                                <span class="s1">
+                                <i>
+                                    <!-- {if $allzc_res.baifen_bi >0  } -->
+                                        {$allzc_res.baifen_bi}%
+                                    <!-- {elseif $allzc_res.baifen_bi ==0} -->   
+                                        0%
+                                    <!--{/if}-->
+                                </i>达成率</span>
                                 <span class="s2"><i>{$allzc_res.join_money}</i>已筹金额</span>
-                                <span class="border-r-0"><i>{$allzc_res.join_num} </i>支持人数</span>
+                                <span class="border-r-0"><i>{$allzc_res.join_num}</i>支持人数</span>
                             </div>
                         </div>
                     </li>
