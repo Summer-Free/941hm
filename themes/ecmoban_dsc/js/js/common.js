@@ -588,9 +588,7 @@
 			$close = $(ops.closeBtn),
 			$this = $(this);
 
-		$this.on("click",function() {
-			$dialog.show();
-		});
+		$dialog.show();
 
 		$close.on("click",function() {
 			$dialog.hide();

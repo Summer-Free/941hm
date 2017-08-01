@@ -6,10 +6,12 @@ $(function() {
 			  val = _this.data("value");
 
 		if(val) {
+
 			_this.dialogShow({
 					dialog: ".dialog-form",
 					closeBtn: ".dialog-form .close"
 				});
+
 		}else {
 			location.href="user.php";			
 		};
