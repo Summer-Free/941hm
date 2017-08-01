@@ -61,7 +61,7 @@
                     <!-- {elseif $smarty.foreach.tjzc_res.iteration ==3  } -->
                         <li>
                     <!-- {elseif $smarty.foreach.tjzc_res.iteration ==4  } -->
-                        <li class="move margin-r-0">
+                        <li class="margin-r-0">
                     <!--{/if}-->
                     
                         <a href="crowdfunding.php?act=detail&id={$tjzc_res.id}"><img class="lazy" width="292" height="240" data-original="{$tjzc_res.title_img}" alt="{$tjzc_res.title}" /></a>
