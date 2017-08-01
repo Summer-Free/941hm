@@ -3,10 +3,9 @@ $(function() {
 	//点击免费申请按钮,弹出申请表单
 	$(".section-1 .status .bg-linear").on("click",function() {
 		var _this = $(this),
-			  val = _this.data("value");
+			  val = _this.data("value") || _this.attr("data-value");
 
 		if(val) {
-
 			_this.dialogShow({
 					dialog: ".dialog-form",
 					closeBtn: ".dialog-form .close"
