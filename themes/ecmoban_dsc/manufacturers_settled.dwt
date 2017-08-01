@@ -18,7 +18,7 @@
 
         <!--main body start-->
         <div class="w1200 bg-color-f5f5f5" id="main-body">
-			<div style="height: 131px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_01.jpg" alt=""></div>
+			<div style="height: 137px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_01.jpg" alt=""></div>
 			<div style="height: 230px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_02.jpg" alt=""></div>
 			<div style="height: 305px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_03.jpg" alt=""></div>
 			<div style="height: 294px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_04.jpg" alt=""></div>
@@ -83,7 +83,7 @@
                 effect : "fadeIn",
                 threshold : 1000
             });
-            
+
         	$(function() {
 
 				//启用三级联动插件
