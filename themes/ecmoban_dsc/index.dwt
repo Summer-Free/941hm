@@ -351,9 +351,9 @@
 					<div class="Personal-tailor clearfix">
 						<div class="float-l">
 							<!--{if $userid >0}-->
-							<a href="javascript(0)" onclick="alert('11111111111');">
+							<a href="javascript: void(0)" >
 							<!--{elseif $userid == 0}-->
-							<a class="showMsg" href="#">
+							<a href="personal_tailor.php">
 							<!--{/if}-->
 								<img class="lazy" width="591" height="524" data-original="themes/ecmoban_dsc/iamges/20170517/srdz.png" alt="私人订制">
 							</a>
