@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-cn">
+    <head>
+		<!--三级联动插件-->
+		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/city-picker.css"> 
+    	<!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem -->
+        <!--首页CSS以及部分通用部分的合并LBI-->
+        <!--本页专用-->
+        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/personal_tailor.css">
+    </head> 
+    <body>
+        <!--header start-->
+        <div id="header">
+            <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
+        </div>
+        <!--header end-->
+
+        <!--main body start-->
+        <div class="w1200 bg-color-f5f5f5" id="main-body">
+			<!--面包屑-->
+			<ul class="breadcrumb clearfix">
+                <li><a href="index.php">首页</a>&gt;</li>
+                <li>私人订制</li>
+            </ul>
+
+            <h2>私人定制</h2>
+            <div class="wrap-content">
+				<h3>您提需求，我们来做。</h3>
+				<form action="" methods="">
+
+					<div class="form-group group-1">
+						<p><span class="error color-ff0000">*</span>1.您想要定制哪个系列的家具？</p>
+						<div class="clearfix">
+							<input type="radio" id="wsxl" name="series" value="卧室系列" />
+							<label for="wsxl">卧室系列</label>
+							<input type="radio" id="ktxl" name="series" value="客厅系列" />
+							<label for="ktxl">客厅系列</label>
+							<input type="radio" id="ctxl" name="series" value="餐厅系列" />
+							<label for="ctxl">餐厅系列</label>
+							<input type="radio" id="qwdz" name="series" value="全屋定制" />
+							<label for="qwdz">全屋定制</label>
+							<input type="radio" id="other" name="series" value="其他" />
+							<label for="other">其他</label>
+						</div>
+					</div>
+
+					<div class="form-group group-2">
+						<p><span class="error color-ff0000">*</span>2.您想要定制哪种类型的家具？</p>
+						<div class="clearfix">
+							<input type="radio" id="sftz" name="type" value="沙发套装" />
+							<label for="sftz">沙发套装</label>
+							<input type="radio" id="ctz" name="type" value="床套装" />
+							<label for="ctz">床套装</label>
+							<input type="radio" id="cz" name="type" value="餐桌" />
+							<label for="cz">餐桌</label>
+							<input type="radio" id="yg" name="type" value="衣柜" />
+							<label for="yg">衣柜</label>
+							<input type="radio" id="qwdz2" name="type" value="全屋定制" />
+							<label for="qwdz2">全屋定制</label>
+							<input type="radio" id="other2" name="type" value="其他" />
+							<label for="other2">其他</label>
+						</div>
+					</div>
+
+					<div class="form-group group-3">
+						<p>3.您家的户型是多大？</p>
+						<div class="clearfix">
+							<input type="text" />
+							<span>m<sup>2</sup></span>
+						</div>
+					</div>
+
+					<div class="form-group group-4">
+						<p>4.您还有其他什么想要说的？</p>
+						<textarea name="" id="" placeholder="写出您的需求，让我们更好地为您服务"></textarea>
+					</div>
+
+					<div class="form-group group-5">
+						<p><span class="error color-ff0000">*</span>5.请填写您的个人信息：(我们网站承诺不会泄露您的个信息，941红木，值得信赖)</p>
+						<div class="clearfix">
+							<label for="name">姓名 : </label>
+							<input type="text" id="name" />
+						</div>
+						<div class="clearfix">
+							<label for="name">手机号码 : </label>
+							<input type="text" id="phone" />
+						</div>
+						<div class="clearfix">
+							<label for="name">地址 : </label>
+							<div class="city-picker-select"></div>
+						</div>
+					</div>
+
+					<div class="form-group group-6">
+						<button type="submit">提交</button>
+					</div>
+				</form>
+            </div>
+        </div>
+
+        <!--footer-->
+        <!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->    
+        <!--本页JS-->     
+        <script type="text/javascript" src="themes/ecmoban_dsc/js/js/personal_tailor.js"></script>  
+   		<!--三级联动插件-->
+   		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/citydata.js"></script> 
+   		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/cityPicker-1.0.0.js"></script> 
+   		<script>
+   			$(function() {
+
+				//启用三级联动插件
+				var select = $('.city-picker-select').cityPicker({
+					dataJson: cityData,
+					renderMode: false,
+					linkage: false
+				});
+
+                //默认城市配置参数
+                var data = [
+                    {
+                        'id': '330000',
+                        'name': '浙江省'  
+                    },
+                    {
+                        'id': '330100',
+                        'name': '杭州市'  
+                    },
+                    {
+                        'id': '330108',
+                        'name': '滨江区' 
+                    }
+                ];
+
+				//启用默认城市
+				select.setCityVal(data);
+
+   			});
+   		</script>
+    </body>
+</html>
