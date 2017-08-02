@@ -350,7 +350,14 @@
 					</div>
 					<div class="Personal-tailor clearfix">
 						<div class="float-l">
-							<a class="showMsg" href="#"><img class="lazy" width="591" height="524" data-original="themes/ecmoban_dsc/iamges/20170517/srdz.png" alt="私人订制"></a>
+							<!--{if $userid >0}-->
+							<a href="javascript(0)" onclick="alert('11111111111');">
+							<!--{elseif $userid == 0}-->
+							<a class="showMsg" href="#">
+							<!--{/if}-->
+								<img class="lazy" width="591" height="524" data-original="themes/ecmoban_dsc/iamges/20170517/srdz.png" alt="私人订制">
+							</a>
+							
 						</div>
 						<div class="float-r">
 							<h2><a href="limited_time_offer.php">限时优惠</a></h2>
@@ -379,7 +386,6 @@
 	                            	<ul class="content clearfix">	
 			                        <!--{foreach from=$xs_p12 item=xs_p12 name=xs_p12} -->
 			                        	<li class="float-l margin-r-12">
-			                        	
 			                        		<a class="move left-a margin-b-12" href="goods.php?id={$xs_p12.goods_id}">
 												<img class="lazy" width="240" height="200" data-original="{$xs_p12.goods_thumb}" alt="{$xs_p12.goods_name|truncate:20}" />
 	                                            <div class="clearfix">
@@ -642,22 +648,9 @@
 					<dl class="clearfix">
 						<dt>友情链接 : </dt>
 						<dd class="clearfix">
-							<a href="#">友情链接链接</a>
-							<a href="#">友情链接链接</a>
-							<a href="#">友情链接链接</a>
-							<a href="#">友情链接链接</a>
-							<a href="#">友情链接链接</a>
-							<a href="#">友情链接链接</a>
-							<a href="#">友情链接链接</a>
-							<a href="#">友情链接链接</a>
-							<a href="#">友情链接链接</a>
-							<a href="#">友情链接链接</a>
-							<a href="#">友情链接链接</a>
-							<a href="#">友情链接链接</a>
-							<a href="#">友情链接链接</a>
-							<a href="#">友情链接链接</a>
-							<a href="#">友情链接链接</a>
-							<a href="#">友情链接链接</a>
+						<!--{foreach from=$yqlj_sql item=yqlj_sql name=yqlj_sql}-->
+							<a href="{$yqlj_sql.link_url}">{$yqlj_sql.link_name}</a>
+						<!--{/foreach}-->
 						</dd>
 					</dl>
 				</div>
