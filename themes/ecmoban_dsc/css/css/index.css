@@ -438,3 +438,23 @@
 	width: 100%;
 	text-align: center;
 }
+
+/*友情链接*/
+.section-15 dt,
+.section-15 dd,
+.section-15 dd a {
+	float: left;
+}
+.section-15 dt {
+	width: 100px;
+	font-size: 18px;
+}
+.section-15 dd {
+	width: 1100px;
+}
+.section-15 dd a {
+	margin: 0 0 15px 0;
+	width: 100px;
+	height: 24px;
+	line-height: 24px;
+}

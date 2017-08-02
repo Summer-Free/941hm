@@ -10,428 +10,188 @@
     <body>
         <!--header start-->
         <div id="header">
-                <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
-
-                <!--slide banner start-->
-                <div class="slide-banner bg-color-f5f5f5">      
-                        <div class="w1200">
-                                <div class="JS-slide">
-                                        <ul class="content">
-                                                <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/main-banner1.jpg" alt="" /></a></li>
-                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/main-banner2.jpg" alt="" /></a></li>
-                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/main-banner3.jpg" alt="" /></a></li>
-                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/main-banner4.jpg" alt="" /></a></li>
-                                        </ul>
-                                        <a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
-                                        <a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
-                                        <ul class="point">
-                                                <li class="active"></li>
-                                                <li></li>
-                                                <li></li>
-                                                <li></li>
-                                        </ul>
-                                </div>
-                        </div>
-                </div>
-                <!--slide banner end-->
+            <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
         </div>
         <!--header end-->
 
         <!--main body start-->
         <div class="w1200 bg-color-f5f5f5" id="main-body" style="margin-top: 12px;">
-            <div class="section-1 clearfix">
-                <div class="tab-nav">
-                    <span class="active transition">维修</span>
-                    <span class="transition">保养</span>
+            <!--面包屑-->
+            <ul class="breadcrumb clearfix">
+                <li><a href="index.php">首页</a>&gt;</li>
+                <li>保养技师</li>
+            </ul>
+            <!--图片轮播-->
+            <div class="section-slide">
+                <div class="JS-slide">
+                    <ul class="content">
+                        <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/main-banner1.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/main-banner2.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/main-banner3.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/main-banner4.jpg" alt="" /></a></li>
+                    </ul>
+                    <a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
+                    <a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
+                    <ul class="point">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
                 </div>
-                <ul class="filter clearfix">
-                    <li class="clearfix">
-                        <span class="float-l">选择城市</span>
-                        <div class="JS-filter-box float-r">
-                            <div class="JS-main-box"></div>
-                            <ul class="sub-box">
-                                <li>北京</li>
-                                <li>上海</li>
-                                <li>广州</li>
-                                <li>深圳</li>
-                            </ul>
-                        </div> 
-                    </li>
-                    <li>最受欢迎</li>
-                    <li>评价最高</li>
-                </ul>
+            </div>
+
+            <div class="section-1 clearfix">
+
             </div>
 
             <!--展示列表-->
             <div class="section-2 clearfix">
-                <ul class="active clearfix">
-                    <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
-                        </a>
-                    </li>
-                    <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
-                        </a>
-                    </li>
-                    <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
-                        </a>
-                    </li>
-                    <li class="move margin-r-0">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
-                        </a>
-                    </li>
-                    <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
-                        </a>
-                    </li>
-                    <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
-                        </a>
-                    </li>
-                    <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
-                        </a>
-                    </li>
-                    <li class="move margin-r-0">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
-                        </a>
-                    </li>
-
-                    <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
-                        </a>
-                    </li>
-                    <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
-                        </a>
-                    </li>
-                    <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
-                        </a>
-                    </li>
-                    <li class="move margin-r-0">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
-                        </a>
-                    </li>
-
-                    <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
-                        </a>
-                    </li>
-                    <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
-                        </a>
-                    </li>
-                    <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
-                        </a>
-                    </li>
-                    <li class="move margin-r-0">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
-                        </a>
-                    </li>
-
-                    <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
-                        </a>
-                    </li>
-                    <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
-                        </a>
-                    </li>
-                    <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
-                        </a>
-                    </li>
-                    <li class="move margin-r-0">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
-                        </a>
-                    </li>
-                </ul>
                 <ul class="clearfix">
                     <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花11</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
+                        <a href="javascript:void(0);">
+                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic1.png" alt="王师傅" /></div>
+                            <h4>王师傅</h4>
+                            <p>服务区域：浙江省杭州市</p>
+                            <p>服务类型：家具（保养，装，维修）</p>
+                            <p>工作年限：3年</p>
                         </a>
                     </li>
                     <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
+                        <a href="javascript:void(0);">
+                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic2.png" alt="李师傅" /></div>
+                            <h4>李师傅</h4>
+                            <p>服务区域：浙江省杭州市</p>
+                            <p>服务类型：家具（保养，维修）</p>
+                            <p>工作年限：4年</p>
                         </a>
                     </li>
                     <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
+                        <a href="javascript:void(0);">
+                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic3.png" alt="刘师傅" /></div>
+                            <h4>刘师傅</h4>
+                            <p>服务区域：浙江省杭州市</p>
+                            <p>服务类型：家具（搬运，保养，维修）</p>
+                            <p>工作年限：3年</p>
                         </a>
                     </li>
                     <li class="move margin-r-0">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
+                        <a href="javascript:void(0);">
+                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic4.png" alt="林师傅" /></div>
+                            <h4>林师傅</h4>
+                            <p>服务区域：上海市</p>
+                            <p>服务类型：家具（搬运，保养，维修）</p>
+                            <p>工作年限：5年</p>
+                        </a>
+                    </li>
+                    <li class="move">
+                        <a href="javascript:void(0);">
+                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic5.png" alt="孙师傅" /></div>
+                            <h4>孙师傅</h4>
+                            <p>服务区域：深圳市</p>
+                            <p>服务类型：家具（保养，维修）</p>
+                            <p>工作年限：4年</p>
+                        </a>
+                    </li>
+                    <li class="move">
+                        <a href="javascript:void(0);">
+                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic6.png" alt="胡师傅" /></div>
+                            <h4>胡师傅</h4>
+                            <p>服务区域：江苏省南京市</p>
+                            <p>服务类型：家具（搬运，保养，维修）</p>
+                            <p>工作年限：3年</p>
+                        </a>
+                    </li>
+                    <li class="move">
+                        <a href="javascript:void(0);">
+                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic7.png" alt="曾师傅" /></div>
+                            <h4>曾师傅</h4>
+                            <p>服务区域：北京市</p>
+                            <p>服务类型：家具（保养，维修）</p>
+                            <p>工作年限：4年</p>
+                        </a>
+                    </li>
+                    <li class="move margin-r-0">
+                        <a href="javascript:void(0);">
+                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic8.png" alt="邓师傅" /></div>
+                            <h4>邓师傅</h4>
+                            <p>服务区域：天津市</p>
+                            <p>服务类型：家具（保养）</p>
+                            <p>工作年限：2年</p>
                         </a>
                     </li>
 
                     <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
+                        <a href="javascript:void(0);">
+                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic9.png" alt="季师傅" /></div>
+                            <h4>季师傅</h4>
+                            <p>服务区域：山东省济南市</p>
+                            <p>服务类型：家具（保养，维修）</p>
+                            <p>工作年限：3年</p>
                         </a>
                     </li>
                     <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
+                        <a href="javascript:void(0);">
+                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic10.png" alt="郭师傅" /></div>
+                            <h4>郭师傅</h4>
+                            <p>服务区域：山东省青岛市</p>
+                            <p>服务类型：家具（保养，维修）</p>
+                            <p>工作年限：4年</p>
                         </a>
                     </li>
                     <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
+                        <a href="javascript:void(0);">
+                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic11.png" alt="杜师傅" /></div>
+                            <h4>杜师傅</h4>
+                            <p>服务区域：湖北省武汉市</p>
+                            <p>服务类型：家具（保养，维修）</p>
+                            <p>工作年限：7年</p>
                         </a>
                     </li>
                     <li class="move margin-r-0">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
+                        <a href="javascript:void(0);">
+                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic12.png" alt="王师傅" /></div>
+                            <h4>王师傅</h4>
+                            <p>服务区域：广东省广州市</p>
+                            <p>服务类型：家具（保养，维修）</p>
+                            <p>工作年限：2年</p>
                         </a>
                     </li>
 
                     <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
+                        <a href="javascript:void(0);">
+                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic13.png" alt="杜师傅" /></div>
+                            <h4>杜师傅</h4>
+                            <p>服务区域：上海市</p>
+                            <p>服务类型：家具（搬运，保养，维修）</p>
+                            <p>工作年限：4年</p>
                         </a>
                     </li>
                     <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
+                        <a href="javascript:void(0);">
+                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic14.png" alt="李师傅" /></div>
+                            <h4>李师傅</h4>
+                            <p>服务区域：湖南省长沙市</p>
+                            <p>服务类型：家具（搬运，保养，维修）</p>
+                            <p>工作年限：3年</p>
                         </a>
                     </li>
                     <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
+                        <a href="javascript:void(0);">
+                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic15.png" alt="刘师傅" /></div>
+                            <h4>刘师傅</h4>
+                            <p>服务区域：山东省烟台市</p>
+                            <p>服务类型：家具（搬运，保养，维修）</p>
+                            <p>工作年限：2年</p>
                         </a>
                     </li>
                     <li class="move margin-r-0">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
-                        </a>
-                    </li>
-
-                    <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
-                        </a>
-                    </li>
-                    <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
-                        </a>
-                    </li>
-                    <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
-                        </a>
-                    </li>
-                    <li class="move margin-r-0">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
-                        </a>
-                    </li>
-
-                    <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
-                        </a>
-                    </li>
-                    <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
-                        </a>
-                    </li>
-                    <li class="move">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
-                        </a>
-                    </li>
-                    <li class="move margin-r-0">
-                        <a href="#">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/cxy-1.jpg" alt="刘春花" /></div>
-                            <h4>刘春花</h4>
-                            <p>性别 : <span>女</span>&nbsp;&nbsp;&nbsp;籍贯 : <span>浙江</span>&nbsp;&nbsp;&nbsp;学历 : <span>高中</span></p>
-                            <p>经验 : <span>6年</span></p>
-                            <p>预约次数 : <span>3</span>次&nbsp;&nbsp;&nbsp;浏览次数 : <span>29</span>次</p>
+                        <a href="javascript:void(0);">
+                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic16.png" alt="周师傅" /></div>
+                            <h4>周师傅</h4>
+                            <p>服务区域：福建省福州市</p>
+                            <p>服务类型：家具（保养，维修）</p>
+                            <p>工作年限：2年</p>
                         </a>
                     </li>
                 </ul>
