@@ -7,7 +7,6 @@ $(function() {
 
 		// 1 为已登录状态
 		if(val == 1) {
-			alert(val)
 			_this.dialogShow({
 					dialog: ".dialog-form",
 					closeBtn: ".dialog-form .close"

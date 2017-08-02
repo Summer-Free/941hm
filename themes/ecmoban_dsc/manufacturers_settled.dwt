@@ -62,7 +62,7 @@
                 </div>
                 <div class="clearfix">
                     <label></label>
-                    <button type="button" id="check_submit">提交</button>
+                    <button type="button" id="send">提交</button>
                 </div>
             </form>
         </div>
@@ -133,8 +133,8 @@
                     $("#send").click(function(e)
                     {
                         e.preventDefault();
-                        var name=$("#name").val();
-                            phone=$("#phone").val(),
+                        var name=$("#bm_name").val();
+                            phone=$("#bm_phone").val();
                             address=$("#detail-address").val();
                             reg = /^[\u4e00-\u9fa5]{2,4}$/i;
                             if (!reg.test(name))
