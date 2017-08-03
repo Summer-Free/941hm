@@ -30,7 +30,7 @@ $(function() {
 
 });
 
-window.load = function() {
+window.onload = function() {
 	//banner slide
 	$(".slide-banner").slideFade();
 };
