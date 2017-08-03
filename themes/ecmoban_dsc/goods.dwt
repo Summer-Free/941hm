@@ -11,6 +11,8 @@
 <!-- TemplateEndEditable -->
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<!--三级联动插件-->
+<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/city-picker.css"> 
 <link rel="stylesheet" type="text/css" href="themes/ecmoban_dsc/base.css" />
 <link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
 <link rel="alternate" type="application/rss+xml" title="RSS|{$page_title}" href="{$feed_url}" />
@@ -19,6 +21,7 @@
 <!-- <link rel="stylesheet" href="themes/ecmoban_dsc/purebox.css"> -->
 <link rel="stylesheet" href="themes/ecmoban_dsc/goods_fitting.css">
 <link rel="stylesheet" href="themes/ecmoban_dsc/js/jquery-ui/jquery-ui.min.css">
+<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/dialog_form.css">
 
 <!--2017/07/20 添加-->
 <!-- #BeginLibraryItem "/library/header_title_djj.lbi" --><!-- #EndLibraryItem -->
@@ -57,11 +60,67 @@
     .ecsc-goods-love .clearance-content .p-name {
         height: 38px;
     }
+    #personal_tailor_btn {
+        padding-left: 16px;
+    }
+    #personal_tailor_btn span {
+        color: #ff0000;
+        font-size: 14px;
+    }
+    #personal_tailor_btn:hover {
+        cursor: pointer;
+    }
+    #personal_tailor_btn:hover span {
+        text-decoration: underline;
+    }
+    #personal_tailor_btn .icon {
+        position: relative;
+        top: 3px;
+        display: inline-block;
+        margin-right: 5px;
+        width: 17px;
+        height: 17px;
+        background: url(themes/ecmoban_dsc/iamges/20170517/dialog-btn.jpg) no-repeat;
+    }
+    .dialog-bg,.dialog-content {
+        position: fixed;
+    }
+    .dialog-bg {
+        z-index: 999999;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: black;
+        opacity: .3;
+        filter: Alpha(opacity=30);
+    }
+    .dialog-content {
+        z-index: 9999999;
+        top: 50%;
+        left: 50%;
+        margin: -295px 0 0 -514px;
+        width: 1028px;
+        height: 590px;
+        background-color: #fff;
+        background-image: url(themes/ecmoban_dsc/iamges/20170517/ajax-loader.gif);
+        background-repeat: no-repeat;
+        background-position: center center;
+        border: 1px solid #cbcbcb;
+    }
+    .dialog-content .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 10px;
+        height: 10px;
+        cursor: pointer;
+        background: url(themes/ecmoban_dsc/iamges/20170517/close.png) no-repeat;
+    }
 </style>
 </head>
 
 <body>
-
 {if $area_htmlType neq 'goods' && $area_htmlType neq 'exchange' && $area_htmlType neq 'presale' && $area_htmlType neq 'group_buy' }
 	{insert_scripts files='warehouse_area.js'}
 {else}
@@ -452,8 +511,8 @@
                                     </div>
                                 {/if}
                             </div>
-                            
                         </div>
+                        <div id="personal_tailor_btn"><i class="icon"></i><span>想要定制商品的尺寸，材质？点击这里</span></div>
                     </form>
                 </div>
             </div>
@@ -891,6 +950,11 @@
 
 <!-- #BeginLibraryItem "/library/common_html.lbi" --><!-- #EndLibraryItem -->
 <script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.purebox.js"></script>
+
+<!--三级联动插件-->
+<script type="text/javascript" src="themes/ecmoban_dsc/js/js/citydata.js"></script> 
+<script type="text/javascript" src="themes/ecmoban_dsc/js/js/cityPicker-1.0.0.js"></script> 
+
 <script type="text/javascript">
 
 /*商品语言JS start*/
@@ -1547,6 +1611,24 @@ var button_compare = '';
     <script type="text/javascript">
         $("img.lazy").lazyload({
             effect : "fadeIn"
+        });
+
+        $(function() {
+
+            //点击定制按钮，弹出表单
+            $("#personal_tailor_btn").on("click",function() {
+
+                var bg_dom = '<div class="dialog-bg"></div>',
+                    dialog_dom = '<div class="dialog-content"></div>';
+
+                    $(document.body).append(bg_dom);
+                    $(document.body).append(dialog_dom);
+
+                    $(".dialog-content").load("themes/ecmoban_dsc/dialog_form.html",function() {
+                        $(this).css("background-image","none");
+                    });                    
+            });
+
         });
     </script>
 </body>

@@ -709,8 +709,6 @@ $(function() {
 
 		$("#showMsg").remove();
 
-		clearInterval(timer);
-
 		var dialog = "<div id='showMsg' style='z-index: 9999;position: fixed;top: 50%;left: 50%;margin: -33.5px 0 0 -161px;width: 322px;height: 67px;line-height: 67px;text-align: center;background-color: #fff;'>我们正在全力开发中,敬请期待!</div>",
 			timer = "",
 			action = function() {
@@ -722,8 +720,8 @@ $(function() {
 			};
 
 		$(document.body).append(dialog);
-
-		timer = setInterval(action,2000);
+		
+		action();
 
 	});
 
