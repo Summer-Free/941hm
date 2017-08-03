@@ -25,19 +25,17 @@
 .form-group>div label {
 	float: left;
 } 
-.group-1>div,
-.group-2>div {
+.group-1>div {
 	margin: 5px 0 0 0;
-	height: 30px;
 	line-height: 30px;
 }
-.group-1>div input,
-.group-2>div input {
+.group-1>div input {
 	position: relative;
 	top: 9px;
 }
 .form-group>div label {
-	padding: 0 20px 0 5px;
+	padding: 0 0 0 5px;
+	width: 81px;
 	color: #333;
 }
 .form-group .error {
@@ -62,12 +60,24 @@
 	top: -4px;
 	float: left;
 }
+.group-4 {
+	position: relative;
+}
+.group-4 span {
+	position: absolute;
+	right: 116px;
+	top: 102px;
+	top: 105px\0;
+	font-size: 12px;
+}
 .group-4 textarea {
 	margin-top: 15px;
 	padding: 8px;
 	width: 488px;
 	height: 72px;
+	font-family: "Microsoft Yahei";
 	resize: none;
+	border: 1px solid #ccc;
 }
 .group-5>div {
 	margin-top: 15px;
