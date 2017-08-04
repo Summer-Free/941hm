@@ -48,168 +48,337 @@
             </div>   
 
             <div class="section-2">
-                <ul class="clearfix">
-                    <li>
-                        <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic2.jpg" alt="">
-                        <div>
-                            <p>941红木家具体验馆杭州西湖分店</p>
-                            <p>营业时间：9:00 - 17:00</p>
-                            <address>展馆地址：浙江省杭州市西湖区</address>
-                        </div>
-                    </li>
-                    <li>
-                        <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic3.jpg" alt="">
-                        <div>
-                            <p>941红木家具体验馆杭州滨江分店</p>
-                            <p>营业时间：9:00 - 17:00</p>
-                            <address>展馆地址：浙江省杭州市滨江区</address>
-                        </div>
-                    </li>
-                    <li>
-                        <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic4.jpg" alt="">
-                        <div>
-                            <p>941红木家居体验馆上海分店</p>
-                            <p>营业时间：9:00 - 17:00</p>
-                            <address>展馆地址：上海市徐汇区</address>
-                        </div>
-                    </li>
-                    <li class="margin-r-0">
-                        <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic5.jpg" alt="">
-                        <div>
-                            <p>941红木家具体验馆济南分店</p>
-                            <p>营业时间：9:00 - 17:00</p>
-                            <address>展馆地址：山东省济南市</address>
-                        </div>
-                    </li>
-                    <li>
-                        <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic6.jpg" alt="">
-                        <div>
-                            <p>941红木家具体验馆南京分店</p>
-                            <p>营业时间：9:00 - 17:00</p>
-                            <address>展馆地址：江苏省南京市雨花台区</address>
-                        </div>
-                    </li>
-                    <li>
-                        <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic7.jpg" alt="">
-                        <div>
-                            <p>941红木家具体验馆厦门分店</p>
-                            <p>营业时间：9:00 - 17:00</p>
-                            <address>展馆地址：福建省厦门市湖里区</address>
-                        </div>
-                    </li>
-                    <li>
-                        <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic8.jpg" alt="">
-                        <div>
-                            <p>941红木家具体验馆青岛分店</p>
-                            <p>营业时间：9:00 - 17:00</p>
-                            <address>展馆地址：山东省青岛市市南区</address>
-                        </div>
-                    </li>
-                    <li class="margin-r-0">
-                        <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic10.jpg" alt="">
-                        <div>
-                            <p>941红木家具体验馆广州分店</p>
-                            <p>营业时间：9:00 - 17:00</p>
-                            <address>展馆地址：广东省广州市海珠区</address>
-                        </div>
-                    </li>
-                    <li>
-                        <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic11.jpg" alt="">
-                        <div>
-                            <p>941红木家具体验馆深圳分店</p>
-                            <p>营业时间：9:00 - 17:00</p>
-                            <address>展馆地址：广东省深圳市罗湖区</address>
-                        </div>
-                    </li>
-                    <li>
-                        <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic12.jpg" alt="">
-                        <div>
-                            <p>941红木家具体验馆成都分店</p>
-                            <p>营业时间：9:00 - 17:00</p>
-                            <address>展馆地址：四川省成都市锦江区</address>
-                        </div>
-                    </li>
-                    <li>
-                        <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic13.jpg" alt="">
-                        <div>
-                            <p>941红木家具体验馆长沙分店</p>
-                            <p>营业时间：9:00 - 17:00</p>
-                            <address>展馆地址：湖南省长沙市岳麓区</address>
-                        </div>
-                    </li>
-                    <li class="margin-r-0">
-                        <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic14.jpg" alt="">
-                        <div>
-                            <p>941红木家具体验馆苏州分店</p>
-                            <p>营业时间：9:00 - 17:00</p>
-                            <address>展馆地址：江苏省苏州市吴中区</address>
-                        </div>
-                    </li>
-                    <li>
-                        <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic15.jpg" alt="">
-                        <div>
-                            <p>941红木家具体验馆株洲分店</p>
-                            <p>营业时间：9:00 - 17:00</p>
-                            <address>展馆地址：湖南省株洲市天元区</address>
-                        </div>
-                    </li>
-                    <li>
-                        <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic16.jpg" alt="">
-                        <div>
-                            <p>941红木家具体验馆呼和浩特分店</p>
-                            <p>营业时间：9:00 - 17:00</p>
-                            <address>展馆地址：内蒙古呼和浩特市</address>
-                        </div>
-                    </li>
-                    <li>
-                        <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic17.jpg" alt="">
-                        <div>
-                            <p>941红木家具体验馆临沂分店</p>
-                            <p>营业时间：9:00 - 17:00</p>
-                            <address>展馆地址：山东省临沂市</address>
-                        </div>
-                    </li>
-                    <li class="margin-r-0">
-                        <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic18.jpg" alt="">
-                        <div>
-                            <p>941红木家具体验馆天津分店</p>
-                            <p>营业时间：9:00 - 17:00</p>
-                            <address>展馆地址：天津市和平区</address>
-                        </div>
-                    </li>
-                    <li>
-                        <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic19.jpg" alt="">
-                        <div>
-                            <p>941红木家具体验馆重庆分店</p>
-                            <p>营业时间：9:00 - 17:00</p>
-                            <address>展馆地址：四川省重庆市万州区</address>
-                        </div>
-                    </li>
-                    <li>
-                        <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic20.jpg" alt="">
-                        <div>
-                            <p>941红木家具体验馆福州分店</p>
-                            <p>营业时间：9:00 - 17:00</p>
-                            <address>展馆地址：福建省福州市马尾区</address>
-                        </div>
-                    </li>
-                    <li>
-                        <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic21.jpg" alt="">
-                        <div>
-                            <p>941红木家具体验馆丽江分店</p>
-                            <p>营业时间：9:00 - 17:00</p>
-                            <address>展馆地址：云南省丽江市古城区</address>
-                        </div>
-                    </li>
-                    <li class="margin-r-0">
-                        <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic22.jpg" alt="">
-                        <div>
-                            <p>941红木家具体验馆西安分店</p>
-                            <p>营业时间：9:00 - 17:00</p>
-                            <address>展馆地址：陕西省西安市新城区</address>
-                        </div>
-                    </li>
-                </ul>
+                <div class="wrap">
+                    <ul class="active content clearfix">
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic2.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆杭州西湖分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：浙江省杭州市西湖区</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic3.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆杭州滨江分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：浙江省杭州市滨江区</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic4.jpg" alt="">
+                            <div>
+                                <p>941红木家居体验馆上海分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：上海市徐汇区</address>
+                            </div>
+                        </li>
+                        <li class="margin-r-0">
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic5.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆济南分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：山东省济南市</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic6.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆南京分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：江苏省南京市雨花台区</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic7.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆厦门分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：福建省厦门市湖里区</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic8.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆青岛分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：山东省青岛市市南区</address>
+                            </div>
+                        </li>
+                        <li class="margin-r-0">
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic10.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆广州分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：广东省广州市海珠区</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic11.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆深圳分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：广东省深圳市罗湖区</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic12.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆成都分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：四川省成都市锦江区</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic13.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆长沙分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：湖南省长沙市岳麓区</address>
+                            </div>
+                        </li>
+                        <li class="margin-r-0">
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic14.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆苏州分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：江苏省苏州市吴中区</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic15.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆株洲分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：湖南省株洲市天元区</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic16.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆呼和浩特分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：内蒙古呼和浩特市</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic17.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆临沂分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：山东省临沂市</address>
+                            </div>
+                        </li>
+                        <li class="margin-r-0">
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic18.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆天津分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：天津市和平区</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic19.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆重庆分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：四川省重庆市万州区</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic20.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆福州分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：福建省福州市马尾区</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic21.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆丽江分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：云南省丽江市古城区</address>
+                            </div>
+                        </li>
+                        <li class="margin-r-0">
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic22.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆西安分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：陕西省西安市新城区</address>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="clearfix">
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic2.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆杭州西湖分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：浙江省杭州市西湖区</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic3.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆杭州滨江分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：浙江省杭州市滨江区</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic4.jpg" alt="">
+                            <div>
+                                <p>941红木家居体验馆上海分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：上海市徐汇区</address>
+                            </div>
+                        </li>
+                        <li class="margin-r-0">
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic5.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆济南分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：山东省济南市</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic6.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆南京分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：江苏省南京市雨花台区</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic7.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆厦门分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：福建省厦门市湖里区</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic8.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆青岛分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：山东省青岛市市南区</address>
+                            </div>
+                        </li>
+                        <li class="margin-r-0">
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic10.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆广州分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：广东省广州市海珠区</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic11.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆深圳分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：广东省深圳市罗湖区</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic12.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆成都分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：四川省成都市锦江区</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic13.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆长沙分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：湖南省长沙市岳麓区</address>
+                            </div>
+                        </li>
+                        <li class="margin-r-0">
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic14.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆苏州分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：江苏省苏州市吴中区</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic15.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆株洲分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：湖南省株洲市天元区</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic16.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆呼和浩特分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：内蒙古呼和浩特市</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic17.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆临沂分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：山东省临沂市</address>
+                            </div>
+                        </li>
+                        <li class="margin-r-0">
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic18.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆天津分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：天津市和平区</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic19.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆重庆分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：四川省重庆市万州区</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic20.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆福州分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：福建省福州市马尾区</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic21.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆丽江分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：云南省丽江市古城区</address>
+                            </div>
+                        </li>
+                        <li class="margin-r-0">
+                            <img class="lazy" width="272" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/exchange-pic22.jpg" alt="">
+                            <div>
+                                <p>941红木家具体验馆西安分店</p>
+                                <p>营业时间：9:00 - 17:00</p>
+                                <address>展馆地址：陕西省西安市新城区</address>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-nav">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                </div>
             </div>
         </div>
         <!--main body end-->

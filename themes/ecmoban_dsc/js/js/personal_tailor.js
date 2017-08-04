@@ -41,15 +41,8 @@ $(function() {
 				//必填项填写完整后，删除错误提示信息
 				div.find("p").remove();
 
-				//表单提交成功后，清空对应的值
-				// $(".group-1>div input").prop("checked",false);
-				// $("#name").val("");
-				// $("#phone").val("");
-				// say.val("");
-				// area.val("");
-
 				//提交成功后，加载提交成功页面
-				$(".wrap-content").load("themes/ecmoban_dsc/personal_tailor_ok.html");
+				$(".wrap-content").load("themes/ecmoban_dsc/personal_tailor_ok.dwt");
 
 			}else {
 				//每次点击提交之后,删除错误提示信息(否则点一次就会添加一条)
