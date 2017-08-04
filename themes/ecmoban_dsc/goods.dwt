@@ -512,7 +512,7 @@
                                 {/if}
                             </div>
                         </div>
-                        <div id="personal_tailor_btn"><i class="icon"></i><span>想要定制商品的尺寸，材质？点击这里</span></div>
+                        <div id="personal_tailor_btn"><i class="icon"></i><span><a href="">想要定制商品的尺寸，材质？点击这里<a></span></div>
                     </form>
                 </div>
             </div>
