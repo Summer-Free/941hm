@@ -26,40 +26,38 @@
             <h2>私人定制</h2>
             <div class="wrap-content">
 				<h3>您提需求，我们来做。</h3>
-				<form action="" methods="">
-
+				<form action="#" method="post" id="form_info">
 					<div class="form-group group-1">
 						<p><span class="error color-ff0000">*</span>1.您想要定制哪个系列的家具？</p>
 						<div>
 							<div class="clearfix">
-								<input type="checkbox" id="qwdz" name="series" value="全屋定制" />
+								<input type="checkbox" id="qwdz" name="chose[]"  value="全屋定制" />
 								<label for="qwdz">全屋定制</label>
-								<input type="checkbox" id="sftz" name="series" value="沙发套装" />
+								<input type="checkbox" id="sftz" name="chose[]"  value="沙发套装" />
 								<label for="sftz">沙发套装</label>
-								<input type="checkbox" id="ctz" name="series" value="床套装" />
+								<input type="checkbox" id="ctz" name="chose[]"  value="床套装" />
 								<label for="ctz">床套装</label>
-								<input type="checkbox" id="yg" name="series" value="衣柜" />
+								<input type="checkbox" id="yg" name="chose[]"  value="衣柜" />
 								<label for="yg">衣柜</label>
-								<input type="checkbox" id="cz" name="series" value="餐桌" />
+								<input type="checkbox" id="cz" name="chose[]" value="餐桌" />
 								<label for="cz">餐桌</label>
 							</div>
 							<div class="clearfix">
-								<input type="checkbox" id="dsg" name="series" value="电视柜" />
+								<input type="checkbox" id="dsg" name="chose[]"  value="电视柜" />
 								<label for="dsg">电视柜</label>
-								<input type="checkbox" id="sg" name="series" value="书柜" />
+								<input type="checkbox" id="sg" name="chose[]"  value="书柜" />
 								<label for="sg">书柜</label>
-								<input type="checkbox" id="茶台" name="series" value="茶台" />
-								<label for="茶台">茶台</label>
-								<input type="checkbox" id="鞋柜" name="series" value="鞋柜" />
-								<label for="鞋柜">鞋柜</label>
-								<input type="checkbox" id="dy" name="series" value="櫈椅" />
+								<input type="checkbox" id="ct" name="chose[]"  value="茶台" />
+								<label for="ct">茶台</label>
+								<input type="checkbox" id="xg" name="chose[]"  value="鞋柜" />
+								<label for="xg">鞋柜</label>
+								<input type="checkbox" id="dy" name="chose[]"  value="櫈椅" />
 								<label for="dy">櫈椅</label>
-								<input type="checkbox" id="other" name="series" value="其他" />
+								<input type="checkbox" id="other" name="chose[]"  value="其他" />
 								<label for="other">其他</label>
 							</div>
 						</div>
 					</div>
-
 					<div class="form-group group-3">
 						<p>2.您家的户型是多大？</p>
 						<div class="clearfix">
@@ -70,7 +68,7 @@
 
 					<div class="form-group group-4">
 						<p>3.您还有其他什么想要说的？(最多输入150个字)</p>
-						<textarea name="" id="say" placeholder="写出您的需求，让我们更好地为您服务"></textarea>
+						<textarea name="say" id="say" placeholder="写出您的需求，让我们更好地为您服务"></textarea>
 						<span>0/150</span>
 					</div>
 
@@ -78,11 +76,11 @@
 						<p><span class="error color-ff0000">*</span>4.请填写您的个人信息：(我们网站承诺不会泄露您的个信息，941红木，值得信赖)</p>
 						<div class="clearfix">
 							<label for="name">姓名 : </label>
-							<input type="text" id="name" />
+							<input type="text" id="name" name="name" />
 						</div>
 						<div class="clearfix">
 							<label for="name">手机号码 : </label>
-							<input type="text" id="phone" />
+							<input type="text" id="phone" placeholder="{$mobile_phone}" />
 						</div>
 						<div class="clearfix">
 							<label for="name">地址 : </label>
@@ -91,7 +89,7 @@
 					</div>
 
 					<div class="form-group group-6">
-						<button type="submit">提交</button>
+						<button type="button" id="send">提交</button>
 					</div>
 				</form>
             </div>
@@ -113,7 +111,6 @@
 					renderMode: false,
 					linkage: false
 				});
-
                 //默认城市配置参数
                 var data = [
                     {
@@ -132,7 +129,6 @@
 
 				//启用默认城市
 				select.setCityVal(data);
-
    			});
    		</script>
     </body>

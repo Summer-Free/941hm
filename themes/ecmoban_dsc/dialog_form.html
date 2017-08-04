@@ -1,17 +1,17 @@
 <span class="close"></span>
-<form action="" method="">
+<form action="personal_tailor.php" method="post" id="form_info">
 	<h3>请填写以下信息 :</h3>
 	<div class="form-group group-1">
 		<p><span class="error color-ff0000">*</span>1.您想要定制哪个系列的家具？</p>
 		<div>
 			<div class="clearfix">
-				<input type="checkbox" id="size" name="series" value="尺寸" />
+				<input type="checkbox" id="size" name="series[]" value="尺寸" />
 				<label for="size">尺寸</label>
-				<input type="checkbox" id="cz" name="series" value="材质" />
+				<input type="checkbox" id="cz" name="series[]" value="材质" />
 				<label for="cz">材质</label>
-				<input type="checkbox" id="dh" name="series" value="雕花" />
+				<input type="checkbox" id="dh" name="series[]" value="雕花" />
 				<label for="dh">雕花</label>
-				<input type="checkbox" id="other" name="series" value="其他" />
+				<input type="checkbox" id="other" name="series[]" value="其他" />
 				<label for="other">其他</label>
 			</div>
 		</div>
@@ -38,9 +38,8 @@
 			<div class="city-picker-select"></div>
 		</div>
 	</div>
-
 	<div class="form-group group-6">
-		<button class="showMsg" type="submit">提交</button>
+		<button class="showMsg" type="button" id="send">提交</button>
 	</div>
 </form>
 
@@ -93,7 +92,7 @@
 			}
 		});
 
-		$('.group-6 button').on("click",function(e) {
+		$('#send').on("click",function(e) {
 
 			var series_arr = [], //系列的选中值
 				say = $("#say"), //文本域的值
@@ -110,7 +109,7 @@
 				e.preventDefault();	
 
 				//将所有选中的值，放入数组
-				$("input[name='series']:checked").each(function() {
+				$("input[name='series[]']:checked").each(function() {
 					series_arr.push($(this).val());
 				});
 
@@ -120,26 +119,36 @@
 					//必填项填写完整后，删除错误提示信息
 					div.find("p").remove();
 
-					//提交成功后，加载提交成功页面
-					$("#showMsg").remove();
+					var params = $("#form_info").serialize();
 
-					var dialog = "<div id='showMsg' style='z-index: 999999999;position: fixed;top: 50%;left: 50%;margin: -33.5px 0 0 -161px;width: 322px;height: 67px;line-height: 67px;font-size: 18px;text-align: center;background-color: #fff;border: 1px solid #ccc;'>您的信息已经提交成功!请耐心等待</div>",
-						timer = "",
-						action = function() {
-							$("#showMsg").animate({ opacity: 1},1500);
-							$("#showMsg").animate({ opacity: 0},500,function() {
+					$.ajax( {  
+		                type : "POST",  
+		                url : "personal_tailor.php",  
+		                data : params,  
+		                success : function() {  
 
-								$(this).remove();
-								clearInterval(timer);
-								$(".dialog-bg").remove();
-								$(".dialog-content").remove();
+							var dialog = "<div id='showMsg' style='z-index: 999999999;position: fixed;top: 50%;left: 50%;margin: -33.5px 0 0 -161px;width: 322px;height: 67px;line-height: 67px;font-size: 18px;text-align: center;background-color: #fff;border: 1px solid #ccc;'>您的信息已经提交成功!请耐心等待</div>",
+								timer = "",
+								action = function() {
+									$("#showMsg").animate({ opacity: 1},1500);
+									$("#showMsg").animate({ opacity: 0},500,function() {
 
-							});
-						};
+										$(this).remove();
+										clearInterval(timer);
+										$(".dialog-bg").remove();
+										$(".dialog-content").remove();
+					                    //提交成功后，加载提交成功页面
+										$("#showMsg").remove(); 
+									});
+								};
 
-					$(document.body).append(dialog);
-					
-					action();
+							$(document.body).append(dialog);
+							
+							action();
+
+		                };
+		                
+		            }); 
 
 				}else {
 					//每次点击提交之后,删除错误提示信息(否则点一次就会添加一条)
