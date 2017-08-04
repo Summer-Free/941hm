@@ -512,7 +512,7 @@
                                 {/if}
                             </div>
                         </div>
-                        <div id="personal_tailor_btn" data-value={$user_id} data-goodsid={$goods.goods_id}>
+                        <div id="personal_tailor_btn" data-value="{$user_id}" data-goodsid="{$goods.goods_id}">
                             <i class="icon"></i>
                             <span>想要定制商品的尺寸，材质？点击这里</span> 
                         </div>
@@ -1624,16 +1624,18 @@ var button_compare = '';
                 var bg_dom = '<div class="dialog-bg"></div>',
                     id=$(this).data('value'),
                     dialog_dom = '<div class="dialog-content"></div>';
+
                     if(id<=0){
                         var goods_id=$(this).data('goodsid');
                         window.location.href='user.php?act=dx_dingzhi&id='+goods_id;
                     }else{
                         $(document.body).append(bg_dom);
                         $(document.body).append(dialog_dom);
-                        $(".dialog-content").load("themes/ecmoban_dsc/dialog_form.html",function() {
+                        $(".dialog-content").load("themes/ecmoban_dsc/dialog_form.dwt",function() {
                             $(this).css("background-image","none");
                         }); 
-                    }                   
+
+                    };                   
             });
         });
     </script>
