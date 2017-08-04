@@ -75,12 +75,12 @@ $(function() {
 				return false;
 			};
 
-			//var params = $("#form_info").serialize();
+			var params = $("#form_info").serialize();
 
             $.ajax( {  
                 type : "POST",  
                 url : "personal_tailor.php",  
-                //data : params,  
+                data : params,  
                 success : function() {  
                     $(".wrap-content").load("themes/ecmoban_dsc/personal_tailor_ok.html");  
                 }  
