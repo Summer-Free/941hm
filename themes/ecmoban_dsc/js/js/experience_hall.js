@@ -3,18 +3,10 @@ $(function() {
 	//头部图片轮播
 	$(".section-1").slideFade();	
 
-	//点击筛选条件，当前条件变色
-	$(".filter-box .condition li").on("click",function() {
+	//给元素赋值高度(定位造成的高度塌陷)
+	$(".section-2 .wrap").getHeight();
+	$(".section-2 .wrap").height($(".section-2 .wrap").height() - 30);
 
-		var $this = $(this);
-
-		$this.addClass("active").siblings().removeClass("active");
-
-	});
-
-	//调用函数，选择省/市，自动给出下一级区域列表
-	$("#address").linkMenu("#province","#city");
-
-
-
+	
+	
 });

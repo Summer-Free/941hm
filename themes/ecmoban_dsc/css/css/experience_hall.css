@@ -1,22 +1,33 @@
 .section-2 {
-	padding: 15px 0 0;
+	padding: 15px 0;
 }
-.section-2 li {
+.section-2 .wrap {
+	position: relative;
+}
+.section-2 .wrap ul {
+	position: absolute;
+	display: none;
+}
+.section-2 .wrap .active {
+	display: block;
+}
+.section-2 .wrap li {
 	float: left;
 	margin: 0 10px 12px 0;
 	padding: 10px 10px 0;
 	width: 292px;
+	height: 303px;
 	box-shadow: 0 1px 1px 1px #cecece;
 	background-color: #fff;
 }
-.section-2 li img {
+.section-2 .wrap li img {
 	max-width: 100%;
 	width: 100%;
 }
-.section-2 li>div {
+.section-2 .wrap li>div {
 	padding: 12px 0;
 	text-align: center;
 }
-.section-2 li>div * {
+.section-2 .wrap li>div * {
 	line-height: 1.8;
 }

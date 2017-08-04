@@ -82,7 +82,7 @@ $(function() {
                 url : "personal_tailor.php",  
                 data : params,  
                 success : function() {  
-                    $(".wrap-content").load("themes/ecmoban_dsc/personal_tailor_ok.html");  
+                    $(".wrap-content").load("themes/ecmoban_dsc/personal_tailor_ok.dwt");  
                 }  
             }); 
 
