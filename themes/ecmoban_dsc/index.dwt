@@ -246,7 +246,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="showMsg" href="old_for_new.php" title="以物换物" style="background-color: #f5f5f5;">
+							<a href="old_for_new.php" title="以物换物" style="background-color: #f5f5f5;">
 								<img class="lazy" width="200" height="400" data-original="themes/ecmoban_dsc/iamges/20170517/ywhw.jpg" alt="以物换物" />
 							</a>
 						</li>
