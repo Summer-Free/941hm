@@ -43,11 +43,28 @@
                                 <span>今日评论数</span>
                             </div>
                         </div>
+
                         <div class="item item_flow">
                             <i class="icon"><img src="images/4.png" width="86" /></i>
                             <div class="desc">
                                 <div class="tit">{$today_visit}</div>
                                 <span>今日访问量</span>
+                            </div>
+                            <i class="icon"></i>
+                        </div>
+                        <div class="item item_flow" style="background: #6cbabf">
+                            <i class="icon"><img src="images/4.png" width="86" /></i>
+                            <div class="desc">
+                                <div class="tit">{$week_visit}</div>
+                                <span>近七天访问量</span>
+                            </div>
+                            <i class="icon"></i>
+                        </div>
+                        <div class="item item_flow" style="background: #6cbf99">
+                            <i class="icon"><img src="images/4.png" width="86" /></i>
+                            <div class="desc">
+                                <div class="tit">{$month_visit}</div>
+                                <span>本月访问量</span>
                             </div>
                             <i class="icon"></i>
                         </div>
@@ -76,6 +93,24 @@
                                 <span class="tit">会员总数</span>
                             </div>
                         </div>
+                    </div>
+                    <div style="width: 880px; height: 500px; alien:center">
+                        <table style="width: 880px;" class="section goods_section">
+                            <tr>
+                                <td style="width: 220px;">用户姓名</td>
+                                <td style="width: 220px;">联系电话</td>
+                                <td style="width: 220px;">家庭住址</td>
+                                <td style="width: 220px;">加盟意向</td>
+                            </tr>
+                            <!--{foreach from=$bm_arr item=bm_arr name=bm_arr}-->
+                            <tr>
+                                <td style="width: 220px;">{$bm_arr.bm_name}</td>
+                                <td style="width: 220px;">{$bm_arr.bm_phone}</td>
+                                <td style="width: 220px;">{$bm_arr.bm_address}</td>
+                                <td style="width: 220px;">{$bm_arr.bm_type}</td>
+                            </tr>
+                            <!--{/foreach}-->
+                        </table>
                     </div>
                     <div class="section goods_section">
                         <div class="sc_title">
