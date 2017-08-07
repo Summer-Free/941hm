@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-cn">
+    <head>
+		<!--三级联动插件-->
+		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/city-picker.css"> 
+    	<!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem -->
+        <!--首页CSS以及部分通用部分的合并LBI-->
+        <!--本页专用-->
+        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/old_for_new_form.css">
+    </head> 
+    <body>
+
+        <!--header start-->
+        <div id="header">
+            <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
+        </div>
+        <!--header end-->
+
+		<!--main body start-->
+		<div class="w1200 bg-color-f5f5f5" id="main-body">
+			<div class="nav clearfix">
+				<a class="float-l" href="#">返回以物换物首页</a>
+				<a class="float-r" href="#">查看我的以物换物</a>
+			</div>
+
+			<div class="form-status">
+				<ul class="clearfix">
+					<li class="active">描述情况</li>
+					<li>等待审核</li>
+					<li>预约上门</li>
+					<li>支付定金</li>
+					<li>等待上门</li>
+					<li class="no-before">发放现金劵</li>
+				</ul>
+			</div>
+			<div id="content">
+				<div class="description">
+					<div>
+						<p>请认真填写您的旧物信息，我们将由专业师傅进行估价。</p>
+						<p>填写完成后我们会立即赠送您一张购物立减现金券。</p>
+						<p>注意：此活动只针对于在941红木平台以及941红木加盟商买的商品。如果交易成功，我们会根据您旧物实际价值送您一张无门槛现金红包。</p>
+					</div>
+					<form action="" method="">
+						<div class="form-group group-1">
+							<h6>1.您旧物的木材材质是什么？</h6>
+							<div class="clearfix child-float">
+								<input type="radio" name="material" value="刺猬紫檀" id="cwzt"/>
+								<label for="cwzt">刺猬紫檀</label>
+								<input type="radio" name="material" value="缅甸花梨" id="mdhl" />
+								<label for="mdhl">缅甸花梨</label>
+								<input type="radio" name="material" value="非洲花梨" id="fzhl" />
+								<label for="fzhl">非洲花梨</label>
+								<input type="radio" name="material" value="沉贵宝" id="cgb" />
+								<label for="cgb">沉贵宝</label>
+								<input type="radio" name="material" value="非洲酸枝" id="fzsz" />
+								<label for="fzsz">非洲酸枝</label>
+							</div>
+							<div class="clearfix child-float">
+								<input type="radio" name="material" value="南美酸枝" id="nmsz" />
+								<label for="nmsz">南美酸枝</label>
+								<input type="radio" name="material" value="小叶紫檀" id="xyzt" />
+								<label for="xyzt">小叶紫檀</label>
+								<input type="radio" name="material" value="巴西花梨" id="bxhl" />
+								<label for="bxhl">巴西花梨</label>
+								<input type="radio" name="material" value="安哥拉紫檀" id="aglzt" />
+								<label for="aglzt">安哥拉紫檀</label>
+								<input type="radio" name="material" value="其他" id="other" />
+								<label class="short-label" for="other">其他</label>
+								<input type="text" id="other-val" />
+							</div>
+						</div>
+
+						<div class="form-group group-2">
+							<h6>2.请上传您购买时的凭证图片。（最多6张，每张图片的大小不大于5M）</h6>
+							<div style="width: 80px;height: 80px;border: 1px solid #333;"></div>
+						</div>
+
+						<div class="form-group group-3">
+							<h6>3.请您上传旧物的真实照片以确保估价的准确性（最多6张，包含整体图以及具体细节图，每张图片不得大于5M）。</h6>
+							<div style="width: 80px;height: 80px;border: 1px solid #333;"></div>
+						</div>
+
+						<div class="form-group group-4">
+							<h6>4.您的理想估价的是多少？</h6>
+							<input type="text" id="sprice" />
+							<label for="">元</label>
+						</div>
+
+						<div class="form-group group-5">
+							<h6>5.您出售旧物的目的是什么？</h6>
+							<div class="clearfix child-float">
+								<input type="radio" name="objective" value="换新" id="hx" />
+								<label for="hx">换新</label>
+								<input type="radio" name="objective" value="购买其他红木家具或红木制品" id="buy-other" />
+								<label for="buy-other">购买其他红木家具或红木制品</label>
+								<input type="radio" name="objective" value="其他" id="other-1" />
+								<label class="short-label" for="other-1">其他</label>
+								<input type="text" id="other-val-1" />
+							</div>
+						</div>
+
+						<div class="form-group group-6">
+							<h6>6.请填写您的基本信息</h6>
+							<div>
+								<label for="name">姓名 : </label>
+								<input type="text" id="name" />
+							</div>
+							<div>
+								<label for="phone">手机号 : </label>
+								<input type="text" id="phone" />
+							</div>
+							<div class="clearfix">
+								<label class="float-l" for="">地址 : </label>
+								<div class="float-l city-picker-select"></div>
+							</div>
+						</div>
+						<div class="group-7"><button type="button">提交</button></div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--main body end-->
+
+        <!--footer-->
+        <!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->    
+        <!--本页JS-->     
+        <script type="text/javascript" src="themes/ecmoban_dsc/js/js/old_for_new_form.js"></script>  
+   		<!--三级联动插件-->
+   		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/citydata.js"></script> 
+   		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/cityPicker-1.0.0.js"></script> 
+   		<script>
+   			$(function() {
+
+				//启用三级联动插件
+				var select = $('.city-picker-select').cityPicker({
+					dataJson: cityData,
+					renderMode: false,
+					linkage: false
+				});
+                //默认城市配置参数
+                var data = [
+                    {
+                        'id': '330000',
+                        'name': '浙江省'  
+                    },
+                    {
+                        'id': '330100',
+                        'name': '杭州市'  
+                    },
+                    {
+                        'id': '330108',
+                        'name': '滨江区' 
+                    }
+                ];
+
+				//启用默认城市
+				select.setCityVal(data);
+   			});
+   		</script>
+    </body>
+</html>

@@ -1,0 +1,171 @@
+#main-body .nav {
+	padding: 0 15px;
+	height: 46px;
+	line-height: 46px;
+}
+.form-status ul {
+	overflow: hidden;
+	margin: 10px auto 0;
+	width: 688px;
+}
+.form-status li {
+	position: relative;
+	float: left;
+	width:112px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	text-indent: 1em;
+	background-color: #d6d6d6;
+}
+.form-status li:before,
+.form-status li:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	box-sizing: content-box;
+}
+.form-status li:before {
+	z-index: 2;
+	right: -40px;
+	margin-top: -20px;
+	border: 20px solid transparent;
+	border-left-color: #fff; 
+}
+.form-status li:after {
+	z-index: 3;
+	right: -32px;
+	margin-top: -16px;
+	border: 16px solid transparent;
+	border-left-color: #d6d6d6; 
+}
+.form-status .no-before:before {
+	border-left-color: transparent;
+}
+.form-status .active {
+	color: #fff;
+	background-color: #95b0b2;
+}
+.form-status .active:after {
+	border-left-color: #95b0b2;
+}
+
+/*描述情况*/
+.description {
+	padding: 80px 160px;
+}
+.description form {
+	padding-top: 30px;
+}
+.description>div p {
+	padding-bottom: 30px;
+}
+.description .child-float {
+	line-height: 30px;
+}
+.description .child-float label,
+.description .child-float input {
+	float: left;
+}
+.description .child-float label {
+    padding: 0 0 0 5px;
+    width: 88px;
+    color: #333;
+}
+.description .child-float input {
+    position: relative;
+    top: 9px;
+}
+.description .child-float input[type="text"] {
+	top: 6px;
+}
+.description .group-1 .short-label {
+	width: 38px!important;
+}
+#other-val,
+#other-val-1 {
+	width: 150px;
+	border: none;
+	border-bottom: 1px solid #333;
+	background-color: transparent;
+}
+.description .form-group {
+	margin-bottom: 18px;
+}
+.description .form-group h6 {
+	padding-bottom: 12px;
+}
+.description  .group-4 input {
+	width: 104px;
+}
+.description  .group-4 input,
+.description  .group-6 input {
+	padding-left: 8px;
+	height: 34px;
+	line-height: 34px;
+	border: 1px solid #b2b1b1;
+}
+.description  .group-5 .child-float label {
+	padding-right: 15px;
+	width: auto;
+}
+.description  .group-5 .child-float .short-label {
+	padding-right: 5px;
+}
+.description  .group-6 label {
+	display: inline-block;
+	width: 70px;
+}
+.description  .group-6>div {
+	margin-bottom: 15px;
+	height: 34px;
+	line-height: 34px;
+}
+.description  .city-picker-select {
+	margin-left: 4px;
+}
+.description  .city-picker-select select {
+	border: 1px solid #b2b1b1;
+	border-radius: 0;
+}
+.description  .group-6 input,
+.description  .group-6 select {
+	width: 180px;
+}
+.description  .group-7 {
+	padding-top: 80px;
+}
+.description button {
+	display: block;
+	margin: 15px auto 0;
+	width: 184px;
+	height: 43px;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	background-color: #47a9fd;
+	cursor: pointer;
+}
+
+/*等待审核*/
+.awaiting-audit {
+	padding-top: 30px;
+	text-align: center;
+}
+.awaiting-audit img {
+	display: inline-block;
+}
+.awaiting-audit p {
+	line-height: 60px;
+}
+.awaiting-audit .div1 {
+	padding-bottom: 10px;
+}
+.awaiting-audit .div2 {
+	padding-top: 10px 0;
+}
+.awaiting-audit .div2~a {
+	display: inline-block;
+	margin-bottom: 12px;
+}

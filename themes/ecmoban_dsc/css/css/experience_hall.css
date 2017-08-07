@@ -42,3 +42,7 @@
 	border: 1px solid #ccc;
 	background-color: #fff;
 }
+.section-2 .tab-nav .active {
+	color: #fff;
+	background-color: black;
+}

@@ -25,7 +25,7 @@ $(function() {
 				li_arr.detach().appendTo($(".section-2 .wrap ul").eq(index));
 			};
 
-			$this.parent().siblings().children().eq(index).fadeIn().siblings().fadeOut();
+			$this.addClass("active").siblings().removeClass("active").parent().siblings().children().eq(index).fadeIn().siblings().fadeOut();
 	});
 
 });

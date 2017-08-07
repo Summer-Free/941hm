@@ -1,0 +1,16 @@
+<div class="awaiting-audit">
+	<img src="themes/ecmoban_dsc/iamges/20170517/success-1.png" alt="" />
+	<div class="div1">
+		<p>您的信息已经成功提交！</p>
+		<p>感谢您的填写，点击下方“立即领取”即可获得我们为您准备的优惠券一张。</p>
+	</div>
+	<a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/awa-pic1.jpg" alt="" /></a>
+	<div class="div2">
+		<p>我们将安排专业人员对您的物品进行价格评估，请留意我们的电话或短信通知。</p>
+		<p>您可以在个人中心 - 我的以物换物中查看审核进度。</p>
+		<p>客服电话：4000-5555-5555</p>
+	</div>
+	<a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/awa-pic2.jpg" alt="" /></a>
+	<a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/awa-pic3.jpg" alt="" /></a>
+	<a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/awa-pic4.jpg" alt="" /></a>
+</div>		
