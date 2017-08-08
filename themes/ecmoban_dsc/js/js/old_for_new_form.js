@@ -48,7 +48,7 @@ $(function() {
 				};
 			};
 		});
-
+		
 		$('.description button').on("click",function(e) {
 
 			var name_val = $("#name").val(),  //用户名
@@ -59,6 +59,7 @@ $(function() {
 				district_val = $(".district option:selected").data("title"), //县(区)
 				error = '<p class="color-ff0000" style="text-align:center;"><span class="error">*</span><i>为必填项,请填写完整</i></p>',
 				div = $('.group-7'),
+				file1 =$("#file1").val();
 				reg = /^[\u4e00-\u9fa5]{2,4}$/i;
 
 				//阻止默认事件
@@ -115,8 +116,6 @@ $(function() {
 					div.find("i").text("请选择县（区）");
 					return false;
 				};
-
-
 				$("#content").load("themes/ecmoban_dsc/awaiting_audit.dwt");
 				
 	            // $.ajax( {  
