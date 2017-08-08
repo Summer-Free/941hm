@@ -80,7 +80,7 @@
                                 <div class="num">{$today_user_number}</div>
                                 <span class="tit">今日新增</span>
                             </div>
-                            <div class="user_item user_yest_new">
+                           <div class="user_item user_yest_new">
                                 <div class="num">{$yesterday_user_number}</div>
                                 <span class="tit">昨日新增</span>
                             </div>
@@ -91,7 +91,7 @@
                             <div class="user_item user_total">
                                 <div class="num">{$user_number}</div>
                                 <span class="tit">会员总数</span>
-                            </div>
+                           </div>
                         </div>
                     </div>
 
