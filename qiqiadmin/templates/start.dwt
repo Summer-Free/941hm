@@ -98,6 +98,10 @@
                     <!--2017-08-08 新增-->
                     <div class="new-table">
                         <table class="section goods_section">
+                            <!--<tr>
+                                <td clospan="4">加盟商消息</td>
+                            </tr>
+                            -->
                             <tr>
                                 <th>用户姓名</th>
                                 <th>联系电话</th>
