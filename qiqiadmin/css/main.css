@@ -2376,6 +2376,15 @@ div.bgSelector div#bgColorSelector #bscParent #bscDrop td span { display: block;
 	border-right: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 }
+.new-table caption {
+	text-align: left;
+}
+.new-section {
+	padding-bottom: 26px!important;
+}
+.new-table .sc_icon {
+	background-position: -2px -286px!important;
+}
 .contentWarp_item .section_select .margin-r-0 {
 	margin-right: 0;
 }

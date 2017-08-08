@@ -96,27 +96,31 @@
                     </div>
 
                     <!--2017-08-08 新增-->
-                    <div class="new-table">
-                        <table class="section goods_section">
-                            <!--<tr>
-                                <td clospan="4">加盟商消息</td>
-                            </tr>
-                            -->
-                            <tr>
-                                <th>用户姓名</th>
-                                <th>联系电话</th>
-                                <th>家庭住址</th>
-                                <th>加盟意向</th>
-                            </tr>
-                            <!--{foreach from=$bm_arr item=bm_arr name=bm_arr}-->
-                            <tr>
-                                <td>{$bm_arr.bm_name}</td>
-                                <td>{$bm_arr.bm_phone}</td>
-                                <td>{$bm_arr.bm_address}</td>
-                                <td>{$bm_arr.bm_type}</td>
-                            </tr>
-                            <!--{/foreach}-->
-                        </table>
+                    <div class="new-section section">
+                        <div class="new-table">
+                            <table>
+                                <caption class="sc_title">
+                                    <i class="sc_icon"></i>
+                                    <h3>加盟商信息</h3>
+                                </caption>
+                                <tr>
+                                    <th>用户姓名</th>
+                                    <th>联系电话</th>
+                                    <th>家庭住址</th>
+                                    <th>时间</th>
+                                    <th>加盟意向</th>
+                                </tr>
+                                <!--{foreach from=$bm_arr item=bm_arr name=bm_arr}-->
+                                <tr>
+                                    <td>{$bm_arr.bm_name}</td>
+                                    <td>{$bm_arr.bm_phone}</td>
+                                    <td>{$bm_arr.bm_address}</td>
+                                    <td>时间</td>
+                                    <td>{$bm_arr.bm_type}</td>
+                                </tr>
+                                <!--{/foreach}-->
+                            </table>
+                        </div>
                     </div>
                     <div class="section goods_section">
                         <div class="sc_title">
