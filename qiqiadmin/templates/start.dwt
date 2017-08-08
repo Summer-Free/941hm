@@ -28,7 +28,7 @@
                                 <span>今日销售总额</span>
                             </div>
                         </div>
-                        <div class="item item_order">
+                        <div class="item item_order margin-r-0">
                             <i class="icon"><img src="images/2.png" /></i>
                             <div class="desc">
                                 <div class="tit">{$today.order}</div>
@@ -44,7 +44,7 @@
                             </div>
                         </div>
 
-                        <div class="item item_flow">
+                        <div class="item item_flow margin-r-0">
                             <i class="icon"><img src="images/4.png" width="86" /></i>
                             <div class="desc">
                                 <div class="tit">{$today_visit}</div>
@@ -60,7 +60,7 @@
                             </div>
                             <i class="icon"></i>
                         </div>
-                        <div class="item item_flow" style="background: #6cbf99">
+                        <div class="item item_flow margin-r-0" style="background: #6cbf99">
                             <i class="icon"><img src="images/4.png" width="86" /></i>
                             <div class="desc">
                                 <div class="tit">{$month_visit}</div>
@@ -96,26 +96,31 @@
                     </div>
 
                     <!--2017-08-08 新增-->
-                    <div class="new-table">
-                        <table class="section goods_section">
-                            <tr>
-                                <td clospan="4">加盟商消息</td>
-                            </tr>
-                            <tr>
-                                <th>用户姓名</th>
-                                <th>联系电话</th>
-                                <th>家庭住址</th>
-                                <th>加盟意向</th>
-                            </tr>
-                            <!--{foreach from=$bm_arr item=bm_arr name=bm_arr}-->
-                            <tr>
-                                <td>{$bm_arr.bm_name}</td>
-                                <td>{$bm_arr.bm_phone}</td>
-                                <td>{$bm_arr.bm_address}</td>
-                                <td>{$bm_arr.bm_type}</td>
-                            </tr>
-                            <!--{/foreach}-->
-                        </table>
+                    <div class="new-section section">
+                        <div class="new-table">
+                            <table>
+                                <caption class="sc_title">
+                                    <i class="sc_icon"></i>
+                                    <h3>加盟商信息</h3>
+                                </caption>
+                                <tr>
+                                    <th>用户姓名</th>
+                                    <th>联系电话</th>
+                                    <th>家庭住址</th>
+                                    <th>时间</th>
+                                    <th>加盟意向</th>
+                                </tr>
+                                <!--{foreach from=$bm_arr item=bm_arr name=bm_arr}-->
+                                <tr>
+                                    <td>{$bm_arr.bm_name}</td>
+                                    <td>{$bm_arr.bm_phone}</td>
+                                    <td>{$bm_arr.bm_address}</td>
+                                    <td>时间</td>
+                                    <td>{$bm_arr.bm_type}</td>
+                                </tr>
+                                <!--{/foreach}-->
+                            </table>
+                        </div>
                     </div>
                     <div class="section goods_section">
                         <div class="sc_title">

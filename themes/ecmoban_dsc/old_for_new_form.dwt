@@ -71,7 +71,7 @@
 						</div>
 
 						<div class="form-group group-2">
-							<h6>2.请上传您购买时的凭证图片。（最多6张，每张图片的大小不大于5M）</h6>
+							<h6>2.请上传您购买时的凭证图片。（最多6张，每张图片的大小不大于5M）。</h6>
 							<input type="file" multiple="multiple" name="file[]" id="file1"  style="width:150px"/>
 							<input type="file" hidden multiple="multiple" name="file[]" id="file2" style="width:75px"/>
 							<input type="file" hidden multiple="multiple" name="file[]" id="file3" style="width:75px"/>
