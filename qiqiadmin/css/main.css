@@ -2352,9 +2352,27 @@ div.bgSelector div#bgColorSelector #bscParent #bscDrop td span { display: block;
 .pic-container .pic-items .item:hover .icon{ display:block;}
 .pic-container .pic-items .item .icon:hover{ color:#ec5051;}
 
- .icon-camera-retro:before{
-     content:"\f083";
- }
- .icon-camera-pici{
-     font-size: 40px;
- }
+.icon-camera-retro:before{
+	content:"\f083";
+}
+.icon-camera-pici{
+	font-size: 40px;
+}
+
+ /*2017-08-08 新增表格(个人会员信息下面)*/
+.new-table table {
+	width: 100%;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+.new-table th {
+	font-size: 14px;
+	color: #333;
+}
+.new-table th,
+.new-table td {
+	height: 36px;
+	text-align: center;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}

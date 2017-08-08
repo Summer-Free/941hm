@@ -27,24 +27,24 @@ $(function(){
 		$(this).parents(".top-banner").hide();
 	});
 	
-	//城市选择
-	$("#city-choice,.f-store,.li_dorpdown").hover(function(){
-		$(this).addClass("hover");
-		var width = $(this).find(".sc-choie").outerWidth();
-		$(this).find(".dd-spacer").css("width",width-2);
-	},function(){
-		$(this).removeClass("hover");
-	});
+	//城市选择     2017-08-08  头部城市选择功能在2.0版本时，已经去掉
+	// $("#city-choice,.f-store,.li_dorpdown").hover(function(){
+	// 	$(this).addClass("hover");
+	// 	var width = $(this).find(".sc-choie").outerWidth();
+	// 	$(this).find(".dd-spacer").css("width",width-2);
+	// },function(){
+	// 	$(this).removeClass("hover");
+	// });
 	
-	$(".li_dorpdown").hover(function(){
-		$(this).addClass("hover");
-		var width = $(this).find(".dt").outerWidth();
-		$(this).find(".dd-spacer").css({"width":width-2,"right":0});
-	},function(){
-		$(this).removeClass("hover");
-	});
+	// $(".li_dorpdown").hover(function(){
+	// 	$(this).addClass("hover");
+	// 	var width = $(this).find(".dt").outerWidth();
+	// 	$(this).find(".dd-spacer").css({"width":width-2,"right":0});
+	// },function(){
+	// 	$(this).removeClass("hover");
+	// });
 	
-	$("#site-nav").jScroll();
+	// $("#site-nav").jScroll();
 	
 	//首页购物车展开
 	$(".shopcart-2015").hover(function(){

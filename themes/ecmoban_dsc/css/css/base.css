@@ -418,3 +418,191 @@ table{border-collapse:collapse;border-spacing:0;}
 .breadcrumb li a {
   margin-right: 5px;
 }
+
+
+/*老版本的登录框样式*/
+/*注册页面与登录*/
+.form .item .text,.form .item .select{ width:238px; height:18px; padding:10px 25px 10px 15px; border:1px solid #c9c9c9; float:none; font-size:14px;  font-family: arial,"宋体"; overflow:hidden; color:#333; color:#9fa0a0\9; float:left;}
+.form .item .select{ height:40px; width:280px; padding-left:8px; color:#999;}
+.form .item i{ background:url(../../images/login_icons_new.png) no-repeat; width:16px; height:18px;position: absolute;}
+.form .item .i-name{ background-position:-25px -25px;}
+.form .item .i-email{ background-position:-77px -3px;}
+.form .item .i-phone{ background-position:-77px -23px;}
+.form .item .i-pass{ background-position:-25px -48px;}
+.form .item .i-captcha{ background-position:-26px -74px;}
+.form .item .text-1{ width:70px;}
+.form .item .text-2{ width:194px;}
+.form .item .text-3{ width:50px;}
+.form .item .text-4{ height:25px;}
+.form .item #captcha,.form .item #sms{ padding:5px 15px 5px 35px; *padding:7px 15px 3px 35px;}
+.formtwo .item #captcha,.formtwo .item #sms{ padding-left:15px; width:100px;}
+.form .item .item-info img{ padding-left:10px;cursor:pointer; float:left;}
+.form .jdcheckbox, .form .jdradio{ float: none;vertical-align: middle;_vertical-align: -1px;margin: 0 3px 0 0;padding: 0;}
+.form .safe{ margin-top:15px;}
+.forget-pw-safe{ float:left; margin:13px 0 0 30px;}
+.forget-pw-safe a{ font-family:"microsoft yahei";}
+
+
+.form .item-error .text{ border-color:#ec5051;}
+.form .item-error .i-name{ background-position:-3px -25px;}
+.form .item-error .i-pass{ background-position:-25px -48px;}
+.form .item-error .i-captcha{ background-position:-4px -74px;}
+
+.form .item-focus .text{ border:1px solid #72a07b;}
+.form .item-focus .i-name{ background-position:-3px -25px;}
+.form .item-focus .i-pass{ background-position:-3px -48px;}
+.form .item-focus .i-email{ background-position:-54px -3px;}
+.form .item-focus .i-phone{ background-position:-54px -23px;}
+.form .item-focus .i-captcha{ background-position:-4px -74px;}
+
+.form .item label{ height:40px; line-height:40px;padding-left:18px;position:relative; display:block; float:left;width:200px; margin-left:5px;}
+.form .item label.error{ color:#ec5151; margin-left:16px;}
+.form .item label.error i{ top:12px; left:0; background-position:-3px -2px;}
+.form .item label.focus{ background:#f7f7f7; padding-left:12px;}
+.form .item label.succeed i{ left:13px; top:11px; background-position:-25px -2px;}
+.form .item label.strength{ width:190px; height:10px; display:block; padding:0; margin:15px 0 0 16px;}
+.form .item label.strengthA,.form .item label.strengthB,.form .item label.strengthC{background:url(../../images/login_icons_new.png) 0 -124px;}
+.form .item label.strength b{ position:absolute; left:0;top:0; display:block; height:10px; background:url(../../images/login_icons_new.png) 0 -137px;}
+.form .item label.strength span{ position:absolute; top:-15px; right:-20px; color:#333;}
+.form .item label.strengthA b{ width:37%;}
+.form .item label.strengthB b{ width:67%;}
+.form .item label.strengthC b{ width:100%;}
+.ecsc-registLogin{ width:100%; position:relative;padding:50px 0 0 0;}
+.ecsc-registLogin .registLogin{ width:100%; position:relative; z-index:999;}
+.form .item .hole{ height:40px; line-height:40px; float:left; padding-left:0px; cursor:pointer;}
+.form .agreement{ margin-top:14px; color:#3a78bf; *margin-top:9px;}
+.form .agreement:hover{ color:#ec5051;}
+#code_notice{ line-height:37px;}
+#code_notice.error i{ top:10px;}
+
+.ecsc-register{ padding-bottom:0;}
+
+.registLogin-header{ position:relative;padding-bottom: 20px;}
+.registLogin-header .logo{ display:block; width:220px; float:left;}
+.registLogin-header b{ display:inline-block; position:absolute; top:15px; left:255px; width:330px; height:35px; background:url(../../images/regist-word.png) no-repeat;}
+.registLogin-header .registLogin-header-fr{ position:absolute; right:0; bottom:26px; color:#696969; font-family:"microsoft yahei"; }
+.registLogin-header .jump{ color:#3894ea;}
+.registLogin-header .jump:hover{ text-decoration:underline;}
+.registLogin-layout{ width:100%; height:auto; position:relative;}
+.regist-banner{ float:left;padding:64px 105px 64px 65px;}
+.regist-wrap{ 
+  width:570px;
+  min-height:485px;
+  border:1px solid #dad6d6;
+  border-bottom:0;
+  float:right;
+  box-shadow:-2px 0 1px #e9e7e7,/*左边阴影*/2px 0 1px #e9e7e7,/*右边阴影*/0 -2px 1px #e9e7e7, /*顶部阴影*/0 0 0 #e9e7e7; /*底边阴影*/
+  -webkit-box-shadow:-2px 0 1px #e9e7e7,2px 0 1px #e9e7e7,0 -2px 1px #e9e7e7,0 0 0 #e9e7e7;
+  -moz-box-shadow:-2px 0 1px #e9e7e7,2px 0 1px #e9e7e7,0 -2px 1px #e9e7e7,0 0 0 #e9e7e7;
+  margin:-1px 2px 2px 2px;
+  padding-bottom:0px;
+}
+.regist-form{ padding:25px 0 0 35px; overflow:hidden;}
+.regist-form .mt{ height:42px; overflow:hidden;}
+.regist-form .tab{ height:42px;}
+.regist-form .tab li{ float:left; font-family:"microsoft yahei"; font-size:16px; color:#727171; height:40px; line-height:40px; padding:0 38px; border-bottom:2px solid #fff; cursor:pointer;}
+.regist-form .tab li.curr{ border-bottom-color:#ec5151; color:#333;}
+
+.registLogin-layout .mc{ width:100%; height:auto; overflow:hidden;}
+.registLogin-layout .item{ width:100%; padding-top:20px; overflow:hidden;}
+.registLogin-layout .item.last{ padding-top:0;}
+.registLogin-layout .item .item-info{ position:relative; width:280px; float:left;} 
+
+.regist-form .form .item i{ top:10px;right: 8px;}
+.regist-form .item #img{ vertical-align:middle; margin:1px 0 0 5px;}
+.regist-form .item .qiehuan{ color:#3894ea; margin:10px 0 0 10px; margin-left:9px\9; float:left;}
+.regist-form .item .btn-regist{ width:278px; height:40px; line-height:40px; color:#fff; font-size:14px; text-align:center; border-radius:5px; background:#ec5151; border:0; font-family:"microsoft yahei"; outline:0; cursor:pointer;}
+.sms-btn{ width:122px; height:36px; line-height:36px; border:1px solid #a0a0a0; color:#727171; text-align:center; border-radius:5px; float:left; margin:0px 0 0 10px;font-family:"microsoft yahei";}
+
+.registLogin-banner{ height:500px; position:relative;}
+.registLogin-banner .bd{ height:500px;}
+.registLogin-banner .bd li{ width:100%; height:500px; float:left;}
+.registLogin-banner .bd .banner-width{ height:500px;}
+.registLogin-banner .bd .banner-width a{ left:0;}
+.registLogin-banner .hd{ width:1200px; height:500px; margin:auto; position:absolute; top:0; left:50%; margin-left:-600px;}
+.registLogin-banner .hd .buy-prev,.registLogin-banner .hd .buy-next{ position:absolute; display:inline-block; width:28px; height:50px; top:225px;}
+.registLogin-banner .hd .buy-prev{ background-position:-246px -210px; left:0;}
+.registLogin-banner .hd .buy-next{ background-position:-275px -210px; right:0;}
+
+.login-wrap{ width:300px; position:absolute; top:70px; right:108px; background:#fff;}
+.login-wrap .login-form{ padding:20px 32px 10px 32px; position:relative;}
+.login-wrap .login-form .item{ width: 100%;padding-top: 20px;overflow: hidden; margin:0; line-height:normal; padding-bottom:0;}
+.login-wrap .login-form .last{ padding-top:0;}
+
+.msg-wrap{
+  height:auto;
+  max-height:28px;
+}
+.login-wrap .login-form .mc .msg-error {
+    color: #e23435;
+    line-height: 18px;
+    min-height: 18px;
+    padding: 2px 10px 3px 30px;
+    position: relative;
+  margin-bottom:5px;
+}
+
+.login-wrap .login-form .mc .msg-error b {
+    background:url(../../images/login_icons_new.png) -3px -3px no-repeat scroll;
+    display: block;
+    height: 16px;
+    left: 8px;
+    margin-top: -8px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    width: 16px;
+}
+
+.login-form .mt{ height:40px; line-height:40px; width:100%;font-family:"microsoft yahei"; margin-bottom:10px;}
+.login-form h1{ float:left; font-size:20px;font-weight:700; color:#727171;}
+.login-form .jump{ float:right; color:#3894ea;}
+.login-form .jump:hover{ text-decoration:underline;}
+.login-form .form .item .text{ padding:10px 10px 10px 30px; *padding:8px 10px 12px 30px; font-family: '\5b8b\4f53'; }
+.login-form .form .item i{ top:10px;left: 8px; top:11px\9; *top:10px;}
+.login-form .login-btn{ float:right;}
+.login-form .login-btn .btn-entry{ display:inline-block; width:126px; font-size:18px; color:#fff; font-family:"microsoft yahei"; height:40px; line-height:30px; padding:0 40px; border-radius:5px; background:#ec5151; border:0; cursor:pointer;}
+.form .item i.i-captcha{ top:13px; left:8px;}
+
+.login-form .coagent{ line-height:22px; overflow:hidden; margin-top:25px;}
+.login-form .coagent h4{ font-weight:400; color:#9fa0a0; font-family:"microsoft yahei"; }
+.login-form .coagent ul{ display:block;}
+.login-form .coagent li{ float:left; margin:4px 6px 0 0;}
+.login-form .coagent li a{ display:inline-block; width:24px; height:24px; background:url(../../images/ecsc_icon.png) no-repeat;}
+.login-form .coagent li a.qq{ background-position:-306px -307px;}
+.login-form .coagent li a.alipay{ background-position:-338px -307px;}
+.login-form .coagent li a.weibo{ background-position:-369px -307px;}
+.login-form .coagent li a.qq:hover{ background-position:-306px -333px;}
+.login-form .coagent li a.alipay:hover{ background-position:-337px -333px;}
+.login-form .coagent li a.weibo:hover{ background-position:-367px -333px;}
+
+.login-form .coagent li a.wechat{ display:inline-block; width:24px; height:24px; background:url(../../images/weixin2.png) no-repeat;}
+.login-form .coagent li a.wechat:hover{ background:url(../../images/weixin1.png) no-repeat;}
+
+.ecsc-getPassword-list .regist-wrap{ width:370px; min-height:420px;}
+.ecsc-getPassword-list .regist-form{ padding:25px 45px 0;}
+.ecsc-getPassword-list .regist-form .tab li{ padding:0; border-bottom-color:#F5F4F4; text-align:center; width:33.3%;}
+.ecsc-getPassword-list .regist-form .tab li.curr{ background: #F5F4F4;}
+.ecsc-getPassword-list .form .item label.error{ line-height:20px; margin-top:15px; height:20px; margin-left:0;}
+.ecsc-getPassword-list .form .item label.error i{ top:2px;}
+.ecsc-getPassword-list .regist-form .mt{ margin-bottom:20px;}
+.ecsc-getPassword .regist-wrap{ width:370px; min-height:420px;}
+.ecsc-getPassword .regist-wrap .regist-form{ padding-left:45px;}
+.ecsc-getPassword .regist-form .tab li{ padding-left:0;}
+.ecsc-getPassword .regist-form .mt,.ecsc-getPassword .regist-form .tab{ height:30px;}
+.ecsc-getPassword .regist-form .tab li.curr{ border-bottom:0; color:#333;}
+
+.msg_ts{ max-height: 28px; display:none;}
+.msg_ts .msg_error,.formPhone .error{ color: #e23435;line-height: 18px;min-height: 18px;padding: 0px 10px 3px 20px;position: relative;margin-bottom: 5px;}
+.msg_ts .msg_error i,.formPhone .error i{ background: url(../../images/login_icons_new.png) -3px -4px no-repeat scroll;display: block;height: 16px;left: -1px;margin-top: -8px;overflow: hidden;position: absolute;top: 50%;width: 16px;}
+
+/*未登录购物提示弹出登录窗口*/
+#loginDialogBody * {box-sizing: content-box;}
+#loginDialogBody .login-wrap{ position:relative; left:0; top:0; right:0; margin:0 auto; width:282px;}
+#loginDialogBody .login-wrap .item .item-info { position: relative;width: 280px;}
+#loginDialogBody .login-wrap .login-form{ padding:20px 0 10px 0;}
+#loginDialogBody .login-form .form .item .text-2{ width:240px;}
+#loginDialogBody .forget-pw-safe{ margin-left:90px;}
+#loginDialogBody .login-form .mc{ width: 100%;height: auto;overflow: hidden;}
+
+/*未登录购物提示弹出登录窗口end*/

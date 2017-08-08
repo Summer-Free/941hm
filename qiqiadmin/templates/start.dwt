@@ -94,20 +94,22 @@
                             </div>
                         </div>
                     </div>
-                    <div style="width: 880px; height: 500px; alien:center">
-                        <table style="width: 880px;" class="section goods_section">
+
+                    <!--2017-08-08 新增-->
+                    <div class="new-table">
+                        <table class="section goods_section">
                             <tr>
-                                <td style="width: 220px;">用户姓名</td>
-                                <td style="width: 220px;">联系电话</td>
-                                <td style="width: 220px;">家庭住址</td>
-                                <td style="width: 220px;">加盟意向</td>
+                                <th>用户姓名</th>
+                                <th>联系电话</th>
+                                <th>家庭住址</th>
+                                <th>加盟意向</th>
                             </tr>
                             <!--{foreach from=$bm_arr item=bm_arr name=bm_arr}-->
                             <tr>
-                                <td style="width: 220px;">{$bm_arr.bm_name}</td>
-                                <td style="width: 220px;">{$bm_arr.bm_phone}</td>
-                                <td style="width: 220px;">{$bm_arr.bm_address}</td>
-                                <td style="width: 220px;">{$bm_arr.bm_type}</td>
+                                <td>{$bm_arr.bm_name}</td>
+                                <td>{$bm_arr.bm_phone}</td>
+                                <td>{$bm_arr.bm_address}</td>
+                                <td>{$bm_arr.bm_type}</td>
                             </tr>
                             <!--{/foreach}-->
                         </table>

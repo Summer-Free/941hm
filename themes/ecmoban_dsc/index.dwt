@@ -663,7 +663,7 @@
 		<!--首页专用JS-->
         <script type="text/javascript" src="themes/ecmoban_dsc/js/js/index.js"></script>
         <script type="text/javascript" src="js/jquery.lazyload.js"></script>  
-        
+        <!-- <script type="text/javascript" src="themes/ecmoban_dsc/js/notLogin.js"></script> -->
         <!--开启懒加载-->
         <script type="text/javascript">
             $("img.lazy").lazyload({

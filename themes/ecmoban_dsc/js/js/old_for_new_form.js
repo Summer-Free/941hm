@@ -22,7 +22,7 @@ $(function() {
 		var series = "",  //材质
 			objective = ""; //目的
 
-		//获取材质选项的值	
+		//获取材质选项的值,如果其他后面的input有值，则取input的输入值,无值则取其他	
 		$("input[name='material']").on("change",function() {
 
 			series = $(this).val();
@@ -36,7 +36,7 @@ $(function() {
 
 		});
 
-		//获取出售旧物目的的值
+		//获取出售旧物目的的值,如果其他后面的input有值，则取input的输入值,无值则取其他
 		$("input[name='objective']").on("change",function() {
 
 			objective = $(this).val();
@@ -118,7 +118,9 @@ $(function() {
 
 
 				$("#content").load("themes/ecmoban_dsc/awaiting_audit.dwt");
-				
+				$(".form-status ul li").eq(1).addClass("active").siblings().removeClass("active");
+
+
 	            // $.ajax( {  
 	            //     type : "POST",  
 	            //     url : "",  
