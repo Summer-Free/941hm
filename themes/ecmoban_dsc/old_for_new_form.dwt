@@ -73,22 +73,22 @@
 						<div class="form-group group-2">
 							<h6>2.请上传您购买时的凭证图片。（最多6张，每张图片的大小不大于5M）</h6>
 							<input type="file" multiple="multiple" name="file" id="file1"  style="width:150px"/>
-							<input type="file" hidden multiple="multiple" name="file" id="file2" style="width:75px"/>
-							<input type="file" hidden multiple="multiple" name="file" id="file3" style="width:75px"/>
-							<input type="file" hidden multiple="multiple" name="file" id="file4" style="width:75px"/>
-							<input type="file" hidden multiple="multiple" name="file" id="file5" style="width:75px"/>
-							<input type="file" hidden multiple="multiple" name="file" id="file6" style="width:75px"/>
+							<input type="file" hidden multiple name="file" id="file2" style="width:150px"/>
+							<input type="file" hidden multiple name="file" id="file3" style="width:150px"/>
+							<input type="file" hidden multiple name="file" id="file4" style="width:150px"/>
+							<input type="file" hidden multiple name="file" id="file5" style="width:150px"/>
+							<input type="file" hidden multiple name="file" id="file6" style="width:150px"/>
 							<!--<div style="width: 80px;height: 80px;border: 1px solid #333;"></div>-->
 						</div>
 
 						<div class="form-group group-3">
 							<h6>3.请您上传旧物的真实照片以确保估价的准确性（最多6张，包含整体图以及具体细节图，每张图片不得大于5M）。</h6>
-							<input type="file" multiple="multiple" name="file" id="file7" style="width:75px"/>
-							<input type="file" hidden ultiple="multiple" name="file" id="file8" style="width:75px"/>
-							<input type="file" hidden multiple="multiple" name="file" id="file9" style="width:75px"/>
-							<input type="file" hidden multiple="multiple" name="file" id="file10" style="width:75px"/>
-							<input type="file" hidden multiple="multiple" name="file" id="file11" style="width:75px"/>
-							<input type="file" hidden multiple="multiple" name="file" id="file12" style="width:75px"/>
+							<input type="file" multiple name="file" id="file7" style="width:75px"/>
+							<input type="file" hidden ultiple name="file" id="file8" style="width:75px"/>
+							<input type="file" hidden multiple name="file" id="file9" style="width:75px"/>
+							<input type="file" hidden multiple name="file" id="file10" style="width:75px"/>
+							<input type="file" hidden multiple name="file" id="file11" style="width:75px"/>
+							<input type="file" hidden multiple name="file" id="file12" style="width:75px"/>
 							<!--<div style="width: 80px;height: 80px;border: 1px solid #333;"></div>-->
 						</div>
 						<div class="form-group group-4">

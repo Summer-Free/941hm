@@ -557,7 +557,7 @@ input.error,textarea.error{ background-color: #FFF0F0;background-repeat: repeat;
 .contentWarp_item .sc_warp .goods_item .number a{ color:#ec5051;}
 .contentWarp_item .sc_warp .goods_item .number a:hover{ text-decoration:underline;}
 
-.contentWarp_item .section_select .item{ float:left; border-radius:5px; padding:38px 0 38px 38px; width:calc(50% - 8px); margin-bottom:12px;height: 150px;}
+.contentWarp_item .section_select .item{ float:left; border-radius:5px; padding:38px 0 38px 38px; width:calc(50% - 8px); margin-bottom:12px;margin-right: 16px;height: 150px;}
 /*.contentWarp_item .section_select .item:nth-child(1),.contentWarp_item .section_select .item:nth-child(3){ margin-right:16px;}*/
 .contentWarp_item .section_select .item_price{ background:#32cc7f;}
 .contentWarp_item .section_select .item_order,.contentWarp_item .section_select .item_comment{ background:#e4eaec;}
@@ -2375,4 +2375,7 @@ div.bgSelector div#bgColorSelector #bscParent #bscDrop td span { display: block;
 	text-align: center;
 	border-right: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
+}
+.contentWarp_item .section_select .margin-r-0 {
+	margin-right: 0;
 }

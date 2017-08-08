@@ -28,7 +28,7 @@
                                 <span>今日销售总额</span>
                             </div>
                         </div>
-                        <div class="item item_order">
+                        <div class="item item_order margin-r-0">
                             <i class="icon"><img src="images/2.png" /></i>
                             <div class="desc">
                                 <div class="tit">{$today.order}</div>
@@ -44,7 +44,7 @@
                             </div>
                         </div>
 
-                        <div class="item item_flow">
+                        <div class="item item_flow margin-r-0">
                             <i class="icon"><img src="images/4.png" width="86" /></i>
                             <div class="desc">
                                 <div class="tit">{$today_visit}</div>
@@ -60,7 +60,7 @@
                             </div>
                             <i class="icon"></i>
                         </div>
-                        <div class="item item_flow" style="background: #6cbf99">
+                        <div class="item item_flow margin-r-0" style="background: #6cbf99">
                             <i class="icon"><img src="images/4.png" width="86" /></i>
                             <div class="desc">
                                 <div class="tit">{$month_visit}</div>
