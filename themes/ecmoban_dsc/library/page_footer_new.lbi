@@ -139,7 +139,8 @@
             })(window, document, 'script', '_MEIQIA');
             _MEIQIA('entId', 44329);
         </script>
-
+        
+        <!--控制右侧边栏相关功能-->
         <script type="text/javascript">
 
             function changenum(rec_id, diff, warehouse_id, area_id)
