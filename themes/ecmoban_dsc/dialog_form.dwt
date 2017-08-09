@@ -126,7 +126,6 @@
 		                url : "dialog_form.php?name="+name_val+"&phone="+phone_val+"&province="+province_val+"&city="+city_val+"&district="+district_val+"&say="+say+"&series_arr="+series_arr,
 		                dataType:"TEXT",
 		                success : function(msg) {
-		                	
 		                	if(msg ==1){
 		                		var dialog = "<div id='showMsg' style='z-index: 999999999;position: fixed;top: 50%;left: 50%;margin: -33.5px 0 0 -161px;width: 322px;height: 67px;line-height: 67px;font-size: 18px;text-align: center;background-color: #fff;border: 1px solid #ccc;'>您的信息已经提交成功!请耐心等待</div>",
 								timer = "",
