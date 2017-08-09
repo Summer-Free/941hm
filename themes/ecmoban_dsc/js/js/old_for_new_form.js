@@ -114,14 +114,15 @@ $(function() {
 					div.find("i").text("请选择县（区）");
 					return false;
 				};
-				//$("#content").load("themes/ecmoban_dsc/awaiting_audit.dwt");
-				//$(".form-status ul li").eq(1).addClass("active").siblings().removeClass("active");
 	            $.ajax({  
 	                type : "GET",  
 	                url : "old_for_new_form_check.php?username="+name_val+"&phone="+phone_val+"&province="+province_val+"&city="+city_val+"&district="+district_val+"&series="+series+"&sprice="+sprice+"&objective="+objective,
 	                dataType:"TEXT",  
 	                success : function(msg) {  
-	                     alert (msg);
+	                     if(msg ==1){
+                     		$("#content").load("themes/ecmoban_dsc/awaiting_audit.dwt");
+							$(".form-status ul li").eq(1).addClass("active").siblings().removeClass("active");
+	                     }
 	                }
 	            }); 
 
