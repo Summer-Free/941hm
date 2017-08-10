@@ -118,9 +118,7 @@
 					
 					//必填项填写完整后，删除错误提示信息
 					div.find("p").remove();
-					
-					//var params = 2;
-					//Ajax.call('personal_tailor_dx.php?act=add','series_arr='+series_arr+'&say='+say+'&name='+name+'&phone='+phone+'&province='+province_val+'&city='+city_val+'&district='+district_val,act_callback,'POST','TEXT',ture,ture);
+					//以后AJAX的格式必须这样写
 					$.ajax( {  
 		                type : "GET",  
 		                url : "dialog_form.php?name="+name_val+"&phone="+phone_val+"&province="+province_val+"&city="+city_val+"&district="+district_val+"&say="+say+"&series_arr="+series_arr,
@@ -163,29 +161,4 @@
 		});
 
 	});
-
-	// function act_callback(result){
-	// 	if(result == 'true'){
-	// 	   var dialog = "<div id='showMsg' style='z-index: 999999999;position: fixed;top: 50%;left: 50%;margin: -33.5px 0 0 -161px;width: 322px;height: 67px;line-height: 67px;font-size: 18px;text-align: center;background-color: #fff;border: 1px solid #ccc;'>您的信息已经提交成功!请耐心等待</div>",
-	// 			timer = "",
-	// 			action = function() {
-	// 				$("#showMsg").animate({ opacity: 1},1500);
-	// 				$("#showMsg").animate({ opacity: 0},500,function() {
-
-	// 					$(this).remove();
-	// 					clearInterval(timer);
-	// 					$(".dialog-bg").remove();
-	// 					$(".dialog-content").remove();
-	//                     //提交成功后，加载提交成功页面
-	// 					$("#showMsg").remove(); 
-	// 				});
-	// 			};
-
-	// 		$(document.body).append(dialog);
-			
-	// 		action();
-	// 	}else{
-	// 	   alert("提交评论失败");
-	// 	}
-	// }
 </script>

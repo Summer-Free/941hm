@@ -9,18 +9,6 @@
         <!--首页CSS以及部分通用部分的合并LBI-->
         <!--本页专用-->
         <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/old_for_new_form.css">
-<!--
-        <!-- 引用控制层插件样式 -->
-		<link rel="stylesheet" href="themes/ecmoban_dsc/zyUpload/control/css/zyUpload.css" type="text/css">
-		<!--图片弹出层样式 必要样式-->
-		<script type="text/javascript" src="themes/ecmoban_dsc/zyUpload/jquery-1.7.2.js"></script>
-		<!-- 引用核心层插件 -->
-		<script type="text/javascript" src="themes/ecmoban_dsc/zyUpload/core/zyFile.js"></script>
-		<!-- 引用控制层插件 -->
-		<script type="text/javascript" src="themes/ecmoban_dsc/zyUpload/control/js/zyUpload.js"></script>
-		<!-- 引用初始化JS -->
-		<script type="text/javascript" src="themes/ecmoban_dsc/zyUpload/demo.js"></script>
--->
     </head> 
     <body>
 
