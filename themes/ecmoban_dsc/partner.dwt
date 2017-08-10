@@ -46,6 +46,7 @@
                     </div>
                     <img src="themes/ecmoban_dsc/iamges/20170517/partner-pic1.png" alt="" />
                 </div>
+                <div style="padding-top: 65px;"><a href="#form_info"><img style="margin: 0 auto;" src="themes/ecmoban_dsc/iamges/20170517/click-me-1.png" alt=""></a></div>
             </div>
             <div class="section-3">
                 <div class="w1200">
@@ -155,6 +156,7 @@
                 </div>
             </div>
             <div class="section-6">
+                <div style="padding-bottom: 65px;"><a href="#form_info"><img style="margin: 0 auto;" src="themes/ecmoban_dsc/iamges/20170517/click-me-1.png" alt=""></a></div>
                 <div class="w1200">
                     <h2 class="big top">定位精选，根据区域市场环境定制合理项目规划方案</h2>
                     <h2 class="big">三大核心优势</h2>

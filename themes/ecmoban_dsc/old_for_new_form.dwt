@@ -3,6 +3,8 @@
     <head>
 		<!--三级联动插件-->
 		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/city-picker.css"> 
+		<!--上传图片插件-->
+		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/uploadify.css"> 
     	<!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem -->
         <!--首页CSS以及部分通用部分的合并LBI-->
         <!--本页专用-->
@@ -72,23 +74,25 @@
 
 						<div class="form-group group-2">
 							<h6>2.请上传您购买时的凭证图片。（最多6张，每张图片的大小不大于5M）</h6>
-							<input type="file" multiple="multiple" name="file" id="file1"  style="width:150px"/>
+							<input id="file_upload_1" name="file_upload" type="file" multiple="true">
+<!-- 							<input type="file" multiple="multiple" name="file" id="file1"  style="width:150px"/>
 							<input type="file" hidden multiple name="file" id="file2" style="width:150px"/>
 							<input type="file" hidden multiple name="file" id="file3" style="width:150px"/>
 							<input type="file" hidden multiple name="file" id="file4" style="width:150px"/>
 							<input type="file" hidden multiple name="file" id="file5" style="width:150px"/>
-							<input type="file" hidden multiple name="file" id="file6" style="width:150px"/>
+							<input type="file" hidden multiple name="file" id="file6" style="width:150px"/> -->
 							<!--<div style="width: 80px;height: 80px;border: 1px solid #333;"></div>-->
 						</div>
 
 						<div class="form-group group-3">
 							<h6>3.请您上传旧物的真实照片以确保估价的准确性（最多6张，包含整体图以及具体细节图，每张图片不得大于5M）。</h6>
-							<input type="file" multiple name="file" id="file7" style="width:75px"/>
+							<input id="file_upload_2" name="file_upload" type="file" multiple="true">
+<!-- 							<input type="file" multiple name="file" id="file7" style="width:75px"/>
 							<input type="file" hidden ultiple name="file" id="file8" style="width:75px"/>
 							<input type="file" hidden multiple name="file" id="file9" style="width:75px"/>
 							<input type="file" hidden multiple name="file" id="file10" style="width:75px"/>
 							<input type="file" hidden multiple name="file" id="file11" style="width:75px"/>
-							<input type="file" hidden multiple name="file" id="file12" style="width:75px"/>
+							<input type="file" hidden multiple name="file" id="file12" style="width:75px"/> -->
 							<!--<div style="width: 80px;height: 80px;border: 1px solid #333;"></div>-->
 						</div>
 						<div class="form-group group-4">
@@ -131,12 +135,16 @@
 		<!--main body end-->
 
         <!--footer-->
-        <!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->    
+        <!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->   
+        <!--解决JQ版本升级带来的API失效-->
+        <!-- <script src="themes/ecmoban_dsc/js/js/jquery-migrate-1.1.1.js"></script>  -->
         <!--本页JS-->     
         <script type="text/javascript" src="themes/ecmoban_dsc/js/js/old_for_new_form.js"></script>  
    		<!--三级联动插件-->
    		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/citydata.js"></script> 
    		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/cityPicker-1.0.0.js"></script> 
+   		<!--上传图片插件-->
+   		<script src="themes/ecmoban_dsc/js/js/jquery.uploadify.js"></script>
    		<script>
    			$(function() {
 
@@ -166,5 +174,36 @@
 				select.setCityVal(data);
    			});
    		</script>
+		<script>
+			$(function() {
+		        $("#file_upload_1").uploadify({
+		            "swf"      : "uploadify.swf",    //指定上传控件的主体文件
+		            "uploader" : "uploadify.php",    //指定服务器端上传处理文件
+		            "auto"     : true,
+		            "buttonText" : "请选择图片",
+		            "fileObjName": "images",
+		            "fileSizeLimit": "5MB",
+		            "fileTypeExts": "*.jpg;*.jpeg;*.png;*.gif;",
+		            "method": "Post",
+		            "removeCompleted": false,
+		            "requeueErrors": true,
+		            "uploadLimit": 6
+		        });
+
+		        $("#file_upload_2").uploadify({
+		            "swf"      : "uploadify.swf",    //指定上传控件的主体文件
+		            "uploader" : "uploadify.php",    //指定服务器端上传处理文件
+		            "auto"     : true,
+		            "buttonText" : "请选择图片",
+		            "fileObjName": "images",
+		            "fileSizeLimit": "5MB",
+		            "fileTypeExts": "*.jpg;*.jpeg;*.png;*.gif;",
+		            "method": "Post",
+		            "removeCompleted": false,
+		            "requeueErrors": true,
+		            "uploadLimit": 6
+		        });
+			});
+		</script>
     </body>
 </html>

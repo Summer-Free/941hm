@@ -25,7 +25,10 @@
 			<div style="height: 346px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_05.jpg" alt=""></div>
 			<div style="height: 284px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_06.jpg" alt=""></div>
 			<div style="height: 330px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_07.jpg" alt=""></div>
-			<div style="height: 314px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_08.jpg" alt=""></div>
+			<div style="height: 314px;">
+                <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_08.jpg" alt="">
+                <a href="#form_info"><img src="themes/ecmoban_dsc/iamges/20170517/click-me-2.png" alt="" style="margin: 0 auto;position:relative;z-index: 5;top: -25px;" /></a>
+            </div>
 			<div style="height: 329px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_09.jpg" alt=""></div>
 			<div style="height: 278px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_10.jpg" alt=""></div>
 			<div style="height: 259px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_11.jpg" alt=""></div>
@@ -35,7 +38,10 @@
 			<div style="height: 370px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_15.jpg" alt=""></div>
 			<div style="height: 307px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_16.jpg" alt=""></div>
 			<div style="height: 367px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_17.jpg" alt=""></div>
-			<div style="height: 328px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_18.jpg" alt=""></div>
+			<div style="height: 328px;">
+                <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_18.jpg" alt="">
+                <a href="#form_info"><img src="themes/ecmoban_dsc/iamges/20170517/click-me-3.png" alt="" style="margin: 0 auto;position:relative;z-index: 5;top: -370px;" /></a>
+            </div>
 			<div style="height: 365px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_19.jpg" alt=""></div>
 			<div style="height: 316px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_20.jpg" alt=""></div>
 			<div style="height: 323px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_21.jpg" alt=""></div>

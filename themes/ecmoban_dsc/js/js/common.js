@@ -541,7 +541,7 @@
 		      var $target = $(this.hash),
 		      	  $this_a = $(this),
 		      	  $li = $this_a.parent(),
-		      	  $col_a = $(this);
+		      	  $col_a = $this;
 
 		      $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
 
