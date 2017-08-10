@@ -166,7 +166,7 @@
             </div>
             <div class="float-r">
                 <em class="animate">+ 5积分</em>
-                <span class="sign" onselectstart="return false;" unselectable="on">点击签到</span>
+                <span class="sign" onselectstart="return false;" unselectable="on" data-value="{$user_id}">点击签到</span>
             </div>
         </div>  
 
@@ -345,12 +345,16 @@
             $(".section-2 .product-slide").slideFade();
 
             //点击签到
-            $(".sign").on("click",function() {
+            $(".sign").on("click",function(){
                 var $this = $(this),
                     $em = $(".animate"),
                     $val = $(".section-3 h2 span"),
+                    user_id=$(this).data("value");
                     newVal = Number($val.text());
-
+                if(user_id == 0){
+                    window.location.href="user.php?act=plus_jf";
+                    return false;
+                }
                 if(!$em.is(":animated")) {
 
                     //积分 + 5的动画
@@ -359,18 +363,19 @@
                     $em.animate({bottom: 80},100,function() {
 
                         //改变积分的最终值
-                        newVal += 5;
-                        $val.text(newVal);
+                       
                         $.ajax({
                         type:"GET",
-                        url:"exchange.php",
-                        data:"act=score" + newVal,
+                        url:"exchange_plusjf.php?val="+5,
+                        dataType:"TEXT",
                         success:function(msg)
                         {
                             alert(msg);
+                            newVal += 5;
+                            $val.text(newVal);
                         }
                         })  
-                            });
+                        });
                 };
                 //改变按钮状态
                 $this.text("已签到");
