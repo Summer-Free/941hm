@@ -1,0 +1,42 @@
+<?php
+	define('IN_ECS', true);
+	require(dirname(__FILE__) . '/includes/init.php');
+    /*$file = $_FILES['file'];//得到传输的数据
+    $upload_path = "E:/XAMPP/htdocs/941hm/old_for_new/";//图片上传的文件夹
+    //得到文件名称
+    $name = $file['name'];
+    $type = strtolower(substr($name,strrpos($name,'.')+1)); //得到文件类型，并且都转化成小写
+    $allow_type = array('jpg','jpeg','gif','png'); //定义允许上传的类型
+    if(!in_array($type, $allow_type)){
+      //如果图片格式不被允许，则直接停止程序运行
+      echo "<script type='text/javascript'>alert('请检查上传的图片类型是否正确');</script>";
+      return;
+    }
+    else if($file['size']>6291456){
+        //如果图片大小不被允许，则直接停止程序运行
+        echo "<script type='text/javascript'>alert('图片大小超过限制');</script>";
+      return;
+    }
+    else if(!is_uploaded_file($file['tmp_name'])){
+      //如果不是通过HTTP POST上传的
+      echo "<script type='text/javascript'>alert('上传方式出错');</script>";
+      return ;
+    }
+    else if (file_exists("E:/XAMPP/htdocs/941hm/old_for_new/" . $name)){  
+        echo "<script type='text/javascript'>alert('图片已存入后台，请勿重复添加');</script>"; 
+        return;
+    }  
+    //上传文件的存放路径
+    if(move_uploaded_file($file['tmp_name'],$upload_path.$file['name'])){
+      echo "<script type='text/javascript'>alert('图片上传成功');</script>";
+    }else{
+      echo "<script type='text/javascript'>alert('图片上传失败');</script>";
+    }*/
+    $unsename=$_POST['username'];
+    //$phone=$_GET['phone'];
+    echo $unsename;
+    //echo json_encode($unsename);
+    //echo $phone;
+	$smarty->display('test.dwt');
+
+?>

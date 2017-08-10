@@ -115,7 +115,7 @@
                                     <td>{$bm_arr.bm_name}</td>
                                     <td>{$bm_arr.bm_phone}</td>
                                     <td>{$bm_arr.bm_address}</td>
-                                    <td>时间</td>
+                                    <td>{$bm_arr.bm_time}</td>
                                     <td>{$bm_arr.bm_type}</td>
                                 </tr>
                                 <!--{/foreach}-->

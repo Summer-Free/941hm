@@ -49,8 +49,7 @@ $(function() {
 			};
 		});
 		
-		$('.description button').on("click",function(e) {
-
+		$('.description button').on("click",function(e){
 			var name_val = $("#name").val(),  //用户名
 				phone_val = $("#phone").val(), //手机号
 				sprice = $("#sprice").val(),
@@ -59,7 +58,6 @@ $(function() {
 				district_val = $(".district option:selected").data("title"), //县(区)
 				error = '<p class="color-ff0000" style="text-align:center;"><span class="error">*</span><i>为必填项,请填写完整</i></p>',
 				div = $('.group-7'),
-				file1 =$("#file1").val();
 				reg = /^[\u4e00-\u9fa5]{2,4}$/i;
 
 				//阻止默认事件
@@ -116,17 +114,17 @@ $(function() {
 					div.find("i").text("请选择县（区）");
 					return false;
 				};
-				$("#content").load("themes/ecmoban_dsc/awaiting_audit.dwt");
-				$(".form-status ul li").eq(1).addClass("active").siblings().removeClass("active");
-
-
-	            // $.ajax( {  
-	            //     type : "POST",  
-	            //     url : "",  
-	            //     success : function() {  
-	            //         $("#content").load("themes/ecmoban_dsc/awaiting_audit.dwt");  
-	            //     }  
-	            // }); 
+	            $.ajax({  
+	                type : "GET",  
+	                url : "old_for_new_form_check.php?username="+name_val+"&phone="+phone_val+"&province="+province_val+"&city="+city_val+"&district="+district_val+"&series="+series+"&sprice="+sprice+"&objective="+objective,
+	                dataType:"TEXT",  
+	                success : function(msg) {  
+	                     if(msg ==1){
+                     		$("#content").load("themes/ecmoban_dsc/awaiting_audit.dwt");
+							$(".form-status ul li").eq(1).addClass("active").siblings().removeClass("active");
+	                     }
+	                }
+	            }); 
 
 		});
 	};
