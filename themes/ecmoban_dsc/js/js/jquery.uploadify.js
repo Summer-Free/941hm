@@ -324,7 +324,7 @@ Released under the MIT License <http://www.opensource.org/licenses/mit-license.p
 							} else {
 								swfuploadify.cancelUpload($(this).attr('id'));
 							}
-							$(this).find('.data').removeClass('data').html(' - Cancelled');
+							$(this).find('.data').removeClass('data').html('取消');
 							$(this).find('.uploadify-progress-bar').remove();
 							$(this).delay(1000 + 100 * delay).fadeOut(500, function() {
 								$(this).remove();
@@ -337,7 +337,7 @@ Released under the MIT License <http://www.opensource.org/licenses/mit-license.p
 					} else {
 						for (var n = 0; n < args.length; n++) {
 							swfuploadify.cancelUpload(args[n]);
-							$('#' + args[n]).find('.data').removeClass('data').html(' - Cancelled');
+							$('#' + args[n]).find('.data').removeClass('data').html('取消');
 							$('#' + args[n]).find('.uploadify-progress-bar').remove();
 							$('#' + args[n]).delay(1000 + 100 * n).fadeOut(500, function() {
 								$(this).remove();
@@ -843,7 +843,6 @@ Released under the MIT License <http://www.opensource.org/licenses/mit-license.p
 					errorString = 'Stopped';
 					break;
 			}
-
 			// Call the default event handler
 			if ($.inArray('onUploadError', settings.overrideEvents) < 0) {
 
@@ -903,9 +902,9 @@ Released under the MIT License <http://www.opensource.org/licenses/mit-license.p
 			// Call the default event handler
 			if ($.inArray('onUploadProgress', settings.overrideEvents) < 0) {
 				if (settings.progressData == 'percentage') {
-					$('#' + file.id).find('.data').html(' - ' + percentage + '%');
+					$('#' + file.id).find('.data').html(percentage + '%');
 				} else if (settings.progressData == 'speed' && lapsedTime > 500) {
-					$('#' + file.id).find('.data').html(' - ' + this.queueData.averageSpeed + suffix);
+					$('#' + file.id).find('.data').html(this.queueData.averageSpeed + suffix);
 				}
 				$('#' + file.id).find('.uploadify-progress-bar').css('width', percentage + '%');
 			}
@@ -984,5 +983,4 @@ Released under the MIT License <http://www.opensource.org/licenses/mit-license.p
 		}
 
 	}
-
 })($);

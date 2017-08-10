@@ -18,23 +18,41 @@
 	text-indent: 1em;
 	background-color: #d6d6d6;
 }
+
+/*为了兼容IE*/
+.form-status .li1 {
+	z-index: 7;
+}
+.form-status .li2 {
+	z-index: 6;
+}
+.form-status .li3 {
+	z-index: 5;
+}
+.form-status .li4 {
+	z-index: 4;
+}
+.form-status .li5 {
+	z-index: 3;
+}
 .form-status li:before,
 .form-status li:after {
 	content: "";
 	display: block;
 	position: absolute;
 	top: 50%;
+	text-indent: 0;
 	box-sizing: content-box;
 }
 .form-status li:before {
-	z-index: 2;
+	z-index: 9;
 	right: -40px;
 	margin-top: -20px;
 	border: 20px solid transparent;
 	border-left-color: #fff; 
 }
 .form-status li:after {
-	z-index: 3;
+	z-index: 10;
 	right: -32px;
 	margin-top: -16px;
 	border: 16px solid transparent;

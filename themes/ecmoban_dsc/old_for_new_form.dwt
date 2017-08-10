@@ -27,11 +27,11 @@
 
 			<div class="form-status">
 				<ul class="clearfix">
-					<li class="active">描述情况</li>
-					<li>等待审核</li>
-					<li>预约上门</li>
-					<li>支付定金</li>
-					<li>等待上门</li>
+					<li class="li1">描述情况</li>
+					<li class="li2">等待审核</li>
+					<li class="active li3">预约上门</li>
+					<li class="li4">支付定金</li>
+					<li class="li5">等待上门</li>
 					<li class="no-before">发放现金劵</li>
 				</ul>
 			</div>
@@ -161,9 +161,52 @@
    		</script>
 		<script>
 			$(function() {
+
+				function alertMsg() {
+					function flashChecker() {
+					    var hasFlash = 0; //是否安装了flash
+					    var flashVersion = 0; //flash版本
+					    if (document.all) {
+					      var swf = new ActiveXObject('ShockwaveFlash.ShockwaveFlash');
+					      if (swf) {
+					        hasFlash = 1;
+					        VSwf = swf.GetVariable("$version");
+					        flashVersion = parseInt(VSwf.split(" ")[1].split(",")[0]);
+					      }
+					    } else {
+					      if (navigator.plugins && navigator.plugins.length > 0) {
+					        var swf = navigator.plugins["Shockwave Flash"];
+					        if (swf) {
+					          hasFlash = 1;
+					          var words = swf.description.split(" ");
+					          for (var i = 0; i < words.length; ++i) {
+					            if (isNaN(parseInt(words[i]))) continue;
+					            flashVersion = parseInt(words[i]);
+					          }
+					        }
+					      }
+					    }
+					    return { f: hasFlash, v: flashVersion };
+					};
+					  var fls = flashChecker();
+					  var s = "";
+					  if (fls.f) {
+					  	if(/webkit/.test(navigator.userAgent.toLowerCase())) {
+					  		alert("您已经安装了flash,请您开启flash,否则您无法上传图片");
+					  	}
+					  }
+					  else {
+					  	alert("请您安装flash插件,否则您无法上传图片"); 
+					  };
+				};
+
+				//提示用户安装flash并打开flash (没有安装flash的用户，将无法上传图片)
+				alertMsg();
+
+				//凭证图片
 		        $("#file_upload_1").uploadify({
-		            "swf"      : "uploadify.swf",    //指定上传控件的主体文件
-		            "uploader" : "uploadify.php",    //指定服务器端上传处理文件
+		            "swf"      : "uploadify.swf",    //选择文件按钮
+		            "uploader" : "uploadify.php",    //处理文件上传的php文件
 		            "auto"     : true,
 		            "buttonText" : "请选择图片",
 		            "fileObjName": "images",
@@ -175,9 +218,10 @@
 		            "uploadLimit": 6
 		        });
 
+		        //旧物的真实照片
 		        $("#file_upload_2").uploadify({
-		            "swf"      : "uploadify.swf",    //指定上传控件的主体文件
-		            "uploader" : "uploadify.php",    //指定服务器端上传处理文件
+		            "swf"      : "uploadify.swf",    //选择文件按钮
+		            "uploader" : "uploadify.php",    //处理文件上传的php文件
 		            "auto"     : true,
 		            "buttonText" : "请选择图片",
 		            "fileObjName": "images",
