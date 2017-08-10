@@ -611,7 +611,7 @@ Released under the MIT License <http://www.opensource.org/licenses/mit-license.p
 			for (var n in this.queueData.files) {
 				queuedFile = this.queueData.files[n];
 				if (queuedFile.uploaded != true && queuedFile.name == file.name) {
-					var replaceQueueItem = confirm('The file named "' + file.name + '" is already in the queue.\nDo you want to replace the existing item in the queue?');
+					var replaceQueueItem = confirm('这张图片' + file.name + '已经上传成功，你需要重新上传吗?');
 					if (!replaceQueueItem) {
 						this.cancelUpload(file.id);
 						this.queueData.filesCancelled++;
@@ -654,7 +654,6 @@ Released under the MIT License <http://www.opensource.org/licenses/mit-license.p
 
 			// Create the file item template
 			if (settings.itemTemplate == false) {
-				console.log(file)
 				settings.itemTemplate = '<div id="${fileID}" class="uploadify-queue-item">\
 					<div class="cancel">\
 						<a href="javascript:$(\'#${instanceID}\').uploadify(\'cancel\', \'${fileID}\')" title="删除">X</a>\
@@ -698,7 +697,7 @@ Released under the MIT License <http://www.opensource.org/licenses/mit-license.p
 				switch(errorCode) {
 					case SWFUpload.QUEUE_ERROR.QUEUE_LIMIT_EXCEEDED:
 						if (settings.queueSizeLimit > errorMsg) {
-							this.queueData.errorMsg = '最多只能上传6张图片';
+							this.queueData.errorMsg = '所选文件的数量超过了剩余的上传限制,您还可以上传(' + errorMsg + ')张';
 						} else {
 							this.queueData.errorMsg += '\nThe number of files selected exceeds the queue size limit (' + settings.queueSizeLimit + ').';
 						}
@@ -817,7 +816,8 @@ Released under the MIT License <http://www.opensource.org/licenses/mit-license.p
 					errorString = 'Security Error';
 					break;
 				case SWFUpload.UPLOAD_ERROR.UPLOAD_LIMIT_EXCEEDED:
-					alert('The upload limit has been reached (' + errorMsg + ').');
+					// alert('The upload limit has been reached (' + errorMsg + ').');
+					alert('已经达到最大上传数量');
 					errorString = 'Exceeds Upload Limit';
 					break;
 				case SWFUpload.UPLOAD_ERROR.UPLOAD_FAILED:
