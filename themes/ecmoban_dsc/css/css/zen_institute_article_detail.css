@@ -1,0 +1,53 @@
+#main-body {
+	padding-top: 20px;
+}
+h2 {
+	height: 53px;
+	line-height: 53px;
+	font-size: 18px;
+}
+.left {
+	width: 860px;
+	min-height: 576px;
+	padding: 0 20px 20px 20px;
+}
+.left img {
+	margin-bottom: 15px;
+}
+.left p {
+	margin-bottom: 50px;
+}
+.right {
+	width: 317px;
+}
+.right .top {
+	height: 576px;
+}
+.right .top,
+.right .btm {
+	padding: 0 20px;
+}
+.right .btm {
+	height: 147px;
+}
+.right .top li {
+	margin-bottom: 20px;
+}
+.right .top li div {
+	position: relative;
+	height: 83px;
+}
+.right .top li div span {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	font-size: 12px;
+	color: #b2b1b1;
+}
+.right .btm h2 {
+	height: 36px;
+	line-height: 36px;
+}
+.right .btm li {
+	line-height: 1.8;
+}

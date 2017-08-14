@@ -157,6 +157,9 @@ table{border-collapse:collapse;border-spacing:0;}
 .bg-color-95b0b2 {
   background-color: #95b0b2;
 }
+.bg-color-fff {
+  background-color: #fff;
+}
 
 
 /*border style*/
@@ -214,6 +217,9 @@ table{border-collapse:collapse;border-spacing:0;}
 }
 
 /*margin style*/
+.margin-t-5 {
+  margin-top: 5px;
+}
 .margin-t-8 {
   margin-top: 8px;
 }
@@ -225,6 +231,9 @@ table{border-collapse:collapse;border-spacing:0;}
 }
 .margin-t-17 {
   margin-top: 17px;
+}
+.margin-t-20 {
+  margin-top: 20px;
 }
 .margin-t-25 {
   margin-top: 25px;

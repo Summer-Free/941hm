@@ -9,6 +9,7 @@
 #main-body .section-1 li a {
 	display: block;
 	box-shadow: 0 0 2px #d8d7d7;
+	background-color: #eee;
 }
 #main-body .section-1 img {
 	margin: 0;
@@ -453,6 +454,7 @@
 	width: 1100px;
 }
 .section-15 dd a {
+	overflow: hidden;
 	margin: 0 0 15px 0;
 	width: 100px;
 	height: 24px;

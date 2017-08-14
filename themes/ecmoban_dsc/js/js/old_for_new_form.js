@@ -114,15 +114,25 @@ $(function() {
 					div.find("i").text("请选择县（区）");
 					return false;
 				};
+
 	            $.ajax({  
 	                type : "GET",  
 	                url : "old_for_new_form_check.php?username="+name_val+"&phone="+phone_val+"&province="+province_val+"&city="+city_val+"&district="+district_val+"&series="+series+"&sprice="+sprice+"&objective="+objective,
 	                dataType:"TEXT",  
 	                success : function(msg) {  
-	                     if(msg ==1){
-                     		$("#content").load("themes/ecmoban_dsc/awaiting_audit.dwt");
-							$(".form-status ul li").eq(1).addClass("active").siblings().removeClass("active");
-	                     }
+	                    if(msg ==1){
+	                    	//等待审核
+                     		// $("#content").load("themes/ecmoban_dsc/awaiting_audit.dwt");
+							// $(".form-status ul li").eq(1).addClass("active").siblings().removeClass("active");
+							
+							//预约上门
+							// $("#content").load("themes/ecmoban_dsc/appointment.dwt");
+							// $(".form-status ul li").eq(2).addClass("active").siblings().removeClass("active");
+
+							//支付定金 (接到通知先做禅学院,pay.dwt还没有创建)
+							// $("#content").load("themes/ecmoban_dsc/pay.dwt");
+							// $(".form-status ul li").eq(2).addClass("active").siblings().removeClass("active");
+	                    }
 	                }
 	            }); 
 

@@ -187,3 +187,23 @@
 	display: inline-block;
 	margin-bottom: 12px;
 }
+
+/*预约上门*/
+.appointment {
+	padding-top: 35px;
+	min-height: 800px;
+	text-align: center;
+}
+.appointment p {
+	margin-bottom: 35px;
+	line-height: 1.8;
+}
+.appointment div a {
+	display: inline-block;
+	width: 184px;
+	height: 43px;
+	line-height: 43px;
+	color: #fff;
+	border-radius: 6px;
+	background-color: #47a9fd;
+}

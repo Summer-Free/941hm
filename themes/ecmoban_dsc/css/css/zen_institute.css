@@ -1,23 +1,125 @@
-.common-h2 {
-	height: 72px;
-	line-height: 72px;
-	font-size: 16px;
+#main-body {
+	padding-top: 20px;
 }
-.common-h2 a {
-	float: right;
-}
-.section {
-	border-bottom: 1px solid #333;
-}
-.section .w1200 {
-	padding: 0 15px;
-}
-.section li {
+.section-1>div {
 	float: left;
-	margin: 0 58px 23px 0;
+	margin-right: 6.5px;
 }
-.section li h3 {
-	padding-top: 8px;
-	text-align: center;
-	font-size: 14px;
+.section-1 .left {
+	width: 376px;
+}
+.section-1 .middle {
+	width: 570px;
+}
+.section-1 .right {
+	width: 241px;
+}
+.section-1>div a {
+	position: relative;
+	display: block;
+	overflow: hidden;
+}
+.section-1>div h5 {
+	box-sizing: content-box;
+	position: absolute;
+	left: 0;
+	bottom: -34px;
+	padding-left: 10px;
+	width: 100%;
+	height: 34px;
+	line-height: 34px;
+	font-size: 18px;
+	color: #fff;
+	background-color: rgba(0,0,0,.5);
+}
+.section-1>div a:hover h5 {
+	bottom: 0;
+}
+
+.common-temp {
+	border: 1px solid #e1e1e1;
+	box-shadow: 0 0 1px 1px #e1e1e1;
+}
+.common-temp .head {
+	padding: 0 10px;
+	height: 70px;
+	line-height: 70px;
+	border-bottom: 2px solid #e1e1e1;
+}
+.common-temp .head h2 {
+	font-size: 24px;
+}
+.common-temp .head h2,
+.common-temp .tab-nav {
+	float: left;
+}
+.common-temp .head>a {
+	float: right;
+	font-size: 12px;
+}
+.common-temp .tab-nav {
+	padding-left: 15px;
+}
+.common-temp .tab-nav li {
+	float: left;
+	padding: 0 8px;
+	height: 70px;
+	cursor: pointer;
+}
+.common-temp .tab-nav .active {
+	color: #46a9fe;
+	border-bottom: 2px solid #46a9fe;
+}
+.common-temp .content {
+	position: relative;
+	min-height: 453px;
+}
+.common-temp .content>div {
+	position: absolute;
+	top: 23px;
+	left: 10px;
+	display: none;
+	width: 1178px;
+}
+.common-temp .content>.active {
+	display: block;
+}
+.common-temp .content li,
+.common-temp .wrap-article li img {
+	float: left;
+}
+.common-temp .wrap-video li {
+	margin-right: 12px;
+	padding-bottom: 20px;
+}
+.common-temp .wrap-video li h3 {
+	padding-top: 12px;
+	padding-bottom: 5px;
+}
+.common-temp .wrap-video li p,
+.common-temp .wrap-video li h3 {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+.common-temp .wrap-video li p {
+	color: #a7a5a5;
+}
+.common-temp .wrap-article li div {
+	float: right;
+	width: 396px;
+}
+.common-temp .wrap-article li {
+	width: 564px;
+}
+.common-temp .wrap-article li h3 {
+	padding-bottom: 3px;
+}
+.common-temp .wrap-article li p {
+	font-size: 12px;
+	color: #a7a5a5;
+	line-height: 2;
+}
+.common-temp .wrap-article li {
+	margin-right: 30px;
+	margin-bottom: 35px;
 }
