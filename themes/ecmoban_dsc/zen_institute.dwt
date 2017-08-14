@@ -93,31 +93,31 @@
         <div id="main-body" class="w1200">
             <div class="section-1 clearfix">
                 <div class="left" style="width: 376px;height:376px;">
-                    <a href="#">
+                    <a href="#ccyw">
                         <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic1.jpg" alt="" />
                         <h5 class="transition">禅茶一味</h5>
                     </a>
                 </div>
                 <div class="middle clearfix">
-                    <a class="float-l" href="#" style="width: 188px;height:185px;">
+                    <a class="float-l" href="#jyxs" style="width: 188px;height:185px;">
                         <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic2.jpg" alt="" />
                         <h5 class="transition">静以修身</h5>
                     </a>
-                    <a class="float-r" href="#" style="width: 377px;height:185px;">
+                    <a class="float-r" href="#syft" style="width: 377px;height:185px;">
                         <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic3.jpg" alt="" />
                         <h5 class="transition">善缘佛堂</h5>
                     </a>
-                    <a class="float-l margin-t-5" href="#" style="width: 377px;height:186px;">
+                    <a class="float-l margin-t-5" href="#jrjx" style="width: 377px;height:186px;">
                         <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic4.jpg" alt="" />
                         <h5 class="transition">匠人匠心</h5>
                     </a>
-                    <a class="float-r margin-t-5" href="#" style="width: 188px;height:186px;">
+                    <a class="float-r margin-t-5" href="#zyys" style="width: 188px;height:186px;">
                         <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic5.jpg" alt="" />
                         <h5 class="transition">中医养生</h5>
                     </a>
                 </div>
                 <div class="right margin-r-0" style="width: 241px;height:376px;">
-                    <a href="#">
+                    <a href="#hgzr">
                         <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic6.jpg" alt="" />
                         <h5 class="transition">回归自然</h5>
                     </a>
@@ -125,7 +125,7 @@
             </div>
             
             <!--禅茶一味-->
-            <div class="section-2 common-temp margin-t-17">
+            <div class="section-2 common-temp margin-t-17" id="ccyw">
                 <div class="head clearfix">
                     <h2>禅茶一味&nbsp;&nbsp;></h2>
                     <ul class="tab-nav clearfix">
@@ -156,7 +156,7 @@
                         <ul class="wrap-article clearfix">
                             <li>
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -165,7 +165,7 @@
                             </li>
                             <li class="margin-r-0">
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -174,7 +174,7 @@
                             </li>
                             <li>
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -183,7 +183,7 @@
                             </li>
                             <li class="margin-r-0">
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -192,7 +192,7 @@
                             </li>
                             <li>
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -201,7 +201,7 @@
                             </li>
                             <li class="margin-r-0">
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -214,7 +214,7 @@
             </div>
 
             <!--静以修身-->
-            <div class="section-3 common-temp margin-t-17">
+            <div class="section-3 common-temp margin-t-17" id="jyxs">
                 <div class="head clearfix">
                     <h2>静以修身&nbsp;&nbsp;></h2>
                     <ul class="tab-nav clearfix">
@@ -245,7 +245,7 @@
                         <ul class="wrap-article clearfix">
                             <li>
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -254,7 +254,7 @@
                             </li>
                             <li class="margin-r-0">
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -263,7 +263,7 @@
                             </li>
                             <li>
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -272,7 +272,7 @@
                             </li>
                             <li class="margin-r-0">
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -281,7 +281,7 @@
                             </li>
                             <li>
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -290,7 +290,7 @@
                             </li>
                             <li class="margin-r-0">
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -303,7 +303,7 @@
             </div>
 
             <!--善缘佛堂-->
-            <div class="section-4 common-temp margin-t-17">
+            <div class="section-4 common-temp margin-t-17" id="syft">
                 <div class="head clearfix">
                     <h2>善缘佛堂&nbsp;&nbsp;></h2>
                     <ul class="tab-nav clearfix">
@@ -334,7 +334,7 @@
                         <ul class="wrap-article clearfix">
                             <li>
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -343,7 +343,7 @@
                             </li>
                             <li class="margin-r-0">
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -352,7 +352,7 @@
                             </li>
                             <li>
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -361,7 +361,7 @@
                             </li>
                             <li class="margin-r-0">
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -370,7 +370,7 @@
                             </li>
                             <li>
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -379,7 +379,7 @@
                             </li>
                             <li class="margin-r-0">
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -392,7 +392,7 @@
             </div>
 
             <!--匠人匠心-->
-            <div class="section-5 common-temp margin-t-17">
+            <div class="section-5 common-temp margin-t-17" id="jrjx">
                 <div class="head clearfix">
                     <h2>匠人匠心&nbsp;&nbsp;></h2>
                     <ul class="tab-nav clearfix">
@@ -423,7 +423,7 @@
                         <ul class="wrap-article clearfix">
                             <li>
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -432,7 +432,7 @@
                             </li>
                             <li class="margin-r-0">
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -441,7 +441,7 @@
                             </li>
                             <li>
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -450,7 +450,7 @@
                             </li>
                             <li class="margin-r-0">
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -459,7 +459,7 @@
                             </li>
                             <li>
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -468,7 +468,7 @@
                             </li>
                             <li class="margin-r-0">
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -481,7 +481,7 @@
             </div>
 
             <!--中医养生-->
-            <div class="section-6 common-temp margin-t-17">
+            <div class="section-6 common-temp margin-t-17" id="zyys">
                 <div class="head clearfix">
                     <h2>中医养生&nbsp;&nbsp;></h2>
                     <ul class="tab-nav clearfix">
@@ -512,7 +512,7 @@
                         <ul class="wrap-article clearfix">
                             <li>
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -521,7 +521,7 @@
                             </li>
                             <li class="margin-r-0">
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -530,7 +530,7 @@
                             </li>
                             <li>
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -539,7 +539,7 @@
                             </li>
                             <li class="margin-r-0">
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -548,7 +548,7 @@
                             </li>
                             <li>
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -557,7 +557,7 @@
                             </li>
                             <li class="margin-r-0">
                                 <a class="clearfix" href="#">
-                                    <img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                    <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
                                     <div>
                                         <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
                                         <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
@@ -570,7 +570,7 @@
             </div>
 
             <!--回归自然-->
-            <div class="section-7 common-temp margin-t-17">
+            <div class="section-7 common-temp margin-t-17" id="hgzr">
                 <div class="head clearfix">
                     <h2>回归自然&nbsp;&nbsp;></h2>
                     <ul class="tab-nav clearfix">

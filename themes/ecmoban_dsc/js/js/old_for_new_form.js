@@ -122,16 +122,24 @@ $(function() {
 	                success : function(msg) {  
 	                    if(msg ==1){
 	                    	//等待审核
-                     		// $("#content").load("themes/ecmoban_dsc/awaiting_audit.dwt");
-							// $(".form-status ul li").eq(1).addClass("active").siblings().removeClass("active");
+                     		$("#content").load("themes/ecmoban_dsc/awaiting_audit.dwt");
+							$(".form-status ul li").eq(1).addClass("active").siblings().removeClass("active");
 							
 							//预约上门
-							// $("#content").load("themes/ecmoban_dsc/appointment.dwt");
-							// $(".form-status ul li").eq(2).addClass("active").siblings().removeClass("active");
+							$("#content").load("themes/ecmoban_dsc/appointment.dwt");
+							$(".form-status ul li").eq(2).addClass("active").siblings().removeClass("active");
 
-							//支付定金 (接到通知先做禅学院,pay.dwt还没有创建)
-							// $("#content").load("themes/ecmoban_dsc/pay.dwt");
-							// $(".form-status ul li").eq(2).addClass("active").siblings().removeClass("active");
+							//支付定金
+                     		$("#content").load("themes/ecmoban_dsc/pay.dwt");
+							$(".form-status ul li").eq(3).addClass("active").siblings().removeClass("active");
+							 
+							//等待上门
+                     		$("#content").load("themes/ecmoban_dsc/waiting_for_the_door.dwt");
+							$(".form-status ul li").eq(4).addClass("active").siblings().removeClass("active");
+							
+							//发放现金劵
+                     		$("#content").load("themes/ecmoban_dsc/cash_coupon.dwt");
+							$(".form-status ul li").eq(5).addClass("active").siblings().removeClass("active");
 	                    }
 	                }
 	            }); 

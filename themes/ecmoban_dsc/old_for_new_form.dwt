@@ -220,9 +220,9 @@
 		                'timestamp' : '<?php echo strtotime(date("YmdHis"));?>',
 		                'token'     : '<?php echo md5('unique_salt' . $timestamp);?>'
 			        },
-		            "onUploadSuccess" : function(file, data, response) {              
-		            	alert('The file ' + file.name + ' was successfully uploaded with a response of ' + response + ':' + data);         
-		            }
+		            // "onUploadSuccess" : function(file, data, response) {              
+		            // 	alert('The file ' + file.name + ' was successfully uploaded with a response of ' + response + ':' + data);         
+		            // }
 		        });
 
 		        //旧物的真实照片
