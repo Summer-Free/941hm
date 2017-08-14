@@ -233,29 +233,29 @@
 				<div class="section-1 bg-color-f5f5f5">
 					<ul class="clearfix">
 						<li>
-							<a href="exchange.php" title="积分商城" style="background-color: #faf9f7;">
+							<a href="exchange.php" title="积分商城">
 								<img class="lazy" width="200" height="400" data-original="themes/ecmoban_dsc/iamges/20170517/jfsc.jpg" alt="积分商城" />
 							</a>
 						</li>
 						<li>
-							<a class="margin-b-12" href="gadget.php" title="小玩意儿" style="background-color: #d7fae8;">
-								<img class="lazy" width="381" height="193" data-original="themes/ecmoban_dsc/iamges/20170517/xwye.jpg" alt="小玩意儿" />
+							<a class="margin-b-12" href="maintenance_technician.php" title="保养技师" style="width:381px;height:193px;overflow:hidden;">
+								<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/byjs.jpg" alt="保养技师" />
 							</a>
-							<a href="maintenance_technician.php" title="保养技师" style="background-color: #e4eef0;">
-								<img class="lazy" width="381" height="193" data-original="themes/ecmoban_dsc/iamges/20170517/byjs.jpg" alt="保养技师" />
+							<a href="gadget.php" title="小玩意儿" style="width:381px;height:193px;overflow:hidden;">
+								<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/xwye.jpg" alt="小玩意儿" />
 							</a>
 						</li>
 						<li>
-							<a href="old_for_new.php" title="以物换物" style="background-color: #f5f5f5;">
+							<a href="old_for_new.php" title="以物换物">
 								<img class="lazy" width="200" height="400" data-original="themes/ecmoban_dsc/iamges/20170517/ywhw.jpg" alt="以物换物" />
 							</a>
 						</li>
 						<li class="margin-r-0">
-							<a class="margin-b-12" href="free_trial.php" title="免费试用" style="background-color: #f6dcdc;">
-								<img class="lazy" width="390" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/mfsy.jpg" alt="免费试用" />
+							<a class="margin-b-12" href="free_trial.php" title="免费试用" style="width:390px;height:194px;overflow:hidden;">
+								<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/mfsy.jpg" alt="免费试用" />
 							</a>
-							<a class="showMsg" href="style_museum.php" title="风格馆" style="background-color: #fbd7b3;">
-								<img class="lazy" width="390" height="194" data-original="themes/ecmoban_dsc/iamges/20170517/fgg.jpg" alt="风格馆" />
+							<a href="zen_institute.php" title="禅学院" style="width:390px;height:194px;overflow:hidden;">
+								<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cxy.jpg" alt="禅学院" />
 							</a>
 						</li>
 					</ul>
@@ -660,10 +660,12 @@
 		
 		<!--footer-->
 		<!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->	
+		<script type="text/javascript" src="themes/ecmoban_dsc/js/sc_common.js"></script>
 		<!--首页专用JS-->
-        <script type="text/javascript" src="themes/ecmoban_dsc/js/js/index.js"></script>
-        <script type="text/javascript" src="js/jquery.lazyload.js"></script>  
+        <script type="text/javascript" src="themes/ecmoban_dsc/js/js/index.js"></script> 
         <script type="text/javascript" src="themes/ecmoban_dsc/js/notLogin.js"></script>
+        <!--懒加载-->
+        <script type="text/javascript" src="js/jquery.lazyload.js"></script> 
         <!--开启懒加载-->
         <script type="text/javascript">
             $("img.lazy").lazyload({

@@ -27,9 +27,9 @@
 
 			<div class="form-status">
 				<ul class="clearfix">
-					<li class="li1">描述情况</li>
+					<li class="active li1">描述情况</li>
 					<li class="li2">等待审核</li>
-					<li class="active li3">预约上门</li>
+					<li class="li3">预约上门</li>
 					<li class="li4">支付定金</li>
 					<li class="li5">等待上门</li>
 					<li class="no-before">发放现金劵</li>
@@ -196,7 +196,7 @@
 					  	}
 					  }
 					  else {
-					  	alert("请您安装flash插件,否则您无法上传图片"); 
+					  	alert("请您安装flash插件,否则您无法上传图片" + '<a href="www.adobe.com/go/getflash">'); 
 					  };
 				};
 
