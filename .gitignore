@@ -8,3 +8,4 @@ data_base/
 *.gif
 *.sql
 themes/ecmoban_dsc/crowd_funding.dwt.rej
+.idea/codeStyleSettings.xml

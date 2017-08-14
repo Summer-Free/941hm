@@ -649,7 +649,7 @@
 						<dt>友情链接 : </dt>
 						<dd class="clearfix">
 						<!--{foreach from=$yqlj_sql item=yqlj_sql name=yqlj_sql}-->
-							<a href="{$yqlj_sql.link_url}">{$yqlj_sql.link_name}</a>
+							<a href="{$yqlj_sql.link_url}" title="{$yqlj_sql.link_name}" >{$yqlj_sql.link_name|truncate:6}</a>
 						<!--{/foreach}-->
 						</dd>
 					</dl>

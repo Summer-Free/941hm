@@ -2,49 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>多个文件上传表单</title>
+<title>视频</title>
 </head>
 <body>
-<style>
-    form{
-        margin: 20px;
-        padding: 10px;
-    }
-    #picInput>input{
-        display: block;
-        margin: 10px;
-    }
-</style>
-	<!--
-		<form method="post" action="#" enctype="multipart/form-data"> 
-			<input type="file" name="file">
-			<br>
-			<input type="submit" name="submit">
-		</form>
-	-->
-		<!--<form action="pic.php" method="post" enctype="multipart/form-data">
-		    <input type="hidden" name="MAX_FILE_SIZE" value="1000000">
-		    <div id="picInput">
-		        上传图片：<input type="file" name='myfile[]'>
-		    </div>
-		    <input id="addBtn" type="button" onclick="addPic1()" value="继续添加图片"><br/><br/>
-		    <input type="submit" value="上传文件">
-		</form>
-		<script>
-	    function addPic1(){
-	        var addBtn =  document.getElementById('addBtn');
-	        var input = document.createElement("input");
-	        input.type = 'file';
-	        input.name = 'myfile[]';
-	        var picInut = document.getElementById('picInput');
-	        picInut.appendChild(input);
-	        if(picInut.children.length == 6){
-	            addBtn.disabled = 'disabled';
-	        }
-	    }
-		</script>
-	-->
-	姓名：
+	
+	
+	
+	<!--姓名：
 		<input type="text" name="username" id="username"><br>
 	电话：
 		<input type="text" name="phone" id="phone"><br>
@@ -70,27 +34,7 @@
 				
 			});
 		})
-		/*function go_info(){
-			var username=$("#username").val();
-			var phone=$("#phone").val();
-			if(unsename ==""){
-				return false;
-			}else if(phone ==""){
-				return false;
-			}
-			$.ajax( {  
-                type : "POST",  
-                url : "test.php",
-                data:,{"unsename":unsename},
-                dataType:text,  
-                success : function(msg) {  
-                    alert(msg) ;
-                }  
-            }); 
-		}*/
-		/*function call_back(text){
-			alert (text);
-		}*/
 	</script>
+	-->
 </body>
 </html>

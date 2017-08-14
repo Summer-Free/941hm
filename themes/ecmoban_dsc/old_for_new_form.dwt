@@ -78,7 +78,7 @@
 
 						<div class="form-group group-3">
 							<h6>3.请您上传旧物的真实照片以确保估价的准确性（最多6张，包含整体图以及具体细节图，每张图片不得大于5M）。</h6>
-							<input id="file_upload_2" name="file_upload" type="file" multiple="true">
+							<input id="file_upload_2" name="file_upload1" type="file" multiple="true">
 						</div>
 						<div class="form-group group-4">
 							<h6>4.您的理想估价的是多少？</h6>
@@ -202,7 +202,7 @@
 
 				//提示用户安装flash并打开flash (没有安装flash的用户，将无法上传图片)
 				alertMsg();
-
+				
 				//凭证图片
 		        $("#file_upload_1").uploadify({
 		            "swf"      : "uploadify.swf",    //选择文件按钮
@@ -215,7 +215,14 @@
 		            "method": "Post",
 		            "removeCompleted": false,
 		            "requeueErrors": true,
-		            "uploadLimit": 6
+		            "uploadLimit": 6,
+		            "formData"     : {
+		                'timestamp' : '<?php echo strtotime(date("YmdHis"));?>',
+		                'token'     : '<?php echo md5('unique_salt' . $timestamp);?>'
+			        },
+		            "onUploadSuccess" : function(file, data, response) {              
+		            	alert('The file ' + file.name + ' was successfully uploaded with a response of ' + response + ':' + data);         
+		            }
 		        });
 
 		        //旧物的真实照片
