@@ -19,12 +19,12 @@
 			<div class="w1200 clearfix">
 				<!--左边内容-->
 				<div class="left float-l">
-					<div class="wrap-video bg-color-fff" style="padding-bottom:45px;">
+					<div class="wrap-video bg-color-fff">
 						<h2>"禅"到底是什么</h2>
 
 						<!--此处放视频-->
 						<div>
-<!-- 							<embed src="http://v.youku.com/v_show/id_XMjk1NTg2NTkxMg==.html?spm=a2hzp.8253876.0.0&f=50662814&qq-pf-to=pcqq.c2c" style="width:860px;height:478px;"/> -->
+							<embed src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjk1NTg2NTkxMg==/v.swf' quality='high' width='860' height='523' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
 						</div>
 					</div>
 					<div class="discription clearfix bg-color-fff margin-t-20">
