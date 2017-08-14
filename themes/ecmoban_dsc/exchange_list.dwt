@@ -338,7 +338,7 @@
     <script>
         $(function() {
 
-            //签到左侧的积分
+            //签到左侧的轮播图
             $(".section-2 .product-slide").slideFade();
 
             //点击签到
@@ -347,11 +347,10 @@
                     $em = $(".animate"),
                     $val = $(".section-3 h2 span"),
                     user_id=$(this).data("value");
-                    newVal = Number($val.text());
                 if(user_id == 0){
                     window.location.href="user.php?act=plus_jf";
                     return false;
-                }
+                };
                 if(!$em.is(":animated")) {
 
                     //积分 + 5的动画
@@ -363,17 +362,15 @@
                             type:"GET",
                             url:"exchange_plusjf.php?val="+'plus',
                             dataType:"TEXT",
-                            success:function(msg)
+                            success:function(data)
                             {   
-                                alert(msg);//MSG数据为5  直接将值放入网页即可
-                                newVal += 5;
-                                $val.text(newVal);  
+                                $val.text(data + "积分");  
                             }
-                        })  
-                        });
+                        }); 
+                    });
                 };
-                //改变按钮状态
-                $this.text("已签到");
+                //改变按钮状态,并禁用按钮
+                $this.text("已签到").off("click");
 
             });
         });

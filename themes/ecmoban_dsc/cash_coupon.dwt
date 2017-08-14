@@ -1,0 +1,21 @@
+<div class="cash-coupon">
+	<div class="div1">
+		<p>很遗憾，本次交易未完成！</p>
+		<p>作为赔偿，我们现赠送您50元优惠券一张！</p>
+	</div>
+	<a class="receive" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/awa-pic6.jpg" alt="" /></a>
+	<div class="div2">
+		<p>客服电话：4000-5555-5555</p>
+	</div>
+	<a href="daily_spike.php"><img src="themes/ecmoban_dsc/iamges/20170517/awa-pic2.jpg" alt="" /></a>
+	<a href="gadget.php"><img src="themes/ecmoban_dsc/iamges/20170517/awa-pic3.jpg" alt="" /></a>
+	<a href="free_trial.php"><img src="themes/ecmoban_dsc/iamges/20170517/awa-pic4.jpg" alt="" /></a>
+</div>		
+<script>
+	$(function() {
+		$(".cash-coupon .receive").on("click",function() {
+			//领取优惠券
+			$(this).find("img").attr("src","themes/ecmoban_dsc/iamges/20170517/awa-pic6-1.jpg");
+		});
+	});
+</script>

@@ -1,0 +1,24 @@
+<div class="pay">
+	<dl class="clearfix">
+		<dt>支付金额：</dt>
+		<dd class="dd-inline">XX元</dd>
+		<dt>费用说明：</dt>
+		<dd class="dd-inline">
+			<p>包含师傅上门以及专业测评费用，上门不会再向您收取额外费用。</p>
+			<p>完成支付后我们将再赠送您一张价值80元的购物券。</p>
+		</dd>
+		<dt>支付方式：</dt>
+		<dd>
+			<ul class="clearfix">
+				<li><a href="#">支付宝</a></li>
+				<li><a href="#">银行汇款/转账</a></li>
+				<li><a href="#">支付宝网银直连</a></li>
+				<li><a href="#">余额支付</a></li>
+				<li><a href="#">微信支付</a></li>
+				<li class="margin-r-0"><a href="#">在线支付</a></li>
+			</ul>
+		</dd>
+	</dl>
+	<p>客服电话：4000-5555-5555</p>
+	<a class="btn" href="#">立即支付</a>
+</div>
