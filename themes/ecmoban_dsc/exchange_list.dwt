@@ -174,7 +174,7 @@
             <h2>您的积分 :
                 <span> 
                     <!--{if $info.integral == 0}-->
-                        0
+                        0积分
                     <!--{else}-->
                         {$info.integral}
                     <!--{/if}-->
@@ -255,9 +255,6 @@
     </script>
     {/if}
     <!--瀑布流 by wu end-->
-
-
-
     <script type="text/javascript">
         /*首页分类树*/
         $(function(){
@@ -360,20 +357,18 @@
                     //积分 + 5的动画
                     $em.animate({bottom: 110,opacity: 1},1000);
                     $em.animate({opacity: 0},500);
-                    $em.animate({bottom: 80},100,function() {
-
+                    $em.animate({bottom: 80},100,function(){
                         //改变积分的最终值
-                       
                         $.ajax({
-                        type:"GET",
-                        url:"exchange_plusjf.php?val="+5,
-                        dataType:"TEXT",
-                        success:function(msg)
-                        {
-                            alert(msg);
-                            newVal += 5;
-                            $val.text(newVal);
-                        }
+                            type:"GET",
+                            url:"exchange_plusjf.php?val="+'plus',
+                            dataType:"TEXT",
+                            success:function(msg)
+                            {   
+                                alert(msg);//MSG数据为5  直接将值放入网页即可
+                                newVal += 5;
+                                $val.text(newVal);  
+                            }
                         })  
                         });
                 };
