@@ -37,6 +37,7 @@ h2 {
 }
 .right .top li div {
 	position: relative;
+	width: 115px;
 	height: 83px;
 }
 .right .top li div span {
