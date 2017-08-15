@@ -20,17 +20,16 @@
 				<!--左边内容-->
 				<div class="left float-l">
 					<div class="wrap-video bg-color-fff">
-						<h2>"禅"到底是什么</h2>
-
+						<h2>{$message.pro_name}</h2>
 						<!--此处放视频-->
 						<div>
-							<embed src='http://player.youku.com/player.php/Type/Folder/Fid//Ob//sid/XMjk1NTg2NTkxMg==/v.swf' quality='high' width='860' height='523' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
+							<embed src='{$message.viedo_href}' quality='high' width='860' height='523' align='middle' allowScriptAccess='always' allowFullScreen='true' mode='transparent' type='application/x-shockwave-flash'></embed>
 						</div>
 					</div>
 					<div class="discription clearfix bg-color-fff margin-t-20">
 						<img class="float-l" src="themes/ecmoban_dsc/iamges/20170517/zen_video-1.jpg" alt="" />
 						<div class="float-r">
-						剧情简介： 上师从小跟随寺院的堪布四处求学，求学期间研读了大量经论。路途的遥远，身体的劳累，吃住的简陋和脚上的血泡，这一切都不足以让他们放慢脚步，只因对佛法有着强烈渴望的探求之心。而那些曾经对这位年轻上师有过淳淳教诲、恩重如山的上师们离开人世后，仿佛一切都不知从何做起，失去了前进的方向与动力...				
+						剧情简介：{$message.pro_content}			
 						</div>
 					</div>
 				</div>

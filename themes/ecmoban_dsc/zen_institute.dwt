@@ -137,62 +137,19 @@
                 <div class="content">
                     <div class="active">
                         <ul class="clearfix wrap-video">
+                        <!--{foreach from=$taste_viedo item=taste_viedo name=taste_viedo}-->
+                            <!-- {if $smarty.foreach.taste_viedo.iteration %4 != 0  } -->
                             <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
+                            <!-- {elseif $smarty.foreach.taste_viedo.iteration %4 == 0} -->
                             <li class="margin-r-0">
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
+                            <!--{/if}-->
+                                <a href="zen_institute_video_detail.php?id={$taste_viedo.id}">
+                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" title="{$taste_viedo.pro_name}"></div>
+                                    <h3>{$taste_viedo.pro_name|truncate:15}</h3>
+                                    <p>{$taste_viedo.pro_content|truncate:10}</p>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li class="margin-r-0">
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
+                        <!--{/foreach}-->
                         </ul>
                     </div>
                     <div>
@@ -269,62 +226,19 @@
                 <div class="content">
                     <div class="active">
                         <ul class="clearfix wrap-video">
+                        <!--{foreach from=$lives_viedo item=lives_viedo name=lives_viedo}-->
+                            <!-- {if $smarty.foreach.lives_viedo.iteration %4 != 0  } -->
                             <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
+                            <!-- {elseif $smarty.foreach.lives_viedo.iteration %4 == 0} -->
                             <li class="margin-r-0">
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
+                            <!--{/if}-->
+                                <a href="zen_institute_video_detail.php?id={$lives_viedo.id}">
+                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" title="{$lives_viedo.pro_name}"></div>
+                                    <h3>{$lives_viedo.pro_name|truncate:15}</h3>
+                                    <p>{$lives_viedo.pro_content|truncate:10}</p>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li class="margin-r-0">
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
+                        <!--{/foreach}-->
                         </ul>
                     </div>
                     <div>
@@ -401,62 +315,19 @@
                 <div class="content">
                     <div class="active">
                         <ul class="clearfix wrap-video">
+                        <!--{foreach from=$good_viedo item=good_viedo name=good_viedo}-->
+                            <!-- {if $smarty.foreach.good_viedo.iteration %4 != 0  } -->
                             <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
+                            <!-- {elseif $smarty.foreach.good_viedo.iteration %4 == 0} -->
                             <li class="margin-r-0">
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
+                            <!--{/if}-->
+                                <a href="zen_institute_video_detail.php?id={$good_viedo.id}">
+                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" title="{$good_viedo.pro_name}"></div>
+                                    <h3>{$good_viedo.pro_name|truncate:15}</h3>
+                                    <p>{$good_viedo.pro_content|truncate:10}</p>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li class="margin-r-0">
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
+                        <!--{/foreach}-->
                         </ul>
                     </div>
                     <div>
@@ -533,62 +404,19 @@
                 <div class="content">
                     <div class="active">
                         <ul class="clearfix wrap-video">
+                        <!--{foreach from=$artisan_viedo item=artisan_viedo name=artisan_viedo}-->
+                            <!-- {if $smarty.foreach.artisan_viedo.iteration %4 != 0  } -->
                             <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
+                            <!-- {elseif $smarty.foreach.artisan_viedo.iteration %4 == 0} -->
                             <li class="margin-r-0">
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
+                            <!--{/if}-->
+                                <a href="zen_institute_video_detail.php?id={$artisan_viedo.id}">
+                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" title="{$artisan_viedo.pro_name}"></div>
+                                    <h3>{$artisan_viedo.pro_name|truncate:15}</h3>
+                                    <p>{$artisan_viedo.pro_content|truncate:10}</p>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li class="margin-r-0">
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
+                        <!--{/foreach}-->
                         </ul>
                     </div>
                     <div>
@@ -665,62 +493,19 @@
                 <div class="content">
                     <div class="active">
                         <ul class="clearfix wrap-video">
+                        <!--{foreach from=$medicine_viedo item=medicine_viedo name=medicine_viedo}-->
+                            <!-- {if $smarty.foreach.medicine_viedo.iteration %4 != 0  } -->
                             <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
+                            <!-- {elseif $smarty.foreach.medicine_viedo.iteration %4 == 0} -->
                             <li class="margin-r-0">
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
+                            <!--{/if}-->
+                                <a href="zen_institute_video_detail.php?id={$medicine_viedo.id}">
+                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" title="{$medicine_viedo.pro_name}"></div>
+                                    <h3>{$medicine_viedo.pro_name|truncate:15}</h3>
+                                    <p>{$medicine_viedo.pro_content|truncate:10}</p>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li class="margin-r-0">
-                                <a href="#">
-                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
+                        <!--{/foreach}-->
                         </ul>
                     </div>
                     <div>
@@ -797,62 +582,19 @@
                 <div class="content">
                     <div class="active">
                         <ul class="clearfix wrap-video">
+                        <!--{foreach from=$nature_viedo item=nature_viedo name=nature_viedo}-->
+                            <!-- {if $smarty.foreach.nature_viedo.iteration %4 != 0  } -->
                             <li>
-                                <a href="#">
-                                    <div><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
+                            <!-- {elseif $smarty.foreach.nature_viedo.iteration %4 == 0} -->
                             <li class="margin-r-0">
-                                <a href="#">
-                                    <div><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
+                            <!--{/if}-->
+                                <a href="zen_institute_video_detail.php?id={$nature_viedo.id}">
+                                    <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" title="{$nature_viedo.pro_name}"></div>
+                                    <h3>{$nature_viedo.pro_name|truncate:15}</h3>
+                                    <p>{$nature_viedo.pro_content|truncate:10}</p>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
-                            <li class="margin-r-0">
-                                <a href="#">
-                                    <div><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt=""></div>
-                                    <h3>"禅"究竟是什么</h3>
-                                    <p>上师从小跟随寺院的堪布四处求学，求学...</p>
-                                </a>
-                            </li>
+                        <!--{/foreach}-->
                         </ul>
                     </div>
                     <div>
