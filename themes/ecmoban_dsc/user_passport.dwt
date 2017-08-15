@@ -96,7 +96,11 @@
                                 	{foreach from=$website_list item=website}
                                     <li><a href="user.php?act=oath&type={$website.web_type}" class="{$website.web_type}"></a></li>
                                     {/foreach}
+                                    <li>
+                                        <a id="weixin" href="#"><img id="weixin_img" width="23px" height="24px" src="../themes/ecmoban_dsc/iamges/20170517/gorwn.png"></a>
+                                    </li>
                                 </ul>
+
                             </div>
                             {/if}
                         </div>
@@ -640,5 +644,17 @@ ie67();
 
 $.divselect("#divselect","#passwd_quesetion");
 $.divselect("#divselect2","#passwd_quesetion2");
+
+$(function(){
+    $("#weixin").hover(function(){
+        var weixin_img=$("#weixin_img").attr('src'); 
+        //themes/ecmoban_dsc/iamges/20170517/gorwn.png
+        if(weixin_img=="themes/ecmoban_dsc/iamges/20170517/gorwn.png"){
+            $("#weixin_img").attr("src","../themes/ecmoban_dsc/iamges/20170517/gerrn.png");
+        }
+    },function(){
+        $("#weixin_img").attr("src","../themes/ecmoban_dsc/iamges/20170517/gorwn.png");
+    })
+})
 </script>
 </html>

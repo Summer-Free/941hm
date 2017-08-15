@@ -175,8 +175,8 @@
                 <span> 
                     <!--{if $info.integral == 0}-->
                         0积分
-                    <!--{else}-->
-                        {$info.integral}
+                    <!--{else $info.integral != 0}-->
+                        {$info.integral}积分
                     <!--{/if}-->
                 </span>
             </h2>
@@ -363,7 +363,7 @@
                             url:"exchange_plusjf.php?val="+'plus',
                             dataType:"TEXT",
                             success:function(data)
-                            {   
+                            {   //alert(data);
                                 $val.text(data + "积分");  
                             }
                         }); 
