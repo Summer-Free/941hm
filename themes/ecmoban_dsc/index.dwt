@@ -58,11 +58,15 @@
 	                <img class="float-r" src="themes/ecmoban_dsc/iamges/20170517/wechat.png" alt="二维码">
 	                <div class="float-r">
 	                    <div class="wrap-search clearfix">
+		                    <div class="shopCart">
+								<i></i>我的购物车
+								<span><em>99</em></span>
+		                    </div>
 	                        <div class="ecsc-search">
 		                        <form class="clearfix ecsc-search-form" id="searchForm" name="searchForm" action="search.php" method="get" onSubmit="return checkSearchForm()">
 		                            <input type="text" autocomplete="off" onKeyUp="lookup(this.value);" name="keywords" id="keyword" value="请输入搜索内容" class="ecsc-search-input" />
 		                            <input type="hidden" name="store_search_cmt" value="{$search_type|default:0}">
-		                            <button class="icon-search ecsc-search-button" type="submit"></button>
+		                            <button class="icon-search ecsc-search-button" type="submit">搜索</button>
 		                        </form>
 						        <!-- @Author guan 搜索栏提示 start -->
 						            <div class="suggestions_box" id="suggestions" style="display:none;">
@@ -230,7 +234,7 @@
 		<!--header end-->
 
 		<!--main body start-->
-		<div class="margin-t-8" id="main-body">
+		<div id="main-body">
 			<div class="w1200">
 
 				<!--每日秒杀-->
@@ -335,7 +339,7 @@
 				<div class="section-2 bg-color-fff margin-b-10">
 					<ul class="clearfix">
 						<li class="personal-tailor">
-							<a href="#">
+							<a href="personal_tailor.php">
 								<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/idx-pic4.jpg" width="400" height="399" alt="">
 								<div class="title">
 									<h2>——— <span>私人订制</span> ———</h2>
@@ -344,14 +348,14 @@
 							</a>
 						</li>
 						<li>
-							<a class="color-fff" href="#">
+							<a class="color-fff" href="integral_mall.php">
 								<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/idx-pic5.jpg" width="200" height="200" alt="">
 								<div class="title">
 									<h2>—— <span>积分商城</span> ——</h2>
 									<span>0元兑换豪礼</span>
 								</div>
 							</a>
-							<a class="color-fff" href="#">
+							<a class="color-fff" href="zen_institute.php">
 								<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/idx-pic6.jpg" width="200" height="199" alt="">
 								<div class="title">
 									<h2>—— <span>禅学院</span> ——</h2>
@@ -360,14 +364,14 @@
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="old_for_new.php">
 								<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/idx-pic7.jpg" width="400" height="200" alt="">
 								<div class="title">
 									<h2>—— <span>以物换物</span> ——</h2>
 									<span>敢于挑战模式</span>
 								</div>
 							</a>
-							<a href="#">
+							<a href="free_trial.php">
 								<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/idx-pic8.jpg" width="400" height="199" alt="">
 								<div class="title">
 									<h2>—— <span>免费试用</span> ——</h2>
@@ -376,14 +380,14 @@
 							</a>
 						</li>
 						<li>
-							<a class="color-fff" href="#">
+							<a class="color-fff" href="gadget.php">
 								<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/idx-pic9.jpg" width="200" height="200" alt="">
 								<div class="title">
 									<h2>—— <span>小玩意儿</span> ——</h2>
 									<span>定制您的专属家具</span>
 								</div>
 							</a>
-							<a class="color-fff" href="#">
+							<a class="color-fff" href="maintenance_technician.php">
 								<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/idx-pic10.jpg" width="200" height="199" alt="">
 								<div class="title">
 									<h2>—— <span>保养技师</span> ——</h2>

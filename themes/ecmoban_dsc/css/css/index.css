@@ -219,6 +219,9 @@
 	height: 18px;
 	background-position: 0 0;
 }
+.section-2 {
+	height: 399px;
+}
 .section-2 li {
 	float: left;
 	text-align: center;

@@ -11,7 +11,11 @@
 	background: url(../../iamges/20170517/logo.jpg) no-repeat left center;
 }
 #header .wrap-search {
-	margin: 34px 15px 0 0;
+	margin: 23px 0 0 0;
+}
+#header .wrap-search > .ecsc-search,
+#header .wrap-search .shopCart {
+	margin-right: 30px;
 }
 #header .wrap-search > .ecsc-search,
 #header .wrap-search > a,
@@ -23,28 +27,31 @@
 }
 #header .wrap-search form #keyword {
 	display: block;
-	padding-right: 30px;
+	padding-right: 79px;
 	padding-left: 8px;
-	width: 359px;
-	height: 33px;
-	line-height: 33px;
+	width: 491px;
+	height: 44px;
+	line-height: 44px;
 	color: #999;
-	border: 1px solid #9c9c9a;
+	font-size: 12px;
+	border: 2px solid #aa1920;
 }
 #header .wrap-search form {
 	position: relative;
 }
 #header .wrap-search form .icon-search {
 	position: absolute;
-	top: 50%;
-	right: 15px;
+	top: 8px;
+	right: 0;
 	margin-top: -6.5px;
-	width: 15px;
-	height: 15px;
+	width: 79px;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
 	cursor: pointer;
 	border:0 none;
-	background-color:transparent;
-	background-position: -12px -485px;
+	background-color: #aa1920;
+	background-image: none;
 }
 #header .wrap-search .tooltip {
 	position: absolute;
@@ -248,6 +255,47 @@
 	overflow: hidden;
 	box-shadow: 0 1px 1px #e0e0e0;
 }
+#header .shopCart {
+	position: relative;
+	float: right;
+	height: 44px;
+	line-height: 44px;
+	font-size: 12px;
+	color: #ff0000;
+}
+#header .shopCart i {
+	position: relative;
+	top: 2px;
+	left: -5px;
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url(../../iamges/20170517/idx-shopcart.png) no-repeat;
+}
+#header .shopCart span,
+#header .shopCart em {
+	line-height: 1;
+}
+#header .shopCart span {
+	position: absolute;
+	top: 5px;
+	right: -13px;
+	display: block;
+	width: 14px;
+	height: 14px;
+	color: #fff;
+	background: url(../../iamges/20170517/idx-bg.png) no-repeat;
+}
+#header .shopCart em {
+	position: relative;
+	top: 0;
+	left: 2px;
+	display: inline-block;
+	font-size: 8px;
+	-webkit-transform: scale(.7) translateX(-1px);
+	-moz-transform: scale(1);
+}
+
 
 /*禅学院的下拉菜单 start*/
 .cxy-dropdpwn-menu {

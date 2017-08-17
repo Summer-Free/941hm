@@ -2,7 +2,7 @@
 
 <div class="login">
 	<h6>Hi,你好!</h6>
-	<img src="themes/ecmoban_dsc/iamges/20170517/idx-pic1.jpg" alt="">
+	<img src="themes/ecmoban_dsc/iamges/20170517/idx-pic1.png" alt="">
 	<div>
 		<button class="sign-in" type="button">登录</button>
 		<button class="register" type="button">注册</button>
@@ -19,6 +19,6 @@
 	</ul>
 </div>
 <div class="experience-hall">
-	<div><img src="themes/ecmoban_dsc/iamges/20170517/idx-pic1.jpg" alt=""></div>
-	<a href="#">查看身边的实体店</a>
+	<div><img src="themes/ecmoban_dsc/iamges/20170517/idx-pic2.png" alt=""></div>
+	<a href="experience_hall">查看身边的实体店</a>
 </div>
