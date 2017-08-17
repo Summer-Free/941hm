@@ -145,8 +145,9 @@
                     <form action="javascript:addToCart({$goods.goods_id})" method="post" name="ECS_FORMBUY" id="ECS_FORMBUY" >
                         <div class="name">
                             <h1>{$goods.goods_style_name}</h1>
+                            <!--取消描述显示-->
                             <!--{if $goods.goods_brief}-->
-                            <h2>{$goods.goods_brief}</h2>
+                            <!--<h2>{$goods.goods_brief}</h2>-->
                             <!--{/if}-->
                         </div>
                         <div class="summary clearfix">

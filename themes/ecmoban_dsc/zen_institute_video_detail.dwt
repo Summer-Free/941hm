@@ -38,56 +38,18 @@
 					<div class="top bg-color-fff">
 						<h2>热门视频</h2>
 						<ul>
+							<!--{foreach from=$right_resault item=right_resault name=right_resault}-->
 							<li class="clearfix">
-								<a href="#">
+								<a href="zen_institute_video_detail.php?id={$right_resault.id}">
 									<img class="float-l" width="149" height="83" src="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt="">
 									<div class="float-r">
-										<h3>禅”到底是什么：</h3>
-										<p>揭秘不为世人所...</p>
+										<h3>{$right_resault.pro_name|truncate:5}</h3>
+										<p>{$right_resault.pro_content|truncate:6}</p>
 										<span>禅茶一味</span>
 									</div>
 								</a>
 							</li>
-							<li class="clearfix">
-								<a href="#">
-									<img class="float-l" width="149" height="83" src="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt="">
-									<div class="float-r">
-										<h3>禅”到底是什么：</h3>
-										<p>揭秘不为世人所...</p>
-										<span>禅茶一味</span>
-									</div>
-								</a>
-							</li>
-							<li class="clearfix">
-								<a href="#">
-									<img class="float-l" width="149" height="83" src="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt="">
-									<div class="float-r">
-										<h3>禅”到底是什么：</h3>
-										<p>揭秘不为世人所...</p>
-										<span>禅茶一味</span>
-									</div>
-								</a>
-							</li>
-							<li class="clearfix">
-								<a href="#">
-									<img class="float-l" width="149" height="83" src="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt="">
-									<div class="float-r">
-										<h3>禅”到底是什么：</h3>
-										<p>揭秘不为世人所...</p>
-										<span>禅茶一味</span>
-									</div>
-								</a>
-							</li>
-							<li class="clearfix">
-								<a href="#">
-									<img class="float-l" width="149" height="83" src="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt="">
-									<div class="float-r">
-										<h3>禅”到底是什么：</h3>
-										<p>揭秘不为世人所...</p>
-										<span>禅茶一味</span>
-									</div>
-								</a>
-							</li>
+							<!--{/foreach}-->
 						</ul>
 					</div>
 					<div class="btm bg-color-fff margin-t-20">
