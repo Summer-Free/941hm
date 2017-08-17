@@ -1,84 +1,149 @@
-/*main body*/
-#main-body .section-1 {
-	padding: 2px 0;
+/*首页专用头部*/
+#header .btm {
+	padding: 10px 0 0 0;
+	height: 525px;
 }
-#main-body .section-1 li {
+#header .left-child,
+#header .btm .JS-slide {
+	width: 711px;
+}
+#header .left-child {
 	float: left;
-	margin-right: 9px;
+	margin-left: 299px;
 }
-#main-body .section-1 li a {
+#header .btm .JS-slide .content li,
+#header .btm .JS-slide {
+	height: 344px;
+}
+#header .btm .JS-slide li img {
 	display: block;
-	box-shadow: 0 0 2px #d8d7d7;
-	background-color: #eee;
+	width: 100%;
+	height: 100%;
 }
-#main-body .section-1 img {
-	margin: 0;
-	display: block;
-}
-#main-body .section-2 {
-	padding-top: 2px;
-	padding-bottom: 2px;
-}
-#main-body .section-2 .slide-mrms li {
-	float: left;
-	margin-right: 8px;
-	width: 241px;
-	height: 300px;
-	border: 1px solid #d7d6d6;
-	background-color: #fff;
-}
-#main-body .section-2 li a {
-	display: block;
-	overflow: hidden;
-	background-color: #fff;
-}
-#main-body .section-2 .mrms,
-#main-body .section-2 .slide-mrms li {
-	box-shadow: 0 2px 5px #d7d6d6;
-}
-#main-body .section-2>h2 {
-	margin-bottom: 12px;
-	padding-left: 208px;
-	border: 1px solid #e2e2e5;
-	border-top: none;
-	box-shadow: 0 3px 3px #e2e2e5;
-	background: #fff url(../../iamges/20170517/h2-pic1.jpg) no-repeat top left;
-}
-.section-2>h2 li {
-	float: left;
-	margin-right: 36px;
-	height: 47px;
-	line-height: 47px;
-	font-size: 18px;
-}
-.slide-mrms .JS-slide-scroll li div,
-.slide-mrms .JS-slide-scroll li p {
-	padding: 0 8px;
-	line-height: 32px;
-}
-.slide-mrms .JS-slide-scroll li p {
-	line-height: 32px;
-	text-indent: -6px;
-}
-.slide-mrms .JS-slide-scroll ins {
-	font-size: 21px;
-	color: #cc0000;
-	text-decoration: none;
-}
-.slide-mrms .JS-slide-scroll li span {
-	display: block;
-	margin: 5px auto 0;
-	width: 223px;
-	height: 33px;
-	line-height: 33px;
-	color: #fff;
+#header .btm .JS-slide .point {
+	margin-left: -60px;
+	width: 120px;
 	text-align: center;
-	background-color: #fb9b64;
-	border-radius: 4px;
 }
-.slide-mrms .JS-slide-scroll del {
-	margin-left: 8px;
+#header .btm .JS-slide .left-btn {
+	left: 0;
 }
+#header .btm .JS-slide:hover .left-btn {
+	left: 30px;
+}
+#header .btm .JS-slide .right-btn {
+	right: 0;
+}
+#header .btm .JS-slide:hover .right-btn {
+	right: 30px;
+}
+#header .btm .JS-slide .left-btn,
+#header .btm .JS-slide .right-btn {
+	top: 50%;
+	margin-top: -30px;
+}
+#header .side-bar {
+	margin-top: 11px;
+}
+#header .side-bar li {
+	overflow: hidden;
+	position: relative;
+	float: left;
+	margin-right: 10px;
+}
+#header .side-bar li span {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding-left: 10px;
+	width: 100%;
+	height: 0;
+	font-size: 18px;
+	color: #fff;
+	line-height: 36px;
+	background-color: rgba(0,0,0,.5);
+}
+#header .side-bar li:hover span {
+	height: 36px;
+}
+#header .right-child {
+	overflow: hidden;
+	float: right;
+	width: 180px;
+	background-color: #fff;
+}
+#header .login {
+	padding-top: 8px;
+	height: 133px;
+	text-align: center;
+	border-bottom: 1px solid #e5e5e5;
+}
+#header .login img {
+	display: block;
+	margin: 10px auto;
+	width: 49px;
+	height: 49px;
+	border-radius: 50%;
+}
+#header .login button {
+	display: inline-block;
+	width: 75px;
+	height: 22px;
+	line-height: 22px;
+	color: #fff;
+	background-color: #aa1920;
+	border: none;
+	cursor: pointer;
+}
+#header .sign-in {
+	margin-right: 5px;
+}
+#header .news {
+	height: 146px;
+	border-bottom: 2px solid #aa1920;
+}
+#header .news h2 {
+	text-align: center;
+	font-size: 18px;
+	color: #aa1920;
+	line-height: 2;
+}
+#header .news li a {
+	padding: 0 10px;
+	font-size: 12px;
+	color: #666;
+	line-height: 1.6;
+}
+#header .experience-hall {
+	padding-top: 25px;
+	height: 236px;
+	background: url(../../iamges/20170517/idx-pic3.jpg) no-repeat top center;
+}
+#header .experience-hall>div {
+	overflow: hidden;
+	margin: 0 auto 25px;
+	width: 136px;
+	height: 136px;
+	border: 2px solid #aa1920;
+	border-radius: 50%;
+}
+#header .experience-hall>a {
+	display: block;
+	margin: 0 auto;
+	width: 139px;
+	height: 31px;
+	line-height: 31px;
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+	background-color: #aa1920;
+	border-radius: 20px;
+}
+
+
+
+
+/*main body*/
 .JS-slide-scroll {
 	position: relative;
 	overflow: hidden;
@@ -93,118 +158,167 @@
 .JS-slide-scroll ul li:last-child {
 	margin-right: 0!important;
 }
-#main-body .slide-mrms {
-	width: 741px;
-	height: 300px;
+.section-1 .JS-slide-scroll {
+	height: 267px;
 }
-.section-3 .New-arrival {
-	padding: 0 10px 0 22px;
-}
-.section-3 .Personal-tailor {
-	padding: 0 22px 54px 10px;
-	height: 560px;
-}
-.section-3 .New-arrival h2 a,
-.section-3 .Personal-tailor h2 a {
-	background-image: url(../../iamges/20170517/sprite-1.png);
-	background-repeat: no-repeat;
-}
-.section-3 .New-arrival>.float-r {
-	padding-top: 42px;
-}
-.section-3 .Personal-tailor>.float-r {
-	position: relative;
-	top: -90px;
-}
-.section-3 .Personal-tailor h2 a,
-.section-3 .New-arrival h2 a {
-	display: block;
-	margin: 20px auto;
-	width: 288px;
-	height: 59px;
-	text-indent: -9999px;
-}
-.section-3 .New-arrival h2 a {
-	background-position: 0 -87px;
-}
-.section-3 .Personal-tailor h2 a {
-	background-position: 0 -168px;
-}
-.New-arrival .wrap-slide,
-.Personal-tailor .wrap-slide {
-	width: 532px;
-	height: 271px;
-}
-/*.New-arrival .JS-slide-scroll,
-.Personal-tailor .JS-slide-scroll {
-	height: 271px;
-}*/
-.section-3 .New-arrival .float-l .left-a,
-.section-3 .New-arrival .float-l .right-a,
-.section-3 .Personal-tailor .float-r .left-a,
-.section-3 .Personal-tailor .float-r .right-a {
-	display: block;
-	width: 260px;
-	border: 1px solid #d9d8d8;
+.section-1 .JS-slide-scroll li {
+	float: left;
+	width: 200px;
 	background-color: #fff;
-	box-shadow: 0 2px 8px 0 #d9d8d8;
 }
-.section-3 .New-arrival .float-l img,
-.section-3 .Personal-tailor .float-r img {
-	margin: 0 auto;
-	max-width: 100%;
+.section-1 .JS-slide-scroll .product-info {
+	padding: 5px 10px;
 }
-.section-3 .New-arrival a>div,
-.section-3 .Personal-tailor a>div {
-	padding: 0 8px;
-}
-.section-3 h3 {
-	width: 100%;
+.section-1 .JS-slide-scroll h3 {
+	font-size: 12px;
 	text-indent: -6px;
 }
-.section-3 .New-arrival a *,
-.section-3 .Personal-tailor a * {
-	line-height: 1.8;
+.section-1 .JS-slide-scroll h3,
+.section-1 .JS-slide-scroll del {
+	color: #666;
 }
-.section-3 ins {
-	font-size: 18px;
-	color: #ff0000;
+.section-1 .JS-slide-scroll li p {
+	height: 25px;
+	line-height: 25px;
 }
-.section-3 del {
+.section-1 .img-box {
+	width: 200px;
+	height: 200px;
+}
+.common-h2-1,
+.common-h2-2 {
+	padding: 0 10px;
+	height: 42px;
+	line-height: 42px;
+	color: #aa1920;
+	border-bottom: 6px solid;
+}
+.common-h2-1 span,
+.common-h2-2 span {
+	float: left;
+	font-size: 20px;
+}
+.common-h2-1 a,
+.common-h2-2 a {
+	float: right;
+}
+.common-h2-1 i,
+.common-h2-2 i {
 	position: relative;
+	display: inline-block;
+	margin-right: 3px;
+	background-image: url(../../iamges/20170517/idx-sprite1.png);
+	background-repeat: no-repeat; 
+}
+.section-1 .common-h2-1 {
+	height: 48px;
+	line-height: 48px;
+}
+.section-1 .common-h2-1 i {
+	width: 13px;
+	height: 18px;
+	background-position: 0 0;
+}
+.section-2 li {
+	float: left;
+	text-align: center;
+}
+.section-2 li a {
+	display: block;
+	position: relative;
+}
+.section-2 .title {
+	position: absolute;
 	top: 8px;
-	font-size: 12px;
+	left: 0;
+	width: 100%;
 }
-.section-4 {
-	border-bottom: 4px solid #dcdcdc;
+.section-2 .title h2 {
+	padding-bottom: 8px;
 }
-.section-4 dl {
-	padding-bottom: 30px;
+.section-2 .title h2 span {
+	font-size: 24px;
 }
-.section-4 dt {
+.section-2 li h2 span {
 	position: relative;
-	margin-bottom: 30px;
-	padding-left: 8px;
-	height: 57px;
-	line-height: 57px;
-	font-size: 18px;
-	background-color: #95b0b2;
+	top: 3px;
 }
-.section-4 dt,
-.section-4 dt a {
+.section-2 .personal-tailor .title {
+	top: 20px;
+}
+.section-2 .personal-tailor h2 span {
+	top: 6px;
+	font-size: 30px;
+}
+.common-h2-2 {
+	padding: 0 10px;
+	height: 42px;
+	line-height: 42px;
+	background-color: #aa1920;
+	border: none;
+}
+.common-h2-2,
+.common-h2-2 a {
 	color: #fff;
 }
-.section-4 dt a {
-	position: absolute;
-	top: 0;
-	right: 30px;
-	font-size: 14px;
+.common-h2-2 span {
+	font-size: 20px;
+}
+.section-3 .new-arrival,
+.section-3 .discount {
+	width: 595px;
+	background-color: #fff;
+}
+.section-3 li {
+	float: left;
+	padding-bottom: 5px;
+	width: 297px;
+	background-color: #fff;
+}
+.section-3 li .wrap-info {
+	padding: 0 10px;
+	line-height: 1.6;
+}
+.section-3 li .wrap-info h3 {
+	text-indent: -6px;
+}
+.section-3 li .sprice {
+	text-align: center;
+}
+.section-3 .new-arrival .common-h2-2 i {
+	width: 19px;
+	height: 17px;
+	background-position: -18px 0;
+}
+.section-3 .discount .common-h2-2 {
+	background-color: #ee7c1b;
+}
+.section-3 .discount .common-h2-2 i {
+	position: relative;
+	top: 3px;
+	width: 17px;
+	height: 20px;
+	background-position: -43px 0;
+}
+.section-4 .common-h2-1 {
+	height: 48px;
+	line-height: 48px;
+}
+.section-4 .common-h2-1 i {
+	position: relative;
+	top: 3px;
+	width: 20px;
+	height: 20px;
+	background-position: -66px 0;
+}
+.section-4 dd {
+	padding: 10px 0;
+}
+.section-4 dd a {
+	padding: 5px 0;
 }
 .section-4 dd a {
 	float: left;
-}
-.icon-start-black {
-	cursor: pointer;
 }
 #main-body .sidebar {
 	position: relative;
@@ -218,15 +332,62 @@
 	left: 50%;
 	margin-left: -960px;
 }
+.section-5 .common-h2-2 i {
+	top: 3px;
+	width: 21px;
+	height: 19px;
+	background-position: -93px 0;
+}
+.common-temp .right {
+	overflow: hidden;
+	width: 894px;
+	height: 679px;
+	background-color: #fff;
+}
+.common-temp .right li {
+	float: left;
+	width: 298px;
+}
+.common-temp .right .wrap-info {
+	padding: 0 10px;
+}
+.common-temp .right h3 {
+	text-indent: -6px;
+}
+.section-7 .common-h2-2 i {
+	top: 3px;
+	width: 26px;
+	height: 20px;
+	background-position: -124px 0;
+}
+.section-8 .common-h2-2 i {
+	top: 2px;
+	width: 16px;
+	height: 18px;
+	background-position: -157px 0;
+}
+.section-11 .common-h2-2 i {
+	top: 3px;
+	width: 25px;
+	height: 20px;
+	background-position: -179px 0;
+}
+.section-6 .common-h2-2 {
+	background-color: #ee7c1b;
+}
+.section-6 .common-h2-2 i {
+	top: 2px;
+	width: 18px;
+	height: 19px;
+	background-position: -208px 0;
+}
 .section-6 .Crowd-funding>li {
 	overflow: hidden;
 	float: left;
 	margin: 0 10px 10px 0;
 	width: 292px;
 	height: 351px;
-	border: 1px solid #d4d4d4;
 	background-color: #fff;
-	box-shadow: 0 3px 5px 0 #b9b8b8;
 }
 .section-6 .Crowd-funding .make-new-world {
 	width: 594px;
@@ -264,7 +425,7 @@
 .section-6 .Crowd-funding .progress div {
 	width: 66%;
 	height: 100%;
-	background: url(../../iamges/20170517/bg-progress-1.png) no-repeat;
+	background-color: #ee7c1b;
 	border-radius: 8px;
 }
 .section-6 .Crowd-funding span {
@@ -287,9 +448,6 @@
 }
 .section-6 .Crowd-funding li .li-3 {
 	padding-left: 19px;
-}
-.section-9 {
-	margin-top: 30px;
 }
 .section-9 li {
 	float: left;
@@ -339,106 +497,20 @@
 	height: 19px;
 	background-position: -73px -463px;
 }
-.section-10 dl {
-	border-bottom: 1px solid #333;
+.section-10 .common-h2-1 {
+	height: 48px;
+	line-height: 48px;
 }
-.section-10  dt {
-	padding-bottom: 15px;
-	font-size: 18px;
-	border-bottom: 1px solid #333;
+.section-10 .common-h2-1 i {
+	top: 3px;
+	width: 23px;
+	height: 20px;
+	background-position: -230px 0;	
 }
-.section-10 dd a {
-	float: left;
-	display: block;
-}
-.section-10 .dd-1 a {
-	margin-right: 36px;
-}
-.section-10 .dd-2 a {
-	margin-right: 39px;
-}
-.section-10 .dd-3 a {
-	margin-right: 48px;
-}
-.section-10 .al,
-.section-10 .tx,
-.section-10 .wy,
-.section-10 .sh,
-.section-10 .hm,.section-10 .gt,
-.section-10 .gdjj,.section-10 .zshm,
-.section-10 .dyhm {
-	position: relative;
-}
-.section-10 .dyhm {
-	top: -20px;
-}
-.section-10 .zshm {
-	top: 29px;
-}
-.section-10 .gt {
-	top: 25px;
-}
-.section-10 .al,
-.section-10 .tx {
- 	top: 20px;
-}
-.section-10 .wy,
-.section-10 .gdjj {
-	top: 18px;
-}
-.section-10 .sh {
-	top: 10px;
-}
-.section-10 .hm {
-	top: 15px;
-}
-
-
-/*2017-07-18 对页面进行改版*/
-.common-temp .head {
-	padding: 0 15px;
-	height: 55px;
-	color: #fff;
-	line-height: 55px;
-	background-color: #95b0b2;
-}
-.common-temp .head h2 {
-	float: left;
-	font-size: 18px;
-}
-.common-temp .head a {
-	float: right;
-	color: #fff;
-	font-size: 14px;
-}
-.common-temp ul {
-	padding: 5px 0;
-}
-.common-temp li {
-	float: left;
-	margin: 0 9px 8px 0;
-	width: 293px;
-	box-shadow: 0 3px 10px #d9d8d8;
+.section-10 dd {
 	background-color: #fff;
 }
-.common-temp li img {
-	display: inline-block;
-	width: 100%;
-	max-width: 100%;
-}
-.common-temp li h3 {
-	font-size: 16px;
-	line-height: 1.8;
-	text-indent: -8px;
-}
-.common-temp li div {
-	padding: 10px;
-}
-.common-temp li div span {
-	display: inline-block;
-	width: 100%;
-	text-align: center;
-}
+
 
 /*友情链接*/
 .section-15 dt,
@@ -448,7 +520,6 @@
 }
 .section-15 dt {
 	width: 100px;
-	font-size: 18px;
 }
 .section-15 dd {
 	width: 1100px;

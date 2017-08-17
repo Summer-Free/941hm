@@ -9,7 +9,7 @@
         {* 包含脚本文件 *}
         {insert_scripts files='jquery.json.js,transport_jquery.js,cart_quick_links.js'}
 	</head>
-	<body>
+	<body class="bg-color-f7f7f7">
 		
 		<!--header start-->
 		<div id="header">
@@ -19,15 +19,9 @@
 				<ul class="JS-slide-top">
 					<li>
 						<a class="bar bar-1" href="partner.php" title="你准备好了吗？941红木平台带你搭乘互联网+红木商城谋发展定未来">你准备好了吗？941红木平台带你搭乘互联网+红木商城谋发展定未来</a>
-<!-- 						<div class="w1200">
-							<div class="wrap-a">
-								<a class="Franchisee-settled" href="#" title="加盟商入驻">加盟商入驻</a>
-								<a class="Factory-settled" href="#" title="工厂入驻">工厂入驻</a>
-							</div>
-						</div> -->
 					</li>
 					<li>
-						<a class="bar bar-2" href="company_profile.php" title="941红木网: 全球首家红木行业生态链服务商">941红木网: 全球首家红木行业生态链服务商</a>
+						<a class="bar bar-2" href="#" title="941红木网: 全球首家红木行业生态链服务商">941红木网: 全球首家红木行业生态链服务商</a>
 					</li>
 				</ul>
 				<div class="wrap-close">
@@ -43,12 +37,12 @@
                     <div class="float-l">欢迎浏览941红木网<span style="padding-left: 18px;">全球首家红木行业生态链服务商</span></div>
                     <div class="float-r">
                         <ul class="clearfix">
-                            <li><a href="flow.php?step=cart">我的购物车</a></li>
-                            <li><a href="user.php?act=order_list">我的订单</a></li>
-                            <li><a href="manufacturers_settled.php">厂家入驻</a></li>
-                            <li><a class="showMsg" href="#">商家中心</a></li>
-                            <li><a href="article_cat.php?id=1008" target="_blank">帮助中心</a></li>
-                            <li class="padding-r-0"><a href="article_cat.php?id=1007">商城资讯</a></li>
+                        	<li><a href="manufacturers_settled.php">厂家入驻</a></li>
+                        	<li><a href="partner.php">商家入驻</a></li>
+							<li><a class="showMsg" href="#">商家中心</a></li>
+							<li><a href="article_cat.php?id=1007">商城资讯</a></li>
+							<li><a href="company_profile.php">公司简介</a></li>
+							<li class="padding-r-0"><a href="company_honor.php">公司荣誉</a></li>
                         </ul>
                     </div>
                 </div>
@@ -170,26 +164,9 @@
 		                        <li><a class="showMsg" href="#">智能场景定制</a></li>
 		                        <li><a href="crowd_funding.php">匠物众筹</a></li>
 		                        <li><a href="daily_spike.php">每日秒杀</a></li>
-<!-- 		                        <li class="cxy">
-		                            <a href="zen_institute.php">禅学院</a> -->
-		                            <!--禅学院下拉菜单 start-->
-<!-- 		                            <div class="cxy-dropdpwn-menu">
-		                                <div class="w1200 submenu">
-		                                    <ul class="clearfix">
-		                                        <li><a href="#">禅茶一味</a></li>
-		                                        <li><a href="#">静以修身</a></li>
-		                                        <li><a href="#">善缘佛堂</a></li>
-		                                        <li><a href="#">匠人匠心</a></li>
-		                                        <li><a href="#">回归自然</a></li>
-		                                        <li><a href="#">中医养生</a></li>
-		                                    </ul>
-		                                </div>
-		                            </div> -->
-		                            <!--禅学院下拉菜单 end-->
-		                        <!-- </li> -->
 		                        <li><a href="latest_listing.php">新品上市</a></li>
-		                        <li><a href="partner.php">商家入驻</a></li>
-		                        <li class="margin-r-0"><a href="company_profile.php">公司简介</a></li>
+		                        <li><a href="free_trial.php">免费试用</a></li>
+		                        <li class="margin-r-0"><a href="article_cat.php?id=1008">帮助中心</a></li>
 		                    </ul>
 		                </div> 
 		            </div>  
@@ -197,218 +174,340 @@
 	        </div> 
             <!--Navigation end-->
 
-			<!--slide banner start-->
-			<div class="slide-banner">
-				<div class="JS-slide">
-					<ul class="content">
-						<li class="active"><a href="goods.php?id=1015" style="display: block;width:100%;height: 525px;background: url(themes/ecmoban_dsc/iamges/20170517/banner4.jpg) no-repeat center center;"></a></li>
-						<li><a href="company_profile.php" style="display: block;width:100%;height: 525px;background: url(themes/ecmoban_dsc/iamges/20170517/banner2.jpg) no-repeat center center;"></a></li>
-						<li><a href="experience_hall.php" style="display: block;width:100%;height: 525px;background: url(themes/ecmoban_dsc/iamges/20170517/banner13.jpg) no-repeat center center;"></a></li>
-						<li><a href="partner.php" style="display: block;width:100%;height: 525px;background: url(themes/ecmoban_dsc/iamges/20170517/banner5.jpg) no-repeat center center;"></a></li>
-						<li><a href="manufacturers_settled.php" style="display: block;width:100%;height: 525px;background: url(themes/ecmoban_dsc/iamges/20170517/banner6.jpg) no-repeat center center;"></a></li>
-					</ul>
-					<div class="w1200">
+			<div class="btm w1200 clearfix">
+				<div class="left-child">
+					<div class="JS-slide">
+						<ul class="content">
+							<li class="active">
+								<a href="goods.php?id=1015"><img src="themes/ecmoban_dsc/iamges/20170517/banner4.jpg" alt="" /></a>
+							</li>
+							<li>
+								<a href="company_profile.php"><img src="themes/ecmoban_dsc/iamges/20170517/banner2.jpg" alt="" /></a>
+							</li>
+							<li>
+								<a href="experience_hall.php"><img src="themes/ecmoban_dsc/iamges/20170517/banner13.jpg" alt="" /></a>
+							</li>
+							<li>
+								<a href="partner.php"><img src="themes/ecmoban_dsc/iamges/20170517/banner5.jpg" alt="" /></a>
+							</li>
+							<li>
+								<a href="manufacturers_settled.php"><img src="themes/ecmoban_dsc/iamges/20170517/banner6.jpg" alt="" /></a>
+							</li>
+						</ul>
 						<a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
 						<a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
-						
-						<!--login-->
-						{insert name='member_info'}
+						<ul class="point">
+							<li class="active"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
 					</div>
-					<ul class="point">
-						<li class="active"></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
+					<div class="side-bar">
+						<ul class="clearfix">
+							<li>
+								<a href="#">
+									<img src="themes/ecmoban_dsc/iamges/20170517/idx-pic1.jpg" alt="">
+									<span class="transition">智能线上体验馆</span>
+								</a>
+							</li>
+							<li class="margin-r-0">
+								<a href="#">
+									<img src="themes/ecmoban_dsc/iamges/20170517/idx-pic2.jpg" alt="">
+									<span class="transition">智能场景定制</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="right-child">
+					<!--login-->
+					{insert name='member_info'}
 				</div>
 			</div>
-			<!--slide banner end-->
 		</div>
 		<!--header end-->
 
 		<!--main body start-->
 		<div class="margin-t-8" id="main-body">
 			<div class="w1200">
-				<div class="section-1 bg-color-f5f5f5">
-					<ul class="clearfix">
-						<li>
-							<a href="exchange.php" title="积分商城">
-								<img class="lazy" width="200" height="400" data-original="themes/ecmoban_dsc/iamges/20170517/jfsc.jpg" alt="积分商城" />
-							</a>
-						</li>
-						<li>
-							<a class="margin-b-12" href="maintenance_technician.php" title="保养技师" style="width:381px;height:193px;overflow:hidden;">
-								<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/byjs.jpg" alt="保养技师" />
-							</a>
-							<a href="gadget.php" title="小玩意儿" style="width:381px;height:193px;overflow:hidden;">
-								<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/xwye.jpg" alt="小玩意儿" />
-							</a>
-						</li>
-						<li>
-							<a href="old_for_new.php" title="以物换物">
-								<img class="lazy" width="200" height="400" data-original="themes/ecmoban_dsc/iamges/20170517/ywhw.jpg" alt="以物换物" />
-							</a>
-						</li>
-						<li class="margin-r-0">
-							<a class="margin-b-12" href="free_trial.php" title="免费试用" style="width:390px;height:194px;overflow:hidden;">
-								<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/mfsy.jpg" alt="免费试用" />
-							</a>
-							<a href="zen_institute.php" title="禅学院" style="width:390px;height:194px;overflow:hidden;">
-								<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cxy.jpg" alt="禅学院" />
-							</a>
-						</li>
-					</ul>
-				</div>
 
-				<div class="section-2 margin-t-12 bg-color-f5f5f5 clearfix">
-					<h2>
-						<ul class="clearfix">
-						<!--{foreach from=$mrzx_sql item=mrzx_sql name=mrzx_sql}-->
-							<!-- {if $smarty.foreach.mrzx_sql.iteration !=3  } -->
-							<li><a href="article.php?id={$mrzx_sql.article_id}">{$mrzx_sql.title|truncate:15}</a></li>
-							<!-- {elseif $smarty.foreach.ct_sql.iteration %4==0} -->
-							<li class="margin-r-0"><a href="article.php?id={$article_id}">{$mrzx_sql.title|truncate:15}</a></li>
-							<!--{/if}-->
-						<!--{/foreach}-->
-						</ul>
+				<!--每日秒杀-->
+				<div class="section-1 margin-b-10">
+					<h2 class="common-h2-1 clearfix">
+						<span><i class="mrms-icon"></i>每日秒杀</span>
+						<a href="#">查看更多</a>
 					</h2>
-					<div class="mrms float-l">
-						<a href="daily_spike.php" title="每日秒杀">
-							<img class="lazy" width="450" height="300" data-original="themes/ecmoban_dsc/iamges/20170517/mrms.jpg" alt="每日秒杀" />
-						</a>
-					</div>
-					<div class="slide-mrms float-r">
+					<div class="main-body">
 						<div class="JS-slide-scroll">
-							<ul class="content clearfix">
-							<!--{foreach from=$ms_res item=ms_res name=ms_res}-->
-								<li class="move">
-									<a href="goods.php?id={$ms_res.goods_id}">
-										<img class="lazy" data-original="{$ms_res.goods_thumb}" width="244" height="191" alt="{$ms_res.goods_name}" />
-										<p>{$ms_res.goods_name|truncate:15}</p>
-										<div class="clearfix">
-											<ins class="float-l">&yen;{$ms_res.shop_price}</ins>
-											<del class="float-r">&yen;{$ms_res.market_price}</del>
+							<ul class="content">
+								<li>
+									<a href="#">
+										<div class="img-box">
+											<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="200" height="200" alt="" />
 										</div>
-										<span class="btn">立刻秒</span>
+										<div class="product-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<p class="clearfix">
+												<ins class="color-aa1920 float-l">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</p>
+										</div>
 									</a>
 								</li>
-							<!--{/foreach}-->
+								<li>
+									<a href="#">
+										<div class="img-box">
+											<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="200" height="200" alt="" />
+										</div>
+										<div class="product-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<p class="clearfix">
+												<ins class="color-aa1920 float-l">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="img-box">
+											<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="200" height="200" alt="" />
+										</div>
+										<div class="product-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<p class="clearfix">
+												<ins class="color-aa1920 float-l">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="img-box">
+											<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="200" height="200" alt="" />
+										</div>
+										<div class="product-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<p class="clearfix">
+												<ins class="color-aa1920 float-l">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="img-box">
+											<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="200" height="200" alt="" />
+										</div>
+										<div class="product-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<p class="clearfix">
+												<ins class="color-aa1920 float-l">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="img-box">
+											<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="200" height="200" alt="" />
+										</div>
+										<div class="product-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<p class="clearfix">
+												<ins class="color-aa1920 float-l">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</p>
+										</div>
+									</a>
+								</li>
 							</ul>
 						</div>
 					</div>
 				</div>
-
-				<div class="section-3 bg-color-f5f5f5">
-					<div class="New-arrival clearfix">
-						<div class="float-l">
-							<h2><a href="latest_listing.php">新品上市</a></h2>
-							<div class="wrap-slide top">	
-	                            <div class="JS-slide-scroll">
-	                            	<ul class="content clearfix">	
-	                                	<!--{foreach from=$new_p06 item=new_p06 name=new_p06}-->
-	                                	<li class="float-l margin-r-12">
-	                                        <a class= "move left-a margin-b-12" href="goods.php?id={$new_p06.goods_id}" target="_blank" alt="{$new_p06.goods_name|escape:html}">
-	                                            <img class="lazy" width="240" height="200" data-original="{$new_p06.goods_thumb}" title="{$new_p06.goods_name|escape:html}" />
-	                                            <div class="clearfix">
-		                                            <h3 class="float-l cut_string" name="box">
-													 {$new_p06.goods_name|truncate:17} 
-		                                            </h3>
-													<ins class="float-l">&yen;{$new_p06.shop_price}</ins>
-													<del class="float-r">&yen;{$new_p06.market_price}</del>
-												</div>
-	                                        </a>                                          
-	                                    </li>   
-	                                    <!--{/foreach}-->        
-	                                </ul>
-	                            </div> 
-	                        </div>
-	                        <div class="wrap-slide btm">
-	                            <div class="JS-slide-scroll">
-	                            	<ul class="content clearfix">	
-	                                	<!--{foreach from=$new_p12 item=new_p12 name=new_p12}-->
-	                                	<li class="float-l margin-r-12">
-	                                        <a class= "move left-a margin-b-12" href="goods.php?id={$new_p12.goods_id}" target="_blank" alt="{$new_p12.goods_name|escape:html}">
-	                                            <img class="lazy" width="240" height="200" data-original="{$new_p12.goods_thumb}" title="{$new_p12.goods_name|escape:html}" />
-	                                            <div class="clearfix">
-		                                            <h3 class="float-l cut_string" name="box">
-													 {$new_p12.goods_name|truncate:17} 
-		                                            </h3>
-													<ins class="float-l">&yen;{$new_p12.shop_price}</ins>
-													<del class="float-r">&yen;{$new_p12.market_price}</del>
-												</div>
-	                                        </a> 
-	                                    </li>
-	                                    <!--{/foreach}-->        
-	                               </ul>
-	                            </div> 
-	                        </div>
-						</div>
-						<div class="float-r">
-							<a href="experience_hall.php"><img class="lazy" width="599" height="520" data-original="themes/ecmoban_dsc/iamges/20170517/tyg.png" alt="线下体验馆"></a>
-						</div>
-					</div>
-					<div class="Personal-tailor clearfix">
-						<div class="float-l">
-							<!--{if $userid ==0}-->
-							<a href="user.php?act=dingzhi" >
-							<!--{elseif $userid != 0}-->
-							<a href="personal_tailor.php">
-							<!--{/if}-->
-								<img class="lazy" width="591" height="524" data-original="themes/ecmoban_dsc/iamges/20170517/srdz.png" alt="私人订制">
+				
+				<!--私人订制等 7个小栏目-->
+				<div class="section-2 bg-color-fff margin-b-10">
+					<ul class="clearfix">
+						<li class="personal-tailor">
+							<a href="#">
+								<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/idx-pic4.jpg" width="400" height="399" alt="">
+								<div class="title">
+									<h2>——— <span>私人订制</span> ———</h2>
+									<span>定制您的专属家具</span>
+								</div>
 							</a>
-							
-						</div>
-						<div class="float-r">
-							<h2><a href="limited_time_offer.php">限时优惠</a></h2>
-							<div class="wrap-slide top">	
-	                            <div class="JS-slide-scroll">
-	                            	<ul class="content clearfix">	
-			                        <!--{foreach from=$xs_p06 item=xs_p06 name=xs_p06} -->
-			                        	<li class="float-l margin-r-12">
-			                        		<a class="move left-a margin-b-12" href="goods.php?id={$xs_p06.goods_id}">
-												<img class="lazy" width="240" height="200" data-original="{$xs_p06.goods_thumb}" alt="{$xs_p06.goods_name|truncate:20}" />
-	                                            <div class="clearfix">
-													<h3 id="cut_string">
-													{$xs_p06.goods_name|truncate:17}
-													</h3>
-													<ins class="float-l">&yen;{$xs_p06.shop_price}</ins>
-													<del class="float-r">&yen;{$xs_p06.market_price}</del>
-												</div>
-											</a>
-										</li>
-									<!--{/foreach}-->
-									</ul>
-                                </div>
-                            </div>    
-                            <div class="wrap-slide btm">
-	                            <div class="JS-slide-scroll">
-	                            	<ul class="content clearfix">	
-			                        <!--{foreach from=$xs_p12 item=xs_p12 name=xs_p12} -->
-			                        	<li class="float-l margin-r-12">
-			                        		<a class="move left-a margin-b-12" href="goods.php?id={$xs_p12.goods_id}">
-												<img class="lazy" width="240" height="200" data-original="{$xs_p12.goods_thumb}" alt="{$xs_p12.goods_name|truncate:20}" />
-	                                            <div class="clearfix">
-													<h3 id="cut_string">
-													{$xs_p12.goods_name|truncate:17}
-													</h3>
-													<ins class="float-l">&yen;{$xs_p12.shop_price}</ins>
-													<del class="float-r">&yen;{$xs_p12.market_price}</del>
-												</div>
-											</a>
-										</li>
-									<!--{/foreach}-->
-									</ul>
-                                </div>
-                            </div>
-						</div>
+						</li>
+						<li>
+							<a class="color-fff" href="#">
+								<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/idx-pic5.jpg" width="200" height="200" alt="">
+								<div class="title">
+									<h2>—— <span>积分商城</span> ——</h2>
+									<span>0元兑换豪礼</span>
+								</div>
+							</a>
+							<a class="color-fff" href="#">
+								<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/idx-pic6.jpg" width="200" height="199" alt="">
+								<div class="title">
+									<h2>—— <span>禅学院</span> ——</h2>
+									<span>远离尘市喧嚣</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/idx-pic7.jpg" width="400" height="200" alt="">
+								<div class="title">
+									<h2>—— <span>以物换物</span> ——</h2>
+									<span>敢于挑战模式</span>
+								</div>
+							</a>
+							<a href="#">
+								<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/idx-pic8.jpg" width="400" height="199" alt="">
+								<div class="title">
+									<h2>—— <span>免费试用</span> ——</h2>
+									<span>0元使用家具</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a class="color-fff" href="#">
+								<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/idx-pic9.jpg" width="200" height="200" alt="">
+								<div class="title">
+									<h2>—— <span>小玩意儿</span> ——</h2>
+									<span>定制您的专属家具</span>
+								</div>
+							</a>
+							<a class="color-fff" href="#">
+								<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/idx-pic10.jpg" width="200" height="199" alt="">
+								<div class="title">
+									<h2>—— <span>保养技师</span> ——</h2>
+									<span>日常家具维护</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+				<!--新品上市  限时优惠-->
+				<div class="section-3 clearfix">
+					<div class="new-arrival float-l">
+						<h2 class="common-h2-2 clearfix">
+							<span><i class="xpss-icon"></i>新品上市</span>
+							<a href="#">查看更多</a>
+						</h2>
+						<ul>
+							<li>
+								<a href="#">
+									<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="297" height="297" alt="">
+									<div class="wrap-info">
+										<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+										<div class="sprice color-aa1920">&yen; 999999</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="297" height="297" alt="">
+									<div class="wrap-info">
+										<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+										<div class="sprice color-aa1920">&yen; 999999</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="297" height="297" alt="">
+									<div class="wrap-info">
+										<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+										<div class="sprice color-aa1920">&yen; 999999</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="297" height="297" alt="">
+									<div class="wrap-info">
+										<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+										<div class="sprice color-aa1920">&yen; 999999</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="discount float-r">
+						<h2 class="common-h2-2 clearfix">
+							<span><i class="xpss-icon"></i>限时优惠</span>
+							<a href="#">查看更多</a>
+						</h2>
+						<ul>
+							<li>
+								<a href="#">
+									<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="297" height="297" alt="">
+									<div class="wrap-info">
+										<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+										<div class="sprice clearfix">
+											<ins class="float-l color-aa1920">&yen; 999999</ins>
+											<del class="float-r">&yen; 999999</del>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="297" height="297" alt="">
+									<div class="wrap-info">
+										<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+										<div class="sprice clearfix">
+											<ins class="float-l color-aa1920">&yen; 999999</ins>
+											<del class="float-r">&yen; 999999</del>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="297" height="297" alt="">
+									<div class="wrap-info">
+										<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+										<div class="sprice clearfix">
+											<ins class="float-l color-aa1920">&yen; 999999</ins>
+											<del class="float-r">&yen; 999999</del>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="297" height="297" alt="">
+									<div class="wrap-info">
+										<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+										<div class="sprice clearfix">
+											<ins class="float-l color-aa1920">&yen; 999999</ins>
+											<del class="float-r">&yen; 999999</del>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
-
-				<div class="section-4">
+					
+				<!--品牌街-->
+				<div class="section-4 margin-b-10">
 					<dl>
-						<dt>品牌街 <a href="brand.php">查看更多</a></dt>
-						<dd class="clearfix">
+						<dt>
+							<h2 class="common-h2-1 clearfix">
+								<span><i></i>品牌街</span>
+								<a href="brand.php">查看更多</a>
+							</h2>
+						</dt>
+						<dd class="bg-color-fff clearfix">
 							<a href="brandn.php?id=20" title="美满居">
 								<img class="lazy" width="171" height="80" data-original="themes/ecmoban_dsc/iamges/20170517/mmj.jpg" alt="美满居">
 							</a>
@@ -456,126 +555,387 @@
 			
 			<!--商家入驻/广告位-->
 			<div class="sidebar"><a href="article.php?id=117" title="商家入驻"><img class="lazy" width="1920" height="188" data-original="themes/ecmoban_dsc/iamges/20170517/sidebar.jpg" alt="商家入驻"></a></div>
-			<div class="w1200 margin-t-8">
+
+			<div class="w1200">
 
 				<!--餐厅系列-->
-				<div class="section-11 common-temp">
-					<div class="head clearfix">
-						<h2>餐厅系列</h2>
-						<a href="category.php?id=2">查看更多</a>
+				<div class="section-5 common-temp margin-b-10">
+					<h2 class="common-h2-2 clearfix">
+						<span><i></i>餐厅系列</span>
+						<a href="#">查看更多</a>
+					</h2>
+					<div class="main-body clearfix">
+						<div class="float-l left">
+							<a href="#"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/idx-pic11.jpg" width="306" height="679" alt=""></a>
+						</div>
+						<div class="float-r right">
+							<ul class="clearfix">
+								<li>
+									<a href="#">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="298" height="298" alt="">
+										<div class="wrap-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<div class="price clearfix">
+												<ins class="float-l color-aa1920">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="298" height="298" alt="">
+										<div class="wrap-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<div class="price clearfix">
+												<ins class="float-l color-aa1920">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="298" height="298" alt="">
+										<div class="wrap-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<div class="price clearfix">
+												<ins class="float-l color-aa1920">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="298" height="298" alt="">
+										<div class="wrap-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<div class="price clearfix">
+												<ins class="float-l color-aa1920">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="298" height="298" alt="">
+										<div class="wrap-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<div class="price clearfix">
+												<ins class="float-l color-aa1920">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="298" height="298" alt="">
+										<div class="wrap-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<div class="price clearfix">
+												<ins class="float-l color-aa1920">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<ul class="bg-color-f5f5f5 clearfix">
-					<!--{foreach from=$ct_sql item=ct_sql name=ct_sql}-->
-					<!-- {if $smarty.foreach.ct_sql.iteration %4 !=0  } -->
-                    <li class="move">
-                	<!-- {elseif $smarty.foreach.ct_sql.iteration %4==0} -->
-                    <li class="move margin-r-0">
-                	<!--{/if}-->
-						<a href="goods.php?id={$ct_sql.goods_id}">
-							<img class="lazy" width="291" height="291" data-original="{$ct_sql.goods_thumb}" alt="{$ct_sql.goods_name}" title="{$ct_sql.goods_name}" />
-							<div>
-								<h3>{$ct_sql.goods_name|truncate:17}</h3>
-								<span class="color-ff0000">&yen;{$ct_sql.shop_price}</span>
-							</div>
-						</a>
-					</li>
-					<!--{/foreach}-->
-					</ul>
 				</div>
 
 				<!--客厅系列-->
-				<div class="section-12 common-temp">
-					<div class="head clearfix">
-						<h2>客厅系列</h2>
-						<a href="category.php?id=3">查看更多</a>
+				<div class="section-7 common-temp margin-b-10">
+					<h2 class="common-h2-2 clearfix">
+						<span><i></i>客厅系列</span>
+						<a href="#">查看更多</a>
+					</h2>
+					<div class="main-body clearfix">
+						<div class="float-l left">
+							<a href="#"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/idx-pic12.jpg" width="306" height="679" alt=""></a>
+						</div>
+						<div class="float-r right">
+							<ul class="clearfix">
+								<li>
+									<a href="#">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="298" height="298" alt="">
+										<div class="wrap-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<div class="price clearfix">
+												<ins class="float-l color-aa1920">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="298" height="298" alt="">
+										<div class="wrap-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<div class="price clearfix">
+												<ins class="float-l color-aa1920">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="298" height="298" alt="">
+										<div class="wrap-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<div class="price clearfix">
+												<ins class="float-l color-aa1920">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="298" height="298" alt="">
+										<div class="wrap-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<div class="price clearfix">
+												<ins class="float-l color-aa1920">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="298" height="298" alt="">
+										<div class="wrap-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<div class="price clearfix">
+												<ins class="float-l color-aa1920">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="298" height="298" alt="">
+										<div class="wrap-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<div class="price clearfix">
+												<ins class="float-l color-aa1920">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<ul class="bg-color-f5f5f5 clearfix">
-					<!--{foreach from=$kt_sql item=kt_sql name=kt_sql}-->
-					<!-- {if $smarty.foreach.kt_sql.iteration %4 !=0  } -->
-                    <li class="move">
-                	<!-- {elseif $smarty.foreach.kt_sql.iteration %4==0} -->
-                    <li class="move margin-r-0">
-                	<!--{/if}-->
-						<a href="goods.php?id={$kt_sql.goods_id}">
-							<img class="lazy" width="291" height="291" data-original="{$kt_sql.goods_thumb}" alt="{$kt_sql.goods_name}" title="{$kt_sql.goods_name}" />
-							<div>
-								<h3>{$kt_sql.goods_name|truncate:17}</h3>
-								<span class="color-ff0000">&yen;{$kt_sql.shop_price}</span>
-							</div>
-						</a>
-					</li>
-					<!--{/foreach}-->
-					</ul>
 				</div>
 
 				<!--书房系列-->
-				<div class="section-13 common-temp">
-					<div class="head clearfix">
-						<h2>书房系列</h2>
-						<a href="category.php?id=4">查看更多</a>
+				<div class="section-8 common-temp margin-b-10">
+					<h2 class="common-h2-2 clearfix">
+						<span><i></i>书房系列</span>
+						<a href="#">查看更多</a>
+					</h2>
+					<div class="main-body clearfix">
+						<div class="float-l left">
+							<a href="#"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/idx-pic13.jpg" width="306" height="679" alt=""></a>
+						</div>
+						<div class="float-r right">
+							<ul class="clearfix">
+								<li>
+									<a href="#">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="298" height="298" alt="">
+										<div class="wrap-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<div class="price clearfix">
+												<ins class="float-l color-aa1920">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="298" height="298" alt="">
+										<div class="wrap-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<div class="price clearfix">
+												<ins class="float-l color-aa1920">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="298" height="298" alt="">
+										<div class="wrap-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<div class="price clearfix">
+												<ins class="float-l color-aa1920">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="298" height="298" alt="">
+										<div class="wrap-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<div class="price clearfix">
+												<ins class="float-l color-aa1920">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="298" height="298" alt="">
+										<div class="wrap-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<div class="price clearfix">
+												<ins class="float-l color-aa1920">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="298" height="298" alt="">
+										<div class="wrap-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<div class="price clearfix">
+												<ins class="float-l color-aa1920">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<ul class="bg-color-f5f5f5 clearfix">
-						<!--{foreach from=$sf_sql item=sf_sql name=sf_sql}-->
-							<!-- {if $smarty.foreach.sf_sql.iteration %4 !=0  } -->
-		                    <li class="move">
-		                	<!-- {elseif $smarty.foreach.sf_sql.iteration %4==0} -->
-		                    <li class="move margin-r-0">
-		                	<!--{/if}-->
-								<a href="goods.php?id={$sf_sql.goods_id}">
-									<img class="lazy" width="291" height="291" data-original="{$sf_sql.goods_thumb}" alt="{$sf_sql.goods_name}" title="{$sf_sql.goods_name}" />
-									<div>
-										<h3>{$sf_sql.goods_name|truncate:17}</h3>
-										<span class="color-ff0000">&yen;{$sf_sql.shop_price}</span>
-									</div>
-								</a>
-							</li>
-						<!--{/foreach}-->
-					</ul>
 				</div>
 
 				<!--卧室系列-->
-				<div class="section-14 common-temp">
-					<div class="head clearfix">
-						<h2>卧室系列</h2>
-						<a href="category.php?id=5">查看更多</a>
+				<div class="section-11 common-temp margin-b-10">
+					<h2 class="common-h2-2 clearfix">
+						<span><i></i>卧室系列</span>
+						<a href="#">查看更多</a>
+					</h2>
+					<div class="main-body clearfix">
+						<div class="float-l left">
+							<a href="#"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/idx-pic14.jpg" width="306" height="679" alt=""></a>
+						</div>
+						<div class="float-r right">
+							<ul class="clearfix">
+								<li>
+									<a href="#">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="298" height="298" alt="">
+										<div class="wrap-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<div class="price clearfix">
+												<ins class="float-l color-aa1920">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="298" height="298" alt="">
+										<div class="wrap-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<div class="price clearfix">
+												<ins class="float-l color-aa1920">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="298" height="298" alt="">
+										<div class="wrap-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<div class="price clearfix">
+												<ins class="float-l color-aa1920">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="298" height="298" alt="">
+										<div class="wrap-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<div class="price clearfix">
+												<ins class="float-l color-aa1920">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="298" height="298" alt="">
+										<div class="wrap-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<div class="price clearfix">
+												<ins class="float-l color-aa1920">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/product-2.jpg" width="298" height="298" alt="">
+										<div class="wrap-info">
+											<h3>【檀雕顶箱柜】 缅甸花梨 巴西花梨 两件套</h3>
+											<div class="price clearfix">
+												<ins class="float-l color-aa1920">&yen; 999999</ins>
+												<del class="float-r">&yen; 999999</del>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<ul class="bg-color-f5f5f5 clearfix">
-						<!--{foreach from=$ws_sql item=ws_sql name=ws_sql}-->
-							<!-- {if $smarty.foreach.ws_sql.iteration %4 !=0 && $smarty.foreach.ws_sql.iteration !=0} -->
-		                    <li class="move">
-		                	<!-- {elseif $smarty.foreach.ws_sql.iteration %4==0} -->
-		                    <li class="move margin-r-0">
-		                	<!--{/if}-->
-								<a href="goods.php?id={$ws_sql.goods_id}">
-									<img class="lazy" width="291" height="291" data-original="{$ws_sql.goods_thumb}" alt="{$ws_sql.goods_name}" title="{$ws_sql.goods_name}" />
-									<div>
-										<h3>{$ws_sql.goods_name|truncate:17}</h3>
-										<span class="color-ff0000">&yen;{$ws_sql.shop_price}</span>
-									</div>
-								</a>
-							</li>
-						<!--{/foreach}-->
-					</ul>
 				</div>
 
 				<div class="section-6 bg-color-f5f5f5">
+					<h2 class="common-h2-2 clearfix">
+						<span><i></i>匠物众筹</span>
+						<a href="#">查看更多</a>
+					</h2>
 					<ul class="Crowd-funding clearfix">
 						<li class="make-new-world">
 							<a href="crowd_funding.php" title="点击进入"><img class="lazy" width="596" height="351" data-original="themes/ecmoban_dsc/iamges/20170517/make-new-world.jpg" alt="众筹美物"></a>
 						</li>
 						<!--{foreach from=$zc_p item=zc_p name=zc_p}-->
 							<!-- {if $smarty.foreach.zc_p.iteration ==1  } --> 
-								<li class="move"> 
+								<li> 
 							<!-- {elseif $smarty.foreach.zc_p.iteration ==2  } -->
-								<li class="move margin-r-0">
+								<li class="margin-r-0">
 							<!-- {elseif $smarty.foreach.zc_p.iteration ==3  } -->
-								<li class="move"> 
+								<li> 
 							<!-- {elseif $smarty.foreach.zc_p.iteration ==4  } -->
-								<li class="move"> 
+								<li> 
 							<!-- {elseif $smarty.foreach.zc_p.iteration ==5  } -->
-								<li class="move"> 
+								<li> 
 							<!-- {elseif $smarty.foreach.zc_p.iteration ==6  } -->
-								<li class="move margin-r-0">
+								<li class="margin-r-0">
 							<!--{/if}--> 
 						
 							<a href="crowdfunding.php?act=detail&id={$zc_p.id}" title="点击进入"><img class="lazy" width="274" height="213" data-original="{$zc_p.title_img}" alt="古典雅致侍女屏风"></a>
@@ -604,7 +964,7 @@
 					</ul>
 				</div>
 
-				<div class="section-9 margin-b-30">
+				<div class="section-9 margin-b-10">
 					<ul class="clearfix">
 						<li><span><i class="icon-bz"></i>正品保障</span></li>
 						<li><span><i class="icon-wx"></i>终身维修</span></li>
@@ -613,38 +973,20 @@
 					</ul>
 				</div>
 
-				<div class="section-10 margin-b-30">
+				<div class="section-10 margin-b-10">
 					<dl>
-						<dt>合作单位</dt>
+						<dt>
+							<h2 class="common-h2-1 clearfix">
+								<span><i></i>合作单位</span>
+							</h2>
+						</dt>
 						<dd class="dd-1 clearfix">
-							<a class="al" href="javascript:void(0);" title="阿里巴巴"><img src="themes/ecmoban_dsc/iamges/20170517/albb.jpg" alt="阿里巴巴"></a>
-							<a class="tx" href="javascript:void(0);" title="腾讯"><img src="themes/ecmoban_dsc/iamges/20170517/tx.jpg" alt="腾讯"></a>
-							<a href="javascript:void(0);" title="百度"><img src="themes/ecmoban_dsc/iamges/20170517/baidu.jpg" alt="百度"></a>
-							<a class="wy" href="javascript:void(0);" title="网易"><img src="themes/ecmoban_dsc/iamges/20170517/wy.jpg" alt="网易"></a>
-							<a class="sh" href="javascript:void(0);" title="搜狐"><img src="themes/ecmoban_dsc/iamges/20170517/sohu.jpg" alt="搜狐"></a>
-							<a href="javascript:void(0);" title="新浪"><img src="themes/ecmoban_dsc/iamges/20170517/xl.jpg" alt="新浪"></a>
-							<a class="margin-r-0" href="javascript:void(0);" title="凤凰网"><img src="themes/ecmoban_dsc/iamges/20170517/fhw.jpg" alt="凤凰网"></a>
-						</dd>
-						<dd class="dd-2 clearfix">
-							<a href="javascript:void(0);" title="crc"><img src="themes/ecmoban_dsc/iamges/20170517/crc.jpg" alt="crc"></a>
-							<a href="javascript:void(0);" title="中国家具协会"><img src="themes/ecmoban_dsc/iamges/20170517/jjxh.jpg" alt="中国家具协会"></a>
-							<a href="javascript:void(0);" title="红木"><img src="themes/ecmoban_dsc/iamges/20170517/hm.jpg" alt="红木"></a>
-							<a href="javascript:void(0);" title="中国红木家具网"><img src="themes/ecmoban_dsc/iamges/20170517/zghm.jpg" alt="中国红木家具网"></a>
-							<a class="hm" href="javascript:void(0);" title="中国红木网"><img src="themes/ecmoban_dsc/iamges/20170517/zghmw.jpg" alt="中国红木网"></a>
-							<a class="hm" href="javascript:void(0);" title="新会古典家具网"><img src="themes/ecmoban_dsc/iamges/20170517/xhgdjj.jpg" alt="新会古典家具网"></a>
-							<a class="hm margin-r-0" href="javascript:void(0);" title="红木商网"><img src="themes/ecmoban_dsc/iamges/20170517/hmsw.jpg" alt="红木商网"></a>
-						</dd>
-						<dd class="dd-3 clearfix">
-							<a class="gt" href="javascript:void(0);" title="国投红交所"><img src="themes/ecmoban_dsc/iamges/20170517/gthjs.jpg" alt="国投红交所"></a>
-							<a href="javascript:void(0);" title="隆都红木家具网"><img src="themes/ecmoban_dsc/iamges/20170517/ldhmjj.jpg" alt="隆都红木家具网"></a>
-							<a class="gdjj" href="javascript:void(0);" title="中国古典工艺家具网"><img src="themes/ecmoban_dsc/iamges/20170517/gdgyjj.jpg" alt="中国古典工艺家具网"></a>
-							<a class="zshm" href="javascript:void(0);" title="中山市红木家具行业协会"><img src="themes/ecmoban_dsc/iamges/20170517/zshmjj.jpg" alt="中山市红木家具行业协会"></a>
-							<a class="dyhm margin-r-0" href="javascript:void(0);" title="东阳红木家具协会"><img src="themes/ecmoban_dsc/iamges/20170517/dyhmjj.jpg" alt="东阳红木家具协会"></a>
+							<img src="themes/ecmoban_dsc/iamges/20170517/idx-patner.jpg" alt="">
 						</dd>
 					</dl>
 				</div>
 
-				<div class="section-15">
+				<div class="section-15 margin-b-10">
 					<dl class="clearfix">
 						<dt>友情链接 : </dt>
 						<dd class="clearfix">
@@ -671,7 +1013,8 @@
             $("img.lazy").lazyload({
             	placeholder: "themes/ecmoban_dsc/images/loadGoods.gif",
                 effect : "fadeIn",
-                threshold : 1000
+                threshold : 1000,
+                skip_invisible : false
             });
         </script>
 	</body>

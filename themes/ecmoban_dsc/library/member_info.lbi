@@ -1,35 +1,24 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-{if $user_info}
-	<div class="login">
-		<h4 class="clearfix">
-			<a class="float-l" href="user.php?act=account_safe">账号管理</a>
-			<a class="float-r" href="{$site_domain}user.php?act=logout">退出</a>
-		</h4>		
-		<img src="themes/ecmoban_dsc/iamges/20170517/touxiang.png" alt="头像" />
-		<div class="clearfix" style="text-align:center;color: rgb(253,183,90);">{$user_info.nick_name}</div>	
-		<ul>
-			<li class="clearfix">
-				<a class="Notice-a" href="article_cat.php?id=13" title="公告"></a>
-				<a class="use-a" href="free_trial.php" title="0元使用"></a>
-				<a class="vip-a" href="user.php" title="会员中心"></a>
-			</li>
-		</ul>				
-	</div>
-{else}
 <div class="login">
-	<h4>Hi~你好！</h4>		
-	<img src="themes/ecmoban_dsc/iamges/20170517/touxiang.png" alt="头像" />
-	<div class="clearfix">
-		<a class="login-btn" href="{$site_domain}user.php">登录</a>
-		<a class="register-btn" href="user.php?act=register">注册</a>
-	</div>	
-	<ul>
-		<li class="clearfix">
-			<a class="Notice-a" href="article_cat.php?id=13" title="公告"></a>
-			<a class="use-a" href="free_trial.php" title="0元使用"></a>
-			<a class="vip-a" href="user.php" title="会员中心"></a>
-		</li>
-	</ul>				
+	<h6>Hi,你好!</h6>
+	<img src="themes/ecmoban_dsc/iamges/20170517/idx-pic1.jpg" alt="">
+	<div>
+		<button class="sign-in" type="button">登录</button>
+		<button class="register" type="button">注册</button>
+	</div>
 </div>
-{/if}
+<div class="news">
+	<h2>每日资讯</h2>
+	<ul>
+		<li><a href="#">不是紫檀黄花梨，3款颜值内...</a></li>
+		<li><a href="#">不是紫檀黄花梨，3款颜值内...</a></li>
+		<li><a href="#">不是紫檀黄花梨，3款颜值内...</a></li>
+		<li><a href="#">不是紫檀黄花梨，3款颜值内...</a></li>
+		<li><a href="#">不是紫檀黄花梨，3款颜值内...</a></li>
+	</ul>
+</div>
+<div class="experience-hall">
+	<div><img src="themes/ecmoban_dsc/iamges/20170517/idx-pic1.jpg" alt=""></div>
+	<a href="#">查看身边的实体店</a>
+</div>

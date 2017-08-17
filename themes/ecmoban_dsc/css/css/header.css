@@ -59,7 +59,7 @@
 }
 #header .classification {
 	position: relative;
-	width: 291px;
+	width: 289px;
 	cursor: pointer;
 }
 #header .classification:hover {
@@ -111,22 +111,6 @@
 	text-indent: -9999px;
 	background-position: -111px 0;
 }
-/*.slide-top-bar .wrap-a {
-	right: 67px;
-	margin-top: 12px;
-}*/
-/*.Franchisee-settled,
-.Factory-settled {
-	width: 106px;
-	height: 34px;
-	text-indent: -9999px;
-}*/
-/*.Franchisee-settled {
-	margin-right: 25px;
-}*/
-/*.Factory-settled {
-	background-position: 0 -41px;
-}*/
 #header .top {
 	height: 30px;
 	line-height: 30px;
@@ -221,9 +205,7 @@
 	line-height: 30px;
 	text-align: center;
 }
-#header .main-nav>li.active>a,
-#header .main-nav>li:hover >a,
-#header .classification dd a:hover {
+#header .nav-content * {
 	color: #fff;
 }
 #header .classification .dropdown-menu {
@@ -232,9 +214,9 @@
 	right: 0;
 	z-index: 10;
 	padding: 10px 10px 0;
-	width: 291px;
+	width: 289px;
 	height: 525px;
-	background-color: #d4d6d5;
+	background-color: #666;
 }
 #header .classification dl {
 	overflow: hidden;
@@ -248,7 +230,6 @@
 }
 #header .classification dt {
 	margin-right: 8px;
-	color: #333;
 }
 #header .classification dd {
 	width: 224px;
@@ -267,74 +248,6 @@
 	overflow: hidden;
 	box-shadow: 0 1px 1px #e0e0e0;
 }
-#header .slide-banner .login {
-	position: absolute;
-	top: 120px;
-	right: 0;
-	padding: 15px;
-	width: 180px;
-	height: 272px;
-	text-align: center;
-	border: 1px solid #e0e0e0;
-	background-color: #fff;
-}
-#header .login h4 {
-	margin-bottom: 15px;
-	color: #fdae47;
-	font-weight: normal;
-}
-#header .login img {
-	display: inline;
-}
-#header .login div {
-	padding-top: 14px;
-}
-#header .login div a {
-	float: left;
-	display: inline-block;
-	width: 66px;
-	height: 27px;
-	color: #fff;
-	line-height: 27px;
-	text-align: center;
-	background-color: #47a9fd;
-	border-radius: 8px;
-}
-#header .login .register-btn {
-	float: right;
-}
-#header .login ul {
-	padding-top: 25px;
-}
-#header .login .Notice-a,
-#header .login .use-a,
-#header .login .vip-a {
-	display: inline-block;
-	float: left;
-	background-image: url(../../iamges/20170517/sprite-1.png);
-	background-repeat: no-repeat;
-}
-#header .login .Notice-a {
-	width: 24px;
-	height: 47px;
-	background-position: -476px -453px;
-}
-#header .login .use-a {
-	width: 35px;
-	height: 47px;
-	background-position: -437px -453px;
-}
-#header .login .vip-a {
-	width: 39px;
-	height: 47px;
-	background-position: -396px -453px;
-}
-#header .login .use-a,
-#header .login .Notice-a {
-	margin-right: 24px;
-}
-
-
 
 /*禅学院的下拉菜单 start*/
 .cxy-dropdpwn-menu {
