@@ -231,13 +231,7 @@
 					<div class="right-child">
 						<!--login-->
 						{insert name='member_info'}
-					</div>
-				</div>
-<<<<<<< HEAD
-				<div class="right-child">
-					<!--login-->
-					{insert name='member_info'}
-					<div class="news">
+						<div class="news">
 						<h2>每日资讯</h2>
 						<ul>
 							<!--{foreach item=mrzx_sql	 from=$mrzx_sql	 name=mrzx_sql	} -->
@@ -251,9 +245,8 @@
 						<div><img src="themes/ecmoban_dsc/iamges/20170517/idx-pic2.png" alt=""></div>
 						<a href="experience_hall.php">查看身边的实体店</a>
 					</div>
+					</div>
 				</div>
-=======
->>>>>>> c72617c439e8d5b3a32e19c170619a5df097dd79
 			</div>
 		</div>
 		<!--header end-->
