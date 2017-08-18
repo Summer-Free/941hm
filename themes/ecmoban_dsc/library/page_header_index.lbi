@@ -28,11 +28,15 @@
                     <img class="float-r" src="themes/ecmoban_dsc/iamges/20170517/wechat.png" alt="二维码">
                     <div class="float-r">
                         <div class="wrap-search clearfix">
+                            <div class="shopCart">
+                                <i></i>我的购物车
+                                <span><em>99</em></span>
+                            </div>
                             <div class="ecsc-search">
                                 <form class="clearfix ecsc-search-form" id="searchForm" name="searchForm" action="search.php" method="get" onSubmit="return checkSearchForm()">
                                     <input type="text" autocomplete="off" onKeyUp="lookup(this.value);" name="keywords" id="keyword" value="请输入搜索内容" class="ecsc-search-input" />
                                     <input type="hidden" name="store_search_cmt" value="{$search_type|default:0}">
-                                    <button class="icon-search ecsc-search-button" type="submit"></button>
+                                    <button class="icon-search ecsc-search-button" type="submit">搜索</button>
                                 </form>
                                 <!-- @Author guan 搜索栏提示 start -->
                                     <div class="suggestions_box" id="suggestions" style="display:none;">
@@ -59,7 +63,7 @@
                                                 <a href="category.php?id=397">圆桌</a>
                                                 <a href="category.php?id=60">酒柜/酒架</a>
                                                 <a href="category.php?id=58">四方桌</a>
-                                                <a href="category.php?id=56">餐边桌</a>
+                                                <a href="category.php?id=56">餐边柜</a>
                                             </dd>
                                             <dt>客厅 :</dt>
                                             <dd>
@@ -71,6 +75,8 @@
                                                 <a href="category.php?id=452">鼓凳</a>
                                                 <a href="category.php?id=418">二联柜</a>
                                                 <a href="category.php?id=421">屏风</a>
+                                                <a href="category.php?id=362">玄关桌柜</a>
+                                                <a href="category.php?id=377">鞋柜</a>
                                             </dd>
                                             <dt>书房 :</dt>
                                             <dd>
@@ -83,6 +89,7 @@
                                                 <a href="category.php?id=410">麻将桌</a>
                                                 <a href="category.php?id=414">电脑桌</a>
                                                 <a href="category.php?id=309">大班台</a>
+                                                <a href="category.php?id=424">休闲桌椅 </a>
                                             </dd>
                                             <dt>卧室 :</dt>
                                             <dd>
@@ -94,13 +101,15 @@
                                                 <a href="category.php?id=9">梳妆台</a>
                                                 <a href="category.php?id=12">床边凳</a>
                                                 <a href="category.php?id=395">穿衣镜</a>
+                                                <a href="category.php?id=13">衣帽架</a>
+                                                <a href="category.php?id=457">月牙桌</a>
                                             </dd>
                                         </dl>
                                         <dl class="material">
                                             <dt>材质 :</dt>
                                             <dd>
                                                 <a href="category.php?id=409">小叶紫檀</a>
-                                                <a href="category.php?id=407">海南黄花梨</a>
+                                                <a href="category.php?id=407">黄花梨</a>
                                                 <a href="category.php?id=416">刺猬紫檀</a>
                                                 <a href="category.php?id=399">缅甸花梨</a>
                                                 <a href="category.php?id=442">非洲花梨</a>
@@ -108,6 +117,8 @@
                                                 <a href="category.php?id=445">沉贵宝</a>
                                                 <a href="category.php?id=444">安哥拉紫檀</a>
                                                 <a href="category.php?id=449">南美酸枝</a>
+                                                <a href="category.php?id=446">黄金檀</a>
+                                                <a href="category.php?id=447">巴西花梨</a>
                                             </dd>
                                         </dl>
                                         <dl class="style">
@@ -119,16 +130,6 @@
                                                 <a href="category.php?id=25">明式</a>
                                             </dd>
                                         </dl>
-                                        <dl class="price">
-                                            <dt>价格 :</dt>
-                                            <dd>
-                                                <a href="#">0-10000</a>
-                                                <a href="#">10000-20000</a>
-                                                <a href="#">20000-40000</a>
-                                                <a href="#">40000-80000</a>
-                                                <a href="#">80000以上</a>
-                                            </dd>
-                                        </dl>
                                     </div>  
                                 </li>
                                 <li><a href="index.php">首页</a></li>
@@ -136,23 +137,6 @@
                                 <li><a class="showMsg" href="#">智能场景定制</a></li>
                                 <li><a href="crowd_funding.php">匠物众筹</a></li>
                                 <li><a href="daily_spike.php">每日秒杀</a></li>
-<!--                                 <li class="cxy">
-                                    <a href="zen_institute.php">禅学院</a> -->
-                                    <!--禅学院下拉菜单 start-->
-<!--                                     <div class="cxy-dropdpwn-menu">
-                                        <div class="w1200 submenu">
-                                            <ul class="clearfix">
-                                                <li><a href="#">禅茶一味</a></li>
-                                                <li><a href="#">静以修身</a></li>
-                                                <li><a href="#">善缘佛堂</a></li>
-                                                <li><a href="#">匠人匠心</a></li>
-                                                <li><a href="#">回归自然</a></li>
-                                                <li><a href="#">中医养生</a></li>
-                                            </ul>
-                                        </div>
-                                    </div> -->
-                                    <!--禅学院下拉菜单 end-->
-                                <!-- </li> -->
                                 <li><a href="latest_listing.php">新品上市</a></li>
                                 <li><a href="partner.php">商家入驻</a></li>
                                 <li class="margin-r-0"><a href="company_profile.php">公司简介</a></li>
