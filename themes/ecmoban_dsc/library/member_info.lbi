@@ -4,7 +4,7 @@
 	<h6>Hi,你好!</h6>
 	<img src="themes/ecmoban_dsc/iamges/20170517/idx-pic1.png" alt="">
 	<div>
-		<button class="sign-in" type="button">登录</button>
-		<button class="register" type="button">注册</button>
+		<button id="sign-in" type="button">登录</button>
+		<button id="register" type="button">注册</button>
 	</div>
 </div>
