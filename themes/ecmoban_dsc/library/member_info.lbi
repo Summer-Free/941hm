@@ -1,10 +1,20 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <div class="login">
-	<h6>Hi,你好!</h6>
-	<img src="themes/ecmoban_dsc/iamges/20170517/idx-pic1.png" alt="">
-	<div>
-		<button class="sign-in" type="button">登录</button>
-		<button class="register" type="button">注册</button>
+	<div class="default">
+		<h6>Hi,你好!</h6>
+		<img src="themes/ecmoban_dsc/iamges/20170517/idx-pic1.png" alt="">
+		<div class="wrap-btn">
+			<a href="#" class="sign-in">登录</a>
+			<a href="#" class="register">注册</a>
+		</div>
 	</div>
+<!-- 	<div class="success">
+		<div class="clearfix">
+			<a class="float-l" href="#">账号管理</a>
+			<a class="float-r" href="#">退出</a>
+		</div>
+		<img src="themes/ecmoban_dsc/iamges/20170517/idx-pic1.png" alt="">
+		<h6>用户名</h6>
+	</div> -->
 </div>

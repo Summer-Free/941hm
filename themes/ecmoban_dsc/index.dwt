@@ -232,17 +232,17 @@
 						<!--login-->
 						{insert name='member_info'}
 						<div class="news">
-						<h2>每日资讯</h2>
-						<ul>
-						<!--{foreach item=message from=$message name=message} -->
-							<li><a href="article.php?={$message.article_id}">{$message.title|truncate:12}</a></li>
-						<!--{/foreach}-->
-						</ul>
-					</div>
-					<div class="experience-hall">
-						<div><img src="themes/ecmoban_dsc/iamges/20170517/idx-pic2.png" alt=""></div>
-						<a href="experience_hall.php">查看身边的实体店</a>
-					</div>
+							<h2>每日资讯</h2>
+							<ul>
+							<!--{foreach item=message from=$message name=message} -->
+								<li><a href="article.php?={$message.article_id}">{$message.title|truncate:12}</a></li>
+							<!--{/foreach}-->
+							</ul>
+						</div>
+						<div class="experience-hall">
+							<div><img src="themes/ecmoban_dsc/iamges/20170517/idx-pic2.png" alt=""></div>
+							<a href="experience_hall.php">查看身边的实体店</a>
+						</div>
 					</div>
 				</div>
 			</div>

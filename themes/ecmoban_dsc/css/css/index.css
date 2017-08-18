@@ -94,7 +94,7 @@
 	height: 49px;
 	border-radius: 50%;
 }
-#header .login button {
+#header .login .wrap-btn a {
 	display: inline-block;
 	width: 75px;
 	height: 22px;
@@ -103,6 +103,9 @@
 	background-color: #aa1920;
 	border: none;
 	cursor: pointer;
+}
+#header .login .success>div {
+	padding: 0 10px;
 }
 #header .sign-in {
 	margin-right: 5px;
