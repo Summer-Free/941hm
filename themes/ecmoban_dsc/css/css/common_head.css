@@ -14,13 +14,13 @@
 	        transition: all .3s linear;
 }
 #header .classification:hover > .dropdown-menu {
-	background-color: #d4d6d5;
+	background-color: #666;
 	z-index: 1000;
 	opacity: 1;
 	display: block\9; /*IE8 hack*/
 }
 #header .classification:hover {
-	background-color: #95b0b2;
+	background-color: #aa1920;
 }
 /*头部下拉菜单hover效果 需要加上此端代码 end*/
 

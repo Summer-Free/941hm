@@ -11,7 +11,7 @@
 	background: url(../../iamges/20170517/logo.jpg) no-repeat left center;
 }
 #header .wrap-search {
-	margin: 23px 0 0 0;
+	margin: 25px 0 0 0;
 }
 #header .wrap-search > .ecsc-search,
 #header .wrap-search .shopCart {
@@ -230,6 +230,12 @@
 	padding-bottom: 5px;
 	margin-bottom: 5px;
 	border-bottom: 1px solid #fff;
+}
+#header .classification .style {
+    padding: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    border: none;
 }
 #header .classification dt,
 #header .classification dd {

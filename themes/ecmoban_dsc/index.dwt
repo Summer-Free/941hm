@@ -9,7 +9,7 @@
         {* 包含脚本文件 *}
         {insert_scripts files='jquery.json.js,transport_jquery.js,cart_quick_links.js'}
 	</head>
-	<body class="bg-color-f7f7f7">
+	<body>
 		
 		<!--header start-->
 		<div id="header">
@@ -177,54 +177,63 @@
 		        </div>
 	        </div> 
             <!--Navigation end-->
-
-			<div class="btm w1200 clearfix">
-				<div class="left-child">
-					<div class="JS-slide">
-						<ul class="content">
-							<li class="active">
-								<a href="goods.php?id=1015"><img src="themes/ecmoban_dsc/iamges/20170517/banner4.jpg" alt="" /></a>
-							</li>
-							<li>
-								<a href="company_profile.php"><img src="themes/ecmoban_dsc/iamges/20170517/banner2.jpg" alt="" /></a>
-							</li>
-							<li>
-								<a href="experience_hall.php"><img src="themes/ecmoban_dsc/iamges/20170517/banner13.jpg" alt="" /></a>
-							</li>
-							<li>
-								<a href="partner.php"><img src="themes/ecmoban_dsc/iamges/20170517/banner5.jpg" alt="" /></a>
-							</li>
-							<li>
-								<a href="manufacturers_settled.php"><img src="themes/ecmoban_dsc/iamges/20170517/banner6.jpg" alt="" /></a>
-							</li>
-						</ul>
-						<a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
-						<a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
-						<ul class="point">
-							<li class="active"></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
+			
+			<div class="wrap-btm bg-color-f7f7f7">
+				<div class="btm w1200 clearfix">
+					<div class="left-child">
+						<div class="JS-slide">
+							<ul class="content">
+								<li class="active">
+									<a href="goods.php?id=1032"><img src="themes/ecmoban_dsc/iamges/20170517/banner4.jpg" alt="" /></a>
+								</li>
+								<li>
+									<a href="company_profile.php"><img src="themes/ecmoban_dsc/iamges/20170517/banner2.jpg" alt="" /></a>
+								</li>
+								<li>
+									<a href="experience_hall.php"><img src="themes/ecmoban_dsc/iamges/20170517/banner13.jpg" alt="" /></a>
+								</li>
+								<li>
+									<a href="partner.php"><img src="themes/ecmoban_dsc/iamges/20170517/banner5.jpg" alt="" /></a>
+								</li>
+								<li>
+									<a href="manufacturers_settled.php"><img src="themes/ecmoban_dsc/iamges/20170517/banner6.jpg" alt="" /></a>
+								</li>
+							</ul>
+							<a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
+							<a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
+							<ul class="point">
+								<li class="active"></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="side-bar">
+							<ul class="clearfix">
+								<li class="showMsg">
+									<a href="#">
+										<img src="themes/ecmoban_dsc/iamges/20170517/idx-pic1.jpg" alt="">
+										<span>智能线上体验馆</span>
+										<i></i>
+									</a>
+								</li>
+								<li class="showMsg margin-r-0">
+									<a href="#">
+										<img src="themes/ecmoban_dsc/iamges/20170517/idx-pic2.jpg" alt="">
+										<span>智能场景定制</span>
+										<i></i>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<div class="side-bar">
-						<ul class="clearfix">
-							<li>
-								<a href="#">
-									<img src="themes/ecmoban_dsc/iamges/20170517/idx-pic1.jpg" alt="">
-									<span class="transition">智能线上体验馆</span>
-								</a>
-							</li>
-							<li class="margin-r-0">
-								<a href="#">
-									<img src="themes/ecmoban_dsc/iamges/20170517/idx-pic2.jpg" alt="">
-									<span class="transition">智能场景定制</span>
-								</a>
-							</li>
-						</ul>
+					<div class="right-child">
+						<!--login-->
+						{insert name='member_info'}
 					</div>
 				</div>
+<<<<<<< HEAD
 				<div class="right-child">
 					<!--login-->
 					{insert name='member_info'}
@@ -243,19 +252,21 @@
 						<a href="experience_hall.php">查看身边的实体店</a>
 					</div>
 				</div>
+=======
+>>>>>>> c72617c439e8d5b3a32e19c170619a5df097dd79
 			</div>
 		</div>
 		<!--header end-->
 
 		<!--main body start-->
-		<div id="main-body">
+		<div id="main-body" class="bg-color-f7f7f7">
 			<div class="w1200">
 
 				<!--每日秒杀-->
 				<div class="section-1 margin-b-10">
 					<h2 class="common-h2-1 clearfix">
 						<span><i class="mrms-icon"></i>每日秒杀</span>
-						<a href="#">查看更多</a>
+						<a href="daily_spike.php">查看更多</a>
 					</h2>
 					<div class="main-body">
 						<div class="JS-slide-scroll">
@@ -294,7 +305,7 @@
 							</a>
 						</li>
 						<li>
-							<a class="color-fff" href="integral_mall.php">
+							<a class="color-fff" href="exchange.php">
 								<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/idx-pic5.jpg" width="200" height="200" alt="">
 								<div class="title">
 									<h2>—— <span>积分商城</span> ——</h2>
@@ -349,7 +360,7 @@
 					<div class="new-arrival float-l">
 						<h2 class="common-h2-2 clearfix">
 							<span><i class="xpss-icon"></i>新品上市</span>
-							<a href="#">查看更多</a>
+							<a href="latest_listing.php">查看更多</a>
 						</h2>
 						<ul>
 							<!--{foreach item=new_p06 from=$new_p06 name=new_p06} -->
@@ -445,7 +456,7 @@
 			</div>
 			
 			<!--商家入驻/广告位-->
-			<div class="sidebar"><a href="article.php?id=117" title="商家入驻"><img class="lazy" width="1920" height="188" data-original="themes/ecmoban_dsc/iamges/20170517/sidebar.jpg" alt="商家入驻"></a></div>
+			<div class="sidebar"><a href="partner.php" title="商家入驻"><img class="lazy" width="1920" height="188" data-original="themes/ecmoban_dsc/iamges/20170517/sidebar.jpg" alt="商家入驻"></a></div>
 
 			<div class="w1200">
 
@@ -622,7 +633,7 @@
 					</ul>
 				</div>
 
-				<div class="section-9 margin-b-10">
+				<div class="section-9">
 					<ul class="clearfix">
 						<li><span><i class="icon-bz"></i>正品保障</span></li>
 						<li><span><i class="icon-wx"></i>终身维修</span></li>

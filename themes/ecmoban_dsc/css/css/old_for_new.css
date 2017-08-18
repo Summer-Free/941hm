@@ -125,7 +125,5 @@
 	width: 112px;
 	height: 29px;
 	text-indent: -9999px;
-	background-image: url(../../iamges/20170517/sprite-1.png);
-	background-repeat: no-repeat;
-	background-position: -388px 0;
+	background: url(../../iamges/20170517/snap-up.png) no-repeat;
 }
