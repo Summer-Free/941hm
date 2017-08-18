@@ -12,21 +12,6 @@
             <!-- {/foreach} --> 
         </p>
         <!-- {/if} --> 
-        <!--{if $img_links  or $txt_links }-->
-        <p class="footer-otherlink">	
-        	<!--开始图片类型的友情链接{foreach from=$img_links item=link}-->
-            <a href="{$link.url}" target="_blank" title="{$link.name}"><img src="{$link.logo}" alt="{$link.name}" border="0" /></a>
-            <!--结束图片类型的友情链接{/foreach}-->
-            <!-- {if $txt_links} -->
-            <!--开始文字类型的友情链接{foreach from=$txt_links item=link name=nolink}-->
-            <a href="{$link.url}" target="_blank" title="{$link.name}">{$link.name}</a>
-            <!-- {if !$smarty.foreach.nolink.last} --> 
-            | 
-            <!-- {/if} --> 
-            <!--结束文字类型的友情链接{/foreach}-->
-            <!-- {/if} -->
-        </p>
-        <!--{/if}-->
         <!-- ICP 证书{if $icp_number} --> 
         <b>{$lang.icp_number}:<a href="http://www.miibeian.gov.cn/" target="_blank">{$icp_number}</a></b>
         <!-- 结束ICP 证书{/if} --> 

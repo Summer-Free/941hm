@@ -158,8 +158,8 @@ if(length>1){
 {insert_scripts files='./sms/sms.js'}
 <div class="ecsc-registLogin ecsc-register">
     <div class="registLogin borderBottom1">
-        <div class="registLogin-header w1200">
-            <a href="./index.php" class="logo"><img src="images/logo.gif" /></a>
+        <div class="registLogin-header w1200" style="padding-bottom: 0;">
+            <a href="./index.php" class="logo"><img src="themes/ecmoban_dsc/iamges/20170517/logo.jpg" /></a>
             <b></b>
             <span class="registLogin-header-fr">有账号<a href="user.php" class="jump">在此登录</a></span>
         </div>
