@@ -234,11 +234,9 @@
 						<div class="news">
 						<h2>每日资讯</h2>
 						<ul>
-							<!--{foreach item=mrzx_sql	 from=$mrzx_sql	 name=mrzx_sql	} -->
-								<li>
-									<a href="article.php?id={$mrzx_sql.article_id}">{$mrzx_sql.title}</a>
-								</li>
-							<!--{/foreach}-->
+						<!--{foreach item=message from=$message name=message} -->
+							<li><a href="article.php?={$message.article_id}">{$message.title|truncate:12}</a></li>
+						<!--{/foreach}-->
 						</ul>
 					</div>
 					<div class="experience-hall">
@@ -653,7 +651,7 @@
 						<dt>友情链接 : </dt>
 						<dd class="clearfix">
 						<!--{foreach from=$yqlj_sql item=yqlj_sql name=yqlj_sql}-->
-							<a href="{$yqlj_sql.link_url}" title="{$yqlj_sql.link_name}" >{$yqlj_sql.link_name}</a>
+							<a href="{$yqlj_sql.link_url}" target="_blank" title="{$yqlj_sql.link_name}" >{$yqlj_sql.link_name}</a>
 						<!--{/foreach}-->
 						</dd>
 					</dl>
