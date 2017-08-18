@@ -8,17 +8,3 @@
 		<button class="register" type="button">注册</button>
 	</div>
 </div>
-<div class="news">
-	<h2>每日资讯</h2>
-	<ul>
-		<li><a href="#">不是紫檀黄花梨，3款颜值内...</a></li>
-		<li><a href="#">不是紫檀黄花梨，3款颜值内...</a></li>
-		<li><a href="#">不是紫檀黄花梨，3款颜值内...</a></li>
-		<li><a href="#">不是紫檀黄花梨，3款颜值内...</a></li>
-		<li><a href="#">不是紫檀黄花梨，3款颜值内...</a></li>
-	</ul>
-</div>
-<div class="experience-hall">
-	<div><img src="themes/ecmoban_dsc/iamges/20170517/idx-pic2.png" alt=""></div>
-	<a href="experience_hall">查看身边的实体店</a>
-</div>
