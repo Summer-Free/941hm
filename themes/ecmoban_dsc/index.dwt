@@ -1,4 +1,4 @@
-	<!doctype html>
+<!doctype html>
 <html lang="zh-cn">
 	<head>
 	    <!--首页CSS以及部分通用部分的合并LBI-->
@@ -164,7 +164,7 @@
 		                            </div>  
 		                        </li>
 		                        <li class="active"><a href="index.php">首页</a></li>
-		                        <li><a class="showMsg" href="#">智能体验馆</a></li>
+		                        <li><a href="experience_museum.php">智能体验馆</a></li>
 		                        <li><a class="showMsg" href="#">智能场景定制</a></li>
 		                        <li><a href="crowd_funding.php">匠物众筹</a></li>
 		                        <li><a href="daily_spike.php">每日秒杀</a></li>
@@ -178,7 +178,7 @@
 	        </div> 
             <!--Navigation end-->
 			
-			<div class="wrap-btm bg-color-f7f7f7">
+			<div class="wrap-btm bg-color-f5f5f5">
 				<div class="btm w1200 clearfix">
 					<div class="left-child">
 						<div class="JS-slide">
@@ -211,8 +211,8 @@
 						</div>
 						<div class="side-bar">
 							<ul class="clearfix">
-								<li class="showMsg">
-									<a href="#">
+								<li>
+									<a href="experience_museum.php">
 										<img src="themes/ecmoban_dsc/iamges/20170517/idx-pic1.jpg" alt="">
 										<span>智能线上体验馆</span>
 										<i></i>
@@ -250,7 +250,7 @@
 		<!--header end-->
 
 		<!--main body start-->
-		<div id="main-body" class="bg-color-f7f7f7">
+		<div id="main-body" class="bg-color-f5f5f5">
 			<div class="w1200">
 
 				<!--每日秒杀-->

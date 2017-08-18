@@ -1,0 +1,47 @@
+.show-list {
+	position: relative;
+	padding-top: 21px;
+	min-height: 2433px;
+}
+.show-list ul {
+	position: absolute;
+	display: none;
+}
+.show-list .active {
+	display: block;
+}
+.show-list li {
+	float: left;
+	margin: 0 29px 21px 0;
+	width: 380px;
+	background-color: #fff;
+}
+.show-list li div {
+	padding: 5px 15px 25px 15px;
+	font-size: 16px;
+}
+.show-list li h3 {
+	padding: 12px 0;
+	font-weight: 600;
+}
+.show-list sup {
+	display: inline-block;
+	font-size: 10px;
+	-webkit-transform: scale(.8);
+}
+.tab-nav {
+	padding-bottom: 10px;
+	text-align: center;
+}
+.tab-nav a {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+}
+.tab-nav .active {
+	color: #fff;
+	background-color: #aa1920;
+}

@@ -41,11 +41,11 @@
 }
 #header .wrap-search form .icon-search {
 	position: absolute;
-	top: 8px;
+	top: 0;
 	right: 0;
-	margin-top: -6.5px;
 	width: 79px;
-	height: 40px;
+	height: 44px;
+	line-height: 44px;
 	color: #fff;
 	font-size: 16px;
 	cursor: pointer;
@@ -259,7 +259,6 @@
 }
 #header .slide-banner {
 	overflow: hidden;
-	box-shadow: 0 1px 1px #e0e0e0;
 }
 #header .shopCart {
 	position: relative;
