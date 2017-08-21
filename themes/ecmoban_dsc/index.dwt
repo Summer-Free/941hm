@@ -59,8 +59,10 @@
 	                <div class="float-r">
 	                    <div class="wrap-search clearfix">
 		                    <div class="shopCart">
-								<i></i>我的购物车
-								<span><em>99</em></span>
+		                    	<a class="color-ff0000" href="flow.php">
+									<i></i>我的购物车
+									<span><em>99</em></span>
+								</a>
 		                    </div>
 	                        <div class="ecsc-search">
 		                        <form class="clearfix ecsc-search-form" id="searchForm" name="searchForm" action="search.php" method="get" onSubmit="return checkSearchForm()">
