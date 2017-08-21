@@ -7,8 +7,7 @@ if (!defined('WEBSITE'))
 		public $tokenURL;
 		public $authorizeURL;
 		public $userURL;
-		
-		
+				
 		public $scope = '';
 		public $app_key;
 		public $app_secret;
@@ -22,10 +21,19 @@ if (!defined('WEBSITE'))
 		public $post_login = array();
 		public $post_token = array();
 		public $post_msg = array();
+                
+                /* 整合对象使用的cookie的domain */
+                public $cookie_domain  = '';
+
+                /* 整合对象使用的cookie的path */
+                public $cookie_path    = '/';
 		
 		
 		function login( $callblock)
-		{
+		{	
+            $this->cookie_domain = isset($cfg['cookie_domain']) ? $cfg['cookie_domain'] : '';
+            $this->cookie_path = isset($cfg['cookie_path']) ? $cfg['cookie_path'] : '/';
+                        
 			$pare = array();
 			$pare['client_id'] = $this->app_key;
 			$pare['redirect_uri'] = $callblock;
@@ -33,7 +41,7 @@ if (!defined('WEBSITE'))
 			//$pare['state'] = $callblock;
 			$pare['scope'] = $this->scope;
 			$pare['display'] = $this->display;
-			setcookie('___OATH2_CALLBLOCK__' , $callblock , time()+3600 , '/');
+			setcookie('___OATH2_CALLBLOCK__' , $callblock , time()+3600, $this->cookie_path, $this->cookie_domain);
 			$p = array_merge($pare , $this->post_login);
 			$p = $this->unset_null($p);
 			return $this->authorizeURL .'?'. http_build_query($p);
@@ -46,7 +54,10 @@ if (!defined('WEBSITE'))
 				$this->token = $this->gettoken();
 				return $this->token;
 			}
-			
+                        
+			$this->cookie_domain = isset($cfg['cookie_domain']) ? $cfg['cookie_domain'] : '';
+                        $this->cookie_path = isset($cfg['cookie_path']) ? $cfg['cookie_path'] : '/';
+        
 			$pare = array();
 			$pare['client_id'] = $this->app_key;
 			$pare['client_secret'] = $this->app_secret;
@@ -54,11 +65,9 @@ if (!defined('WEBSITE'))
 			$pare['code'] = $_REQUEST['code'];
 			$pare['redirect_uri'] = $_COOKIE['___OATH2_CALLBLOCK__'];
 			//print_r($_COOKIE);
-			setcookie('___OATH2_CALLBLOCK__' , '' , time()-3600 , '/');
+			setcookie('___OATH2_CALLBLOCK__' , '' , time()-3600, $this->cookie_path, $this->cookie_domain);
 			$p = array_merge( $pare , $this->post_token);
 			$p = $this->unset_null($p);
-			
-			
 			
 			$result = $this->http($this->tokenURL , $this->meth , $p);
 			

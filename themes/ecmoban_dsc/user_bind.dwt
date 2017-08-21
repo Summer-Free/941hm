@@ -45,7 +45,7 @@
                 <div class="account-login-panle">
                     <div class="wellcome-tip">
                         <img src="{if $info.figureurl_qq_2}{$info.figureurl_qq_2}{else}{$info.img}{/if}" width="28" height="28">
-                        Hi, {$info.name} 欢迎来到{$dwt_shop_name}
+                        Hi, {$info.name} 欢迎来到&nbsp;<font color="#e22">941红木网</font>
                     </div>
                     <form class="login-form" name="loginForm" method="post" action="user.php?act=oath_register">
                         <div class="login-error-container">
