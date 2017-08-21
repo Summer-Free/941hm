@@ -235,7 +235,7 @@
 							<h2>每日资讯</h2>
 							<ul>
 							<!--{foreach item=message from=$message name=message} -->
-								<li><a href="article.php?={$message.article_id}">{$message.title|truncate:12}</a></li>
+								<li><a href="article.php?id={$message.article_id}">{$message.title|truncate:12}</a></li>
 							<!--{/foreach}-->
 							</ul>
 						</div>
