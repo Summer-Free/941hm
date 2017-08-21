@@ -15,10 +15,10 @@
                     <div class="w1200">
                         <div class="JS-slide">
                             <ul class="content">
-                                <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/crowd-pic3.jpg" alt="" /></a></li>
-                                <li><a href="goods.php?id=845"><img src="themes/ecmoban_dsc/iamges/20170517/crowd-pic2.jpg" alt="" /></a></li>
-                                <li><a href="goods.php?id=1023"><img src="themes/ecmoban_dsc/iamges/20170517/crowd-pic1.jpg" alt="" /></a></li>
-                                <li><a href="goods.php?id=668"><img src="themes/ecmoban_dsc/iamges/20170517/crowd-pic4.jpg" alt="" /></a></li>
+                                <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/crowd-pic3.jpg" width="1200" height="525" alt="" /></a></li>
+                                <li><a href="goods.php?id=845"><img src="themes/ecmoban_dsc/iamges/20170517/crowd-pic2.jpg" width="1200" height="525" alt="" /></a></li>
+                                <li><a href="goods.php?id=1023"><img src="themes/ecmoban_dsc/iamges/20170517/crowd-pic1.jpg" width="1200" height="525" alt="" /></a></li>
+                                <li><a href="goods.php?id=668"><img src="themes/ecmoban_dsc/iamges/20170517/crowd-pic4.jpg" width="1200" height="525" alt="" /></a></li>
                             </ul>
                             <a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
                             <a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
