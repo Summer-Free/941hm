@@ -168,7 +168,9 @@ table{border-collapse:collapse;border-spacing:0;}
 .border-r-0 {
   border-right: none!important;
 }
-
+.border-b-0 {
+  border-bottom: none!important;
+}
 
 /* font color*/
 .color-ff0000 {

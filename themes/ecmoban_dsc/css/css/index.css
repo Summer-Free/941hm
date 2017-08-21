@@ -117,8 +117,10 @@
 #header .news h2 {
 	text-align: center;
 	font-size: 18px;
-	color: #aa1920;
 	line-height: 2;
+}
+#header .news h2 a {
+	color: #aa1920;
 }
 #header .news li a {
 	padding: 0 10px;
@@ -169,7 +171,7 @@
 	margin-right: 0!important;
 }
 .section-1 .JS-slide-scroll {
-	height: 267px;
+	height: 236px;
 }
 .section-1 .JS-slide-scroll li {
 	float: left;
@@ -177,7 +179,10 @@
 	background-color: #fff;
 }
 .section-1 .JS-slide-scroll .product-info {
-	padding: 5px 10px;
+	padding: 0 10px;
+}
+.section-1 .JS-slide-scroll .product-info * {
+	line-height: 1;
 }
 .section-1 .JS-slide-scroll h3 {
 	font-size: 12px;
@@ -188,12 +193,12 @@
 	color: #666;
 }
 .section-1 .JS-slide-scroll li p {
-	height: 25px;
-	line-height: 25px;
+	padding: 10px 0 20px 0;
 }
 .section-1 .img-box {
+	padding: 10px 20px;
 	width: 200px;
-	height: 200px;
+	height: 180px;
 }
 .common-h2-1,
 .common-h2-2 {
@@ -229,11 +234,9 @@
 	height: 18px;
 	background-position: 0 0;
 }
-.section-2 {
-	height: 399px;
-}
 .section-2 li {
 	float: left;
+	margin-right: 10px;
 	text-align: center;
 }
 .section-2 li a {
@@ -286,16 +289,26 @@
 	float: left;
 	padding-bottom: 5px;
 	width: 297px;
+	border-right: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
 	background-color: #fff;
+}
+.section-3 li .wrap-img {
+	padding: 20px 40px 10px;
+	text-align: center;
+}
+.section-3 li .wrap-img img {
+	display: inline-block;
 }
 .section-3 li .wrap-info {
 	padding: 0 10px;
-	line-height: 1.6;
+	line-height: 1;
 }
 .section-3 li .wrap-info h3 {
 	text-indent: -6px;
 }
 .section-3 li .sprice {
+	padding: 10px 0;
 	text-align: center;
 }
 .section-3 .new-arrival .common-h2-2 i {
@@ -324,26 +337,14 @@
 	height: 20px;
 	background-position: -66px 0;
 }
-.section-4 dd {
-	padding: 10px 0;
-}
-.section-4 dd a {
-	padding: 5px 0;
-}
 .section-4 dd a {
 	float: left;
+	width: 150px;
+	border-right: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
 }
-#main-body .sidebar {
-	position: relative;
-	overflow: hidden;
-	margin: 5px 0 8px 0;
-	height: 188px;
-}
-#main-body .sidebar img {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	margin-left: -960px;
+.section-4 dd a img {
+	max-width: 100%;
 }
 .section-5 .common-h2-2 i {
 	top: 3px;
@@ -353,16 +354,26 @@
 }
 .common-temp .right {
 	overflow: hidden;
-	width: 894px;
-	height: 679px;
+	width: 900px;
+	height: 594px;
 	background-color: #fff;
 }
 .common-temp .right li {
 	float: left;
-	width: 298px;
+	width: 300px;
+	height: 297px;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+.common-temp .right .wrap-img {
+	padding: 20px 40px 10px;
 }
 .common-temp .right .wrap-info {
 	padding: 0 10px;
+	line-height: 1;
+}
+.common-temp .right .wrap-info .price {
+	padding: 10px 0;
 }
 .common-temp .right h3 {
 	text-indent: -6px;
