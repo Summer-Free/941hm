@@ -63,10 +63,14 @@
 }
 .form-status .active {
 	color: #fff;
-	background-color: #95b0b2;
+	background-color: #aa1920;
 }
 .form-status .active:after {
-	border-left-color: #95b0b2;
+	border-left-color: #aa1920;
+}
+.uploadify-button,
+.uploadify-progress-bar {
+	background-color: #aa1920;
 }
 
 /*描述情况*/
@@ -162,7 +166,7 @@
 	border: none;
 	border-radius: 5px;
 	color: #fff;
-	background-color: #47a9fd;
+	background-color: #aa1920;
 	cursor: pointer;
 }
 #content {
