@@ -50,13 +50,13 @@
 									</div>
 									<div class="wrap-info">
 										<h4>诗情博古架 非洲花梨 两件套</h4>
-										<span class="price">价格 : <em>810</em></span>
+										<span class="price">价格 : <em>8100</em></span>
 										<span class="buy">购买</span>
 									</div>
 								</a>
 							</li>
-							<li class="clearfix product-1">
-								<a class="float-l" href="goods.php?id=945">
+							<li class="clearfix">
+								<a class="float-l product-1" href="goods.php?id=945">
 									<div class="wrap-img">
 										<img src="themes/ecmoban_dsc/iamges/20170517/old-pic4.png" alt="">
 									</div>
@@ -67,8 +67,8 @@
 									</div>
 								</a>
 							</li>
-							<li class="clearfix product-2">
-								<a class="float-r" href="goods.php?id=999">
+							<li class="clearfi">
+								<a class="float-r  product-2" href="goods.php?id=999">
 									<div class="wrap-img">
 										<img src="themes/ecmoban_dsc/iamges/20170517/old-pic5.png" alt="">
 									</div>
@@ -79,8 +79,8 @@
 									</div>
 								</a>
 							</li>
-							<li class="clearfix product-3">
-								<a class="float-l" href="goods.php?id=1033">
+							<li class="clearfix">
+								<a class="float-l product-3" href="goods.php?id=1033">
 									<div class="wrap-img">
 										<img src="themes/ecmoban_dsc/iamges/20170517/old-pic6.png" alt="">
 									</div>
@@ -91,8 +91,8 @@
 									</div>
 								</a>
 							</li>
-							<li class="clearfix product-4">
-								<a class="float-r" href="goods.php?id=1032">
+							<li class="clearfix">
+								<a class="float-r product-4" href="goods.php?id=1032">
 									<div class="wrap-img">
 										<img src="themes/ecmoban_dsc/iamges/20170517/old-pic7.png" alt="">
 									</div>
@@ -103,8 +103,8 @@
 									</div>
 								</a>
 							</li>
-							<li class="clearfix product-5">
-								<a class="float-l" href="goods.php?id=688">
+							<li class="clearfix">
+								<a class="float-l product-5" href="goods.php?id=688">
 									<div class="wrap-img">
 										<img src="themes/ecmoban_dsc/iamges/20170517/old-pic8.png" alt="">
 									</div>

@@ -127,8 +127,9 @@
 	border-radius: 6px;
 	background-color: #aa1920;
 }
-.section-2 li {
+.section-2 li a {
 	position: relative;
+	display: block;
 }
 .section-2 .product-1 {
 	top: -135px;
