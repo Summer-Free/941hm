@@ -46,7 +46,7 @@
 							<li class="clearfix">
 								<a class="float-r" href="goods.php?id=34">
 									<div class="wrap-img">
-										<img src="themes/ecmoban_dsc/iamges/20170517/old-pic3.png" alt="">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/old-pic3.png" alt="">
 									</div>
 									<div class="wrap-info">
 										<h4>诗情博古架 非洲花梨 两件套</h4>
@@ -58,7 +58,7 @@
 							<li class="clearfix">
 								<a class="float-l product-1" href="goods.php?id=945">
 									<div class="wrap-img">
-										<img src="themes/ecmoban_dsc/iamges/20170517/old-pic4.png" alt="">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/old-pic4.png" alt="">
 									</div>
 									<div class="wrap-info">
 										<h4>三门博古架 花枝 紫包金</h4>
@@ -70,7 +70,7 @@
 							<li class="clearfi">
 								<a class="float-r  product-2" href="goods.php?id=999">
 									<div class="wrap-img">
-										<img src="themes/ecmoban_dsc/iamges/20170517/old-pic5.png" alt="">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/old-pic5.png" alt="">
 									</div>
 									<div class="wrap-info">
 										<h4>刺猬紫檀餐边柜</h4>
@@ -82,7 +82,7 @@
 							<li class="clearfix">
 								<a class="float-l product-3" href="goods.php?id=1033">
 									<div class="wrap-img">
-										<img src="themes/ecmoban_dsc/iamges/20170517/old-pic6.png" alt="">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/old-pic6.png" alt="">
 									</div>
 									<div class="wrap-info">
 										<h4>刺猬紫檀花架三件套</h4>
@@ -94,7 +94,7 @@
 							<li class="clearfix">
 								<a class="float-r product-4" href="goods.php?id=1032">
 									<div class="wrap-img">
-										<img src="themes/ecmoban_dsc/iamges/20170517/old-pic7.png" alt="">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/old-pic7.png" alt="">
 									</div>
 									<div class="wrap-info">
 										<h4>刺猬紫檀二联柜</h4>
@@ -106,7 +106,7 @@
 							<li class="clearfix">
 								<a class="float-l product-5" href="goods.php?id=688">
 									<div class="wrap-img">
-										<img src="themes/ecmoban_dsc/iamges/20170517/old-pic8.png" alt="">
+										<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/old-pic8.png" alt="">
 									</div>
 									<div class="wrap-info">
 										<h4>刺猬紫檀中式书柜</h4>
@@ -124,5 +124,17 @@
         <!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->
         <!--自定义方法-->
         <script type="text/javascript" src="themes/ecmoban_dsc/js/js/common.js"></script>
+
+        <!--懒加载-->
+        <script type="text/javascript" src="js/jquery.lazyload.js"></script> 
+        <!--开启懒加载-->
+        <script type="text/javascript">
+            $("img.lazy").lazyload({
+            	placeholder: "themes/ecmoban_dsc/images/loadGoods.gif",
+                effect : "fadeIn",
+                threshold : 1000,
+                skip_invisible : false
+            });
+        </script>
 	</body>
 </html>
