@@ -388,13 +388,6 @@ table{border-collapse:collapse;border-spacing:0;}
   z-index:9;
 }
 
-/*全站通用 限制产品图样式*/
-.global-product-img>img {
-  display: inline-block;
-  max-width: 100%;
-  width: 100%;
-}
-
 
 /*新品上市和限时优惠页面 通用产品列表*/
 .common-product-list-1 {
