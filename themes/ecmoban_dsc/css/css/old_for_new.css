@@ -29,7 +29,8 @@
 	padding: 0 29px;
 }
 #main-body .btm {
-	min-height: 3918px;
+	overflow: hidden;
+	height: 3918px;
 	background: url(../../iamges/20170517/old-pic2.jpg) no-repeat top center;
 }
 .section-1 {
