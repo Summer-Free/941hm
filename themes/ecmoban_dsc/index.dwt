@@ -471,7 +471,7 @@
 				</div>
 			
 				<!--商家入驻/广告位-->
-				<div class="sidebar">
+				<div class="sidebar margin-b-10">
 					<a href="partner.php" title="商家入驻">
 						<img class="lazy" width="1200" height="188" data-original="themes/ecmoban_dsc/iamges/20170517/sidebar.jpg" alt="商家入驻">
 					</a>
@@ -685,7 +685,7 @@
 							<div class="content">
 								<h4>{$tjzc_res.title}</h4>
 								<div class="progress">
-									<span style="width: {$tjzc_res.baifen_bi}%;"></span>
+									<div style="width: {$tjzc_res.baifen_bi}%;"></div>
 								</div>
 								<ul class="info clearfix">
 									<li class="li-1">

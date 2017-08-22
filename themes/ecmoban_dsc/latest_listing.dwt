@@ -10,17 +10,34 @@
         <!--header start-->
         <div id="header">
             <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
+
+            <!--slide banner start-->
+            <div class="slide-banner">      
+                <div class="w1200">
+                    <div class="JS-slide">
+                        <ul class="content">
+                            <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner2.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner3.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner4.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner1.jpg" alt="" style="margin: 0 auto" /></a></li>
+                        </ul>
+                        <a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
+                        <a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
+                        <ul class="point">
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--slide banner end-->
         </div>
         <!--header end-->
 
         <!--main body start-->
         <div class="w1200 bg-color-f5f5f5" id="main-body">
-			
-			<!--面包屑导航-->
-			<ul class="breadcrumb clearfix">
-				<li><a href="index.php">首页</a>&gt;</li>
-				<li>新品上市</li>
-			</ul>
 
 			<!--产品列表-->
 			<ul class="common-product-list-1 clearfix">

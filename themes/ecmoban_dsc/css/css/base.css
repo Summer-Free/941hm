@@ -398,7 +398,7 @@ table{border-collapse:collapse;border-spacing:0;}
 
 /*新品上市和限时优惠页面 通用产品列表*/
 .common-product-list-1 {
-  padding-top: 12px;
+  padding-top: 10px;
 }
 .common-product-list-1 li {
   float: left;
@@ -430,7 +430,7 @@ table{border-collapse:collapse;border-spacing:0;}
   color: #fff;
   text-align: center;
   border-radius: 4px;
-  background-color: #f8a21b;
+  background-color: #aa1920;
 }
 
 /*面包屑导航*/

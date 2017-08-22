@@ -41,29 +41,31 @@
         
         <!--main body start-->
         <div class="w1200 bg-color-f5f5f5" id="main-body">
-            <span>&nbsp;</span>
-            <br>
-            <span>&nbsp;</span>
-            <div class="section-2">
-                <ul class="clearfix">
-                <!--{foreach from=$ms_all_sql item=ms_all_sql name=ms_all_sql}-->
-                <!-- {if $smarty.foreach.ms_all_sql.iteration %2 ==1  } -->
-                    <li class="float-l clearfix">
-                <!-- {elseif $smarty.foreach.ms_all_sql.iteration %2==0} -->
-                    <li class="float-r margin-r-0 clearfix">
-                <!--{/if}-->
-                        <a class="float-l" href="goods.php?id={$ms_all_sql.goods_id}"><img class="lazy" width="300" height="233" data-original="{$ms_all_sql.goods_thumb}" alt="{$ms_all_sql.goods_name}" /></a>
-                        <div class="float-r">
-                            <h2>{$ms_all_sql.goods_name}</h2>
-                            <p class="hot">爆款直降 极速送达</p>
-                            <del>&yen;{$ms_all_sql.market_price}</del>
-                            <ins>&yen;{$ms_all_sql.shop_price}</ins>
-                            <a href="goods.php?id={$ms_all_sql.goods_id}">立刻秒</a>
-                        </div>
-                    </li>
+            <!--产品列表-->
+            <ul class="common-product-list-1 clearfix">
+                <!--{foreach item=res from=$res name=res} -->
+                    <!-- {if $smarty.foreach.res.iteration %4 !=0  } -->
+                        <li class="move">
+                    <!-- {elseif $smarty.foreach.res.iteration %4==0} -->
+                        <li class="move margin-r-0">
+                    <!--{/if}--> 
+                            <a href="goods.php?id={$res.goods_id}">
+                                <div class="global-product-img">
+                                    <img class="lazy" width="290" height="290" data-original="{$res.goods_thumb}" alt="" />
+                                </div>
+                                <div class="btm">
+                                    <h3>{$res.goods_name|truncate:15}</h3>
+                                    <p class="clearfix">
+                                        <span class="price float-l">价格: &yen;{$res.shop_price}
+                                        </span>
+                                    </p>
+                                    <span class="btn">立即购买</span>
+                                </div>
+                            </a>
+                        </li>
                 <!--{/foreach}-->
-                </ul>
-            </div>
+
+            </ul>
         </div>
         <!--main body end-->
 
