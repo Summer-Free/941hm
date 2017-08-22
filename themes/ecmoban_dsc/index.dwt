@@ -21,7 +21,7 @@
 						<a class="bar bar-1" href="partner.php" title="你准备好了吗？941红木平台带你搭乘互联网+红木商城谋发展定未来">你准备好了吗？941红木平台带你搭乘互联网+红木商城谋发展定未来</a>
 					</li>
 					<li>
-						<a class="bar bar-2" href="#" title="941红木网: 全球首家红木行业生态链服务商">941红木网: 全球首家红木行业生态链服务商</a>
+						<a class="bar bar-2" href="article.php?id=139 " title="941红木荣获中国红木电商领域最佳商业模式创新奖">941红木荣获中国红木电商领域最佳商业模式创新奖</a>
 					</li>
 				</ul>
 				<div class="wrap-close">
@@ -59,8 +59,10 @@
 	                <div class="float-r">
 	                    <div class="wrap-search clearfix">
 		                    <div class="shopCart">
-								<i></i><a style="direction: none" href="flow.php"><font color="#ff0000">我的购物车</font></a>
-								<span><em>99</em></span>
+		                    	<a class="color-ff0000" href="flow.php">
+									<i></i>我的购物车
+									<span><em>99</em></span>
+								</a>
 		                    </div>
 	                        <div class="ecsc-search">
 		                        <form class="clearfix ecsc-search-form" id="searchForm" name="searchForm" action="search.php" method="get" onSubmit="return checkSearchForm()">
