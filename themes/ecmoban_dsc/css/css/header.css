@@ -89,20 +89,21 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	text-indent: -9999px;
+	height: 59px;
+	/*text-indent: -9999px;*/
 }
-.slide-top-bar .bar-1 {
+/*.slide-top-bar .bar-1 {
 	background: url(../../iamges/20170517/topbar-1.jpg) center center no-repeat;
 }
 .slide-top-bar .bar-2 {
 	background: url(../../iamges/20170517/topbar-2.jpg) center center no-repeat;
-}
+}*/
 .slide-top-bar li {
 	position: relative;
 }
-.slide-top-bar .bar {
+/*.slide-top-bar .bar {
 	height: 59px;
-}
+}*/
 .slide-top-bar .w1200 {
 	position: relative;
 }

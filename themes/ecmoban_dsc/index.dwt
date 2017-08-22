@@ -18,10 +18,16 @@
 			<div class="slide-top-bar">
 				<ul class="JS-slide-top">
 					<li>
-						<a class="bar bar-1" href="partner.php" title="你准备好了吗？941红木平台带你搭乘互联网+红木商城谋发展定未来">你准备好了吗？941红木平台带你搭乘互联网+红木商城谋发展定未来</a>
+						<a href="partner.php"><img src="themes/ecmoban_dsc/iamges/20170517/topbar-1.jpg" alt=""></a>
 					</li>
 					<li>
-						<a class="bar bar-2" href="article.php?id=139 " title="941红木荣获中国红木电商领域最佳商业模式创新奖">941红木荣获中国红木电商领域最佳商业模式创新奖</a>
+						<a href="manufacturers_settled.php"><img src="themes/ecmoban_dsc/iamges/20170517/topbar-2.jpg" alt=""></a>
+					</li>
+					<li>
+						<a href="article.php?id=139"><img src="themes/ecmoban_dsc/iamges/20170517/topbar-3.jpg" alt=""></a>
+					</li>
+					<li>
+						<a href="article.php?id=139"><img src="themes/ecmoban_dsc/iamges/20170517/topbar-4.jpg" alt=""></a>
 					</li>
 				</ul>
 				<div class="wrap-close">
@@ -477,9 +483,18 @@
 			
 				<!--商家入驻/广告位-->
 				<div class="sidebar margin-b-10">
-					<a href="partner.php" title="商家入驻">
-						<img class="lazy" width="1200" height="188" data-original="themes/ecmoban_dsc/iamges/20170517/sidebar.jpg" alt="商家入驻">
-					</a>
+					<ul class="JS-slide-top">
+						<li>
+							<a href="partner.php" title="厂家入驻">
+								<img class="lazy" width="1200" height="188" data-original="themes/ecmoban_dsc/iamges/20170517/sidebar-1.jpg" alt="厂家入驻">
+							</a>
+						</li>
+						<li>
+							<a href="manufacturers_settled.php" title="商家入驻">
+								<img class="lazy" width="1200" height="188" data-original="themes/ecmoban_dsc/iamges/20170517/sidebar-2.jpg" alt="商家入驻">
+							</a>
+						</li>
+					</ul>
 				</div>
 
 				<!--餐厅系列-->

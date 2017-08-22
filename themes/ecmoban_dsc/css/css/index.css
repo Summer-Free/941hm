@@ -556,3 +556,8 @@
 	line-height: 24px;
 	text-align: center;
 }
+
+.sidebar{
+	overflow: hidden;
+	height: 188px;
+}
