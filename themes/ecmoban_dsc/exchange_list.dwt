@@ -42,9 +42,6 @@
     .product-slide .JS-slide .content li {
         height: 376px;
     }
-    .section-2 {
-        padding: 20px 0 0 0;
-    }
     .section-2 .float-r {
         position: relative;
         width: 293px;
@@ -125,16 +122,6 @@
     <!--header end-->
 
     <div class="w1200">
-
-        <!--当前位置 start-->
-         <div class="nch-breadcrumb-layout">
-        	<div class="nch-breadcrumb wrapper" id="ur_here">
-                 <div id="ur_here">
-                  <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
-                 </div>
-            </div>
-         </div>    
-        <!--当前位置 end-->
 
         <!--2017-07-18 新增模块-->
         <div class="section-2 clearfix">

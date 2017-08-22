@@ -21,6 +21,19 @@
 	background-color: #fff;
 	box-shadow: 0 4px 5px 0 #b9b8b8;
 }
+.section-2 .content {
+	position: relative;
+	min-height: 1540px;
+}
+.section-2 ul {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.section-2 ul.active {
+	display: block;
+}
 .section-2 li * {
 	color: #190808;
 }
@@ -37,5 +50,20 @@
 	text-align: center;
 }
 #main-body {
-	padding-bottom: 50px;
+	padding-bottom: 10px;
+}
+.section-2 .tab-nav {
+    text-align: center;
+}
+.section-2 .tab-nav .active {
+    color: #fff;
+    background-color: #aa1920;
+}
+.section-2 .tab-nav a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    background-color: #fff;
 }

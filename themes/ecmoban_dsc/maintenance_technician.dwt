@@ -43,154 +43,308 @@
 
             <!--展示列表-->
             <div class="section-2 clearfix">
-                <ul class="clearfix">
-                    <li class="move">
-                        <a href="javascript:void(0);">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic1.png" alt="王师傅" /></div>
-                            <h4>王师傅</h4>
-                            <p>服务区域：浙江省杭州市</p>
-                            <p>服务类型：家具（保养，装，维修）</p>
-                            <p>工作年限：3年</p>
-                        </a>
-                    </li>
-                    <li class="move">
-                        <a href="javascript:void(0);">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic2.png" alt="李师傅" /></div>
-                            <h4>李师傅</h4>
-                            <p>服务区域：浙江省杭州市</p>
-                            <p>服务类型：家具（保养，维修）</p>
-                            <p>工作年限：4年</p>
-                        </a>
-                    </li>
-                    <li class="move">
-                        <a href="javascript:void(0);">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic3.png" alt="刘师傅" /></div>
-                            <h4>刘师傅</h4>
-                            <p>服务区域：浙江省杭州市</p>
-                            <p>服务类型：家具（搬运，保养，维修）</p>
-                            <p>工作年限：3年</p>
-                        </a>
-                    </li>
-                    <li class="move margin-r-0">
-                        <a href="javascript:void(0);">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic4.png" alt="林师傅" /></div>
-                            <h4>林师傅</h4>
-                            <p>服务区域：上海市</p>
-                            <p>服务类型：家具（搬运，保养，维修）</p>
-                            <p>工作年限：5年</p>
-                        </a>
-                    </li>
-                    <li class="move">
-                        <a href="javascript:void(0);">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic5.png" alt="孙师傅" /></div>
-                            <h4>孙师傅</h4>
-                            <p>服务区域：深圳市</p>
-                            <p>服务类型：家具（保养，维修）</p>
-                            <p>工作年限：4年</p>
-                        </a>
-                    </li>
-                    <li class="move">
-                        <a href="javascript:void(0);">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic6.png" alt="胡师傅" /></div>
-                            <h4>胡师傅</h4>
-                            <p>服务区域：江苏省南京市</p>
-                            <p>服务类型：家具（搬运，保养，维修）</p>
-                            <p>工作年限：3年</p>
-                        </a>
-                    </li>
-                    <li class="move">
-                        <a href="javascript:void(0);">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic7.png" alt="曾师傅" /></div>
-                            <h4>曾师傅</h4>
-                            <p>服务区域：北京市</p>
-                            <p>服务类型：家具（保养，维修）</p>
-                            <p>工作年限：4年</p>
-                        </a>
-                    </li>
-                    <li class="move margin-r-0">
-                        <a href="javascript:void(0);">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic8.png" alt="邓师傅" /></div>
-                            <h4>邓师傅</h4>
-                            <p>服务区域：天津市</p>
-                            <p>服务类型：家具（保养）</p>
-                            <p>工作年限：2年</p>
-                        </a>
-                    </li>
+                <div class="content">
+                    <ul class="active clearfix">
+                        <li class="move">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic1.png" alt="王师傅" /></div>
+                                <h4>王师傅</h4>
+                                <p>服务区域：浙江省杭州市</p>
+                                <p>服务类型：家具（保养，装，维修）</p>
+                                <p>工作年限：3年</p>
+                            </a>
+                        </li>
+                        <li class="move">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic2.png" alt="李师傅" /></div>
+                                <h4>李师傅</h4>
+                                <p>服务区域：浙江省杭州市</p>
+                                <p>服务类型：家具（保养，维修）</p>
+                                <p>工作年限：4年</p>
+                            </a>
+                        </li>
+                        <li class="move">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic3.png" alt="刘师傅" /></div>
+                                <h4>刘师傅</h4>
+                                <p>服务区域：浙江省杭州市</p>
+                                <p>服务类型：家具（搬运，保养，维修）</p>
+                                <p>工作年限：3年</p>
+                            </a>
+                        </li>
+                        <li class="move margin-r-0">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic4.png" alt="林师傅" /></div>
+                                <h4>林师傅</h4>
+                                <p>服务区域：上海市</p>
+                                <p>服务类型：家具（搬运，保养，维修）</p>
+                                <p>工作年限：5年</p>
+                            </a>
+                        </li>
+                        <li class="move">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic5.png" alt="孙师傅" /></div>
+                                <h4>孙师傅</h4>
+                                <p>服务区域：深圳市</p>
+                                <p>服务类型：家具（保养，维修）</p>
+                                <p>工作年限：4年</p>
+                            </a>
+                        </li>
+                        <li class="move">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic6.png" alt="胡师傅" /></div>
+                                <h4>胡师傅</h4>
+                                <p>服务区域：江苏省南京市</p>
+                                <p>服务类型：家具（搬运，保养，维修）</p>
+                                <p>工作年限：3年</p>
+                            </a>
+                        </li>
+                        <li class="move">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic7.png" alt="曾师傅" /></div>
+                                <h4>曾师傅</h4>
+                                <p>服务区域：北京市</p>
+                                <p>服务类型：家具（保养，维修）</p>
+                                <p>工作年限：4年</p>
+                            </a>
+                        </li>
+                        <li class="move margin-r-0">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic8.png" alt="邓师傅" /></div>
+                                <h4>邓师傅</h4>
+                                <p>服务区域：天津市</p>
+                                <p>服务类型：家具（保养）</p>
+                                <p>工作年限：2年</p>
+                            </a>
+                        </li>
 
-                    <li class="move">
-                        <a href="javascript:void(0);">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic9.png" alt="季师傅" /></div>
-                            <h4>季师傅</h4>
-                            <p>服务区域：山东省济南市</p>
-                            <p>服务类型：家具（保养，维修）</p>
-                            <p>工作年限：3年</p>
-                        </a>
-                    </li>
-                    <li class="move">
-                        <a href="javascript:void(0);">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic10.png" alt="郭师傅" /></div>
-                            <h4>郭师傅</h4>
-                            <p>服务区域：山东省青岛市</p>
-                            <p>服务类型：家具（保养，维修）</p>
-                            <p>工作年限：4年</p>
-                        </a>
-                    </li>
-                    <li class="move">
-                        <a href="javascript:void(0);">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic11.png" alt="杜师傅" /></div>
-                            <h4>杜师傅</h4>
-                            <p>服务区域：湖北省武汉市</p>
-                            <p>服务类型：家具（保养，维修）</p>
-                            <p>工作年限：7年</p>
-                        </a>
-                    </li>
-                    <li class="move margin-r-0">
-                        <a href="javascript:void(0);">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic12.png" alt="王师傅" /></div>
-                            <h4>王师傅</h4>
-                            <p>服务区域：广东省广州市</p>
-                            <p>服务类型：家具（保养，维修）</p>
-                            <p>工作年限：2年</p>
-                        </a>
-                    </li>
+                        <li class="move">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic9.png" alt="季师傅" /></div>
+                                <h4>季师傅</h4>
+                                <p>服务区域：山东省济南市</p>
+                                <p>服务类型：家具（保养，维修）</p>
+                                <p>工作年限：3年</p>
+                            </a>
+                        </li>
+                        <li class="move">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic10.png" alt="郭师傅" /></div>
+                                <h4>郭师傅</h4>
+                                <p>服务区域：山东省青岛市</p>
+                                <p>服务类型：家具（保养，维修）</p>
+                                <p>工作年限：4年</p>
+                            </a>
+                        </li>
+                        <li class="move">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic11.png" alt="杜师傅" /></div>
+                                <h4>杜师傅</h4>
+                                <p>服务区域：湖北省武汉市</p>
+                                <p>服务类型：家具（保养，维修）</p>
+                                <p>工作年限：7年</p>
+                            </a>
+                        </li>
+                        <li class="move margin-r-0">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic12.png" alt="王师傅" /></div>
+                                <h4>王师傅</h4>
+                                <p>服务区域：广东省广州市</p>
+                                <p>服务类型：家具（保养，维修）</p>
+                                <p>工作年限：2年</p>
+                            </a>
+                        </li>
 
-                    <li class="move">
-                        <a href="javascript:void(0);">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic13.png" alt="杜师傅" /></div>
-                            <h4>杜师傅</h4>
-                            <p>服务区域：上海市</p>
-                            <p>服务类型：家具（搬运，保养，维修）</p>
-                            <p>工作年限：4年</p>
-                        </a>
-                    </li>
-                    <li class="move">
-                        <a href="javascript:void(0);">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic14.png" alt="李师傅" /></div>
-                            <h4>李师傅</h4>
-                            <p>服务区域：湖南省长沙市</p>
-                            <p>服务类型：家具（搬运，保养，维修）</p>
-                            <p>工作年限：3年</p>
-                        </a>
-                    </li>
-                    <li class="move">
-                        <a href="javascript:void(0);">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic15.png" alt="刘师傅" /></div>
-                            <h4>刘师傅</h4>
-                            <p>服务区域：山东省烟台市</p>
-                            <p>服务类型：家具（搬运，保养，维修）</p>
-                            <p>工作年限：2年</p>
-                        </a>
-                    </li>
-                    <li class="move margin-r-0">
-                        <a href="javascript:void(0);">
-                            <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic16.png" alt="周师傅" /></div>
-                            <h4>周师傅</h4>
-                            <p>服务区域：福建省福州市</p>
-                            <p>服务类型：家具（保养，维修）</p>
-                            <p>工作年限：2年</p>
-                        </a>
-                    </li>
-                </ul>
+                        <li class="move">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic13.png" alt="杜师傅" /></div>
+                                <h4>杜师傅</h4>
+                                <p>服务区域：上海市</p>
+                                <p>服务类型：家具（搬运，保养，维修）</p>
+                                <p>工作年限：4年</p>
+                            </a>
+                        </li>
+                        <li class="move">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic14.png" alt="李师傅" /></div>
+                                <h4>李师傅</h4>
+                                <p>服务区域：湖南省长沙市</p>
+                                <p>服务类型：家具（搬运，保养，维修）</p>
+                                <p>工作年限：3年</p>
+                            </a>
+                        </li>
+                        <li class="move">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic15.png" alt="刘师傅" /></div>
+                                <h4>刘师傅</h4>
+                                <p>服务区域：山东省烟台市</p>
+                                <p>服务类型：家具（搬运，保养，维修）</p>
+                                <p>工作年限：2年</p>
+                            </a>
+                        </li>
+                        <li class="move margin-r-0">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic16.png" alt="周师傅" /></div>
+                                <h4>周师傅</h4>
+                                <p>服务区域：福建省福州市</p>
+                                <p>服务类型：家具（保养，维修）</p>
+                                <p>工作年限：2年</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="clearfix">
+                        <li class="move margin-r-0" data-sort="16">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic1.png" alt="王师傅" /></div>
+                                <h4>王师傅</h4>
+                                <p>服务区域：浙江省杭州市</p>
+                                <p>服务类型：家具（保养，装，维修）</p>
+                                <p>工作年限：3年</p>
+                            </a>
+                        </li>
+                        <li class="move" data-sort="15">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic2.png" alt="李师傅" /></div>
+                                <h4>李师傅</h4>
+                                <p>服务区域：浙江省杭州市</p>
+                                <p>服务类型：家具（保养，维修）</p>
+                                <p>工作年限：4年</p>
+                            </a>
+                        </li>
+                        <li class="move" data-sort="14">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic3.png" alt="刘师傅" /></div>
+                                <h4>刘师傅</h4>
+                                <p>服务区域：浙江省杭州市</p>
+                                <p>服务类型：家具（搬运，保养，维修）</p>
+                                <p>工作年限：3年</p>
+                            </a>
+                        </li>
+                        <li class="move" data-sort="13">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic4.png" alt="林师傅" /></div>
+                                <h4>林师傅</h4>
+                                <p>服务区域：上海市</p>
+                                <p>服务类型：家具（搬运，保养，维修）</p>
+                                <p>工作年限：5年</p>
+                            </a>
+                        </li>
+                        <li class="move margin-r-0" data-sort="12">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic5.png" alt="孙师傅" /></div>
+                                <h4>孙师傅</h4>
+                                <p>服务区域：深圳市</p>
+                                <p>服务类型：家具（保养，维修）</p>
+                                <p>工作年限：4年</p>
+                            </a>
+                        </li>
+                        <li class="move" data-sort="11">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic6.png" alt="胡师傅" /></div>
+                                <h4>胡师傅</h4>
+                                <p>服务区域：江苏省南京市</p>
+                                <p>服务类型：家具（搬运，保养，维修）</p>
+                                <p>工作年限：3年</p>
+                            </a>
+                        </li>
+                        <li class="move" data-sort="10">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic7.png" alt="曾师傅" /></div>
+                                <h4>曾师傅</h4>
+                                <p>服务区域：北京市</p>
+                                <p>服务类型：家具（保养，维修）</p>
+                                <p>工作年限：4年</p>
+                            </a>
+                        </li>
+                        <li class="move" data-sort="9">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic8.png" alt="邓师傅" /></div>
+                                <h4>邓师傅</h4>
+                                <p>服务区域：天津市</p>
+                                <p>服务类型：家具（保养）</p>
+                                <p>工作年限：2年</p>
+                            </a>
+                        </li>
+
+                        <li class="move margin-r-0" data-sort="8">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic9.png" alt="季师傅" /></div>
+                                <h4>季师傅</h4>
+                                <p>服务区域：山东省济南市</p>
+                                <p>服务类型：家具（保养，维修）</p>
+                                <p>工作年限：3年</p>
+                            </a>
+                        </li>
+                        <li class="move" data-sort="7">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic10.png" alt="郭师傅" /></div>
+                                <h4>郭师傅</h4>
+                                <p>服务区域：山东省青岛市</p>
+                                <p>服务类型：家具（保养，维修）</p>
+                                <p>工作年限：4年</p>
+                            </a>
+                        </li>
+                        <li class="move" data-sort="6">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic11.png" alt="杜师傅" /></div>
+                                <h4>杜师傅</h4>
+                                <p>服务区域：湖北省武汉市</p>
+                                <p>服务类型：家具（保养，维修）</p>
+                                <p>工作年限：7年</p>
+                            </a>
+                        </li>
+                        <li class="move" data-sort="5">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic12.png" alt="王师傅" /></div>
+                                <h4>王师傅</h4>
+                                <p>服务区域：广东省广州市</p>
+                                <p>服务类型：家具（保养，维修）</p>
+                                <p>工作年限：2年</p>
+                            </a>
+                        </li>
+
+                        <li class="move margin-r-0" data-sort="4">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic13.png" alt="杜师傅" /></div>
+                                <h4>杜师傅</h4>
+                                <p>服务区域：上海市</p>
+                                <p>服务类型：家具（搬运，保养，维修）</p>
+                                <p>工作年限：4年</p>
+                            </a>
+                        </li>
+                        <li class="move" data-sort="3">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic14.png" alt="李师傅" /></div>
+                                <h4>李师傅</h4>
+                                <p>服务区域：湖南省长沙市</p>
+                                <p>服务类型：家具（搬运，保养，维修）</p>
+                                <p>工作年限：3年</p>
+                            </a>
+                        </li>
+                        <li class="move" data-sort="2">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic15.png" alt="刘师傅" /></div>
+                                <h4>刘师傅</h4>
+                                <p>服务区域：山东省烟台市</p>
+                                <p>服务类型：家具（搬运，保养，维修）</p>
+                                <p>工作年限：2年</p>
+                            </a>
+                        </li>
+                        <li class="move" data-sort="1">
+                            <a href="javascript:void(0);">
+                                <div><img src="themes/ecmoban_dsc/iamges/20170517/js-pic16.png" alt="周师傅" /></div>
+                                <h4>周师傅</h4>
+                                <p>服务区域：福建省福州市</p>
+                                <p>服务类型：家具（保养，维修）</p>
+                                <p>工作年限：2年</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-nav">
+                    <a class="active transition" href="javascript:void(0);">1</a>
+                    <a class="transition" href="javascript:void(0);">2</a>
+                </div>
             </div>
         </div>
         <!--main body end-->
