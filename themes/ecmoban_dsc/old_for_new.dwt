@@ -9,128 +9,115 @@
 	<body>
         <!--header start-->
         <div id="header">
-                <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
-                <!--banner start-->
-                <div class="slide-banner bg-color-f5f5f5">      
-                        <div class="w1200">
-                        	<div class="JS-slide">
-                        		<ul class="content">
-                        			<li class="active">
-										<a href="old_for_new_form.php" title="家具以旧换新，立即估价"><img src="themes/ecmoban_dsc/iamges/20170517/oldnew-banner-1.jpg" alt="家具以旧换新" /></a>
-									</li>
-								</ul>
-							</div>
-                        </div>
-                </div>
-                <!--banner end-->
+            <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
         </div>
         <!--header end-->
 
 		<!--main body start-->
-		<div class="w1200 bg-color-f5f5f5">
-			<div class="section-1">
-				<div>
-					<span>1</span>
-					<span class="s2">2</span>
-					<span class="s3">3</span>
-					<span class="s4">4</span>
+		<div id="main-body">
+			<div class="top">
+				<h2>以物换物</h2>
+				<p>旧家具抵价购买新家</p>
+				<div class="position">
+					<a href="old_for_new_form.php">立即估价</a>
+					<div class="clearfix color-aa1920">
+						家具磨损<span>|</span>
+						家具破裂<span>|</span>
+						家具老旧
+					</div>
 				</div>
-				<ul>
-					<li class="li1">
-						<span class="img1"></span>
-						描述试用情况
-					</li>
-					<li class="li2">
-						<span class="img2"></span>
-						线上估价，提交订单
-					</li>
-					<li class="li3">
-						<span class="img3"></span>
-						发放抵用消费券
-					</li>
-					<li class="margin-r-0 li4">
-						<span class="img4"></span>
-						在线购物
-					</li>				
-				</ul>
 			</div>
+			<div class="btm">
+				<div class="content w1200">
+					
+					<div class="section-1">
+						<h3>只需5步，旧家具换购新家具</h3>
+						<img src="themes/ecmoban_dsc/iamges/20170517/old-pic1.png" alt="">
+						<span class="step-1">描述使用情况</span>
+						<span class="step-2">提交订单，线上估价</span>
+						<span class="step-3">线下确认与搬运</span>
+						<span class="step-4">在线购物</span>
+						<span class="step-5">发放购物券</span>
+					</div>
 
-			<div class="section-2 Chinese-style bg-color-ecebec">
-				<h2>浪漫新中式</h2>
-				<ul>
-					<li class="clearfix">
-						<a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/free-product5.png" alt="" /></a>
-						<dl class="float-r product-info">
-							<dt><h3>刺猬紫檀矩形博古架</h3></dt>
-							<dd>原木纹理，色泽润雅，精致工艺</dd>
-							<dd class="price">&yen;6543</dd>
-							<dd>把优雅带回家</dd>
-							<dd><a href="#">立即抢购</a></dd>
-						</dl>
-					</li>
-					<li class="clearfix margin-t-45">
-						<a class="float-r" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/oldnew-product-1.png" alt="" /></a>
-						<dl class="float-l product-info">
-							<dt><h3>刺猬紫檀矩形博古架</h3></dt>
-							<dd>原木纹理，色泽润雅，精致工艺</dd>
-							<dd class="price">&yen;6543</dd>
-							<dd>把优雅带回家</dd>
-							<dd><a href="#">立即抢购</a></dd>
-						</dl>
-					</li>
-				</ul>
-			</div>
-
-			<div class="section-2 Qing-style bg-color-f5f5f5">
-				<h2>奢华清式家具</h2>
-				<ul>
-					<li class="clearfix">
-						<a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/free-product5.png" alt="" /></a>
-						<dl class="float-r product-info">
-							<dt><h3>刺猬紫檀矩形博古架</h3></dt>
-							<dd>原木纹理，色泽润雅，精致工艺</dd>
-							<dd class="price">&yen;6543</dd>
-							<dd>把优雅带回家</dd>
-							<dd><a href="#">立即抢购</a></dd>
-						</dl>
-					</li>
-					<li class="clearfix margin-t-45">
-						<a class="float-r" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/oldnew-product-1.png" alt="" /></a>
-						<dl class="float-l product-info">
-							<dt><h3>刺猬紫檀矩形博古架</h3></dt>
-							<dd>原木纹理，色泽润雅，精致工艺</dd>
-							<dd class="price">&yen;6543</dd>
-							<dd>把优雅带回家</dd>
-							<dd><a href="#">立即抢购</a></dd>
-						</dl>
-					</li>
-				</ul>
-			</div>
-
-			<div class="section-2 Ming-style bg-color-ecebec">
-				<h2>简约明式家具</h2>
-				<ul>
-					<li class="clearfix">
-						<a class="float-l" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/free-product5.png" alt="" /></a>
-						<dl class="float-r product-info">
-							<dt><h3>刺猬紫檀矩形博古架</h3></dt>
-							<dd>原木纹理，色泽润雅，精致工艺</dd>
-							<dd class="price">&yen;6543</dd>
-							<dd>把优雅带回家</dd>
-							<dd><a href="#">立即抢购</a></dd>
-						</dl>
-					</li>
-					<li class="clearfix margin-t-45">
-						<a class="float-r" href="#"><img src="themes/ecmoban_dsc/iamges/20170517/oldnew-product-1.png" alt="" /></a>
-						<dl class="float-l product-info">
-							<dt><h3>刺猬紫檀矩形博古架</h3></dt>
-							<dd>原木纹理，色泽润雅，精致工艺</dd>
-							<dd class="price">&yen;6543</dd>
-							<dd>把优雅带回家</dd>
-							<dd><a href="#">立即抢购</a></dd>
-						</dl>
-					</li>
-				</ul>
+					<div class="section-2">
+						<h3>热门推荐</h3>
+						<ul>
+							<li class="clearfix">
+								<a class="float-r" href="goods.php?id=34">
+									<div class="wrap-img">
+										<img src="themes/ecmoban_dsc/iamges/20170517/old-pic3.png" alt="">
+									</div>
+									<div class="wrap-info">
+										<h4>诗情博古架 非洲花梨 两件套</h4>
+										<span class="price">价格 : <em>810</em></span>
+										<span class="buy">购买</span>
+									</div>
+								</a>
+							</li>
+							<li class="clearfix product-1">
+								<a class="float-l" href="goods.php?id=945">
+									<div class="wrap-img">
+										<img src="themes/ecmoban_dsc/iamges/20170517/old-pic4.png" alt="">
+									</div>
+									<div class="wrap-info">
+										<h4>三门博古架 花枝 紫包金</h4>
+										<span class="price">价格 : <em>24500</em></span>
+										<span class="buy">购买</span>
+									</div>
+								</a>
+							</li>
+							<li class="clearfix product-2">
+								<a class="float-r" href="goods.php?id=999">
+									<div class="wrap-img">
+										<img src="themes/ecmoban_dsc/iamges/20170517/old-pic5.png" alt="">
+									</div>
+									<div class="wrap-info">
+										<h4>刺猬紫檀餐边柜</h4>
+										<span class="price">价格 : <em>7900</em></span>
+										<span class="buy">购买</span>
+									</div>
+								</a>
+							</li>
+							<li class="clearfix product-3">
+								<a class="float-l" href="goods.php?id=1033">
+									<div class="wrap-img">
+										<img src="themes/ecmoban_dsc/iamges/20170517/old-pic6.png" alt="">
+									</div>
+									<div class="wrap-info">
+										<h4>刺猬紫檀花架三件套</h4>
+										<span class="price">价格 : <em>6100</em></span>
+										<span class="buy">购买</span>
+									</div>
+								</a>
+							</li>
+							<li class="clearfix product-4">
+								<a class="float-r" href="goods.php?id=1032">
+									<div class="wrap-img">
+										<img src="themes/ecmoban_dsc/iamges/20170517/old-pic7.png" alt="">
+									</div>
+									<div class="wrap-info">
+										<h4>刺猬紫檀二联柜</h4>
+										<span class="price">价格 : <em>5500</em></span>
+										<span class="buy">购买</span>
+									</div>
+								</a>
+							</li>
+							<li class="clearfix product-5">
+								<a class="float-l" href="goods.php?id=688">
+									<div class="wrap-img">
+										<img src="themes/ecmoban_dsc/iamges/20170517/old-pic8.png" alt="">
+									</div>
+									<div class="wrap-info">
+										<h4>刺猬紫檀中式书柜</h4>
+										<span class="price">价格 : <em>9300</em></span>
+										<span class="buy">购买</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!--main body end-->

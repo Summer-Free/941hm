@@ -61,7 +61,7 @@
 								<span class="btn">立即购买</span>
 							</div>
 						</a>
-							</li>
+					</li>
 				<!--{/foreach}-->
 			</ul>
         </div>
