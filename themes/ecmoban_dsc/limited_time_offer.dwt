@@ -56,7 +56,7 @@
 								<p class="clearfix">
 									<span class="price float-l">价格: &yen;{$xsyh_res.shop_price}
 									</span>
-									<del class="float-r">&yen; 999999</del>
+									<del class="float-r">&yen; {$xsyh_res.market_price}</del>
 								</p>
 								<span class="btn">立即购买</span>
 							</div>

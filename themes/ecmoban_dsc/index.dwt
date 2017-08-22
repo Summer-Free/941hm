@@ -405,7 +405,7 @@
 										<h3>{$xs_p06.goods_name|truncate:22}</h3>
 										<div class="sprice clearfix">
 											<ins class="float-l color-aa1920">&yen; {$xs_p06.shop_price}</ins>
-											<del class="float-r">&yen; 999999</del>
+											<del class="float-r">&yen; {$xs_p06.market_price}</del>
 										</div>
 									</div>
 								</a>
