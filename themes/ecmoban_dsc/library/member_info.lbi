@@ -4,7 +4,7 @@
 {if $user_info}
 	<div class="success">
 		<div class="clearfix">
-			<a class="float-l" href="user.php">账号管理</a>
+			<a class="float-l" href="#">账号管理</a>
 			<a class="float-r" href="{$site_domain}user.php?act=logout">退出</a>
 		</div>
 		<img src="themes/ecmoban_dsc/iamges/20170517/idx-pic1.png" alt="">
