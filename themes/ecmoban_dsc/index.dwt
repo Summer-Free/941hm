@@ -598,7 +598,7 @@
 										<img class="lazy" data-original="{$sf_sql.goods_thumb}" width="220" height="220" alt="">
 									</div>
 									<div class="wrap-info">
-										<h3>{$sf_sql.goods_name|truncate:22}</h3>
+										<h3>{$sf_sql.goods_name|truncate:18}</h3>
 										<div class="price clearfix">
 											<ins class="float-l color-aa1920">&yen; {$sf_sql.shop_price}</ins>
 											<del class="float-r">&yen; {$sf_sql.market_price}</del>
