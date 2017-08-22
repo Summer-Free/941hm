@@ -80,7 +80,7 @@
 						</div>
 						<div class="clearfix">
 							<label for="name">手机号码 : </label>
-							<input type="text" id="phone" name="phone" placeholder="{$mobile_phone}" />
+							<input type="text" id="phone" name="phone" value="{$mobile_phone}" />
 						</div>
 						<div class="clearfix">
 							<label for="name">地址 : </label>
