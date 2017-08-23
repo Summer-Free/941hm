@@ -474,7 +474,7 @@
 							<a class="border-b-0" href="brandn.php?id=21" title="满天星">
 								<img class="lazy" width="150" height="70" data-original="themes/ecmoban_dsc/iamges/20170517/mtxhm.jpg" alt="满天星">
 							</a>
-							<a class="border-r-0" href="brandn.php?id=68" title="南国红木">
+							<a class="border-b-0 border-r-0" href="brandn.php?id=68" title="南国红木">
 								<img class="lazy" width="150" height="70" data-original="themes/ecmoban_dsc/iamges/20170517/nghm.jpg" alt="南国红木">
 							</a>
 						</dd>

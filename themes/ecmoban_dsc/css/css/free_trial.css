@@ -17,7 +17,6 @@
 }
 
 #main-body .btm {
-	overflow: hidden;
 	height: 3913px;
 	background: url(../../iamges/20170517/free-pic2.jpg) no-repeat top center;
 }
@@ -27,7 +26,7 @@
 	padding: 72px 0 0 86px;
 	width: 1030px;
 	height: 393px;
-	box-shadow: 0 0 50px 15px #c0a6a7;
+	box-shadow: 0 10px 105px 3px rgba(122,82,18,.75);
 	background-color: #ee9811;
 }
 .section-1 img,
