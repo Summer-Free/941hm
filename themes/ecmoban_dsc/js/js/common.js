@@ -671,36 +671,36 @@
 
 $(function() {
 
-	//当前页面高亮显示
-	function navHighlight() {
+	//当前页面高亮显示 (2017/8/18 改版后，这个功能成为鸡肋，遂，注释之)
+	// function navHighlight() {
 
-		var navItem = $("#header .main-nav>li>a"),
-			curHref = location.href;
+	// 	var navItem = $("#header .main-nav>li>a"),
+	// 		curHref = location.href;
 
-			navItem.each(function() {
+	// 		navItem.each(function() {
 
-				var item_href = $(this).attr("href");
+	// 			var item_href = $(this).attr("href");
 
-				if(curHref.indexOf(item_href) !== -1) {
-					$(this).parent().addClass("active")
-					.siblings().removeClass("active");
-				}
-				else if(curHref == "http://www.941hm.com/" || "http://localhost/941hm/") {
-					navItem.find("[href='index.php']").parent()
-						.addClass("active")
-						.siblings()
-						.removeClass("active");
-				}
-				else {
-					$(this).parent().removeClass("active");
-				};
+	// 			if(curHref.indexOf(item_href) !== -1) {
+	// 				$(this).parent().addClass("active")
+	// 				.siblings().removeClass("active");
+	// 			}
+	// 			else if(curHref == "http://www.941hm.com/" || "http://localhost/941hm/") {
+	// 				navItem.find("[href='index.php']").parent()
+	// 					.addClass("active")
+	// 					.siblings()
+	// 					.removeClass("active");
+	// 			}
+	// 			else {
+	// 				$(this).parent().removeClass("active");
+	// 			};
 
-			});
+	// 		});
 
-	};
+	// };
 
 	//调用
-	navHighlight();
+	// navHighlight();
 
 	//添加了 类名为 showMsg 的元素将会触发弹窗
 	$(".showMsg").on("click",function(e) {

@@ -9,75 +9,111 @@
         <!--header start-->
         <div id="header">
             <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
-            <!--slide banner start-->
-            <div class="slide-banner">      
-                <div class="w1200">
-                    <div class="JS-slide">
-                        <ul class="content">
-                            <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/free-banner1.jpg" alt=""></a></li>
-                            <li><a href="goods.php?id=981"><img src="themes/ecmoban_dsc/iamges/20170517/free-banner2.jpg" alt=""></a></li>
-                            <li><a href="goods.php?id=1007"><img src="themes/ecmoban_dsc/iamges/20170517/free-banner3.jpg" alt=""></a></li>
-                            <li><a href="goods.php?id=651"><img src="themes/ecmoban_dsc/iamges/20170517/free-banner4.jpg" alt=""></a></li>
-                        </ul>
-                        <a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
-                        <a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
-                        <ul class="point">
-                            <li class="active"></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!--slide banner end-->
         </div>
         <!--header end-->
 
         <!--main body start-->
-        <div class="w1200 bg-color-f5f5f5" id="main-body">
-            <div class="section-1">
-                <ul class="clearfix">
-                    <li><a href="#" title="我的试用"><img class="lazy" width="320" height="478" data-original="themes/ecmoban_dsc/iamges/20170517/free-pic1.jpg" alt=""></a></li>
-                    <li><a href="article.php?id=170" title="试用流程" target="_blank"><img class="lazy" width="320" height="478" data-original="themes/ecmoban_dsc/iamges/20170517/free-pic2.jpg" alt=""></a></li>
-                    <li class="margin-r-0"><a href="exchange.php" target="_blank" title="积分换购"><img class="lazy" width="320" height="478" data-original="themes/ecmoban_dsc/iamges/20170517/free-pic3.jpg" alt=""></a></li>
-                </ul>
+        <div id="main-body">
+            <div class="top">
+                <h2>免费试用</h2>
+                <div class="position">
+                    <p>免费申请，试用过程无需支付任何费用</p>
+                    <p>申请成功后我们的工作人员会电话与您联系，请填写正确的地址与号码</p>
+                    <p>收到货后您需如实提交真实的试用报告，无需返还试用商品</p>
+                    <p>优秀报告可提升您下一次申请成功几率</p>
+                </div>
             </div>
+            <div class="btm">
+                <div class="content w1200">
+                    
+                    <div class="section-1 clearfix">
+                        <h3>试用流程</h3>
+                        <img src="themes/ecmoban_dsc/iamges/20170517/free-pic1.png" alt="">
+                        <span class="step-1">申请试用</span>
+                        <span class="step-2">提交信息</span>
+                        <span class="step-3">等待审核</span>
+                        <span class="step-4">被抽中/未抽中</span>
+                        <span class="step-5">随机抽取</span>
+                    </div>
 
-            <div class="section-2 clearfix">
-                <a href="free_trial_detail.php?id=1235" id="jumpHere"><img class="lazy" width="490" height="344" data-original="themes/ecmoban_dsc/iamges/20170517/free-product1.jpg" alt="" /></a>
-                <a href="free_trial_detail.php?id=974" class="margin-r-0"><img class="lazy" width="490" height="344" data-original="themes/ecmoban_dsc/iamges/20170517/free-product2.jpg" alt="" /></a>
-                <a href="free_trial_detail.php?id=1054"><img class="lazy" width="490" height="344" data-original="themes/ecmoban_dsc/iamges/20170517/free-product3.jpg" alt="" /></a>
-                <a href="free_trial_detail.php?id=1039" class="margin-r-0"><img class="lazy" width="490" height="344" data-original="themes/ecmoban_dsc/iamges/20170517/free-product4.jpg" alt="" /></a>
-            </div>
-
-            <div class="section-3 clearfix">
-                <img class="lazy" width="576" height="395" data-original="themes/ecmoban_dsc/iamges/20170517/free-product5.png" alt="">
-                <dl>
-                    <dt>刺猬紫檀琴桌两件套</dt>
-                    <dd>原木纹理，色泽润雅，精致工艺</dd>
-                    <dd>试用好评率100%</dd>
-                    <dd>申请即可试用</dd>
-                    <dd><a href="free_trial_detail.php?id=1035">立即使用</a></dd>
-                </dl>
-            </div>
-
-            <div class="section-4 padding-t-60 clearfix">
-                <a href="free_trial_detail.php?id=1034"><img class="lazy" width="530" height="350" data-original="themes/ecmoban_dsc/iamges/20170517/free-product5.jpg" alt="" /></a>
-                <a href="free_trial_detail.php?id=1018" class="margin-r-0"><img class="lazy" width="530" height="350" data-original="themes/ecmoban_dsc/iamges/20170517/free-product6.jpg" alt="" /></a>
-                <a href="free_trial_detail.php?id=992"><img class="lazy" width="530" height="350" data-original="themes/ecmoban_dsc/iamges/20170517/free-product7.jpg" alt="" /></a>
-                <a href="free_trial_detail.php?id=848" class="margin-r-0"><img class="lazy" width="530" height="350" data-original="themes/ecmoban_dsc/iamges/20170517/free-product8.jpg" alt="" /></a>
-            </div>
-
-            <div class="section-3 clearfix">
-                <img class="lazy" width="537" height="462" data-original="themes/ecmoban_dsc/iamges/20170517/free-product6.png" alt="">
-                <dl>
-                    <dt>刺猬紫檀二联柜</dt>
-                    <dd>时尚典雅，纹理细腻，造型流畅</dd>
-                    <dd>申请率90%</dd>
-                    <dd>申请即可试用</dd>
-                    <dd><a href="free_trial_detail.php?id=1032">立即使用</a></dd>
-                </dl>
+                    <div class="section-2">
+                        <h3>试用商品</h3>
+                        <ul>
+                            <li class="clearfix">
+                                <a class="float-r" href="goods.php?id=669">
+                                    <div class="wrap-img">
+                                        <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/free-pic3.png" width="342" height="420" alt="">
+                                    </div>
+                                    <div class="wrap-info">
+                                        <h4>圆形鞋柜  刺猬紫檀  新中式</h4>
+                                        <span class="price">市场价 : <em>3100</em></span>
+                                        <span class="buy">申请试用</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="clearfix">
+                                <a class="float-l product-1" href="goods.php?id=661">
+                                    <div class="wrap-img">
+                                        <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/free-pic4.png" width="313" height="477" alt="">
+                                    </div>
+                                    <div class="wrap-info">
+                                        <h4>茶水柜  刺猬紫檀  新中式</h4>
+                                        <span class="price">市场价 : <em>3200</em></span>
+                                        <span class="buy">申请试用</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="clearfix">
+                                <a class="float-r  product-2" href="goods.php?id=78">
+                                    <div class="wrap-img">
+                                        <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/free-pic5.png" width="302" height="602" alt="">
+                                    </div>
+                                    <div class="wrap-info">
+                                        <h4>穿衣镜  缅甸花梨  单间</h4>
+                                        <span class="price">市场价 : <em>4550</em></span>
+                                        <span class="buy">申请试用</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="clearfix">
+                                <a class="float-l product-3" href="goods.php?id=1415">
+                                    <div class="wrap-img">
+                                        <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/free-pic6.png" width="495" height="422" alt="">
+                                    </div>
+                                    <div class="wrap-info">
+                                        <h4>东方富贵六斗柜 阔叶黄檀 黑酸枝</h4>
+                                        <span class="price">市场价 : <em>8450</em></span>
+                                        <span class="buy">申请试用</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="clearfix">
+                                <a class="float-r product-4" href="goods.php?id=52">
+                                    <div class="wrap-img">
+                                        <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/free-pic7.png" width="420" height="462" alt="">
+                                    </div>
+                                    <div class="wrap-info">
+                                        <h4>小海棠博古架  非洲花梨  两件套</h4>
+                                        <span class="price">市场价 : <em>6300</em></span>
+                                        <span class="buy">申请试用</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="clearfix">
+                                <a class="float-l product-5" href="goods.php?id=964">
+                                    <div class="wrap-img">
+                                        <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/free-pic8.png" width="452" height="419" alt="">
+                                    </div>
+                                    <div class="wrap-info">
+                                        <h4>四门衣柜  紫包金  两件</h4>
+                                        <span class="price">市场价 : <em>63500</em></span>
+                                        <span class="buy">申请试用</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         

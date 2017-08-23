@@ -1,53 +1,140 @@
-.section-1 {
-	padding: 75px 90px;
+#main-body .top {
+	position: relative;
+	height: 852px;
+	background: url(../../iamges/20170517/free-pic1.jpg) no-repeat top center;
 }
-.section-1 li {
-	float: left;
-	margin-right: 27px;
-	border: 1px solid #d9dbdd;
-	box-shadow: 0 2px 8px 0 #d9d8d8;
+#main-body .top>h2 {
+	text-indent: -9999px;
 }
-.section-2 {
-	padding: 30px 65px 90px;
-}
-.section-2 a {
-	float: left;
-	margin: 0 90px 30px 0;
-}
-.section-3 {
-	padding: 145px 110px 145px 83px;
-	background-color: #ecebec;
-}
-.section-3 img {
-	float: left;
-}
-.section-3 dl {
-	float: right;
+#main-body .top .position {
+	position: absolute;
+	top: 300px;
+	width: 100%;
+	font-size: 30px;
+	color: #a36402;
+	line-height: 1.6;
 	text-align: center;
 }
-.section-3 dt {
-	padding-top: 75px;
-	padding-bottom: 20px;
-	font-size: 32px;
+
+#main-body .btm {
+	overflow: hidden;
+	height: 3913px;
+	background: url(../../iamges/20170517/free-pic2.jpg) no-repeat top center;
 }
-.section-3 dd {
-	font-size: 25px;
-	line-height: 2;
+.section-1 {
+	position: relative;
+	margin: 0 auto;
+	padding: 72px 0 0 86px;
+	width: 1030px;
+	height: 393px;
+	box-shadow: 0 0 50px 15px #c0a6a7;
+	background-color: #ee9811;
 }
-.section-3 dd a {
-	margin-top: 15px;
-	display: inline-block;
-	width: 112px;
-	height: 29px;
-	text-indent: -9999px;
-	background-image: url(../../iamges/20170517/sprite-1.png);
-	background-repeat: no-repeat;
-	background-position: -388px 0;
-}
-.section-4 {
-	padding: 80px 35px 60px;
-}
-.section-4 a {
+.section-1 img,
+.section-1 h3 {
 	float: left;
-	margin: 0 70px 30px 0;
+}
+.section-1 h3 {
+	margin-right: 97px;
+	width: 60px;
+	font-size: 60px;
+	color: #fff;
+	line-height: 1;
+}
+.section-1 span {
+	position: absolute;
+	color: #fff;
+	font-size: 20px;
+}
+.section-1 .step-1,
+.section-1 .step-2,
+.section-1 .step-3 {
+	top: 175px;
+}
+.section-1 .step-4,
+.section-1 .step-5 {
+	top: 320px;
+}
+.section-1 .step-1 {
+	left: 254px;
+}
+.section-1 .step-2 {
+	left: 490px;
+}
+.section-1 .step-3 {
+	left: 723px;
+}
+.section-1 .step-4 {
+	left: 333px;
+}
+.section-1 .step-5 {
+	left: 614px;
+}
+.section-2 {
+	text-align: center;
+	padding-top: 70px;
+}
+.section-2 h3 {
+	margin: 0 auto 118px;
+	width: 582px;
+	height: 153px;
+	text-indent: -9999px;
+	background: url(../../iamges/20170517/free-pic2.png) no-repeat;
+}
+.section-2 .wrap-img {
+	width: 658px;
+	background: url(../../iamges/20170517/free-pic-bg.png) no-repeat left bottom;
+}
+.section-2 .wrap-img img {
+	position: relative;
+	bottom: 24px;
+	display: inline-block;
+}
+.section-2 h4 {
+	padding: 34px 0 18px 0;
+	font-size: 24px;
+	line-height: 1;
+}
+.section-2 .price,
+.section-2 .buy {
+	display: inline-block;
+	line-height: 39px;
+}
+.section-2 .price {
+	padding-right: 25px;
+	font-size: 20px;
+}
+.section-2 .price em {
+	display: inline-block;
+	padding-left: 5px;
+	font-size: 36px;
+}
+.section-2 .buy {
+	position: relative;
+	top: -5px;
+	width: 107px;
+	height: 39px;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 6px;
+	background-color: #ee7c1b;
+}
+.section-2 li a {
+	position: relative;
+	display: block;
+}
+.section-2 .product-1 {
+	top: -167px;
+}
+.section-2 .product-2 {
+	top: -405px;
+}
+.section-2 .product-3 {
+	top: -396px;
+}
+.section-2 .product-4 {
+	top: -449px;
+}
+.section-2 .product-5 {
+	top: -440px;
 }
