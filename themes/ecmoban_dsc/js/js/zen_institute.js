@@ -31,7 +31,5 @@ $(function() {
 	//回归自然
 	tabNav(".section-7 .tab-nav li");
 
-	//锚点平滑滚动
-	$(".section-1 a").anchorScroll();
 
 });
