@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="zh-cn">
+    <head>
+        <!--首页CSS以及部分通用部分的合并LBI-->
+        <!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem -->
+        <!--本页专用-->
+        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/zen_institute_list.css">      
+    </head> 
+    <body>
+        
+        <!--header start-->
+        <div id="header">
+            <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
+        </div>
+        <!--header end-->
+
+        <!--main body start-->
+        <div class="bg-color-f7f7f7" id="main-body" style="padding-bottom: 50px;">
+            <div class="w1200">
+                
+                <div class="section-1 common-temp bg-color-fff" id="ccyw">
+                    <div class="head clearfix">
+                        <h2>禅茶一味&nbsp;&nbsp;></h2>
+                        <ul class="tab-nav clearfix">
+                            <li class="active">视频</li>
+                            <li>文章</li>
+                        </ul>
+                        <a href="#">查看更多</a>
+                    </div>
+                    <div class="content">
+                        <div class="active">
+                            <ul class="clearfix wrap-video">
+                                <li>
+                                    <a href="zen_institute_video_detail.php?id=1">
+                                        <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" title="听禅音，心旦定" src="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" style="display: block;"></div>
+                                        <h3>听禅音，心旦定</h3>
+                                        <p>听禅音，心旦定</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="zen_institute_video_detail.php?id=2">
+                                        <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" title="大愿法师《禅与生活》" src="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" style="display: block;"></div>
+                                        <h3>大愿法师《禅与生活》</h3>
+                                        <p>大愿法师《禅与生活》</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="zen_institute_video_detail.php?id=3">
+                                        <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" title="学茶泡茶" src="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" style="display: block;"></div>
+                                        <h3>学茶泡茶</h3>
+                                        <p>学茶泡茶</p>
+                                    </a>
+                                </li>
+                                <li class="margin-r-0">
+                                    <a href="zen_institute_video_detail.php?id=4">
+                                        <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" title="龙井问茶-杭州短行记" src="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" style="display: block;"></div>
+                                        <h3>龙井问茶-杭州短行记</h3>
+                                        <p>龙井问茶-杭州短行记</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="zen_institute_video_detail.php?id=5">
+                                        <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" title="《黄庭禅坐》张德芬旁白" src="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" style="display: block;"></div>
+                                        <h3>《黄庭禅坐》张德芬旁白</h3>
+                                        <p>《黄庭禅坐》张德芬旁...</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="zen_institute_video_detail.php?id=6">
+                                        <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" title="另类的食物烹调之茶宴" src="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" style="display: block;"></div>
+                                        <h3>另类的食物烹调之茶宴</h3>
+                                        <p>另类的食物烹调之茶宴</p>
+                                    </a>
+                                </li>
+                                    <li>
+                                        <a href="zen_institute_video_detail.php?id=7">
+                                        <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" title="静坐中的动中禅+心法" src="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" style="display: block;"></div>
+                                        <h3>静坐中的动中禅+心法</h3>
+                                        <p>静坐中的动中禅+心法</p>
+                                    </a>
+                                </li>
+                                    <li class="margin-r-0">
+                                        <a href="zen_institute_video_detail.php?id=8">
+                                        <div><img class="lazy" width="285" height="137" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" title="不懂茶，看普洱茶八八青之父陈国义教你泡茶" src="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" style="display: block;"></div>
+                                        <h3>不懂茶，看普洱茶八八青之父陈国...</h3>
+                                        <p>不懂茶，看普洱茶八八...</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="wrap-article clearfix">
+                                <li>
+                                    <a class="clearfix" href="#">
+                                        <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                        <div>
+                                            <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
+                                            <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="margin-r-0">
+                                    <a class="clearfix" href="#">
+                                        <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                        <div>
+                                            <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
+                                            <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="clearfix" href="#">
+                                        <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                        <div>
+                                            <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
+                                            <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="margin-r-0">
+                                    <a class="clearfix" href="#">
+                                        <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                        <div>
+                                            <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
+                                            <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="clearfix" href="#">
+                                        <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                        <div>
+                                            <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
+                                            <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="margin-r-0 margin-b-0">
+                                    <a class="clearfix" href="#">
+                                        <img class="lazy" width="151" height="110" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic8.jpg" alt="" />
+                                        <div>
+                                            <h3>禅解《了凡四训》，教您掌握幸福人生！</h3>
+                                            <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--main body end-->
+    
+        
+        <!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->   
+        <!--本页JS-->     
+        <script type="text/javascript" src="themes/ecmoban_dsc/js/js/zen_institute_list.js"></script>  
+        <!--懒加载-->
+        <script type="text/javascript" src="js/jquery.lazyload.js"></script> 
+        <!--开启懒加载-->
+        <script type="text/javascript">
+            $("img.lazy").lazyload({
+                placeholder: "themes/ecmoban_dsc/images/loadGoods.gif",
+                effect : "fadeIn",
+                threshold : 1000
+            });
+        </script>
+    </body>
+</html>
