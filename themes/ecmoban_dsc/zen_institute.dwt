@@ -13,24 +13,6 @@
                 <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
                 <!--slide banner start-->
                 <div class="slide-banner bg-color-f5f5f5">      
-<!--                         <div class="w1200">
-                                <div class="JS-slide">
-                                        <ul class="content">
-                                            <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner1.jpg" alt="" /></a></li>
-                                            <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner1.jpg" alt="" /></a></li>
-                                            <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner1.jpg" alt="" /></a></li>
-                                            <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner1.jpg" alt="" /></a></li>
-                                        </ul>
-                                        <a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
-                                        <a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
-                                        <ul class="point">
-                                            <li class="active"></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                        </ul>
-                                </div>
-                        </div> -->
                     <style>
                         .JS-slide, .JS-slide .content li,
                         .JS-slide .content li a {
@@ -95,31 +77,31 @@
                 <div class="left" style="width: 376px;height:376px;">
                     <a href="#ccyw">
                         <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic1.jpg" alt="" />
-                        <h5 class="transition">禅茶一味</h5>
+                        <h5 class="transition"><span>禅茶一味</span></h5>
                     </a>
                 </div>
                 <div class="middle clearfix">
                     <a class="float-l" href="#jyxs" style="width: 188px;height:185px;">
                         <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic2.jpg" alt="" />
-                        <h5 class="transition">静以修身</h5>
+                        <h5 class="transition"><span>静以修身</span></h5>
                     </a>
                     <a class="float-r" href="#syft" style="width: 377px;height:185px;">
                         <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic3.jpg" alt="" />
-                        <h5 class="transition">善缘佛堂</h5>
+                        <h5 class="transition"><span>善缘佛堂</span></h5>
                     </a>
                     <a class="float-l margin-t-5" href="#jrjx" style="width: 377px;height:186px;">
                         <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic4.jpg" alt="" />
-                        <h5 class="transition">匠人匠心</h5>
+                        <h5 class="transition"><span>匠人匠心</span></h5>
                     </a>
                     <a class="float-r margin-t-5" href="#zyys" style="width: 188px;height:186px;">
                         <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic5.jpg" alt="" />
-                        <h5 class="transition">中医养生</h5>
+                        <h5 class="transition"><span>中医养生</span></h5>
                     </a>
                 </div>
                 <div class="right margin-r-0" style="width: 241px;height:376px;">
                     <a href="#hgzr">
                         <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/zen_pic6.jpg" alt="" />
-                        <h5 class="transition">回归自然</h5>
+                        <h5 class="transition"><span>回归自然</span></h5>
                     </a>
                 </div>
             </div>
