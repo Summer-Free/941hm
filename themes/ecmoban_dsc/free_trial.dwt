@@ -40,7 +40,7 @@
                         <h3>试用商品</h3>
                         <ul>
                             <li class="clearfix">
-                                <a class="float-r" href="goods.php?id=669">
+                                <a class="float-r" href="free_trial_detail.php?id=669">
                                     <div class="wrap-img">
                                         <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/free-pic3.png" width="342" height="420" alt="">
                                     </div>
@@ -52,7 +52,7 @@
                                 </a>
                             </li>
                             <li class="clearfix">
-                                <a class="float-l product-1" href="goods.php?id=661">
+                                <a class="float-l product-1" href="free_trial_detail.php?id=661">
                                     <div class="wrap-img">
                                         <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/free-pic4.png" width="313" height="477" alt="">
                                     </div>
@@ -64,7 +64,7 @@
                                 </a>
                             </li>
                             <li class="clearfix">
-                                <a class="float-r  product-2" href="goods.php?id=78">
+                                <a class="float-r  product-2" href="free_trial_detail.php?id=78">
                                     <div class="wrap-img">
                                         <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/free-pic5.png" width="302" height="602" alt="">
                                     </div>
@@ -76,7 +76,7 @@
                                 </a>
                             </li>
                             <li class="clearfix">
-                                <a class="float-l product-3" href="goods.php?id=1415">
+                                <a class="float-l product-3" href="free_trial_detail.php?id=1415">
                                     <div class="wrap-img">
                                         <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/free-pic6.png" width="495" height="422" alt="">
                                     </div>
@@ -88,7 +88,7 @@
                                 </a>
                             </li>
                             <li class="clearfix">
-                                <a class="float-r product-4" href="goods.php?id=52">
+                                <a class="float-r product-4" href="free_trial_detail.php?id=52">
                                     <div class="wrap-img">
                                         <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/free-pic7.png" width="420" height="462" alt="">
                                     </div>
@@ -100,7 +100,7 @@
                                 </a>
                             </li>
                             <li class="clearfix">
-                                <a class="float-l product-5" href="goods.php?id=964">
+                                <a class="float-l product-5" href="free_trial_detail.php?id=964">
                                     <div class="wrap-img">
                                         <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/free-pic8.png" width="452" height="419" alt="">
                                     </div>

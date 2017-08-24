@@ -1,7 +1,12 @@
 <div class="admin-main-left">
     <div class="admincj_nav">
         <div class="item current">
-        	<div class="tit"><a href="javascript:void(0);" data-url="index.php?act=main" data-param="index|main" target="workspace"><i class="nav_icon i_home"></i><h4>首页</h4></a></div>
+        	<div class="tit">
+                <a href="javascript:void(0);" data-url="index.php?act=main" data-param="index|main" target="workspace">
+                    <i class="nav_icon i_home"></i>
+                    <h4>首页</h4>
+                </a>
+            </div>
         </div>
         {foreach from=$nav_top item=nav}
         <div class="navLeftTab" id="adminNavTabs_{$nav.type}" style="display:none;">
@@ -21,6 +26,17 @@
             </div>
             {/if}
             {/foreach}
+            <!--禅学院-->
+            <!--<div class="item">
+                <div class="tit"><a href="javascript:void(0)"><i class="nav_icon icon_{$k}"></i><h4>禅学</h4></a></div>
+                <div class="sub-menu">
+                    <ul>
+                        
+                        <li class="curr" ><a href="javascript:void(0);" data-url="" data-param="{$nav.type}|{$key}" target="workspace">{$child.label}</a></li>
+                        
+                    </ul>
+                </div>
+            </div>-->
         </div>
         {/foreach}
     </div>
