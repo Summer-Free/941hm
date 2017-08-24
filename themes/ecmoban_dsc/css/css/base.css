@@ -269,6 +269,9 @@ table{border-collapse:collapse;border-spacing:0;}
 .margin-r-130 {
   margin-right: 130px;
 }
+.margin-b-0 {
+  margin-bottom: 0!important;
+}
 .margin-b-7 {
   margin-bottom: 7px!important;
 }
@@ -389,7 +392,7 @@ table{border-collapse:collapse;border-spacing:0;}
 }
 
 
-/*新品上市和限时优惠页面 通用产品列表*/
+/*新品上市和限时优惠 每日秒杀 通用产品列表*/
 .common-product-list-1 {
   padding-top: 10px;
 }

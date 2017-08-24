@@ -29,7 +29,6 @@
 	padding: 0 29px;
 }
 #main-body .btm {
-	overflow: hidden;
 	height: 3918px;
 	background: url(../../iamges/20170517/old-pic2.jpg) no-repeat top center;
 }
@@ -39,7 +38,7 @@
 	width: 1030px;
 	height: 393px;
 	text-align: center;
-	box-shadow: 0 0 50px 15px #c0a6a7;
+	box-shadow: 0 10px 105px 3px rgba(96,16,16,.75);
 	background-color: #b7444a;
 }
 .section-1 img {
@@ -96,7 +95,7 @@
 }
 .section-2 .wrap-img img {
 	position: relative;
-	bottom: 35px;
+	bottom: 28px;
 	display: inline-block;
 }
 .section-2 h4 {

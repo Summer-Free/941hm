@@ -1,0 +1,29 @@
+.wrap-list {
+	position: relative;
+	height: 2140px;
+}
+.common-product-list-1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.common-product-list-1.active {
+	display: block;
+}
+.tab-nav {
+    padding-bottom: 10px;
+    text-align: center;
+}
+.tab-nav .active {
+    color: #fff;
+    background-color: #aa1920;
+}
+.tab-nav a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}

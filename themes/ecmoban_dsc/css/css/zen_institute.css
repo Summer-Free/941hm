@@ -17,25 +17,29 @@
 .section-1>div a {
 	position: relative;
 	display: block;
-	overflow: hidden;
 }
 .section-1>div h5 {
-	box-sizing: content-box;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.2);
+}
+.section-1>div a:hover h5 {
+	background-color: rgba(0,0,0,0);
+}
+.section-1>div h5 span {
 	position: absolute;
 	left: 0;
-	bottom: -34px;
+	bottom: 0;
 	padding-left: 10px;
 	width: 100%;
 	height: 34px;
 	line-height: 34px;
 	font-size: 18px;
 	color: #fff;
-	background-color: rgba(0,0,0,.5);
 }
-.section-1>div a:hover h5 {
-	bottom: 0;
-}
-
 .common-temp {
 	border: 1px solid #e1e1e1;
 	box-shadow: 0 0 1px 1px #e1e1e1;
