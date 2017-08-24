@@ -510,19 +510,11 @@
 						<div class="float-r right">
 							<ul class="clearfix">
 							<!--{foreach item=ct_sql from=$ct_sql name=ct_sql} -->
-							<!-- {if $smarty.foreach.ct_sql.iteration ==1 } --> 
+							<!-- {if $smarty.foreach.ct_sql.iteration ==1 || 2 || 3 } --> 
 							<li> 
-							<!--{elseif $smarty.foreach.ct_sql.iteration ==2 } -->
-							<li>
-							<!--{elseif $smarty.foreach.ct_sql.iteration ==3 } -->
-							<li>
 							<!-- {elseif $smarty.foreach.ct_sql.iteration ==4 } -->
 							<li class="border-r-0">
-							<!-- {elseif $smarty.foreach.ct_sql.iteration ==5 } -->
-							<li class="border-b-0">
-							<!-- {elseif $smarty.foreach.ct_sql.iteration ==6 } -->
-							<li class="border-b-0">
-							<!-- {elseif $smarty.foreach.ct_sql.iteration ==7 } -->
+							<!-- {elseif $smarty.foreach.ct_sql.iteration ==5 || 6 || 7 } -->
 							<li class="border-b-0">
 							<!-- {elseif $smarty.foreach.ct_sql.iteration ==8 } -->
 							<li class="border-r-0 border-b-0">
@@ -559,19 +551,11 @@
 						<div class="float-r right">
 							<ul class="clearfix">
 							<!--{foreach item=kt_sql from=$kt_sql name=kt_sql} -->
-							<!-- {if $smarty.foreach.kt_sql.iteration ==1 } --> 
+							<!-- {if $smarty.foreach.kt_sql.iteration ==1 || 2 || 3 } --> 
 							<li> 
-							<!--{elseif $smarty.foreach.kt_sql.iteration ==2 } -->
-							<li>
-							<!--{elseif $smarty.foreach.kt_sql.iteration ==3 } -->
-							<li>
 							<!-- {elseif $smarty.foreach.kt_sql.iteration ==4 } -->
 							<li class="border-r-0">
-							<!-- {elseif $smarty.foreach.kt_sql.iteration ==5 } -->
-							<li class="border-b-0">
-							<!-- {elseif $smarty.foreach.kt_sql.iteration ==6 } -->
-							<li class="border-b-0">
-							<!-- {elseif $smarty.foreach.kt_sql.iteration ==7 } -->
+							<!-- {elseif $smarty.foreach.kt_sql.iteration ==5 || 6 || 7 } -->
 							<li class="border-b-0">
 							<!-- {elseif $smarty.foreach.kt_sql.iteration ==8 } -->
 							<li class="border-r-0 border-b-0">
@@ -608,19 +592,11 @@
 						<div class="float-r right">
 							<ul class="clearfix">
 							<!--{foreach item=sf_sql from=$sf_sql name=sf_sql} -->
-							<!-- {if $smarty.foreach.sf_sql.iteration ==1 } --> 
+							<!-- {if $smarty.foreach.sf_sql.iteration ==1 || 2 || 3 } --> 
 							<li> 
-							<!--{elseif $smarty.foreach.sf_sql.iteration ==2 } -->
-							<li>
-							<!--{elseif $smarty.foreach.sf_sql.iteration ==3 } -->
-							<li>
 							<!-- {elseif $smarty.foreach.sf_sql.iteration ==4 } -->
 							<li class="border-r-0">
-							<!-- {elseif $smarty.foreach.sf_sql.iteration ==5 } -->
-							<li class="border-b-0">
-							<!-- {elseif $smarty.foreach.sf_sql.iteration ==6 } -->
-							<li class="border-b-0">
-							<!-- {elseif $smarty.foreach.sf_sql.iteration ==7 } -->
+							<!-- {elseif $smarty.foreach.sf_sql.iteration ==5 || 6 || 7 } -->
 							<li class="border-b-0">
 							<!-- {elseif $smarty.foreach.sf_sql.iteration ==8 } -->
 							<li class="border-r-0 border-b-0">
@@ -657,19 +633,11 @@
 						<div class="float-r right">
 							<ul class="clearfix">
 							<!--{foreach item=ws_sql from=$ws_sql name=ws_sql} -->
-							<!-- {if $smarty.foreach.ws_sql.iteration ==1 } --> 
+							<!-- {if $smarty.foreach.ws_sql.iteration ==1 || 2 || 3 } --> 
 							<li> 
-							<!--{elseif $smarty.foreach.ws_sql.iteration ==2 } -->
-							<li>
-							<!--{elseif $smarty.foreach.ws_sql.iteration ==3 } -->
-							<li>
 							<!-- {elseif $smarty.foreach.ws_sql.iteration ==4 } -->
 							<li class="border-r-0">
-							<!-- {elseif $smarty.foreach.ws_sql.iteration ==5 } -->
-							<li class="border-b-0">
-							<!-- {elseif $smarty.foreach.ws_sql.iteration ==6 } -->
-							<li class="border-b-0">
-							<!-- {elseif $smarty.foreach.ws_sql.iteration ==7 } -->
+							<!-- {elseif $smarty.foreach.ws_sql.iteration ==5 || 6 || 7 } -->
 							<li class="border-b-0">
 							<!-- {elseif $smarty.foreach.ws_sql.iteration ==8 } -->
 							<li class="border-r-0 border-b-0">
