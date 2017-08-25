@@ -19,81 +19,49 @@
 			<div class="w1200 clearfix">
 				<!--左边内容-->
 				<div class="left float-l bg-color-fff">
-					<h2>"禅"到底是什么</h2>
-					<img src="themes/ecmoban_dsc/iamges/20170517/zen_article-1.jpg" alt="">
-					<p>怎样念佛可达到一心不乱？</p>
-					<p>首先是一个至诚的心。诚心、真诚的心到了极点就叫做至诚，一念不生谓之诚，真的真诚，这个是没有妄念生起的，一念不生的。如果我们一天到晚都是打妄想，这就不是诚心了。诚心其实就是真心，所以至诚的心是我们心的本体。</p>
-					<p>怎样念佛可达到一心不乱？</p>
-					<p>首先是一个至诚的心。诚心、真诚的心到了极点就叫做至诚，一念不生谓之诚，真的真诚，这个是没有妄念生起的，一念不生的。如果我们一天到晚都是打妄想，这就不是诚心了。诚心其实就是真心，所以至诚的心是我们心的本体。</p>
-					<p>怎样念佛可达到一心不乱？</p>
-					<p>首先是一个至诚的心。诚心、真诚的心到了极点就叫做至诚，一念不生谓之诚，真的真诚，这个是没有妄念生起的，一念不生的。如果我们一天到晚都是打妄想，这就不是诚心了。诚心其实就是真心，所以至诚的心是我们心的本体。</p>
-					<p>怎样念佛可达到一心不乱？</p>
-					<p>首先是一个至诚的心。诚心、真诚的心到了极点就叫做至诚，一念不生谓之诚，真的真诚，这个是没有妄念生起的，一念不生的。如果我们一天到晚都是打妄想，这就不是诚心了。诚心其实就是真心，所以至诚的心是我们心的本体。</p>
+					{$detial_article.pro_content}
 				</div>
 				<!--右边内容-->
 				<div class="right float-r">
 					<div class="top bg-color-fff">
 						<h2>热门视频</h2>
 						<ul>
+						<!--{foreach item=video from=$video name=video} -->
 							<li class="clearfix">
-								<a href="#">
-									<img class="float-l" width="149" height="83" src="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt="">
+								<a href="zen_institute_video_detail.php?id={$video.id}">
+									<img class="float-l" width="149" height="83" src="{$video.bg_img}" alt="">
 									<div class="float-r">
-										<h3>禅”到底是什么：</h3>
-										<p>揭秘不为世人所...</p>
-										<span>禅茶一味</span>
+										<h3>{$video.pro_name|truncate:5}</h3>
+										<p>{$video.pro_content|truncate:5}</p>
+										<span>
+											<!-- {if $video.c_id ==1  } -->
+												禅茶一味
+											<!-- {elseif $video.c_id  ==2 } -->
+												静以修身
+											<!-- {elseif $video.c_id  ==3 } -->
+												善缘佛堂
+											<!-- {elseif $video.c_id  ==4 } -->
+												匠人匠心
+											<!-- {elseif $video.c_id  ==5 } -->
+												中医养生
+											<!-- {elseif $video.c_id  ==6 } -->
+												回归自然
+											<!--{/if}-->
+										</span>
 									</div>
 								</a>
 							</li>
-							<li class="clearfix">
-								<a href="#">
-									<img class="float-l" width="149" height="83" src="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt="">
-									<div class="float-r">
-										<h3>禅”到底是什么：</h3>
-										<p>揭秘不为世人所...</p>
-										<span>禅茶一味</span>
-									</div>
-								</a>
-							</li>
-							<li class="clearfix">
-								<a href="#">
-									<img class="float-l" width="149" height="83" src="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt="">
-									<div class="float-r">
-										<h3>禅”到底是什么：</h3>
-										<p>揭秘不为世人所...</p>
-										<span>禅茶一味</span>
-									</div>
-								</a>
-							</li>
-							<li class="clearfix">
-								<a href="#">
-									<img class="float-l" width="149" height="83" src="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt="">
-									<div class="float-r">
-										<h3>禅”到底是什么：</h3>
-										<p>揭秘不为世人所...</p>
-										<span>禅茶一味</span>
-									</div>
-								</a>
-							</li>
-							<li class="clearfix">
-								<a href="#">
-									<img class="float-l" width="149" height="83" src="themes/ecmoban_dsc/iamges/20170517/zen_pic7.jpg" alt="">
-									<div class="float-r">
-										<h3>禅”到底是什么：</h3>
-										<p>揭秘不为世人所...</p>
-										<span>禅茶一味</span>
-									</div>
-								</a>
-							</li>
+						<!--{/foreach}-->
 						</ul>
 					</div>
 					<div class="btm bg-color-fff margin-t-20">
 						<h2>热门文章</h2>
 						<ul>
-							<li><a href="#">经过一番磨砺，石头才变得更加的光滑美...</a></li>
-							<li><a href="#">经过一番磨砺，石头才变得更加的光滑美...</a></li>
-							<li><a href="#">经过一番磨砺，石头才变得更加的光滑美...</a></li>
-							<li><a href="#">经过一番磨砺，石头才变得更加的光滑美...</a></li>
+						<!--{foreach item=article from=$article name=article} -->
+							<li>
+								<a href="zen_institute_article_detail.php?id={$article.id}">{$article.pro_name}</a>
+							</li>
+						<!--{/foreach}-->	
 						</ul>
 					</div>
 				</div>
