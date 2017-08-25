@@ -16,10 +16,10 @@
                         <div class="w1200">
                                 <div class="JS-slide">
                                         <ul class="content">
-                                                <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner2.jpg" alt="" /></a></li>
-                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner3.jpg" alt="" /></a></li>
-                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner4.jpg" alt="" /></a></li>
-                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner1.jpg" alt="" style="margin: 0 auto" /></a></li>
+                                                <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/lim-pro1.jpg" alt="" /></a></li>
+                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/lim-pro2.jpg" alt="" /></a></li>
+                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/lim-pro3.jpg" alt="" /></a></li>
+                                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/lim-pro4.jpg" alt="" style="margin: 0 auto" /></a></li>
                                         </ul>
                                         <a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
                                         <a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>

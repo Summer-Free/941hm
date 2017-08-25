@@ -39,14 +39,8 @@
         <div class="w1200 bg-color-f5f5f5" id="main-body">
 
             <div class="section-1 clearfix">
-                <form action="" method="" class="search float-l">
-                    <input type="text" placeholder="请输入商品关键字" />
-                    <button></button>
-                </form>
-                <ul class="float-l clearfix">
-                    <li><a href="article.php?id=171" target="_blank"><i class="icon1"></i>新手帮助</a></li>
-                    <li class="margin-r-0"><a href="user.php?act=crowdfunding" target="_blank"><i class="icon2"></i>我的众筹</a></li>
-                </ul>
+                <a class="float-l" href="article.php?id=171" target="_blank">新手帮助</a>
+                <a class="float-r" href="user.php?act=crowdfunding" target="_blank">我的众筹</a>
             </div>
            
             <!--热门推荐-->
@@ -90,7 +84,6 @@
             <div class="section-3 padding-b-15">
                 <h2 class="common-h2 clearfix">
                     <span>最新上架</span>
-                    <a href="#">查看更多</a>
                 </h2>
                 <ul class="common-ul clearfix">
                 <!--{foreach from=$newzc_res item=newzc_res name=newzc_res}-->
@@ -131,7 +124,10 @@
             
             <!--所有产品-->
             <div class="section-4 padding-b-15">
-                <h2 class="common-h2 clearfix"><span>所有产品</span></h2>
+                <h2 class="common-h2 clearfix">
+                    <span>所有产品</span>
+                    <a href="#">查看更多</a>
+                </h2>
                 <ul class="common-ul clearfix">
                     <!--{foreach from=$allzc_res item=allzc_res name=allzc_res}-->
                     <!-- {if $allzc_res.id %4 ==  0  } -->
