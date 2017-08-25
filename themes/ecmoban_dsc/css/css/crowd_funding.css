@@ -3,61 +3,10 @@
 	overflow: hidden;
 }
 .section-1 {
-	padding: 20px 10px;
-	box-shadow: 0 2px 5px #c6c2c2;
+	padding: 0 85px;
+	height: 51px;
+	line-height: 51px;
 	background-color: #fff;
-}
-.section-1 form,.section-1 ul {
-	height: 53px;
-	line-height: 53px;
-}
-.section-1 .search {
-	position: relative;
-}
-.section-1 .search input {
-	padding-left: 15px;
-	padding-right: 55px;
-	width: 527px;
-	height: 53px;
-	line-height: 53px;
-	border: 1px solid #333;
-}
-.section-1 .search button {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 45px;
-	height: 100%;
-	border: none;
-	cursor: pointer;
-	background: url(../../iamges/20170517/big-search.png) no-repeat center left;
-}
-.section-1>ul>li {
-	float: left;
-	margin-left: 146px;
-	font-size: 20px;
-}
-.section-1 a:hover {
-	color: #47a9fd;
-}
-.section-1 .icon1,
-.section-1 .icon2 {
-	position: relative;
-	top: 10px;
-	margin-right: 8px;
-	display: inline-block;
-	background-image: url(../../iamges/20170517/crowd-sprite1.png);
-	background-repeat: no-repeat;
-}
-.section-1 .icon1 {
-	width: 31px;
-	height: 31px;
-	background-position: 0 0;
-}
-.section-1 .icon2 {
-	width: 37px;
-	height: 30px;
-	background-position: 0 -50px;
 }
 .common-h2 {
 	padding: 23px 0;
@@ -66,14 +15,12 @@
 .common-h2 span {
 	float: left;
 	padding-left: 8px;
-	height: 50px;
-	line-height: 50px;
-	font-size: 34px;
-	border-left: 9px solid #4aaafd;
+	font-size: 20px;
+	line-height: 1;
+	border-left: 9px solid #ee7c1b;
 }
 .common-h2 a {
 	position: relative;
-	top: 30px;
 	right: 8px;
 	float: right;
 }
@@ -105,7 +52,7 @@
 .common-ul .progress span {
 	display: block;
 	height: 100%;
-	background: url(../../iamges/20170517/bg-progress-1.png) no-repeat top left;
+	background-color: #ee7c1b;
 }
 .common-ul i {
 	display: block;
