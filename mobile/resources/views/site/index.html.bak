@@ -2,6 +2,16 @@
 <link rel="stylesheet" href="../mobile/statics/css/myImportant.css">
 <body>
 <div class="con mb-7">
+<!--
+    {if $app}
+    <div class="ect-header-banner dis-box">
+        <a href="javascript:;"><i class="iconfont icon-guanbi1"></i></a>
+        
+        </div>
+        <a class="btn-submit1" href="http://test.b2b2c.ecjia.com/sites/touch/index.php?m=touch&c=index&a=download">立即下载</a>
+    </div>
+    {/if}
+-->
     <div class="index-banner swiper-container box position-rel banner-first">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -27,12 +37,16 @@
         <div class="swiper-pagination br-half text-c banner-first-pagination"></div>
         <!--search-->
         <section class="search box banner-search">
-            <div class="text-all position-rel dis-box j-text-all clearfix">
+            <div class="text-all position-rel dis-box j-text-all">
                 <a href="{U('location/index/index')}"><div class="dis-box search-logo"><div class="location-left-cont onelist-hidden">{$current_city.region_name}</div><div class="box-flex"><i class="iconfont icon-moreunfold"></i></div></div></a>
-                <div class="input-text n-input-text i-search-input">
+                <div class="box-flex input-text n-input-text i-search-input">
                     <a class="a-search-input j-search-input" href="#open_search"></a>
                     <i class="iconfont icon-sousuo"></i>
-                    <div class="j-input-text nav-soso">搜索</div>
+                    <div class="j-input-text nav-soso">商品/店铺搜索</div>
+                    <i class="iconfont icon-guanbi is-null j-is-null"></i>
+                </div>
+                <div class="search-left index-xiaoxi position-rel">
+                    <a href="{U('user/index/messagelist')}"><i class="iconfont icon-xiaoxi1"></i><em class="position-abo active"></em></a>
                 </div>
             </div>
         </section>
@@ -54,18 +68,23 @@
 
         </ul>
     </nav>
-    <!--每日资讯-->
+    <!--index-new-->
 	<section class="dis-box index-new mb-1 position-rel">
-        <h2><a href="#">热门资讯</a></h2>
+		<div class="index-new-left">
+			<div class="new-icon">
+				<img src="{__TPL__}img/new-icon.png">
+			</div>
+		</div>
 		<div class="box-flex">
 			<!-- Swiper -->
-			<div class="swiper-container index-new-list imp-class">
+			<div class="swiper-container index-new-list">
 				<div class="swiper-wrapper">
                     {foreach $article as $vo}
 					<div class="swiper-slide swiper-no-swiping">
 						<div class="index-new-cont clearfix">
                             <a href="{$vo['url']}">
-                                <h4 class="pull-left col-3 f-05 onelist-hidden">收藏要赶早！这种材质堪比紫檀的优质红木已经越来稀1111111111</h4>
+                                <h4 class="pull-left col-3 f-05 onelist-hidden">{$vo['title']}</h4>
+                                <p class="pull-right col-9 f-02">{$vo['add_time']}</p>
                             </a>
 						</div>
 					</div>
@@ -73,43 +92,10 @@
 				</div>
 			</div>
 		</div>
+		<div class="index-new-right">
+			<span class="t-jiantou t-remark fr"><a href="{U('article/index/index')}">更多<i class="iconfont icon-more f-2"></i></a></span>
+		</div>
 	</section>
-    
-    <!--四小栏目-->
-    <section class="new-section-1">
-        <div class="top clearfix">
-            <div class="left pull-left border-r-1">
-                <div>
-                    <h2>招商加盟</h2>
-                    <small>一起迈向成功</small>
-                </div>
-                <img src="../mobile/statics/img/newapp/patner.jpg" alt="" />
-            </div>
-            <div class="right pull-left">
-                <div>
-                    <h2>品牌街</h2>
-                    <small>品牌值得信赖</small>
-                </div>
-                <img src="../mobile/statics/img/newapp/ppj.jpg" alt="" />
-            </div>
-        </div>
-        <div class="btm clearfix">
-            <div class="left pull-left border-r-1">
-                <div>
-                    <h2>积分换购</h2>
-                    <small>0元换购商品</small>
-                </div>
-                <img src="../mobile/statics/img/newapp/jfhg.jpg" alt="" />
-            </div>
-            <div class="right pull-left">
-                <div>
-                    <h2>匠物众筹</h2>
-                    <small>筹得精琢美物</small>
-                </div>
-                <img src="../mobile/statics/img/newapp/jwzc.jpg" alt="" />
-            </div>
-        </div>
-    </section>
     <script type="text/javascript">
         var gmt_end_time = {if $end_time}{$end_time}{else}0{/if};
         var day = '<em class="color-whie hour">';
@@ -122,8 +108,19 @@
             catch (e) {}
         }
     </script>
-    <!--每日秒杀-->
-    <div class="index-banner swiper-container box banner-second">
+    <!--discount 每日秒杀-->
+    <div class="box mb-1 title inx-ms">
+        <div class="box padding-all b-color-f">
+            <h3 class="color-red position-rel clearfix" >
+                <span class="fl inx-ms-time">每日<i class="iconfont">&#xe60b;</i>秒杀</span>
+                <span class="color-dark" id="leftTime"></span>
+                <span class="t-jiantou t-remark fr"><a href="../mobile/index.php?r=category/index/products&intro=best">更多<i class="iconfont icon-more"></i></a></span>
+            </h3>
+        </div>
+    </div>
+
+    <!--banner2-->
+    <div class="index-banner swiper-container box mb-1 banner-second">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <a href="#">
@@ -134,7 +131,7 @@
     </div>
     
     <!--每日秒杀相关产品-->
-    <section class="product-list-medium imp-class">
+    <section class="product-list-medium">
         <ul class="clearfix">
           <!-- {foreach $best_goods as $key => $best} -->
           <li>
@@ -142,8 +139,8 @@
               <a class="product-div-link" href="{$best.url}"></a>
               <img class="product-list-img" src="{$best.goods_thumb}" />
               <div class="product-text">
-                  <h4 class="onelist-hidden">{$best.goods_name}</h4>
-                  <p class="text-center"><span class="p-price t-first ">{$best.current_price}</span></p>
+                  <h4>{$best.goods_name}</h4>
+                  <p><span class="p-price t-first ">{$best.current_price}</span></p>
               </div>
             </div>
           </li>
@@ -152,6 +149,17 @@
     </section>
 
     <!--匠物众筹-->
+    <div class="box mb-1 title inx-ms">
+        <div class="box padding-all b-color-f">
+            <h3 class="color-red position-rel clearfix" >
+                <span class="fl inx-ms-time">匠物<i class="iconfont">&#xe60b;</i>众筹</span>
+                <span class="color-dark" id="leftTime"></span>
+                <span class="t-jiantou t-remark fr"><a href="../mobile/index.php?r=crowd_funding">更多<i class="iconfont icon-more"></i></a></span>
+            </h3>
+        </div>
+    </div>
+
+    <!--banner3-->
     <div class="index-banner swiper-container box mb-1 banner-second">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -163,7 +171,7 @@
     </div>
     
     <!--匠物众筹相关产品-->
-    <section class="product-list-medium new-zc">
+    <section class="product-list-medium">
         <ul class="clearfix">
           <!-- {foreach $zc_list as $key => $zc_list} -->
           <li>
@@ -171,7 +179,7 @@
               <a class="product-div-link" href="{$zc_list.url}"></a>
               <img class="product-list-img" src="../{$zc_list.title_img}" />
               <div class="product-text">
-                  <h4 class="text-center">{$zc_list.title}</h4>
+                  <h4>{$zc_list.title}</h4>
                   <!--<p><span class="p-price t-first ">{$best.current_price}</span></p>-->
               </div>
             </div>
@@ -181,7 +189,18 @@
     </section>
 
     <!--餐厅-->
-    <div class="index-banner swiper-container box mb-1 banner-second imp-class">
+    <div class="box mb-1 title inx-ms">
+        <div class="box padding-all b-color-f">
+            <h3 class="color-red position-rel clearfix" >
+                <span class="fl inx-ms-time">餐厅<i class="iconfont">&#xe60b;</i>系列</span>
+                <span class="color-dark" id="leftTime"></span>
+                <span class="t-jiantou t-remark fr"><a href="../mobile/index.php?r=category/index/products&id=453">更多<i class="iconfont icon-more"></i></a></span>
+            </h3>
+        </div>
+    </div>
+
+    <!--banner4-->
+    <div class="index-banner swiper-container box mb-1 banner-second">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <a href="#">
@@ -192,7 +211,7 @@
     </div>
     
     <!--餐厅系列相关产品-->
-    <section class="product-list-medium imp-class">
+    <section class="product-list-medium">
         <ul class="clearfix">
           <!-- {foreach $sql_ct as $key => $sql_ct} -->
           <li>
@@ -200,8 +219,8 @@
               <a class="product-div-link" href="../mobile/index.php?r=goods&id={$sql_ct.goods_id}&u=0"></a>
               <img class="product-list-img" src="../{$sql_ct.goods_thumb}" />
               <div class="product-text">
-                  <h4 class="onelist-hidden">{$sql_ct.goods_name}</h4>
-                  <p class="text-center"><span class="p-price t-first "><em>￥</em>{$sql_ct.market_price}</span></p>
+                  <h4>{$sql_ct.goods_name}</h4>
+                  <p><span class="p-price t-first "><em>￥</em>{$sql_ct.market_price}</span></p>
               </div>
             </div>
           </li>
@@ -210,6 +229,17 @@
     </section>
 
     <!--客厅-->
+    <div class="box mb-1 title inx-ms">
+        <div class="box padding-all b-color-f">
+            <h3 class="color-red position-rel clearfix" >
+                <span class="fl inx-ms-time">客厅<i class="iconfont">&#xe60b;</i>系列</span>
+                <span class="color-dark" id="leftTime"></span>
+                <span class="t-jiantou t-remark fr"><a href="../mobile/index.php?r=category/index/products&id=113">更多<i class="iconfont icon-more"></i></a></span>
+            </h3>
+        </div>
+    </div>
+
+    <!--banner5-->
     <div class="index-banner swiper-container box mb-1 banner-second">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -221,7 +251,7 @@
     </div>
     
     <!--客厅系列相关产品-->
-    <section class="product-list-medium imp-class">
+    <section class="product-list-medium">
         <ul class="clearfix">
           <!-- {foreach $sql_kt as $key => $sql_kt} -->
           <li>
@@ -229,8 +259,8 @@
               <a class="product-div-link" href="../mobile/index.php?r=goods&id={$sql_kt.goods_id}&u=0"></a>
               <img class="product-list-img" src="../{$sql_kt.goods_thumb}" />
               <div class="product-text">
-                  <h4 class="onelist-hidden">{$sql_kt.goods_name}</h4>
-                  <p class="text-center"><span class="p-price t-first "><em>￥</em>{$sql_kt.market_price}</span></p>
+                  <h4>{$sql_kt.goods_name}</h4>
+                  <p><span class="p-price t-first "><em>￥</em>{$sql_kt.market_price}</span></p>
               </div>
             </div>
           </li>
@@ -239,7 +269,18 @@
     </section>
 
     <!--书房-->
-    <div class="index-banner swiper-container box mb-1 banner-second imp-class">
+    <div class="box mb-1 title inx-ms">
+        <div class="box padding-all b-color-f">
+            <h3 class="color-red position-rel clearfix" >
+                <span class="fl inx-ms-time">书房<i class="iconfont">&#xe60b;</i>系列</span>
+                <span class="color-dark" id="leftTime"></span>
+                <span class="t-jiantou t-remark fr"><a href="../mobile/index.php?r=category/index/products&id=146">更多<i class="iconfont icon-more"></i></a></span>
+            </h3>
+        </div>
+    </div>
+
+    <!--banner6-->
+    <div class="index-banner swiper-container box mb-1 banner-second">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <a href="#">
@@ -250,7 +291,7 @@
     </div>
     
     <!--书房系列相关产品-->
-    <section class="product-list-medium imp-class">
+    <section class="product-list-medium">
         <ul class="clearfix">
           <!-- {foreach $sql_sf as $key => $sql_sf} -->
           <li>
@@ -258,8 +299,8 @@
               <a class="product-div-link" href="../mobile/index.php?r=goods&id={$sql_sf.goods_id}&u=0"></a>
               <img class="product-list-img" src="../{$sql_sf.goods_thumb}" />
               <div class="product-text">
-                  <h4 class="onelist-hidden">{$sql_sf.goods_name}</h4>
-                  <p class="text-center"><span class="p-price t-first "><em>￥</em>{$sql_sf.market_price}</span></p>
+                  <h4>{$sql_sf.goods_name}</h4>
+                  <p><span class="p-price t-first "><em>￥</em>{$sql_sf.market_price}</span></p>
               </div>
             </div>
           </li>
@@ -268,7 +309,18 @@
     </section>
 
     <!--卧室-->
-    <div class="index-banner swiper-container box mb-1 banner-second imp-class">
+    <div class="box mb-1 title inx-ms">
+        <div class="box padding-all b-color-f">
+            <h3 class="color-red position-rel clearfix" >
+                <span class="fl inx-ms-time">卧室<i class="iconfont">&#xe60b;</i>系列</span>
+                <span class="color-dark" id="leftTime"></span>
+                <span class="t-jiantou t-remark fr"><a href="../mobile/index.php?r=category/index/products&id=14">更多<i class="iconfont icon-more"></i></a></span>
+            </h3>
+        </div>
+    </div>
+
+    <!--banner6-->
+    <div class="index-banner swiper-container box mb-1 banner-second">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <a href="#">
@@ -279,7 +331,7 @@
     </div>
     
     <!--卧室系列相关产品-->
-    <section class="product-list-medium imp-class">
+    <section class="product-list-medium">
         <ul class="clearfix">
           <!-- {foreach $sql_ws as $key => $sql_ws} -->
           <li>
@@ -287,15 +339,12 @@
               <a class="product-div-link" href="../mobile/index.php?r=goods&id={$sql_ws.goods_id}&u=0"></a>
               <img class="product-list-img" src="../{$sql_ws.goods_thumb}" />
               <div class="product-text">
-                  <h4 class="onelist-hidden">{$sql_ws.goods_name}</h4>
-                  <p class="text-center">
-                        <span class="p-price t-first ">
-                            <em>￥</em>
-                          <!--{if $key.market_price == 0}-->
-                            {$sql_ws.shop_price}
-                          <!--{/if}-->
-                        </span>
-                    </p>
+                  <h4>{$sql_ws.goods_name}</h4>
+                  <p><span class="p-price t-first "><em>￥</em>
+                  <!--{if $key.market_price == 0}-->
+                        {$sql_ws.shop_price}
+                  <!--{/if}-->
+                  {$sql_ws.market_price}</span></p>
               </div>
             </div>
           </li>
@@ -303,19 +352,17 @@
         </ul>
     </section>
 
-    <!--精品推荐-->
-    <div class="box title inx-ms">
-        <div class="index-banner swiper-container box mb-1 banner-second imp-class">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <a href="#">
-                        <img src="../mobile/statics/img/newapp/index-pic4.jpg" alt="" />
-                    </a>
-                </div>
-            </div>
+    <!--recom-->
+    <div class="box mb-1 title inx-ms">
+        <div class="box padding-all b-color-f">
+            <h3 class="recom-title">
+                精品推荐
+                <span>精品商品尽收眼底赶快行动吧</span>
+                <span class="t-jiantou t-remark fr"><a href="../mobile/index.php?r=category">更多<i class="iconfont icon-more"></i></a></span>
+            </h3>
         </div>
 
-        <section class="product-list-medium imp-class">
+        <section class="product-list-medium">
             <ul class="clearfix">
               <!-- {foreach $best_goods as $key => $best} -->
               <li>
@@ -323,8 +370,8 @@
                   <a class="product-div-link" href="{$best.url}"></a>
                   <img class="product-list-img" src="{$best.goods_thumb}" />
                   <div class="product-text">
-                      <h4 class="onelist-hidden">{$best.goods_name}</h4>
-                      <p class="text-center"><span class="p-price t-first ">{$best.current_price}</span></p>
+                      <h4>{$best.goods_name}</h4>
+                      <p><span class="p-price t-first ">{$best.current_price}</span></p>
                   </div>
                 </div>
               </li>
@@ -334,8 +381,83 @@
 
     </div>
 
+    <!--hot-->
+    <div class="box mb-1 b-color-f" style="display:none;">
+        <div class="box padding-all  wallet-bt">
+            <h3 class="recom-title">
+                热门大牌
+                <span>最全最时尚的大牌汇集</span>
+                <span class="t-jiantou t-remark fr">更多<i class="iconfont icon-more"></i></span>
+            </h3>
+        </div>
+        <div class="hot-container-div">
+            <i class="iconfont icon-back"></i>
+            <div class="swiper-container hot-container">
+                <ul class="swiper-wrapper">
+                    <!-- {foreach $brand_list as $vo} -->
+                    <li class="swiper-slide ">
+                        <a href="javascript:; ">
+                            <img src="{$vo.brand_logo}" />
+                        </a>
+                    </li>
+                    <!-- {/foreach} -->
+                </ul>
+                <!-- 导航按钮 -->
+            </div>	<i class="iconfont icon-more"></i>
+        </div>
+    </div>
+
+    <!--banner3-->
+    <div class="index-banner swiper-container box mb-1 banner-third">
+        <div class="swiper-wrapper">
+        {insert_ads(array('id'=>258, 'num'=>3))}
+        </div>
+    </div>
+    <!--brand-->
+
+    {if $store}
+    <div class="pb-2 idx-padding b-color-f">
+        <div class="box padding-all">
+            <h3 class="recom-title">
+                店铺街
+                <span>精品店铺一条街</span>
+                <span class="t-jiantou t-remark fr"><a href="{U('store/index/index')}">更多<i class="iconfont icon-more"></i></a></span>
+            </h3>
+        </div>
+        <div class="swiper-container brand-container b-color-f">
+            <div class="swiper-wrapper">
+                <ul class="brand-list swiper-slide">
+                    <!--{foreach $store as $key => $val}-->
+                    <li>
+                        <a href="{$val.url}">
+                            <div class="brand-img">
+                                <img src="{$val.street_thumb}" />
+                                <div class="brand-logo">
+                                    <img src="{$val.brand_thumb}"/>
+                                </div>
+                            </div>
+                            <ul class="ul-3">
+                                <!--{foreach $val.goods_list as $k => $v}-->
+                                <li>
+                                    <img src="{$v.goods_thumb}" />
+                                </li>
+                                <!--{/foreach}-->
+                            </ul>
+                        </a>
+                    </li>
+                    <!-- {if ($key+1) % 3 == 0 && $key !== (count($store)-1)} -->
+                </ul><ul class="brand-list swiper-slide">
+                <!-- {/if} -->
+                <!--{/foreach}-->
+            </ul>
+            </div>
+            <!-- 分页器 -->
+            <div class="swiper-pagination brand-pagination"></div>
+        </div>
+    </div>
+    {/if}
     <!--like-->
-    <p class="index-title padding-all text-c imp-class">猜你喜欢</p>
+    <p class="index-title padding-all text-c">猜你喜欢</p>
     <section class="product-list j-product-list product-list-medium" data="1">
 		<script id="j-product" type="text/html">
 		<ul>
@@ -345,8 +467,8 @@
 					<a class="product-div-link" href="<%goods.url%>"></a>
 					<img class="product-list-img" src="<%goods.goods_thumb%>" />
 					<div class="product-text">
-              <h4 class="onelist-hidden"><%goods.goods_name%></h4>
-              <p class="text-center"><span class="p-price t-first "><%#goods.current_price%><small></small></span></p>
+              <h4><%goods.goods_name%></h4>
+              <p><span class="p-price t-first "><%#goods.current_price%><small></small></span></p>
               <a href="javascript:void(0)" class="icon-flow-cart fr j-goods-attr"><i class="iconfont icon-gouwuche"></i></a>
           </div>
 				</div>
