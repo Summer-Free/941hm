@@ -16,10 +16,10 @@
                 <div class="w1200">
                     <div class="JS-slide">
                         <ul class="content">
-                            <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner2.jpg" alt="" /></a></li>
-                            <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner3.jpg" alt="" /></a></li>
-                            <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner4.jpg" alt="" /></a></li>
-                            <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/purchase-banner1.jpg" alt="" style="margin: 0 auto" /></a></li>
+                            <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/new-pro1.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/new-pro2.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/new-pro3.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/new-pro4.jpg" alt="" style="margin: 0 auto" /></a></li>
                         </ul>
                         <a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
                         <a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
@@ -40,31 +40,6 @@
         <div class="w1200 bg-color-f5f5f5" id="main-body">
 
 			<!--产品列表-->
-<<<<<<< HEAD
-			<ul class="common-product-list-1 clearfix">
-				<!--{foreach item=res from=$res name=res} -->
-					<!-- {if $smarty.foreach.res.iteration %4 !=0  } -->
-                		<li class="move">
-                	<!-- {elseif $smarty.foreach.res.iteration %4==0} -->
-                		<li class="move margin-r-0">
-                	<!--{/if}--> 
-							<a href="goods.php?id={$res.goods_id}">
-								<div class="global-product-img">
-									<img class="lazy" width="290" height="290" data-original="{$res.goods_thumb}" alt="" />
-								</div>
-								<div class="btm">
-									<h3>{$res.goods_name|truncate:15}</h3>
-									<p class="clearfix">
-										<span class="price float-l">价格: &yen;{$res.shop_price}
-										</span>
-									</p>
-									<span class="btn">立即购买</span>
-								</div>
-							</a>
-						</li>
-			    <!--{/foreach}-->
-			</ul>
-=======
             <div class="wrap-list">
     			<ul class="common-product-list-1 clearfix active">
     				<!--{foreach item=res from=$res name=res} -->
@@ -112,14 +87,12 @@
                                 </a>
                             </li>
                     <!--{/foreach}-->
-
                 </ul>
             </div>
             <div class="tab-nav">
                 <a class="active transition" href="javascript:void(0);">1</a>
                 <a class="transition" href="javascript:void(0);">2</a>
             </div>
->>>>>>> a62b7b5e214be040f2c45e6d2fc97ec2534b5f88
         </div>
         <!--main body end-->
 
