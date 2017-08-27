@@ -61,8 +61,7 @@
 	                <div class="float-l">
 	                    <h1 class="logo">
 	                    	<a href="index.php">941红木</a>
-	                    	<a href="article.php?id=139"><img src="themes/ecmoban_dsc/iamges/20170517/idx-logo-side.jpg" alt="" style="position: absolute; top: 11.5px; left: 257px;"></a>
-	                    </h1>
+	                    	<img src="themes/ecmoban_dsc/iamges/20170517/idx-logo-side.jpg" alt="" style="position: absolute; top: 11.5px; left: 257px;">
 	                </div>
 	                <img class="float-r" src="themes/ecmoban_dsc/iamges/20170517/wechat.png" alt="二维码">
 	                <div class="float-r">
@@ -273,17 +272,17 @@
 					<div class="main-body">
 						<div class="JS-slide-scroll">
 							<ul class="content">
-								<!--{foreach item=ms_res from=$ms_res name=ms_res} -->
+								<!--{foreach item=ms_re from=$ms_re name=ms_re} -->
 								<li>
-									<a href="goods.php?id={$ms_res.goods_id}">
+									<a href="goods.php?id={$ms_re.goods_id}">
 										<div class="img-box">
-											<img class="lazy" data-original="{$ms_res.goods_thumb}" width="160" height="160" alt="" />
+											<img class="lazy" data-original="{$ms_re.goods_thumb}" width="160" height="160" alt="" />
 										</div>
 										<div class="product-info">
-											<h3>{$ms_res.goods_name|truncate:15}</h3>
+											<h3>{$ms_re.goods_name|truncate:15}</h3>
 											<p class="clearfix">
-												<ins class="color-aa1920 float-l">&yen; {$ms_res.shop_price}</ins>
-												<del class="float-r">&yen; {$ms_res.market_price}</del>
+												<ins class="color-aa1920 float-l">&yen; {$ms_re.shop_price}</ins>
+												<del class="float-r">&yen; {$ms_re.market_price}</del>
 											</p>
 										</div>
 									</a>
@@ -365,24 +364,24 @@
 							<a href="latest_listing.php">查看更多</a>
 						</h2>
 						<ul>
-						<!--{foreach item=new_p06 from=$new_p06 name=new_p06} -->
-							<!-- {if $smarty.foreach.new_p06.iteration ==1  } -->
+						<!--{foreach item=new_re from=$new_re name=new_re} -->
+							<!-- {if $smarty.foreach.new_re.iteration ==1  } -->
 							<li>
-							<!-- {elseif $smarty.foreach.new_p06.iteration ==2 } -->
+							<!-- {elseif $smarty.foreach.new_re.iteration ==2 } -->
 							<li class="border-r-0">
-							<!-- {elseif $smarty.foreach.new_p06.iteration ==3 } -->
+							<!-- {elseif $smarty.foreach.new_re.iteration ==3 } -->
 							<li class="border-b-0">
-							<!-- {elseif $smarty.foreach.new_p06.iteration ==4 } -->
+							<!-- {elseif $smarty.foreach.new_re.iteration ==4 } -->
 							<li class="border-r-0 border-b-0">
 							<!--{/if}-->
-								<a href="goods.php?id={$new_p06.goods_id}">
+								<a href="goods.php?id={$new_re.goods_id}">
 									<div class="wrap-img">
-										<img class="lazy" data-original="{$new_p06.goods_thumb}" width="211" height="211" alt="">
+										<img class="lazy" data-original="{$new_re.goods_thumb}" width="211" height="211" alt="">
 									</div>	
 									<div class="wrap-info">
-										<h3>{$new_p06.goods_name|truncate:22}</h3>
+										<h3>{$new_re.goods_name|truncate:22}</h3>
 										<div class="sprice color-aa1920">
-											&yen; {$new_p06.shop_price}
+											&yen; {$new_re.shop_price}
 										</div>
 									</div>
 								</a>
@@ -396,25 +395,25 @@
 							<a href="limited_time_offer.php">查看更多</a>
 						</h2>
 						<ul>
-						<!--{foreach item=xs_p06 from=$xs_p06 name=xs_p06} -->
-							<!-- {if $smarty.foreach.xs_p06.iteration ==1  } -->
+						<!--{foreach item=xs_re from=$xs_re name=xs_re} -->
+							<!-- {if $smarty.foreach.xs_re.iteration ==1  } -->
 							<li>
-							<!-- {elseif $smarty.foreach.xs_p06.iteration ==2 } -->
+							<!-- {elseif $smarty.foreach.xs_re.iteration ==2 } -->
 							<li class="border-r-0">
-							<!-- {elseif $smarty.foreach.xs_p06.iteration ==3 } -->
+							<!-- {elseif $smarty.foreach.xs_re.iteration ==3 } -->
 							<li class="border-b-0">
-							<!-- {elseif $smarty.foreach.xs_p06.iteration ==4 } -->
+							<!-- {elseif $smarty.foreach.xs_re.iteration ==4 } -->
 							<li class="border-r-0 border-b-0">
 							<!--{/if}-->
-								<a href="goods.php?id={$xs_p06.goods_id}">
+								<a href="goods.php?id={$xs_re.goods_id}">
 									<div class="wrap-img">
-										<img class="lazy" data-original="{$xs_p06.goods_thumb}" width="211" height="211" alt="">
+										<img class="lazy" data-original="{$xs_re.goods_thumb}" width="211" height="211" alt="">
 									</div>	
 									<div class="wrap-info">
-										<h3>{$xs_p06.goods_name|truncate:22}</h3>
+										<h3>{$xs_re.goods_name|truncate:22}</h3>
 										<div class="sprice clearfix">
-											<ins class="float-l color-aa1920">&yen; {$xs_p06.shop_price}</ins>
-											<del class="float-r">&yen; {$xs_p06.market_price}</del>
+											<ins class="float-l color-aa1920">&yen; {$xs_re.shop_price}</ins>
+											<del class="float-r">&yen; {$xs_re.market_price}</del>
 										</div>
 									</div>
 								</a>
@@ -512,25 +511,25 @@
 						</div>
 						<div class="float-r right">
 							<ul class="clearfix">
-							<!--{foreach item=ct_sql from=$ct_sql name=ct_sql} -->
-							<!-- {if $smarty.foreach.ct_sql.iteration ==1 || 2 || 3 } --> 
+							<!--{foreach item=ct_re from=$ct_re name=ct_re} -->
+							<!-- {if $smarty.foreach.ct_re.iteration ==1 || 2 || 3 } --> 
 							<li> 
-							<!-- {elseif $smarty.foreach.ct_sql.iteration ==4 } -->
+							<!-- {elseif $smarty.foreach.ct_re.iteration ==4 } -->
 							<li class="border-r-0">
-							<!-- {elseif $smarty.foreach.ct_sql.iteration ==5 || 6 || 7 } -->
+							<!-- {elseif $smarty.foreach.ct_re.iteration ==5 || 6 || 7 } -->
 							<li class="border-b-0">
-							<!-- {elseif $smarty.foreach.ct_sql.iteration ==8 } -->
+							<!-- {elseif $smarty.foreach.ct_re.iteration ==8 } -->
 							<li class="border-r-0 border-b-0">
 							<!--{/if}-->
-								<a href="goods.php?id={$ct_sql.goods_id}">
+								<a href="goods.php?id={$ct_re.goods_id}">
 									<div class="wrap-img">
-										<img class="lazy" data-original="{$ct_sql.goods_thumb}" width="205" height="205" alt="">
+										<img class="lazy" data-original="{$ct_re.goods_thumb}" width="205" height="205" alt="">
 									</div>
 									<div class="wrap-info">
-										<h3>{$ct_sql.goods_name|truncate:14}</h3>
+										<h3>{$ct_re.goods_name|truncate:14}</h3>
 										<div class="price clearfix">
-											<ins class="float-l color-aa1920">&yen; {$ct_sql.shop_price}</ins>
-											<del class="float-r">&yen; {$ct_sql.market_price}</del>
+											<ins class="float-l color-aa1920">&yen; {$ct_re.shop_price}</ins>
+											<del class="float-r">&yen; {$ct_re.market_price}</del>
 										</div>
 									</div>
 								</a>
@@ -553,25 +552,25 @@
 						</div>
 						<div class="float-r right">
 							<ul class="clearfix">
-							<!--{foreach item=kt_sql from=$kt_sql name=kt_sql} -->
-							<!-- {if $smarty.foreach.kt_sql.iteration ==1 || 2 || 3 } --> 
+							<!--{foreach item=kt_re from=$kt_re name=kt_re} -->
+							<!-- {if $smarty.foreach.kt_re.iteration ==1 || 2 || 3 } --> 
 							<li> 
-							<!-- {elseif $smarty.foreach.kt_sql.iteration ==4 } -->
+							<!-- {elseif $smarty.foreach.kt_re.iteration ==4 } -->
 							<li class="border-r-0">
-							<!-- {elseif $smarty.foreach.kt_sql.iteration ==5 || 6 || 7 } -->
+							<!-- {elseif $smarty.foreach.kt_re.iteration ==5 || 6 || 7 } -->
 							<li class="border-b-0">
-							<!-- {elseif $smarty.foreach.kt_sql.iteration ==8 } -->
+							<!-- {elseif $smarty.foreach.kt_re.iteration ==8 } -->
 							<li class="border-r-0 border-b-0">
 							<!--{/if}-->
-								<a href="goods.php?id={$kt_sql.goods_id}">
+								<a href="goods.php?id={$kt_re.goods_id}">
 									<div class="wrap-img">
-										<img class="lazy" data-original="{$kt_sql.goods_thumb}" width="205" height="205" alt="">
+										<img class="lazy" data-original="{$kt_re.goods_thumb}" width="205" height="205" alt="">
 									</div>
 									<div class="wrap-info">
-										<h3>{$kt_sql.goods_name|truncate:14}</h3>
+										<h3>{$kt_re.goods_name|truncate:14}</h3>
 										<div class="price clearfix">
-											<ins class="float-l color-aa1920">&yen; {$kt_sql.shop_price}</ins>
-											<del class="float-r">&yen; {$kt_sql.market_price}</del>
+											<ins class="float-l color-aa1920">&yen; {$kt_re.shop_price}</ins>
+											<del class="float-r">&yen; {$kt_re.market_price}</del>
 										</div>
 									</div>
 								</a>
@@ -594,25 +593,25 @@
 						</div>
 						<div class="float-r right">
 							<ul class="clearfix">
-							<!--{foreach item=sf_sql from=$sf_sql name=sf_sql} -->
-							<!-- {if $smarty.foreach.sf_sql.iteration ==1 || 2 || 3 } --> 
+							<!--{foreach item=sf_re from=$sf_re name=sf_re} -->
+							<!-- {if $smarty.foreach.sf_re.iteration ==1 || 2 || 3 } --> 
 							<li> 
-							<!-- {elseif $smarty.foreach.sf_sql.iteration ==4 } -->
+							<!-- {elseif $smarty.foreach.sf_re.iteration ==4 } -->
 							<li class="border-r-0">
-							<!-- {elseif $smarty.foreach.sf_sql.iteration ==5 || 6 || 7 } -->
+							<!-- {elseif $smarty.foreach.sf_re.iteration ==5 || 6 || 7 } -->
 							<li class="border-b-0">
-							<!-- {elseif $smarty.foreach.sf_sql.iteration ==8 } -->
+							<!-- {elseif $smarty.foreach.sf_re.iteration ==8 } -->
 							<li class="border-r-0 border-b-0">
 							<!--{/if}-->
-								<a href="goods.php?id={$sf_sql.goods_id}">
+								<a href="goods.php?id={$sf_re.goods_id}">
 									<div class="wrap-img">
-										<img class="lazy" data-original="{$sf_sql.goods_thumb}" width="205" height="205" alt="">
+										<img class="lazy" data-original="{$sf_re.goods_thumb}" width="205" height="205" alt="">
 									</div>
 									<div class="wrap-info">
-										<h3>{$sf_sql.goods_name|truncate:14}</h3>
+										<h3>{$sf_re.goods_name|truncate:14}</h3>
 										<div class="price clearfix">
-											<ins class="float-l color-aa1920">&yen; {$sf_sql.shop_price}</ins>
-											<del class="float-r">&yen; {$sf_sql.market_price}</del>
+											<ins class="float-l color-aa1920">&yen; {$sf_re.shop_price}</ins>
+											<del class="float-r">&yen; {$sf_re.market_price}</del>
 										</div>
 									</div>
 								</a>
@@ -635,25 +634,25 @@
 						</div>
 						<div class="float-r right">
 							<ul class="clearfix">
-							<!--{foreach item=ws_sql from=$ws_sql name=ws_sql} -->
-							<!-- {if $smarty.foreach.ws_sql.iteration ==1 || 2 || 3 } --> 
+							<!--{foreach item=ws_re from=$ws_re name=ws_re} -->
+							<!-- {if $smarty.foreach.ws_re.iteration ==1 || 2 || 3 } --> 
 							<li> 
-							<!-- {elseif $smarty.foreach.ws_sql.iteration ==4 } -->
+							<!-- {elseif $smarty.foreach.ws_re.iteration ==4 } -->
 							<li class="border-r-0">
-							<!-- {elseif $smarty.foreach.ws_sql.iteration ==5 || 6 || 7 } -->
+							<!-- {elseif $smarty.foreach.ws_re.iteration ==5 || 6 || 7 } -->
 							<li class="border-b-0">
-							<!-- {elseif $smarty.foreach.ws_sql.iteration ==8 } -->
+							<!-- {elseif $smarty.foreach.ws_re.iteration ==8 } -->
 							<li class="border-r-0 border-b-0">
 							<!--{/if}-->
-								<a href="goods.php?id={$ws_sql.goods_id}">
+								<a href="goods.php?id={$ws_re.goods_id}">
 									<div class="wrap-img">
-										<img class="lazy" data-original="{$ws_sql.goods_thumb}" width="205" height="205" alt="">
+										<img class="lazy" data-original="{$ws_re.goods_thumb}" width="205" height="205" alt="">
 									</div>
 									<div class="wrap-info">
-										<h3>{$ws_sql.goods_name|truncate:14}</h3>
+										<h3>{$ws_re.goods_name|truncate:14}</h3>
 										<div class="price clearfix">
-											<ins class="float-l color-aa1920">&yen; {$ws_sql.shop_price}</ins>
-											<del class="float-r">&yen; {$ws_sql.market_price}</del>
+											<ins class="float-l color-aa1920">&yen; {$ws_re.shop_price}</ins>
+											<del class="float-r">&yen; {$ws_re.market_price}</del>
 										</div>
 									</div>
 								</a>
