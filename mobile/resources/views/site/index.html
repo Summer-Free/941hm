@@ -493,13 +493,14 @@
         });
 </script>
 
-<script src="/941hm/mobile/statics/js/jquery.lazyload.js"></script>
+<script src="statics/js/jquery.lazyload.js"></script>
 <script type="text/javascript">
     $("img.lazy").lazyload({
       placeholder: "../mobile/statics/img/newapp/loadGoods.gif",
         effect : "fadeIn",
-        threshold : 200,
-        skip_invisible : false
+        threshold : 400,
+        skip_invisible : false,
+        threshold : 1
     });
 </script>
 </body>
