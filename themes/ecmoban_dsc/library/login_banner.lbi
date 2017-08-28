@@ -4,7 +4,7 @@
 <div class="bd">
 	<ul>
 		<!--{foreach from=$ad_child item=ad name=noad}-->
-		<li style="background-color: #de2f6a;"><div class="banner-width" style="background:url(themes/ecmoban_dsc/iamges/20170517/login.jpg) no-repeat;"></div></li>
+		<li style="background-color: #ebdfcf;"><div class="banner-width" style="background:url(themes/ecmoban_dsc/iamges/20170517/login.jpg) no-repeat;"></div></li>
 		<!--{/foreach}-->
 	</ul>
 </div>
