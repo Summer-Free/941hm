@@ -1,3 +1,13 @@
+.margin-tb-1 {
+    margin: 1rem auto;
+}
+.mb-1 {
+    margin-bottom: 1rem!important;
+}
+.ul-5 li {
+    width: 25%!important;
+}
+
 .search .input-text {
     position: absolute;
     top: 1rem;
@@ -101,9 +111,6 @@
 }
 .border-r-1 {
     border-right: 1px solid #dcdcdc;
-}
-.swiper-container {
-    margin: 1rem auto;
 }
 .product-div {
     background: transparent;
