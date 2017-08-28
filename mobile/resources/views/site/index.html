@@ -65,20 +65,20 @@
     </nav>
     <!--每日资讯-->
 	<section class="dis-box index-new mb-1 position-rel">
-        <h2><a href="#">热门资讯</a></h2>
+        <h2><a href="{U('article/index/index')}">热门资讯</a></h2>
 		<div class="box-flex">
 			<!-- Swiper -->
 			<div class="swiper-container index-new-list imp-class">
 				<div class="swiper-wrapper">
-                    {foreach $article as $vo}
+          {foreach $article as $vo}
 					<div class="swiper-slide swiper-no-swiping">
 						<div class="index-new-cont clearfix">
-                            <a href="{$vo['url']}">
-                                <h4 class="pull-left col-3 f-05 onelist-hidden">收藏要赶早！这种材质堪比紫檀的优质红木已经越来稀1111111111</h4>
-                            </a>
+              <a href="{$vo['url']}">
+                  <h4 class="pull-left col-3 f-05 onelist-hidden">{$vo['title']}</h4>
+              </a>
 						</div>
 					</div>
-                    {/foreach}
+          {/foreach}
 				</div>
 			</div>
 		</div>
@@ -87,36 +87,44 @@
     <!--四小栏目-->
     <section class="new-section-1">
         <div class="top clearfix">
+          <a href="../mobile/index.php?r=partner">
             <div class="left pull-left border-r-1">
                 <div>
                     <h2>招商加盟</h2>
                     <small>一起迈向成功</small>
                 </div>
-                <img src="../mobile/statics/img/newapp/patner.jpg" alt="" />
+                <img src="../mobile/statics/img/newapp/patner.jpg" alt="招商加盟" />
             </div>
+          </a>
+          <a href="index.php?r=brand">
             <div class="right pull-left">
                 <div>
                     <h2>品牌街</h2>
                     <small>品牌值得信赖</small>
                 </div>
-                <img src="../mobile/statics/img/newapp/ppj.jpg" alt="" />
+                <img src="../mobile/statics/img/newapp/ppj.jpg" alt="品牌街" />
             </div>
+          </a>           
         </div>
         <div class="btm clearfix">
+          <a href="index.php?r=exchange">
             <div class="left pull-left border-r-1">
                 <div>
                     <h2>积分换购</h2>
                     <small>0元换购商品</small>
                 </div>
-                <img src="../mobile/statics/img/newapp/jfhg.jpg" alt="" />
+                <img src="../mobile/statics/img/newapp/jfhg.jpg" alt="积分换购" />
             </div>
+          </a>
+          <a href="index.php?r=crowd_funding">
             <div class="right pull-left">
                 <div>
                     <h2>匠物众筹</h2>
                     <small>筹得精琢美物</small>
                 </div>
-                <img src="../mobile/statics/img/newapp/jwzc.jpg" alt="" />
+                <img src="../mobile/statics/img/newapp/jwzc.jpg" alt="匠物众筹" />
             </div>
+          </a>
         </div>
     </section>
     <script type="text/javascript">
