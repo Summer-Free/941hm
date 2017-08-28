@@ -106,7 +106,7 @@
                     <!--{/if}-->
                         <a href="goods.php?id={$yzsc_sql.goods_id}"><img class="lazy" width="220" height="198" data-original="{$yzsc_sql.goods_thumb}" alt="{$yzsc_sql.goods_name}" width="220" height="198" /></a>
                         <div>
-                            <a href="goods.php?id={$yzsc_sql.goods_id}">{$yzsc_sql.goods_name}</a>
+                            <a href="goods.php?id={$yzsc_sql.goods_id}">{$yzsc_sql.goods_name|truncate:12}</a>
                             <p class="clearfix">
                                 <span class="price">&yen;{$yzsc_sql.shop_price}</span>
                                 <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>
@@ -182,7 +182,7 @@
                     <!--{/if}-->
                         <a href="goods.php?id={$sgyp_sql.goods_id}"><img class="lazy" width="220" height="198" data-original="{$sgyp_sql.goods_thumb}" alt="{$sgyp_sql.goods_name}" width="220" height="198" /></a>
                         <div>
-                            <a href="goods.php?id={$sgyp_sql.goods_id}">{$sgyp_sql.goods_name}</a>
+                            <a href="goods.php?id={$sgyp_sql.goods_id}">{$sgyp_sql.goods_name|truncate:12}</a>
                             <p class="clearfix">
                                 <span class="price">&yen;{$sgyp_sql.shop_price}</span>
                                 <span class="float-r"><i class="icon-shopping-cart" title="购物车"></i></span>

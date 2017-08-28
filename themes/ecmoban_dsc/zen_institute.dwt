@@ -146,7 +146,7 @@
                                     <img class="lazy" width="151" height="110" data-original="{$taste_article.bg_img}" alt="{$taste_article.pro_name}" />
                                     <div>
                                         <h3>{$taste_article.pro_name}</h3>
-                                        <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
+                                        <p>{$taste_article.keywords|truncate:90}</p>
                                     </div>
                                 </a>
                             </li>
@@ -196,7 +196,7 @@
                                     <img class="lazy" width="151" height="110" data-original="{$lives_article.bg_img}" alt="{$lives_article.pro_name}" />
                                     <div>
                                         <h3>{$lives_article.pro_name}</h3>
-                                        <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
+                                        <p>{$lives_article.keywords|truncate:90}</p>
                                     </div>
                                 </a>
                             </li>
@@ -246,7 +246,7 @@
                                     <img class="lazy" width="151" height="110" data-original="{$good_article.bg_img}" alt="{$good_article.pro_name}" />
                                     <div>
                                         <h3>{$good_article.pro_name}</h3>
-                                        <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
+                                        <p>{$good_article.keywords|truncate:90}</p>
                                     </div>
                                 </a>
                             </li>
@@ -296,7 +296,7 @@
                                     <img class="lazy" width="151" height="110" data-original="{$artisan_article.bg_img}" alt="{$artisan_article.pro_name}" />
                                     <div>
                                         <h3>{$artisan_article.pro_name}</h3>
-                                        <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
+                                        <p>{$artisan_article.keywords|truncate:90}</p>
                                     </div>
                                 </a>
                             </li>
@@ -346,7 +346,7 @@
                                     <img class="lazy" width="151" height="110" data-original="{$medicine_article.bg_img}" alt="{$medicine_article.pro_name}" />
                                     <div>
                                         <h3>{$medicine_article.pro_name}</h3>
-                                        <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
+                                        <p>{$medicine_article.keywords|truncate:90}</p>
                                     </div>
                                 </a>
                             </li>
@@ -396,7 +396,7 @@
                                     <img class="lazy" width="151" height="110" data-original="{$nature_article.bg_img}" alt="{$nature_article.pro_name}" />
                                     <div>
                                         <h3>{$nature_article.pro_name}</h3>
-                                        <p>何为命，何为运？命，生而定之；运，因作恶行善而改！常言：命由已作，相由心生，祸福无门，惟人自召。所以说命运，本质上是因果报应在生命历程中的连续表现，是可以通过行善而而改变的。凡人所以不能成圣成...</p>
+                                        <p>{$nature_article.keywords|truncate:90}</p>
                                     </div>
                                 </a>
                             </li>

@@ -55,10 +55,11 @@
 					<div class="btm bg-color-fff margin-t-20">
 						<h2>热门文章</h2>
 						<ul>
-							<li><a href="#">经过一番磨砺，石头才变得更加的光滑美...</a></li>
-							<li><a href="#">经过一番磨砺，石头才变得更加的光滑美...</a></li>
-							<li><a href="#">经过一番磨砺，石头才变得更加的光滑美...</a></li>
-							<li><a href="#">经过一番磨砺，石头才变得更加的光滑美...</a></li>
+						<!--{foreach item=article from=$article name=article} -->
+							<li>
+								<a href="zen_institute_article_detail.php?id={$article.id}">{$article.pro_name}</a>
+							</li>
+						<!--{/foreach}-->
 						</ul>
 					</div>
 				</div>
