@@ -130,9 +130,9 @@
                 </h2>
                 <ul class="common-ul clearfix">
                     <!--{foreach from=$allzc_res item=allzc_res name=allzc_res}-->
-                    <!-- {if $allzc_res.iteration %4 ==  0  } -->
+                    <!-- {if $smarty.foreach.allzc_res.iteration %4 ==  0  } -->
                         <li class="margin-r-0">
-                    <!-- {elseif $allzc_res.iteration %4 != 0  } -->
+                    <!-- {elseif $smarty.foreach.allzc_res.iteration %4 != 0  } -->
                         <li>
                     <!--{/if}-->
                         <a href="crowdfunding.php?act=detail&id={$allzc_res.id}"><img class="lazy" width="292" height="240" data-original="{$allzc_res.title_img}" alt="{$allzc_res.title}" /></a>
