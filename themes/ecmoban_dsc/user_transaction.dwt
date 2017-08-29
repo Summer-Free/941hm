@@ -472,6 +472,45 @@
             </div>                  
             <!--众筹方案信息 by wu end-->
             {else}
+            
+            <!--试用方案信息 by wu start-->
+            <div class="user-item-temp">
+                <div class="user-item-title user-item-title30">
+                    <h3>众筹方案信息</h3>
+                </div>
+                <table class="user-product-list user-desc-product">
+                    <thead class="thead">
+                        <tr>
+                        <th class="th u-product first"><span>众筹项目名称</span></th>
+                        <th class="th u-seller"><span>开始时间</span></th>
+                        <th class="th u-attr"><span>结束时间</span></th>
+                        <th class="th u-warehouse"><span>众筹金额</span></th>
+                        <th class="th u-price"><span>方案价格</span></th>
+                        <th class="th u-num"><span>运费</span></th>
+                        <th class="th u-subtotal"><span>小计</span></th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody" style="position:relative; z-index:10;">
+                        <tr class="tr">
+                        <td class="td u-product first">
+                            <div class="product-item first" style="overflow:visible; float:left;">
+                                <div class="p-img"><a href="crowdfunding.php?act=detail&id={$zc_goods_info.pid}" target="_blank"><img src="{$zc_goods_info.title_img}" width="55" height="55"></a></div>                                                                 
+                                <div class="p-name">
+                                <a href="crowdfunding.php?act=detail&id={$zc_goods_info.pid}" class="ftx-07" target="_blank">{$zc_goods_info.title}</a>
+                                </div>
+                            </div>                      
+                        </td>
+                        <td class="td u-seller"><span>{$zc_goods_info.start_time}</span></td>
+                        <td class="td u-attr"><span>{$zc_goods_info.end_time}</span></td>
+                        <td class="td u-warehouse"><span>{$zc_goods_info.formated_amount}</span></td>
+                        <td class="td u-price"><span>{$zc_goods_info.formated_price}</span></td>
+                        <td class="td u-num"><span>{$zc_goods_info.formated_shipping_fee}</span></td>
+                        <td class="td u-subtotal"><span>{$zc_goods_info.formated_price}</span></td>                     
+                        </tr>
+                    </tbody>
+                </table>
+            </div>                  
+
             <div class="user-item-temp">
                 <div class="user-item-title user-item-title30">
                     <h3>商品列表</h3>
@@ -5551,7 +5590,7 @@
                                         <br/><a target="_blank" href="user.php?act=affirm_received&order_id={$vo.order_id}" onclick="if (!confirm('你确认已经收到货物了吗？')) return false;">确认收货</a>
                                         {elseif $vo.shipping_status == 2}
                                         <br/><span>已收货</span>
-                                        {/if}                                                                                       
+                                        {/if}                   
                                     </td>
                                 </tr>
                                 {/foreach}
@@ -5559,7 +5598,8 @@
                             </table>
                         </div>
                         {else /}
-                        <div class="not_item"><p>很抱歉，这儿是个荒地。<br/>您还没有已支付任何项目，去[<a target="_blank"  href="crowdfunding.php">众筹首页</a>]看看有什么感兴趣的吧！</p></div>
+                        <div class="not_item"><p>很抱歉，这儿是个荒地。<br/>您还没有已支付任何项目，去[<a target="_blank"  href="crowdfunding.php">众筹首页</a>]看看有什么感兴趣的吧！</p>
+                        </div>
                         {/if}
                     </div>
                 </div>
@@ -5627,6 +5667,7 @@
             </div>    
         </div>
     </div>
+
 	<script type="text/javascript">
 	$(function(){
 		$(document).on("click","*[data-dialog='zc_focus_dialog']",function(){
@@ -5682,7 +5723,14 @@
     </script>
     <!--@author-bylu 众筹 end-->  
     <!-- {/if} -->
-    <!--#我的众筹 end-->    
+    <!--#我的众筹 end-->
+    <!--{if $action eq 'free_trial_detail'}-->
+    <div class="user-right">
+        <table>
+            
+        </table>
+    </div>
+    <!--{/if}-->    
 </div>
 <!-- #BeginLibraryItem "/library/page_footer_djj.lbi" --><!-- #EndLibraryItem -->
 
