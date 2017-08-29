@@ -1,5 +1,4 @@
 #main-body {
-	padding-bottom: 30px;
 	overflow: hidden;
 }
 .section-1 {
@@ -74,4 +73,35 @@
 .common-ul .wrap div .s2 {
 	margin-right: 20px;
 	width: 92px;
+}
+
+.section-4 .show-list {
+	overflow: hidden;
+	position: relative;
+	height: 1445px;
+}
+.section-4 .show-list ul {
+	display: none;
+	position: absolute;
+}
+.section-4 .show-list .active {
+	display: block;
+}
+
+
+.tab-nav {
+    padding: 0 0 10px 0;
+    text-align: center;
+}
+.tab-nav .active {
+    color: #fff;
+    background-color: #aa1920;
+}
+.tab-nav a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    background-color: #fff;
 }

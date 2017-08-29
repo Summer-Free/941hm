@@ -123,38 +123,71 @@
                 
             
             <!--所有产品-->
-            <div class="section-4 padding-b-15">
+            <div class="section-4">
                 <h2 class="common-h2 clearfix">
                     <span>所有产品</span>
                     <a href="#">查看更多</a>
                 </h2>
-                <ul class="common-ul clearfix">
-                    <!--{foreach from=$allzc_res item=allzc_res name=allzc_res}-->
-                    <!-- {if $smarty.foreach.allzc_res.iteration %4 ==  0  } -->
-                        <li class="margin-r-0">
-                    <!-- {elseif $smarty.foreach.allzc_res.iteration %4 != 0  } -->
-                        <li>
-                    <!--{/if}-->
-                        <a href="crowdfunding.php?act=detail&id={$allzc_res.id}"><img class="lazy" width="292" height="240" data-original="{$allzc_res.title_img}" alt="{$allzc_res.title}" /></a>
-                        <div class="wrap">
-                            <h3>{$allzc_res.title}</h3>
-                            <p class="progress"><span style="width:  {$allzc_res.baifen_bi}%;"></p>
-                            <div class="clearfix">
-                                <span class="s1">
-                                <i>
-                                    <!-- {if $allzc_res.baifen_bi >0  } -->
-                                        {$allzc_res.baifen_bi}%
-                                    <!-- {elseif $allzc_res.baifen_bi ==0} -->   
-                                        0%
-                                    <!--{/if}-->
-                                </i>达成率</span>
-                                <span class="s2"><i>{$allzc_res.join_money}</i>已筹金额</span>
-                                <span class="border-r-0"><i>{$allzc_res.join_num}</i>支持人数</span>
+                <div class="show-list">
+                    <ul class="common-ul clearfix active">
+                        <!--{foreach from=$allzc_res item=allzc_res name=allzc_res}-->
+                        <!-- {if $smarty.foreach.allzc_res.iteration %4 ==  0  } -->
+                            <li class="margin-r-0">
+                        <!-- {elseif $smarty.foreach.allzc_res.iteration %4 != 0  } -->
+                            <li>
+                        <!--{/if}-->
+                            <a href="crowdfunding.php?act=detail&id={$allzc_res.id}"><img class="lazy" width="292" height="240" data-original="{$allzc_res.title_img}" alt="{$allzc_res.title}" /></a>
+                            <div class="wrap">
+                                <h3>{$allzc_res.title}</h3>
+                                <p class="progress"><span style="width:  {$allzc_res.baifen_bi}%;"></p>
+                                <div class="clearfix">
+                                    <span class="s1">
+                                    <i>
+                                        <!-- {if $allzc_res.baifen_bi >0  } -->
+                                            {$allzc_res.baifen_bi}%
+                                        <!-- {elseif $allzc_res.baifen_bi ==0} -->   
+                                            0%
+                                        <!--{/if}-->
+                                    </i>达成率</span>
+                                    <span class="s2"><i>{$allzc_res.join_money}</i>已筹金额</span>
+                                    <span class="border-r-0"><i>{$allzc_res.join_num}</i>支持人数</span>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <!--{/foreach}-->
-                </ul>
+                        </li>
+                        <!--{/foreach}-->
+                    </ul>
+                    <ul class="common-ul clearfix">
+                        <!--{foreach from=$allzc_res item=allzc_res name=allzc_res}-->
+                        <!-- {if $smarty.foreach.allzc_res.iteration %4 ==  0  } -->
+                            <li class="margin-r-0">
+                        <!-- {elseif $smarty.foreach.allzc_res.iteration %4 != 0  } -->
+                            <li>
+                        <!--{/if}-->
+                            <a href="crowdfunding.php?act=detail&id={$allzc_res.id}"><img class="lazy" width="292" height="240" data-original="{$allzc_res.title_img}" alt="{$allzc_res.title}" /></a>
+                            <div class="wrap">
+                                <h3>{$allzc_res.title}</h3>
+                                <p class="progress"><span style="width:  {$allzc_res.baifen_bi}%;"></p>
+                                <div class="clearfix">
+                                    <span class="s1">
+                                    <i>
+                                        <!-- {if $allzc_res.baifen_bi >0  } -->
+                                            {$allzc_res.baifen_bi}%
+                                        <!-- {elseif $allzc_res.baifen_bi ==0} -->   
+                                            0%
+                                        <!--{/if}-->
+                                    </i>达成率</span>
+                                    <span class="s2"><i>{$allzc_res.join_money}</i>已筹金额</span>
+                                    <span class="border-r-0"><i>{$allzc_res.join_num}</i>支持人数</span>
+                                </div>
+                            </div>
+                        </li>
+                        <!--{/foreach}-->
+                    </ul>
+                </div>
+                <div class="tab-nav">
+                    <a class="active transition" href="javascript:void(0);">1</a>
+                    <a class="transition" href="javascript:void(0);">2</a>
+                </div>
             </div>
         </div>
         <!--main body end-->
