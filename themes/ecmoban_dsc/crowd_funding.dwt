@@ -126,7 +126,7 @@
             <div class="section-4">
                 <h2 class="common-h2 clearfix">
                     <span>所有产品</span>
-                    <a href="#">查看更多</a>
+<!--                     <a href="#">查看更多</a> -->
                 </h2>
                 <div class="show-list">
                     <ul class="common-ul clearfix active">
