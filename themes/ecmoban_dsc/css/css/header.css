@@ -2,7 +2,6 @@
 	position: relative;
 }
 #header .nav .logo a {
-	overflow: hidden;
 	position: absolute;
 	top: 11.5px;
 	left: 28px;
