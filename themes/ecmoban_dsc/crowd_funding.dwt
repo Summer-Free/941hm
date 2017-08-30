@@ -157,27 +157,27 @@
                         <!--{/foreach}-->
                     </ul>
                     <ul class="common-ul clearfix">
-                        <!--{foreach from=$allzc_res item=allzc_res name=allzc_res}-->
-                        <!-- {if $smarty.foreach.allzc_res.iteration %4 ==  0  } -->
+                        <!--{foreach from=$allzc_res_end item=allzc_res_end name=allzc_res_end}-->
+                        <!-- {if $smarty.foreach.allzc_res_end.iteration %4 ==  0  } -->
                             <li class="margin-r-0">
-                        <!-- {elseif $smarty.foreach.allzc_res.iteration %4 != 0  } -->
+                        <!-- {elseif $smarty.foreach.allzc_res_end.iteration %4 != 0  } -->
                             <li>
                         <!--{/if}-->
-                            <a href="crowdfunding.php?act=detail&id={$allzc_res.id}"><img class="lazy" width="292" height="240" data-original="{$allzc_res.title_img}" alt="{$allzc_res.title}" /></a>
+                            <a href="crowdfunding.php?act=detail&id={$allzc_res_end.id}"><img class="lazy" width="292" height="240" data-original="{$allzc_res_end.title_img}" alt="{$allzc_res_end.title}" /></a>
                             <div class="wrap">
-                                <h3>{$allzc_res.title}</h3>
-                                <p class="progress"><span style="width:  {$allzc_res.baifen_bi}%;"></p>
+                                <h3>{$allzc_res_end.title}</h3>
+                                <p class="progress"><span style="width:  {$allzc_res_end.baifen_bi}%;"></p>
                                 <div class="clearfix">
                                     <span class="s1">
                                     <i>
-                                        <!-- {if $allzc_res.baifen_bi >0  } -->
-                                            {$allzc_res.baifen_bi}%
-                                        <!-- {elseif $allzc_res.baifen_bi ==0} -->   
+                                        <!-- {if $allzc_res_end.baifen_bi >0  } -->
+                                            {$allzc_res_end.baifen_bi}%
+                                        <!-- {elseif $allzc_res_end.baifen_bi ==0} -->   
                                             0%
                                         <!--{/if}-->
                                     </i>达成率</span>
-                                    <span class="s2"><i>{$allzc_res.join_money}</i>已筹金额</span>
-                                    <span class="border-r-0"><i>{$allzc_res.join_num}</i>支持人数</span>
+                                    <span class="s2"><i>{$allzc_res_end.join_money}</i>已筹金额</span>
+                                    <span class="border-r-0"><i>{$allzc_res_end.join_num}</i>支持人数</span>
                                 </div>
                             </div>
                         </li>
