@@ -5749,15 +5749,17 @@
     <td width="165"><div align="center">申请状态</div></td>
     <td width="74"><div align="center">操作</div></td>
   </tr>
+  <!--{foreach item=sql_res from=$sql_res name=sql_res} -->
   <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td><img src="{$sql_res.goods_thumb}"></td>
+    <td>{$sql_res.goods_name|truncate:12}</td>
+    <td>{$sql_res.market_price}</td>
+    <td>{$sql_res.username}<br>{$sql_res.address}<br>{$sql_res.phone}</td>
+    <td>{$sql_res.apply_time}</td>
+    <td>{$sql_res.status}</td>
+    <td><a href="free_trial_detail.php?id={$sql_res.id}">查看详情</a></td>
   </tr>
+  <!--{/foreach}-->
 </table>
 
 </div>
