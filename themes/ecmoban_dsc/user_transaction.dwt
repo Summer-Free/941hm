@@ -5726,43 +5726,100 @@
     <!--#我的众筹 end-->
     <!--我的试用-->
     <!--{if $action eq 'free_trial_detail'}-->
-    <div class="user-right">
-    <p>我的试用</p>
-    <select>
-    	<option>
-        	申请中
-        </option>
-    	<option>
-        	申请成功
-        </option>
-        <option>
-        	申请失败
-        </option>
-    </select>
-        <table width="1029" height="90" border="1">
-  <tr>
-    <td width="126"><div align="center">商品缩略图</div></td>
-    <td width="220"><div align="center">商品名称</div></td>
-    <td width="175"><div align="center">商品市场价格</div></td>
-    <td width="161"><div align="center">申请信息</div></td>
-    <td width="62"><div align="center">申请时间</div></td>
-    <td width="165"><div align="center">申请状态</div></td>
-    <td width="74"><div align="center">操作</div></td>
-  </tr>
-  <!--{foreach item=sql_res from=$sql_res name=sql_res} -->
-  <tr>
-    <td><img src="{$sql_res.goods_thumb}"></td>
-    <td>{$sql_res.goods_name|truncate:12}</td>
-    <td>{$sql_res.market_price}</td>
-    <td>{$sql_res.username}<br>{$sql_res.address}<br>{$sql_res.phone}</td>
-    <td>{$sql_res.apply_time}</td>
-    <td>{$sql_res.status}</td>
-    <td><a href="free_trial_detail.php?id={$sql_res.id}">查看详情</a></td>
-  </tr>
-  <!--{/foreach}-->
-</table>
-
-</div>
+    <style>
+        #new-section {
+            padding-top: 10px;
+        }
+        #new-section * {
+            box-sizing: border-box;
+        }
+        #new-section h2 {
+            float: left;
+            margin-bottom: 10px;
+            line-height: 27px;
+        }
+        #new-section .wrap-select {
+            overflow: hidden;
+            float: right;
+            width: 90px;
+            border-right: 1px solid #777;
+            background: url(themes/ecmoban_dsc/iamges/20170517/arrow.png) no-repeat right center;
+        }
+        #new-section .wrap-select select {
+            margin: 0;
+            padding: 0;
+            padding-left: 8px;
+            width: 120px;
+            border: 1px solid #777;
+            outline: none;
+            background: none;
+        -webkit-appearance:none;
+           -moz-appearance:none;
+                appearance:none;
+        }
+        #new-section table {
+            width: 100%;
+            border-top: 1px solid #333;
+            border-left: 1px solid #333;
+        }
+        #new-section table th,
+        #new-section table td {
+            border-right: 1px solid #333;
+            border-bottom: 1px solid #333;
+        }
+        #new-section table th {
+            font-weight: normal;
+        }
+        #new-section table img {
+            display: inline-block;
+        }
+        .text-center {
+            text-align: center;
+        }
+    </style>
+    <div class="user-right" id="new-section">
+        <div class="clearfix">
+            <h2>我的试用</h2>
+            <div class="wrap-select">
+                <select>
+                	<option>申请中</option>
+                	<option>申请成功</option>
+                    <option>申请失败</option>
+                </select>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <th>商品缩略图</th>
+                <th>商品名称</th>
+                <th>商品市场价格</th>
+                <th>申请信息</th>
+                <th>申请时间</th>
+                <th>申请状态</th>
+                <th>操作</th>
+            </tr>
+            <tr>
+                <td class="text-center"><img width="240" height="240" src="themes/ecmoban_dsc/iamges/20170517/old-pic5.png"></td>
+                <td>【罗汉床R1808T】刺猬紫檀 两件套</td>
+                <td>999999</td>
+                <td>某某某<br>浙江省杭州市滨江区<br>15021132125</td>
+                <td>2017-08-22<br />14:00:00</td>
+                <td>申请成功</td>
+                <td><a href="free_trial_detail.php?id={$sql_res.id}">查看详情</a></td>
+            </tr>
+            <!--{foreach item=sql_res from=$sql_res name=sql_res} -->
+<!--             <tr>
+                <td><img src="{$sql_res.goods_thumb}"></td>
+                <td>{$sql_res.goods_name|truncate:12}</td>
+                <td>{$sql_res.market_price}</td>
+                <td>{$sql_res.username}<br>{$sql_res.address}<br>{$sql_res.phone}</td>
+                <td>{$sql_res.apply_time}</td>
+                <td>{$sql_res.status}</td>
+                <td><a href="free_trial_detail.php?id={$sql_res.id}">查看详情</a></td>
+            </tr> -->
+            <!--{/foreach}-->
+        </table>
+    </div>
     <!--{/if}-->    
 </div>
 <!-- #BeginLibraryItem "/library/page_footer_djj.lbi" --><!-- #EndLibraryItem -->
