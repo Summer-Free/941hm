@@ -227,7 +227,7 @@
               }
               else if(res.index==1)
               {
-                    Ajax.call('get_ajax_content.php?act=get_content', 'data_type=cart_list', return_cart_list, 'POST', 'JSON');
+                    Ajax.call('get_ajax_content.php?act=get_content','data_type=cart_list', return_cart_list, 'POST', 'JSON');
               }
               else
               {
