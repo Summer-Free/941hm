@@ -107,7 +107,15 @@
         <!--右侧悬浮购物车个人信息(必须放到最底下,依赖jquery)-->
         {insert name='user_menu_position'}
         
-
+        <!--优惠券领取弹窗-->
+        <div id="pd_coupons" style="display: none;">
+            <span class="success-icon m-icon"></span>
+            <div class="item-fore">
+                <h3>领取成功！感谢您的参与，祝您购物愉快~</h3>
+                <div class="txt ftx-03">本活动为概率性事件，不能保证所有客户成功领取优惠券</div>
+            </div>
+        </div>
+        
         <!--统计代码-->
         <script type="text/javascript">
                 var _hmt = _hmt || [];

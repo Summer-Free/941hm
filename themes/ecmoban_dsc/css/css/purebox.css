@@ -313,7 +313,7 @@
 #noGoods .pb-ft{ padding:0; text-align:center;}
 
 /*优惠券弹框*/
-.success-icon{ background:url(images/icon448.png) no-repeat; width:49px; height:49px; display:inline-block; *display:inline; *zoom:1; float:left;}
+.success-icon{ background:url(../../images/icon448.png) no-repeat; width:49px; height:49px; display:inline-block; *display:inline; *zoom:1; float:left;}
 #coupons_dialog .m-icon{ background-position:0 0;}
 #coupons_dialog .i-icon{ background-position:-59px 0;}
 #coupons_dialog .success-icon{ float:left; margin:42px 0 0 50px;}
@@ -325,5 +325,5 @@
 #coupons_dialog .tip-box .pb-ft{ margin:0 0 20px 0; text-align:center; padding-left:0;}
 
 #goods_collect .tip-box h3.rem{ line-height:25px;}
-
+.ftx-03 {color: #9fa0a0;}
 #scanCode .pb-bd{ padding:0;}
