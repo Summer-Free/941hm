@@ -172,7 +172,7 @@
                                     <i>
                                         <!-- {if $allzc_res_end.baifen_bi >0  } -->
                                             {$allzc_res_end.baifen_bi}%
-                                        <!-- {elseif $allzc_res_end.baifen_bi ==0} -->   
+                                        <!-- {elseif $allzc_res_end.baifen_bi ==0} -->
                                             0%
                                         <!--{/if}-->
                                     </i>达成率</span>
