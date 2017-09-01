@@ -25,7 +25,8 @@
     </div>
     <input type="submit">
 </form> -->
-	<p style="margin-right:0;margin-left:0;text-indent:37px;text-autospace:ideograph-numeric;text-align:center">
+	<!--
+		<p style="margin-right:0;margin-left:0;text-indent:37px;text-autospace:ideograph-numeric;text-align:center">
 		<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">
 			<span style="font-family:微软雅黑">中医养生的基本内容与特色</span>
 		</span>
@@ -157,6 +158,8 @@
 			</span>
 		</span>
 	</p>
+
+	-->
 </body>
 </body>
 </html>

@@ -487,6 +487,7 @@
                             </div>
                             <div class="choose-btns">
                             	<input name="confirm_type" id="confirm_type" type="hidden" value="3" />
+                                
                                 {if $goods.review_status <= 2 || $goods.is_on_sale eq 0}
                                     <a id="sold_out" class="ajax_buy" href="javascript:;"></a>
                                 {else}
