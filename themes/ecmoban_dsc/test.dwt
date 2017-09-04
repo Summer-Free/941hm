@@ -4,162 +4,34 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>姓名检查</title>
 </head>
+<!--加入这个脚本的意义是区域联动-->
+{insert_scripts files='utils.js,transport.js,region.js,shopping_flow.js'}
 <body>	
-<!-- <form method="post" action="test.php">
-	文章标题：&nbsp;<input type="text" name="pro_name">
-	<br>
-	文章类型：
-	<select name="pro_type"> -->
-	<!--{foreach from=$cxy_array item=cxy_array}-->
-		<!-- <option value="{$cxy_array.c_id}">{$cxy_array.c_name}</option> -->
-	<!--{/foreach}-->
-	<!-- </select>
-	<br>
-    关键词：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="keywords"><br>
-    描述：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="description"><br>
-	文章编辑器：
-	<div class="item">
-		<input type="hidden" id="FCKeditor1" name="FCKeditor1" value="" />
-			<iframe id="FCKeditor1_frame" src="../plugins/ueditor/ecmobanEditor.php?item=FCKeditor1" width="100%" height="586" frameborder="0" scrolling="no">
-		</iframe>
-    </div>
-    <input type="submit">
-</form> -->
-	<!--
-		<p style="margin-right:0;margin-left:0;text-indent:37px;text-autospace:ideograph-numeric;text-align:center">
-		<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">
-			<span style="font-family:微软雅黑">中医养生的基本内容与特色</span>
-		</span>
-	</p>
-	<p style="margin-right:0;margin-left:0;text-indent:37px;text-autospace:ideograph-numeric">
-		<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">
-			<span style="font-family:微软雅黑">
-				中医养生是我国特有的一种养生方法，它的好处有很多，但是我们中医养生也是有很多的注意点，不能瞎养，不能别人怎么做你就怎么做。你知道中医养生有哪些内容吗
-			</span>
-			?中医养生的特色有哪些呢?如果大家不是太了解，那就和小编来看一下下面这篇文章吧。
-		</span>
-	</p>
-	<p style="margin-right:0;margin-left:0;text-indent:37px;text-autospace:ideograph-numeric">
-	<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">
-	<span style="font-family:微软雅黑">
-		中国的养生之法被称为卫生、养生、厚生或道生。卫生就是保卫生命的意思
-	</span>;养生就是养护生命的意思</span>
-	<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">
-		<span style="font-family:微软雅黑">；</span>
-	</span>
-	<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">
-		<span style="font-family:微软雅黑">厚生就是厚待生命的意思</span>
-	</span>
-	<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">
-		<span style="font-family:微软雅黑">；</span>
-	</span>
-	<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">
-		<span style="font-family:微软雅黑">道生就是要求以上养生都要有一个度。《道德经》中有</span>“人法地，地法天，天法道，道法自然”之说，告诫人们要遵循自然界和宇宙的规律。
-	</span>
-	</p>
-	<p style="margin-right: 0px; margin-left: 0px; text-indent: 37px; text-align: center;">
-		<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">
-			<img src="/images/upload/20170823/15034805152263.jpg" title="235109-14042ZP30295.jpg" width="500" height="333" border="0" hspace="0" vspace="0" style="width: 500px; height: 333px;"/>&nbsp;
-		</span>
-	</p>
-	<p style="margin-right:0;margin-left:0;text-indent:37px;text-autospace:ideograph-numeric">
-		<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">
-			<span style="font-family:微软雅黑">
-				所谓养生，就是根据生命规律，采用养护身心，保持或增进健康，减少疾病，以延年益寿的一种措施，相当于现代医学中的保健活动。养生现在已经成为了一种文化，它是中华民族在维护人类健康所创造的物质财富和精神财富，它具有民族性、传统性和延续性。
-			</span>
-		</span>
-	</p>
-	<p style="margin-right:0;margin-left:0;text-indent:37px;text-autospace:ideograph-numeric">
-		<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">
-			<span style="font-family:微软雅黑">
-				由于养生活动涉及到研究人的生命现象，其内容自然会贯彻到日常生活诸多方面，这就必然涉及到各种文化现象，因此古代养生的内容多分散在许多文化范畴之中，如医药文化、食文化、茶文化、宗教文化、民俗文化和武学文化等。
-			</span>
-		</span>
-	</p>
-	<p style="margin-right:0;margin-left:0;text-indent:37px;text-autospace:ideograph-numeric">
-		<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">
-			<span style="font-family:微软雅黑">历代养生家由于各自的实践和体验的角度不同，他们的养生活动在调节饮食起居、服用药物、采用医术</span>
-		</span>
-		<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">
-			<span style="font-family:微软雅黑">（</span>
-		</span><span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">
-			<span style="font-family:微软雅黑">针灸、按摩、推拿等</span>
-		</span>
-		<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">
-			<span style="font-family:微软雅黑">）</span>
-		</span>
-		<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">
-			<span style="font-family:微软雅黑">
-				、练习武术气功、修养精神、节制欲望、修养品德等方面各有侧重，也各有所长，各有所用。中华民族养生之道，基本概括了几千年来医药、饮食、宗教、民俗、武术等文化方面的养生理论。其内容不外以下四点
-			</span>
-		</span>
-	</p>
-	<p style="margin-right: 0px; margin-left: 0px; text-indent: 37px; text-align: center;">
-		<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">
-			<img src="/images/upload/20170823/15034805429406.jpg" title="__27574481__2405374.jpg" width="500" height="303" border="0" hspace="0" vspace="0" style="width: 500px; height: 303px;"/>&nbsp;
-		</span>
-	</p>
-	<p style="margin-right:0;margin-left:0;text-indent:37px;text-autospace:ideograph-numeric">
-		<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">1.</span>
-		<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">&nbsp;</span>
-		<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">
-			<span style="font-family:微软雅黑">顺其自然</span>
-		</span>
-	</p>
-	<p style="margin-right:0;margin-left:0;text-indent:37px;text-autospace:ideograph-numeric">
-		<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">&nbsp;</span>
-	</p>
-	<p style="margin-right:0;margin-left:0;text-indent:37px;text-autospace:ideograph-numeric">
-		<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">
-			<span style="font-family:微软雅黑">顺其自然这句话主要体现了</span>
-			“天人合一”道家思想，说的是我们养生一定要注意遵循自然规律，不能违背它。同时也要重视人与社会的统一协调。正如《黄帝内经》主张：“上知天文，下知地理，中知人事，可以长久。”
-		</span>
-	</p>
-	<p style="margin-right:0;margin-left:0;text-indent:37px;text-autospace:ideograph-numeric">
-		<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">2</span>
-		<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">. </span>
-		<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">
-			<span style="font-family:微软雅黑">形神兼养</span>
-		</span>
-	</p>
-	<p style="margin-right:0;margin-left:0;text-indent:37px;text-autospace:ideograph-numeric">
-		<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">&nbsp;</span>
-	</p>
-	<p style="margin-right:0;margin-left:0;text-indent:37px;text-autospace:ideograph-numeric">
-		<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">
-			<span style="font-family:微软雅黑">在养生过程中既要注重形体养护，更要重视精神心理方面调摄，所谓形神兼养、守神全形、保形全神等。</span>
-		</span>
-	</p>
-	<p style="margin-right: 0px; margin-left: 0px; text-indent: 37px; text-align: center;">
-		<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">
-		<img src="/images/upload/20170823/15034805548028.jpg" title="3-150205215551.jpg" width="500" height="316" border="0" hspace="0" vspace="0" style="width: 500px; height: 316px;"/>&nbsp;</span>
-	</p>
-	<p style="margin-right:0;margin-left:0;text-indent:37px;text-autospace:ideograph-numeric">
-		<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">3.</span>
-		<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">&nbsp;</span>
-		<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">
-		<span style="font-family:微软雅黑">动静结合</span>
-	</span>
-	</p>
-	<p style="margin-right:0;margin-left:0;text-indent:37px;text-autospace:ideograph-numeric">
-		<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px"><span style="font-family:微软雅黑">现代医学主张</span>
-	“生命在于运动”，中医也主张“动则生阳”，主张运动健身，但中医养生也主张“动中取静”、“不妄作劳”。正如《周易外传》所说“动静互涵，以为万变之宗”，《类经·医易》所说“天下之万理，出于一动一静。”</span>
-	</p>
-	<p style="margin-right:0;margin-left:0;text-indent:37px;text-autospace:ideograph-numeric">
-		<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">4.</span>
-			<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">&nbsp;</span>
-			<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">
-			<span style="font-family:微软雅黑">综合和审因施养</span>
-		</span>
-	</p>
-	<p style="margin-right:0;margin-left:0;text-indent:37px;text-autospace:ideograph-numeric">
-		<span style=";font-family:微软雅黑;color:rgb(33,33,33);font-size:19px">
-			<span style="font-family:微软雅黑">养生不拘一法一式，应形、神、动、静、食、药等多种途径、多种方式进行养生活动。另外，也要因人、因地、因时之不同用不同的养生方法，所谓审因施养、辨证施养。
-			</span>
-		</span>
-	</p>
-
-	-->
-</body>
+{$_LANG}
+	<select name="country" id="selCountries_{$sn}" onchange="region.changed(this, 1, 'selProvinces_{$sn}')">
+       <option value="0">国家</option>
+       <!-- {foreach from=$country_list item=country} -->
+       <option value="{$country.region_id}" {if $consignee.country eq $country.region_id}selected{/if}>{$country.region_name}</option>
+       <!-- {/foreach} -->
+   </select>
+               
+       <select name="province" id="selProvinces_{$sn}" onchange="region.changed(this, 2, 'selCities_{$sn}')">
+       <option value="0">省份</option>
+       <!-- {foreach from=$province_list.$sn item=province} -->
+       <option value="{$province.region_id}" {if $consignee.province eq $province.region_id}selected{/if}>{$province.region_name}</option>
+       <!-- {/foreach} -->
+       </select>
+       <select name="city" id="selCities_{$sn}" onchange="region.changed(this, 3, 'selDistricts_{$sn}')">
+       <option value="0">城市</option>
+       <!-- {foreach from=$city_list.$sn item=city} -->
+       <option value="{$city.region_id}" {if $consignee.city eq $city.region_id}selected{/if}>{$city.region_name}</option>
+       <!-- {/foreach} -->
+       </select>
+       <select name="district" id="selDistricts_{$sn}" {if !$district_list.$sn}style="display:none"{/if}>
+       <option value="0">地区</option>
+       <!-- {foreach from=$district_list.$sn item=district} -->
+       <option value="{$district.region_id}" {if $consignee.district eq $district.region_id}selected{/if}>{$district.region_name}</option>
+       <!-- {/foreach} -->
+       </select>
 </body>
 </html>

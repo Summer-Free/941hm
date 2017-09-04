@@ -196,21 +196,15 @@
 					<div class="left-child">
 						<div class="JS-slide">
 							<ul class="content">
+								<!--{foreach item=index_banner_res from=$index_banner_res name=index_banner_res}-->
+								<!-- {if $smarty.foreach.index_banner_res.iteration ==1}-->
 								<li class="active">
-									<a href="goods.php?id=1032"><img src="themes/ecmoban_dsc/iamges/20170517/banner4.jpg" alt="" /></a>
-								</li>
+								<!--{elseif $smarty.foreach.index_banner_res.iteration !=1}-->
 								<li>
-									<a href="company_profile.php"><img src="themes/ecmoban_dsc/iamges/20170517/banner2.jpg" alt="" /></a>
+								<!--{/if}-->
+									<a href="{$index_banner_res.ad_link}"><img src="data/afficheimg/{$index_banner_res.ad_code}" alt="{$index_banner_res.ad_name}" /></a>
 								</li>
-								<li>
-									<a href="experience_hall.php"><img src="themes/ecmoban_dsc/iamges/20170517/banner13.jpg" alt="" /></a>
-								</li>
-								<li>
-									<a href="partner.php"><img src="themes/ecmoban_dsc/iamges/20170517/banner5.jpg" alt="" /></a>
-								</li>
-								<li>
-									<a href="manufacturers_settled.php"><img src="themes/ecmoban_dsc/iamges/20170517/banner6.jpg" alt="" /></a>
-								</li>
+								<!--{/foreach}-->
 							</ul>
 							<a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
 							<a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
@@ -224,20 +218,23 @@
 						</div>
 						<div class="side-bar">
 							<ul class="clearfix">
+								<!--{foreach item=tyg_banner_res from=$tyg_banner_res name=tyg_banner_res} -->
+								<!-- {if $smarty.foreach.tyg_banner_res.iteration ==1  } -->
 								<li>
-									<a href="experience_museum.php">
-										<img src="themes/ecmoban_dsc/iamges/20170517/idx-pic1.jpg" alt="">
-										<span>智能线上体验馆</span>
-										<i></i>
-									</a>
-								</li>
+								<!-- {elseif $smarty.foreach.tyg_banner_res.iteration ==2 } -->
 								<li class="showMsg margin-r-0">
-									<a href="#">
-										<img src="themes/ecmoban_dsc/iamges/20170517/idx-pic2.jpg" alt="">
+								<!--{/if}-->
+									<a href="{$tyg_banner_res.ad_link}">
+										<img src="data/afficheimg/{$tyg_banner_res.ad_code}" alt="">
+										<!-- {if $smarty.foreach.tyg_banner_res.iteration ==1  } -->
+										<span>智能线上体验馆</span>
+										<!-- {elseif $smarty.foreach.tyg_banner_res.iteration ==2 } -->
 										<span>智能场景定制</span>
+										<!--{/if}-->
 										<i></i>
 									</a>
 								</li>
+								<!--{/foreach}-->
 							</ul>
 						</div>
 					</div>
@@ -436,52 +433,17 @@
 							</h2>
 						</dt>
 						<dd class="bg-color-fff clearfix">
-							<a href="brandn.php?id=20" title="美满居">
-								<img class="lazy" width="150" height="70" data-original="themes/ecmoban_dsc/iamges/20170517/mmj.jpg" alt="美满居">
-							</a>
-							<a href="brandn.php?id=40" title="金莎驰">
-								<img class="lazy" width="150" height="70" data-original="themes/ecmoban_dsc/iamges/20170517/jsc.jpg" alt="金莎驰">
-							</a>
-							<a href="brandn.php?id=3" title="国清红木">
-								<img class="lazy" width="150" height="70" data-original="themes/ecmoban_dsc/iamges/20170517/gqhm.jpg" alt="国清红木">
-							</a>
-							<a href="brandn.php?id=63" title="鼎艺红木">
-								<img class="lazy" width="150" height="70" data-original="themes/ecmoban_dsc/iamges/20170517/dyhm.jpg" alt="鼎艺红木">
-							</a>
-							<a href="brandn.php?id=85" title="欧尔利">
-								<img class="lazy" width="150" height="70" data-original="themes/ecmoban_dsc/iamges/20170517/oel.jpg" alt="欧尔利"></a>
-							<a href="brandn.php?id=19" title="洛克王">
-								<img class="lazy" width="150" height="70" data-original="themes/ecmoban_dsc/iamges/20170517/lkw.jpg" alt="洛克王"></a>
-							<a href="brandn.php?id=49" title="京华红木">
-								<img class="lazy" width="150" height="70" data-original="themes/ecmoban_dsc/iamges/20170517/jhhm.jpg" alt="京华红木">
-							</a>
-							<a class="border-r-0" href="brandn.php?id=26" title="博古王">
-								<img class="lazy" width="150" height="70" data-original="themes/ecmoban_dsc/iamges/20170517/bgw.jpg" alt="博古王">
-							</a>
-							<a class="border-b-0" href="brandn.php?id=17" title="时利和红木">
-								<img class="lazy" width="150" height="70" data-original="themes/ecmoban_dsc/iamges/20170517/slhhm.jpg" alt="时利和红木">
-							</a>
-							<a class="border-b-0" href="brandn.php?id=58" title="雅康居">
-								<img class="lazy" width="150" height="70" data-original="themes/ecmoban_dsc/iamges/20170517/ykj.jpg" alt="雅康居">
-							</a>
-							<a class="border-b-0" href="brandn.php?id=87" title="鼎康红木">
-								<img class="lazy" width="150" height="70" data-original="themes/ecmoban_dsc/iamges/20170517/dkhm.jpg" alt="鼎康红木">
-							</a>
-							<a class="border-b-0" href="brandn.php?id=88" title="亿古红木">
-								<img class="lazy" width="150" height="70" data-original="themes/ecmoban_dsc/iamges/20170517/yghm.jpg" alt="亿古红木">
-							</a>
-							<a class="border-b-0" href="brandn.php?id=21" title="乾宝阁">
-								<img class="lazy" width="150" height="70" data-original="themes/ecmoban_dsc/iamges/20170517/qbg.jpg" alt="乾宝阁">
-							</a>
-							<a class="border-b-0" href="brandn.php?id=68" title="良宵">
-								<img class="lazy" width="150" height="70" data-original="themes/ecmoban_dsc/iamges/20170517/lxhm.jpg" alt="良宵">
-							</a>
-							<a class="border-b-0" href="brandn.php?id=21" title="满天星">
-								<img class="lazy" width="150" height="70" data-original="themes/ecmoban_dsc/iamges/20170517/mtxhm.jpg" alt="满天星">
-							</a>
-							<a class="border-b-0 border-r-0" href="brandn.php?id=68" title="南国红木">
-								<img class="lazy" width="150" height="70" data-original="themes/ecmoban_dsc/iamges/20170517/nghm.jpg" alt="南国红木">
-							</a>
+						<!--{foreach item=brand_sql_res from=$brand_sql_res name=brand_sql_res} -->
+						<!--{if $smarty.foreach.brand_sql_res.iteration <8}-->
+						<a href="brandn.php?id={$brand_sql_res.brand_id}" title="{$brand_sql_res.brand_name}">
+						<!--{elseif $smarty.foreach.brand_sql_res.iteration >7 && $smarty.foreach.brand_sql_res.iteration <=15}-->
+						<a class="border-r-0" href="brandn.php?id={$brand_sql_res.brand_id}" title="{$brand_sql_res.brand_name}">
+						<!--{elseif $smarty.foreach.brand_sql_res.iteration ==16}-->
+						<a class="border-b-0 border-r-0" href="brandn.php?id={$brand_sql_res.brand_id}" title="{$brand_sql_res.brand_name}">
+						<!--{/if}-->
+							<img class="lazy" width="150" height="70" data-original="data/brandlogo/{$brand_sql_res.brand_logo}" alt="{$brand_sql_res.brand_name}">
+						</a>
+						<!--{/foreach}-->
 						</dd>
 					</dl>
 				</div>
