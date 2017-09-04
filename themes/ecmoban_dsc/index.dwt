@@ -436,8 +436,13 @@
 						<!--{foreach item=brand_sql_res from=$brand_sql_res name=brand_sql_res} -->
 						<!--{if $smarty.foreach.brand_sql_res.iteration <8}-->
 						<a href="brandn.php?id={$brand_sql_res.brand_id}" title="{$brand_sql_res.brand_name}">
-						<!--{elseif $smarty.foreach.brand_sql_res.iteration >7 && $smarty.foreach.brand_sql_res.iteration <=15}-->
+
+						<!--{elseif $smarty.foreach.brand_sql_res.iteration == 8}-->
 						<a class="border-r-0" href="brandn.php?id={$brand_sql_res.brand_id}" title="{$brand_sql_res.brand_name}">
+
+						<!--{elseif $smarty.foreach.brand_sql_res.iteration >8 && $smarty.foreach.brand_sql_res.iteration <=15}-->
+						<a class="border-b-0" href="brandn.php?id={$brand_sql_res.brand_id}" title="{$brand_sql_res.brand_name}">
+
 						<!--{elseif $smarty.foreach.brand_sql_res.iteration ==16}-->
 						<a class="border-b-0 border-r-0" href="brandn.php?id={$brand_sql_res.brand_id}" title="{$brand_sql_res.brand_name}">
 						<!--{/if}-->
