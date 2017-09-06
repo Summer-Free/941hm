@@ -10,25 +10,16 @@
         {insert_scripts files='jquery.json.js,transport_jquery.js,cart_quick_links.js'}
 	</head>
 	<body>
-		
 		<!--header start-->
 		<div id="header">
-			
 			<!--top slide bar start-->
 			<div class="slide-top-bar">
 				<ul class="JS-slide-top">
+				<!--{foreach item=top_banner_res from=$top_banner_res name=top_banner_res}-->	
 					<li>
-						<a href="partner.php"><img src="themes/ecmoban_dsc/iamges/20170517/topbar-1.jpg" alt=""></a>
+						<a href="{$top_banner_res.ad_link}"><img src="data/afficheimg/{$top_banner_res.ad_code}" alt="{$top_banner_res.ad_name}"></a>
 					</li>
-					<li>
-						<a href="manufacturers_settled.php"><img src="themes/ecmoban_dsc/iamges/20170517/topbar-2.jpg" alt=""></a>
-					</li>
-					<li>
-						<a href="article.php?id=139"><img src="themes/ecmoban_dsc/iamges/20170517/topbar-3.jpg" alt=""></a>
-					</li>
-					<li>
-						<a href="article.php?id=139"><img src="themes/ecmoban_dsc/iamges/20170517/topbar-4.jpg" alt=""></a>
-					</li>
+				<!--{/foreach}-->
 				</ul>
 				<div class="wrap-close">
 					<div class="w1200">
