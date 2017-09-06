@@ -1,5 +1,6 @@
 /*global reset*/
 html,body {
+  min-width: 1400px;
   font-family: "Microsoft Yahei";
   font-size: 14px;
   color: #333;
@@ -260,11 +261,17 @@ table{border-collapse:collapse;border-spacing:0;}
 .margin-r-12 {
   margin-right: 12px!important;
 }
+.margin-r-20 {
+  margin-right: 20px;
+}
 .margin-r-25 {
   margin-right: 25px;
 }
 .margin-r-30 {
   margin-right: 30px;
+}
+.margin-r-95 {
+  margin-right: 95px;
 }
 .margin-r-130 {
   margin-right: 130px;

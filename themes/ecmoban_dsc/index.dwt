@@ -17,7 +17,7 @@
 				<ul class="JS-slide-top">
 				<!--{foreach item=top_banner_res from=$top_banner_res name=top_banner_res}-->	
 					<li>
-						<a href="{$top_banner_res.ad_link}"><img src="data/afficheimg/{$top_banner_res.ad_code}" alt="{$top_banner_res.ad_name}"></a>
+						<a href="{$top_banner_res.ad_link}" style="background-image: url(data/afficheimg/{$top_banner_res.ad_code});"></a>
 					</li>
 				<!--{/foreach}-->
 				</ul>
@@ -31,7 +31,7 @@
 			<!--top start-->
             <div class="top">
                 <div class="w1200 clearfix">
-                    <div class="float-l">欢迎浏览941红木网<span style="padding-left: 18px;">全球首家红木行业生态链服务商</span></div>
+                    <div class="float-l">全球红木行业生态链服务商，打造红木家具第一交易平台</div>
                     <div class="float-r">
                         <ul class="clearfix">
                         	<li><a href="manufacturers_settled.php">厂家入驻</a></li>
@@ -52,7 +52,7 @@
 	                <div class="float-l">
 	                    <h1 class="logo">
 	                    	<a href="index.php">941红木</a>
-                            <a href="article.php?id=139" style="position: absolute; top: 11.5px; left: 285px;background: none;">
+                            <a href="article.php?id=236" style="position: absolute; top: 11.5px; left: 285px;background: none;">
                                 <img src="themes/ecmoban_dsc/iamges/20170517/idx-logo-side.gif" alt="">
                             </a>
                         </h1>    
@@ -671,15 +671,6 @@
 							</div>
 						</li>
 						<!--{/foreach}-->						
-					</ul>
-				</div>
-
-				<div class="section-9">
-					<ul class="clearfix">
-						<li><span><i class="icon-bz"></i>正品保障</span></li>
-						<li><span><i class="icon-wx"></i>终身维修</span></li>
-						<li><span><i class="icon-pf"></i>先行赔付</span></li>
-						<li class="margin-r-0"><span><i class="icon-hx"></i>以旧换新</span></li>
 					</ul>
 				</div>
 

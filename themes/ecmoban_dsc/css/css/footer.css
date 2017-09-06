@@ -12,6 +12,18 @@
 #footer .foot-top li {
 	font-size: 16px;
 }
+#footer .new-sec {
+	height: 75px;
+	line-height: 75px;
+	font-size: 16px;
+	text-align: center;
+}
+#footer .new-sec * {
+	font-style: normal;
+}
+#footer .new-sec em {
+	font-weight: 600;
+}
 .icon-baoz,.icon-qtbt,
 .icon-hprc,.icon-sdfh,
 .icon-qwry {

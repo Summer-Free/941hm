@@ -1,4 +1,11 @@
 /*首页专用头部*/
+#header .slide-top-bar li a {
+	display: block;
+	height: 59px;
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
 #header .btm {
 	padding: 10px 0 0 0;
 	height: 525px;
@@ -405,6 +412,10 @@
 	height: 19px;
 	background-position: -208px 0;
 }
+.section-6 .Crowd-funding {
+	overflow: hidden;
+	height: 712px;
+}
 .section-6 .Crowd-funding>li {
 	overflow: hidden;
 	float: left;
@@ -472,34 +483,6 @@
 }
 .section-6 .Crowd-funding li .li-3 {
 	padding-left: 19px;
-}
-.section-9 li {
-	float: left;
-	margin-right: 60px;
-	width: 255px;
-	height: 110px;
-	line-height: 110px;
-	text-align: center;
-	border: 2px solid #6d7e88;
-}
-.section-9 li span {
-	display: inline-block;
-	font-size: 18px;
-}
-.section-9 .icon-bz,
-.section-9 .icon-wx,
-.section-9 .icon-pf,
-.section-9 .icon-hx {
-	position: relative;
-	left: -5px;
-}
-.section-9 .icon-bz,
-.section-9 .icon-wx {
-	top: 5px;
-}
-.section-9 .icon-pf,
-.section-9 .icon-hx {
-	top: 2px;
 }
 .icon-bz {
 	width: 21px;
