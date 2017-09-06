@@ -18,16 +18,16 @@
 			<div class="slide-top-bar">
 				<ul class="JS-slide-top">
 					<li>
-						<a href="partner.php"><img src="themes/ecmoban_dsc/iamges/20170517/topbar-1.jpg" alt=""></a>
+						<a href="partner.php" style="background-image: url(themes/ecmoban_dsc/iamges/20170517/topbar-1.jpg);"></a>
 					</li>
 					<li>
-						<a href="manufacturers_settled.php"><img src="themes/ecmoban_dsc/iamges/20170517/topbar-2.jpg" alt=""></a>
+						<a href="manufacturers_settled.php" style="background-image: url(themes/ecmoban_dsc/iamges/20170517/topbar-2.jpg);"></a>
 					</li>
 					<li>
-						<a href="article.php?id=139"><img src="themes/ecmoban_dsc/iamges/20170517/topbar-3.jpg" alt=""></a>
+						<a href="article.php?id=236" style="background-image: url(themes/ecmoban_dsc/iamges/20170517/topbar-3.jpg);"></a>
 					</li>
 					<li>
-						<a href="article.php?id=139"><img src="themes/ecmoban_dsc/iamges/20170517/topbar-4.jpg" alt=""></a>
+						<a href="article.php?id=139" style="background-image: url(themes/ecmoban_dsc/iamges/20170517/topbar-4.jpg);"></a>
 					</li>
 				</ul>
 				<div class="wrap-close">
@@ -40,7 +40,7 @@
 			<!--top start-->
             <div class="top">
                 <div class="w1200 clearfix">
-                    <div class="float-l">欢迎浏览941红木网<span style="padding-left: 18px;">全球首家红木行业生态链服务商</span></div>
+                    <div class="float-l">全球红木行业生态链服务商，打造红木家具第一交易平台</div>
                     <div class="float-r">
                         <ul class="clearfix">
                         	<li><a href="manufacturers_settled.php">厂家入驻</a></li>
@@ -61,7 +61,7 @@
 	                <div class="float-l">
 	                    <h1 class="logo">
 	                    	<a href="index.php">941红木</a>
-                            <a href="article.php?id=139" style="position: absolute; top: 11.5px; left: 285px;background: none;">
+                            <a href="article.php?id=236" style="position: absolute; top: 11.5px; left: 285px;background: none;">
                                 <img src="themes/ecmoban_dsc/iamges/20170517/idx-logo-side.gif" alt="">
                             </a>
                         </h1>    
@@ -680,15 +680,6 @@
 							</div>
 						</li>
 						<!--{/foreach}-->						
-					</ul>
-				</div>
-
-				<div class="section-9">
-					<ul class="clearfix">
-						<li><span><i class="icon-bz"></i>正品保障</span></li>
-						<li><span><i class="icon-wx"></i>终身维修</span></li>
-						<li><span><i class="icon-pf"></i>先行赔付</span></li>
-						<li class="margin-r-0"><span><i class="icon-hx"></i>以旧换新</span></li>
 					</ul>
 				</div>
 
