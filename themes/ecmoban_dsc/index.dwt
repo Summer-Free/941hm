@@ -34,8 +34,8 @@
                     <div class="float-l">全球红木行业生态链服务商，打造红木家具第一交易平台</div>
                     <div class="float-r">
                         <ul class="clearfix">
-                        	<li><a href="manufacturers_settled.php">厂家入驻</a></li>
-                        	<li><a href="partner.php">商家入驻</a></li>
+                        	<li><a href="manufacturers_settled.php">商家入驻</a></li>
+                        	<li><a href="partner.php">加盟商入驻</a></li>
 							<li><a class="showMsg" href="#">商家中心</a></li>
 							<li><a href="article_cat.php?id=1007">商城资讯</a></li>
 							<li><a href="company_profile.php">公司简介</a></li>
@@ -444,17 +444,17 @@
 					</dl>
 				</div>
 			
-				<!--商家入驻/广告位-->
+				<!--加盟商入驻/广告位-->
 				<div class="sidebar margin-b-10">
 					<ul class="JS-slide-top">
 						<li>
-							<a href="manufacturers_settled.php" title="厂家入驻">
-								<img class="lazy" width="1200" height="188" data-original="themes/ecmoban_dsc/iamges/20170517/sidebar-1.jpg" alt="厂家入驻">
+							<a href="manufacturers_settled.php" title="商家入驻">
+								<img class="lazy" width="1200" height="188" data-original="themes/ecmoban_dsc/iamges/20170517/sidebar-1.jpg" alt="商家入驻">
 							</a>
 						</li>
 						<li>
-							<a href="partner.php" title="商家入驻">
-								<img class="lazy" width="1200" height="188" data-original="themes/ecmoban_dsc/iamges/20170517/sidebar-2.jpg" alt="商家入驻">
+							<a href="partner.php" title="加盟商入驻">
+								<img class="lazy" width="1200" height="188" data-original="themes/ecmoban_dsc/iamges/20170517/sidebar-2.jpg" alt="加盟商入驻">
 							</a>
 						</li>
 					</ul>
