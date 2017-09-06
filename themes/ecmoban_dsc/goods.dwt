@@ -353,10 +353,15 @@
 								<div class="dd">{$goods.integral} {$points_name}</div>
                             </div>
                             <!-- {/if} -->
-                            
-                        	<!-- {foreach from=$specification item=spec key=spec_key} -->
+                        	<!-- {foreach from=$specification item=spec key=spec_key} --> 
                             {if $spec.values}
-                            <div class="choose-version <!-- {if $spec.attr_type eq 1} -->attr-radio<!-- {else} -->attr-check<!-- {/if} --> goods_info_attr li">
+                            <div class="choose-version 
+                            <!-- {if $spec.attr_type eq 1} -->
+                                attr-radio
+                            <!-- {else} -->
+                                attr-check
+                            <!-- {/if} -->
+                                goods_info_attr li">
                                 <div class="dt">{$spec.name}：</div>
                                 <!-- {if $cfg.goodsattr_style eq 1} -->
                                     <div class="dd">
@@ -391,7 +396,10 @@
                                         {else}
                                         <ul>
                                             <!-- {foreach from=$spec.values item=value key=key name=attrvalues} -->  
-                                                <li class="item{if $key eq 0 && $cfg.add_shop_price eq 1} selected{/if}">
+                                                <li class="item
+                                                {if $key eq 0 && $cfg.add_shop_price eq 1}      
+                                                    selected
+                                                {/if}">
                                                     <b></b>
                                                     <a href="javascript:;" name="{$value.id}" class="noimg">
                                                         {$value.label}
