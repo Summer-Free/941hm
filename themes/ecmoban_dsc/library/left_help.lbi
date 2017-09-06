@@ -1,7 +1,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <!--{if $custom_categories && $cat_info.cat_type eq 1}-->
 <div class="nch-module nch-module-style01">
-        <div class="title">
+        <div class="title" style="background-color: #aa1920;">
             <h3>商城资讯</h3>
         </div>
     <div class="content">
@@ -46,7 +46,7 @@
 <!--{/if}-->
 {if $new_article}
 <div class="nch-module nch-module-style03">
-	<div class="title">
+	<div class="title" style="background-color: #aa1920;">
 		<h3>最新文章</h3>
 	</div>
     <div class="content">
