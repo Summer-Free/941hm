@@ -1,9 +1,21 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <!--{if $custom_categories && $cat_info.cat_type eq 1}-->
 <div class="nch-module nch-module-style01">
-        <div class="title" style="background-color: #aa1920;">
+<!--         <div class="title" style="background-color: #aa1920;">
             <h3>商城资讯</h3>
-        </div>
+        </div> -->
+        <style>
+            .nch-sidebar-article-class li dt a {
+                color: #fff;
+            }
+            .nch-sidebar-article-class li dt {
+                background-color: #aa1920!important;
+            }
+            .nch-module .content li .nch_art_tit i.icon {
+                background-image: url(themes/ecmoban_dsc/iamges/20170517/arc-arrow.png);
+                background-position: 0 0;
+            }
+        </style>
     <div class="content">
     	<ul class="nch-sidebar-article-class">
         	{foreach from=$custom_categories item=custom_cat}
@@ -32,7 +44,10 @@
         	<!-- {foreach from=$sys_cat.children item=sys_child_cat name=cat key=key} -->
             <li>
             	<dl>
-                	<dt class="nch_art_tit"><a href="{$sys_child_cat.url}">{$sys_child_cat.name}</a><i class="icon"></i></dt>
+                	<dt class="nch_art_tit">
+                        <a href="{$sys_child_cat.url}">{$sys_child_cat.name}</a>
+                        <i class="icon"></i>
+                    </dt>
                     {foreach from=$sys_child_cat.children item=sys_c_c_cat}
                     <dd><a href="{$sys_c_c_cat.url}">{$sys_c_c_cat.name}</a></dd>
                     {/foreach}
@@ -46,7 +61,7 @@
 <!--{/if}-->
 {if $new_article}
 <div class="nch-module nch-module-style03">
-	<div class="title" style="background-color: #aa1920;">
+	<div class="title" style="background-color: #aa1920;font-size: 14px;">
 		<h3>最新文章</h3>
 	</div>
     <div class="content">

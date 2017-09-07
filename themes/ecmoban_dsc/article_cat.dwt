@@ -66,7 +66,7 @@
         <div class="right">
         	<div class="nch-article-con">
             	<div class="title-bar">
-    				<h3>{$cat_name}</h3>
+    				<h3>{$cat_name}11</h3>
     			</div>
                 <ul class="nch-article-list">
                 	<!-- {foreach from=$artciles_list item=article key=key name=artcile} -->
