@@ -1,0 +1,71 @@
+.item {
+	height: 649px;
+	font-size: 24px;
+	line-height: 2.5;
+}
+.section-1 div,
+.section-2 div,
+.section-3 div {
+	text-indent: 2em;
+}
+.section-1 {
+	padding-top: 128px;
+}
+.section-1 .float-r {
+	padding-top: 70px;
+	width: 458px;
+}
+.section-2 {
+	color: #fff;
+	background: url(../../iamges/20170517/bg-project-1.jpg) left top;
+}
+.section-2 .float-l {
+	padding-top: 185px;
+	width: 481px;
+}
+.section-2 .float-r {
+	margin-top: 90px;
+	margin-right: -80px;
+}
+.section-3 .float-l {
+	margin-top: 115px;
+	text-align: center;
+}
+.section-3  h3 {
+	padding-top: 20px;
+	font-size: 14px;
+	text-indent: 0;
+}
+.section-3 .float-r {
+	padding-top: 140px;
+	width: 533px;
+}
+.section-3 span,
+.section-4 .float-l a {
+	color: #aa1920;
+}
+.section-4 {
+	color: #fff;
+	background: url(../../iamges/20170517/bg-project-2.jpg) left top;
+}
+.section-4 .float-l {
+	padding-top: 155px;
+	width: 715px;
+}
+.section-4 .float-l h3,
+.section-4 .float-l a {
+	display: block;
+	text-align: center;
+}
+.section-4 .float-l h3 {
+	position: relative;
+	top: 20px;
+	font-size: 60px;
+}
+.section-4 .float-l a {
+	padding-top: 15px;
+	text-decoration: underline;
+}
+.section-4 .float-r {
+	margin-top: 120px;
+}

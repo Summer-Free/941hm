@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-cn">
+    <head>
+    	<!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem -->
+        <!--首页CSS以及部分通用部分的合并LBI-->
+        <!--本页专用-->
+        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/project_introduction.css">
+    </head> 
+    <body>  
+        <!--header start-->
+        <div id="header">
+            <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
+
+            <!--slide banner start-->
+            <div class="slide-banner">      
+                <div class="wrap-banner">
+                    <a href="#" style="display: block;height: 540px;background: url(themes/ecmoban_dsc/iamges/20170517/project-1.jpg) no-repeat top center;"></a>
+                </div>
+            </div>
+            <!--slide banner end-->
+        </div>
+        <!--header end-->
+        
+        <!--main body start-->
+        <div id="main-body">
+            <div class="item section-1">
+                <div class="w1200 clearfix">
+                    <img class="float-l" src="themes/ecmoban_dsc/iamges/20170517/project-3.jpg" alt="">
+                    <div class="float-r">941红木生态服务是全球红木行业生态链服务商，是浙江党牌网络科技有限公司旗下的一个商业项目。线上平台由东阳市工艺美术行业协会设计发起，目的是解决会员单位找订单难、找客户难、找推广难等问题。</div>
+                </div>
+            </div>
+            <div class="item section-2">
+                <div class="w1200 clearfix">
+                    <div class="float-l">平台通过941红木生态、941大数据进行3D视觉体验、全屋智能匹配、板房DIY、以物换物、免费试用、积分兑换等互动板块，结合线下实体触觉体验、生活体验、禅学院等传统文化价值方式，传递进行“一站式边体验边购物”的体验式生活社交服务。</div>
+                    <img class="float-r" src="themes/ecmoban_dsc/iamges/20170517/project-1.png" alt="">
+                </div>
+            </div>
+            <div class="item section-3">
+                <div class="w1200">
+                    <div class="float-l">
+                        <img src="themes/ecmoban_dsc/iamges/20170517/project-2.jpg" alt="">
+                        <h3>党牌控股集团与红木委以及保险公司代表签订合约</h3>
+                    </div>
+                    <div class="float-r">为了让消费者更能放心购买，平台所有商品都具有国家红木质检最高机构——<span>中国木材木制品流通协会红木流通专业委员会</span>进行检验并出具的纸质检测报告，且检测结果在平台线上也可进行实时查询。此外，所有商品由中国人民财产保险有限公司全程承保，让消费者买得安心，买得放心。
+                    </div>
+                </div>
+            </div>
+            <div class="item section-4">
+                <div class="w1200 clearfix">
+                    <div class="float-l">
+                        <h3>所获奖项</h3>
+                        <p>2017华尊奖影响力中国——中国红木电商领域最佳商业模式创新奖</p>
+                        <p>第三届华西论坛——2017中国最佳商业模式创新奖</p>
+                        <p>2017年金华市首届电子商务创业创新大赛优胜奖</p>
+                        <a href="company_honor.php">点击查看更多公司荣誉</a>
+                    </div>
+                    <img class="float-r" src="themes/ecmoban_dsc/iamges/20170517/project-2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!--main body end-->
+
+        <!--footer-->
+        <!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->  
+    </body>    
