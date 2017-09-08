@@ -20,7 +20,13 @@
         
         <!--翻页 start-->
 		<!--{else}-->
-            <div class="pages" id="pager">
+                <style>
+                    .pages li.current a,
+                    .pages li a:hover {
+                        background-color: #aa1920;
+                    }
+                </style>
+            <div class="pages" id="pager" style="margin-top: 10px;">
                 <ul>
                     <!-- {if $pager.page_kbd} -->
                     <!--{foreach from=$pager.search key=key item=item}-->

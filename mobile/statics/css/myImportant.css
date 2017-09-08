@@ -1,3 +1,6 @@
+.footer-nav {
+    z-index: 1000!important;
+}
 .margin-tb-1 {
     margin: 1rem auto;
 }
