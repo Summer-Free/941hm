@@ -8,7 +8,8 @@
 {insert_scripts files='utils.js,transport.js,region.js,shopping_flow.js'}
 <body>	
 {$_LANG}
-	<select name="country" id="selCountries_{$sn}" onchange="region.changed(this, 1, 'selProvinces_{$sn}')">
+	<!--
+              <select name="country" id="selCountries_{$sn}" onchange="region.changed(this, 1, 'selProvinces_{$sn}')">
        <option value="0">国家</option>
        <!-- {foreach from=$country_list item=country} -->
        <option value="{$country.region_id}" {if $consignee.country eq $country.region_id}selected{/if}>{$country.region_name}</option>
@@ -33,5 +34,6 @@
        <option value="{$district.region_id}" {if $consignee.district eq $district.region_id}selected{/if}>{$district.region_name}</option>
        <!-- {/foreach} -->
        </select>
+       -->
 </body>
 </html>

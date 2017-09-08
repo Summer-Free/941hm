@@ -494,13 +494,17 @@
                                 </div>
                             </div>
                             <div class="choose-btns">
-                            	<input name="confirm_type" id="confirm_type" type="hidden" value="3" />
-                                
+                            	<input name="confirm_type" id="confirm_type" type="hidden" value="3" />                               
                                 {if $goods.review_status <= 2 || $goods.is_on_sale eq 0}
                                     <a id="sold_out" class="ajax_buy" href="javascript:;"></a>
                                 {else}
                                     {if $goods_area eq 1}
-                                    	<a href="{if $user_id <= 0 && $one_step_buy}#none{else}javascript:bool=0;addToCart({$goods.goods_id}){/if}" class="buynow btn-buynow">立即购买</a>
+                                    	<a href="{if $user_id <= 0 && $one_step_buy}
+                                            #none
+                                        {else}
+                                            javascript:bool=0;addToCart({$goods.goods_id})
+                                        {/if}"
+                                            class="buynow btn-buynow">立即购买</a>
                                         {if !$one_step_buy}
                                         <a href="javascript:bool=0;addToCartShowDiv({$goods.goods_id})" class="btn-append"><i class="icon"></i>加入购物车</a>
                                         {/if}
@@ -1115,6 +1119,10 @@ function changePriceResponse(res)
 
 	//ecmoban941红木 --zhuo satrt
 	if (document.getElementById('goods_attr_num')){
+        /*for (var prop in products)
+        {
+          alert("products[" + prop + "]=" + products[prop]);
+        }*/
 	  document.getElementById('goods_attr_num').innerHTML = res.attr_number;  
 	  document.getElementById('perNumber').value = res.attr_number;  
 	}
@@ -1171,7 +1179,7 @@ function changePriceResponse(res)
 				$('a.buynow').attr('href','#none').addClass('btn_disabled');
 				
 				{if $goods.review_status >= 3}
-					if(!document.getElementById('quehuo')){
+					if(!document.getElementById('quehuo')){ 
 						{if $goods.is_on_sale neq 0}
 						$('div.choose-desc').before('<a id="quehuo" class="ajax_buy" href="javascript:addToCart({$goods.goods_id});" class="fl"></a>');
 						{/if}
