@@ -127,26 +127,28 @@
         {insert name='user_menu_position'}
         
         <!--右侧机器人-->
-        <style>
+            <script src="//wp.qiye.qq.com/qidian/2852152525/a21ec0a1cf5f6e53571eb0979e6323e4" charset="utf-8"></script>
+        <!--
+            <style>
             #MEIQIA-BTN-HOLDER {
                 z-index: 1000!important;
-            }
-        </style>
-        <script type='text/javascript'>
-            (function(m, ei, q, i, a, j, s) {
-                m[i] = m[i] || function() {
-                    (m[i].a = m[i].a || []).push(arguments)
-                };
-                j = ei.createElement(q),
-                    s = ei.getElementsByTagName(q)[0];
-                j.async = true;
-                j.charset = 'UTF-8';
-                j.src = '//static.meiqia.com/dist/meiqia.js';
-                s.parentNode.insertBefore(j, s);
-            })(window, document, 'script', '_MEIQIA');
-            _MEIQIA('entId', 44329);
-        </script>
-
+                }
+            </style>
+            <script type='text/javascript'>
+                (function(m, ei, q, i, a, j, s) {
+                    m[i] = m[i] || function() {
+                        (m[i].a = m[i].a || []).push(arguments)
+                    };
+                    j = ei.createElement(q),
+                        s = ei.getElementsByTagName(q)[0];
+                    j.async = true;
+                    j.charset = 'UTF-8';
+                    j.src = '//static.meiqia.com/dist/meiqia.js';
+                    s.parentNode.insertBefore(j, s);
+                })(window, document, 'script', '_MEIQIA');
+                _MEIQIA('entId', 44329);
+            </script>
+        -->
         <!--统计代码-->
         <script type="text/javascript">
                 var _hmt = _hmt || [];

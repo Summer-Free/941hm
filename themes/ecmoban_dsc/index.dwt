@@ -264,17 +264,17 @@
 					<div class="main-body">
 						<div class="JS-slide-scroll">
 							<ul class="content">
-								<!--{foreach item=ms_re from=$ms_re name=ms_re} -->
+								<!--{foreach item=guess_goods from=$guess_goods name=guess_goods} -->
 								<li>
-									<a href="goods.php?id={$ms_re.goods_id}">
+									<a href="goods.php?id={$guess_goods.goods_id}">
 										<div class="img-box">
-											<img class="lazy" data-original="{$ms_re.goods_thumb}" width="160" height="160" alt="" />
+											<img class="lazy" data-original="{$guess_goods.goods_thumb}" width="160" height="160" alt="" />
 										</div>
 										<div class="product-info">
-											<h3>{$ms_re.goods_name|truncate:15}</h3>
+											<h3>{$guess_goods.goods_name|truncate:15}</h3>
 											<p class="clearfix">
-												<ins class="color-aa1920 float-l">&yen; {$ms_re.shop_price}</ins>
-												<del class="float-r">&yen; {$ms_re.market_price}</del>
+												<ins class="color-aa1920 float-l">{$guess_goods.shop_price}</ins>
+												<del class="float-r">{$guess_goods.market_price}</del>
 											</p>
 										</div>
 									</a>
@@ -356,29 +356,37 @@
 							<a href="latest_listing.php">查看更多</a>
 						</h2>
 						<ul>
-						<!--{foreach item=new_re from=$new_re name=new_re} -->
-							<!-- {if $smarty.foreach.new_re.iteration ==1  } -->
-							<li>
-							<!-- {elseif $smarty.foreach.new_re.iteration ==2 } -->
-							<li class="border-r-0">
-							<!-- {elseif $smarty.foreach.new_re.iteration ==3 } -->
-							<li class="border-b-0">
-							<!-- {elseif $smarty.foreach.new_re.iteration ==4 } -->
-							<li class="border-r-0 border-b-0">
-							<!--{/if}-->
-								<a href="goods.php?id={$new_re.goods_id}">
-									<div class="wrap-img">
-										<img class="lazy" data-original="{$new_re.goods_thumb}" width="211" height="211" alt="">
-									</div>	
-									<div class="wrap-info">
-										<h3>{$new_re.goods_name|truncate:22}</h3>
-										<div class="sprice color-aa1920">
-											&yen; {$new_re.shop_price}
-										</div>
-									</div>
-								</a>
-							</li>
-						<!--{/foreach}-->
+						<!-- TemplateBeginEditable name="最新商品" -->
+						<div id="dome4">
+						    <div class="done-warp">
+						        <ul>
+						        <!--{foreach item=new_goods from=$new_goods name=new_goods} -->
+									<!-- {if $smarty.foreach.new_goods.iteration ==1  } -->
+									<li>
+									<!-- {elseif $smarty.foreach.new_goods.iteration ==2 } -->
+									<li class="border-r-0">
+									<!-- {elseif $smarty.foreach.new_goods.iteration ==3 } -->
+									<li class="border-b-0">
+									<!-- {elseif $smarty.foreach.new_goods.iteration ==4 } -->
+									<li class="border-r-0 border-b-0">
+									<!--{/if}-->
+										<a href="{$new_goods.url}">
+											<div class="wrap-img">
+												<img class="lazy" data-original="{$new_goods.thumb}" width="211" height="211" alt="{$new_goods.name}">
+											</div>	
+											<div class="wrap-info">
+												<h3>{$new_goods.name|truncate:15}</h3>
+												<div class="sprice clearfix">
+													<ins class="float-l color-aa1920">{$new_goods.shop_price}</ins>
+													<del class="float-r">{$new_goods.market_price}</del>
+												</div>
+											</div>
+										</a>
+									</li>
+								<!--{/foreach}-->
+						    </div>
+						</div>
+						<!-- TemplateEndEditable -->
 						</ul>
 					</div>
 					<div class="discount float-r">
@@ -387,25 +395,25 @@
 							<a href="limited_time_offer.php">查看更多</a>
 						</h2>
 						<ul>
-						<!--{foreach item=xs_re from=$xs_re name=xs_re} -->
-							<!-- {if $smarty.foreach.xs_re.iteration ==1  } -->
+						<!--{foreach item=best_goods from=$best_goods name=best_goods} -->
+							<!-- {if $smarty.foreach.best_goods.iteration ==1  } -->
 							<li>
-							<!-- {elseif $smarty.foreach.xs_re.iteration ==2 } -->
+							<!-- {elseif $smarty.foreach.best_goods.iteration ==2 } -->
 							<li class="border-r-0">
-							<!-- {elseif $smarty.foreach.xs_re.iteration ==3 } -->
+							<!-- {elseif $smarty.foreach.best_goods.iteration ==3 } -->
 							<li class="border-b-0">
-							<!-- {elseif $smarty.foreach.xs_re.iteration ==4 } -->
+							<!-- {elseif $smarty.foreach.best_goods.iteration ==4 } -->
 							<li class="border-r-0 border-b-0">
 							<!--{/if}-->
-								<a href="goods.php?id={$xs_re.goods_id}">
+								<a href="{$best_goods.url}">
 									<div class="wrap-img">
-										<img class="lazy" data-original="{$xs_re.goods_thumb}" width="211" height="211" alt="">
+										<img class="lazy" data-original="{$best_goods.thumb}" width="211" height="211" alt="{$best_goods.name}">
 									</div>	
 									<div class="wrap-info">
-										<h3>{$xs_re.goods_name|truncate:22}</h3>
+										<h3>{$best_goods.name|truncate:15}</h3>
 										<div class="sprice clearfix">
-											<ins class="float-l color-aa1920">&yen; {$xs_re.shop_price}</ins>
-											<del class="float-r">&yen; {$xs_re.market_price}</del>
+											<ins class="float-l color-aa1920">{$best_goods.shop_price}</ins>
+											<del class="float-r">{$best_goods.market_price}</del>
 										</div>
 									</div>
 								</a>
@@ -460,7 +468,15 @@
 						</li>
 					</ul>
 				</div>
-
+				<div id="goods_cat_level">
+				<!--goods_cat_level-->
+		        <!-- TemplateBeginEditable name="首页楼层" -->
+		            <!-- #BeginLibraryItem "/library/cat_goods.lbi" --><!-- #EndLibraryItem -->
+		            <!-- #BeginLibraryItem "/library/cat_goods.lbi" --><!-- #EndLibraryItem -->
+		            <!-- #BeginLibraryItem "/library/cat_goods.lbi" --><!-- #EndLibraryItem -->
+		            <!-- #BeginLibraryItem "/library/cat_goods.lbi" --><!-- #EndLibraryItem -->
+		        <!-- TemplateEndEditable -->
+				</div>
 				<!--餐厅系列-->
 				<div class="section-5 common-temp margin-b-10">
 					<h2 class="common-h2-2 clearfix">
