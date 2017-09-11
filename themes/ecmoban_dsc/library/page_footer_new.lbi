@@ -144,7 +144,8 @@
          </script>
 
         <!--右侧机器人-->
-        <style>
+        <script src="//wp.qiye.qq.com/qidian/2852152525/a21ec0a1cf5f6e53571eb0979e6323e4" charset="utf-8"></script>
+<!--         <style>
             #MEIQIA-BTN-HOLDER {
                 z-index: 1000!important;
             }
@@ -162,7 +163,7 @@
                 s.parentNode.insertBefore(j, s);
             })(window, document, 'script', '_MEIQIA');
             _MEIQIA('entId', 44329);
-        </script>
+        </script> -->
         
         <!--控制右侧边栏相关功能-->
         <script type="text/javascript">
