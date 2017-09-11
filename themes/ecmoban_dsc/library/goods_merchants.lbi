@@ -114,7 +114,7 @@
         <script>
             window.onload= function() {
                 $(".seller-kefu").append($(".qidian_wpa_img"));
-                $(".qidian_wpa_img").css({
+                $(".qidian_wpa_img").eq(0).css({
                     "position": "absolute",
                     "z-index": 1000
                 });
