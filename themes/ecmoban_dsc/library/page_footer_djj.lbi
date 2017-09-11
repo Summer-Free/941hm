@@ -127,6 +127,7 @@
         {insert name='user_menu_position'}
         
         <!--右侧机器人-->
+
         <script src="//wp.qiye.qq.com/qidian/2852152525/a21ec0a1cf5f6e53571eb0979e6323e4" charset="utf-8"></script>
         <!--         
             <style>
@@ -134,6 +135,16 @@
             </style>
                 <script type='text/javascript'>
                 (function(m, ei, q, i, a, j, s) {
+
+        <script src="//wp.qiye.qq.com/qidian/2852152525/c07a0ec2548f94d63eab86933f484853" charset="utf-8"></script>
+<!--         <style>
+            #MEIQIA-BTN-HOLDER {
+                z-index: 1000!important;
+            }
+        </style>
+        <script type='text/javascript'>
+            (function(m, ei, q, i, a, j, s) {
+                cff8a5b1d4f80315fa73cc460eed4867f4426c4f
                 m[i] = m[i] || function() {
                     (m[i].a = m[i].a || []).push(arguments)
                 };
