@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-cn">
+    <head>
+    	<!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem -->
+        <!--首页CSS以及部分通用部分的合并LBI-->
+        <!--本页专用-->
+        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/latest_listing.css">
+    </head> 
+    <body>
+        <!--header start-->
+        <div id="header">
+            <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
+
+            <!--slide banner start-->
+            <div class="slide-banner">      
+                <div class="w1200">
+                    <div class="JS-slide">
+                        <ul class="content">
+                            <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/new-pro1.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/new-pro2.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/new-pro3.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/new-pro4.jpg" alt="" style="margin: 0 auto" /></a></li>
+                        </ul>
+                        <a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
+                        <a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
+                        <ul class="point">
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--slide banner end-->
+        </div>
+        <!--header end-->
+
+        <!--main body start-->
+        <div class="w1200 bg-color-f5f5f5" id="main-body">
+
+			<!--产品列表-->
+            <div class="wrap-list">
+    			<ul class="common-product-list-1 clearfix active">
+    				<!--{foreach item=first_page from=$first_page name=first_page} -->
+    					<!-- {if $smarty.foreach.first_page.iteration %4 !=0  } -->
+                    		<li class="move">
+                    	<!-- {elseif $smarty.foreach.first_page.iteration %4==0} -->
+                    		<li class="move margin-r-0">
+                    	<!--{/if}--> 
+    							<a href="goods.php?id={$first_page.goods_id}">
+    								<div class="global-product-img">
+    									<img class="lazy" width="290" height="290" data-original="{$first_page.goods_thumb}" alt="" />
+    								</div>
+    								<div class="btm">
+    									<h3>{$first_page.goods_name|truncate:15}</h3>
+    									<p class="clearfix">
+    										<span class="price float-l">价格: &yen;{$first_page.shop_price}
+    										</span>
+    									</p>
+    									<span class="btn">立即购买</span>
+    								</div>
+    							</a>
+    						</li>
+    				<!--{/foreach}-->
+    			</ul>
+                <ul class="common-product-list-1 clearfix">
+                    <!--{foreach item=second_page from=$second_page name=second_page} -->
+                        <!-- {if $smarty.foreach.second_page.iteration %4 !=0  } -->
+                            <li class="move">
+                        <!-- {elseif $smarty.foreach.second_page.iteration %4==0} -->
+                            <li class="move margin-r-0">
+                        <!--{/if}--> 
+                                <a href="goods.php?id={$second_page.goods_id}">
+                                    <div class="global-product-img">
+                                        <img class="lazy" width="290" height="290" data-original="{$second_page.goods_thumb}" alt="" />
+                                    </div>
+                                    <div class="btm">
+                                        <h3>{$second_page.goods_name|truncate:15}</h3>
+                                        <p class="clearfix">
+                                            <span class="price float-l">价格: &yen;{$second_page.shop_price}
+                                            </span>
+                                        </p>
+                                        <span class="btn">立即购买</span>
+                                    </div>
+                                </a>
+                            </li>
+                    <!--{/foreach}-->
+                </ul>
+            </div>
+            <div class="tab-nav">
+                <a class="active transition" href="javascript:void(0);">1</a>
+                <a class="transition" href="javascript:void(0);">2</a>
+            </div>
+        </div>
+        <!--main body end-->
+
+		<!--footer-->
+		<!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->
+
+		<!--页面专用JS-->
+		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/latest_listing.js"></script>	
+	    <script type="text/javascript" src="js/jquery.lazyload.js"></script>  
+        
+        <!--开启懒加载-->
+        <script type="text/javascript">
+            $("img.lazy").lazyload({
+            	placeholder: "themes/ecmoban_dsc/images/loadGoods.gif",
+                effect : "fadeIn",
+                threshold : 1000
+            });
+        </script>
+    </body>
+</html>    
