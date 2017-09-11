@@ -28,7 +28,7 @@
 <!--首页CSS以及部分通用部分的合并LBI-->
 
 {* 包含脚本文件 *}
-{insert_scripts files='jquery-1.9.1.min.js,jquery.json.js,transport_jquery.js,common.js,compare.js,utils.js,cart_common.js,cart_quick_links.js,warehouse_area.js'}
+{insert_scripts files='jquery-1.9.1.min.js,jquery.json.js,transport_jquery.js,common.js,compare.js,utils.js,cart_common.js,warehouse_area.js'}
 
 
 <script type="text/javascript" src="themes/ecmoban_dsc/js/sc_memake.js"></script>

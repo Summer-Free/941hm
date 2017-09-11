@@ -91,19 +91,35 @@
             </span>
         </div>
     </div>
-    <div class="seller-kefu">
+    <div class="seller-kefu" style="position: relative;height: 30px;">
         <!--start 在线客服 bylu-->
         {if $shop_information.is_IM eq 1 || $shop_information.is_dsc}
 
-            <a id="IM" onclick="openWin(this)" href="javascript:;" goods_id="{$goods.goods_id}" class="seller-btn"><i class="icon"></i>在线客服</a>
+            <!-- <a id="IM" onclick="openWin(this)" href="javascript:;" goods_id="{$goods.goods_id}" class="seller-btn"><i class="icon"></i>在线客服</a> -->
         {else}
             {if $basic_info.kf_type eq 1}
-            <a href="http://www.taobao.com/webww/ww.php?ver=3&touid={$basic_info.kf_ww}&siteid=cntaobao&status=1&charset=utf-8" class="seller-btn" target="_blank"><i class="icon"></i>联系客服</a>
+            <!-- <a href="http://www.taobao.com/webww/ww.php?ver=3&touid={$basic_info.kf_ww}&siteid=cntaobao&status=1&charset=utf-8" class="seller-btn" target="_blank"><i class="icon"></i>联系客服</a> -->
             {else}
-            <a href="http://wpa.qq.com/msgrd?v=3&uin={$basic_info.kf_qq}&site=qq&menu=yes" class="seller-btn" target="_blank"><i class="icon"></i>联系客服</a>
+            <!-- <a href="http://wpa.qq.com/msgrd?v=3&uin={$basic_info.kf_qq}&site=qq&menu=yes" class="seller-btn" target="_blank"><i class="icon"></i>联系客服</a> -->
             {/if}
         {/if}
         <!--end 在线客服 bylu-->
+
+
+
+        <!--2017/9/11 QQ在线客服-->
+        <script src="//wp.qiye.qq.com/qidian/2852152525/a13cac068882eece479cf02b3b614b6b" charset="utf-8"></script>
+
+        <!--调整在线客服的CSS样式问题-->
+        <script>
+            window.onload= function() {
+                $(".seller-kefu").append($(".qidian_wpa_img"));
+                $(".qidian_wpa_img").css({
+                    "position": "absolute",
+                    "z-index": 1000
+                });
+            }
+        </script>
     </div>
     {if $goods.user_id}
     <div class="pop-shop-enter">
