@@ -28,7 +28,7 @@
 <!--首页CSS以及部分通用部分的合并LBI-->
 
 {* 包含脚本文件 *}
-{insert_scripts files='jquery-1.9.1.min.js,jquery.json.js,transport_jquery.js,common.js,compare.js,utils.js,cart_common.js,cart_quick_links.js,warehouse_area.js'}
+{insert_scripts files='jquery-1.9.1.min.js,jquery.json.js,transport_jquery.js,common.js,compare.js,utils.js,cart_common.js,warehouse_area.js'}
 
 
 <script type="text/javascript" src="themes/ecmoban_dsc/js/sc_memake.js"></script>
@@ -543,7 +543,7 @@
         <div class="ecsc-layout-210">
           <!--{if $basic_info.kf_type eq 1}-->
               <!--{if $basic_info.kf_ww_all}-->
-              <div class="m service_list">
+<!--               <div class="m service_list">
                 <div class="mt"><h2>店内客服</h2></div>
                 <div class="mc">
                     <ul>
@@ -552,11 +552,11 @@
                         {/foreach}
                     </ul>
                 </div>
-              </div>
+              </div> -->
               <!--{/if}-->
           <!--{else}-->
           	  <!--{if $basic_info.kf_qq_all}-->
-              <div class="m service_list">
+<!--               <div class="m service_list">
                 <div class="mt"><h2>店内客服</h2></div>
                 <div class="mc">
                     <ul>
@@ -565,7 +565,7 @@
                         {/foreach}
                     </ul>
                 </div>
-              </div>
+              </div> -->
               <!--{/if}-->
           <!--{/if}-->
           <!--{if $goods.user_id}-->
@@ -612,16 +612,16 @@
             <!--{/if}-->
             
             <!--{if $goods_brand}-->
-            <div class="m goods_brand">
+<!--             <div class="m goods_brand">
             	<div class="mt"><h2>同类其他品牌</h2></div>
                 <div class="mc">
-                	<ul class="lh">
+                	<ul class="lh"> -->
                     	<!--{foreach from=$goods_brand item=brand}-->
-                    	<li><a href="{$brand.url}" target="_blank">{$brand.brand_name}</a></li>
+                    	<!-- <li><a href="{$brand.url}" target="_blank">{$brand.brand_name}</a></li> -->
                         <!--{/foreach}-->
-                    </ul>
+<!--                     </ul>
                 </div>
-            </div>
+            </div> -->
             <!--{/if}-->
             
             <div id="charts" class="m">

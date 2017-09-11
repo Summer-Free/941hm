@@ -83,7 +83,7 @@ $.Validform = function(a,b,c){
 			//验证用户名长度6-20字符之间
 			error.parent().prev().addClass("form-item-error").removeClass("form-item-valid");
 			error.removeClass().addClass("error");
-			error.html(i_error+'长度在6-20个字符之间');
+			error.html(i_error+'长度在6-20个字符之间,并且只能是数字，字母，或是两者的组合');
 			return false;
 		}else if(/^[0-9]*$/.test(val)){
 			//验证用户名不能为存数字

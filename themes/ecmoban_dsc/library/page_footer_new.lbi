@@ -20,7 +20,7 @@
                         <em class="color-aa1920">家具质检：</em>
                         <i>中国木材木制品流通协会与红木流通专业委员会</i>
                     </span>
-                    <span class="margin-r-95">
+                    <span>
                         <em class="color-aa1920">家具承保：</em>
                         <i>中国人民财产保险公司</i>
                     </span>
@@ -144,28 +144,27 @@
          </script>
 
         <!--右侧机器人-->
-            <script src="//wp.qiye.qq.com/qidian/2852152525/a21ec0a1cf5f6e53571eb0979e6323e4" charset="utf-8"></script>
-            <!--
-                <style>
-                    #MEIQIA-BTN-HOLDER {
-                        z-index: 1000!important;
-                    }
-                </style>
-                <script type='text/javascript'>
-                    (function(m, ei, q, i, a, j, s) {
-                        m[i] = m[i] || function() {
-                            (m[i].a = m[i].a || []).push(arguments)
-                        };
-                        j = ei.createElement(q),
-                            s = ei.getElementsByTagName(q)[0];
-                        j.async = true;
-                        j.charset = 'UTF-8';
-                        j.src = '//static.meiqia.com/dist/meiqia.js';
-                        s.parentNode.insertBefore(j, s);
-                    })(window, document, 'script', '_MEIQIA');
-                    _MEIQIA('entId', 44329);
-                </script>
-            -->
+
+        <script src="//wp.qiye.qq.com/qidian/2852152525/a21ec0a1cf5f6e53571eb0979e6323e4" charset="utf-8"></script>
+        <!--
+        <style>
+            #MEIQIA-BTN-HOLDER {z-index: 1000!important;}
+        </style>
+            <script type='text/javascript'>
+            (function(m, ei, q, i, a, j, s) {
+            m[i] = m[i] || function() {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            j = ei.createElement(q),
+                s = ei.getElementsByTagName(q)[0];
+            j.async = true;
+            j.charset = 'UTF-8';
+            j.src = '//static.meiqia.com/dist/meiqia.js';
+            s.parentNode.insertBefore(j, s);
+            })(window, document, 'script', '_MEIQIA');
+            _MEIQIA('entId', 44329);
+        </script> 
+        -->
         <!--控制右侧边栏相关功能-->
         <script type="text/javascript">
 

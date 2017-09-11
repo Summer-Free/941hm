@@ -88,7 +88,7 @@
                 <form class="register-form" name="formUser" method="post" action="user.php?act=oath_register">
                     <div class="form-item" id="form-item-account">
                         <label>用　户　名</label>
-                        <input type="text" name="username" placeholder="您的账户名和登录名" data-valid="username" autocomplete="off" data-default="<i class='i-def'></i>支持中文、字母、数字、“-”“_”的组合，4-20个字符" />
+                        <input type="text" name="username" placeholder="您的账户名和登录名" data-valid="username" autocomplete="off" data-default="<i class='i-def'></i>字母、数字、6-20个字符" />
                     	<i class="i-status"></i>
                         <div class="suggest-container user-suggest">
                             <li class="disable"><div class="value"><i class="i-error1"></i><span>账号已存在</span></div></li>

@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/index.css">
 		<!-- #BeginLibraryItem "/library/user_menu_position.lbi" --><!-- #EndLibraryItem -->
         {* 包含脚本文件 *}
-        {insert_scripts files='jquery.json.js,transport_jquery.js,cart_quick_links.js'}
+        {insert_scripts files='jquery.json.js,transport_jquery.js'}
 	</head>
 	<body>
 		<!--header start-->
@@ -422,7 +422,6 @@
 						</ul>
 					</div>
 				</div>
-					{insert name='user_menu_position'}
 				<!--品牌街-->
 				<div class="section-4 margin-b-10">
 					<dl>
