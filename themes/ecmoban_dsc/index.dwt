@@ -355,71 +355,74 @@
 							<span><i class="xpss-icon"></i>新品上市</span>
 							<a href="latest_listing.php">查看更多</a>
 						</h2>
-						<ul>
-						<!-- TemplateBeginEditable name="最新商品" -->
 						<div id="dome4">
 						    <div class="done-warp">
 						        <ul>
-						        <!--{foreach item=new_goods from=$new_goods name=new_goods} -->
-									<!-- {if $smarty.foreach.new_goods.iteration ==1  } -->
-									<li>
-									<!-- {elseif $smarty.foreach.new_goods.iteration ==2 } -->
-									<li class="border-r-0">
-									<!-- {elseif $smarty.foreach.new_goods.iteration ==3 } -->
-									<li class="border-b-0">
-									<!-- {elseif $smarty.foreach.new_goods.iteration ==4 } -->
-									<li class="border-r-0 border-b-0">
-									<!--{/if}-->
-										<a href="{$new_goods.url}">
-											<div class="wrap-img">
-												<img class="lazy" data-original="{$new_goods.thumb}" width="211" height="211" alt="{$new_goods.name}">
-											</div>	
-											<div class="wrap-info">
-												<h3>{$new_goods.name|truncate:15}</h3>
-												<div class="sprice clearfix">
-													<ins class="float-l color-aa1920">{$new_goods.shop_price}</ins>
-													<del class="float-r">{$new_goods.market_price}</del>
-												</div>
-											</div>
-										</a>
-									</li>
-								<!--{/foreach}-->
+								<!-- TemplateBeginEditable name="new商品" -->
+								<!-- #BeginLibraryItem "/library/recommend_new.lbi" -->
+								<!-- {if $new_goods} -->
+								<ul>
+								<!--{foreach from=$new_goods item=new_goods name=new_goods}-->
+					            <!-- {if $smarty.foreach.new_goods.iteration ==1  } -->
+					            <li>
+					            <!-- {elseif $smarty.foreach.new_goods.iteration ==2 } -->
+					            <li class="border-r-0">
+					            <!-- {elseif $smarty.foreach.new_goods.iteration ==3 } -->
+					            <li class="border-b-0">
+					            <!-- {elseif $smarty.foreach.new_goods.iteration ==4 } -->
+					            <li class="border-r-0 border-b-0">
+					            <!--{/if}-->
+					            <a href="goods.php?id={$new_goods.goods_id}">
+					                <div class="wrap-img">
+					                    <img class="lazy" data-original="{$new_goods.goods_thumb}" width="211" height="211" alt="{$new_goods.goods_name}">
+					                </div>
+					                <div class="wrap-info">
+					                    <h3>{$new_goods.goods_name|truncate:15}</h3>
+					                    <div class="sprice clearfix">
+					                    <ins class="float-l color-aa1920">{$new_goods.shop_price}</ins>
+					                    <del class="float-r">{$new_goods.market_price}</del>
+					                    </div>
+					                </div>
+					            </a>
+					            </li>
+					            <!--{/foreach}-->
+								</ul>
+								<!-- {/if} -->
+								<!-- #EndLibraryItem -->
+								<!-- TemplateEndEditable -->
+								</ul>
 						    </div>
-						</div>
-						<!-- TemplateEndEditable -->
-						</ul>
+						</div>	
 					</div>
 					<div class="discount float-r">
 						<h2 class="common-h2-2 clearfix">
 							<span><i class="xpss-icon"></i>限时优惠</span>
 							<a href="limited_time_offer.php">查看更多</a>
 						</h2>
-						<ul>
-						<!--{foreach item=best_goods from=$best_goods name=best_goods} -->
-							<!-- {if $smarty.foreach.best_goods.iteration ==1  } -->
+							<ul>
+							<!-- TemplateBeginEditable name="best商品" -->
+							<!-- #BeginLibraryItem "/library/recommend_hot.lbi" -->
+							<!-- {if $hot_goods} -->
+							<!--{foreach from=$hot_goods item=goods}-->
 							<li>
-							<!-- {elseif $smarty.foreach.best_goods.iteration ==2 } -->
-							<li class="border-r-0">
-							<!-- {elseif $smarty.foreach.best_goods.iteration ==3 } -->
-							<li class="border-b-0">
-							<!-- {elseif $smarty.foreach.best_goods.iteration ==4 } -->
-							<li class="border-r-0 border-b-0">
-							<!--{/if}-->
-								<a href="{$best_goods.url}">
-									<div class="wrap-img">
-										<img class="lazy" data-original="{$best_goods.thumb}" width="211" height="211" alt="{$best_goods.name}">
-									</div>	
-									<div class="wrap-info">
-										<h3>{$best_goods.name|truncate:15}</h3>
-										<div class="sprice clearfix">
-											<ins class="float-l color-aa1920">{$best_goods.shop_price}</ins>
-											<del class="float-r">{$best_goods.market_price}</del>
-										</div>
-									</div>
-								</a>
+							<div class="done-img"><a href="{$goods.url}" target="_blank"><img src="{$goods.thumb}" title="{$goods.name|escape:html}" width="136" height="136"/></a></div> 
+							<div class="done-name"><a href="{$goods.url}" target="_blank" title="{$goods.name|escape:html}">{$goods.short_style_name}</a></div>
+							<div class="done-price">
+							<span class="shop-price">
+							{if $goods.promote_price neq ''}
+							{$goods.promote_price}
+							{else}
+							{$goods.shop_price}
+							{/if}
+							</span>
+							<span class="original-price">{$goods.market_price}</span>
+							</div>
 							</li>
-						<!--{/foreach}-->
-						</ul>
+							<!--{/foreach}-->
+							<!-- {/if} -->
+							<!-- #EndLibraryItem -->
+							<!-- TemplateEndEditable -->
+							</ul>
 					</div>
 				</div>
 				<!--品牌街-->
@@ -466,15 +469,6 @@
 							</a>
 						</li>
 					</ul>
-				</div>
-				<div id="goods_cat_level">
-				<!--goods_cat_level-->
-		        <!-- TemplateBeginEditable name="首页楼层" -->
-		            <!-- #BeginLibraryItem "/library/cat_goods.lbi" --><!-- #EndLibraryItem -->
-		            <!-- #BeginLibraryItem "/library/cat_goods.lbi" --><!-- #EndLibraryItem -->
-		            <!-- #BeginLibraryItem "/library/cat_goods.lbi" --><!-- #EndLibraryItem -->
-		            <!-- #BeginLibraryItem "/library/cat_goods.lbi" --><!-- #EndLibraryItem -->
-		        <!-- TemplateEndEditable -->
 				</div>
 				<!--餐厅系列-->
 				<div class="section-5 common-temp margin-b-10">

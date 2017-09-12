@@ -1,28 +1,28 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <!-- {if $new_goods} -->
-<div id="dome4">
-    <div class="done-warp">
-        <ul>
-            <!--{foreach from=$new_goods item=goods}-->
-            <li>
-                <div class="done-img"><a href="{$goods.url}" target="_blank"><img src="{$goods.thumb}" title="{$goods.name|escape:html}" width="136" height="136" /></a></div> 
-                <div class="done-name"><a href="{$goods.url}" target="_blank" title="{$goods.name|escape:html}">{$goods.short_style_name}</a></div>
-                <div class="done-price">
-                    <span class="shop-price">
-                        {if $goods.promote_price neq ''}
-                            {$goods.promote_price}
-                        {else}
-                            {$goods.shop_price}
-                        {/if}
-                    </span>
-                    <span class="original-price">{$goods.market_price}</span>
+    <!--{foreach from=$new_goods item=new_goods name=new_goods}-->
+    <!-- {if $smarty.foreach.new_goods.iteration ==1  } -->
+    <li>
+    <!-- {elseif $smarty.foreach.new_goods.iteration ==2 } -->
+    <li class="border-r-0">
+    <!-- {elseif $smarty.foreach.new_goods.iteration ==3 } -->
+    <li class="border-b-0">
+    <!-- {elseif $smarty.foreach.new_goods.iteration ==4 } -->
+    <li class="border-r-0 border-b-0">
+    <!--{/if}-->
+        <a href="{$new_goods.url}">
+            <div class="wrap-img">
+                <img class="lazy" data-original="{$new_goods.thumb}" width="211" height="211" alt="{$new_goods.name}">
+            </div>  
+            <div class="wrap-info">
+                <h3>{$new_goods.name|truncate:15}</h3>
+                <div class="sprice clearfix">
+                <ins class="float-l color-aa1920">{$new_goods.shop_price}</ins>
+                <del class="float-r">{$new_goods.market_price}</del>
                 </div>
-            </li>
-            <!--{/foreach}--> 
-        </ul>
-        <a href="javascript:void(0);" class="done-prev"></a>
-        <a href="javascript:void(0);" class="done-next"></a>
-    </div>
-</div>
+            </div>
+        </a>
+    </li>
+    <!--{/foreach}-->
 <!-- {/if} -->
