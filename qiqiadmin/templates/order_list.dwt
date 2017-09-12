@@ -140,7 +140,11 @@
 											{/if}
 										</div>
 									</td>
-                                    <td><div class="tDiv"><span>{$order.buyer|escape}</span><br>{$order.short_order_time}</div></td>
+                                    <td>  
+                                        <div class="tDiv"><span>{$order.buyer|escape}</span><br>
+                                            <div id="time" class="time-jack" value="{$order.add_time}"></div>
+                                        </div>
+                                    </td>
                                     <td><div class="tDiv"><strong class="org"><a href="mailto:{$order.email}"> {$order.consignee|escape}</a></strong>{if $order.mobile} [TEL: {$order.mobile|escape}]{/if}<br>[{$order.region}] {$order.address|escape}</div></td>
                                     <td>
                                     	<div class="tDiv">
@@ -200,7 +204,7 @@
 								{foreachelse}
 								<tr><td class="no-records" colspan="12">{$lang.no_records}</td></tr>
 								{/foreach}
-                            </tbody>
+                            </tbody> 
                             <tfoot>
                                 <tr>
                                     <td colspan="10">
@@ -559,6 +563,30 @@
 	  location.href = "order.php?act=order_export" + args;
 	}
 	
+</script>
+<script>   
+    // 自定义时间格式  
+    function getLocalTime(nS) {     
+        return new Date(parseInt(nS) * 1000).toLocaleString().replace(/年|月/g, "-").replace(/日/g, " ");      
+    };
+
+    //动态添加时间到元素中
+    function showTime() {
+        var el = $(".time-jack"),
+        result = "",
+        time = "";
+        for(var i=0;i < el.length;i++) {
+
+            time = $(el.eq(i)).attr("value");
+
+            result = getLocalTime(time);
+
+            $(el.eq(i)).append(result)
+        } 
+    };    
+
+    //调用函数
+    showTime();
 </script>
 </body>
 </html>
