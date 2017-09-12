@@ -91,7 +91,7 @@
             </span>
         </div>
     </div>
-    <div class="seller-kefu" style="position: relative;height: 30px;">
+    <div class="seller-kefu">
         <!--start 在线客服 bylu-->
         {if $shop_information.is_IM eq 1 || $shop_information.is_dsc}
 
@@ -105,21 +105,18 @@
         {/if}
         <!--end 在线客服 bylu-->
 
-
-
         <!--2017/9/11 QQ在线客服-->
-        <script src="//wp.qiye.qq.com/qidian/2852152525/3ee66d3f5d1aec35ca01d30d8b8e9db2" charset="utf-8"></script>
-
-        <!--调整在线客服的CSS样式问题-->
-        <script>
-            window.onload= function() {
-                $(".seller-kefu").append($(".qidian_wpa_img"));
-                $(".qidian_wpa_img").eq(0).css({
-                    "position": "absolute",
-                    "z-index": 1000
-                });
+        <script src="//wp.qiye.qq.com/qidian/2852152525/36e7b2ed325e54cb7a0e4c34a724db8b" charset="utf-8"></script>
+        <div id="msg-btn"><img src="themes/ecmoban_dsc/iamges/20170517/msg-btn.png" alt=""></div>
+        <style>
+            #msg-btn {
+                text-align: center;
+                cursor: pointer;
             }
-        </script>
+            #msg-btn img {
+                display: inline-block;
+            }
+        </style>
     </div>
     {if $goods.user_id}
     <div class="pop-shop-enter">

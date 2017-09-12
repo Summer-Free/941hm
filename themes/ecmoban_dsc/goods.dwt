@@ -338,6 +338,10 @@
                         </div>
                         
                         <div class="choose p-choose-wrap">
+                            <div class="choose-num li">
+                                <div class="dt" style="font-family: '\5B8B\4F53';">保　　障：</div>
+                                <div class="dd" style="color: #666;">由中国红木委进行质量检验检测，中国人民财产保险公司全程承保</div>
+                            </div>
                         	<!-- {if $cfg.show_brand && $goods.user_id} 显示商品品牌-->
                             <div class="summary-service">
                                 <div class="dt">{$lang.goods_brand}</div>
@@ -481,7 +485,7 @@
                             {/if}
                             <!--@author-bylu end-->
                             <div class="choose-num choose-xznum li">
-                                <div class="dt">数　　量：</div>
+                                <div class="dt" style="font-family: '\5B8B\4F53';">数　　量：</div>
                                 <div class="dd">
                                     <a class="btn-reduce" href="javascript:;">-</a>
                                     <input class="text buy-num" id="quantity" onblur="changePrice()" value="{if $goods.measure_unit eq 0}0{else}1{/if}" name="number" defaultnumber="1">

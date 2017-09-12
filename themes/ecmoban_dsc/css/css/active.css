@@ -1,0 +1,112 @@
+html,body {
+	overflow-x: hidden;
+	color: #373a3b;
+	background-color: #f4dc26;
+}
+.margin-r-122 {
+	margin-right: 122px;
+}
+.margin-r-80 {
+	margin-right: 80px;
+}
+.text-center {
+	text-align: center;
+}
+.w1400 {
+	margin: 0 auto;
+	width: 1400px;
+}
+@media (min-width: 1410px) {
+	html,body {
+		overflow: auto;
+	}
+}
+#head div {
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+#main-body h1,
+#main-body h2 {
+	color: #e7292b;
+	font-size: 100px;
+	font-weight: 900;
+}
+#main-body h3 {
+	font-size: 48px;
+}
+.coupon-list {
+	margin-top: 88px;
+}
+.coupon-list li {
+	float: left;
+	margin-right: 40px;
+	text-align: center;
+	cursor: pointer;
+}
+.coupon-list .top {
+	padding-top: 45px;
+	width: 319px;
+	height: 191px;
+	color: #fff;
+	font-size: 24px;
+	background: url(../../iamges/20170517/active-bg-1.png) no-repeat;
+}
+.coupon-list li span {
+	display: block;
+}
+.coupon-list .money {
+	font-size: 68px;
+	text-indent: 24px;
+}
+.coupon-list .money.s1 {
+	text-indent: 0;
+}
+.coupon-list .btm {
+	display: inline-block;
+	width: 162px;
+	height: 55px;
+	line-height: 55px;
+	color: #019aba;
+	font-size: 35px;
+	background: url(../../iamges/20170517/active-bg-2.png) no-repeat;
+	cursor: pointer;
+}
+#main-body h2 {
+	margin-top: 30px;
+	padding-bottom: 130px;
+	background: url(../../iamges/20170517/active-bg-3.png) no-repeat bottom center;
+}
+.product-list {
+	margin-top: 30px;
+	box-shadow: 0 0 50px #9d7b14;
+	background-color: #f4efeb;
+}
+.product-list li {
+	float: left;
+	width: 700px;
+}
+.product-list a {
+	display: block;
+	text-align: center;
+}
+.product-list img {
+	max-width: 100%;
+}
+.product-list h4 {
+	margin-top: 80px;
+	font-size: 48px;
+}
+.product-list .left {
+	border-right: 5px solid #dcdcdc;
+}
+.product-list .right {
+	border-left: 5px solid #dcdcdc;
+}
+#foot {
+	padding: 20px 0;
+	font-size: 36px;
+	line-height: 1.5;
+	color: #e7292b;
+	font-weight: 600;
+	text-align: center;
+}
