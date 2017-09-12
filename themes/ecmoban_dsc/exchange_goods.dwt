@@ -122,6 +122,10 @@
                                 <div class="dd">由&nbsp;{$basic_info.shop_name}&nbsp;发货并提供售后服务。</div>
                                 {/if}
                             </div>
+                            <div class="summary-service">
+                                <div class="dt" style="font-family: '\5B8B\4F53';">保　　障：</div>
+                                <div class="dd" style="color: #666;">由中国红木委进行质量检验检测，中国人民财产保险公司全程承保</div>
+                            </div>
                             {if $freight_model eq 1}  
                                 <div class="summary-freight">
                                     <div class="dt">运　　费：</div>
@@ -484,6 +488,14 @@
 		</div>
 	</div>
     <div class="ecsc-goods-love ecsc-goods-love-new">
+        <style>
+            .ecsc-goods-love * {
+                box-sizing: content-box;
+            }
+            .ecsc-goods-love .clearance-content .p-name {
+                height: 40px;
+            }
+        </style>
         <div class="ec-title"><h3>最近浏览</h3><a href="javascript:void(0)" class="ec-huan"><i class="icon"></i>换一组</a></div>
         <div class="clearance-content">
             <ul>

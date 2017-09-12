@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-cn">
+	<head>
+        <meta charset="utf-8" />
+		<link rel="shortcut icon" href="favicon.ico" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<title>941hm_金秋送壕礼</title>
+		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/base.css">
+		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/active.css">
+	</head>
+	<body>
+		
+		<!--head-->
+		<div id="head">
+			<div style="height: 381px;background-image: url(themes/ecmoban_dsc/iamges/20170517/active-banner_01.jpg);"></div> 
+			<div style="height: 436px;background-image: url(themes/ecmoban_dsc/iamges/20170517/active-banner_02.jpg);"></div>
+			<div style="height: 412px;background-image: url(themes/ecmoban_dsc/iamges/20170517/active-banner_03.jpg);"></div>
+		</div>
+
+		<!--main body-->
+		<div id="main-body">
+			<div class="w1400">
+				<h1 class="text-center"><span class="margin-r-122">金秋送壕礼</span>优惠享不停</h1>
+				<h3 class="text-center">
+					<span class="margin-r-80">精选产品 折上折</span>
+					<span class="margin-r-80">精选商品 专享享</span>
+					活动价+优惠券
+				</h3>
+
+				<!--优惠券列表-->
+				<ul class="coupon-list clearfix">
+					<li>
+						<div class="top">
+							<span class="money s1">500</span>
+							<span>实付满5000使用</span>
+						</div>
+						<div class="btm">点击领取</div>
+					</li>
+					<li>
+						<div class="top">
+							<span class="money">1200</span>
+							<span>实付满10000使用</span>
+						</div>
+						<div class="btm">点击领取</div>
+					</li>
+					<li>
+						<div class="top">
+							<span class="money">2600</span>
+							<span>实付满20000使用</span>
+						</div>
+						<div class="btm">点击领取</div>
+					</li>
+					<li class="margin-r-0">
+						<div class="top">
+							<span class="money">3900</span>
+							<span>实付满30000使用</span>
+						</div>
+						<div class="btm">点击领取</div>
+					</li>
+				</ul>
+
+				<h2 class="text-center">优惠商品</h2>
+				<ul class="product-list clearfix">
+					<li class="left">
+						<a href="goods.php?id=217">
+							<img src="themes/ecmoban_dsc/iamges/20170517/active-pro-1.jpg" alt="">
+						</a>
+						<a href="goods.php?id=1560">
+							<img src="themes/ecmoban_dsc/iamges/20170517/active-pro-2.jpg" alt="">
+						</a>
+						<a href="goods.php?id=1559">
+							<img src="themes/ecmoban_dsc/iamges/20170517/active-pro-3.jpg" alt="">
+						</a>
+					</li>
+					<li class="right">
+						<a href="goods.php?id=131">
+							<img src="themes/ecmoban_dsc/iamges/20170517/active-pro-4.jpg" alt="">
+						</a>
+						<a href="goods.php?id=256">
+							<img src="themes/ecmoban_dsc/iamges/20170517/active-pro-5.jpg" alt="">
+						</a>
+						<a href="goods.php?id=22">
+							<img src="themes/ecmoban_dsc/iamges/20170517/active-pro-6.jpg" alt="">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="foot">
+			<p>免单名单公布时间为活动结束后七个工作日内，</p>
+			<p>被抽中的买家会有工作人员联系通知。</p>
+			<p>最终免单金额按订单实际付款金额为准。</p>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/active.js"></script>
+	</body>
+</html>	
