@@ -17,26 +17,57 @@
 	<div class="title">
 		<a href="index.php?act=main" class="s-back">返回</a>商家入驻全部信息展示
 	</div>
-<table width="725" height="104" border="1">
+	<style>
+		.iframe_body {
+			padding: 0 10px;
+		}
+		.iframe_body .title {
+			padding-top: 20px;
+		}
+		#table-jack {
+			width: 100%;
+			text-align: center;
+			border: 1px solid #ccc;
+			border-right: none;
+			border-bottom: none;
+		}
+		#table-jack caption,
+		#table-jack th {
+			height: 36px;
+			line-height: 36px;
+			color: #333;
+			font-size: 14px;
+			text-align: center;
+		}
+		#table-jack th,
+		#table-jack td {
+			height: 36px;
+			line-height: 36px;
+			border-right: 1px solid #ccc;
+			border-bottom: 1px solid #ccc;
+		}
+		#table-jack a {
+			cursor: pointer;
+		}
+	</style>
+<table id="table-jack">
+	<caption>全部加盟商信息</caption>
 	<tr>
-		<td colspan="6" align="center"><h3>展示全部加盟商信息</h3></td>
-	</tr>
-	<tr>
-		<td width="106" align="center">用户姓名</td>
-		<td width="106" align="center">联系电话</td>
-		<td width="106" align="center">家庭住址</td>
-		<td width="159" align="center">意向添加时间</td>
-		<td width="106" align="center">加盟意向</td>
-		<td width="102" align="center">操作</td>
+		<th>用户姓名</th>
+		<th>联系电话</th>
+		<th>家庭住址</th>
+		<th>意向添加时间</th>
+		<th>加盟意向</th>
+		<th>操作</th>
 	</tr>
 	<!--{foreach from=$bm_res item=bm_res name=bm_res}-->
 		<tr>
-			<td align="center" valign="middle">{$bm_res.bm_name}</td>
-	        <td align="center" valign="middle">{$bm_res.bm_phone}</td>
-	        <td align="center" valign="middle">{$bm_res.bm_address}</td>
-	        <td align="center" valign="middle">{$bm_res.bm_time}</td>
-	        <td align="center" valign="middle">{$bm_res.bm_type}</td>
-			<td align="center" valign="middle">
+			<td>{$bm_res.bm_name}</td>
+	        <td>{$bm_res.bm_phone}</td>
+	        <td>{$bm_res.bm_address}</td>
+	        <td>{$bm_res.bm_time}</td>
+	        <td>{$bm_res.bm_type}</td>
+			<td>
 			<input type="hidden" type="text" id="this_messge_id" value="{$bm_res.id}">
 				<a onclick="check_confirm()">删除</a>
 			</td>
