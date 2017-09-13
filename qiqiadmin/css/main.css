@@ -524,7 +524,7 @@ input.error,textarea.error{ background-color: #FFF0F0;background-repeat: repeat;
 .contentWarp .section{ margin: 30px 0 0 0;padding: 0 20px;background: #fff;box-shadow: 0 0 8px rgba(0,0,0,0.1);font-size: 12px; border-radius:5px;}
 .contentWarp .section_select{ overflow:hidden; margin-bottom:-10px;}
 .contentWarp .section .sc_title{padding:26px 0 14px; border-bottom:1px solid #e4eaec; position:relative;}
-.contentWarp .section .sc_title h3{ float:left; font-size:16px; font-weight:bold; color:#000; line-height:20px; padding-left:28px;}
+.contentWarp .section .sc_title h3{ float:left; font-size:18px; font-weight:bold; color:#000; line-height:20px; padding-left:28px;}
 .contentWarp .section .sc_title cite{ float:right; color:#999; line-height:20px;}
 .contentWarp .section .sc_icon{ display:block; width:20px; height:20px; position:absolute;}
 
