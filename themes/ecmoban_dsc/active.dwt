@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/base.css">
 		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/active.css">
 		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/quickLinks.css">
-		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/purebox.css">
+		<!-- <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/purebox.css"> -->
         {* 包含脚本文件 *}
         {insert_scripts files='jquery-1.9.1.min.js,jquery.json.js,transport_jquery.js,cart_quick_links.js,jquery.json.js,transport_jquery.js'}
 	</head>
