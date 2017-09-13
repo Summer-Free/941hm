@@ -8,6 +8,10 @@
 		<title>941hm_金秋送壕礼</title>
 		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/base.css">
 		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/active.css">
+		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/quickLinks.css">
+		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/purebox.css">
+        {* 包含脚本文件 *}
+        {insert_scripts files='jquery-1.9.1.min.js,jquery.json.js,transport_jquery.js,cart_quick_links.js,jquery.json.js,transport_jquery.js'}
 	</head>
 	<body>
 		
@@ -92,7 +96,13 @@
 			<p>被抽中的买家会有工作人员联系通知。</p>
 			<p>最终免单金额按订单实际付款金额为准。</p>
 		</div>
-		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		
+		<!-- #BeginLibraryItem "/library/user_menu_position.lbi" --><!-- #EndLibraryItem -->
 		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/active.js"></script>
+		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/cart_common.js"></script>
+		<script type="text/javascript" src="themes/ecmoban_dsc/js/notLogin.js"></script>
+		<script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.SuperSlide.2.1.1.js"></script>
+        <!--右侧机器人-->
+        <script src="//wp.qiye.qq.com/qidian/2852152525/a21ec0a1cf5f6e53571eb0979e6323e4" charset="utf-8"></script>
 	</body>
 </html>	
