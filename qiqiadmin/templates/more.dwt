@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/perfect-scrollbar.min.css" rel="stylesheet" type="text/css">
+<link href="css/purebox.css" rel="stylesheet" type="text/css">
+<link href="js/jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/dsc_admin2.0.js"></script>
+<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+</head>
+<body class="iframe_body">
+	<div class="title">
+		<a href="index.php?act=main" class="s-back">返回</a>商家入驻全部信息展示
+	</div>
+<table width="725" height="104" border="1">
+	<tr>
+		<td colspan="6" align="center"><h3>展示全部加盟商信息</h3></td>
+	</tr>
+	<tr>
+		<td width="106" align="center">用户姓名</td>
+		<td width="106" align="center">联系电话</td>
+		<td width="106" align="center">家庭住址</td>
+		<td width="159" align="center">意向添加时间</td>
+		<td width="106" align="center">加盟意向</td>
+		<td width="102" align="center">操作</td>
+	</tr>
+	<!--{foreach from=$bm_res item=bm_res name=bm_res}-->
+		<tr>
+			<td align="center" valign="middle">{$bm_res.bm_name}</td>
+	        <td align="center" valign="middle">{$bm_res.bm_phone}</td>
+	        <td align="center" valign="middle">{$bm_res.bm_address}</td>
+	        <td align="center" valign="middle">{$bm_res.bm_time}</td>
+	        <td align="center" valign="middle">{$bm_res.bm_type}</td>
+			<td align="center" valign="middle">
+			<input type="hidden" type="text" id="this_messge_id" value="{$bm_res.id}">
+				<a onclick="check_confirm()">删除</a>
+			</td>
+		</tr>
+	<!--{/foreach}-->
+</table>
+</body>
+<script>
+	function check_confirm(){
+		var r=confirm('您确定要删除这条数据么？');
+		if(r==true){
+			var id=$("#this_messge_id").val();
+			$.ajax({
+                type:"GET",
+                url:"del.php?id="+id,
+                dataType:"TEXT",
+                success:function(data)
+                {   
+                	window.location.href='index.php?act=more';
+                }
+            });
+		}
+	}
+</script>
+</html>
