@@ -1,0 +1,142 @@
+#main-body h2 {
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	font-size: 24px;
+}
+.wrap-content h3 {
+	text-align: center;
+}
+.wrap-content form {
+	padding: 35px 300px;
+}
+.wrap-content form sup {
+	vertical-align: super;
+	font-size: 12px;
+}
+.form-group {
+	margin-bottom: 15px;
+}
+.form-group input[type="text"] {
+	padding-left: 5px;
+	border: 1px solid #ccc;
+}
+.form-group>div input,
+.form-group>div label {
+	float: left;
+} 
+.group-1>div {
+	margin: 5px 0 0 0;
+	line-height: 30px;
+}
+.group-1>div input {
+	position: relative;
+	top: 9px;
+}
+.form-group>div label {
+	padding: 0 0 0 5px;
+	width: 81px;
+	color: #333;
+}
+.form-group .error {
+	position: relative;
+	top: 8px;
+	font-size: 24px;
+}
+.group-3>div {
+	padding-top: 15px;
+}
+.group-3 input {
+	margin-right: 10px;
+	width: 108px;
+}
+.group-3 input,
+.group-3 span {
+	height: 33px;
+	line-height: 33px;
+}
+.group-3 span {
+	position: relative;
+	top: -4px;
+	float: left;
+}
+.group-4 {
+	position: relative;
+}
+.group-4 span {
+	position: absolute;
+	right: 116px;
+	top: 102px;
+	top: 105px\0;
+	font-size: 12px;
+}
+.group-4 textarea {
+	margin-top: 15px;
+	padding: 8px;
+	width: 488px;
+	height: 72px;
+	font-family: "Microsoft Yahei";
+	resize: none;
+	border: 1px solid #ccc;
+}
+.group-5>div {
+	margin-top: 15px;
+	height: 33px;
+	line-height: 33px;
+}
+.group-5 input {
+	height: 33px;
+	line-height: 33px;
+}
+.group-5 label {
+	width: 90px;
+}
+.group-6 {
+	text-align: center;
+}
+.city-picker-select select {
+	width: 100px;
+	height: 33px;
+	line-height: 33px;
+	border-radius: 0;
+}
+.group-6 {
+	margin-bottom: 0;
+	padding-top: 20px;
+}
+.group-6 > p {
+	margin-bottom: 15px;
+}
+.group-6 button,
+#main-body .success a {
+	display: inline-block;
+	width: 166px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	background-color: #aa1920;
+	cursor: pointer;
+}
+
+/*提交成功页面*/
+#main-body .success {
+	padding-top: 15px;
+	text-align: center;
+}
+#main-body .success p {
+	margin-bottom: 45px;
+}
+#main-body .success img {
+	position: relative;
+	left: 10px;
+	display: inline-block;
+}
+#main-body .success .p1 {
+	font-size: 18px;
+}
+#main-body {
+	min-height: 666px;
+}

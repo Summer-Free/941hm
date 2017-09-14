@@ -57,10 +57,10 @@
 				<h2 class="text-center">优惠商品</h2>
 				<ul class="product-list clearfix">
 					<li class="left">
-						<a href="goods.php?id=217">
+						<a href="goods.php?id=217" style="display: block;border-bottom: 10px solid #dcdcdc;">
 							<img src="themes/ecmoban_dsc/iamges/20170517/active-pro-1.jpg" alt="">
 						</a>
-						<a href="goods.php?id=1560">
+						<a href="goods.php?id=1560" style="display: block;border-bottom: 10px solid #dcdcdc;">
 							<img src="themes/ecmoban_dsc/iamges/20170517/active-pro-2.jpg" alt="">
 						</a>
 						<a href="goods.php?id=1559">
@@ -68,10 +68,10 @@
 						</a>
 					</li>
 					<li class="right">
-						<a href="goods.php?id=131">
+						<a href="goods.php?id=131" style="display: block;border-bottom: 10px solid #dcdcdc;">
 							<img src="themes/ecmoban_dsc/iamges/20170517/active-pro-4.jpg" alt="">
 						</a>
-						<a href="goods.php?id=256">
+						<a href="goods.php?id=256" style="display: block;border-bottom: 10px solid #dcdcdc;">
 							<img src="themes/ecmoban_dsc/iamges/20170517/active-pro-5.jpg" alt="">
 						</a>
 						<a href="goods.php?id=22">
@@ -82,9 +82,9 @@
 			</div>
 		</div>
 		<div id="foot">
-			<p>免单名单公布时间为活动结束后七个工作日内，</p>
-			<p>被抽中的买家会有工作人员联系通知。</p>
-			<p>最终免单金额按订单实际付款金额为准。</p>
+			<a href="index.php" style="display: inline-block;"><img src="themes/ecmoban_dsc/iamges/20170517/active-bg-4.png" alt=""></a>
+			<p style="font-size: 30px;color: #333;line-height: 1;font-weight: normal;">免单名单公布时间为活动结束后七个工作,日内被抽中的买家会</p>
+			<p style="font-size: 30px;color: #333;line-height: 1;font-weight: normal;">有工作人员联系通知,最终免单金额按订单实际付款金额为准</p>
 		</div>
 		
 		<!-- #BeginLibraryItem "/library/user_menu_position.lbi" --><!-- #EndLibraryItem -->

@@ -110,16 +110,13 @@
 .product-list img {
 	width: 100%;
 }
-.product-list li:first-child:after,
-.product-list li:last-child:after {
+.product-list li:first-child:after {
 	position: absolute;
 	content: "";
 	display: block;
 	width: 100%;
 	height: 1.55rem;
 	background-color: #f9303b;
-}
-.product-list li:first-child:after {
 	bottom: 100%;
 }
 footer {
@@ -131,4 +128,15 @@ footer {
 }
 footer p {
 	font-weight: 600;
+}
+footer a {
+	display: block;
+	margin: 0 auto 1rem; 
+	width: 30.55rem;
+	height: 1.55rem;
+	line-height: 1.55rem;
+	text-align: center;
+	font-size: 1.33rem;
+	color: #fff!important;
+	background-color: #f9303b;
 }

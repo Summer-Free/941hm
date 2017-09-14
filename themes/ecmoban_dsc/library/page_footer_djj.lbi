@@ -37,7 +37,7 @@
                                     <a href="company_honor.php" target="_blank">&gt; 公司荣誉</a>
                                     <a href="experience_hall.php" target="_blank">&gt; 体验馆</a>
                                     <a href="partner.php" target="_blank">&gt; 加盟商入驻</a>
-                                    <a href="manufacturers_settled.php" target="_blank">&gt; 商家入驻</a>
+                                    <a href="manufacturers_settled.php" target="_blank">&gt; 品牌入驻</a>
                                     <a href="article.php?id=76" target="_blank">&gt; 联系我们</a>
                                 </dd>
                             </dl>
@@ -127,8 +127,7 @@
         {insert name='user_menu_position'}
         
         <!--右侧机器人-->
-
-        <script src="//wp.qiye.qq.com/qidian/2852152525/a21ec0a1cf5f6e53571eb0979e6323e4" charset="utf-8"></script>
+        <script src="//wp.qiye.qq.com/qidian/2852152525/c07a0ec2548f94d63eab86933f484853" charset="utf-8"></script>
         <!--         
             <style>
                 #MEIQIA-BTN-HOLDER {z-index: 1000!important;}
