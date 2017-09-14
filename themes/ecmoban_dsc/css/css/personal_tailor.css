@@ -95,7 +95,8 @@
 	margin-bottom: 40px;
 }
 .sec-6 {
-	padding: 110px 0 76px 0;
+	margin-top: 60px;
+	padding: 76px 0;
 	text-align: center;
 }
 .sec-6 img,
@@ -110,7 +111,7 @@
 .fixed-left {
 	position: fixed;
 	top: 50%;
-	left: 15px;
+	left: 40px;
 	margin-top: -132px;
 	width: 192px;
 	height: 264px;

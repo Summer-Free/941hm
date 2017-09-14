@@ -163,17 +163,17 @@
 					</div>
 				</div>
 
-				<div class="sec-6">
-					<img src="themes/ecmoban_dsc/iamges/20170517/dz-pic-5.jpg" alt="">
-					<p>微信扫描填写问卷，定制你的专属家居</p>
-					<p>咨询热线：400-666-9338</p>
-				</div>
-
 				<div class="fixed-left bg-color-fff">
 					<div><img src="themes/ecmoban_dsc/iamges/20170517/dz-pic-5.jpg" width="192" height="192" alt=""></div>
 					<p class="p1">微信扫描填写需求</p>
 					<p>定制你的专属家居</p>
 				</div>
+			</div>
+
+			<div class="sec-6 bg-color-fff">
+				<img src="themes/ecmoban_dsc/iamges/20170517/dz-pic-5.jpg" alt="">
+				<p>微信扫描填写问卷，定制你的专属家居</p>
+				<p>咨询热线：400-666-9338</p>
 			</div>
         </div>
 
