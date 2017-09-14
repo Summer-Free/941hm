@@ -98,6 +98,9 @@
                                         <a href="user.php?act=oath&type={$website.web_type}" class="{$website.web_type}"></a>
                                     </li>
                                     {/foreach}
+                                    <li>
+                                        <a id="weixin" href="#"><img id="weixin_img" width="23px" height="24px" src="../themes/ecmoban_dsc/iamges/20170517/gorwn.png"></a>
+                                    </li>
                                 </ul>
 
                             </div>
@@ -181,7 +184,7 @@ if(length>1){
                                     <i class="i-phone"></i>
                                 </div>
                                 <label id="phone_notice" class="error"></label>
-<!--                                 <span class="tx_rm">或 <a href="javascript:void(0)" class="email_open">邮箱验证</a></span> -->
+                                <span class="tx_rm">或 <a href="javascript:void(0)" class="email_open">邮箱验证</a></span>
                             </div>
                             
                             <div class="item" id="email_yz" style="display:none;">

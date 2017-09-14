@@ -13,17 +13,20 @@
 -->
     <div class="index-banner swiper-container box position-rel banner-first imp-class">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
-            <!--活动页面-->
-                <a href="../mobile/index.php?r=active">
-                    <img src="../mobile/statics/img/newapp/banner4.jpg" alt="" />
-                </a>
-            </div>
+            
+              <!--<div class="swiper-slide">-->
+              <!--活动页面-->
+                  <!--<a href="../mobile/index.php?r=active">
+                      <img src="../mobile/statics/img/newapp/banner4.jpg" alt="" />
+                  </a>
+              </div>
+              -->
+            
             <div class="swiper-slide">
             <!--招商加盟-->
-                <a href="../mobile/index.php?r=partner">
+                  <a href="../mobile/index.php?r=partner">
                     <img src="../mobile/statics/img/newapp/banner1.jpg" alt="" />
-                </a>
+                  </a>
             </div>
             <div class="swiper-slide">
             <!--注册送礼-->
@@ -159,8 +162,8 @@
     <!--每日秒杀相关产品-->
     <section class="product-list-medium imp-class">
         <ul class="clearfix">
-          <!-- {foreach $best_goods as $key => $best} -->
-          <li>
+          <!-- {foreach $sql_ms as $key => $sql_ms} --><!--原来是：foreach $hot_goods as $key => $best-->
+          <!--<li>
             <div class="product-div">
               <a class="product-div-link" href="{$best.url}"></a>
               <img class="product-list-img lazy" data-original="{$best.goods_thumb}" />
@@ -169,11 +172,22 @@
                   <p class="text-center"><span class="p-price t-first ">{$best.current_price}</span></p>
               </div>
             </div>
+          </li>-->
+          <li>
+            <div class="product-div">
+              <a class="product-div-link" href="../mobile/index.php?r=goods&id={$sql_ms.goods_id}&u=0"></a>
+                <img class="product-list-img lazy" data-original="../{$sql_ms.goods_thumb}" />
+              <div class="product-text">
+                <h4 class="onelist-hidden">{$sql_ms.goods_name}</h4>
+                <p class="text-center">
+                  <span class="p-price t-first ">
+                  <em>￥</em>{$sql_ms.market_price}</span></p>
+              </div>
+            </div>
           </li>
           <!-- {/foreach} -->
         </ul>
     </section>
-
     <!--匠物众筹-->
     <div class="index-banner swiper-container box mb-1 banner-second">
         <div class="swiper-wrapper">
