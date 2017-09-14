@@ -94,7 +94,25 @@
 					</ul>
 				</div>
 
-				<div class="sec-3 bg-color-fff">
+				<div class="sec-7 margin-b-20">
+					<h2>100%真实案例展示</h2>
+					<div class="clearfix">
+						<img src="themes/ecmoban_dsc/iamges/20170517/dz-pic-6.jpg" alt="">
+						<img src="themes/ecmoban_dsc/iamges/20170517/dz-pic-7.jpg" alt="">
+						<img class="margin-r-0" src="themes/ecmoban_dsc/iamges/20170517/dz-pic-8.jpg" alt="">
+						<img src="themes/ecmoban_dsc/iamges/20170517/dz-pic-9.jpg" alt="">
+						<img src="themes/ecmoban_dsc/iamges/20170517/dz-pic-10.jpg" alt="">
+						<img src="themes/ecmoban_dsc/iamges/20170517/dz-pic-11.jpg" alt="">
+						<img class="margin-r-0" src="themes/ecmoban_dsc/iamges/20170517/dz-pic-12.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="sec-8 bg-color-fff">
+					<h2>超过50万用户，成为941红木忠实会员</h2>
+					<img src="themes/ecmoban_dsc/iamges/20170517/dz-pic-13.jpg" alt="">
+				</div>
+
+				<div class="sec-3 bg-color-fff margin-t-20">
 					<h2>红木家具定制流程</h2>
 					<div>
 						<ol class="clearfix">

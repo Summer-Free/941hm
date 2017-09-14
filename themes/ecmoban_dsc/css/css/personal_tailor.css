@@ -110,9 +110,9 @@
 .fixed-left {
 	position: fixed;
 	top: 50%;
-	left: 88px;
+	left: 15px;
 	margin-top: -132px;
-	width: 264px;
+	width: 192px;
 	height: 264px;
 	text-align: center;
 }
@@ -121,4 +121,33 @@
 }
 .fixed-left .p1 {
 	padding-bottom: 15px;
+}
+.sec-7 {
+	padding-top: 27px;
+	height: 661px;
+	background-color: #fcc41a;
+}
+.sec-7 h2 {
+	margin: 0 auto 27px;
+	width: 518px;
+	height: 117px;
+	color: #fff;
+	font-size: 48px;
+	line-height: 117px;
+	text-align: center;
+	border: 1px solid #fff;
+}
+.sec-7 div {
+	padding: 0 17.5px;
+}
+.sec-7 img {
+	float: left;
+	margin-right: 8px;
+	margin-bottom: 8px;
+}
+.sec-8 h2 {
+	height: 106px;
+	line-height: 106px;
+	font-size: 48px;
+	text-align: center;
 }

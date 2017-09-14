@@ -47,6 +47,7 @@
                             {$goods.goods_style_name}</h3>
                         <span class="heart j-heart {if $goods_collect}active{/if}"  onclick="collect({$goods.goods_id})" id="ECS_COLLECT"><i class="ts-2"></i><em class="ts-2">收藏</em></span>
                     </div>
+                    <a href="../mobile/index.php?r=active" style="display: block;margin-top:1rem;"><img src="../mobile/statics/img/newapp/detail-bar.jpg" alt="" style="max-width: 100%;width: 100%;"></a>
                 </section>
                 <section class="goods-price padding-all b-color-f">
                     <p class="p-price"><span class="t-first" id="ECS_SHOPPRICE">{if $goods.is_promote && $goods.gmt_end_time}{$goods.promote_price}{else}{$goods.shop_price_formated}{/if}</span><em class="em-promotion"><font id="ECS_DISCOUNT">{$goods.zhekou}</font>折</em></p>

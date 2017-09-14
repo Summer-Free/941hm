@@ -11,6 +11,7 @@
                             <li><a href="partner.php">加盟商入驻</a></li>
                             <li><a class="showMsg" href="#">商家中心</a></li>
                             <li><a href="article_cat.php?id=1007">商城资讯</a></li>
+                            <li><a href="company_profile.php">公司简介</a></li>
                             <li><a href="company_honor.php">公司荣誉</a></li>
                             <li class="padding-r-0"><a href="project_introduction.php">项目介绍</a></li>
                         </ul>

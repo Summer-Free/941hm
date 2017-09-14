@@ -150,6 +150,7 @@
                             <!--<h2>{$goods.goods_brief}</h2>-->
                             <!--{/if}-->
                         </div>
+                        <a href="active.php"><img src="themes/ecmoban_dsc/iamges/20170517/detail-bar.jpg" alt="" /></a>
                         <div class="summary clearfix">
                             <!--goods页面-->
                             <div class="summary-list">
