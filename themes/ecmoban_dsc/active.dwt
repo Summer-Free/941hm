@@ -31,39 +31,29 @@
 					<span class="margin-r-80">精选商品 专享享</span>
 					活动价+优惠券
 				</h3>
-
+				
 				<!--优惠券列表-->
 				<ul class="coupon-list clearfix">
-					<li>
-						<div class="top">
-							<span class="money s1">500</span>
-							<span>实付满5000使用</span>
-						</div>
-						<div class="btm">点击领取</div>
-					</li>
-					<li>
-						<div class="top">
-							<span class="money">1200</span>
-							<span>实付满10000使用</span>
-						</div>
-						<div class="btm">点击领取</div>
-					</li>
-					<li>
-						<div class="top">
-							<span class="money">2600</span>
-							<span>实付满20000使用</span>
-						</div>
-						<div class="btm">点击领取</div>
-					</li>
-					<li class="margin-r-0">
-						<div class="top">
-							<span class="money">3900</span>
-							<span>实付满30000使用</span>
-						</div>
-						<div class="btm">点击领取</div>
-					</li>
+					<!--{foreach from=$coupons_res item=coupons_res name=coupons_res}-->
+						<!-- {if $smarty.foreach.coupons_res.iteration !=4}-->
+						<li>
+						<!--{elseif $smarty.foreach.coupons_res.iteration ==4}-->
+						<li class="margin-r-0">
+						<!--{/if}-->
+							<div class="top">
+								<span class="money s1">{$coupons_res.cou_money}</span>
+								<span>实付满{$coupons_res.cou_man}使用</span>
+							</div>
+								<div class="btm" value="{$coupons_res.cou_id}" >
+									<!-- {if $coupons_res.is_lq ==0}-->
+										点击领取
+									<!--{elseif $coupons_res.is_lq ==1}-->
+										领取成功
+									<!--{/if}-->
+								</div>
+						</li>
+					<!--{/foreach}-->
 				</ul>
-
 				<h2 class="text-center">优惠商品</h2>
 				<ul class="product-list clearfix">
 					<li class="left">
@@ -98,11 +88,32 @@
 		</div>
 		
 		<!-- #BeginLibraryItem "/library/user_menu_position.lbi" --><!-- #EndLibraryItem -->
-		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/active.js"></script>
+		<!--<script type="text/javascript" src="themes/ecmoban_dsc/js/js/active.js"></script>-->
 		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/cart_common.js"></script>
 		<script type="text/javascript" src="themes/ecmoban_dsc/js/notLogin.js"></script>
 		<script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.SuperSlide.2.1.1.js"></script>
         <!--右侧机器人-->
         <script src="//wp.qiye.qq.com/qidian/2852152525/a21ec0a1cf5f6e53571eb0979e6323e4" charset="utf-8"></script>
+        <script type="text/javascript">
+        	$(function() {
+				//点击领取优惠券
+				$(".coupon-list li").on("click",function() {
+				var $this = $(this);
+				var id = $(this).find(".btm").attr("value");
+				if({$smarty.session.user_id} == 0){
+					window.location.href="user.php?act=active";
+					return false;
+				}else{
+					$.post('coupons.php?act=coupons_receive',{'cou_id':id},function(data){
+						if(data.status=='ok'){
+							$this.find(".btm").text("领取成功");
+						}
+					},'json')
+				}
+					
+
+				});
+			});
+        </script>
 	</body>
 </html>	
