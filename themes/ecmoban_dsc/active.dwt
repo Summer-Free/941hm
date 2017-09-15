@@ -83,8 +83,8 @@
 		</div>
 		<div id="foot">
 			<a href="index.php" style="display: inline-block;"><img src="themes/ecmoban_dsc/iamges/20170517/active-bg-4.png" alt=""></a>
-			<p style="font-size: 30px;color: #333;line-height: 1;font-weight: normal;">免单名单公布时间为活动结束后七个工作,日内被抽中的买家会</p>
-			<p style="font-size: 30px;color: #333;line-height: 1;font-weight: normal;">有工作人员联系通知,最终免单金额按订单实际付款金额为准</p>
+			<p style="font-size: 30px;color: #333;line-height: 1;font-weight: normal;">免单名单公布时间为活动结束后七个工作日内,被抽中的买家会</p>
+			<p style="font-size: 30px;color: #333;line-height: 1;font-weight: normal;">有工作人员联系通知,最终免单金额按订单实际付款金额为准(免单产品仅限活动页面)</p>
 		</div>
 		
 		<!-- #BeginLibraryItem "/library/user_menu_position.lbi" --><!-- #EndLibraryItem -->
