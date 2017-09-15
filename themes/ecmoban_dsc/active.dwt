@@ -26,29 +26,25 @@
 					<span class="margin-r-80">精选商品 专享享</span>
 					活动价+优惠券
 				</h3>
-				
 				<!--优惠券列表-->
-				<ul class="coupon-list clearfix">
-					<!--{foreach from=$coupons_res item=coupons_res name=coupons_res}-->
-						<!-- {if $smarty.foreach.coupons_res.iteration !=4}-->
+					<ul class="coupon-list clearfix">
+					<!--{foreach from=$kelingqu_coupons item=kelingqu_coupons name=kelingqu_coupons}-->
+						<!-- {if $smarty.foreach.kelingqu_coupons.iteration !=4}-->
 						<li>
-						<!--{elseif $smarty.foreach.coupons_res.iteration ==4}-->
+						<!--{elseif $smarty.foreach.kelingqu_coupons.iteration ==4}-->
 						<li class="margin-r-0">
 						<!--{/if}-->
 							<div class="top">
-								<span class="money s1">{$coupons_res.cou_money}</span>
-								<span>实付满{$coupons_res.cou_man}使用</span>
+								<span class="money s1">{$kelingqu_coupons.cou_money}</span>
+								<span>实付满{$kelingqu_coupons.cou_man}使用</span>
 							</div>
-								<div class="btm" value="{$coupons_res.cou_id}" >
-									<!-- {if $coupons_res.is_lq ==0}-->
-										点击领取
-									<!--{elseif $coupons_res.is_lq ==1}-->
-										领取成功
-									<!--{/if}-->
+								<div class="btm" value="{$kelingqu_coupons.cou_id}" >
+									点击领取
 								</div>
 						</li>
 					<!--{/foreach}-->
 				</ul>
+				
 				<h2 class="text-center">优惠商品</h2>
 				<ul class="product-list clearfix">
 					<li class="left">
@@ -100,7 +96,11 @@
 					return false;
 				}else{
 					$.post('coupons.php?act=coupons_receive',{'cou_id':id},function(data){
-						if(data.status=='ok'){
+						if(data.status=='ok')
+						{
+							$this.find(".btm").text("领取成功");
+						}else{
+							alert("您已领取过优惠券，请勿重复领取");
 							$this.find(".btm").text("领取成功");
 						}
 					},'json')
