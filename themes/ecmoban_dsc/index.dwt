@@ -455,13 +455,13 @@
 				<div class="sidebar margin-b-10">
 					<ul class="JS-slide-top">
 						<li>
-							<a href="manufacturers_settled.php" title="商家入驻">
-								<img class="lazy" width="1200" height="188" data-original="themes/ecmoban_dsc/iamges/20170517/sidebar-1.jpg" alt="商家入驻">
+							<a href="goods.php?id=1396">
+								<img class="lazy" width="1200" height="188" data-original="themes/ecmoban_dsc/iamges/20170517/sidebar-1.jpg">
 							</a>
 						</li>
 						<li>
-							<a href="partner.php" title="加盟商入驻">
-								<img class="lazy" width="1200" height="188" data-original="themes/ecmoban_dsc/iamges/20170517/sidebar-2.jpg" alt="加盟商入驻">
+							<a href="goods.php?id=1398">
+								<img class="lazy" width="1200" height="188" data-original="themes/ecmoban_dsc/iamges/20170517/sidebar-2.jpg">
 							</a>
 						</li>
 					</ul>
