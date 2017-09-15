@@ -184,6 +184,8 @@
             flag: 'register'
         }, function (res) {
             d_messages(res.msg);
+            console.log(res);
+            console.log(res.code);
             if (res.code == 2) {
                 data();
             } else {
