@@ -2,6 +2,9 @@
 <!doctype html>
 <html>
 <head>{include file ='library/admin_html_head.lbi'}</head>
+<script type="text/javascript">
+    var process_request = "{$lang.process_request}";
+</script>
 <body class="iframe_body">
 	<div class="warpper">
     	<div class="title">商品 - {$ur_here}</div>
@@ -165,6 +168,13 @@
                                             <div class="tlist">
                                             	<span>{$lang.is_hot}：</span>
                                             	<div class="switch {if $goods.is_hot}active{/if}" title="{if $goods.is_hot}是{else}否{/if}" onclick="listTable.switchBt(this, 'toggle_hot', {$goods.goods_id})">
+                                                    <div class="circle"></div>
+                                                </div>
+                                                <input type="hidden" value="0" name="">
+                                            </div>
+                                            <div class="tlist">
+                                                <span>楼层：</span>
+                                                <div class="switch {if $goods.is_show}active{/if}" title="{if $goods.is_show}是{else}否{/if}" onclick="listTable.switchBt(this, 'toggle_show', {$goods.goods_id})">
                                                     <div class="circle"></div>
                                                 </div>
                                                 <input type="hidden" value="0" name="">
