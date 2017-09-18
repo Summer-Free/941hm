@@ -43,3 +43,9 @@ RewriteRule ^exchange-([0-9]+)(.*)\.html$                                       
 RewriteRule ^community-([0-9]+)-([0-9]+)\.html$                                        index\.php\?r=community/index/detail&id=$1&type=$2   [QSA,L]
 
 RewriteRule ^topic-([0-9]+)\.html                                       index\.php\?r=topic/index/detail&topic_id=$1 [QSA,L]
+
+RewriteRule ^topic-([0-9]+)\.html                                       index\.php\?r=topic/index/detail&topic_id=$1 [QSA,L]
+
+
+
+RewriteRule ^customization-([0-9]+)-([0-9]+)\.html$                                        index\.php\?r=customization/index/detail&id=$1&type=$2   [QSA,L]
