@@ -362,7 +362,6 @@
 	  var filter = new Object;
 	  filter.keyword = document.forms['theForm'].elements['keywords'].value;
 	  filter.ru_id = document.forms['theForm'].elements['ru_id'].value;
-
 	  Ajax.call('snatch.php?is_ajax=1&act=search_goods', filter, searchGoodsResponse, 'GET', 'JSON');
 	}
 
@@ -385,11 +384,12 @@
 	 */
 	function searchItem1()
 	{
-	  var filter = new Object;
-	  filter.keyword  = document.forms['theForm'].elements['keyword1'].value;
-	  filter.act_range = 3;
-	  filter.ru_id  = 0;
-	  Ajax.call('coupons.php?is_ajax=1&act=search', filter, searchResponse1, 'GET', 'JSON');
+	  //var filter = new Object;
+	  var keyword  = document.forms['theForm'].elements['keyword1'].value;
+      //alert(keyword);
+	  var act_range = 3;
+	  var ru_id  = 0;
+	  Ajax.call('coupons.php?is_ajax=1&act=search','keywords=' + keyword, searchResponse1, 'GET', 'JSON');
 	}
 
 	function searchResponse1(result)
@@ -408,7 +408,7 @@
 	  {
 		for (i = 0; i < goods.length; i++)
 		{
-			$("#result1 ul").append("<li><a href='javascript:;' data-value='"+goods[i].id+"' class='ftx-01'>"+goods[i].name+"</a></li>")
+			$("#result1 ul").append("<li><a href='javascript:;' data-value='"+goods[i].goods_id+"' class='ftx-01'>"+goods[i].goods_name+"</a></li>")
 		}
 	  }
 

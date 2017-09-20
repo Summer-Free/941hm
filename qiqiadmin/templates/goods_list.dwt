@@ -67,6 +67,7 @@
                                     <th width="12%"><div class="tDiv">{$lang.shop_price}/{$lang.goods_sn}</div></th>
                                     <th width="10%"><div class="tDiv">{$lang.goods_label}</div></th>
                                     <th width="6%"><div class="tDiv"><a href="javascript:listTable.sort('sort_order');">{$lang.sort_order}</a>{$sort_sort_order}</div></th>
+                                    <th><a href="javascript:listTable.sort('sales_volume_base'); ">虚拟销量</a>{$sort_sales_volume_base}</th>
                                     <th width="7%"><div class="tDiv">{$lang.sku_storage}</div></th>
                                     <th width="7%"><div class="tDiv">{$lang.audit_status}</div></th>
                                     <th class="handle">{$lang.handler}</th>
@@ -189,6 +190,7 @@
                                         </div>
                                     </td>
                                     <td><div class="tDiv"><span onclick="listTable.edit(this, 'edit_sort_order', {$goods.goods_id})">{$goods.sort_order}</span></div></td>
+                                    <td align="center"><span onclick="listTable.edit(this, 'edit_sales_volume_base', {$goods.goods_id})">{$goods.sales_volume_base}</span></td> 
                                     <td>
                                     	<div class="tDiv">
                                     		{if $goods.is_attr}
@@ -198,6 +200,7 @@
                                             {/if}
                                     	</div>
                                     </td>
+
                                     <td>
                                     	<div class="tDiv">
                                             {if $goods.review_status eq 1}

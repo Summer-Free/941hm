@@ -457,7 +457,7 @@
                                                     <div class="quantity-form">
                                                         <a href="javascript:void(0)" onclick="changenum({$goods.rec_id}, -1, {$goods.warehouse_id}, {$goods.area_id})" class="decrement">-</a>
                                                         <input autocomplete="off" type="text" name="goods_number[{$goods.rec_id}]" id="goods_number_{$goods.rec_id}" value="{$goods.goods_number}" class="itxt"  onchange="change_goods_number({$goods.rec_id},this.value, {$goods.warehouse_id}, {$goods.area_id})" style="text-align:center"/>
-                                                        <a  href="javascript:void(0)" onclick="changenum({$goods.rec_id}, 1, {$goods.warehouse_id}, {$goods.area_id})" class="increment">+</a>
+                                                            <a  href="javascript:void(0)" onclick="changenum({$goods.rec_id}, 1, {$goods.warehouse_id}, {$goods.area_id})" class="increment">+</a>
                                                     </div>
                                                     <div class="quantity-txt">
                                                     <!-- {if $goods.attr_number} -->
@@ -723,8 +723,9 @@
 	<script type="text/javascript">
         function changenum(rec_id, diff, warehouse_id, area_id, favourable_id)
         {
-            var cValue = $('#cart_value')
-            var goods_number =Number($('#goods_number_' + rec_id).val()) + Number(diff);    
+            alert(11111);
+            var cValue = $('#cart_value');
+            var goods_number =Number($('#goods_number_' + rec_id).val()) + Number(diff);  
             if(goods_number < 1)
             {
                 get_user_prompt_message("购买数量不能少于1件");
