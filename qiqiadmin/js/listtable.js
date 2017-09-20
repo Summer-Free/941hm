@@ -150,10 +150,11 @@ listTable.toggle = function(obj, act, id)
 /* 按钮切换 by wu */
 listTable.switchBt = function(obj, act, id)
 {
-  var obj = $(obj)
+
+  var obj = $(obj);
 
   var val = (obj.attr('class').match(/active/i)) ? 0 : 1;
-
+    console.log(val);
   var res = Ajax.call(this.url, "act="+act+"&val=" + val + "&id=" +id, null, "POST", "JSON", false);
 
   if (res.message)
