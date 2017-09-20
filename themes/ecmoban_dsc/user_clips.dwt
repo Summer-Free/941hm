@@ -72,7 +72,6 @@
     <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
 </div>
 <!--header end-->
-
 <!-- {if $action eq 'default'} -->
 <div id="user-info">
     <div class="user-info-wrap w1200">

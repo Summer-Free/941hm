@@ -114,7 +114,6 @@
 </head>
 
 <body class="integral">
-
     <!--header start-->
     <div id="header">
         <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
@@ -315,8 +314,7 @@
                 content:content,    //调取内容
                 drag:false,
                 foot:false
-            }); 
-            
+            });     
             return false;
         }
     }

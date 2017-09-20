@@ -170,7 +170,7 @@
                                     </div>
                                     <div id="comment-number" class="comment-count item fl">
                                         <p class="comment">累计销量</p>
-                                        <a class="count" href="#comment">{$goods.sales_volume}</a>
+                                        <a class="count" href="#comment">{$sales_count}</a>
                                     </div>
                                 </div>
                                 {if $goods.gmt_end_time}
