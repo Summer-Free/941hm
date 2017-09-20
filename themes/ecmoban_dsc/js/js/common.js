@@ -1,6 +1,5 @@
 ;(function($,window,document,undefined) {
 
-	//向上滚动方法
 	$.fn.slideTop = function(options) {
 		var base = {
 			duration: 300, //动画持续时间
@@ -28,19 +27,12 @@
 
 			};
 
-			//克隆元素，制造无缝滚动
 			ul.append(li.clone());
-
-			//设置自动播放
 			timer = setInterval(action,ops.speed);
-
 			$this.on({
-
-				//鼠标悬浮，停止滚动
 				mouseenter:function() {
 					clearInterval(timer);
 				},
-				//鼠标移开，继续自动滚动
 				mouseleave:function() {
 					clearInterval(timer);
 					timer = setInterval(action,ops.speed);
@@ -48,20 +40,13 @@
 
 			});
 
-			//点击关闭
 			close.on("click",function() {
-
-				//移除盒子的绑定时事件，否则定时器会继续运行
 				$this.off("mouseenter mouseleave");
-
-				//淡出盒子
 				$this.slideUp(300);
-
 			});
 	};
 
 
-	//图片轮播,fadeIn/fadeOut
 	$.fn.slideFade = function(options) {
 
 		var base = {
@@ -89,17 +74,13 @@
 
 			};
 
-			//如果autoPlay=true,自动播放
 			if(ops.autoPlay) {
 
 				timer = setInterval(action,ops.speed);
 
 			};
 
-			//点击左按钮
 			left_btn.on("click",function() {
-
-				//判断是否有动画正在运行，如果无，则执行动画函数，此举是为了防止用户恶意点击
 				if(!pic_li.is(":animated")) {
 
 					(index>0)? index--:index=len-1;
@@ -112,18 +93,12 @@
 
 			});
 
-			//点击右按钮
 			right_btn.on("click",function() {
-
-				//判断是否有动画正在运行，如果无，则执行动画函数，此举是为了防止用户恶意点击
 				if(!pic_li.is(":animated")) {action();}
 
 			});
 
-			//鼠标悬浮在小圆点上时，进行切换
 			point_li.on("mouseenter",function() {
-
-				//判断是否有动画正在运行，如果无，则执行动画函数，此举是为了防止用户恶意点击
 				if(!pic_li.is(":animated")) {
 
 					var $this_li = $(this),
@@ -137,7 +112,6 @@
 
 			});
 
-			//鼠标悬停在父盒子上时停止自动播放,离开时重新自动播放
 			$this.on({
 
 				mouseenter:function() {
@@ -158,7 +132,6 @@
 	};
 
 
-	//图片滚动,left/right
 	$.fn.slideScroll = function(options) {
 
 		var init = {
@@ -200,17 +173,12 @@
 
 			};
 
-			//克隆元素
 			$ul.append($li.clone());
-
-			//判断是否自动播放
 			if(ops.autoPlay) {
 				
 				timer = setInterval(action,ops.speed);
 
 			};
-
-			//鼠标悬停在父盒子上时停止自动播放,离开时重新自动播放
 			$this.on({
 
 				mouseenter:function() {
@@ -228,7 +196,6 @@
 
 			});
 
-			//点击左按钮
 			$l_btn.on("click",function() {
 
 				if(!$ul.is(":animated")) {
@@ -239,7 +206,6 @@
 
 			});	
 
-			//点击右按钮
 			$r_btn.on("click",function() {
 
 				if(!$ul.is(":animated")) {
@@ -266,7 +232,6 @@
 	};
 
 
-	//模仿select
 	$.fn.MimicSelectionBox = function() {
 
 		var $this = $(this),
@@ -274,7 +239,6 @@
 			$submenu = $select.siblings("ul")
 			$li = $submenu.find("li");
 
-		//鼠标悬浮元素，弹出下拉菜单，离开时，收起
 		$this.on({
 
 			mouseenter:function() {
@@ -298,7 +262,6 @@
 
 		});
 
-		//点击下拉菜单中的值，改变select框的值
 		$li.on("click",function() {
 
 			var $this = $(this),
@@ -312,7 +275,6 @@
 
 	};
 
-	//省市联动菜单 函数
 	$.fn.linkMenu = function(select1,select2) {
 
 		var $this = $(this),
@@ -446,7 +408,6 @@
 
 					];
 
-			//将省市从JSON中取出，展示到前端元素		
 			$.each(data,function(idx,pro) {
 
 				$select1.append("<option data-value='"+ idx + "'>" + pro.province + "</option>")
@@ -463,10 +424,7 @@
 
 						var cityArry = data[index].city;
 
-						//每次选中一个值后，都将下一级的select清空
 						$select2.html("<option data-value='null'>请选择市</option>");		
-
-						//将对应的市区级数据，展示到前端
 						$.each(cityArry,function(idx,city) {
 
 							$select2.append("<option>" + city + "</option>")
@@ -475,7 +433,6 @@
 
 					}else {
 
-						//如果选择的是无效省份，将下一级的select清空
 						$select2.html("<option data-value='null'>请选择市</option>");	
 
 					};
@@ -484,7 +441,6 @@
 
 	};
 
-	//锚点导航相关效果
 	$.fn.navFixed = function() {
 
 		var $this = $(this),
@@ -497,10 +453,7 @@
 
 			var window_top = $(window).scrollTop();
 
-			//当页面滚动到锚点导航时,让导航固定在顶部
 			(window_top > this_top)?$this.css("position","fixed"):$this.css("position","absolute");
-
-			//当页面滚动的距离大于元素与页面顶部的距离时，获取当前元素的 id
 			$.each($div,function(index,div) {
 
 				var div_top = $(div).offset().top;
@@ -513,7 +466,6 @@
 
 			});
 
-			//找到锚点的href属性等于 上面获取的 id的元素，并添加类名
 			$.each($li,function(index,li) {
 
 				var href = $(li).find("a").attr("href").split("#");
@@ -529,7 +481,6 @@
 		});
 	};
 
-	//锚点平滑滚动
 	$.fn.anchorScroll = function() {
 
 		var $this = $(this);
@@ -567,21 +518,19 @@
 		});
 	};
 
-	//给元素赋值高度,(由于定位造成的高度塌陷)
 	$.fn.getHeight = function() {
 
 		var	$this = $(this),
 			$div = $this.children(".content").height() + 30;
 
-		$this.height($div); //30 是距离底部的高度
+		$this.height($div); 
 	};
 
-	//弹窗弹出和点击关闭按钮关闭
 	$.fn.dialogShow = function(options) {
 
 		var base = {
-						dialog: "",    //弹窗选择器
-						closeBtn: ""   //关闭按钮选择器
+						dialog: "",    
+						closeBtn: ""   
 					},
 			ops = $.extend(base,options),
 			$dialog = $(ops.dialog),
@@ -596,28 +545,27 @@
 
 	};
 
-	//倒计时函数
 	$.fn.countDown = function(options) {
 
 		var base = {
-						startTime: "", //开始时间 不设置则从现在开始
-						endTime: "",   //结束时间
-						tian: false,   //是否显示天
-						miao: true,    //是否显示秒
-						tianZ: "",     //天后面需要加的字段
-						shiZ: "",      //时后面需要加的字段
-						fenZ: "",      //分后面需要加的字段
-						miaoZ: "",     //秒后面需要加的字段
+						startTime: "", 
+						endTime: "",   
+						tian: false,   
+						miao: true,    
+						tianZ: "",     
+						shiZ: "",      
+						fenZ: "",      
+						miaoZ: "",     
 					},
 			ops = $.extend(base,options),
 			$this = $(this),
 			timer = "",
 			action = function() {
 
-				var date = new Date(), //获取当前时间戳
+				var date = new Date(), 
 					cur_date = new Date(ops.startTime).getTime() || date.getTime(),
 					E_date = new Date(ops.endTime).getTime(),
-					result_time = E_date - cur_date, //获取结束时间和当前时间的剩余时间
+					result_time = E_date - cur_date, 
 					d = "",
 					h = "",
 					m = "",
@@ -627,7 +575,6 @@
 					m = Math.floor(result_time/(1000*60)) - h*60;
 					s = Math.floor(result_time/1000)- h*60*60 - m*60;
 
-					//当时间是个位数时，在前面添加 0，（为了美观）
 					h = h < 10 ? "0"+h:h; 
 					m = m < 10 ? "0"+m:m;
 					s = s < 10 ? "0"+s:s;
@@ -662,7 +609,6 @@
 
 			};
 
-			//开启定时器，
 			timer = setInterval(action,1000);
 
 	};
@@ -671,38 +617,6 @@
 
 $(function() {
 
-	//当前页面高亮显示 (2017/8/18 改版后，这个功能成为鸡肋，遂，注释之)
-	// function navHighlight() {
-
-	// 	var navItem = $("#header .main-nav>li>a"),
-	// 		curHref = location.href;
-
-	// 		navItem.each(function() {
-
-	// 			var item_href = $(this).attr("href");
-
-	// 			if(curHref.indexOf(item_href) !== -1) {
-	// 				$(this).parent().addClass("active")
-	// 				.siblings().removeClass("active");
-	// 			}
-	// 			else if(curHref == "http://www.941hm.com/" || "http://localhost/941hm/") {
-	// 				navItem.find("[href='index.php']").parent()
-	// 					.addClass("active")
-	// 					.siblings()
-	// 					.removeClass("active");
-	// 			}
-	// 			else {
-	// 				$(this).parent().removeClass("active");
-	// 			};
-
-	// 		});
-
-	// };
-
-	//调用
-	// navHighlight();
-
-	//添加了 类名为 showMsg 的元素将会触发弹窗
 	$(".showMsg").on("click",function(e) {
 
 		e.preventDefault();
