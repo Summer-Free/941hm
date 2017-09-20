@@ -721,9 +721,9 @@
     </div>
 
 	<script type="text/javascript">
+
         function changenum(rec_id, diff, warehouse_id, area_id, favourable_id)
         {
-            alert(11111);
             var cValue = $('#cart_value');
             var goods_number =Number($('#goods_number_' + rec_id).val()) + Number(diff);  
             if(goods_number < 1)
@@ -734,124 +734,123 @@
             {
                 change_goods_number(rec_id,goods_number, warehouse_id, area_id, cValue, favourable_id);
             }
-        }
-        function change_goods_number(rec_id, goods_number, warehouse_id, area_id, cValue, favourable_id)
-        {
-            if(cValue != '' || cValue == 'undefined'){
-               var cValue = $('#cart_value').val(); 
-            }
-        
-            var items = $("#checkItem_" +rec_id).parents('.item-full').find('.item-item');
-            var input = items.find("input[type='checkbox']");
-            var str ='';
-            input.each(function(){
-                if($(this).prop('checked')== true){
-                    var val = $(this).val();
-                    str += val + ',';
+            };
+            function change_goods_number(rec_id, goods_number, warehouse_id, area_id, cValue, favourable_id)
+            {
+                if(cValue != '' || cValue == 'undefined'){
+                   var cValue = $('#cart_value').val(); 
                 }
-            });
-            str = str.substring(str.length-1,0);
             
-            Ajax.call('flow.php?step=ajax_update_cart', 'rec_id=' + rec_id + '&sel_id=' + str + '&sel_flag=' + 'cart_sel_flag' +'&goods_number=' + goods_number +'&cValue=' + cValue +'&warehouse_id=' + warehouse_id +'&area_id=' + area_id +'&favourable_id=' + favourable_id, change_goods_number_response, 'POST','JSON');                
-        }
-        function change_goods_number_response(result)
-        {
-            var rec_id = result.rec_id;           
-            if (result.error == 0){
-                $('#goods_number_' +rec_id).val(result.goods_number);//更新数量
-                $('#goods_subtotal_' +rec_id).html(result.goods_subtotal);//更新小计
-                
-                if (result.goods_number <= 0){
-                    $('#tr_goods_' +rec_id).style.display = 'none'; //数量为零则隐藏所在行
-                    $('#tr_goods_' +rec_id).innerHTML = '';
-                }
-                $('#total_desc').html(result.flow_info);//更新合计
-                if ($('ECS_CARTINFO')){
-                    $('#ECS_CARTINFO').html(result.cart_info); //更新购物车数量
-                }
-        
-                if(result.group.length > 0){
-                    for(var i=0; i<result.group.length; i++){
-                        $("#" + result.group[i].rec_group).html(result.group[i].rec_group_number);//配件商品数量
-                        $("#" + result.group[i].rec_group_talId).html(result.group[i].rec_group_subtotal);//配件商品金额
+                var items = $("#checkItem_" +rec_id).parents('.item-full').find('.item-item');
+                var input = items.find("input[type='checkbox']");
+                var str ='';
+                input.each(function(){
+                    if($(this).prop('checked')== true){
+                        var val = $(this).val();
+                        str += val + ',';
                     }
+                });
+                str = str.substring(str.length-1,0);
+                
+                Ajax.call('flow.php?step=ajax_update_cart', 'rec_id=' + rec_id + '&sel_id=' + str + '&sel_flag=' + 'cart_sel_flag' +'&goods_number=' + goods_number +'&cValue=' + cValue +'&warehouse_id=' + warehouse_id +'&area_id=' + area_id +'&favourable_id=' + favourable_id, change_goods_number_response, 'POST','JSON');                
+            }
+            function change_goods_number_response(result)
+            {
+                var rec_id = result.rec_id;           
+                if (result.error == 0){
+                    $('#goods_number_' +rec_id).val(result.goods_number);//更新数量
+                    $('#goods_subtotal_' +rec_id).html(result.goods_subtotal);//更新小计
+                    
+                    if (result.goods_number <= 0){
+                        $('#tr_goods_' +rec_id).style.display = 'none'; //数量为零则隐藏所在行
+                        $('#tr_goods_' +rec_id).innerHTML = '';
+                    }
+                    $('#total_desc').html(result.flow_info);//更新合计
+                    if ($('ECS_CARTINFO')){
+                        $('#ECS_CARTINFO').html(result.cart_info); //更新购物车数量
+                    }
+            
+                    if(result.group.length > 0){
+                        for(var i=0; i<result.group.length; i++){
+                            $("#" + result.group[i].rec_group).html(result.group[i].rec_group_number);//配件商品数量
+                            $("#" + result.group[i].rec_group_talId).html(result.group[i].rec_group_subtotal);//配件商品金额
+                        }
+                    }
+                    
+                    $("#goods_price_" + rec_id).html(result.goods_price);
+                    $('#save_total_amount').html(result.save_total_amount); //优惠节省总金额
+                    $('.cart_check_num').html(result.subtotal_number); //商品总数
+            
+                    // 如果是优惠活动内的商品，更新优惠活动局部 qin
+                    if (result.act_id){
+                        // alert("product_promo_"+result.act_id);
+                        $("#product_promo_"+result.act_id).html(result.favourable_box_content);
+                    }
+                }else if(result.message != ''){
+                    $('#goods_number_' +rec_id).val(result.cart_Num);//更新数量
+                    var add_cart_divId = 'flow_add_cart';
+                    var content = '<div id="flow_add_cart">' + 
+                                    '<div class="tip-box icon-box">' +
+                                        '<span class="warn-icon m-icon"></span>' + 
+                                        '<div class="item-fore">' +
+                                            '<h3 class="rem ftx-04">' + result.message + '</h3>' +
+                                        '</div>' +
+                                    '</div>';
+                    pb({
+                        id:add_cart_divId,
+                        title:'标题',
+                        width:455,
+                        height:88,
+                        content:content,    //调取内容
+                        drag:false,
+                        foot:false
+                    });
+                    
+                    $('#' + add_cart_divId + ' .tip-box h3').css({
+                        'line-height' : '20px',
+                        'padding-top' : '5px',
+                        'font-size'   : '14px'  
+                    });
+                    
+                    $('#' + add_cart_divId + ' .item-fore').css({
+                        'height' : '88px' 
+                    });
+                }                
+            }
+            //zhuo start
+            function get_toCart(){
+                
+                var num = 0;
+            
+                $("input[name='checkItem']").each(function(index, element) {
+                    if($(element).is(":checked")){
+                        num ++;
+                    }
+                });
+            
+                if(num == 0){
+                    var add_cart_divId = 'flow_add_cart';
+                    var content = '<div id="flow_add_cart">' + 
+                                        '<div class="tip-box icon-box">' +
+                                            '<span class="warn-icon m-icon"></span>' + 
+                                            '<div class="item-fore">' +
+                                                '<h3 class="rem ftx-04">请选择最少一个商品购买</h3>' +
+                                            '</div>' +
+                                        '</div>' +
+                                    '</div>';
+                    pb({
+                        id:add_cart_divId,
+                        title:'标题',
+                        width:455,
+                        height:58,
+                        content:content,    //调取内容
+                        drag:false,
+                        foot:false
+                    });
+                    return false;
                 }
-                
-                $("#goods_price_" + rec_id).html(result.goods_price);
-                $('#save_total_amount').html(result.save_total_amount); //优惠节省总金额
-                $('.cart_check_num').html(result.subtotal_number); //商品总数
-        
-                // 如果是优惠活动内的商品，更新优惠活动局部 qin
-                if (result.act_id){
-                    // alert("product_promo_"+result.act_id);
-                    $("#product_promo_"+result.act_id).html(result.favourable_box_content);
-                }
-            }else if(result.message != ''){
-                $('#goods_number_' +rec_id).val(result.cart_Num);//更新数量
-                var add_cart_divId = 'flow_add_cart';
-                var content = '<div id="flow_add_cart">' + 
-                                '<div class="tip-box icon-box">' +
-                                    '<span class="warn-icon m-icon"></span>' + 
-                                    '<div class="item-fore">' +
-                                        '<h3 class="rem ftx-04">' + result.message + '</h3>' +
-                                    '</div>' +
-                                '</div>';
-                pb({
-                    id:add_cart_divId,
-                    title:'标题',
-                    width:455,
-                    height:88,
-                    content:content, 	//调取内容
-                    drag:false,
-                    foot:false
-                });
-                
-                $('#' + add_cart_divId + ' .tip-box h3').css({
-                    'line-height' : '20px',
-                    'padding-top' : '5px',
-                    'font-size'	  : '14px'	
-                });
-                
-                $('#' + add_cart_divId + ' .item-fore').css({
-                    'height' : '88px' 
-                });
-            }                
-        }
-        
-        //zhuo start
-		function get_toCart(){
-			
-			var num = 0;
-		
-			$("input[name='checkItem']").each(function(index, element) {
-				if($(element).is(":checked")){
-					num ++;
-				}
-			});
-		
-			if(num == 0){
-				var add_cart_divId = 'flow_add_cart';
-				var content = '<div id="flow_add_cart">' + 
-									'<div class="tip-box icon-box">' +
-										'<span class="warn-icon m-icon"></span>' + 
-										'<div class="item-fore">' +
-											'<h3 class="rem ftx-04">请选择最少一个商品购买</h3>' +
-										'</div>' +
-									'</div>' +
-								'</div>';
-				pb({
-					id:add_cart_divId,
-					title:'标题',
-					width:455,
-					height:58,
-					content:content, 	//调取内容
-					drag:false,
-					foot:false
-				});
-				return false;
-			}
-		}
-		//zhuo end
+            }
+            //zhuo end
     </script>
     
     <!-- {if $smarty.session.user_id gt 0} -->
@@ -1466,7 +1465,6 @@
 <!-- #BeginLibraryItem "/library/page_footer_djj.lbi" --><!-- #EndLibraryItem -->
 
 <!--[if lte IE 8]><script type="text/javascript" src="js/IE7Fix.js"></script><![endif]-->
-<script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.purebox.js"></script>
 <script type="text/javascript">
 var process_request = "{$lang.process_request}";
 {foreach from=$lang.passport_js item=item key=key}
