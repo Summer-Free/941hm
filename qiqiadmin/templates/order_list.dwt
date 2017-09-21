@@ -142,7 +142,7 @@
 									</td>
                                     <td>  
                                         <div class="tDiv"><span>{$order.buyer|escape}</span><br>
-                                            <div id="time" class="time-jack" value="{$order.add_time}"></div>
+                                            {$order.short_order_time}
                                         </div>
                                     </td>
                                     <td><div class="tDiv"><strong class="org"><a href="mailto:{$order.email}"> {$order.consignee|escape}</a></strong>{if $order.mobile} [TEL: {$order.mobile|escape}]{/if}<br>[{$order.region}] {$order.address|escape}</div></td>
