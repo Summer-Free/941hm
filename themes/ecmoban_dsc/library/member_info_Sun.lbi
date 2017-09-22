@@ -1,0 +1,9 @@
+<div class="float-l">
+	<!--{if $user_info}-->
+	<span>{$user_info.user_name}</span> |
+	<a href="{$site_domain}user.php?act=logout">退出</a>
+	<!--{else}-->
+		<a href="{$site_domain}user.php">登录</a> |
+		<a href="user.php?act=register">注册</a>
+	<!--{/if}-->
+</div>

@@ -299,7 +299,8 @@
                             <div class="td tore3">
                                 <div class="item">
                                     <span class="ftx-09">下单时间：</span>
-                                    <span class="ftx-08">{$order.add_time}</span>
+                                    <!--<span class="ftx-08">{$order.add_time}</span>-->
+                                    <span class="ftx-08">{$order.formated_add_time}</span>
                                 </div>
                             </div>
                         </div>
