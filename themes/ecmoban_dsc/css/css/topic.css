@@ -1,0 +1,137 @@
+html {
+	background: url(../../iamges/20170517/topic-1.jpg); 
+}
+body {
+	padding-top: 1238px;
+	background: url(../../iamges/20170517/topic-2.jpg) no-repeat top center;
+}
+.sec-1 {
+	position: relative;
+}
+.dl-pic {
+	position: absolute;
+	top: -142px;
+	right: -249px;
+	width: 257px;
+	height: 326px;
+	background: url(../../iamges/20170517/topic-2.png) no-repeat;
+}
+.sec-1 h2 {
+	position: absolute;
+	top: -100px;
+	left: 50%;
+	margin-left: -299.5px;
+	width: 599px;
+	height: 224px;
+	text-indent: -9999px;
+	background: url(../../iamges/20170517/topic-1.png) no-repeat;
+}
+.sec-1 ul {
+	padding-top: 145px;
+	margin: 0 auto;
+	width: 781px;
+}
+.sec-1 li {
+	position: relative;
+	float: left;
+	margin-right: 113px;
+	margin-bottom: 30px;
+	width: 334px;
+	height: 237px;
+	color: #fff;
+	cursor: pointer;
+	background: url(../../iamges/20170517/topic-3.png) no-repeat;
+}
+.sec-1 li span,
+.sec-1 li em {
+	position: absolute;
+}
+.sec-1 li span {
+	top: 10px;
+	left: 70px;
+	font-size: 72px;
+	font-weight: 900;
+}
+.sec-1 li em {
+	bottom: 10px;
+	left: 110px;
+	font-size: 40px;
+	white-space: nowrap;
+}
+.sec-2 {
+	padding-top: 15px;
+	font-size: 36px;
+	color: #fff;
+	text-align: center;
+}
+.sec-2 h2 {
+	margin: 0 auto 20px;
+	width: 1110px;
+	height: 52px;
+	text-indent: -9999px;
+	background: url(../../iamges/20170517/topic-5.png) no-repeat;
+}
+.sec-2 p {
+	line-height: 1.1;
+}
+.sec-2 img {
+	display: inline-block;
+	padding-top: 40px;
+}
+.sec-3 {
+	padding-top: 70px;
+}
+.sec-3 h2 {
+	z-index: 11;
+	position: relative;
+	margin: 0 auto;
+	width: 1257px;
+	height: 101px;
+	text-indent: -9999px;
+	background: url(../../iamges/20170517/topic-6.png) no-repeat;
+}
+.sec-3 .w1230 {
+	position: relative;
+}
+.sec-3 .left-dl,
+.sec-3 .right-dl {
+	position: absolute;
+	top: -50px;
+	width: 170px;
+	height: 361px;
+}
+.sec-3 .left-dl {
+	z-index: 10;
+	left: -130px;
+	background: url(../../iamges/20170517/topic-7.png) no-repeat;
+}
+.sec-3 .right-dl {
+	right: -130px;
+	background: url(../../iamges/20170517/topic-8.png) no-repeat;
+}
+.sec-3 ul {
+	position: relative;
+	z-index: 5;
+	padding-top: 40px;
+}
+.sec-3 li {
+	float: left;
+}
+.w1230 {
+	margin: 0 auto;
+	width: 1230px;
+}
+.footer {
+	padding-bottom: 30px;
+	text-align: center;
+	font-size: 30px;
+	color: #fff;
+}
+.footer a {
+	margin: 15px 0;
+	display: inline-block;
+	width: 1257px;
+	height: 101px;
+	text-indent: -9999px;
+	background: url(../../iamges/20170517/topic-19.png) no-repeat;
+}
