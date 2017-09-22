@@ -4,15 +4,7 @@
             <!--top start-->
             <div class="top 2222">
                 <div class="w1200 clearfix">
-                    <div class="float-l">
-                        {if $user_info}
-                            <span>{$user_info.user_name}</span> |
-                            <a href="{$site_domain}user.php?act=logout">退出</a>
-                        {else}
-                            <a href="{$site_domain}user.php">登录</a> |
-                            <a href="user.php?act=register">注册</a>
-                        {/if}
-                    </div>
+                    {insert name='member_info_Sun'}
                     <div class="float-r">
                         <ul class="clearfix">
                             <li><a href="manufacturers_settled.php">品牌入驻</a></li>

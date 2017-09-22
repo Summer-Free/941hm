@@ -77,9 +77,6 @@
         </div>    
     {/if}
     
-    
-
-
     <!-- {foreach from=$sort_goods_arr item=sort key=sort_name} -->
     <div class="topic_content">
         <h2 class="topic_title">{$sort_name}</h2>
