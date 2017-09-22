@@ -14,25 +14,18 @@
                 <div class="dl-pic"></div>
                 <h2>活动精选11款产品享受满减还可使用优惠券</h2>
                 <ul class="clearfix">
-                    <li>
-                        <span>500</span>
-                        <em>满5000可用</em>
+                <!--{foreach item=ke_coupons from=$ke_coupons name=ke_coupons}-->
+                    <!-- {if $smarty.foreach.ke_coupons.iteration %2!=0}-->
+                        <li >
+                        <!--{elseif $smarty.foreach.ke_coupons.iteration %2==0}-->
+                        <li  class="margin-r-0">
+                        <!--{/if}-->
+                        <span class="btm" value="{$ke_coupons.cou_id}">{$ke_coupons.cou_money}</span>
+                        <em>满{$ke_coupons.cou_man}可用</em>
                     </li>
-                    <li class="margin-r-0">
-                        <span>1200</span>
-                        <em>满10000可用</em>
-                    </li>
-                    <li>
-                        <span>2600</span>
-                        <em>满20000可用</em>
-                    </li>
-                    <li class="margin-r-0">
-                        <span>3900</span>
-                        <em>满30000可用</em>
-                    </li>
+                <!--{/foreach}-->
                 </ul>
             </div>
-
             <div class="sec-2">
                 <h2>国庆大放送 免费黄金周</h2>
                 <p>10月1号9:00-10月8号9:00</p>
@@ -110,11 +103,36 @@
 
 
         <!-- #BeginLibraryItem "/library/user_menu_position.lbi" --><!-- #EndLibraryItem -->
-        <script type="text/javascript" src="themes/ecmoban_dsc/js/js/topic.js"></script>
+        <!--<script type="text/javascript" src="themes/ecmoban_dsc/js/js/topic.js"></script>-->
         <script type="text/javascript" src="themes/ecmoban_dsc/js/js/cart_common.js"></script>
         <script type="text/javascript" src="themes/ecmoban_dsc/js/notLogin.js"></script>
         <script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.SuperSlide.2.1.1.js"></script>
         <!--右侧机器人-->
         <script src="//wp.qiye.qq.com/qidian/2852152525/c07a0ec2548f94d63eab86933f484853" charset="utf-8"></script>
+        <script type="text/javascript">
+            $(function() {
+                (function(){
+                    var $li = $(".sec-1 li");
+                    $li.on("click",function() {
+                        var $this = $(this);
+                        var id = $(this).find(".btm").attr("value");
+                        if({$smarty.session.user_id} == 0){
+                                window.location.href="user.php?act=topic";
+                                return false;
+                        }else{
+                                $.post('coupons.php?act=coupons_receive',{'cou_id':id},function(data){
+                                    if(data.status=='ok')
+                                    {
+                                        $this.css("background","url(themes/ecmoban_dsc/iamges/20170517/topic-4.png) no-repeat").find("span").remove();
+                                    }else{
+                                        alert("您已领取过优惠券，请勿重复领取");
+                                        $this.css("background","url(themes/ecmoban_dsc/iamges/20170517/topic-4.png) no-repeat").find("span").remove();
+                                    }
+                                },'json')
+                            }
+                    });
+                }())
+            });
+        </script>
     </body>
 </html>    
