@@ -3740,7 +3740,7 @@ white-space: nowrap;text-overflow: ellipsis;}
 .nch-article-con .title h1{ font-size:24px;font-family: "microsoft yahei"; color:#333; font-weight:normal;height: 30px;line-height: 30px;}
 .nch-article-con .title h2{ line-height:25px; color:#999;}
 .nch-article-con .default{ min-height:300px;overflow:hidden;}
-.nch-article-con .default img,.nch-article-con p img{ float:none;width: 100%!important;height: auto!important;max-width: 100%;text-align: center;}
+.nch-article-con .default img,.nch-article-con p img{ margin: 0 auto;}
 .nch-article-con .more_article{ float:right; text-align:left;}
 
 .nch-article-con .title-bar{ margin-bottom:20px;}
