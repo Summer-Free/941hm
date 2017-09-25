@@ -284,7 +284,15 @@
                             <input type="hidden" value="{$goods_id}" id="good_id" name="good_id">
                             <input type="hidden" value="{$user_id}" id="user_id" name="user_id">
                             <input type="hidden" value="{$area_id}" id="area_id" name="area_id">
-                            <a class="btn-disab box-flex quehuo" href="javascript:;" {if $goods.review_status > 2}style="display:none"{/if}>{if $goods.review_status == 1}暂时下架{else}暂时缺货{/if}</a>
+                            <a class="btn-disab box-flex quehuo" href="javascript:;" 
+                            {if $goods.review_status > 2}
+                            style="display:none"
+                            {/if}>
+                            {if $goods.review_status == 1}
+                            暂时下架
+                            {else}
+                            暂时缺货
+                            {/if}</a>
                             <a class="btn-cart box-flex add-to-cart" href="javascript:;" onclick="addToCart_quick({$goods.goods_id})" {if $goods.review_status <= 2}style="display:none"{/if}>加入购物车</a>
                             <a class="btn-submit box-flex add-to-cart" href="javascript:;" onclick="addToCart({$goods.goods_id})" {if $goods.review_status <= 2}style="display:none"{/if}>立即购买</a>
                         </section>
@@ -526,7 +534,14 @@
                 <a class="filter-btn-shop filter-btn-a" href="{$goods.store_url}"><i class="iconfont icon-dianpu"></i><em>店铺</em></a>
                 {/if}
 
-                <a class="btn-disab box-flex quehuo" href="javascript:;" {if $goods.review_status > 2}style="display:none"{/if}>{if $goods.review_status == 1}暂时下架{else}暂时缺货{/if}</a>
+                <a class="btn-disab box-flex quehuo" href="javascript:;" 
+                {if $goods.review_status > 2} style="display:none"{/if}>
+                {if $goods.review_status == 1}
+                    暂时下架
+                {else}
+                    暂时缺货
+                {/if}
+                </a>
                 {if $isdrp==1 && $goods.user_id==0 && $drp>0}
                   <a class="btn-cart box-flex add-to-cart" href="javascript:;" onclick="checkDrp()" {if $goods.review_status <= 2}style="display:none"{/if}>我要{$custom}</a>
                 {else}
