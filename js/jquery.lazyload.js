@@ -77,7 +77,7 @@
 
         /* Fire one scroll event per scroll. Not one scroll event per image. */
         if (0 === settings.event.indexOf("scroll")) {
-            $container.bind(settings.event, function() {
+            $container.on(settings.event, function() {
                 return update();
             });
         }
@@ -241,9 +241,9 @@
 
 })(jQuery, window, document);
 
-// $(function(){   
-// 	$("img.lazy").lazyload({ 
-// 		effect : "fadeIn",
-// 		threshold:1000
-// 	});
-// })
+$(function(){   
+	$("img.lazy").lazyload({ 
+		effect : "fadeIn",
+		threshold:1000
+	});
+})

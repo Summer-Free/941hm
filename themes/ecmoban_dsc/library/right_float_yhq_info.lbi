@@ -14,6 +14,7 @@
                 </div>
             </div>
             {/foreach}
+
             <div class="coupon-type user_conpon_title">已领取的券</div>
             {foreach from=$user_coupons item=vo}
             <div class="coupon-item uc">

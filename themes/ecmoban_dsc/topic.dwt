@@ -117,7 +117,7 @@
                         var $this = $(this);
                         var id = $(this).find(".btm").attr("value");
                         if({$smarty.session.user_id} == 0){
-                                window.location.href="user.php?act=topic";
+                                window.location.href="user.php?act=active";
                                 return false;
                         }else{
                                 $.post('coupons.php?act=coupons_receive',{'cou_id':id},function(data){

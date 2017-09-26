@@ -147,7 +147,7 @@
                 <div class="done-tabs">
                     <ul class="done-tabs-nav">
                         <li>热门推荐<i></i></li>
-                        <li>疯狂抢购<i></i></li>
+                        <!--<li>疯狂抢购<i></i></li>-->
                         <li>商城推荐<i></i></li>
                         <li>热评商品<i></i></li>                            
                     </ul>
@@ -164,7 +164,7 @@
         <ul>
             <!--{foreach from=$hot_goods item=goods}-->
             <li>
-                <div class="done-img"><a href="{$goods.url}" target="_blank"><img src="themes/ecmoban_dsc/images/loadGoods.gif" title="{$goods.name|escape:html}" width="136" height="136" class="lazy" data-original="{$goods.thumb}"/></a></div> 
+                <div class="done-img"><a href="{$goods.url}" target="_blank"><img src="{$goods.thumb}" title="{$goods.name|escape:html}" width="136" height="136"/></a></div> 
                 <div class="done-name"><a href="{$goods.url}" target="_blank" title="{$goods.name|escape:html}">{$goods.short_style_name}</a></div>
                 <div class="done-price">
                     <span class="shop-price">
@@ -313,13 +313,24 @@
 
  <!-- #EndLibraryItem -->
 <!-- TemplateEndEditable -->
+
+
+ <!--
 		</div>
         <div class="w1200 floor" id="floor_loading" style="padding:220px 0px;">
         	<div style="width:120px; height:100px; margin:auto;"><img src="themes/ecmoban_dsc/images/loading.gif"></div>
         </div>
         <!-- #BeginLibraryItem "/library/guess_you_like.lbi" --><!-- #EndLibraryItem -->
     </div>
+    -->
+
+
 </div>
+
+
+
+
+
 
 <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
 <div id="elevator" class="elevator">
@@ -333,7 +344,7 @@
 <div class="attached-search-container">
 	<div class="attached_bg"></div>
 	<div class="w1200">
-        <div class="fp-iconfont"><img src="images/logo_2015_2.png" height="58" /></div>
+        <div class="fp-iconfont"><img src="{$index_down_logo}" height="58" /></div>
         <div class="mall-search">
             <form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()" class="ecsc-search-form">
                 <div class="ecsc-search-tabs">

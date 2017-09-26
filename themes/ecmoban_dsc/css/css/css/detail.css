@@ -1,0 +1,417 @@
+/*头部下拉菜单hover效果 需要加上此段代码 start*/
+#header .classification {
+	background-color: transparent;
+}
+#header .classification .dropdown-menu {
+	display: none\9; /*IE8 hack*/
+	background-color: transparent;
+	z-index: -1;
+	opacity: 0;
+	-webkit-transition: all .3s linear;
+	   -moz-transition: all .3s linear;
+	    -ms-transition: all .3s linear;
+	     -o-transition: all .3s linear;
+	        transition: all .3s linear;
+}
+#header .classification:hover > .dropdown-menu {
+	background-color: #d4d6d5;
+	z-index: 10;
+	opacity: 1;
+	display: block\9; /*IE8 hack*/
+}
+#header .classification:hover {
+	background-color: #95b0b2;
+}
+/*头部下拉菜单hover效果 需要加上此端代码 end*/
+
+.section-1 {
+	border: 1px solid #f2f2f2;
+}
+.section-1>.left {
+	padding: 20px 0 40px 20px;
+	width: 987px;
+}
+.section-1 .big-pic {
+	overflow: hidden;
+	width: 420px;
+	height: 420px;
+	border: 1px solid #f2f2f2;
+}
+.section-1 .small-pic {
+	padding-top: 10px;
+	padding-bottom: 12px;
+}
+.section-1 .small-pic li {
+	float: left;
+	cursor: pointer;
+}
+.section-1 .small-pic img {
+	border: 1px solid transparent;
+}
+.section-1 .small-pic img:hover,
+.section-1 .small-pic img.active {
+	border-color: red;
+}
+.section-1 .foot a {
+	display: inline-block;
+	padding-right: 50px;
+	border-right: 1px solid #333;
+}
+.section-1 .foot .icon-small-star {
+	position: relative;
+	top: 2px;
+	margin-right: 10px;
+}
+#bdshare {
+	position: relative;
+	left: -165px;
+	float: right!important;
+	padding-bottom: 0;
+}
+#bdshare a {
+	display: inline-block;
+	padding: 0;
+	font-family: "Microsoft Yahei";
+	border-right: none;
+	background: none!important;
+}
+#bdshare .icon-fenxian {
+	position: relative;
+	top: 2px;
+	margin-right: 8px;
+}
+.section-1 .product-detail {
+	width: 521px;
+}
+.section-1 .product-detail h2 {
+	position: relative;
+	left: -10px;
+	margin-bottom: 50px;
+	font-size: 20px;
+}
+.section-1 .product-detail .price {
+	padding: 20px 20px 20px 10px;
+ 	height: 128px;
+	background-color: #fef9f5;
+}
+.section-1 .product-detail .price dd {
+	width: 155px;
+}
+.section-1 .product-detail .price dl,
+.section-1 .product-detail dl dt,
+.section-1 .product-detail dl dd {
+	float: left;
+}
+.section-1 .product-detail dl {
+	width: 251px;
+}
+.section-1 .product-detail dl dt {
+	width: 95px;
+}
+.section-1 .product-detail dl dd {
+	position: relative;
+}
+.section-1 .product-detail ins {
+	position: relative;
+	top: -8px;
+	font-size: 25px;
+	color: #ff0000;
+}
+.section-1 .hover-me .icon-down {
+	position: relative;
+	top: -2px;
+	margin-left: 5px;
+	width: 10px;
+	height: 6px;
+	background-position: 0 -494px;
+}
+.section-1 .product-detail .hover-me + div {
+	position: absolute;
+	top: 19px;
+	right: 0;
+	display: none\9;
+	opacity: 0;
+	-webkit-transition: all .3s linear;
+	   -moz-transition: all .3s linear;
+	    -ms-transition: all .3s linear;
+	     -o-transition: all .3s linear;
+	        transition: all .3s linear;
+}
+.section-1 .product-detail .hover-me:hover + div {
+	z-index: 10;
+	display: block\9;
+	opacity: 1;
+}
+.section-1 .statistics {
+	float: right;
+}
+.section-1 .statistics span {
+	display: block;
+	text-align: right;
+}
+.section-1 .statistics li {
+	float: left;
+	margin-left: 15px;
+}
+.section-1 .product-info {
+	padding-top: 18px;
+	padding-left: 10px;
+	width: 100%!important;
+}
+.section-1 .product-info dd {
+	width: 416px;
+}
+.section-1 .product-info dt,
+.section-1 .product-info dd>span {
+	height: 32px;
+	line-height: 32px;
+}
+.section-1 .location,
+.section-1 .warehouse {
+	float: left;
+}
+.section-1 .warehouse>span {
+	display: inline-block;
+	position: relative;
+	padding-left: 20px;
+	width: 110px;
+	height: 32px;
+	line-height: 32px;
+	border: 1px solid #CECBCE;
+	border-left: none;
+}
+.section-1 .warehouse .icon-down {
+	top: 14px;
+}
+.section-1 .warehouse {
+	position: relative;
+}
+.section-1 .warehouse>div {
+	z-index: 5;
+	display: none;
+	position: absolute;
+	top: 31px;
+	left: -1px;
+	padding-bottom: 5px;
+	width: 111px;
+	border: 1px solid #CECBCE;
+	border-top: none;
+	background-color: #fff;
+}
+.section-1 .warehouse>div>span {
+	display: block;
+	padding-left: 20px;
+	height: 27px;
+	line-height: 27px;
+	cursor: pointer;
+}
+.section-1 .product-info>dd>span,
+.section-1 .product-info>dd>a {
+	display: inline-block;
+	height: 32px;
+	line-height: 32px;
+}
+.section-1 .material span {
+	width: 111px;
+	text-align: center;
+	border: 1px solid #d9d9d9;
+	cursor: pointer;
+}
+.section-1 .material .active {
+	border-color: #ff0000;
+}
+.section-1 .product-info>dd>a {
+	color: #69b6fe;
+}
+.section-1 .JS-count {
+	display: inline-block;
+	width: 111px;
+	height: 32px;
+	line-height: 32px;
+	border: 1px solid #d9d9d9;
+}
+.section-1 .JS-count .reduce,
+.section-1 .JS-count .result,
+.section-1 .JS-count .plus {
+	float: left;
+	text-align: center;
+}
+.section-1 .JS-count .reduce,
+.section-1 .JS-count .plus {
+	width: 31px;
+	height: 31px;
+	line-height: 31px;
+	font-size: 20px;
+	font-weight: 900;
+	background-color: #eaeaea;
+	cursor: pointer;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	     -o-user-select: none;
+	        user-select: none;
+}
+.section-1 .JS-count .reduce {
+	border-right: 1px solid #d9d9d9;
+}
+.section-1 .JS-count .plus {
+	float: right;
+	border-left: 1px solid #d9d9d9;
+}
+.section-1 .JS-count .result {
+	width: 47px;
+	height: 30px;
+	line-height: 31px;
+	border: none;
+}
+.section-1 i {
+	font-style: normal;
+}
+.section-1 .product-detail>.wrap {
+	padding-bottom: 40px;
+}
+.section-1 .product-detail .buy>span {
+	float: left;
+	height: 44px;
+	line-height: 44px;
+	font-size: 16px;
+	text-align: center;
+	cursor: pointer;
+	opacity: .8;
+	filter: alpha(opacity=80);
+} 
+.section-1 .product-detail .buy>span:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+.section-1 .product-detail .buy-now {
+	margin-right: 12px;
+	width: 142px;
+	color: #c20000;
+	border:1px solid;
+	background-color: #ffe4cf;
+}
+.section-1 .product-detail .add-cart {
+	width: 189px;
+	color: #fff;
+	background-color: #c20000;
+}
+.section-1 .product-detail .add-cart .icon-small-cart {
+	position: relative;
+	top: 3px;
+	left: -10px;
+}
+.section-1 .product-detail .buy,
+.section-1 .product-detail>.foot {
+	padding-left: 10px;
+}
+.section-1 .product-detail>.foot {
+	padding-top: 40px;
+}
+.section-1 .product-detail>.foot span {
+	margin-right: 15px;
+}
+.section-1>.right,
+.section-1>.left {
+	min-height: 605px;
+}
+.section-1>.right {
+	position: relative;
+	padding: 0 14px;
+	width: 208px;
+	border-left: 1px solid #ececec;
+}
+.section-1>.right h3 {
+	height: 50px;
+	line-height: 50px;
+}
+.common-ul li {
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 28px;
+	text-align: center;
+}
+.common-ul li span,
+.common-ul li span em {
+	color: #ff0000;	
+}
+.section-1>.right .refresh {
+	position: absolute;
+	bottom: 10px;
+	right: 20px;
+}
+.section-1>.right .icon-refresh {
+	position: relative;
+	top: 2px;
+	left: -8px;
+}
+.section-2 .left {
+	width: 198px;
+}
+.section-2 .left h3 {
+	margin-bottom: 8px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 16px;
+	background-color: #f6f6f6;
+}
+.section-2 .left .new,
+.section-2 .left .hot,
+.section-2 .left .recent-browse {
+	border: 1px solid #ededed;
+}
+.section-2 .left .new ul,
+.section-2 .left .hot ul,
+.section-2 .left .recent-browse ul {
+	padding: 0 8px;
+}
+.section-2 .right {
+	position: relative;
+	padding-top: 50px;
+	width: 994px;
+}
+.section-2 .right .tab-nav {
+	z-index: 10;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 994px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #f6f6f6;
+}
+.section-2 .right .tab-nav li {
+	float: left;
+	width: 139px;
+	border-right: 1px solid #ededed;
+	cursor: pointer;
+}
+.section-2 .right .tab-nav * {
+	font-size: 16px;
+}
+.section-2 .right .tab-nav span {
+	color: #c20000;
+}
+.section-2 .tab-nav li.current,
+.section-2 .tab-nav li.current a {
+	background-color: #fff;
+}
+.section-2 .tab-nav li.current {
+	border-top: 2px solid #cc0000;
+}
+.section-2 .tab-nav li.current * {
+	color: #cc0000;
+}
+.section-2 .tab-nav li {
+	height: 50px;
+}
+.section-2 .tab-nav li a {
+	display: block;
+}
+.section-2 .right .content {
+	position: absolute;
+	top: 57px;
+	left: 0;
+}

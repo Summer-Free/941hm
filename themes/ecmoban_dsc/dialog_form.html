@@ -1,0 +1,155 @@
+<span class="close"></span>
+<form action="" method="">
+	<h3>请填写以下信息 :</h3>
+	<div class="form-group group-1">
+		<p><span class="error color-ff0000">*</span>1.您想要定制哪个系列的家具？</p>
+		<div>
+			<div class="clearfix">
+				<input type="checkbox" id="size" name="series" value="尺寸" />
+				<label for="size">尺寸</label>
+				<input type="checkbox" id="cz" name="series" value="材质" />
+				<label for="cz">材质</label>
+				<input type="checkbox" id="dh" name="series" value="雕花" />
+				<label for="dh">雕花</label>
+				<input type="checkbox" id="other" name="series" value="其他" />
+				<label for="other">其他</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="form-group group-4">
+		<p>3.您还有其他什么想要说的？(最多输入150个字)</p>
+		<textarea name="" id="say" placeholder="写出您的需求，让我们更好地为您服务"></textarea>
+		<span>0/150</span>
+	</div>
+
+	<div class="form-group group-5">
+		<p><span class="error color-ff0000">*</span>4.请填写您的个人信息：(我们网站承诺不会泄露您的个信息，941红木，值得信赖)</p>
+		<div class="clearfix">
+			<label for="name">姓名 : </label>
+			<input type="text" id="name" />
+		</div>
+		<div class="clearfix">
+			<label for="name">手机号码 : </label>
+			<input type="text" id="phone" />
+		</div>
+		<div class="clearfix">
+			<label for="name">地址 : </label>
+			<div class="city-picker-select"></div>
+		</div>
+	</div>
+
+	<div class="form-group group-6">
+		<button class="showMsg" type="submit">提交</button>
+	</div>
+</form>
+
+<script>
+	$(function() {
+
+		//启用三级联动插件
+		var select = $('.city-picker-select').cityPicker({
+			dataJson: cityData,
+			renderMode: false,
+			linkage: false
+		});
+
+        //默认城市配置参数
+        var data = [
+            {
+                'id': '330000',
+                'name': '浙江省'  
+            },
+            {
+                'id': '330100',
+                'name': '杭州市'  
+            },
+            {
+                'id': '330108',
+                'name': '滨江区' 
+            }
+        ];
+
+		//启用默认城市
+		select.setCityVal(data);
+
+        //点击弹窗内的关闭按钮，移除弹窗的所有元素
+        $(".dialog-content .close").on("click",function() {
+            $(".dialog-bg").remove();
+            $(this).parent().remove();
+        });
+
+		//限制文本域的字数为150
+		$("#say").on("input propertychange",function() {
+			var say = $(this).val(),
+				tip = $("#say + span"),
+				len = say.length;
+			if(len > 150) {
+				$(this).val(say.substring(0,150));
+				len = 150;
+				tip.text(len + "/150");
+			}else {
+				tip.text(len + "/150");
+			}
+		});
+
+		$('.group-6 button').on("click",function(e) {
+
+			var series_arr = [], //系列的选中值
+				say = $("#say"), //文本域的值
+				area = $("#area"), //面积
+				name_val = $("#name").val(),  //用户名
+				phone_val = $("#phone").val(), //手机号
+				province_val = $(".province option:selected").data("title"), //省
+				city_val = $(".city option:selected").data("title"), //市
+				district_val = $(".district option:selected").data("title"), //县(区)
+				error = '<p class="color-ff0000"><span class="error">*</span>为必填项,请填写完整</p>',
+				div = $('.group-6');
+
+				//阻止默认事件
+				e.preventDefault();	
+
+				//将所有选中的值，放入数组
+				$("input[name='series']:checked").each(function() {
+					series_arr.push($(this).val());
+				});
+
+				//判断必填项是否填写
+				if(series_arr.length && name_val && phone_val && province_val && city_val && district_val) {
+					
+					//必填项填写完整后，删除错误提示信息
+					div.find("p").remove();
+
+					//提交成功后，加载提交成功页面
+					$("#showMsg").remove();
+
+					var dialog = "<div id='showMsg' style='z-index: 999999999;position: fixed;top: 50%;left: 50%;margin: -33.5px 0 0 -161px;width: 322px;height: 67px;line-height: 67px;font-size: 18px;text-align: center;background-color: #fff;border: 1px solid #ccc;'>您的信息已经提交成功!请耐心等待</div>",
+						timer = "",
+						action = function() {
+							$("#showMsg").animate({ opacity: 1},1500);
+							$("#showMsg").animate({ opacity: 0},500,function() {
+
+								$(this).remove();
+								clearInterval(timer);
+								$(".dialog-bg").remove();
+								$(".dialog-content").remove();
+
+							});
+						};
+
+					$(document.body).append(dialog);
+					
+					action();
+
+				}else {
+					//每次点击提交之后,删除错误提示信息(否则点一次就会添加一条)
+					div.find("p").remove();
+
+					//必填项填写不完整，抛出错误信息
+					div.prepend(error);
+				}
+
+		});
+
+	});
+</script>

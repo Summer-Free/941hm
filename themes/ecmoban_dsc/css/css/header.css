@@ -90,10 +90,20 @@
 	left: 0;
 	width: 100%;
 	height: 59px;
+	/*text-indent: -9999px;*/
 }
+/*.slide-top-bar .bar-1 {
+	background: url(../../iamges/20170517/topbar-1.jpg) center center no-repeat;
+}
+.slide-top-bar .bar-2 {
+	background: url(../../iamges/20170517/topbar-2.jpg) center center no-repeat;
+}*/
 .slide-top-bar li {
 	position: relative;
 }
+/*.slide-top-bar .bar {
+	height: 59px;
+}*/
 .slide-top-bar .w1200 {
 	position: relative;
 }
@@ -291,3 +301,43 @@
 	-webkit-transform: scale(.7) translateX(-1px);
 	-moz-transform: scale(1);
 }
+
+
+/*禅学院的下拉菜单 start*/
+.cxy-dropdpwn-menu {
+	z-index: 1000;
+	position: absolute;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	height: 0;
+	line-height: 50px;
+	-webkit-transition: all .3s linear;
+	   -moz-transition: all .3s linear;
+	    -ms-transition: all .3s linear;
+	     -o-transition: all .3s linear;
+	        transition: all .3s linear;
+}
+.cxy-dropdpwn-menu .submenu {
+	height: 50px;
+	border: 1px solid #333;
+	border-left: none;
+	border-right: none;
+	background-color: #fff!important;
+}
+.cxy-dropdpwn-menu li {
+	float: left;
+}
+.cxy-dropdpwn-menu li a:hover {
+	color: #47a9fd;
+} 
+.cxy-dropdpwn-menu li a {
+	display: block;
+	width: 199px;
+	font-size: 13px;
+	text-align: center;
+}
+.cxy:hover>.cxy-dropdpwn-menu {
+	height: 50px;
+}
+/*禅学院的下拉菜单 end*/

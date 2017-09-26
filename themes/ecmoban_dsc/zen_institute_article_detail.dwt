@@ -58,9 +58,7 @@
 						<h2>热门文章</h2>
 						<ul>
 						<!--{foreach item=article from=$article name=article} -->
-							<li>
-								<a href="zen_institute_article_detail.php?id={$article.id}">{$article.pro_name}</a>
-							</li>
+							<li><a href="zen_institute_article_detail.php?id={$article.id}">{$article.pro_name}</a></li>
 						<!--{/foreach}-->	
 						</ul>
 					</div>

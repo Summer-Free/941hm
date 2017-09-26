@@ -4,58 +4,27 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>姓名检查</title>
 </head>
-<!--加入这个脚本的意义是区域联动-->
-{insert_scripts files='utils.js,transport.js,region.js,shopping_flow.js'}
 <body>	
-{$_LANG}
-	<!--
-              <select name="country" id="selCountries_{$sn}" onchange="region.changed(this, 1, 'selProvinces_{$sn}')">
-       <option value="0">国家</option>
-       <!-- {foreach from=$country_list item=country} -->
-       <option value="{$country.region_id}" {if $consignee.country eq $country.region_id}selected{/if}>{$country.region_name}</option>
-       <!-- {/foreach} -->
-   </select>
-               
-       <select name="province" id="selProvinces_{$sn}" onchange="region.changed(this, 2, 'selCities_{$sn}')">
-       <option value="0">省份</option>
-       <!-- {foreach from=$province_list.$sn item=province} -->
-       <option value="{$province.region_id}" {if $consignee.province eq $province.region_id}selected{/if}>{$province.region_name}</option>
-       <!-- {/foreach} -->
-       </select>
-       <select name="city" id="selCities_{$sn}" onchange="region.changed(this, 3, 'selDistricts_{$sn}')">
-       <option value="0">城市</option>
-       <!-- {foreach from=$city_list.$sn item=city} -->
-       <option value="{$city.region_id}" {if $consignee.city eq $city.region_id}selected{/if}>{$city.region_name}</option>
-       <!-- {/foreach} -->
-       </select>
-<select name="district" id="selDistricts_{$sn}" {if !$district_list.$sn}style="display:none"{/if}>
-       <option value="0">地区</option>
-       <!-- {foreach from=$district_list.$sn item=district} -->
-       <option value="{$district.region_id}" {if $consignee.district eq $district.region_id}selected{/if}>{$district.region_name}</option>
-       <!-- {/foreach} -->
-       </select>
-       -->
-<table width="725" height="104" border="1">
-<tr>
-<td colspan="6" align="center"><h3>展示全部加盟商信息</h3></td>
-</tr>
-<tr>
-<td width="106" align="center">用户姓名</td>
-<td width="106" align="center">联系电话</td>
-<td width="106" align="center">家庭住址</td>
-<td width="159" align="center">意向添加时间</td>
-<td width="106" align="center">加盟意向</td>
-<td width="102" align="center">操作</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td align="center" valign="middle" id=""><a></a>删除</td>
-</tr>
-</table>
-
+<form method="post" action="test.php">
+	文章标题：&nbsp;<input type="text" name="pro_name">
+	<br>
+	文章类型：
+	<select name="pro_type">
+	<!--{foreach from=$cxy_array item=cxy_array}-->
+		<option value="{$cxy_array.c_id}">{$cxy_array.c_name}</option>
+	<!--{/foreach}-->
+	</select>
+	<br>
+    关键词：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="keywords"><br>
+    描述：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="description"><br>
+	文章编辑器：
+	<div class="item">
+		<input type="hidden" id="FCKeditor1" name="FCKeditor1" value="" />
+			<iframe id="FCKeditor1_frame" src="../plugins/ueditor/ecmobanEditor.php?item=FCKeditor1" width="100%" height="586" frameborder="0" scrolling="no">
+		</iframe>
+    </div>
+    <input type="submit">
+</form>
+</body>
 </body>
 </html>

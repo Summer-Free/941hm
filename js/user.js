@@ -364,6 +364,7 @@ function userLogin()
 	var captcha = frm.find("input[name='captcha']");
 	var error = frm.find(".msg-error");
 	var msg = '';
+	
 	/*保存登录信息 by wu start*/
 	var remember_string = "";
 	var remember = frm.find("input[name='remember']:checked");
