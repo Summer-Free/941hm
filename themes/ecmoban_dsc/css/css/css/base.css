@@ -1,0 +1,330 @@
+/*global reset*/
+* {
+  font-family: "Microsoft Yahei";
+  font-size: 14px;
+  color: #333;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+       -o-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,
+form,fieldset,legend,button,input,textarea,th,td  {margin:0;padding:0;}
+
+body,button,input,select,textarea{font:14px/1.5  "Microsoft Yahei" tahoma,arial,\5b8b\4f53;}
+
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight: normal;}
+
+address,cite,dfn,em,var{font-style:normal;}
+
+code,kbd,pre,samp{font-family:courier new,courier,monospace;}
+
+small{font-size:12px;}
+
+ul,ol{list-style:none;}
+
+a{text-decoration:none;}
+
+a{text-decoration:none;outline: none;}
+
+a:hover{text-decoration:none;}
+
+sup{vertical-align:text-top;}
+
+sub{vertical-align:text-bottom;}
+
+legend{color:#000;}
+
+fieldset,img{border:0;}
+img{display: block;}
+button,input,select,textarea{font-size:100%;}
+button:focus,input:focus,select:focus,textarea:focus {
+  outline: none;
+}
+ins {text-decoration: none;}
+table{border-collapse:collapse;border-spacing:0;}
+
+
+
+/*sprite style*/
+.close,.Franchisee-settled,
+.Factory-settled,.icon-down,
+.icon-search,.icon-file,
+.icon-cart,.icon-start-black,
+.icon-bz,.icon-wx,
+.icon-pf,.icon-hx,
+.icon-integral,.icon-record,
+.icon-strategy,.icon-shopping-cart,
+.icon-small-star,.icon-fenxian,
+.icon-small-cart,.icon-refresh {
+  display: inline-block;
+  background-image: url(../../iamges/20170517/sprite-1.png);
+  background-repeat: no-repeat;
+}
+.icon-baoz,.icon-qtbt,
+.icon-hprc,.icon-sdfh,
+.icon-qwry {
+  display: inline-block;
+  background-image: url(../../iamges/20170517/sprite-foot.png);
+  background-repeat: no-repeat;
+}
+.icon-ct,.icon-kt,
+.icon-sf,.icon-ws,
+.icon-xwy {
+  display: inline-block;
+  background-image: url(../../iamges/20170517/sprite-5.png);
+  background-repeat: no-repeat;
+}
+
+
+.icon-ct {
+  width: 97px;
+  height: 87px;
+  background-position: 0 0;
+}
+.icon-kt {
+  width: 97px;
+  height: 74px;
+  background-position: 0 -106px;  
+}
+.icon-sf {
+  width: 88px;
+  height: 80px;
+  background-position: 0 -197px;   
+}
+.icon-ws {
+  width: 96px;
+  height: 80px;
+  background-position: 0 -294px;   
+}
+.icon-xwy {
+  width: 87px;
+  height: 88px;
+  background-position: 0 -394px;   
+}
+.icon-small-star {
+  width: 15px;
+  height: 14px;
+  background-position: -303px 0;
+}
+.icon-fenxian {
+  width: 14px;
+  height: 14px;
+  background-position: -321px 0;
+}
+.icon-small-cart {
+  width: 16px;
+  height: 16px;
+  background-position: -339px 0;  
+}
+.icon-start-black {
+  width: 33px;
+  height: 29px;
+  background-position: -135px 0;
+}
+.icon-shopping-cart {
+  width: 22px;
+  height: 22px;
+  background-position: -277px 0;
+  cursor: pointer;
+}
+.icon-refresh {
+  width: 14px;
+  height: 14px;
+  background-position: -255px -23px;
+}
+
+
+/*width style*/
+.w1200 {
+  margin: 0 auto;
+  width: 1200px;
+}
+.w151 {
+  width: 151px;
+}
+
+
+/*background-color styly*/
+.bg-color-f5f5f5 {
+  background-color: #f5f5f5;
+}
+.bg-color-ecebec {
+  background-color: #ecebec;
+}
+
+
+/*border style*/
+.border-r-0 {
+  border-right: none!important;
+}
+
+/*font-size*/
+.font-size-16 {
+  font-size: 16px;
+}
+
+/*float style*/
+.float-l {
+  float: left;
+}
+.float-r {
+  float: right!important;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+
+/*padding style*/
+.padding-r-0 {
+  padding-right: 0!important;
+}
+.padding-t-17 {
+  padding-top: 17px;
+}
+.padding-t-40 {
+  padding-top: 40px;
+}
+.padding-t-60 {
+  padding-top: 60px;
+}
+
+
+.padding-b-15 {
+  padding-bottom: 15px;
+}
+
+/*margin style*/
+.margin-t-8 {
+  margin-top: 8px;
+}
+.margin-t-15 {
+  margin-top: 15px;
+}
+.margin-t-17 {
+  margin-top: 17px;
+}
+.margin-t-25 {
+  margin-top: 25px;
+}
+.margin-t-45 {
+  margin-top: 45px;
+}
+.margin-r-0 {
+  margin-right: 0!important;
+}
+.margin-r-25 {
+  margin-right: 25px;
+}
+.margin-r-30 {
+  margin-right: 30px;
+}
+.margin-b-7 {
+  margin-bottom: 7px!important;
+}
+.margin-b-12 {
+  margin-bottom: 12px!important;
+}
+.margin-b-15 {
+  margin-bottom: 15px;
+}
+.margin-b-20 {
+  margin-bottom: 20px;
+}
+.margin-b-30 {
+  margin-bottom: 30px;
+}
+.margin-l-8 {
+  margin-left: 8px;
+}
+
+
+
+
+
+/*hover style*/
+.move {
+  -webkit-transition: all .2s linear;
+     -moz-transition: all .2s linear;
+      -ms-transition: all .2s linear;
+       -o-transition: all .2s linear;
+          transition: all .2s linear;
+}
+.move:hover {
+  box-shadow: 0 0 15px 0 #d7d6d6;
+  -webkit-transform: translateX(1px) translateY(-1px);
+     -moz-transform: translateX(1px) translateY(-1px);
+      -ms-transform: translateX(1px) translateY(-1px);
+       -o-transform: translateX(1px) translateY(-1px);
+          transform: translateX(1px) translateY(-1px);
+}
+
+/*transition style*/
+.transition {
+  -webkit-transition: all .3s linear;
+     -moz-transition: all .3s linear;
+      -ms-transition: all .3s linear;
+       -o-transition: all .3s linear;
+          transition: all .3s linear;
+}
+
+
+
+/* 页面底部有个隐藏的input  email_sub   和右侧的悬浮框在一个模板*/
+.email_sub{
+  display: block;
+  margin: 0 auto;
+  position: fixed;
+  bottom: -60px;
+  height: 60px;
+  width: 100%;
+  z-index: 10000;
+  opacity: 1;
+  -webkit-transition: bottom .3s ease-out;
+  -moz-transition: bottom .3s ease-out;
+  -ms-transition: bottom .3s ease-out;
+  -o-transition: bottom .3s ease-out;
+  transition: bottom .3s ease-out;
+  box-shadow: -15px -12px 10px -12px #999;
+}
+.email_sub.show{
+  bottom:0;
+}
+.email_sub .w1200{ position:relative; z-index:10;}
+.email_sub_btn{ margin-top:12px; font-size:0; overflow:hidden;}
+.email_sub_btn input{ 
+  float:left;
+  width:350px; 
+  height: 37px;
+  padding:7px 10px; 
+  line-height: 37px;
+  font-size:14px; 
+  border:1px solid #ec5151; 
+  outline:0 none; 
+}
+.email_sub_btn .emp_btn{ 
+  background:#ec5051; 
+  display:inline-block; 
+  height:37px; 
+  line-height:37px; 
+  color:#fff; 
+  font-size:14px; 
+  padding:0 10px; 
+  float:left;
+}
+.attached_bg{ 
+  position:absolute; 
+  top:0; 
+  left:0; 
+  width:100%; 
+  height:60px; 
+  background:#fff;
+  opacity:0.9; 
+  filter:alpha(opacity=90); 
+  z-index:9;
+}

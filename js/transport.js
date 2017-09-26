@@ -788,3 +788,24 @@ function hideLoader()
     {}
   }
 }
+/*在文件最底部增加代码*/
+
+if (Object.prototype.toJSONString){
+
+var oldToJSONString = Object.toJSONString;
+
+Object.prototype.toJSONString = function(){
+
+if (arguments.length > 0){
+
+return false;
+
+}else{
+
+return oldToJSONString.apply(this, arguments);
+
+}
+
+}
+
+}

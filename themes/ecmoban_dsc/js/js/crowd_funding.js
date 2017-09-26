@@ -4,7 +4,7 @@ $(function() {
 	$(".slide-banner").slideFade();	
 
 	//假分页
-	$(".tab-nav>a").on("click",function(){
+	$(".tab-nav>a").on("click",function() {
 		var $this = $(this),
 			index = $this.index();
 

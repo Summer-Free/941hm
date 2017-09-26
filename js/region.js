@@ -31,6 +31,7 @@ region.loadProvinces = function(country, selName)
 region.loadCities = function(province, selName)
 {
   var objName = (typeof selName == "undefined") ? "selCities" : selName;
+
   region.loadRegions(province, 2, objName);
 }
 
@@ -57,12 +58,14 @@ region.loadDistricts = function(city, selName)
 region.changed = function(obj, type, selName)
 {
   var parent = obj.options[obj.selectedIndex].value;
+
   region.loadRegions(parent, type, selName);
 }
 
 region.response = function(result, text_result)
 {
   var sel = document.getElementById(result.target);
+
   sel.length = 1;
   sel.selectedIndex = 0;
   sel.style.display = (result.regions.length == 0 && ! region.isAdmin && result.type + 0 == 3 || result.regions.length == 0 && ! region.isAdmin && result.type + 0 == 4) ? "none" : '';

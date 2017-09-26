@@ -3,7 +3,6 @@
 <div class="lazy-ecsc-brand w1200">
     <div class="in-title"><i class="icon-r"></i><a href="brand.php" target="_blank" class="bit">品牌街</a></div>
     <div class="brand-warp">
-    	{* 941红木 提醒您：动态载入index_brand_street.lbi，显示首页分类小广告 *}{insert name='recommend_brands' num='14'}
-        {* 941红木 提醒您：动态载入index_brand_banner.lbi，显示首页分类小广告 *}{insert name='get_adv_child' ad_arr=$index_brand_banner}
+    	{* 941红木 提醒您：动态载入index_brand_street.lbi，显示首页分类小广告 *}{insert name='recommend_brands' num='7'}
     </div>
 </div>

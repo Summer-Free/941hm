@@ -1554,13 +1554,17 @@ dl.done{ border-top-color: #ffa3a4;}
 .bind-list .bind-tit .bind-op-btn{ position: absolute;top: 0;right: 0;}
 .bind-list .bind-tit .weibo-icon{ background-position: -48px 0;}
 .bind-list .bind-tit .weixin-icon{ background-position: -24px 0;}
+
+.bind-list .bind-tit .alipay-icon{ display: inline-block;width: 14px;height: 14px;overflow: hidden;margin: 0 3px 0 0;vertical-align: middle;background: url(images/bind-alipay-icon.gif) no-repeat;}
+
+
 .bind-list .bind-cont { position: relative;margin: 10px 0 0;}
 .bind-list .bind-cont .bind-lcol{ width: 500px;border-right: 1px solid #e8e8e8;line-height: 24px; padding-right:10px;}
 .bind-list .bind-cont h4{ font-size: 20px;font-family: '\5fae\8f6f\96c5\9ed1';margin-bottom: 20px;}
 .bind-list .btn-5{ padding:0 15px; line-height:25px; color:#666;}
 .bind-list .bind-cont .bind-rcol{ position: absolute;top: 50%;left: 531px;margin-top: -14px;_display: inline;width: 350px; text-align:center;}
 .bind-list .bind-cont .bind-line{ display: inline-block;vertical-align: middle;width: 74px;height: 28px;overflow: hidden;background: url(images/bind-line.png) center no-repeat;}
-.bind-list .bind-cont img{ float:none; height:28px;}
+.bind-list .bind-cont img{ float:none; height:28px; display: inline-block;}
 
 /*关注品牌*/
 .user-focus-brand th.th{ border-top: 1px solid #dcdcdc;}

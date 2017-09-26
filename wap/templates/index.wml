@@ -10,7 +10,7 @@
     <a href='user.php?act=login'>用户登录</a><br/>
 {/if}
 {if $best_num > 0}
-[精品推荐]&gt;&gt;<a href='goods_list.php?type=best'>更多</a><br/>
+[精品推荐]&gt;&gt;<a href='goods_list.php?type=best'>更多11</a><br/>
   {foreach from=$best_goods item=best_data}
       <a href='goods.php?id={$best_data.id}'>{$best_data.name}</a>[{$best_data.shop_price}]<br/>
   {/foreach}

@@ -1,0 +1,101 @@
+/*头部下拉菜单hover效果 需要加上此段代码 start*/
+#header .classification {
+	background-color: transparent;
+}
+#header .classification .dropdown-menu {
+	display: none\9; /*IE8 hack*/
+	background-color: transparent;
+	z-index: -1;
+	opacity: 0;
+	-webkit-transition: all .3s linear;
+	   -moz-transition: all .3s linear;
+	    -ms-transition: all .3s linear;
+	     -o-transition: all .3s linear;
+	        transition: all .3s linear;
+}
+#header .classification:hover > .dropdown-menu {
+	background-color: #d4d6d5;
+	z-index: 10;
+	opacity: 1;
+	display: block\9; /*IE8 hack*/
+}
+#header .classification:hover {
+	background-color: #95b0b2;
+}
+/*头部下拉菜单hover效果 需要加上此端代码 end*/
+
+
+/*除了首页以外的，头部轮播图中按钮的位置调动 start*/
+#header .JS-slide .left-btn {
+	left: 0;
+}
+#header .JS-slide:hover .left-btn {
+	left: 50px;
+}
+#header .JS-slide .right-btn {
+	right: 0;
+}
+#header .JS-slide:hover .right-btn {
+	right: 50px;
+}
+/*除了首页以外的，头部轮播图中按钮的位置调动 end*/
+
+.cxy-dropdpwn-menu {
+	z-index: 10;
+	position: absolute;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	height: 0;
+	line-height: 74px;
+	background-color: #fff;
+	-webkit-transition: all .3s linear;
+	   -moz-transition: all .3s linear;
+	    -ms-transition: all .3s linear;
+	     -o-transition: all .3s linear;
+	        transition: all .3s linear;
+}
+.cxy-dropdpwn-menu .w1200 {
+	padding: 0 120px;
+}
+.cxy-dropdpwn-menu li {
+	float: left;
+}
+.cxy-dropdpwn-menu li a:hover {
+	color: #47a9fd;
+} 
+.cxy-dropdpwn-menu li a {
+	display: block;
+	width: 160px;
+	text-align: center;
+}
+.cxy:hover>.cxy-dropdpwn-menu {
+	height: 74px;
+	border: 1px solid #333;
+	border-left: none;
+	border-right: none;
+}
+
+.common-h2 {
+	height: 72px;
+	line-height: 72px;
+	font-size: 16px;
+}
+.common-h2 a {
+	float: right;
+}
+.section {
+	border-bottom: 1px solid #333;
+}
+.section .w1200 {
+	padding: 0 15px;
+}
+.section li {
+	float: left;
+	margin: 0 58px 23px 0;
+}
+.section li h3 {
+	padding-top: 8px;
+	text-align: center;
+	font-size: 14px;
+}

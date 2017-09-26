@@ -1,0 +1,157 @@
+/*头部下拉菜单hover效果 需要加上此端代码 start*/
+#header .classification {
+	background-color: transparent;
+}
+#header .classification .dropdown-menu {
+	display: none\9; /*IE8 hack*/
+	z-index: 0;
+	opacity: 0;
+	background-color: transparent;
+	-webkit-transition: all .3s linear;
+	   -moz-transition: all .3s linear;
+	    -ms-transition: all .3s linear;
+	     -o-transition: all .3s linear;
+	        transition: all .3s linear;
+}
+#header .classification:hover > .dropdown-menu {
+	display: block\9;/*IE8 hack*/
+	z-index: 10;
+	opacity: 1;
+	background-color: #d4d6d5;
+}
+#header .classification:hover {
+	background-color: #95b0b2;
+}
+/*头部下拉菜单hover效果 需要加上此端代码 end*/
+
+/*main body*/
+.section-1 {
+	padding: 150px 35px;
+	background-color: #fbfcfd;
+}
+.section-1 div {
+	position: relative;
+	margin: 0 auto;
+	width: 905px;
+	height: 0;
+	border-bottom: 1px solid #192b43; 
+}
+.section-1 div span {
+	position: absolute;
+	top: -23.5px;
+	width: 47px;
+	height: 47px;
+	font-size: 25px;
+	line-height: 47px;
+	text-align: center;
+	color: #fff;
+	background: url(../../iamges/20170517/point.jpg);
+}
+.section-1 div .s2 {
+	left: 287px;
+}
+.section-1 div .s3 {
+	left: 575px;
+}
+.section-1 div .s4 {
+	left: 862px;
+}
+.section-1 ul {
+	margin: 0 auto;
+	padding-top: 50px;
+	width: 905px;
+	height: 281px;
+}
+.section-1 li {
+	position: relative;
+	float: left;
+	margin-right: 38px;
+	text-align: center;
+	font-size: 25px;
+	color: #192b43;
+}
+.section-1 li span {
+	display: block;
+	margin: 0 auto 25px auto;
+	width: 173px;
+	height: 173px;
+	background-image: url(../../iamges/20170517/sprite-2.png);
+}
+.section-1 .li1 span {
+	background-position: -3px -5px;
+}
+.section-1 .li2 span {
+	background-position: -184px -5px;
+}
+.section-1 .li3 span {
+	background-position: -367px -5px;
+}
+.section-1 .li4 span {
+	background-position: -548px -5px;
+}
+.section-1 .li1 {
+	left: -62px;
+}
+.section-1 .li2 {
+	left: -11px;
+}
+.section-1 .li3 {
+	left: 38px;
+}
+.section-1 .li4 {
+	left: 112px;
+}
+.section-2 {
+	padding: 90px 60px;
+}
+.section-2 h2 {
+	margin: 0 auto;
+	height: 58px;
+	text-indent: -9999px;
+	background-image: url(../../iamges/20170517/sprite-3.png);
+	background-repeat: no-repeat;
+}
+.Chinese-style h2 {
+	width: 520px;
+	background-position: -14px -6px;
+}
+.Qing-style h2 {
+	width: 546px;
+	background-position: -2px -80px;
+}
+.Ming-style h2 {
+	width: 541px;
+	background-position: -5px -165px;
+}
+.section-2 ul {
+	padding-top: 98px;
+}
+.section-2 .product-info {
+	padding-top: 75px;
+	width: 500px;
+	text-align: center;
+}
+.section-2 .product-info h3 {
+	font-size: 34px;
+	font-weight: normal;
+}
+.section-2 .product-info dt {
+	margin-bottom: 25px;
+}
+.section-2 .product-info dd {
+	margin-bottom: 15px;
+	font-size: 25px;
+}
+.section-2 .product-info .price {
+	font-size: 34px;
+	color: #be5400;
+}
+.section-2 .product-info a {
+	display: inline-block;
+	width: 112px;
+	height: 29px;
+	text-indent: -9999px;
+	background-image: url(../../iamges/20170517/sprite-1.png);
+	background-repeat: no-repeat;
+	background-position: -388px 0;
+}

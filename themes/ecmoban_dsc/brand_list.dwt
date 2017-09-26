@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="themes/ecmoban_dsc/purebox.css">
 {* 包含脚本文件 *}
 {insert_scripts files='jquery-1.9.1.min.js,jquery.json.js,transport_jquery.js,cart_common.js,cart_quick_links.js'}
-{insert_scripts files='common.js,global.js,utils.js,compare.js,search_category_menu.js,parabola.js'}
+{insert_scripts files='common.js,utils.js,compare.js,search_category_menu.js,parabola.js'}
 
 <script type="text/javascript" src="themes/ecmoban_dsc/js/sc_common.js"></script>
 <script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.SuperSlide.2.1.1.js"></script>
