@@ -139,7 +139,7 @@
                                 </li>
                                 <li><a href="index.php">首页</a></li>
                                 <li><a href="experience_museum.php">智能体验馆</a></li>
-                                <li><a class="showMsg" href="gadget.php">文艺人小玩意</a></li>
+                                <li><a href="gadget.php">文艺人小玩意</a></li>
                                 <li><a href="personal_tailor.php">家具私人订制</a></li>
                                 <li><a href="old_for_new.php">以物换物</a></li>
                                 <li><a href="free_trial.php">免费试用</a></li>
