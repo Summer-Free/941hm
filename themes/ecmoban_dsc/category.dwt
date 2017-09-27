@@ -105,6 +105,9 @@
     .goods-list-love .goods-list .gl-item .gl-i-wrap {
         width: 100%;
     }
+    .goodslistForm .gl-item {
+        width: 240px!important;
+    }
 </style>
 </head>
 
