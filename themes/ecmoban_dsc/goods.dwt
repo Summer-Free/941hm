@@ -150,6 +150,7 @@
                             <!--<h2>{$goods.goods_brief}</h2>-->
                             <!--{/if}-->
                         </div>
+                        <a href="topic.php?topic_id=1"><img width="540" src="../mobile/statics/img/newapp/sidebar.jpg" alt=""></a>
                         <div class="summary clearfix">
                             <!--goods页面-->
                             <div class="summary-list">
