@@ -211,8 +211,7 @@
 								<li class="active"></li>
 								<li></li>
 								<li></li>
-								<li></li>
-								<li></li>
+								
 							</ul>
 						</div>
 						<div class="side-bar">
@@ -265,23 +264,23 @@
 				<!--每日秒杀-->
 				<div class="section-1 margin-b-10">
 					<h2 class="common-h2-1 clearfix">
-						<span><i class="mrms-icon"></i>每日秒杀</span>
+						<span><i class="mrms-icon"></i>活动精选</span>
 						<a href="daily_spike.php">查看更多</a>
 					</h2>
 					<div class="main-body">
 						<div class="JS-slide-scroll">
 							<ul class="content">
-								<!--{foreach item=guess_goods from=$guess_goods name=guess_goods} -->
+								<!--{foreach item=ms_re from=$ms_re name=ms_re} -->
 								<li>
-									<a href="goods.php?id={$guess_goods.goods_id}">
+									<a href="goods.php?id={$ms_re.goods_id}">
 										<div class="img-box">
-											<img class="lazy" data-original="{$guess_goods.goods_thumb}" width="160" height="160" alt="" />
+											<img class="lazy" data-original="{$ms_re.goods_thumb}" width="160" height="160" alt="" />
 										</div>
 										<div class="product-info">
-											<h3>{$guess_goods.goods_name|truncate:15}</h3>
+											<h3>{$ms_re.goods_name|truncate:15}</h3>
 											<p class="clearfix">
-												<ins class="color-aa1920 float-l">{$guess_goods.shop_price}</ins>
-												<del class="float-r">{$guess_goods.market_price}</del>
+												<ins class="color-aa1920 float-l">{$ms_re.shop_price}</ins>
+												<del class="float-r">{$ms_re.market_price}</del>
 											</p>
 										</div>
 									</a>
@@ -437,12 +436,12 @@
 				<div class="sidebar margin-b-10">
 					<ul class="JS-slide-top">
 						<li>
-							<a href="goods.php?id=1396">
+							<a href="goods.php?id=1211">
 								<img class="lazy" width="1200" height="188" data-original="themes/ecmoban_dsc/iamges/20170517/sidebar-1.jpg">
 							</a>
 						</li>
 						<li>
-							<a href="goods.php?id=1398">
+							<a href="goods.php?id=22">
 								<img class="lazy" width="1200" height="188" data-original="themes/ecmoban_dsc/iamges/20170517/sidebar-2.jpg">
 							</a>
 						</li>
@@ -611,8 +610,8 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="section-6 bg-color-f5f5f5">
+				
+				<!--<div class="section-6 bg-color-f5f5f5">
 					<h2 class="common-h2-2 clearfix">
 						<span><i></i>匠物众筹</span>
 						<a href="crowd_funding.php">查看更多</a>
@@ -660,7 +659,7 @@
 						</li>
 						<!--{/foreach}-->						
 					</ul>
-				</div>
+				</div>-->
 
 				<div class="section-10 margin-b-10">
 					<dl>
