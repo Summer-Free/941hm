@@ -210,8 +210,7 @@
 							<ul class="point">
 								<li class="active"></li>
 								<li></li>
-								<li></li>
-								
+								<li class="margin-r-0"></li>
 							</ul>
 						</div>
 						<div class="side-bar">
@@ -703,6 +702,17 @@
                 effect : "fadeIn",
                 threshold : 1000,
                 skip_invisible : false
+            });
+
+            $(function() {
+            	(function() {
+            		var	$ul = $("#header .btm .JS-slide .point"),
+            			margin = $ul.outerWidth(true) / 2;
+
+            			$ul.css({
+            				marginLeft: - margin
+            			});
+            	}());
             });
         </script>
 	</body>
