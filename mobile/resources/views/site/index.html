@@ -188,6 +188,7 @@
         </ul>
     </section>
     <!--匠物众筹-->
+    <!--
     <div class="index-banner swiper-container box mb-1 banner-second">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -196,25 +197,69 @@
                 </a>
             </div>
         </div>
-    </div>
+    </div>-->
     
     <!--匠物众筹相关产品-->
-    <section class="product-list-medium new-zc">
-        <ul class="clearfix">
+    <!--<section class="product-list-medium new-zc">
+        <ul class="clearfix">-->
           <!-- {foreach $zc_list as $key => $zc_list} -->
-          <li>
+          <!--<li>
             <div class="product-div">
               <a class="product-div-link" href="{$zc_list.url}"></a>
               <img class="product-list-img lazy" data-original="../{$zc_list.title_img}" />
               <div class="product-text">
-                  <h4 class="text-center onelist-hidden">{$zc_list.title}</h4>
+                  <h4 class="text-center onelist-hidden">{$zc_list.title}</h4>-->
                   <!--<p><span class="p-price t-first ">{$best.current_price}</span></p>-->
+              <!--</div>
+            </div>
+          </li>-->
+          <!-- {/foreach} -->
+        <!--</ul>
+    </section>-->
+    
+    <!--节日精选-->
+    <div class="index-banner swiper-container box banner-second margin-tb-1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="../mobile/index.php?r=active">
+                    <img class="lazy" data-original="../mobile/statics/img/newapp/index-pic18.jpg" alt="" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--节日精选相关产品-->
+    <section class="product-list-medium imp-class">
+        <ul class="clearfix">
+          <!-- {foreach $sql_jx as $key => $sql_jx} --><!--原来是：foreach $hot_goods as $key => $best-->
+          <!--<li>
+            <div class="product-div">
+              <a class="product-div-link" href="{$best.url}"></a>
+              <img class="product-list-img lazy" data-original="{$best.goods_thumb}" />
+              <div class="product-text">
+                  <h4 class="onelist-hidden">{$best.goods_name}</h4>
+                  <p class="text-center"><span class="p-price t-first ">{$best.current_price}</span></p>
+              </div>
+            </div>
+          </li>-->
+          <li>
+            <div class="product-div">
+              <a class="product-div-link" href="../mobile/index.php?r=goods&id={$sql_jx.goods_id}&u=0"></a>
+                <img class="product-list-img lazy" data-original="../{$sql_jx.goods_thumb}" />
+              <div class="product-text">
+                <h4 class="onelist-hidden">{$sql_jx.goods_name}</h4>
+                <p class="text-center">
+                  <span class="p-price t-first ">
+                  <em>￥</em>{$sql_jx.market_price}</span></p>
               </div>
             </div>
           </li>
           <!-- {/foreach} -->
         </ul>
     </section>
+
+
+
+
 
     <!--餐厅-->
     <div class="index-banner swiper-container box mb-1 banner-second imp-class">
