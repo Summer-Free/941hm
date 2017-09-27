@@ -49,6 +49,7 @@
                     </div>
                 </section>
                 <section class="goods-price padding-all b-color-f">
+                    <a href="../mobile/index.php?r=active" style="display: block;width: 100%;"><img class="img-responsive" width="100%" src="../mobile/statics/img/newapp/sidebar.jpg" alt=""></a>
                     <p class="p-price"><span class="t-first" id="ECS_SHOPPRICE">{if $goods.is_promote && $goods.gmt_end_time}{$goods.promote_price}{else}{$goods.shop_price_formated}{/if}</span><em class="em-promotion"><font id="ECS_DISCOUNT">{$goods.zhekou}</font>折</em></p>
                     <p class="p-market">
                     {$lang.market_price} <del id="ECS_MARKETPRICE">{$goods.market_price}</del>
