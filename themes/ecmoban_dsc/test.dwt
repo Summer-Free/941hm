@@ -5,7 +5,7 @@
 <title>姓名检查</title>
 </head>
 <body>	
-<form method="post" action="test.php">
+<!-- <form method="post" action="test.php">
 	文章标题：&nbsp;<input type="text" name="pro_name">
 	<br>
 	文章类型：
@@ -24,7 +24,9 @@
 		</iframe>
     </div>
     <input type="submit">
-</form>
+</form> -->
+
+<!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
 </body>
 </body>
 </html>
