@@ -261,15 +261,18 @@
               else
               {
                   $("#ECS_CARTINFO").html(res.content);
-                  $(".cart_num").html(res.cart_num);
+                  $("#shopCart .cart_num").html(res.cart_num);
               }
             };
 
             function return_cart_list(result)
             {
-                $(".cart_num").html(result.cart_num);
+                $("#shopCart .cart_num").html(result.cart_num);
                 $(".pop_panel").html(result.content);
             };
+            $(function() {
+                $(".shopCart .cart_num").html($("#shopCart .cart_num").html())
+            })
         </script>
 
            

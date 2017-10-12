@@ -903,8 +903,6 @@
 </div>
 <!-- #BeginLibraryItem "/library/goods_fittings_cnt.lbi" --><!-- #EndLibraryItem --> 
 
-{* 941红木 提醒您：动态载入user_menu_position.lbi，显示首页分类小广告 *}{insert name='user_menu_position'}
-
 <!-- @authro guan start	添加对比文件 start -->	 
 <!-- #BeginLibraryItem "/library/duibi.lbi" --><!-- #EndLibraryItem -->
 <!-- @authro guan start	添加对比文件 end -->

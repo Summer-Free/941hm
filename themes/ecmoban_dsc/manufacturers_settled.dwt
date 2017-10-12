@@ -13,171 +13,344 @@
         <!--header start-->
         <div id="header">
             <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
+            <div class="wrap-banner">
+                <a href="#form_info"><img src="themes/ecmoban_dsc/iamges/20170517/pprz-1.jpg" alt="" /></a>
+            </div>
         </div>
         <!--header end-->
 
         <!--main body start-->
-        <div class="w1200 bg-color-f5f5f5" id="main-body">
-			<div style="height: 137px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_01.jpg" alt=""></div>
-			<div style="height: 230px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_02.jpg" alt=""></div>
-			<div style="height: 305px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_03.jpg" alt=""></div>
-			<div style="height: 294px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_04.jpg" alt=""></div>
-			<div style="height: 346px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_05.jpg" alt=""></div>
-			<div style="height: 284px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_06.jpg" alt=""></div>
-			<div style="height: 330px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_07.jpg" alt=""></div>
-			<div style="height: 314px;">
-                <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_08.jpg" alt="">
-                <a href="#form_info"><img src="themes/ecmoban_dsc/iamges/20170517/click-me-2.png" alt="" style="margin: 0 auto;position:relative;z-index: 5;top: -25px;" /></a>
+        <div id="main-body">
+            <div class="sec-1 common-padding">
+                <div class="w1200">
+                    <h2 class="common-h2">
+                        HOW TO JOIN
+                        <span>如何加入941红木</span>
+                    </h2>
+                    <ul class="clearfix">
+                        <li class="arrow">
+                            <i class="icon icon-1"></i>
+                            <h3>提交申请</h3>
+                            <p>请在网页底部填写提交申请表单<br />请您确保信息无误并保持通话畅通。</p>
+                        </li>
+                        <li class="arrow">
+                            <i class="icon icon-2"></i>
+                            <h3>资料核实</h3>
+                            <p>我们的工作人员将及时联系您<br />并进行资料审核工作。</p>
+                        </li>
+                        <li class="arrow">
+                            <i class="icon icon-3"></i>
+                            <h3>签订合同</h3>
+                            <p>核实信息无误后，我们的工作人员会与您联系<br />确认合同的签订事项及手续。</p>
+                        </li>
+                        <li>
+                            <i class="icon icon-4"></i>
+                            <h3>商品上架</h3>
+                            <p>合同签订后<br />您的商品即会在941平台上架。</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-			<div style="height: 329px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_09.jpg" alt=""></div>
-			<div style="height: 278px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_10.jpg" alt=""></div>
-			<div style="height: 259px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_11.jpg" alt=""></div>
-			<div style="height: 285px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_12.jpg" alt=""></div>
-			<div style="height: 240px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_13.jpg" alt=""></div>
-			<div style="height: 283px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_14.jpg" alt=""></div>
-			<div style="height: 370px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_15.jpg" alt=""></div>
-			<div style="height: 307px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_16.jpg" alt=""></div>
-			<div style="height: 367px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_17.jpg" alt=""></div>
-			<div style="height: 328px;">
-                <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_18.jpg" alt="">
-                <a href="#form_info"><img src="themes/ecmoban_dsc/iamges/20170517/click-me-3.png" alt="" style="margin: 0 auto;position:relative;z-index: 5;top: -370px;" /></a>
+            <div class="sec-2 common-padding">
+                <div class="w1200">
+                    <h2 class="common-h2">
+                        TARGET GROUP
+                        <span>招商类目</span>
+                    </h2>
+                    <ul>
+                        <li class="clearfix">
+                            <div>
+                                <img src="themes/ecmoban_dsc/iamges/20170517/pprz-3.jpg" alt="">
+                                <h3>红木制品</h3>
+                                <p>
+                                    使用红木材料制作的家具或者物品<br />
+                                    如红木沙发、红木梳子、红木摆件等。
+                                </p>
+                            </div>
+                            <div class="center">
+                                <img src="themes/ecmoban_dsc/iamges/20170517/pprz-4.jpg" alt="">
+                                <h3>工艺品/文玩</h3>
+                                <p>
+                                    各类工艺品/文玩<br />
+                                    如陶器、瓷器、核桃、摆件、文房四宝等。
+                                </p>
+                            </div>
+                            <div>
+                                <img src="themes/ecmoban_dsc/iamges/20170517/pprz-5.jpg" alt="">
+                                <h3>保健食品</h3>
+                                <p>
+                                    对身体有益的养身类食品<br />
+                                    如茶叶、五谷杂粮、保健品等。
+                                </p>
+                            </div>
+                        </li>
+                        <li class="li2 clearfix">
+                            <div>
+                                <img src="themes/ecmoban_dsc/iamges/20170517/pprz-6.jpg" alt="">
+                                <h3>家居建材</h3>
+                                <p>
+                                    在装修房屋使使用的材料<br />
+                                    如油漆、板材等。
+                                </p>
+                            </div>
+                            <div class="center">
+                                <img src="themes/ecmoban_dsc/iamges/20170517/pprz-7.jpg" alt="">
+                                <h3>日用家居</h3>
+                                <p>
+                                    可与红木家具搭配的各类装饰家居品<br />
+                                    如靠枕、床单、被套等。
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-			<div style="height: 365px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_19.jpg" alt=""></div>
-			<div style="height: 316px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_20.jpg" alt=""></div>
-			<div style="height: 323px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_21.jpg" alt=""></div>
-			<div style="height: 389px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_22.jpg" alt=""></div>
-			<div style="height: 412px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_23.jpg" alt=""></div>
-			<div style="height: 231px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_24.jpg" alt=""></div>
-			<div style="height: 157px;"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/cjrz-pic_25.jpg" alt=""></div>
-			<form action="#" method="post" id="form_info">
-                <div class="clearfix">
-                    <label for="">姓名 :</label>
-                    <input type="text" id="bm_name" name="bm_name">
+            <div class="sec-3 common-padding">
+                <div class="w1200">
+                    <h2 class="common-h2">
+                        OUR ADVANTAGE
+                        <span>平台优势</span>
+                    </h2>
+                    <ul class="clearfix">
+                        <li>
+                            <i class="icon icon-5"></i>
+                            <h3>品牌流量</h3>
+                            <p>高知名度大平台<br />精准客户，超大流量。</p>
+                        </li>
+                        <li>
+                            <i class="icon icon-6"></i>
+                            <h3>明码标价</h3>
+                            <p>全网统一，全国统一<br />5000多家体验馆联合让利，价格更亲民。</p>
+                        </li>
+                        <li>
+                            <i class="icon icon-7"></i>
+                            <h3>品质保证</h3>
+                            <p>所有商品都由国家质检红木委出具检测报告<br />中国人民财产保险公司全程承保</p>
+                        </li>
+                        <li>
+                            <i class="icon icon-8"></i>
+                            <h3>双线流通</h3>
+                            <p>线上购物选择，线下亲身体验<br />直观感受，让家具挑选变得更加便捷。</p>
+                        </li>
+                    </ul>
                 </div>
-                <div class="clearfix">
-                    <label for="">联系方式 :</label>
-                    <input type="text" id="bm_phone" name="bm_phone">
+            </div>
+            <div class="sec-4">
+                <img src="themes/ecmoban_dsc/iamges/20170517/pprz-8.jpg" alt="">
+            </div>
+            <div class="sec-5 common-padding">
+                <div class="w1200">
+                    <h2 class="common-h2">
+                        WHAT WE CAN PROVIDE
+                        <span>我们可以为您带来什么</span>
+                    </h2>
+                    <ul class="clearfix">
+                        <li>
+                            <i class="icon icon-9"></i>
+                            <h3>一体营销</h3>
+                            <p>在全屋定制中搭配品牌商品<br />并展现360°体验效果、VR体验效果。</p>
+                        </li>
+                        <li>
+                            <i class="icon icon-10"></i>
+                            <h3>平台担保</h3>
+                            <p>已售商品出现问题<br />以平台名义为客户进行赔付。</p>
+                        </li>
+                        <li>
+                            <i class="icon icon-11"></i>
+                            <h3>飞速结算</h3>
+                            <p>根据等级可享受<br />15-30天超快速资金结算。</p>
+                        </li>
+                        <li>
+                            <i class="icon icon-12"></i>
+                            <h3>信用资金</h3>
+                            <p>加盟商可根据信用<br />提前透支资金10-30万。</p>
+                        </li>
+                    </ul>
                 </div>
-                <div class="clearfix">
-                    <label for="">地址 :</label>
-                    <div class="city-picker-select"></div>
+            </div>
+            <div class="sec-6 common-padding">
+                <div class="w1200">
+                    <h2 class="common-h2">
+                        OUR HONOR
+                        <span>我们的荣誉</span>
+                    </h2>
+                    <ul class="clearfix">
+                        <li>
+                            <h2>2017.06</h2>
+                            <h3>第四届影响力中国总评榜颁奖典礼</h3>
+                            <p>华尊奖影响力中国——<br />中国红木电商领域最佳商业模式创新奖</p>
+                            <a href="company_honor.php">查看更多</a>
+                        </li>
+                        <li>
+                            <h2>2017.04</h2>
+                            <h3>第三届中国民营经济华西论坛系列活动</h3>
+                            <p>2017中国最佳商业模式创新奖</p>
+                            <a href="company_honor.php">查看更多</a>
+                        </li>
+                        <li>
+                            <h2>2014.12</h2>
+                            <h3>授予东阳市党牌进出口有限公司</h3>
+                            <p>中国红木委红木与红木制品监测中心<br />东阳党牌办事处</p>
+                            <a href="company_honor.php">查看更多</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="clearfix">
-                    <label for="detail-address">详细地址 :</label>
-                    <input type="text" name="detail-address" id="detail-address">
+            </div>
+            <div class="sec-7 common-padding">
+                <div class="w1200">
+                    <h2 class="common-h2">
+                        COMMON PROBLEM
+                        <span>常见问题</span>
+                    </h2>
+                    <ul>
+                        <li class="clearfix">
+                            <span>Q1 :</span>
+                            <div>
+                                <h3>如何收取推广费用？</h3>
+                                <p>941红木郑重承诺，平台不收取任何推广服务费用。</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <span>Q2 :</span>
+                            <div>
+                                <h3>如何处理售后问题？</h3>
+                                <p>941红木的专业售后团队会对所有售后问题及时进行处理。出现问题的商品，平台会先行为客户进行赔付。</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <span>Q3 :</span>
+                            <div>
+                                <h3>申请入驻后需要多久可以正式入驻？</h3>
+                                <p>提交入驻申请，完成资料审核，正式签订合同后，平台将立即为您办理入驻，全程需要约一周的时间。</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="clearfix">
-                    <label></label>
-                    <button type="button" id="send">提交</button>
+            </div>
+            <div class="sec-8 common-padding">
+                <div class="w1200">
+                    <h2 class="common-h2">
+                        OUR PARTNERS
+                        <span>部分合作伙伴</span>
+                    </h2>
+                    <img src="themes/ecmoban_dsc/iamges/20170517/pprz-2.jpg" alt="">
                 </div>
-            </form>
+            </div>
+            <div class="sec-9 common-padding">
+                <div class="w1200">
+                    <h2>
+                        品牌合作
+                        <span>由于寻求合作方较多，您提交以下合作需求后，我们将在2个工作日内与您取得联系</span>
+                    </h2>
+                    <form id="form_info" action="">
+                        <div class="clearfix">
+                            <div class="left">
+                                <h3><span>关于您/</span>About you</h3>
+                                <div class="form-group clearfix">
+                                    <label for="name">您的姓名 :</label>
+                                    <input id="name" type="text" />
+                                </div>
+                                <div class="form-group clearfix">
+                                    <label for="tel">联系电话 :</label>
+                                    <input id="tel" type="text" />
+                                </div>
+                                <div class="form-group clearfix">
+                                    <label for="address">联系地址 :</label>
+                                    <input id="address" type="text" />
+                                </div>
+                            </div>
+                            <div class="right">
+                                <h3><span>关于您的品牌</span>/About your brand</h3>
+                                <div class="form-group clearfix">
+                                    <label for="brand-name">品牌名称 :</label>
+                                    <input id="brand-name" type="text" />
+                                </div>
+                                <div class="form-group clearfix">
+                                    <label for="type">行业类型 :</label>
+                                    <input id="type" type="text" />
+                                </div>
+                                <div class="form-group clearfix">
+                                    <label for="profile">品牌简介 :</label>
+                                    <input id="profile" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                        <button id="submit" type="submit">确认提交</button>
+                    </form>
+                </div>
+            </div>
         </div>
 
         <!--footer-->
         <!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->    
         <!--本页JS-->     
         <script type="text/javascript" src="themes/ecmoban_dsc/js/js/manufacturers_settled.js"></script>  
-        <!--懒加载-->
-        <script type="text/javascript" src="js/jquery.lazyload.js"></script>  
-   		<!--三级联动插件-->
-   		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/citydata.js"></script> 
-   		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/cityPicker-1.0.0.js"></script> 
-        <!--开启懒加载-->
-        <script type="text/javascript">
-            $("img.lazy").lazyload({
-            	placeholder: "themes/ecmoban_dsc/iamges/20170517/ajax-loader.gif",
-                effect : "fadeIn",
-                threshold : 1000
-            });
-
-        	$(function() {
-
-				//启用三级联动插件
-				var select = $('.city-picker-select').cityPicker({
-					dataJson: cityData,
-					renderMode: false,
-					linkage: false
-				});
-
-                //默认城市配置参数
-                var data = [
-                    {
-                        'id': '330000',
-                        'name': '浙江省'  
-                    },
-                    {
-                        'id': '330100',
-                        'name': '杭州市'  
-                    },
-                    {
-                        'id': '330108',
-                        'name': '滨江区' 
-                    }
-                ];
-
-				//启用默认城市
-				select.setCityVal(data);
-
-				//提交表单相关函数
-                function submitForm() {
-                        
-                    var province = data[0].name, //获取省的ID
-                        city = data[1].name,//获取市的ID
-                        district = data[2].name;//获取区(县)的ID
-
-                        $(".city-picker-select .province").on("change",function() {
-                            province = $(this).find("option:selected").data("title");
-                        });
-
-                        $(".city-picker-select .city").on("change",function() {
-                            city = $(this).find("option:selected").data("title");
-                        });
-
-                        $(".city-picker-select .district").on("change",function() {
-                            district = $(this).find("option:selected").data("title");
-                        });
-                    $("#send").click(function(e)
-                    {
-                        e.preventDefault();
-                        var name=$("#bm_name").val();
-                            phone=$("#bm_phone").val();
-                            address=$("#detail-address").val();
-                            reg = /^[\u4e00-\u9fa5]{2,4}$/i;
-                            if (!reg.test(name))
-                            {
-                                alert("请输入2-4个汉字！"); 
-                                return false;
-                            }
-                            else if(!(/^1[34578]\d{9}$/.test(phone)))
-                            {
-                                alert("手机号码有误，请重填");  
-                                return false;
-                            }
-                            else if(!province)
-                            {
-                                alert("请选择省");  
-                                return false;
-                            }
-                            else if(!city)
-                            {
-                                alert("请选择市");  
-                                return false;
-                            }
-                            else if(!district)
-                            {
-                                alert("请选择区(县)");  
-                                return false;
-                            };
-                            $('#form_info').submit();
-                    });
-                };
-
-                submitForm();
-
-        	});
-        </script>
         <script>
+            $(function() {
 
+                //提交表单相关函数
+                $("#submit").click(function(e) {
+                    e.preventDefault();
+                    var name=$("#name").val(),
+                        tel=$("#tel").val(),
+                        address=$("#address").val(),
+                        brandName = $("#brand-name").val(),
+                        type = $("#type").val(),
+                        profile = $("#profile").val(),
+                        reg = /^[\u4e00-\u9fa5]{2,4}$/i;
+                        if (!reg.test(name))
+                        {
+                            $("#name").parent().find(".error").remove();
+                            $("#name").parent().append("<span class='error'>请输入2-4个汉字！</span>");
+                            return false;
+                        }else {
+                            $("#name").parent().find(".error").remove();
+                        };
+                        if (!(/^1[34578]\d{9}$/.test(tel)))
+                        {
+                            $("#tel").parent().find(".error").remove();
+                            $("#tel").parent().append("<span class='error'>手机号码有误</span>");
+                            return false;
+                        }else {
+                            $("#tel").parent().find(".error").remove();
+                        };
+                        if (!address)
+                        {
+                            $("#address").parent().find(".error").remove();
+                            $("#address").parent().append("<span class='error'>地址不能为空</span>");
+                            return false;
+                        }else {
+                            $("#address").parent().find(".error").remove();
+                        };
+                        if (!brandName)
+                        {
+                            $("#brand-name").parent().find(".error").remove();
+                            $("#brand-name").parent().append("<span class='error'>品牌名不能为空</span>")
+                            return false;
+                        }else {
+                            $("#brand-name").parent().find(".error").remove();
+                        };
+                        if (!type)
+                        {
+                            $("#type").parent().find(".error").remove();
+                            $("#type").parent().append("<span class='error'>行业类型不能为空</span>")
+                            return false;
+                        }else {
+                            $("#type").parent().find(".error").remove();
+                        };
+                        if (!profile)
+                        {
+                            $("#profile").parent().find(".error").remove();
+                            $("#profile").parent().append("<span class='error'>品牌简介不能为空</span>")
+                            return false;
+                        }else {
+                            $("#profile").parent().find(".error").remove();
+                        };
+
+                        $('#form_info').submit();
+                });
+
+            });
         </script>
     </body>
 </html>

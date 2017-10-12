@@ -59,7 +59,7 @@
 		                    <div class="shopCart">
 		                    	<a class="color-ff0000" href="flow.php">
 									<i></i>我的购物车
-									<!--<span><em>99</em></span>-->
+									<!-- <span class="cart_num" style="text-align: center;"></span> -->
 								</a>
 		                    </div>
 	                        <div class="ecsc-search">
