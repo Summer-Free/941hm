@@ -5,7 +5,7 @@
         <!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem -->
 		<!--首页专用-->
 		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/index.css">
-		<!-- #BeginLibraryItem "/library/user_menu_position.lbi" --><!-- #EndLibraryItem -->
+		
         {* 包含脚本文件 *}
         {insert_scripts files='jquery.json.js,transport_jquery.js'}
 	</head>
