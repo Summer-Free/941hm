@@ -353,7 +353,6 @@
                         };
                         $('#form_info').submit();
                 });
-
             });
         </script>
     </body>
