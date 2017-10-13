@@ -242,36 +242,36 @@
                         品牌合作
                         <span>由于寻求合作方较多，您提交以下合作需求后，我们将在2个工作日内与您取得联系</span>
                     </h2>
-                    <form id="form_info" action="">
+                    <form id="form_info" action="manufacturers_settled.php" method="post">
                         <div class="clearfix">
                             <div class="left">
                                 <h3><span>关于您/</span>About you</h3>
                                 <div class="form-group clearfix">
                                     <label for="name">您的姓名 :</label>
-                                    <input id="name" type="text" />
+                                    <input id="name" type="text" name="username" />
                                 </div>
                                 <div class="form-group clearfix">
                                     <label for="tel">联系电话 :</label>
-                                    <input id="tel" type="text" />
+                                    <input id="tel" type="text" name="tel" />
                                 </div>
                                 <div class="form-group clearfix">
                                     <label for="address">联系地址 :</label>
-                                    <input id="address" type="text" />
+                                    <input id="address" type="text" name="address" />
                                 </div>
                             </div>
                             <div class="right">
                                 <h3><span>关于您的品牌</span>/About your brand</h3>
                                 <div class="form-group clearfix">
                                     <label for="brand-name">品牌名称 :</label>
-                                    <input id="brand-name" type="text" />
+                                    <input id="brand-name" type="text" name="brand_name" />
                                 </div>
                                 <div class="form-group clearfix">
                                     <label for="type">行业类型 :</label>
-                                    <input id="type" type="text" />
+                                    <input id="type" type="text" name="type" />
                                 </div>
                                 <div class="form-group clearfix">
                                     <label for="profile">品牌简介 :</label>
-                                    <input id="profile" type="text" />
+                                    <input id="profile" type="text" name="profile" />
                                 </div>
                             </div>
                         </div>
@@ -287,7 +287,6 @@
         <script type="text/javascript" src="themes/ecmoban_dsc/js/js/manufacturers_settled.js"></script>  
         <script>
             $(function() {
-
                 //提交表单相关函数
                 $("#submit").click(function(e) {
                     e.preventDefault();
@@ -298,6 +297,12 @@
                         type = $("#type").val(),
                         profile = $("#profile").val(),
                         reg = /^[\u4e00-\u9fa5]{2,4}$/i;
+                        /*alert(name);
+                        alert(tel);
+                        alert(address);
+                        alert(brandName);
+                        alert(type);
+                        alert(profile);*/
                         if (!reg.test(name))
                         {
                             $("#name").parent().find(".error").remove();
@@ -346,7 +351,6 @@
                         }else {
                             $("#profile").parent().find(".error").remove();
                         };
-
                         $('#form_info').submit();
                 });
 
