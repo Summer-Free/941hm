@@ -3,15 +3,14 @@
 			<div class="distribution-new">
 				<ul>
 					{foreach $new_article as $key => $list}
-					<li>
-						<h2  class="padding-all">{$list.order}、{$list.title}<span class="t-jiantou t-remark fr"><i class="iconfont icon-more"></i></span></h2>
-						<div>{$list.content}</div>
-					</li>
+						<li>
+							<h2  class="padding-all">{$list.order}、{$list.title}<span class="t-jiantou t-remark fr"><i class="iconfont icon-more"></i></span></h2>
+							<div>{$list.content}</div>
+						</li>
 					{/foreach}
 				</ul>
 			</div>
-		</div>
-		
+		</div>	
 		<div class="mask-filter-div"></div>
 		<script>
 			$(".distribution-new ul li").click(function(){
@@ -20,7 +19,6 @@
 				}else{
 					$(this).removeClass("active");
 				}
-				
 			});
 		</script>
 	</body>
