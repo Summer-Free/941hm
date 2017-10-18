@@ -1,8 +1,7 @@
 <!doctype html>
 <html lang="zh-cn">
     <head>
-		<!--三级联动插件-->
-		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/city-picker.css"> 
+		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/uploadify.css"> 
     	<!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem -->
         <!--首页CSS以及部分通用部分的合并LBI-->
         <!--本页专用-->
@@ -12,174 +11,381 @@
         <!--header start-->
         <div id="header">
             <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
-            <div class="bg-color-f5f5f5">
-	            <div class="w1200">
-					<img src="themes/ecmoban_dsc/iamges/20170517/dz-banner-1.jpg" alt="">
-	            </div>
-	        </div>
+            <div class="top-banner"></div>
         </div>
         <!--header end-->
 
         <!--main body start-->
-        <div class="bg-color-f5f5f5" id="main-body">
-			<div class="w1200">
-				<div class="sec-1">
-					<img src="themes/ecmoban_dsc/iamges/20170517/dz-pic-1.jpg" alt="">
-					<div>
-						<p class="p1">941红木生态服务是唯一一家拥有全屋定制的红木家具平台，完美实现红木家具私人全屋定制。专业设计师团队会结合您的个人需求、生活习惯、审美标准，为您设计家具设计及定制、安装等服务于一体的家居定制解决方案。无缝衔接所有服务，让您省心省力。无论是木材还是款式，都可以供您随意选择，花最少的钱，做最好的设计。</p>
-						<p>941红木生态拥有强大的多工厂生产体系，专业红木家具制造工厂达五百家。平台严格把控质量标准，所有家具都由我国唯一经国家批准注册成立的红木行业专业委员会机构，红木行业的权威机构“中国木材木制品流通协会红木流通专业委员会”进行质量检验检测，并出具线下纸质报告以及线上可实时查询的检测报告。中国人民财产保险公司将对所有家具进行全程承保，让您用的安心，用的放心。</p>
-					</div>
-				</div>
+        <div id="main-body">
+			
+			<div class="sec-1">
+				<ul class="clearfix">
+					<li class="li1">
+						<h6>线下实体体验店</h6>
+						<i>5000<sup> +</sup></i>家
+					</li>
+					<li class="li2">
+						<h6>家庭案例</h6>
+						<i>8W<sup> +</sup></i>起
+					</li>
+					<li class="li3">
+						<h6>单位案例</h6>
+						<i>2W<sup> +</sup></i>起
+					</li>
+					<li class="li4 margin-r-0">
+						<h6>累计用户</h6>
+						<i>50W<sup> +</sup></i>名
+					</li>
+				</ul>
+			</div>
 
-				<div class="sec-2">
-					<h2>
-						<span>效果展示</span>
-						<span>Produce  Display</span>
+			<div class="sec-2">
+				<div class="w1200">
+					<h2 class="common-h2">
+						限时优惠活动
+						<span>咨询热线：400-666-9338</span>
 					</h2>
 					<ul class="clearfix">
-                        <li>
-                            <a target="_blank" href="https://yun.kujiale.com/design/3FO4IRHBVYAW/show">
-                                <img src="themes/ecmoban_dsc/iamges/20170517/ex-pic4.jpg" alt="">
-                                <div>
-                                    <h3>新中式复式</h3>
-                                    <p>户型：3室3厅3卫1厨  面积：293.00m<sup>2</sup></p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://yun.kujiale.com/design/3FO4IUXRI3B8/show">
-                                <img src="themes/ecmoban_dsc/iamges/20170517/ex-pic5.jpg" alt="">
-                                <div>
-                                    <h3>金域蓝湾</h3>
-                                    <p>户型：3室2厅2卫1厨  面积：132.00m<sup>2</sup></p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="margin-r-0">
-                            <a target="_blank" href="https://yun.kujiale.com/design/3FO4INV80NDC/show">
-                                <img src="themes/ecmoban_dsc/iamges/20170517/ex-pic6.jpg" alt="">
-                                <div>
-                                    <h3>HOMEWORK</h3>
-                                    <p>户型：3室2厅2卫1厨  面积：103.00m<sup>2</sup></p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://yun.kujiale.com/design/3FO4ITGTGQ4U/show">
-                                <img src="themes/ecmoban_dsc/iamges/20170517/ex-pic7.jpg" alt="">
-                                <div>
-                                    <h3>111方时代豪庭四居</h3>
-                                    <p>户型：2室2厅0卫0厨  面积：111.00m<sup>2</sup></p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://yun.kujiale.com/design/3FO4JAOWD45N/show">
-                                <img src="themes/ecmoban_dsc/iamges/20170517/ex-pic8.jpg" alt="">
-                                <div>
-                                    <h3>110方现代中式三居</h3>
-                                    <p>户型：3室0厅1卫0厨  面积：110.00m<sup>2</sup></p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="margin-r-0">
-                            <a target="_blank" href="https://yun.kujiale.com/design/3FO4ITQCWL0A/show">
-                                <img src="themes/ecmoban_dsc/iamges/20170517/ex-pic9.jpg" alt="">
-                                <div>
-                                    <h3>129新中式两居</h3>
-                                    <p>户型：2室1厅0卫1厨  面积：129.00m<sup>2</sup></p>
-                                </div>
-                            </a>
-                        </li>
+						<li class="li1">
+							<h3>免费装修效果设计</h3>
+							<p>免费提供室内平面效果图绘制</p>
+							<p>以及3D智能室内空间效果展示</p>
+						</li>
+						<li class="li2">
+							<h3>免费赠送太师椅</h3>
+							<p>现在申请并下单</p>
+							<p>可获赠价值过万太师椅一张</p>
+						</li>
+						<li class="li3">
+							<h3>2000抵10000</h3>
+							<p>在线申请并预交两千预付金</p>
+							<p>结算时可享受总额减免优惠10000元</p>
+						</li>
+						<li class="li4">
+							<h3>双人豪华海岛游</h3>
+							<p>前200名完成交易的用户</p>
+							<p>赠送巴厘岛4日豪华双人游</p>
+						</li>
 					</ul>
 				</div>
+			</div>
 
-				<div class="sec-7 margin-b-20">
-					<h2>100%真实案例展示</h2>
+			<div class="sec-3 bg-color-fff">
+				<div class="w1200">
+					<dl class="clearfix">
+						<dt><h2 class="common-h2">定制流程</h2></dt>
+						<dd>
+							<i class="icon icon-1"></i>
+							<h3>提交申请</h3>
+							<p>点击立即免费预约设计师</p>
+							<p>并上传您的户型图</p>
+							<p>我们的工作人员将会立即联系您</p>
+						</dd>
+						<dd>
+							<i class="icon icon-2"></i>
+							<h3>设计方案</h3>
+							<p>专业全屋定制设计团队会根据您的要求</p>
+							<p>设计出彩色平面效果图</p>
+						</dd>
+						<dd>
+							<i class="icon icon-3"></i>
+							<h3>确认方案</h3>
+							<p>方案设计确定后</p>
+							<p>工作人员会将设计方案发送给您</p>
+							<p>进行修改与确认</p>
+						</dd>
+						<dd class="no-arrow">
+							<i class="icon icon-4"></i>
+							<h3>3D效果</h3>
+							<p>我们将根据方案为您制作3D效果图</p>
+							<p>方便您进行感受</p>
+							<a href="experience_museum.php">点击体验</a>
+						</dd>
+
+						<dd>
+							<i class="icon icon-5"></i>
+							<h3>签订合同</h3>
+							<p>工作人员与您确认合同细节后</p>
+							<p>与您签订合同</p>
+							<p>此时您需提交30%的预付款</p>
+						</dd>
+						<dd>
+							<i class="icon icon-6"></i>
+							<h3>配送家具</h3>
+							<p>我们将会按照设计方案配置家具</p>
+							<p>并运送到您家中</p>
+						</dd>
+						<dd>
+							<i class="icon icon-7"></i>
+							<h3>交付尾款</h3>
+							<p>家具发货之前</p>
+							<p>您需要交付剩下的70%余款</p>
+						</dd>
+						<dd class="no-arrow">
+							<i class="icon icon-8"></i>
+							<h3>上门装修</h3>
+							<p>家具签收之后</p>
+							<p>工作人员将联系您预约时间</p>
+							<p>装修团队会按时上门进行装修</p>
+						</dd>
+					</dl>
+				</div>
+			</div>
+
+			<div class="sec-4">
+				<span>已预约：<i class="">514</i>人</span>
+				<span>已签约：<i class="">241</i>人</span>
+				<a>立即免费预约设计师</a>
+			</div>
+
+			<div class="sec-5">
+				<div class="w1200">
+					<h2 class="common-h2">真实案例展示</h2>
 					<div class="clearfix">
-						<img src="themes/ecmoban_dsc/iamges/20170517/dz-pic-6.jpg" alt="">
-						<img src="themes/ecmoban_dsc/iamges/20170517/dz-pic-7.jpg" alt="">
-						<img class="margin-r-0" src="themes/ecmoban_dsc/iamges/20170517/dz-pic-8.jpg" alt="">
-						<img src="themes/ecmoban_dsc/iamges/20170517/dz-pic-9.jpg" alt="">
-						<img src="themes/ecmoban_dsc/iamges/20170517/dz-pic-10.jpg" alt="">
-						<img src="themes/ecmoban_dsc/iamges/20170517/dz-pic-11.jpg" alt="">
-						<img class="margin-r-0" src="themes/ecmoban_dsc/iamges/20170517/dz-pic-12.jpg" alt="">
+						<img src="themes/ecmoban_dsc/iamges/20170517/qwdz-pic3.jpg" alt="" />
+						<img src="themes/ecmoban_dsc/iamges/20170517/qwdz-pic4.jpg" alt="" />
+						<img class="margin-r-0" src="themes/ecmoban_dsc/iamges/20170517/qwdz-pic5.jpg" alt="" />
+						<img src="themes/ecmoban_dsc/iamges/20170517/qwdz-pic6.jpg" alt="" />
+						<img src="themes/ecmoban_dsc/iamges/20170517/qwdz-pic7.jpg" alt="" />
+						<img src="themes/ecmoban_dsc/iamges/20170517/qwdz-pic8.jpg" alt="" />
+						<img class="margin-r-0" src="themes/ecmoban_dsc/iamges/20170517/qwdz-pic9.jpg" alt="" />
 					</div>
-				</div>
-
-				<div class="sec-8 bg-color-fff">
-					<h2>超过50万用户，成为941红木忠实会员</h2>
-					<img src="themes/ecmoban_dsc/iamges/20170517/dz-pic-13.jpg" alt="">
-				</div>
-
-				<div class="sec-3 bg-color-fff margin-t-20">
-					<h2>红木家具定制流程</h2>
-					<div>
-						<ol class="clearfix">
-							<li>1.提交定制需求</li>
-							<li>2.缴纳定制定金</li>
-							<li>3.提交设计稿件</li>
-							<li>4.确认设计方案</li>
-							<li>5.缴纳定制全款</li>
-							<li>6.开料烘干备料</li>
-							<li>7.成型加工砂光</li>
-							<li>8.家具模块组装</li>
-							<li>9.整体模块料检</li>
-							<li>10.第一遍刷底漆</li>
-							<li>11.底漆烘干流程</li>
-							<li>12.油磨工艺流程</li>
-							<li>13.第二遍刷底漆</li>
-							<li>14.底漆烘干流程</li>
-							<li>15.手工打磨流程</li>
-							<li>16.面漆烘干流程</li>
-							<li>17.下线前全体检</li>
-							<li>18.试组工艺流程</li>
-							<li>19.家具包装工艺</li>
-							<li>20.出厂出具报告</li>
-						</ol>
-					</div>
-				</div>
-
-				<div class="sec-4 margin-t-20">
-					<img src="themes/ecmoban_dsc/iamges/20170517/dz-pic-2.jpg" alt="">
-				</div>
-
-				<div class="sec-5 margin-t-45 clearfix">
-					<div class="float-l">
-						<img class="img1" src="themes/ecmoban_dsc/iamges/20170517/dz-pic-3.jpg" alt="">
-						<img src="themes/ecmoban_dsc/iamges/20170517/dz-pic-4.jpg" alt="">
-					</div>
-					<div class="float-r">
-						<img src="themes/ecmoban_dsc/iamges/20170517/dz-pic-1.png" alt="">
-						<div>
-							<p>为了让消费者更能放心购买，平台所有商品都具有</p>
-							<p class="color-aa1920">国家红木质检最高机构——</p>
-							<p class="color-aa1920">中国木材木制品流通协会红木流通专业委员会</p>
-							<p>进行检验并出具的纸质检测报告</p>
-							<p>且检测结果在平台线上也可进行实时查询</p>
-							<p>此外，所有商品由<span class="color-aa1920">中国人民财产保险有限公司</span>全程承保</p>
-							<p>让消费者买得安心，买得放心</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="fixed-left bg-color-fff">
-					<div><img src="themes/ecmoban_dsc/iamges/20170517/dz-pic-5.jpg" width="192" height="192" alt=""></div>
-					<p class="p1">微信扫描填写需求</p>
-					<p>定制你的专属家居</p>
 				</div>
 			</div>
 
 			<div class="sec-6 bg-color-fff">
-				<img src="themes/ecmoban_dsc/iamges/20170517/dz-pic-5.jpg" alt="">
-				<p>微信扫描提交需求，定制你的专属家居</p>
-				<p>咨询热线：400-666-9338</p>
+				<h2>超过50万用户，成为941红木忠实会员</h2>
+				<img src="themes/ecmoban_dsc/iamges/20170517/qwdz-pic10.jpg" alt="">
+			</div>
+
+			<div class="sec-7">
+				<h2 class="common-h2">公司发展历程</h2>
+				<hr />
+				<div class="w1200">
+					<ul class="ul1 clearfix">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li class="margin-r-0"></li>
+					</ul>
+					<ul class="ul2 clearfix">
+						<li>
+							<span>1991</span>
+							<span>/05</span>
+						</li>
+						<li>
+							<span>2001</span>
+							<span>/05</span>
+						</li>
+						<li>
+							<span>2007</span>
+							<span>/05</span>
+						</li>
+						<li>
+							<span>2012</span>
+							<span>/03</span>
+						</li>
+						<li>
+							<span>2016</span>
+							<span>/06</span>
+						</li>
+						<li class="margin-r-0">
+							<span>2017</span>
+							<span>/07</span>
+						</li>
+					</ul>
+					<ul class="ul3 clearfix">
+						<li>
+							<h3>（1991年——2007年）</h3>
+							<dl class="clearfix">
+								<dt>1991年5月</dt>
+								<dd>党牌红木油漆辅料公司在广东中山成立</dd>
+								<dt>2001年6月</dt>
+								<dd>东阳党牌木业公司成立</dd>
+								<dt>2003年4月</dt>
+								<dd>党牌木业张家港分公司成立</dd>
+								<dt>2007年5月</dt>
+								<dd>党牌木业中山分公司成立</dd>
+							</dl>
+						</li>
+						<li>
+							<h3>（2003年——2012年）</h3>
+							<dl class="clearfix">
+								<dt>2012年3月</dt>
+								<dd>
+									<p>公司改名东阳党牌进出口有限公司</p>
+									<p>业务迅速扩大，合作伙伴遍及全球</p>
+									<p>跻身为中国最大的木材进出口商</p>
+								</dd>
+								<dt>2016年3月</dt>
+								<dd>
+									<p>党牌进出口更名为浙江党牌网络科技有限公司</p>
+									<p>公司开始战略转型</p>
+								</dd>
+							</dl>
+						</li>
+						<li class="margin-r-0">
+							<h3>（2016年——2017年）</h3>
+							<dl class="clearfix">
+								<dt>2016年6月</dt>
+								<dd>
+									<p>久实信息技术（杭州）有限公司成立</p>
+									<p>专业运营团队开始运营941红木网</p>
+								</dd>
+								<dt>2016年10月</dt>
+								<dd>
+									<p>联合新龙工艺品公司成立全红木行业链服务商</p>
+									<p>党牌控股集团公司成型</p>
+								</dd>
+								<dt>2017年7月</dt>
+								<dd>
+									<p>941红木平台营业额突破百万大关</p>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="sec-8 bg-color-fff">
+				<div class="w1200">
+					<ul class="clearfix">
+						<li>
+							<i class="icon icon-1"></i>
+							<h2>省钱</h2>
+							<p>从原料到装修一站式服务</p>
+							<p>没有中间商赚差价</p>
+							<p>免费设计平面效果图与3D效果</p>
+							<p>花最少的钱，做最好的设计</p>
+						</li>
+						<li>
+							<i class="icon icon-2"></i>
+							<h2>省心</h2>
+							<p>所有家具都拥有中国红木委出具的纸质检验报告</p>
+							<p>可在红木委官方系统查询档案编号</p>
+							<p>中国人民财产保险公司会全程承保</p>
+							<p>让您用的安心，用的放心。</p>
+						</li>
+						<li>
+							<i class="icon icon-3"></i>
+							<h2>省时</h2>
+							<p>提供集红木原料、家居设计、家具定制</p>
+							<p>配送装修于一体的一站式家居定制服务</p>
+							<p>无需经手其他公司厂家</p>
+							<p>以最快的时间给您一个满意的家</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="sec-9">
+				<h2 class="common-h2">6大保障</h2>
+				<div class="w1200">
+					<ul class="clearfix">
+						<li class="clearfix">
+							<i class="icon-1"></i>
+							<div>
+								<h3>真品保障</h3>
+								<p>中国红木委纸质检验报告</p>
+								<p>中国人民财产保险公司全称担保</p>
+							</div>
+						</li>
+						<li class="clearfix">
+							<i class="icon-2"></i>
+							<div>
+								<h3>货源保障</h3>
+								<p>12000多平米的自营存储仓库</p>
+								<p>几十家分公司存储仓库</p>
+							</div>
+						</li>
+						<li class="clearfix">
+							<i class="icon-3"></i>
+							<div>
+								<h3>服务保障</h3>
+								<p>24小时客服热线</p>
+								<p>2个工作日内快捷回复</p>
+							</div>
+						</li>
+						<li class="clearfix">
+							<i class="icon-4"></i>
+							<div>
+								<h3>技术保障</h3>
+								<p>专业的匠人精雕团队</p>
+								<p>专业的全屋设计团队</p>
+							</div>
+						</li>
+						<li class="clearfix">
+							<i class="icon-5"></i>
+							<div>
+								<h3>生产保障</h3>
+								<p>庞大的流水线生产车间</p>
+								<p>庞大的流水线精雕车间</p>
+							</div>
+						</li>
+						<li class="clearfix">
+							<i class="icon-6"></i>
+							<div>
+								<h3>售后保障</h3>
+								<p>7天无理由包退换</p>
+								<p>3年期限免费报修</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="sec-4">
+				<span>已预约：<i class="">514</i>人</span>
+				<span>已签约：<i class="">241</i>人</span>
+				<a>立即免费预约设计师</a>
+			</div>
+
+			<!--弹窗-->
+			<div id="dialog-form">
+				<div class="content">
+					<form action="">
+						<div class="step-1">
+							<p>填写您的姓名与手机号码即可立即免费预约设计师</p>
+							<p>我们的设计师会在2个工作日内联系您与您沟通设计风格</p>
+							<label for="#name">您的姓名</label>
+							<input type="text" id="name" />
+							<label for="#tel">手机号码</label>
+							<input type="text" id="tel" />
+							<button class="submit-1">提交</button>
+						</div>
+
+						<div class="step-2">
+							<p>您的申请已成功提交</p>
+							<p>上传您需要设计的房屋空间图，并填写收取方式</p>
+							<p>我们会将设计图发送到您的收取方式</p>
+							<label>上传户型图</label>
+							<input id="file_upload_1" name="file_upload" type="file">
+							<label for="#contact">QQ/邮箱/微信</label>
+							<input type="text" id="contact" />
+							<button class="submit-2">提交</button>
+						</div>
+
+						<div class="step-3">
+							<p>您的申请已成功提交</p>
+							<p>现在预付2000元可在结算时享受总额减免1万元的优惠</p>
+							<p>您也可以不予支付</p>
+							<p>我们仍会将设计图发送至您填写的收取方式</p>
+							<a class="pay" href="#">点击支付</a>
+						</div>
+					</form>
+					<div class="close" title="关闭"></div>
+				</div>
 			</div>
         </div>
 
         <!--footer-->
         <!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->    
-        <!--本页JS-->     
+        <!--本页JS-->    
+        <script src="themes/ecmoban_dsc/js/js/jquery.uploadify.min.js"></script>
         <script type="text/javascript" src="themes/ecmoban_dsc/js/js/personal_tailor.js"></script>  
     </body>
 </html>

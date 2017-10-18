@@ -1,154 +1,567 @@
+.top-banner {
+	height: 638px;
+	background: url(../../iamges/20170517/qwdz-pic1.jpg) no-repeat top center;
+}
+#main-body {
+	position: relative;
+	padding-top: 115px;
+	background-color: #f8f8f8;
+}
 .sec-1 {
+	position: absolute;
+	top: -77px;
+	left: 50%;
+	padding: 42px 74px;
+	margin-left: -600px;
+	width: 1200px;
 	background-color: #fff;
+	box-shadow: 0 8px 10px #dad7d7;
 }
-.sec-1 div {
-	padding: 70px 44px;
+.sec-1 li {
+	position: relative;
+	float: left;
+	margin-right: 141px;
+	padding-left: 42px;
+	width: 157px;
+	color: #dad7d7;
 }
-.sec-1 p {
-	font-size: 24px;
-	line-height: 2.5;
+.sec-1 h6 {
+	padding-bottom: 8px;
+	border-bottom: 1px solid #eee;
 }
-.sec-1 .p1 {
-	margin-bottom: 50px;
+.sec-1 li i {
+	font-size: 36px;
+	font-style: normal;
+}
+.sec-1 li i,
+.sec-1 li sup {
+	color: #333;
+}
+.sec-1 li sup {
+	font-size: 12px;
+}
+.sec-1 li:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;	
+	top: -5px;
+	background-image: url(../../iamges/20170517/qwdz-sprite2.png);
+	background-repeat: no-repeat;
+}
+.sec-1 .li1:before {
+	width: 31px;
+	height: 28px;
+	background-position: 0 0;
+}
+.sec-1 .li2:before {
+	width: 30px;
+	height: 28px;
+	background-position: -37px 0;
+}
+.sec-1 .li3:before {
+	left: 10px;
+	width: 22px;
+	height: 26px;
+	background-position: -72px 0;
+}
+.sec-1 .li4:before {
+	width: 28px;
+	height: 28px;
+	background-position: -101px 0;
+}
+.sec-2 .w1200 {
+	padding-bottom: 90px;
+	background: url(../../iamges/20170517/qwdz-pic2.jpg) no-repeat left bottom;
+}
+.common-h2 {
+	padding-top: 40px;
+	text-align: center;
+	font-size: 30px;
 }
 .sec-2 h2 {
-	padding: 15px 0;
-	text-align: center;
+	background: url(../../iamges/20170517/qwdz-pic1.png) no-repeat top center;
 }
-.sec-2 span {
+.sec-2 h2 span {
 	display: block;
-	font-size: 30px;
-	line-height: 1.6;
+	padding-top: 20px;
+	font-size: 20px;
+}
+.sec-2 ul {
+	padding: 68px 0 0 570px;
 }
 .sec-2 li {
-    float: left;
-    margin: 0 29px 21px 0;
-    width: 380px;
-    background-color: #fff;
+	position: relative;
+	float: left;
+	margin: 0 30px 77px 0;
+	padding-left: 25px;
+	width: 255px;
 }
-.sec-2 li div {
-    padding: 5px 15px 25px 15px;
-    font-size: 16px;
+.sec-2 h3 {
+	font-weight: 600;
 }
-.sec-2 li h3 {
-    padding: 12px 0;
-    font-weight: 600;
+.sec-2 h3,
+.sec-2 h3+p {
+	margin-bottom: 10px;
 }
-.sec-2 sup {
-    display: inline-block;
-    font-size: 10px;
-    -webkit-transform: scale(.8);
+.sec-2 h3~p {
+	color: #666;
+}
+.sec-2 li:before {
+	position: absolute;
+	content: "";
+	display: block;
+	left: 0;
+	top: -2px;
+	height: 20px;
+	background-image: url(../../iamges/20170517/qwdz-sprite2.png);
+	background-repeat: no-repeat;
+}
+.sec-2 .li1:before {
+	left: 7px;
+	width: 11px;
+	background-position: 0 -37px;
+}
+.sec-2 .li2:before {
+	width: 20px;
+	background-position: -21px -37px;
+}
+.sec-2 .li3:before {
+	width: 20px;
+	background-position: -47px -37px;
+}
+.sec-2 .li4:before {
+	width: 20px;
+	background-position: -73px -37px;
 }
 .sec-3 {
-	padding-bottom: 15px;
+	padding: 50px 0;
 }
 .sec-3 h2 {
-	padding: 20px 0 12px;
-	color: #aa1920;
-	font-size: 30px;
+	background: url(../../iamges/20170517/qwdz-pic2.png) no-repeat top center;
+}
+.sec-3 dt {
+	clear: both;
+}
+.sec-3 dd {
+	position: relative;
+	float: left;
+	margin-top: 60px;
+	width: 300px;
 	text-align: center;
 }
-.sec-3 div {
-	margin: 0 auto;
-	width: 1089px;
-	height: 332px;
-	background: url(../../iamges/20170517/dz-bg-1.png) no-repeat left center;
+.sec-3 dd .icon {
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+	background-image: url(../../iamges/20170517/qwdz-sprite2.png);
+	background-repeat: no-repeat;
 }
-.sec-3 ol {
-	position: relative;
-	top: 44px;
+.sec-3 dd .icon-1 {
+	background-position: 0 -74px;
 }
-.sec-3 li {
-	padding-left: 52px;
-	float: left;
-	width: 20%;
-	height: 65px;
-	line-height: 65px;
+.sec-3 dd .icon-2 {
+	background-position: -56px -74px;
+}
+.sec-3 dd .icon-3 {
+	background-position: -116px -74px;
+}
+.sec-3 dd .icon-4 {
+	background-position: -174px -74px;
+}
+.sec-3 dd .icon-5 {
+	background-position: -233px -74px;
+}
+.sec-3 dd .icon-6 {
+	background-position: -289px -74px;
+}
+.sec-3 dd .icon-7 {
+	background-position: -346px -74px;
+}
+.sec-3 dd .icon-8 {
+	background-position: -406px -74px;
+}
+.sec-3 dd:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	margin-top: -16.5px;
+	width: 18px;
+	height: 33px;
+	background-image: url(../../iamges/20170517/qwdz-sprite2.png);
+	background-repeat: no-repeat;
+	background-position: -482px 0;
+}
+.sec-3 .no-arrow:before {
+	display: none;
+}
+.sec-3 h3 {
+	padding: 30px 0;
+	font-size: 24px;
+}
+.sec-3 h3~* {
+	margin-bottom: 10px;
+	color: #999;
+}
+.sec-3 dd a {
+	display: inline-block;
+	width: 108px;
+	height: 36px;
+	line-height: 36px;
+	color: #fff;
+	background-color: #ff9f2a;
+	border-radius: 8px;
+}
+.sec-4 {
+	height: 121px;
+	line-height: 121px;
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	background-color: #fcc36f;
+}
+.sec-4 i {
+	font-style: normal;
+}
+.sec-4 a {
+	display: inline-block;
+	width: 273px;
+	height: 51px;
+	line-height: 51px;
+	color: #fff;
 	font-size: 18px;
+	background-color: #ff9f29;
+	cursor: pointer;
+}
+.sec-4 span {
+	margin-right: 110px;
 }
 .sec-5 {
-	padding: 0 36px;
+	padding: 70px 0 115px;
 }
-.sec-5 .float-l {
-	position: relative;
-	width: 634px;
-	height: 681px;
+.sec-5 h2 {
+	margin-bottom: 46px;
+	background: url(../../iamges/20170517/qwdz-pic3.png) no-repeat top center;
 }
-.sec-5 .float-l img {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-}
-.sec-5 .float-l .img1 {
-	z-index: 2;
-	top: 0;
-	left: 0;
-}
-.sec-5 .float-r {
-	font-size: 18px;
-	text-align: center;
-}
-.sec-5 .float-r p {
-	line-height: 2.5;
-}
-.sec-5 .float-r img {
-	margin-bottom: 40px;
+.sec-5 img {
+	float: left;
+	margin: 0 8px 8px 0;
 }
 .sec-6 {
-	margin-top: 60px;
-	padding: 76px 0;
+	padding: 70px 0;
 	text-align: center;
 }
-.sec-6 img,
-.fixed-left img,
-.sec-5 .float-r img {
+.sec-6 h2 {
+	margin-bottom: 50px;
+	font-size: 48px;
+}
+.sec-6 img {
 	display: inline-block;
 }
-.sec-6 p {
-	font-size: 30px;
-	line-height: 1.5;
-}
-.fixed-left {
-	position: fixed;
-	top: 50%;
-	left: 40px;
-	margin-top: -132px;
-	width: 192px;
-	height: 264px;
-	text-align: center;
-}
-.fixed-left p {
-	font-size: 18px;
-}
-.fixed-left .p1 {
-	padding-bottom: 15px;
-}
 .sec-7 {
-	padding-top: 27px;
-	height: 661px;
-	background-color: #fcc41a;
+	padding: 87px 0 80px;
 }
 .sec-7 h2 {
-	margin: 0 auto 27px;
-	width: 518px;
-	height: 117px;
-	color: #fff;
-	font-size: 48px;
-	line-height: 117px;
-	text-align: center;
-	border: 1px solid #fff;
+	margin-bottom: 118px;
+	background: url(../../iamges/20170517/qwdz-pic4.png) no-repeat top center;
 }
-.sec-7 div {
-	padding: 0 17.5px;
+.sec-7 hr {
+	border: none;
+	border-bottom: 3px solid #eee;
 }
-.sec-7 img {
+.sec-7 .w1200 {
+	position: relative;
+}
+.sec-7 .ul1 {
+	position: absolute;
+	top: -11px;
+}
+.sec-7 .ul1 li {
 	float: left;
-	margin-right: 8px;
+	margin-right: 148px;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #cacaca;
+	border-radius: 50%;
+	background-color: #fff;
+	border: none\0;
+	background: url(../../iamges/20170517/qwdz-pic6.png) no-repeat \0;
+}
+.sec-7 .ul2 {
+	position: absolute;
+	top: -70px;
+	left: 147px;
+	display: inline-block;
+	font-size: 20px;
+}
+.sec-7 .ul2 span {
+	display: block;
+	line-height: 1;
+}
+.sec-7 .ul2 li {
+	float: left;
+	margin-right: 121px;
+	margin-right: 120px\0;
+}
+.sec-7 .ul2 span+span {
+	margin-top: 5px;
+	text-align: right;
+}
+.sec-7 .ul3 {
+	padding-top: 75px;
+}
+.sec-7 .ul3 li {
+	margin-right: 30px;
+	float: left;
+	width: 380px;
+}
+.sec-7 .ul3 h3 {
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+	text-indent: -3px;
+	border-bottom: 2px solid #eee;
+}
+.sec-7 .ul3 dt,
+.sec-7 .ul3 dd {
+	float: left;
+	margin-bottom: 8px;
+	color: #999;
+}
+.sec-7 .ul3 dt {
+	width: 22%;
+}
+.sec-7 .ul3 dd {
+	width: 78%;
+}
+.sec-7 .ul3 p {
 	margin-bottom: 8px;
 }
-.sec-8 h2 {
-	height: 106px;
-	line-height: 106px;
-	font-size: 48px;
+.sec-8 {
+	padding: 85px 0;
 	text-align: center;
+}
+.sec-8 li {
+	float: left;
+	width: 400px;
+}
+.sec-8 .icon {
+	display: inline-block;
+	width: 183px;
+	height: 142px;
+	background-image: url(../../iamges/20170517/qwdz-sprite1.png);
+	background-repeat: no-repeat;
+}
+.sec-8 .icon-1 {
+	background-position: 0 0;
+}
+.sec-8 .icon-2 {
+	background-position: -213px 0;
+}
+.sec-8 .icon-3 {
+	background-position: -442px 0;
+}
+.sec-8 h2 {
+	margin: 15px 0;
+	font-size: 30px;
+}
+.sec-8 p {
+	margin-bottom: 10px;
+	color: #999;
+}
+.sec-9 {
+	padding: 40px 0 90px;
+}
+.sec-9 h2 {
+	background: url(../../iamges/20170517/qwdz-pic5.png) no-repeat top center;
+}
+.sec-9 li {
+	float: left;
+	padding-left: 105px;
+	margin-top: 77px;
+	width: 400px;
+}
+.sec-9 li i,
+.sec-9 li div {
+	float: left;
+}
+.sec-9 li div {
+	padding-left: 15px;
+}
+.sec-9 li i {
+	background-image: url(../../iamges/20170517/qwdz-sprite2.png);
+	background-repeat: no-repeat;
+}
+.sec-9 .icon-1 {
+	width: 50px;
+	height: 58px;
+	background-position: 0 -141px;
+}
+.sec-9 .icon-2 {
+	width: 53px;
+	height: 51px;
+	background-position: -67px -148px;
+}
+.sec-9 .icon-3 {
+	width: 42px;
+	height: 66px;
+	background-position: -139px -133px;
+}
+.sec-9 .icon-4 {
+	width: 63px;
+	height: 50px;
+	background-position: -193px -149px;
+}
+.sec-9 .icon-5 {
+	width: 48px;
+	height: 48px;
+	background-position: -266px -151px;
+}
+.sec-9 .icon-6 {
+	width: 57px;
+	height: 55px;
+	background-position: -334px -144px;
+}
+.sec-9 h3,
+.sec-9 p {
+	margin-bottom: 10px;
+}
+.sec-9 h3 {
+	font-size: 18px;
+}
+.sec-9 p {
+	color: #999;
+}
+#file_upload_1 object {
+	border: 1px solid #b5b5b5;
+}
+#file_upload_1 {
+	overflow: hidden;
+}
+
+/*弹窗*/
+#dialog-form {
+	z-index: 2999999999;
+	position: fixed;
+	display: none;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: url(../../iamges/20170517/zoom-point.png);
+}
+#dialog-form .content {
+	z-index: 3999999999;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -500px;
+	margin-top: -229px;
+	width: 1000px;
+	height: 458px;
+	background: #fff url(../../iamges/20170517/qwdz-pic12.jpg) no-repeat top right;
+}
+#dialog-form .step-1,
+#dialog-form .step-2,
+#dialog-form .step-3 {
+	position: absolute;
+	left: 46px;
+	width: 346px;
+}
+#dialog-form .step-1 {
+	padding-top: 90px;
+}
+#dialog-form .step-2 {
+	padding-top: 70px;
+}
+#dialog-form .step-3 {
+	padding-top: 130px;
+}
+#dialog-form .step-2,
+#dialog-form .step-3 {
+	display: none;
+}
+#dialog-form p {
+	margin-bottom: 5px;
+	color: #999;
+	text-align: center;
+}
+#dialog-form .step-1 p+label {
+	margin-top: 50px;
+}
+#dialog-form .step-2 p+label {
+	margin-top: 30px;
+}
+#dialog-form label,
+#dialog-form input {
+	display: block;
+	margin-bottom: 10px;
+	width: 100%;
+}
+#dialog-form label {
+	position: relative;
+	color: #999;
+}
+#dialog-form label .error {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: red;
+}
+#dialog-form input[type="text"] {
+	padding-left: 8px;
+	border: 1px solid #b5b5b5;
+	background-color: #f7f7f7;
+}
+#dialog-form input[type="text"],
+#dialog-form button,
+#dialog-form .pay {
+	height: 25px;
+	line-height: 25px;
+}
+#dialog-form button,
+#dialog-form .pay {
+	display: block;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	border: none;
+	background-color: #bca480;
+	cursor: pointer;
+}
+#dialog-form .step-1 .submit-1 {
+	margin-top: 57px;
+}
+#dialog-form .step-2 .submit-2 {
+	margin-top: 40px;
+}
+#dialog-form .step-3 .pay {
+	margin-top: 100px;
+}
+#dialog-form .close {
+	position: absolute;
+	top: 13px;
+	right: 16px;
+	width: 22px;
+	height: 22px;
+	background: url(../../iamges/20170517/qwdz-close.png) no-repeat;
+	cursor: pointer;
+}
+
+.uploadify {
+	margin-bottom: 0;
+}
+.uploadify-queue {
+	overflow: hidden;
+	margin-bottom: 8px;
+}
+.uploadify-queue-item {
+	width: 100%;
+}
+.uploadify-progress-bar {
+	background-color: #aa1920;
+}
+.uploadify-queue-item {
+	padding: 10px;
 }

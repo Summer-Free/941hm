@@ -290,14 +290,14 @@
 					</div>
 				</div>
 				
-				<!--私人订制等 7个小栏目-->
+				<!--全屋订制等 7个小栏目-->
 				<div class="section-2 margin-b-10">
 					<ul class="clearfix">
 						<li class="personal-tailor">
 							<a href="personal_tailor.php">
 								<img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/idx-pic4.jpg" width="385" height="409" alt="">
 								<div class="title">
-									<h2>——— <span>私人订制</span> ———</h2>
+									<h2>——— <span>全屋订制</span> ———</h2>
 									<span>定制您的专属家具</span>
 								</div>
 							</a>
