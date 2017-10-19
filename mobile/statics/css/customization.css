@@ -1,42 +1,98 @@
-body {
-	background-color: #f2f2f2;
+html,body {
+	background-color: #fff;
 }
 h2 {
 	font-size: 1.66rem;
+}
+.flex {
+	-webkit-display: flex;
+	        display: flex;
 }
 .margin-t-18 {
 	margin-top: 1rem;
 }
 .sec-1 {
-	padding: 3.77rem;
-	background-color: #fff;
+	padding: 3.22rem 0 1rem;
+}
+.sec-1 h2 {
+	padding-top: 1.66rem;
+	text-align: center;
+	background: url(../img/newapp/qwdz-pic2.png) no-repeat top center;
+	background-size: 22.11rem 2.166rem;
+}
+.sec-1 ul {
+	-webkit-display: flex;
+	        display: flex;
+	justify-content: space-between;       
+	flex-wrap: wrap; 
+}
+.sec-1 li {
+	position: relative;
+	margin-top: 2.5rem;
+	text-align: center;
+	flex: 0 1 49.5%;
+}
+.sec-1 h3{
+	font-size: 1.66rem;
+	line-height: 1.3;
 }
 .sec-1 p {
-	font-size: 1.33rem;
+	font-size: 1rem;
+	color: #666;
 }
-.sec-1 p:first-child {
-	margin-bottom: 3rem;
+.sec-1 .icon {
+	display: inline-block;
+	width: 2.55rem;
+	height: 2.55rem;
+	background-image: url(../img/newapp/qwdz-sprite2.png);
+	background-size: 27.77rem 11.05rem;
+	background-repeat: no-repeat;
+}
+.sec-1 .arrow:after {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	content: "";
+	display: block;
+	width: 1rem;
+	height: 1.833rem;
+	background-image: url(../img/newapp/qwdz-sprite2.png);
+	background-size: 27.77rem 11.05rem;
+	background-repeat: no-repeat;
+	background-position: -26.777rem 0;
+	-webkit-transform: translate3d(0,-50%,0);
+	        transform: translate3d(0,-50%,0);
+}
+.sec-1 .icon-1 {
+	background-position: 0 -4.11rem;
+}
+.sec-1 .icon-2 {
+	background-position: -3.11rem -4.11rem;
+}
+.sec-1 .icon-3 {
+	background-position: -6.44rem -4.11rem;
+}
+.sec-1 .icon-4 {
+	background-position: -9.66rem -4.11rem;
+}
+.sec-1 .icon-5 {
+	background-position: -12.94rem -4.11rem;
+}
+.sec-1 .icon-6 {
+	background-position: -16.05rem -4.11rem;
+}
+.sec-1 .icon-7 {
+	background-position: -19.22rem -4.11rem;
+}
+.sec-1 .icon-8 {
+	background-position: -22.55rem -4.11rem;
 }
 .sec-2 {
-	font-size: 1.66rem;
-	text-align: center;
-}
-.sec-2 h2 {
-	line-height: 4.277rem;
-}
-.sec-2 img {
-	margin-bottom: 1rem;
-	width: 13.33rem;
-}
-.sec-2 img:nth-child(2n) {
-	margin-left: 1rem;
-}
-.sec-3 {
 	padding: 1rem .44rem .44rem;
 	text-align: center;
 	background-color: #fcc41a;
 }
-.sec-3 h2 {
+.sec-2 h2 {
 	margin: 0 auto 1rem;
 	width: 18.166rem;
 	height: 4.11rem;
@@ -46,23 +102,171 @@ h2 {
 	border: 1px solid #fff;
 	text-align: center;
 }
-.sec-3 span {
+.sec-2 span {
 	display: block;
 }
-.sec-3 div:first-of-type {
+.sec-2 div:first-of-type {
 	margin-bottom: .44rem;
 }
-.sec-3 div {
+.sec-2 div {
 	display: -webkit-flex;
 	display: flex;
 	justify-content: space-between;
 }
-.sec-4 h2 {
+.sec-3 h2 {
 	height: 4.11rem;
 	line-height: 4.11rem;
 	font-size: 1.66rem;
 	text-align: center;
 }
+.sec-4 {
+	padding: 3.55rem 0;
+}
+.sec-4 li:not(:last-child) {
+	margin-bottom: 2.5rem;
+}
+.sec-4 li div {
+	flex: 1;
+	font-size: 1.33rem;
+}
+.sec-4 .icon {
+	margin: 0 3rem 0 5.5rem;
+	background-image: url(../img/newapp/qwdz-sprite3.png);
+	background-size: 23.33rem 6.11rem;
+	background-repeat: no-repeat;
+}
+.sec-4 .icon-1 {
+	width: 4.722rem;
+	height: 4.722rem;
+	background-position: 0 0;
+}
+.sec-4 .icon-2 {
+	margin: 0 2.4rem 0 5.5rem;
+	width: 5.388rem;
+	height: 5.388rem;
+	background-position: -5.833rem 0;
+}
+.sec-4 .icon-3 {
+	width: 4.777rem;
+	height: 4.777rem;
+	background-position: -12.277rem 0;
+}
+.sec-4 .icon-4 {
+	width: 5.055rem;
+	height: 5.055rem;
+	background-position: -18.277rem 0;
+}
+.sec-4 p {
+	color: #666;
+}
+.sec-4 h3 {
+	margin-bottom: .2rem;
+	font-size: 1.33rem;
+	font-weight: 600;
+}
+.sec-7 {
+	height: 4.333rem;
+	line-height: 4.333rem;
+	color: #fff;
+	font-size: 1.333rem;
+	text-align: center;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #fcc36f;
+}
+.sec-7 a {
+	flex: 0 0 14.55rem;
+	height: 2.944rem;
+	line-height: 2.944rem;
+	color: #fff;
+	font-weight: 600;
+	background-color: #ff9f29;
+}
+.sec-7 i {
+	font-style: normal;
+}
+.sec-8 {
+	padding: 3.166rem 0;
+	text-align: center;
+}
+.sec-8 p {
+	font-size: 1.33rem;
+	color: #666;
+	line-height: 1.5;
+}
+.sec-8 ul {
+	margin-bottom: 3.166rem;
+}
+.sec-8 li {
+	flex: 1;
+}
+.sec-8 h3 {
+	margin-top: 1rem;
+	font-size: 1.33rem;
+	font-weight: 600;
+}
+.sec-8 .icon {
+	display: inline-block;
+	width: 10.166rem;
+	height: 7.888rem;
+	background-image: url(../img/newapp/qwdz-sprite1.png);
+	background-size: 34.722rem 7.888rem;
+	background-repeat: no-repeat;
+}
+.sec-8 .icon-1 {
+	background-position: 0 0;
+}
+.sec-8 .icon-2 {
+	background-position: -11.83rem 0;
+}
+.sec-8 .icon-3 {
+	background-position: -24.55rem 0;
+}
+.sec-9 {
+	padding-bottom: 2.5rem;
+	font-size: 1.2rem;
+}
+.sec-9 li {
+	margin-top: 2.5rem;
+}
+.sec-9 li div {
+	flex: 1;
+}
+.sec-9 .icon {
+	margin: 0 .444rem 0 1.77rem;
+	flex: 0 0 1.166rem;
+	background-image: url(../img/newapp/qwdz-sprite4.png);
+	background-size: 5.555rem 1.5rem;
+	background-repeat: no-repeat;
+}
+.sec-9 .icon-1 {
+	height: 1.055rem;
+	background-position: 0 0;
+}
+.sec-9 .icon-2 {
+	height: 1.5rem;
+	background-position: -1.444rem 0;
+}
+.sec-9 .icon-3 {
+	flex: 0 0 1.388rem;
+	background-position: -2.666rem 0;
+}
+.sec-9 .icon-4 {
+	flex: 0 0 1.156rem;
+	height: 1.166rem;
+	background-position: -4.388rem 0;
+}
+.sec-9 h3 {
+	font-size: 1.333rem;
+	font-weight: 600;
+}
+.sec-9 p {
+	color: #999;
+}
+
+
+
+
 .sec-5 {
 	padding: 3.5rem 0;
 	display: -webkit-flex;
@@ -79,22 +283,4 @@ h2 {
 }
 .color-aa1920 {
 	color: #aa1920;
-}
-.sec-7 {
-	padding: 3.5rem 0;
-	display: -webkit-flex;
-	display: flex;
-	justify-content: space-around;
-	background-color: #fff;
-}
-.sec-7 a {
-	display: block;
-	width: 27.22rem;
-	height: 11.11rem;
-	line-height: 11.11rem;
-	text-align: center;
-	color: #fff;
-	font-size: 3.33rem;
-	background-color: #fcc41a;
-	border-radius: 1.66rem;
 }
