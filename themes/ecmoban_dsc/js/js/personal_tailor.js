@@ -21,7 +21,8 @@ $(function() {
 			}else {
 				$("#tel").prev().find(".error").remove();
 			};
-
+			alert(name);
+			alert(tel);
 			e.preventDefault();
 			$step_1.hide();
 			$step_2.show();
@@ -69,22 +70,24 @@ $(function() {
 	//上传图片
     $("#file_upload_1").uploadify({
         "swf"      : "uploadify.swf",    //选择文件按钮
-        "uploader" : "uploadify.php",    //处理文件上传的php文件
+        "uploader" : "http://localhost/941hm/uploadify.php",    //处理文件上传的php文件
         "auto"     : true,
         "buttonText" : "",
         "buttonImage": "themes/ecmoban_dsc/iamges/20170517/qwdz-pic11.jpg",
         "width": "346",
         "height": "56",
         "fileObjName": "images",
+        "debugger":true,
         "fileSizeLimit": "5MB",
         "fileTypeExts": "*.jpg;*.jpeg;*.png;*.gif;",
         "fileTypeDesc": "选择图片",
-        "method": "Post",
+        "method": "post",
         "removeCompleted": false,
         "requeueErrors": true,
         "uploadLimit": 1,
         'multi': false,
-        "onUploadSuccess" : function() {    
+        "onUploadSuccess" : function(fileObj, data, response) { 
+        	alert(data);
         	$("#file_upload_1").height(0);      
         	uploadImg++;    
         },
