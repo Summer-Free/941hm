@@ -1,5 +1,7 @@
 $(function() {
-	var uploadImg = 0;
+	var uploadImg = 0,
+		global_name,
+		global_tel;
 	$("#dialog-form .step-1 .submit-1").on("click",function(e) {
 		var name = $("#name").val(),
 			tel = $("#tel").val(),
@@ -7,7 +9,6 @@ $(function() {
 			tel_reg = /^1[34578]\d{9}$/,
 			$step_1 = $("#dialog-form .step-1"),
 			$step_2 = $("#dialog-form .step-2");
-
 			if(!name_reg.test(name)) {
 				$("#name").prev().find(".error").remove();
 				$("#name").prev().append("<span class='error'>请输入2-4个汉字！</span>");
@@ -21,8 +22,8 @@ $(function() {
 			}else {
 				$("#tel").prev().find(".error").remove();
 			};
-			alert(name);
-			alert(tel);
+			global_name = name;
+			global_tel = tel;
 			e.preventDefault();
 			$step_1.hide();
 			$step_2.show();
@@ -33,7 +34,6 @@ $(function() {
 			$step_2 = $("#dialog-form .step-2"),
 			$step_3 = $("#dialog-form .step-3"),
 			$form = $("#dialog-form form");
-
 		if(uploadImg === 0) {
 			$("#file_upload_1").prev().find(".error").remove();
 			$("#file_upload_1").prev().append("<span class='error'>请上传图片</span>");
@@ -47,8 +47,24 @@ $(function() {
 		}else {
 			$("#contact").prev().find(".error").remove();
 		};
-
+		var conn = contact;
+		/*alert(global_name);
+		alert(global_tel);
+		alert(conn);*/
 		e.preventDefault();
+		/*Ajax.call('uploadify.php?act=ajax','name='+global_name+'&tel='+global_tel+'&=contact='+conn,My_back,'post','TEXT');
+		function My_back(result){
+			alert(result);
+		}*/
+		$.ajax({
+			type:"GET",
+            url:"uploadify.php?name="+global_name+'&tel='+global_tel+'&contact='+conn,
+            dataType:"TEXT",
+            success:function(data)
+            {   
+                alert(data);
+            }
+		})
 		$step_2.hide();
 		$step_3.show();
 
@@ -87,7 +103,6 @@ $(function() {
         "uploadLimit": 1,
         'multi': false,
         "onUploadSuccess" : function(fileObj, data, response) { 
-        	alert(data);
         	$("#file_upload_1").height(0);      
         	uploadImg++;    
         },
