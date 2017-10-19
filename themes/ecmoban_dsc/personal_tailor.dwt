@@ -347,7 +347,6 @@
 			<!--弹窗-->
 			<div id="dialog-form">
 				<div class="content">
-					<form action="">
 						<div class="step-1">
 							<p>填写您的姓名与手机号码即可立即免费预约设计师</p>
 							<p>我们的设计师会在2个工作日内联系您与您沟通设计风格</p>
@@ -376,7 +375,6 @@
 							<p>我们仍会将设计图发送至您填写的收取方式</p>
 							<a class="pay" href="#">点击支付</a>
 						</div>
-					</form>
 					<div class="close" title="关闭"></div>
 				</div>
 			</div>
