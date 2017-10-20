@@ -1,7 +1,8 @@
 $(function() {
 	var uploadImg = 0,
 		global_name,
-		global_tel;
+		global_tel,
+		global_url;
 	$("#dialog-form .step-1 .submit-1").on("click",function(e) {
 		var name = $("#name").val(),
 			tel = $("#tel").val(),
@@ -48,25 +49,19 @@ $(function() {
 			$("#contact").prev().find(".error").remove();
 		};
 		var conn = contact;
-		/*alert(global_name);
-		alert(global_tel);
-		alert(conn);*/
 		e.preventDefault();
-		/*Ajax.call('uploadify.php?act=ajax','name='+global_name+'&tel='+global_tel+'&=contact='+conn,My_back,'post','TEXT');
-		function My_back(result){
-			alert(result);
-		}*/
 		$.ajax({
 			type:"GET",
-            url:"uploadify.php?name="+global_name+'&tel='+global_tel+'&contact='+conn,
+            url:"uploadify.php?name="+global_name+'&tel='+global_tel+'&contact='+conn+'&url='+global_url,
             dataType:"TEXT",
             success:function(data)
             {   
                 alert(data);
+                $step_2.hide();
+				$step_3.show();
             }
 		})
-		$step_2.hide();
-		$step_3.show();
+		
 
 		// $form.submit();
 
@@ -86,14 +81,13 @@ $(function() {
 	//上传图片
     $("#file_upload_1").uploadify({
         "swf"      : "uploadify.swf",    //选择文件按钮
-        "uploader" : "http://localhost/941hm/uploadify.php",    //处理文件上传的php文件
+        "uploader" : "uploadify.php",    //处理文件上传的php文件
         "auto"     : true,
         "buttonText" : "",
         "buttonImage": "themes/ecmoban_dsc/iamges/20170517/qwdz-pic11.jpg",
         "width": "346",
         "height": "56",
         "fileObjName": "images",
-        "debugger":true,
         "fileSizeLimit": "5MB",
         "fileTypeExts": "*.jpg;*.jpeg;*.png;*.gif;",
         "fileTypeDesc": "选择图片",
@@ -103,6 +97,7 @@ $(function() {
         "uploadLimit": 1,
         'multi': false,
         "onUploadSuccess" : function(fileObj, data, response) { 
+        	global_url = data;
         	$("#file_upload_1").height(0);      
         	uploadImg++;    
         },
