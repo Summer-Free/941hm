@@ -360,63 +360,64 @@
 							<span><i class="xpss-icon"></i>新品上市</span>
 							<a href="latest_listing.php">查看更多</a>
 						</h2>
-						<div id="dome4">
-						    <div class="done-warp">
-								<ul>
-								<!--{foreach from=$new_goods item=new_goods name=new_goods}-->
-					            <!-- {if $smarty.foreach.new_goods.iteration ==1  } -->
-					            <li>
-					            <!-- {elseif $smarty.foreach.new_goods.iteration ==2 } -->
-					            <li class="border-r-0">
-					            <!-- {elseif $smarty.foreach.new_goods.iteration ==3 } -->
-					            <li class="border-b-0">
-					            <!-- {elseif $smarty.foreach.new_goods.iteration ==4 } -->
-					            <li class="border-r-0 border-b-0">
-					            <!--{/if}-->
-					            <a href="goods.php?id={$new_goods.goods_id}">
-					                <div class="wrap-img">
-					                    <img class="lazy" data-original="{$new_goods.goods_thumb}" width="211" height="211" alt="{$new_goods.goods_name}">
-					                </div>
-					                <div class="wrap-info">
-					                    <h3>{$new_goods.goods_name|truncate:15}</h3>
-					                    <div class="sprice clearfix">
-					                    <ins class="float-l color-aa1920">{$new_goods.shop_price}</ins>
-					                    <del class="float-r">{$new_goods.market_price}</del>
-					                    </div>
-					                </div>
-					            </a>
-					            </li>
-					            <!--{/foreach}-->
-								</ul>
-						    </div>
-						</div>	
+						<ul>
+							<!--{foreach from=$new_goods item=new_goods name=new_goods}-->
+				            <!-- {if $smarty.foreach.new_goods.iteration ==1  } -->
+				            <li>
+				            <!-- {elseif $smarty.foreach.new_goods.iteration ==2 } -->
+				            <li class="border-r-0">
+				            <!-- {elseif $smarty.foreach.new_goods.iteration ==3 } -->
+				            <li class="border-b-0">
+				            <!-- {elseif $smarty.foreach.new_goods.iteration ==4 } -->
+				            <li class="border-r-0 border-b-0">
+				            <!--{/if}-->
+				            <a href="goods.php?id={$new_goods.goods_id}">
+				                <div class="wrap-img">
+				                    <img class="lazy" data-original="{$new_goods.goods_thumb}" width="211" height="211" alt="{$new_goods.goods_name}">
+				                </div>
+				                <div class="wrap-info">
+				                    <h3>{$new_goods.goods_name|truncate:15}</h3>
+				                    <div class="sprice clearfix">
+				                    <ins class="float-l color-aa1920">{$new_goods.shop_price}</ins>
+				                    <del class="float-r">{$new_goods.market_price}</del>
+				                    </div>
+				                </div>
+				            </a>
+				            </li>
+				            <!--{/foreach}-->
+						</ul>
 					</div>
 					<div class="discount float-r">
 						<h2 class="common-h2-2 clearfix">
 							<span><i class="xpss-icon"></i>限时优惠</span>
 							<a href="limited_time_offer.php">查看更多</a>
 						</h2>
-							<ul>
-							<!--{foreach from=$goods_hot item=goods_hot}-->
-							<li>
-							<div class="done-img">
-								<a href="goods.php?id={$goods_hot.goods_id}" target="_blank">
-									<img src="{$goods_hot.goods_thumb}" title="{$goods_hot.goods_name|escape:html}" width="211" height="211"/>
-								</a>
-							</div> 
-							<div class="done-name">
-								<a href="goods.php?id={$goods_hot.goods_id}" target="_blank" title="{$goods_hot.goods_name|escape:html}">{$goods_hot.goods_name}
-								</a>
-							</div>
-							<div class="done-price">
-							<span class="shop-price">
-								￥{$goods_hot.shop_price}
-							</span>
-							<span class="original-price">￥{$goods_hot.market_price}</span>
-							</div>
-							</li>
-							<!--{/foreach}-->
-							</ul>
+						<ul>
+							<!--{foreach from=$new_goods item=new_goods name=new_goods}-->
+				            <!-- {if $smarty.foreach.new_goods.iteration ==1  } -->
+				            <li>
+				            <!-- {elseif $smarty.foreach.new_goods.iteration ==2 } -->
+				            <li class="border-r-0">
+				            <!-- {elseif $smarty.foreach.new_goods.iteration ==3 } -->
+				            <li class="border-b-0">
+				            <!-- {elseif $smarty.foreach.new_goods.iteration ==4 } -->
+				            <li class="border-r-0 border-b-0">
+				            <!--{/if}-->
+				            <a href="goods.php?id={$new_goods.goods_id}">
+				                <div class="wrap-img">
+				                    <img class="lazy" data-original="{$new_goods.goods_thumb}" width="211" height="211" alt="{$new_goods.goods_name}">
+				                </div>
+				                <div class="wrap-info">
+				                    <h3>{$new_goods.goods_name|truncate:15}</h3>
+				                    <div class="sprice clearfix">
+				                    <ins class="float-l color-aa1920">{$new_goods.shop_price}</ins>
+				                    <del class="float-r">{$new_goods.market_price}</del>
+				                    </div>
+				                </div>
+				            </a>
+				            </li>
+				            <!--{/foreach}-->
+						</ul>
 					</div>
 				</div>
 			
