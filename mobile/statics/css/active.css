@@ -1,0 +1,57 @@
+body {
+	background: url(../img/newapp/topic-1.jpg);
+	background-size: .55rem .55rem;
+}
+.sec-1 {
+	padding: 0 1rem;
+	font-size: 1.33rem;
+	color: #fff;
+	line-height: 1.1;
+	text-align: center;
+}
+.sec-1 h2 {
+	height: 2.5rem;
+	text-indent: -9999px;
+	background: url(../img/newapp/active-1.png) no-repeat top center;
+	background-size: 86%;
+}
+.sec-1 img {
+	margin-top: 1rem;
+}
+.sec-1>p:last-child {
+	height: 7.55rem;
+	text-indent: -9999px;
+	background: url(../img/newapp/active-2.png) no-repeat center center;
+	background-size: 39%;
+}
+.sec-2 h2,
+footer a {
+	display: block;
+	height: 2.888rem;
+	text-indent: -9999px;
+}
+.sec-2 h2 {
+	background: url(../img/newapp/active-3.png) no-repeat center center;
+	background-size: 87%;
+}
+footer a {
+	margin-bottom: 1rem;
+	background: url(../img/newapp/active-14.png) no-repeat center center;
+	background-size: 87%;
+}
+.sec-2 ul,
+footer {
+	padding-top: 1rem;
+}
+.sec-2 li {
+	margin-top: 1rem;
+}
+.sec-2 li a {
+	display: block;
+}
+footer {
+	padding-bottom: 1rem;
+	color: #fff;
+	font-size: 1.33rem;
+	text-align: center;
+}

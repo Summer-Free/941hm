@@ -56,7 +56,7 @@ $(function() {
             dataType:"TEXT",
             success:function(data)
             {   
-                alert(data);
+                //alert(data);
                 $step_2.hide();
 				$step_3.show();
             }

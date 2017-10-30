@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-cn">
+    <head>
+        <!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem -->
+        <title>双节大放送</title>
+        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/topic.css">
+        <!-- <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/purebox.css"> -->
+        {* 包含脚本文件 *}
+        {insert_scripts files='jquery-1.9.1.min.js,jquery.json.js,transport_jquery.js,cart_quick_links.js,jquery.json.js,transport_jquery.js'}
+    </head>
+    <body>
+        <div class="main-body">
+            <div class="sec-1 w1200">
+                <div class="dl-pic"></div>
+                <h2>活动精选11款产品享受满减还可使用优惠券</h2>
+                <ul class="clearfix">
+                <!--{foreach item=ke_coupons from=$ke_coupons name=ke_coupons}-->
+                    <!-- {if $smarty.foreach.ke_coupons.iteration %2!=0}-->
+                        <li >
+                        <!--{elseif $smarty.foreach.ke_coupons.iteration %2==0}-->
+                        <li  class="margin-r-0">
+                        <!--{/if}-->
+                        <span class="btm" value="{$ke_coupons.cou_id}">{$ke_coupons.cou_money}</span>
+                        <em>满{$ke_coupons.cou_man}可用</em>
+                    </li>
+                <!--{/foreach}-->
+                </ul>
+            </div>
+            <div class="sec-2">
+                <h2>国庆大放送 免费黄金周</h2>
+                <p>10月1号9:00-10月8号9:00</p>
+                <p>系统随机抽取一单免单</p>
+                <img src="themes/ecmoban_dsc/iamges/20170517/topic-3.jpg" alt="" />
+            </div>
+
+            <div class="sec-3">
+                <h2>活动产品</h2>
+                <div class="w1230">
+                    <div class="left-dl"></div>
+                    <div class="right-dl"></div>
+                    <ul class="clearfix">
+                        <li>
+                            <a href="goods.php?id=217">
+                                <img src="themes/ecmoban_dsc/iamges/20170517/topic-9.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.php?id=131">
+                                <img src="themes/ecmoban_dsc/iamges/20170517/topic-10.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.php?id=1560">
+                                <img src="themes/ecmoban_dsc/iamges/20170517/topic-11.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.php?id=256">
+                                <img src="themes/ecmoban_dsc/iamges/20170517/topic-12.png" height="405" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.php?id=1559">
+                                <img src="themes/ecmoban_dsc/iamges/20170517/topic-13.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.php?id=22">
+                                <img src="themes/ecmoban_dsc/iamges/20170517/topic-14.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.php?id=1212">
+                                <img src="themes/ecmoban_dsc/iamges/20170517/topic-15.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.php?id=1213">
+                                <img src="themes/ecmoban_dsc/iamges/20170517/topic-16.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.php?id=1211">
+                                <img src="themes/ecmoban_dsc/iamges/20170517/topic-17.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.php?id=1209">
+                                <img src="themes/ecmoban_dsc/iamges/20170517/topic-18.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <a href="index.php">返回首页</a>
+            <p>免单名单公布时间为活动结束后七个工作日内</p>
+            <p>被抽中的买家会有工作人员联系通知。</p>
+            <p>最终免单金额按订单实际付款金额为准（每个ID限一次）</p>
+        </div>
+
+
+        <!-- #BeginLibraryItem "/library/user_menu_position.lbi" --><!-- #EndLibraryItem -->
+        <!--<script type="text/javascript" src="themes/ecmoban_dsc/js/js/topic.js"></script>-->
+        <script type="text/javascript" src="themes/ecmoban_dsc/js/js/cart_common.js"></script>
+        <script type="text/javascript" src="themes/ecmoban_dsc/js/notLogin.js"></script>
+        <script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.SuperSlide.2.1.1.js"></script>
+        <!--右侧机器人-->
+        <script src="//wp.qiye.qq.com/qidian/2852152525/c07a0ec2548f94d63eab86933f484853" charset="utf-8"></script>
+        <script type="text/javascript">
+            $(function() {
+                (function(){
+                    var $li = $(".sec-1 li");
+                    $li.on("click",function() {
+                        var $this = $(this);
+                        var id = $(this).find(".btm").attr("value");
+                        if({$smarty.session.user_id} == 0){
+                                window.location.href="user.php?act=active";
+                                return false;
+                        }else{
+                                $.post('coupons.php?act=coupons_receive',{'cou_id':id},function(data){
+                                    if(data.status=='ok')
+                                    {
+                                        $this.css("background","url(themes/ecmoban_dsc/iamges/20170517/topic-4.png) no-repeat").find("span").remove();
+                                    }else{
+                                        alert("您已领取过优惠券，请勿重复领取");
+                                        $this.css("background","url(themes/ecmoban_dsc/iamges/20170517/topic-4.png) no-repeat").find("span").remove();
+                                    }
+                                },'json')
+                            }
+                    });
+                }())
+            });
+        </script>
+    </body>
+</html>    
