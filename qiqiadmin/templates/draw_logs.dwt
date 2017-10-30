@@ -1,0 +1,251 @@
+<!doctype html>
+
+<html>
+<head>{include file ='library/admin_html_head.lbi'}</head>
+
+<body class="iframe_body">
+<div class="warpper">
+    <div class="title">手机 - 翻拍活动</div>
+    <div class="content">
+        <div class="explanation" id="explanation">
+            <div class="ex_tit"><i class="sc_icon"></i><h4>操作提示</h4><span id="explanationZoom" title="收起提示"></span></div>
+            <ul>
+                <li>这个是奖品列表</li>
+                <li>可通过会员名称关键字进行搜索，如需详细搜索请在侧边栏进行高级搜索。</li>
+            </ul>
+        </div>
+        <div class="flexilist">
+            <div class="common-head">
+
+                <form action="touch_draw.php" name="searchForm">
+                    <div class="search">
+                        <div class="input">
+                            <input type="hidden" name="act" value="log_list">
+                            <input type="text" name="u_name" class="text nofocus" placeholder="会员名称" autocomplete="off" value="{$data.u_name}"/>
+                            <input type="text" name="phone" class="text nofocus" placeholder="会员手机号码" autocomplete="off"  value="{$data.phone}" />
+                            <select type="text" name="prize_index" class="text nofocus" placeholder="奖项" autocomplete="off" >
+                                <option value="">请选择第几个奖项</option>
+                                <option value="0">第一个奖项</option>
+                                <option value="1">第二个奖项</option>
+                                <option value="2">第三个奖项</option>
+                                <option value="3">第四个奖项</option>
+                                <option value="4">第五个奖项</option>
+                                <option value="5">第六个奖项</option>
+                                <option value="6">第七个奖项</option>
+                                <option value="7">第八个奖项</option>
+                                <option value="8">第九个奖项</option>
+                            </select>
+                            <select type="text" name="status" class="text nofocus" autocomplete="off" >
+                                <option value="">请选择操作状态</option>
+                                <option value="0">否</option>
+                                <option value="1">是</option>
+                            </select>
+                            <input type="submit" value="" class="not_btn" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="common-content">
+                <form method="POST" action="" name="listForm" onsubmit="return confirm_bath()">
+                    <div class="list-div"  id="listDiv">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                            <thead>
+                            <tr>
+                                <th width="3%" class="sign"><div class="tDiv"><input type="checkbox" name="all_list" class="checkbox" id="all_list" /><label for="all_list" class="checkbox_stars"></label></div></th>
+                                <th width="5%"><div class="tDiv">编号</div></th>
+                                <th width="10%"><div class="tDiv">用户手机号</div></th>
+                                <th width="10%"><div class="tDiv">用户名</div></th>
+                                <th width="10%"><div class="tDiv">奖品等级</div></th>
+                                <th width="8%"><div class="tDiv">奖品名</div></th>
+                                <th width="8%"><div class="tDiv">是否操作</div></th>
+                                <th width="12%" class="handle">操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {foreach from=$log_list item=list}
+                            <tr>
+                                <td class="sign"><div class="tDiv"><input type="checkbox" name="checkboxes[]" value="{$list.user_id}" class="checkbox" id="checkbox_{$list.user_id}" /><label for="checkbox_{$list.user_id}" class="checkbox_stars"></label></div></td>
+                                <td><div class="tDiv">{$list.id}</div></td>
+                                <td><div class="tDiv">{$list.phone}</div></td>
+                                <td><div class="tDiv">{$list.u_name}</div></td>
+                                <td><div class="tDiv">{$list.prize_level}</div></td>
+                                <td><div class="tDiv">{$list.prize_name}</div></td>
+                                <td><div class="tDiv">{if $list.status == 1}是{else}否{/if}</div></td>
+
+                                <td class="handle">
+                                    <div class="tDiv a2">
+                                        {if $list.status != 1}
+                                        <a href="touch_draw.php?act=edit_log&id={$list.id}" class="btn_see"><i class="sc_icon sc_icon_see"></i>标记</a>
+                                        {/if}
+
+                                    </div>
+                                </td>
+                            </tr>
+                            {foreachelse}
+                            <tr><td class="no-records" colspan="12">{$lang.no_records}</td></tr>
+                            {/foreach}
+                            </tbody>
+                            <tfoot>
+                            <tr>
+                                <td colspan="12">
+                                    <div class="tDiv">
+                                        <div class="list-page">
+                                            {include file="library/page.lbi"}
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="gj_search">
+            <div class="search-gao-list" id="searchBarOpen">
+                <i class="icon icon-zoom-in"></i>高级搜索
+            </div>
+            <div class="search-gao-bar">
+                <div class="handle-btn" id="searchBarClose"><i class="icon icon-zoom-out"></i>收起边栏</div>
+                <div class="title"><h3>高级搜索</h3></div>
+                <form method="get" name="formSearch_senior" action="javascript:searchUser()">
+                    <div class="searchContent">
+                        <div class="layout-box">
+                            <dl>
+                                <dt>{$lang.label_user_name}</dt>
+                                <dd><input type="text" value="" name="keyword" class="s-input-txt" autocomplete="off" /></dd>
+                            </dl>
+                            <dl>
+                                <dt>会员积分</dt>
+                                <dd><input type="text" value="" name="pay_points_lt"  class="s-input-txt-2" autocomplete="off" /><div class="bool">&nbsp;&nbsp;~&nbsp;&nbsp;</div><input type="text" value="" name="pay_points_gt"  class="s-input-txt-2"></dd>
+                            </dl>
+                            <dl>
+                                <dt>{$lang.mobile_phone}</dt>
+                                <dd><input type="text" value="" name="mobile_phone" class="s-input-txt" autocomplete="off" /></dd>
+                            </dl>
+                            <dl>
+                                <dt>{$lang.email}</dt>
+                                <dd><input type="text" value="" name="email" class="s-input-txt" autocomplete="off" /></dd>
+                            </dl>
+                            <dl>
+                                <dt>{$lang.label_rank_name}</dt>
+                                <dd>
+                                    <div  class="select_w145 imitate_select">
+                                        <div class="cite">请选择</div>
+                                        <ul>
+                                            <li><a href="javascript:;" data-value="0">{$lang.all_option}</a></li>
+                                            {foreach from=$user_ranks item=user_ranks key=k}
+                                            <li><a href="javascript:;" data-value="{$k}">{$user_ranks}</a></li>
+                                            {/foreach}
+                                        </ul>
+                                        <input name="user_rank" type="hidden" value="0">
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>{$lang.steps_shop_name}</dt>
+                                <dd>
+                                    <div id="shop_name_select" class="select_w145 imitate_select">
+                                        <div class="cite">请选择</div>
+                                        <ul>
+                                            <li><a href="javascript:;" data-value="0">{$lang.select_please}</a></li>
+                                            <li><a href="javascript:;" data-value="1">{$lang.s_shop_name}</a></li>
+                                            <li><a href="javascript:;" data-value="2">{$lang.s_qw_shop_name}</a></li>
+                                            <li><a href="javascript:;" data-value="3">{$lang.s_brand_type}</a></li>
+                                        </ul>
+                                        <input name="store_search" type="hidden" value="0" id="shop_name_val">
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl style="display:none" id="merchant_box">
+                                <dd>
+                                    <div class="select_w145 imitate_select">
+                                        <div class="cite">请选择</div>
+                                        <ul>
+                                            <li><a href="javascript:;" data-value="0">请选择</a></li>
+                                            {foreach from=$store_list item=store}
+                                            <li><a href="javascript:;" data-value="{$store.ru_id}">{$store.store_name}</a></li>
+                                            {/foreach}
+                                        </ul>
+                                        <input name="merchant_id" type="hidden" value="0" >
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl id="store_keyword" style="display:none">
+                                <dd><input type="text" value="" name="store_keyword" class="s-input-txt" autocomplete="off" /></dd>
+                            </dl>
+                            <dl style="display:none" id="store_type">
+                                <dd>
+                                    <div class="select_w145 imitate_select">
+                                        <div class="cite">请选择</div>
+                                        <ul>
+                                            <li><a href="javascript:;" data-value="0">{$lang.steps_shop_type}</a></li>
+                                            <li><a href="javascript:;" data-value="{$lang.flagship_store}">{$lang.flagship_store}</a></li>
+                                            <li><a href="javascript:;" data-value="{$lang.exclusive_shop}">{$lang.exclusive_shop}</a></li>
+                                            <li><a href="javascript:;" data-value="{$lang.franchised_store}">{$lang.franchised_store}</a></li>
+                                            <li><a href="javascript:;" data-value="{$lang.shop_store}">{$lang.shop_store}</a></li>
+                                        </ul>
+                                        <input name="store_type" type="hidden" value="0" >
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="clear"></dl>
+                            <dl>
+                                <dd class="bot_btn">
+                                    <input type="submit" class="btn red_btn" name="tj_search" value="提交查询" /><input type="reset" class="btn btn_reset" name="reset" value="重置" />
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+{include file ='library/pagefooter.lbi'}
+<script type="text/javascript">
+    listTable.recordCount = '{$record_count}';
+    listTable.pageCount = '{$page_count}';
+
+    {foreach from=$filter item=item key=key}
+    listTable.filter.{$key} = '{$item}';
+    {/foreach}
+
+    //列表导航栏设置下路选项
+    $(".ps-container").perfectScrollbar();
+
+    //高级搜索
+    $.divselect("#divselect","#quesetion");
+
+    $.divselect("#shop_name_select","#shop_name_val",function(obj){
+        var val = obj.attr("data-value");
+        get_store_search(val);
+    });
+    function get_store_search(val){
+        if(val == 1){
+            $("#merchant_box").css("display",'');
+            $("#store_keyword").css("display",'none');
+            $("#store_type").css("display",'none')
+        }else if(val == 2){
+            $("#merchant_box").css("display",'none');
+            $("#store_keyword").css("display",'');
+            $("#store_type").css("display",'none')
+        }else if(val == 3){
+            $("#merchant_box").css("display",'none');
+            $("#store_keyword").css("display",'');
+            $("#store_type").css("display",'')
+        }else{
+            $("#merchant_box").css("display",'none');
+            $("#store_keyword").css("display",'none');
+            $("#store_type").css("display",'none')
+        }
+    }
+    $(function(){
+        $('select[name="prize_index"]').val("{$data.prize_index}");
+        $('select[name="status"]').val("{$data.status}");
+    });
+</script>
+</body>
+</html>

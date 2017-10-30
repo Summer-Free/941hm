@@ -12,70 +12,20 @@
 		
 		<!--head-->
 		<div id="head">
-			<div style="height: 429px;background-image: url(themes/ecmoban_dsc/iamges/20170517/active-banner_01.jpg);"></div> 
-			<div style="height: 362px;background-image: url(themes/ecmoban_dsc/iamges/20170517/active-banner_02.jpg);"></div>
-			<div style="height: 423px;background-image: url(themes/ecmoban_dsc/iamges/20170517/active-banner_03.jpg);"></div>
+			<div style="height: 1086px;background: url(themes/ecmoban_dsc/iamges/20170517/active-1.jpg) top center;"></div> 
 		</div>
 
 		<!--main body-->
 		<div id="main-body">
 			<div class="w1400">
-				<h1 class="text-center"><span class="margin-r-122">金秋送壕礼</span>优惠享不停</h1>
-				<h3 class="text-center">
-					<span class="margin-r-80">精选产品 折上折</span>
-					<span class="margin-r-80">精选商品 专享享</span>
-					活动价+优惠券
-				</h3>
-				<!--优惠券列表-->
-					<ul class="coupon-list clearfix">
-					<!--{foreach from=$kelingqu_coupons item=kelingqu_coupons name=kelingqu_coupons}-->
-						<!-- {if $smarty.foreach.kelingqu_coupons.iteration !=4}-->
-						<li>
-						<!--{elseif $smarty.foreach.kelingqu_coupons.iteration ==4}-->
-						<li class="margin-r-0">
-						<!--{/if}-->
-							<div class="top">
-								<span class="money s1">{$kelingqu_coupons.cou_money}</span>
-								<span>实付满{$kelingqu_coupons.cou_man}使用</span>
-							</div>
-								<div class="btm" value="{$kelingqu_coupons.cou_id}" >
-									点击领取
-								</div>
-						</li>
-					<!--{/foreach}-->
-				</ul>
-				
-				<h2 class="text-center">优惠商品</h2>
-				<ul class="product-list clearfix">
-					<li class="left">
-						<a href="goods.php?id=217" style="display: block;border-bottom: 10px solid #dcdcdc;">
-							<img src="themes/ecmoban_dsc/iamges/20170517/active-pro-1.jpg" alt="">
-						</a>
-						<a href="goods.php?id=1560" style="display: block;border-bottom: 10px solid #dcdcdc;">
-							<img src="themes/ecmoban_dsc/iamges/20170517/active-pro-2.jpg" alt="">
-						</a>
-						<a href="goods.php?id=1559">
-							<img src="themes/ecmoban_dsc/iamges/20170517/active-pro-3.jpg" alt="">
-						</a>
-					</li>
-					<li class="right">
-						<a href="goods.php?id=131" style="display: block;border-bottom: 10px solid #dcdcdc;">
-							<img src="themes/ecmoban_dsc/iamges/20170517/active-pro-4.jpg" alt="">
-						</a>
-						<a href="goods.php?id=256" style="display: block;border-bottom: 10px solid #dcdcdc;">
-							<img src="themes/ecmoban_dsc/iamges/20170517/active-pro-5.jpg" alt="">
-						</a>
-						<a href="goods.php?id=22">
-							<img src="themes/ecmoban_dsc/iamges/20170517/active-pro-6.jpg" alt="">
-						</a>
-					</li>
-				</ul>
+				<div class="sec-1">
+					<img class="img1" src="themes/ecmoban_dsc/iamges/20170517/active-1.png" alt="">
+					<img src="themes/ecmoban_dsc/iamges/20170517/active-2.png" alt="">
+				</div>
 			</div>
 		</div>
 		<div id="foot">
-			<a href="index.php" style="display: inline-block;"><img src="themes/ecmoban_dsc/iamges/20170517/active-bg-4.png" alt=""></a>
-			<p style="font-size: 30px;color: #333;line-height: 1;font-weight: normal;">免单名单公布时间为活动结束后七个工作日内,被抽中的买家会</p>
-			<p style="font-size: 30px;color: #333;line-height: 1;font-weight: normal;">有工作人员联系通知,最终免单金额按订单实际付款金额为准(免单产品仅限活动页面)</p>
+
 		</div>
 		
 		<!-- #BeginLibraryItem "/library/user_menu_position.lbi" --><!-- #EndLibraryItem -->
@@ -106,7 +56,6 @@
 					},'json')
 				}
 					
-
 				});
 			});
         </script>

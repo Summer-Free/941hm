@@ -1,145 +1,158 @@
 {include file="page_header"}
 <link rel="stylesheet" href="../mobile/statics/css/activ-1.css">
-	<body>
-		<header>
-			<img class="img-responsive" width="100%" src="../mobile/statics/img/newapp/dzp-3.png" alt="" />
-			<a href="#" class="toIndex">首页</a>
-			<a href="#" class="share">分享</a>
-		</header>
-		<main>
-			<section class="sec-1 flex">
-				<h2>活动时间：11月3日00:00-11日23:59</h2>
-				<dl class="flex">
-					<dt>奖品 :</dt>
-					<dd>
-						<p>一等奖：价值16600元博古架</p>
-						<p>二等奖：价值8388元IPHONE X64G</p>
-						<p>三等奖：爱奇艺会员各种优惠券和小礼物</p>
-					</dd>
-				</dl>
-				<div class="wrap-notice flex">
-					<i class="icon"></i>
-					<div class="swiper-container notice">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-					            <p>1111111111</p>
-							</div>
-							<div class="swiper-slide">
-					            <p>222222222222222222222</p>
-							</div>
-							<div class="swiper-slide">
-					            <p>333333333322222222222333333333333333333</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="sec-2">
-				<ul>
-					<li class="flex">
-						<div>
-							<img class="img-responsive" width="100%" src="../mobile/statics/img/newapp/dzp-5.png" alt="">
-						</div>
-						<div>
-							<img class="img-responsive" width="100%" src="../mobile/statics/img/newapp/dzp-5.png" alt="">
-						</div>
-						<div>
-							<img class="img-responsive" width="100%" src="../mobile/statics/img/newapp/dzp-5.png" alt="">
-						</div>
-					</li>
-					<li class="flex">
-						<div>
-							<img class="img-responsive" width="100%" src="../mobile/statics/img/newapp/dzp-5.png" alt="">
-						</div>
-						<div>
-							<img class="img-responsive" width="100%" src="../mobile/statics/img/newapp/dzp-5.png" alt="">
-						</div>
-						<div>
-							<img class="img-responsive" width="100%" src="../mobile/statics/img/newapp/dzp-5.png" alt="">
-						</div>
-					</li>
-					<li class="flex">
-						<div>
-							<img class="img-responsive" width="100%" src="../mobile/statics/img/newapp/dzp-5.png" alt="">
-						</div>
-						<div>
-							<img class="img-responsive" width="100%" src="../mobile/statics/img/newapp/dzp-5.png" alt="">
-						</div>
-						<div>
-							<img class="img-responsive" width="100%" src="../mobile/statics/img/newapp/dzp-5.png" alt="">
-						</div>
-					</li>
-				</ul>
-			</section>
-			<section class="sec-3 flex">
-				<p>每天都有一次翻牌机会，<br />牌牌有奖！翻过不能再翻哦！</p>
-				<img class="img-responsive" width="100%" src="../mobile/statics/img/newapp/dzp-6.png" alt="">
-			</section>	
-		</main>
+<script src="../mobile/statics/js/layer.js"></script>
+<body>
+<header>
+    <img class="img-responsive" width="100%" src="../mobile/statics/img/newapp/dzp-3.png" alt="" />
+    <a href="#" class="toIndex">首页</a>
+    <a href="#" class="share">分享</a>
+</header>
+<main>
+    <section class="sec-1 flex">
+        <h2>活动时间：{date("m月d日 H:i:s",strtotime($config.start_time))}-{date("m月d日 H:i:s",strtotime($config.end_time))}</h2>
+        <dl class="flex">
+            <dt>奖品 :</dt>
+            <dd>
+                {foreach $config.prize_name as $k => $prize_name}
+                {if $k <= 2}
+                <p>{$config.prize_level[$k]}：{$prize_name}</p>
+                {/if}
+                {/foreach}
+            </dd>
+        </dl>
+        <div class="wrap-notice flex">
+            <i class="icon"></i>
+            <div class="swiper-container notice">
+                <div class="swiper-wrapper">
+                    {foreach $config.sham as $k => $sham}
+                    <div class="swiper-slide">
+                        <p>{$sham}</p>
+                    </div>
+                    {/foreach}
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-2">
+        <ul>
+            <li class="flex">
+                <div>
+                    <img class="img-responsive" width="100%" src="../mobile/statics/img/newapp/dzp-5.png" alt="">
+                </div>
+                <div>
+                    <img class="img-responsive" width="100%" src="../mobile/statics/img/newapp/dzp-5.png" alt="">
+                </div>
+                <div>
+                    <img class="img-responsive" width="100%" src="../mobile/statics/img/newapp/dzp-5.png" alt="">
+                </div>
+            </li>
+            <li class="flex">
+                <div>
+                    <img class="img-responsive" width="100%" src="../mobile/statics/img/newapp/dzp-5.png" alt="">
+                </div>
+                <div>
+                    <img class="img-responsive" width="100%" src="../mobile/statics/img/newapp/dzp-5.png" alt="">
+                </div>
+                <div>
+                    <img class="img-responsive" width="100%" src="../mobile/statics/img/newapp/dzp-5.png" alt="">
+                </div>
+            </li>
+            <li class="flex">
+                <div>
+                    <img class="img-responsive" width="100%" src="../mobile/statics/img/newapp/dzp-5.png" alt="">
+                </div>
+                <div>
+                    <img class="img-responsive" width="100%" src="../mobile/statics/img/newapp/dzp-5.png" alt="">
+                </div>
+                <div>
+                    <img class="img-responsive" width="100%" src="../mobile/statics/img/newapp/dzp-5.png" alt="">
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="sec-3 flex">
+        <p>每天都有一次翻牌机会，<br />牌牌有奖！翻过不能再翻哦！</p>
+        <img class="img-responsive" width="100%" src="../mobile/statics/img/newapp/dzp-6.png" alt="">
+    </section>
+</main>
 
-		<footer>
-			<dl>
-				<dt>活动细则:</dt>
-				<dd>
-					<p>1,商城注册用户均可参与。(活动时间：2017年11月3日00:00点—2017年11月11日23:00)</p>
-					<p>2,每个账号每天可以翻牌一次</p>
-					<p>3,实物抽奖奖品关注微信公众号后联系客服领取，奖品在活动结束后10个工作日内寄出，请确保邮寄地址填写无误</p>
-					<p>4,为保证活动的公平性，若发生恶意刷券等非法行为，平台有权回收相关优惠券</p>
-					<p>5,若您对本次双十一活动仍有任何疑问，可随时咨询客服</p>
-					<p>6,941红木网有权对双十一活动中未尽事宜依法作出解释</p>
-				</dd>
-			</dl>
-		</footer>
-		<div class="dialog-getTel dialog">
-			<div class="content">
-				<div class="head"><div class="close">关闭</div></div>
-				<form class="flex" action="">
-					<input id="tel" type="number" pattern="[0-9]*" placeholder="请输入您的手机号" />
-					<div class="getCode">
-						<input id="code" type="number" pattern="[0-9]*" placeholder="填写您的验证码">
-						<button>获取验证码</button>
-					</div>
-					<a>完成</a>
-				</form>
-			</div>
-		</div>	
+<footer>
+    <dl>
+        <dt>活动细则:</dt>
+        <dd>
+            {$config.rule}
+        </dd>
+    </dl>
+</footer>
+<div class="dialog-getTel dialog">
+    <div class="content">
+        <div class="head"><div class="close">关闭</div></div>
+        <form class="flex" action="">
+            <input id="tel" type="number" pattern="[0-9]*" placeholder="请输入您的手机号" />
+            <div class="getCode">
+                <input id="code" type="number" pattern="[0-9]*" placeholder="填写您的验证码">
+                <button type="button">获取验证码</button>
+            </div>
+            <a>完成</a>
+        </form>
+    </div>
+</div>
 
-		<div class="dialog-Winning dialog">
-			<div class="content">
-				<div class="close"></div>
-				<div class="main-body">
-					<p>获得<span>1200元优惠券</span>X1</p>
-					<p>请关注微信公众号【941红木】查看</p>
-					<a>确 定</a>
-				</div>
-			</div>
-		</div>
-	</body>
+<div class="dialog-Winning dialog">
+    <div class="content">
+        <div class="close"></div>
+        <div class="main-body">
+            <p>获得<span class="prize_name"></span>X1</p>
+            <p>请关注微信公众号【941红木】查看</p>
+            <a>确 定</a>
+        </div>
+    </div>
+</div>
+<div class="dialog-share dialog">
+    <div class="content">
+        <div class="close"></div>
+        <div class="main-body">
+            <div class="jiathis_style_m"></div>
+        </div>
+    </div>
+</div>
+<div class="dialog-wx-share dialog">
+    <div class="content">
+        <div class="close"></div>
+        <div class="main-body">
+            <img src="../mobile/statics/img/newapp/dzp-6.png" alt="微信引导分享">
+        </div>
+    </div>
+</div>
+</body>
+<script src="../mobile/statics/js/active.js"></script>
 
-	<script src="../mobile/statics/js/active.js"></script>
-    <!--统计代码-->
-    <script type="text/javascript">
-            var _hmt = _hmt || [];
-            (function() {
-                  var hm = document.createElement("script");
-                  hm.src = "https://hm.baidu.com/hm.js?49a2fe95c7db7c2caf78bc0d55c31d53";
-                  var s = document.getElementsByTagName("script")[0]; 
-                  s.parentNode.insertBefore(hm, s);
-            })();
-     </script>
-     <script>
-	     $(function() {
-			var swiper = new Swiper('.notice', {
-				paginationClickable: true,
-				direction: 'vertical',
-				loop: true,
-				grabCursor: true,
-				autoplayDisableOnInteraction: false,
-				autoplay: 4000,
-				speed: 700,
-				freeMode: true,
-				noSwiping : true,
-			});
-	     })
-     </script>
+<!--统计代码-->
+<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?49a2fe95c7db7c2caf78bc0d55c31d53";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<script>
+    $(function() {
+        var swiper = new Swiper('.notice', {
+            paginationClickable: true,
+            direction: 'vertical',
+            loop: true,
+            grabCursor: true,
+            autoplayDisableOnInteraction: false,
+            autoplay: 4000,
+            speed: 700,
+            freeMode: true,
+            noSwiping : true,
+        });
+    })
+</script>
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_m.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
 </html>

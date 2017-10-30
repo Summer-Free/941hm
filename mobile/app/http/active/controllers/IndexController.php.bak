@@ -1,0 +1,21 @@
+<?php
+	namespace http\active\controllers;
+	//use libraries\Migrate;
+	use http\base\controllers\FrontendController;
+	class IndexController extends FrontendController{
+		public function actionIndex()
+		{
+			//$this->init_params();
+	        // 是否开启wap
+	        if(!$GLOBALS['_CFG']['wap_config'])
+	        {
+	        	die(L('wap_config'));
+	    	}
+	    	$user_id=$_SESSION['user_id'];
+	    	$this->assign('user_id',$user_id);
+	    	$this->display('index');
+	        
+        }
+		
+	}
+?>

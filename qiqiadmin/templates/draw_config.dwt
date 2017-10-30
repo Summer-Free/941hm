@@ -1,0 +1,610 @@
+<!doctype html>
+<html>
+<head>{include file ='library/admin_html_head.lbi'}</head>
+
+<body class="iframe_body">
+
+<div class="warpper">
+    <div class="title"><a href="{$action_link.href}" class="s-back">{$lang.back}</a>手机-翻牌配置</div>
+    <div class="content">
+        <div class="explanation" id="explanation">
+            <div class="ex_tit"><i class="sc_icon"></i><h4>操作提示</h4><span id="explanationZoom" title="收起提示"></span></div>
+            <ul>
+                <li>该配置固定九个奖项。</li>
+                <li>奖项为空时默认为未中奖。</li>
+                <li>虚假奖项的填写请已回车分隔。</li>
+                <li>请选择一个首次必得商品。原则多个将是第一个</li>
+                <li>优惠券奖项设置奖项名称时。请以 (优惠券编号,优惠券名称)格式来储存（例：27,满5000-500）</li>
+            </ul>
+        </div>
+        <div class="flexilist">
+            <div class="mian-info">
+                <form action="touch_draw.php?act=edit" method="post" name="theForm" enctype="multipart/form-data" id="agency_form">
+                    <div class="switch_info">
+                        <div class="item">
+                            <div class="label">功能名称：</div>
+                            <div class="label_value">
+                                <input type="text" name="data[name]" class="text" readonly  value="{$draw.name}" autocomplete="off" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="label">活动开始时间：</div>
+                            <div class="label_value">
+                                <div class="text_time" id="text_time_start">
+                                    <input type="text" name="cfg_value[start_time]" value="{$draw.config.start_time}" id="start_time_id" class="text" autocomplete="off" readonly />
+                                </div>
+                                <span class="bolang">&nbsp;&nbsp;~&nbsp;&nbsp;</span>
+                                <div class="text_time" id="text_time_end">
+                                    <input type="text" name="cfg_value[end_time]" value="{$config.end_time}" id="end_time_id" class="text" autocomplete="off" readonly />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="label">活动规则说明：</div>
+                            <div class="label_value">
+                                <textarea rows="3" class="text" name="cfg_value[rule]">{$draw.config.rule}</textarea>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="label">虚假中奖信息：</div>
+                            <div class="label_value">
+                                <textarea rows="3" class="text" name="cfg_value[sham]">{$draw.config.sham}</textarea>
+
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="label">奖项设置：</div>
+                        </div>
+                        <div class="item">
+                            <table class="table ectouch-table prize_list" width="100%">
+                                <tr>
+                                    <th class="text-center" >奖项图片</th>
+                                    <th class="text-center" >奖项</th>
+                                    <th class="text-center" >奖项类型</th>
+                                    <th class="text-center" >奖品</th>
+                                    <th class="text-center" >数量</th>
+                                    <th class="text-center" >概率（总和越大基数越大）</th>
+                                    <th class="text-center" >首次必得</th>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <div class="type-file-box">
+                                            <input type="button" name="button"  class="type-file-button" value="" />
+                                            <input type="file" class="type-file-file"  name="draw_img[]" data-state="imgfile" size="30" hidefocus="true" value="" />
+                                            {if $draw.config.textfile.0}
+                                            <span class="show">
+                                                    <a href="" target="_blank" class="nyroModal"><i class="icon icon-picture" onmouseover="toolTip('<img src={$draw.config.textfile.0}>')" onmouseout="toolTip()"></i></a>
+                                                </span>
+                                            {/if}
+                                            <input type="text" name="cfg_value[textfile][]" class="type-file-text"  autocomplete="off" readonly value="{$draw.config.textfile.0}" />
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="text"  size="10" name="cfg_value[prize_level][]" class="form-control" placeholder="一等奖" value="{$draw.config.prize_level.0}">
+                                    </td>
+                                    <td class="text-center">
+                                        <label>
+                                            <input type="radio" name="cfg_value[prize_type][0]" class="form-control" placeholder="奖项类型" value="1">
+                                            优惠券
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="cfg_value[prize_type][0]" class="form-control" placeholder="奖项类型" value="2">
+                                            实物
+                                        </label>
+                                    </td>
+                                    <td class="text-center"><input type="text" name="cfg_value[prize_name][]"  placeholder="例如：法拉利跑车"  size="10" value="{$draw.config.prize_name.0}">
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="text"  size="10" name="cfg_value[prize_count][]"  placeholder="例如：3" value="{$draw.config.prize_count.0}">
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="input-group">
+                                            <input type="text"  size="10" name="cfg_value[prize_prob][]"   placeholder="例如：1" value="{$draw.config.prize_prob.0}">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <label>
+                                            <input type="radio" name="cfg_value[must][0]" class="form-control"  value="1">
+                                            是
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="cfg_value[must][0]" class="form-control"  value="0">
+                                            否
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <div class="type-file-box">
+                                            <input type="button" name="button"  class="type-file-button" value="" />
+                                            <input type="file" class="type-file-file"  name="draw_img[]" data-state="imgfile" size="30" hidefocus="true" value="" />
+                                            {if $draw.config.textfile.1}
+                                            <span class="show">
+                                                    <a href="" target="_blank" class="nyroModal"><i class="icon icon-picture" onmouseover="toolTip('<img src={$draw.config.textfile.1}>')" onmouseout="toolTip()"></i></a>
+                                                </span>
+                                            {/if}
+                                            <input type="text" name="cfg_value[textfile][]" class="type-file-text"  autocomplete="off" readonly value="{$draw.config.textfile.1}" />
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="text"  size="10" name="cfg_value[prize_level][]" class="form-control" placeholder="一等奖" value="{$draw.config.prize_level.1}">
+                                    </td>
+                                    <td class="text-center">
+                                        <label>
+                                            <input type="radio" name="cfg_value[prize_type][1]" class="form-control" placeholder="奖项类型" value="1">
+                                            优惠券
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="cfg_value[prize_type][1]" class="form-control" placeholder="奖项类型" value="2">
+                                            实物
+                                        </label>
+                                    </td>
+                                    <td class="text-center"><input type="text" name="cfg_value[prize_name][]"  placeholder="例如：法拉利跑车"  size="10" value="{$draw.config.prize_name.1}">
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="text"  size="10" name="cfg_value[prize_count][]"  placeholder="例如：3" value="{$draw.config.prize_count.1}">
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="input-group">
+                                            <input type="text"  size="10" name="cfg_value[prize_prob][]"   placeholder="例如：1" value="{$draw.config.prize_prob.1}">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <label>
+                                            <input type="radio" name="cfg_value[must][1]" class="form-control"  value="1">
+                                            是
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="cfg_value[must][1]" class="form-control"  value="0">
+                                            否
+                                        </label>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <div class="type-file-box">
+                                            <input type="button" name="button"  class="type-file-button" value="" />
+                                            <input type="file" class="type-file-file"  name="draw_img[]" data-state="imgfile" size="30" hidefocus="true" value="" />
+                                            {if $draw.config.textfile.2}
+                                            <span class="show">
+                                                    <a href="" target="_blank" class="nyroModal"><i class="icon icon-picture" onmouseover="toolTip('<img src={$draw.config.textfile.2}>')" onmouseout="toolTip()"></i></a>
+                                                </span>
+                                            {/if}
+                                            <input type="text" name="cfg_value[textfile][]" class="type-file-text"  autocomplete="off" readonly value="{$draw.config.textfile.2}" />
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="text"  size="10" name="cfg_value[prize_level][]" class="form-control" placeholder="一等奖" value="{$draw.config.prize_level.2}">
+                                    </td>
+                                    <td class="text-center">
+                                        <label>
+                                            <input type="radio" name="cfg_value[prize_type][2]" class="form-control" placeholder="奖项类型" value="1">
+                                            优惠券
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="cfg_value[prize_type][2]" class="form-control" placeholder="奖项类型" value="2">
+                                            实物
+                                        </label>
+                                    </td>
+                                    <td class="text-center"><input type="text" name="cfg_value[prize_name][]"  placeholder="例如：法拉利跑车"  size="10" value="{$draw.config.prize_name.2}">
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="text"  size="10" name="cfg_value[prize_count][]"  placeholder="例如：3" value="{$draw.config.prize_count.2}">
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="input-group">
+                                            <input type="text"  size="10" name="cfg_value[prize_prob][]"   placeholder="例如：1" value="{$draw.config.prize_prob.2}">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <label>
+                                            <input type="radio" name="cfg_value[must][2]" class="form-control"  value="1">
+                                            是
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="cfg_value[must][2]" class="form-control"  value="0">
+                                            否
+                                        </label>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <div class="type-file-box">
+                                            <input type="button" name="button"  class="type-file-button" value="" />
+                                            <input type="file" class="type-file-file"  name="draw_img[]" data-state="imgfile" size="30" hidefocus="true" value="" />
+                                            {if $draw.config.textfile.3}
+                                            <span class="show">
+                                                    <a href="" target="_blank" class="nyroModal"><i class="icon icon-picture" onmouseover="toolTip('<img src={$draw.config.textfile.3}>')" onmouseout="toolTip()"></i></a>
+                                                </span>
+                                            {/if}
+                                            <input type="text" name="cfg_value[textfile][]" class="type-file-text"  autocomplete="off" readonly value="{$draw.config.textfile.3}" />
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="text"  size="10" name="cfg_value[prize_level][]" class="form-control" placeholder="一等奖" value="{$draw.config.prize_level.3}">
+                                    </td>
+                                    <td class="text-center">
+                                        <label>
+                                            <input type="radio" name="cfg_value[prize_type][3]" class="form-control" placeholder="奖项类型" value="1">
+                                            优惠券
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="cfg_value[prize_type][3]" class="form-control" placeholder="奖项类型" value="2">
+                                            实物
+                                        </label>
+                                    </td>
+                                    <td class="text-center"><input type="text" name="cfg_value[prize_name][]"  placeholder="例如：法拉利跑车"  size="10" value="{$draw.config.prize_name.3}">
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="text"  size="10" name="cfg_value[prize_count][]"  placeholder="例如：3" value="{$draw.config.prize_count.3}">
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="input-group">
+                                            <input type="text"  size="10" name="cfg_value[prize_prob][]"   placeholder="例如：1" value="{$draw.config.prize_prob.3}">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <label>
+                                            <input type="radio" name="cfg_value[must][3]" class="form-control"  value="1">
+                                            是
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="cfg_value[must][3]" class="form-control"  value="0">
+                                            否
+                                        </label>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <div class="type-file-box">
+                                            <input type="button" name="button"  class="type-file-button" value="" />
+                                            <input type="file" class="type-file-file"  name="draw_img[]" data-state="imgfile" size="30" hidefocus="true" value="" />
+                                            {if $draw.config.textfile.4}
+                                            <span class="show">
+                                                    <a href="" target="_blank" class="nyroModal"><i class="icon icon-picture" onmouseover="toolTip('<img src={$draw.config.textfile.4}>')" onmouseout="toolTip()"></i></a>
+                                                </span>
+                                            {/if}
+                                            <input type="text" name="cfg_value[textfile][]" class="type-file-text"  autocomplete="off" readonly value="{$draw.config.textfile.4}" />
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="text"  size="10" name="cfg_value[prize_level][]" class="form-control" placeholder="一等奖" value="{$draw.config.prize_level.4}">
+                                    </td>
+                                    <td class="text-center">
+                                        <label>
+                                            <input type="radio" name="cfg_value[prize_type][4]" class="form-control" placeholder="奖项类型" value="1">
+                                            优惠券
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="cfg_value[prize_type][4]" class="form-control" placeholder="奖项类型" value="2">
+                                            实物
+                                        </label>
+                                    </td>
+                                    <td class="text-center"><input type="text" name="cfg_value[prize_name][]"  placeholder="例如：法拉利跑车"  size="10" value="{$draw.config.prize_name.4}">
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="text"  size="10" name="cfg_value[prize_count][]"  placeholder="例如：3" value="{$draw.config.prize_count.4}">
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="input-group">
+                                            <input type="text"  size="10" name="cfg_value[prize_prob][]"   placeholder="例如：1" value="{$draw.config.prize_prob.4}">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <label>
+                                            <input type="radio" name="cfg_value[must][4]" class="form-control"  value="1">
+                                            是
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="cfg_value[must][4]" class="form-control"  value="0">
+                                            否
+                                        </label>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <div class="type-file-box">
+                                            <input type="button" name="button"  class="type-file-button" value="" />
+                                            <input type="file" class="type-file-file"  name="draw_img[]" data-state="imgfile" size="30" hidefocus="true" value="" />
+                                            {if $draw.config.textfile.5}
+                                            <span class="show">
+                                                    <a href="" target="_blank" class="nyroModal"><i class="icon icon-picture" onmouseover="toolTip('<img src={$draw.config.textfile.5}>')" onmouseout="toolTip()"></i></a>
+                                                </span>
+                                            {/if}
+                                            <input type="text" name="cfg_value[textfile][]" class="type-file-text"  autocomplete="off" readonly value="{$draw.config.textfile.5}" />
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="text"  size="10" name="cfg_value[prize_level][]" class="form-control" placeholder="一等奖" value="{$draw.config.prize_level.5}">
+                                    </td>
+                                    <td class="text-center">
+                                        <label>
+                                            <input type="radio" name="cfg_value[prize_type][5]" class="form-control" placeholder="奖项类型" value="1">
+                                            优惠券
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="cfg_value[prize_type][5]" class="form-control" placeholder="奖项类型" value="2">
+                                            实物
+                                        </label>
+                                    </td>
+                                    <td class="text-center"><input type="text" name="cfg_value[prize_name][]"  placeholder="例如：法拉利跑车"  size="10" value="{$draw.config.prize_name.5}">
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="text"  size="10" name="cfg_value[prize_count][]"  placeholder="例如：3" value="{$draw.config.prize_count.5}">
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="input-group">
+                                            <input type="text"  size="10" name="cfg_value[prize_prob][]"   placeholder="例如：1" value="{$draw.config.prize_prob.5}">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <label>
+                                            <input type="radio" name="cfg_value[must][5]" class="form-control"  value="1">
+                                            是
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="cfg_value[must][5]" class="form-control"  value="0">
+                                            否
+                                        </label>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <div class="type-file-box">
+                                            <input type="button" name="button"  class="type-file-button" value="" />
+                                            <input type="file" class="type-file-file"  name="draw_img[]" data-state="imgfile" size="30" hidefocus="true" value="" />
+                                            {if $draw.config.textfile.6}
+                                            <span class="show">
+                                                    <a href="" target="_blank" class="nyroModal"><i class="icon icon-picture" onmouseover="toolTip('<img src={$draw.config.textfile.6}>')" onmouseout="toolTip()"></i></a>
+                                                </span>
+                                            {/if}
+                                            <input type="text" name="cfg_value[textfile][]" class="type-file-text"  autocomplete="off" readonly value="{$draw.config.textfile.6}" />
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="text"  size="10" name="cfg_value[prize_level][]" class="form-control" placeholder="一等奖" value="{$draw.config.prize_level.6}">
+                                    </td>
+                                    <td class="text-center">
+                                        <label>
+                                            <input type="radio" name="cfg_value[prize_type][6]" class="form-control" placeholder="奖项类型" value="1">
+                                            优惠券
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="cfg_value[prize_type][6]" class="form-control" placeholder="奖项类型" value="2">
+                                            实物
+                                        </label>
+                                    </td>
+                                    <td class="text-center"><input type="text" name="cfg_value[prize_name][]"  placeholder="例如：法拉利跑车"  size="10" value="{$draw.config.prize_name.6}">
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="text"  size="10" name="cfg_value[prize_count][]"  placeholder="例如：3" value="{$draw.config.prize_count.6}">
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="input-group">
+                                            <input type="text"  size="10" name="cfg_value[prize_prob][]"   placeholder="例如：1" value="{$draw.config.prize_prob.6}">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <label>
+                                            <input type="radio" name="cfg_value[must][6]" class="form-control"  value="1">
+                                            是
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="cfg_value[must][6]" class="form-control"  value="0">
+                                            否
+                                        </label>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <div class="type-file-box">
+                                            <input type="button" name="button"  class="type-file-button" value="" />
+                                            <input type="file" class="type-file-file"  name="draw_img[]" data-state="imgfile" size="30" hidefocus="true" value="" />
+                                            {if $draw.config.textfile.7}
+                                            <span class="show">
+                                                    <a href="" target="_blank" class="nyroModal"><i class="icon icon-picture" onmouseover="toolTip('<img src={$draw.config.textfile.7}>')" onmouseout="toolTip()"></i></a>
+                                                </span>
+                                            {/if}
+                                            <input type="text" name="cfg_value[textfile][]" class="type-file-text"  autocomplete="off" readonly value="{$draw.config.textfile.7}" />
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="text"  size="10" name="cfg_value[prize_level][]" class="form-control" placeholder="一等奖" value="{$draw.config.prize_level.7}">
+                                    </td>
+                                    <td class="text-center">
+                                        <label>
+                                            <input type="radio" name="cfg_value[prize_type][7]" class="form-control" placeholder="奖项类型" value="1">
+                                            优惠券
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="cfg_value[prize_type][7]" class="form-control" placeholder="奖项类型" value="2">
+                                            实物
+                                        </label>
+                                    </td>
+                                    <td class="text-center"><input type="text" name="cfg_value[prize_name][]"  placeholder="例如：法拉利跑车"  size="10" value="{$draw.config.prize_name.7}">
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="text"  size="10" name="cfg_value[prize_count][]"  placeholder="例如：3" value="{$draw.config.prize_count.7}">
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="input-group">
+                                            <input type="text"  size="10" name="cfg_value[prize_prob][]"   placeholder="例如：1" value="{$draw.config.prize_prob.7}">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <label>
+                                            <input type="radio" name="cfg_value[must][7]" class="form-control"  value="1">
+                                            是
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="cfg_value[must][7]" class="form-control"  value="0">
+                                            否
+                                        </label>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <div class="type-file-box">
+                                            <input type="button" name="button"  class="type-file-button" value="" />
+                                            <input type="file" class="type-file-file"  name="draw_img[]" data-state="imgfile" size="30" hidefocus="true" value="" />
+                                            {if $draw.config.textfile.8}
+                                            <span class="show">
+                                                    <a href="" target="_blank" class="nyroModal"><i class="icon icon-picture" onmouseover="toolTip('<img src={$draw.config.textfile.8}>')" onmouseout="toolTip()"></i></a>
+                                                </span>
+                                            {/if}
+                                            <input type="text" name="cfg_value[textfile][]" class="type-file-text"  autocomplete="off" readonly value="{$draw.config.textfile.8}" />
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="text"  size="10" name="cfg_value[prize_level][]" class="form-control" placeholder="一等奖" value="{$draw.config.prize_level.8}">
+                                    </td>
+                                    <td class="text-center">
+                                        <label>
+                                            <input type="radio" name="cfg_value[prize_type][8]" class="form-control" placeholder="奖项类型" value="1">
+                                            优惠券
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="cfg_value[prize_type][8]" class="form-control" placeholder="奖项类型" value="2">
+                                            实物
+                                        </label>
+                                    </td>
+                                    <td class="text-center"><input type="text" name="cfg_value[prize_name][]"  placeholder="例如：法拉利跑车"  size="10" value="{$draw.config.prize_name.8}">
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="text"  size="10" name="cfg_value[prize_count][]"  placeholder="例如：3" value="{$draw.config.prize_count.8}">
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="input-group">
+                                            <input type="text"  size="10" name="cfg_value[prize_prob][]"   placeholder="例如：1" value="{$draw.config.prize_prob.8}">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <label>
+                                            <input type="radio" name="cfg_value[must][8]" class="form-control"  value="1">
+                                            是
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="cfg_value[must][8]" class="form-control"  value="0">
+                                            否
+                                        </label>
+                                    </td>
+
+                                </tr>
+
+                            </table>
+
+                        </div>
+                        <div class="item">
+                            <div class="label">&nbsp;</div>
+                            <div class="label_value info_btn mt0">
+                                <a href="javascript:;" class="button" name="Submit" id="submitBtn">{$lang.button_submit}</a>
+                                <a href="touch_draw.php?act=log_list" class="button">参与列表</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{include file ='library/pagefooter.lbi'}
+<script type="text/javascript" src="js/jquery.picTip.js"></script>
+<script type="text/javascript">
+
+    $.divselect("#media_type_sel","#media_type_val",function(obj){
+        var val = obj.attr("data-value");
+        showMedia(val);
+    });
+
+    var MediaList = new Array('0', '1', '2', '3');
+    function showMedia(AdMediaType)
+    {
+        for (I = 0; I < MediaList.length; I ++)
+        {
+            if (MediaList[I] == AdMediaType){
+                $("#"+AdMediaType).css("display","block");
+            }else{
+                $("#"+MediaList[I]).css("display","none")
+            }
+        }
+    }
+    //时间选择
+    var opts1 = {
+        'targetId':'start_time_id',//时间写入对象的id
+        'triggerId':['start_time_id'],//触发事件的对象id
+        'alignId':'text_time_start',//日历对齐对象
+        'format':'-',//时间格式 默认'YYYY-MM-DD HH:MM:SS'
+        'min':'{$snatch.start_time}' //最小时间
+    },opts2 = {
+        'targetId':'end_time_id',
+        'triggerId':['end_time_id'],
+        'alignId':'text_time_end',
+        'format':'-',
+        'min':'{$snatch.start_time}'
+    }
+    xvDate(opts1);
+    xvDate(opts2);
+    //表单验证
+    $(function(){
+        $("#submitBtn").click(function(){
+            if($("#agency_form").valid()){
+                $("#agency_form").submit();
+            }
+        });
+
+        $('#agency_form').validate({
+            errorPlacement:function(error, element){
+                var error_div = element.parents('div.label_value').find('div.form_prompt');
+                element.parents('div.label_value').find(".notic").hide();
+                error_div.append(error);
+            },
+            rules:{
+                ad_name :{
+                    required:true
+                }
+            },
+            messages:{
+
+            }
+        });
+        $('input[name="cfg_value[prize_type][0]"][value="{$draw.config.prize_type.0}"]').prop('checked',true);
+        $('input[name="cfg_value[prize_type][1]"][value="{$draw.config.prize_type.1}"]').prop('checked',true);
+        $('input[name="cfg_value[prize_type][2]"][value="{$draw.config.prize_type.2}"]').prop('checked',true);
+        $('input[name="cfg_value[prize_type][3]"][value="{$draw.config.prize_type.3}"]').prop('checked',true);
+        $('input[name="cfg_value[prize_type][4]"][value="{$draw.config.prize_type.4}"]').prop('checked',true);
+        $('input[name="cfg_value[prize_type][5]"][value="{$draw.config.prize_type.5}"]').prop('checked',true);
+        $('input[name="cfg_value[prize_type][6]"][value="{$draw.config.prize_type.6}"]').prop('checked',true);
+        $('input[name="cfg_value[prize_type][7]"][value="{$draw.config.prize_type.7}"]').prop('checked',true);
+        $('input[name="cfg_value[prize_type][8]"][value="{$draw.config.prize_type.8}"]').prop('checked',true);
+        $('input[name="cfg_value[must][0]"][value="{$draw.config.must.0}"]').prop('checked',true);
+        $('input[name="cfg_value[must][1]"][value="{$draw.config.must.1}"]').prop('checked',true);
+        $('input[name="cfg_value[must][2]"][value="{$draw.config.must.2}"]').prop('checked',true);
+        $('input[name="cfg_value[must][3]"][value="{$draw.config.must.3}"]').prop('checked',true);
+        $('input[name="cfg_value[must][4]"][value="{$draw.config.must.4}"]').prop('checked',true);
+        $('input[name="cfg_value[must][5]"][value="{$draw.config.must.5}"]').prop('checked',true);
+        $('input[name="cfg_value[must][6]"][value="{$draw.config.must.6}"]').prop('checked',true);
+        $('input[name="cfg_value[must][7]"][value="{$draw.config.must.7}"]').prop('checked',true);
+        $('input[name="cfg_value[must][8]"][value="{$draw.config.must.8}"]').prop('checked',true)
+    });
+
+    function get_ad_type(val){
+        var ad_type_2 =$('#ad_type_2');
+
+        if(val == 1){
+            ad_type_2.css('display','');
+        }else{
+            ad_type_2.css('display','none');
+        }
+    }
+
+</script>
+</body>
+</html>
