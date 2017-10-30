@@ -1,57 +1,246 @@
 body {
-	background: url(../img/newapp/topic-1.jpg);
-	background-size: .55rem .55rem;
+	font-size: 1.333rem;
+	background-color: #e74143;
+}
+button {
+	-webkit-appearance: none;
+}
+.flex{
+	-webkit-display: flex;
+	        display: flex;
+}
+header {
+	position: relative;
+}
+header a {
+	position: absolute;
+	top: 1.77rem;
+	text-indent: -9999px;
+	opacity: .7;
+}
+header .toIndex {
+	left: 1.77rem;
+	width: 3.666rem;
+	height: 3.055rem;
+	background: url(../img/newapp/dzp-1.png) no-repeat;
+	background-size: 100% 100%;
+}
+header .share {
+	right: 1.77rem;
+	width: 3.055rem;
+	height: 3.055rem;
+	background: url(../img/newapp/dzp-2.png) no-repeat;
+	background-size: 100% 100%;
 }
 .sec-1 {
-	padding: 0 1rem;
-	font-size: 1.33rem;
-	color: #fff;
-	line-height: 1.1;
-	text-align: center;
+	padding-top: .55rem;
+	flex-direction: column;
 }
 .sec-1 h2 {
-	height: 2.5rem;
-	text-indent: -9999px;
-	background: url(../img/newapp/active-1.png) no-repeat top center;
-	background-size: 86%;
+	margin: 0 auto;
+	width: 25.333rem;
+	height: 2.1666rem;
+	line-height: 2.1666rem;
+	color: #e74143;
+	font-size: 1.333rem;
+	text-align: center;
+	border-radius: 3rem;
+	background-color: #fdd100;
 }
-.sec-1 img {
-	margin-top: 1rem;
+.sec-1 dl,
+.sec-1 .wrap-notice,
+.sec-2 {
+	justify-content: center;
 }
-.sec-1>p:last-child {
-	height: 7.55rem;
-	text-indent: -9999px;
-	background: url(../img/newapp/active-2.png) no-repeat center center;
-	background-size: 39%;
+.sec-1 dl {
+	padding-top: .8rem;
+	color: #fdd400;
 }
-.sec-2 h2,
-footer a {
-	display: block;
-	height: 2.888rem;
-	text-indent: -9999px;
+.sec-1 dt {
+	font-size: 2rem;
 }
-.sec-2 h2 {
-	background: url(../img/newapp/active-3.png) no-repeat center center;
-	background-size: 87%;
+.sec-1 dd {
+	padding: .8rem 0 0 .4rem;
 }
-footer a {
-	margin-bottom: 1rem;
-	background: url(../img/newapp/active-14.png) no-repeat center center;
-	background-size: 87%;
+.sec-1 .wrap-notice {
+	padding-top: .5rem;
 }
-.sec-2 ul,
-footer {
-	padding-top: 1rem;
+.sec-1 .wrap-notice .icon {
+	margin-right: 1rem;
+	width: 2.1666rem;
+	height: 1.8333rem;
+	background: url(../img/newapp/dzp-4.png) no-repeat;
+	background-size: 100% 100%;
+}
+.sec-1 .swiper-container {
+	margin: 0;
+	height: 2rem;
+	color: #fff;
+	font-size: 1rem;
+}
+.sec-2 ul {
+	padding: 1rem 4.1666rem 0;
 }
 .sec-2 li {
-	margin-top: 1rem;
+	margin-bottom: 1.5rem;
+	justify-content: space-between;
 }
-.sec-2 li a {
-	display: block;
+.sec-2 li div {
+	width: 9.111rem;
+	border-radius: 1rem;
+	box-shadow: 0 0 1.277rem rgba(122,9,41,.5);
+}
+.sec-3 {
+	padding: 1rem 1rem 0;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	color: #fdd500;
 }
 footer {
-	padding-bottom: 1rem;
+	padding: 1rem 1.5rem 5.555rem;
 	color: #fff;
-	font-size: 1.33rem;
+	background: url(../img/newapp/dzp-7.png) no-repeat bottom center;
+	background-size: 34.888rem 8.777rem; 
+}
+footer dd {
+	padding-left: 2rem;
+}
+
+
+
+.dialog {
+	overflow: hidden;
+	display: none;
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: calc(100vw);
+	height: calc(100vh);
+	background-color: rgba(0,0,0,1);
+}
+.dialog-Winning .content,
+.dialog-getTel .content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%,-50%,0);
+}
+.dialog-getTel .content {
+	width: 15.8333rem;
+	height: 10.1666rem;
+	min-width: 286px;
+	min-height: 183px;
+	border-radius: 8px;
+	background-color: #e5e5e5;
+}
+.dialog-getTel .head {
+	position: relative;
+	height: 2.2777rem;
+	min-height: 41px;
+	border-radius: 8px 8px 0 0;
+	background: -webkit-linear-gradient(#5ce7b3, #6cc1f3); 
+	background:         linear-gradient(#5ce7b3, #6cc1f3); 
+}
+.dialog-getTel .head .close {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 1.7222rem;
+	height: 1.7222rem;
+	text-indent: -9999px;
+	border-radius: 50%;
+	background: url(../img/newapp/qwdz-close.png) no-repeat;
+	background-size: 100% 100%; 
+}
+.dialog-getTel form {
+	padding: .5rem;
+	flex-direction: column;
+}
+.dialog-getTel input {
+	padding: 1rem 0 0 .5rem;
+	width: 100%;
+	font-size: 16px;
+	border: none;
+	border-bottom: 1px solid #d4d4d4;
+	border-radius: 0;
+	background-color: transparent;
+}
+.dialog-getTel button {
+	font-size: 12px;
+}
+.dialog-getTel .getCode {
+	position: relative;
+}
+.dialog-getTel .getCode button {
+	z-index: 10;
+	position: absolute;
+	bottom: 2px;
+	right: 0;
+	line-height: 1.8rem;
+	color: #00b5d2;
+	border: 2px solid #59e4b7;
+}
+.dialog-getTel a {
+	align-self: center;
+	margin-top: 2rem;
+	width: 4.666rem;
+	height: 1.666rem;
+	line-height: 1.666rem;
+	color: #fff;
+	font-size: 1.111rem;
 	text-align: center;
+	vertical-align: middle;
+	border-radius: 20px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+	background-color: #3af0d4;
+}
+.dialog-getTel .error {
+	padding-left: .5rem;
+	color: red;
+}
+.dialog-Winning .content {
+	width: 14.055rem;
+	height: 22.7222rem;
+	min-width: 202px;
+	min-height: 324px;
+	background: url(../img/newapp/dzp-9.png) no-repeat;
+	background-size: 100% 100%; 
+}
+.dialog-Winning .close {
+	position: absolute;
+	top: 5.5rem;
+	right: -.5rem;
+	width: 1.7222rem;
+	height: 1.7222rem;
+	background: url(../img/newapp/dzp-8.png) no-repeat;
+	background-size: 100% 100%; 
+}
+.dialog-Winning .main-body {
+	position: absolute;
+	bottom: 3rem;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+.dialog-Winning .main-body p {
+	color: #e75250;
+	font-size: .777rem;
+	line-height: 2;
+}
+.dialog-Winning .main-body p:first-child {
+	font-size: 1rem;
+}
+.dialog-Winning a {
+	display: inline-block;
+	margin-top: 1rem;
+	width: 6.944rem;
+	height: 2.222rem;
+	line-height: 2.222rem;
+	color: #fff;
+	font-size: 1.333rem;
+	border-radius: 2rem;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+	background-color: #ff5164;
 }
