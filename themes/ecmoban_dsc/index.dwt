@@ -174,15 +174,6 @@
 			                        		<a href="{$middle_nav.url}">{$middle_nav.name}</a>
 			                        	</li>
 		                        <!--{/foreach}-->
-		                        <!--
-		                        	<li><a href="experience_museum.php">智能体验馆</a></li>
-			                        <li><a class="showMsg" href="#">智能场景定制</a></li>
-			                        <li><a href="crowd_funding.php">匠物众筹</a></li>
-			                        <li><a href="daily_spike.php">每日秒杀</a></li>
-			                        <li><a href="latest_listing.php">新品上市</a></li>
-			                        <li><a href="free_trial.php">免费试用</a></li>
-			                        <li class="margin-r-0"><a href="article_cat.php?id=1008">帮助中心</a></li>
-		                        -->
 		                    </ul>
 		                </div> 
 		            </div>  
@@ -209,6 +200,7 @@
 							<a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
 							<ul class="point">
 								<li class="active"></li>
+								<li></li>
 								<li></li>
 								<li class="margin-r-0"></li>
 							</ul>
