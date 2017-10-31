@@ -48,7 +48,7 @@ html,body {
 	margin: 0 auto;
 	width: 1180px;
 	height: 1931px;
-	background: url(../../iamges/20170517/active-3.jpg) no-repeat top center;
+	background: url(../../iamges/20170517/active-24.png) no-repeat top center;
 }
 .sec-4 div a {
 	display: block;
@@ -163,7 +163,13 @@ html,body {
 	margin-bottom: 170px;
 	text-align: center;
 }
-.sec-10 .wrap1 div {
+.sec-10 .wrap1 .a1 {
+	float: left;
+}
+.sec-10 .wrap1 .a2 {
+	float: right;
+}
+/*.sec-10 .wrap1 div {
 	margin: 0 auto;
 	width: 1292px;
 	height: 908px;
@@ -196,4 +202,4 @@ html,body {
 }
 .sec-10 .wrap2 {
 	margin-bottom: 50px;
-}
+}*/

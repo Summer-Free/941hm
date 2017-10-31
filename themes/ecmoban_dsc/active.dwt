@@ -49,28 +49,24 @@
 				</div>
 
 				<div class="sec-10">
-					<div class="w1400">
+					<div class="w1200">
 						<h2>
 							<img src="themes/ecmoban_dsc/iamges/20170517/active-16.png" alt="">
 							<p>所赠物品款式均为随机</p>
 						</h2>
 						<ul>
-							<li><a href="goods.php?id=1787"><img src="themes/ecmoban_dsc/iamges/20170517/active-17.png" alt=""></a></li>
-							<li><a href="goods.php?id=1786"><img src="themes/ecmoban_dsc/iamges/20170517/active-18.png" alt=""></a></li>
-							<li><a href="goods.php?id=1788"><img src="themes/ecmoban_dsc/iamges/20170517/active-19.png" alt=""></a></li>
-							<li><a href="goods.php?id=1789"><img src="themes/ecmoban_dsc/iamges/20170517/active-20.png" alt=""></a></li>
-							<li><a href="goods.php?id=1792"><img src="themes/ecmoban_dsc/iamges/20170517/active-21.png" alt=""></a></li>
-							<li class="wrap1">
-								<div class="clearfix">
-									<a class="a1" href="goods.php?id=1793"></a>
-									<a class="a2" href="goods.php?id=1793"></a>
-								</div>
+							<li><a href="goods.php?id=1787"><img src="themes/ecmoban_dsc/iamges/20170517/active-9.jpg" alt=""></a></li>
+							<li><a href="goods.php?id=1786"><img src="themes/ecmoban_dsc/iamges/20170517/active-10.jpg" alt=""></a></li>
+							<li><a href="goods.php?id=1788"><img src="themes/ecmoban_dsc/iamges/20170517/active-11.jpg" alt=""></a></li>
+							<li><a href="goods.php?id=1789"><img src="themes/ecmoban_dsc/iamges/20170517/active-12.jpg" alt=""></a></li>
+							<li><a href="goods.php?id=1792"><img src="themes/ecmoban_dsc/iamges/20170517/active-13.jpg" alt=""></a></li>
+							<li class="wrap1 clearfix">
+								<a class="a1" href="goods.php?id=1793"><img src="themes/ecmoban_dsc/iamges/20170517/active-14.jpg" alt=""></a>
+								<a class="a2" href="goods.php?id=1793"><img src="themes/ecmoban_dsc/iamges/20170517/active-15.jpg" alt=""></a>
 							</li>
-							<li class="wrap2">
-								<div class="clearfix">
-									<a class="a1" href="goods.php?id=1790"></a>
-									<a class="a2" href="goods.php?id=1791"></a>
-								</div>
+							<li class="wrap1 clearfix">
+								<a class="a1" href="goods.php?id=1790"><img src="themes/ecmoban_dsc/iamges/20170517/active-16.jpg" alt=""></a>
+								<a class="a2" href="goods.php?id=1791"><img src="themes/ecmoban_dsc/iamges/20170517/active-17.jpg" alt=""></a>
 							</li>
 						</ul>
 					</div>
