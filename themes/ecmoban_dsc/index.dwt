@@ -393,25 +393,25 @@
 							<a href="limited_time_offer.php">查看更多</a>
 						</h2>
 						<ul>
-							<!--{foreach from=$new_goods item=new_goods name=new_goods}-->
-				            <!-- {if $smarty.foreach.new_goods.iteration ==1  } -->
+							<!--{foreach from=$goods_hot item=goods_hot name=goods_hot}-->
+				            <!-- {if $smarty.foreach.goods_hot.iteration ==1  } -->
 				            <li>
-				            <!-- {elseif $smarty.foreach.new_goods.iteration ==2 } -->
+				            <!-- {elseif $smarty.foreach.goods_hot.iteration ==2 } -->
 				            <li class="border-r-0">
-				            <!-- {elseif $smarty.foreach.new_goods.iteration ==3 } -->
+				            <!-- {elseif $smarty.foreach.goods_hot.iteration ==3 } -->
 				            <li class="border-b-0">
-				            <!-- {elseif $smarty.foreach.new_goods.iteration ==4 } -->
+				            <!-- {elseif $smarty.foreach.goods_hot.iteration ==4 } -->
 				            <li class="border-r-0 border-b-0">
 				            <!--{/if}-->
-				            <a href="goods.php?id={$new_goods.goods_id}">
+				            <a href="goods.php?id={$goods_hot.goods_id}">
 				                <div class="wrap-img">
-				                    <img class="lazy" data-original="{$new_goods.goods_thumb}" width="211" height="211" alt="{$new_goods.goods_name}">
+				                    <img class="lazy" data-original="{$goods_hot.goods_thumb}" width="211" height="211" alt="{$goods_hot.goods_name}">
 				                </div>
 				                <div class="wrap-info">
-				                    <h3>{$new_goods.goods_name|truncate:15}</h3>
+				                    <h3>{$goods_hot.goods_name|truncate:15}</h3>
 				                    <div class="sprice clearfix">
-				                    <ins class="float-l color-aa1920">{$new_goods.shop_price}</ins>
-				                    <del class="float-r">{$new_goods.market_price}</del>
+				                    <ins class="float-l color-aa1920">{$goods_hot.shop_price}</ins>
+				                    <del class="float-r">{$goods_hot.market_price}</del>
 				                    </div>
 				                </div>
 				            </a>
