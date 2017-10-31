@@ -30,10 +30,22 @@
 				<div class="sec-2">
 					<div class="w1200">
 						<ul class="clearfix">
-							<li><img src="themes/ecmoban_dsc/iamges/20170517/active-5.png" alt=""></li>
-							<li><img src="themes/ecmoban_dsc/iamges/20170517/active-6.png" alt=""></li>
-							<li><img src="themes/ecmoban_dsc/iamges/20170517/active-7.png" alt=""></li>
-							<li class="margin-r-0"><img src="themes/ecmoban_dsc/iamges/20170517/active-8.png" alt=""></li>
+							<!--{foreach item=kelingqu_coupons from=$kelingqu_coupons name=kelingqu_coupons}-->
+							
+							<!-- {if $smarty.foreach.kelingqu_coupons.iteration ==1}-->
+							<li><img src="themes/ecmoban_dsc/iamges/20170517/active-5.png" cou_id="{$kelingqu_coupons.cou_id}"   alt="满5000-500">
+							<!--{elseif $smarty.foreach.kelingqu_coupons.iteration ==2}-->
+							<li><img src="themes/ecmoban_dsc/iamges/20170517/active-6.png" cou_id="{$kelingqu_coupons.cou_id}" alt="满1W-1200">
+							<!--{elseif $smarty.foreach.kelingqu_coupons.iteration ==3}-->
+							<li><img src="themes/ecmoban_dsc/iamges/20170517/active-7.png" cou_id="{$kelingqu_coupons.cou_id}" alt="满2W-2600">
+							<!--{elseif $smarty.foreach.kelingqu_coupons.iteration ==4}-->
+							<li class="margin-r-0"><img src="themes/ecmoban_dsc/iamges/20170517/active-8.png" cou_id="{$kelingqu_coupons.cou_id}" alt="满3W-3900">
+							<!--{/if}-->
+							</li>
+							<!--{/foreach}-->
+							
+							
+							
 						</ul>
 					</div>
 				</div>
@@ -159,11 +171,23 @@
         		$('.sec-2 li img').on("click",function() {
         			var $this = $(this),
         				str = $this.attr("src"),
+        				id=$this.attr("cou_id"),
         				arr = str.split(""),
         				index = str.indexOf("."),
         				src = (str.indexOf("-1") != -1)?arr.slice(0,index).join("") + ".png":arr.slice(0,index).join("") + "-1.png";
-
-        			$this.attr("src",src);
+        				if({$smarty.session.user_id} == 0){
+							window.location.href="user.php?act=active";
+						}else{
+							$.post('coupons.php?act=coupons_receive',{'cou_id':id},function(data){
+								if(data.status=='ok'){
+									$this.attr("src",src);
+								}else{
+									alert ('您已领取过优惠券，请勿重复领取');
+									$this.attr("src",src);
+								}
+							},'json')
+						}
+						
         		});
 			});
         </script>
