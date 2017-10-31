@@ -19,13 +19,135 @@
 		<div id="main-body">
 			<div class="w1400">
 				<div class="sec-1">
-					<img class="img1" height="" src="themes/ecmoban_dsc/iamges/20170517/active-1.png" alt="">
+					<img class="img1" height="900" src="themes/ecmoban_dsc/iamges/20170517/active-1.png" alt="">
 					<img src="themes/ecmoban_dsc/iamges/20170517/active-2.png" alt="">
+					<div class="clearfix">
+						<img class="float-l" src="themes/ecmoban_dsc/iamges/20170517/active-3.png" alt="">
+						<img class="float-r" src="themes/ecmoban_dsc/iamges/20170517/active-4.png" alt="">
+					</div>
+				</div>
+
+				<div class="sec-2">
+					<div class="w1200">
+						<ul class="clearfix">
+							<li><img src="themes/ecmoban_dsc/iamges/20170517/active-5.png" alt=""></li>
+							<li><img src="themes/ecmoban_dsc/iamges/20170517/active-6.png" alt=""></li>
+							<li><img src="themes/ecmoban_dsc/iamges/20170517/active-7.png" alt=""></li>
+							<li class="margin-r-0"><img src="themes/ecmoban_dsc/iamges/20170517/active-8.png" alt=""></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="sec-3">
+					<p>1.本次活动商城注册用户均可参与。（活动时间：2017年11月1日00:00点—2017年11月11日24:00）</p>
+					<p>2. 翻牌活动每个账号每天可以翻牌一次。</p>
+					<p>3. 实物抽奖奖品关注微信公众号后联系客服领取，奖品在活动结束后10个工作日内寄出，请确保邮寄地址填写无误。</p>
+					<p>4. 为保证活动的公平性，若发生恶意刷券等非法行为，平台有权回收相关优惠券。</p>
+					<p>5.特价专区商品不参与双十一活动优惠券，双十一活动优惠券仅限双十一活动期间使用，如买家退款订单自动扣除优惠券优惠金额仅退实际付款金额，包邮产品仅限首页活动商品。</p>
+					<p>6. 对本次双十一活动仍有任何疑问，详情可咨询客服。</p>
+					<p>7. 941红木网有权对双十一活动中未尽事宜依法作出解释。</p>
+				</div>
+
+				<div class="sec-10">
+					<div class="w1400">
+						<h2>
+							<img src="themes/ecmoban_dsc/iamges/20170517/active-16.png" alt="">
+							<p>所赠物品款式均为随机</p>
+						</h2>
+						<ul>
+							<li><a href="goods.php?id=1559"><img src="themes/ecmoban_dsc/iamges/20170517/active-17.png" alt=""></a></li>
+							<li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/active-18.png" alt=""></a></li>
+							<li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/active-19.png" alt=""></a></li>
+							<li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/active-20.png" alt=""></a></li>
+							<li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/active-21.png" alt=""></a></li>
+							<li class="wrap1">
+								<div class="clearfix">
+									<a class="a1" href="#"></a>
+									<a class="a2" href="#"></a>
+								</div>
+							</li>
+							<li class="wrap2">
+								<div class="clearfix">
+									<a class="a1" href="#"></a>
+									<a class="a2" href="#"></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="sec-4">
+					<h2><img src="themes/ecmoban_dsc/iamges/20170517/active-10.png" alt=""></h2>
+					<div>
+						<a href="#">祥云沙发</a>
+						<a href="#">祥云书桌+书柜</a>
+						<a href="#">春意圆桌 </a>
+					</div>
+				</div>
+
+				<div class="sec-5">
+					<h2><img src="themes/ecmoban_dsc/iamges/20170517/active-11.png" alt=""></h2>
+					<div>
+						<a class="a1" href="#">祥云沙发</a>
+						<ul class="clearfix">
+							<li><a href="#">直角四抽电视柜</a></li>
+							<li><a href="#">财源滚滚沙发</a></li>
+							<li><a href="#">文宝沙发</a></li>
+							<li><a href="#">盛世沙发</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="sec-6">
+					<h2><img src="themes/ecmoban_dsc/iamges/20170517/active-12.png" alt=""></h2>
+					<div>
+						<a class="a1" href="#">福禄寿餐桌</a>
+						<ul class="clearfix">
+							<li><a href="#">象头圆台</a></li>
+							<li><a href="#">灯挂椅</a></li>
+							<li><a href="#">锦上添花茶台</a></li>
+							<li><a href="#">百子餐台</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="sec-7">
+					<h2><img src="themes/ecmoban_dsc/iamges/20170517/active-13.png" alt=""></h2>
+					<div>
+						<a class="a1" href="#">辉煌大床</a>
+						<ul class="clearfix">
+							<li><a href="#">祥云大床</a></li>
+							<li><a href="#">架子床</a></li>
+							<li><a href="#">锦上添花大床</a></li>
+							<li><a href="#">汉宫雕花大床</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="sec-8">
+					<h2><img src="themes/ecmoban_dsc/iamges/20170517/active-14.png" alt=""></h2>
+					<div>
+						<a class="a1" href="#">转角书桌</a>
+						<ul class="clearfix">
+							<li><a href="#">步步高博古架</a></li>
+							<li><a href="#">金钱博古架</a></li>
+							<li><a href="#">大班台</a></li>
+							<li><a href="#">如意办公室</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="sec-9">
+				<div class="w1400">
+					  为了让消费者更能放心购买，平台所有商品都具<br /> 有国家红木质检最高机构<i>中国木材木制品流通<br />协会红木流通专业委员会</i>进行检验并出具的纸<br />
+					  质检测报告，且检测结果在平台线上也可进行实时<br />
+					  查询。此外，所有商品由中国人民财产保险有限公<br />
+					  司全程承保，让消费者买得安心，买得放心。
 				</div>
 			</div>
 		</div>
 		<div id="foot">
-
+			<a href="index.php">返回首页</a>
 		</div>
 		
 		<!-- #BeginLibraryItem "/library/user_menu_position.lbi" --><!-- #EndLibraryItem -->
@@ -37,26 +159,16 @@
 		<script src="//wp.qiye.qq.com/qidian/2852152525/c07a0ec2548f94d63eab86933f484853" charset="utf-8"></script>
         <script type="text/javascript">
         	$(function() {
-				//点击领取优惠券
-				$(".coupon-list li").on("click",function() {
-				var $this = $(this);
-				var id = $(this).find(".btm").attr("value");
-				if({$smarty.session.user_id} == 0){
-					window.location.href="user.php?act=active";
-					return false;
-				}else{
-					$.post('coupons.php?act=coupons_receive',{'cou_id':id},function(data){
-						if(data.status=='ok')
-						{
-							$this.find(".btm").text("领取成功");
-						}else{
-							alert("您已领取过优惠券，请勿重复领取");
-							$this.find(".btm").text("领取成功");
-						}
-					},'json')
-				}
-					
-				});
+
+        		$('.sec-2 li img').on("click",function() {
+        			var $this = $(this),
+        				str = $this.attr("src"),
+        				arr = str.split(""),
+        				index = str.indexOf("."),
+        				src = (str.indexOf("-1") != -1)?arr.slice(0,index).join("") + ".png":arr.slice(0,index).join("") + "-1.png";
+
+        			$this.attr("src",src);
+        		});
 			});
         </script>
 	</body>
