@@ -76,6 +76,10 @@ html,body {
 	display: block;	
 	text-indent: -9999px;
 }
+.sec-5 li a {
+	width: 100%;
+	height: 100%;
+}
 .sec-5 .a1,
 .sec-6 .a1,
 .sec-7 .a1,

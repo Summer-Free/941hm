@@ -1,0 +1,10 @@
+html,body {
+	background: -webkit-linear-gradient(left, #4f1ab7 , #47dcff); 
+	background:    -moz-linear-gradient(right, #4f1ab7, #47dcff); 
+	background:      -o-linear-gradient(right, #4f1ab7, #47dcff); 
+	background:         linear-gradient(to right, #4f1ab7 , #47dcff); 
+}
+
+.sec-1 {
+	padding: 1rem 3.111rem 0;
+}

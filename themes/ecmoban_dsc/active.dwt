@@ -55,21 +55,21 @@
 							<p>所赠物品款式均为随机</p>
 						</h2>
 						<ul>
-							<li><a href="goods.php?id=1559"><img src="themes/ecmoban_dsc/iamges/20170517/active-17.png" alt=""></a></li>
-							<li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/active-18.png" alt=""></a></li>
-							<li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/active-19.png" alt=""></a></li>
-							<li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/active-20.png" alt=""></a></li>
-							<li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/active-21.png" alt=""></a></li>
+							<li><a href="goods.php?id=1787"><img src="themes/ecmoban_dsc/iamges/20170517/active-17.png" alt=""></a></li>
+							<li><a href="goods.php?id=1786"><img src="themes/ecmoban_dsc/iamges/20170517/active-18.png" alt=""></a></li>
+							<li><a href="goods.php?id=1788"><img src="themes/ecmoban_dsc/iamges/20170517/active-19.png" alt=""></a></li>
+							<li><a href="goods.php?id=1789"><img src="themes/ecmoban_dsc/iamges/20170517/active-20.png" alt=""></a></li>
+							<li><a href="goods.php?id=1792"><img src="themes/ecmoban_dsc/iamges/20170517/active-21.png" alt=""></a></li>
 							<li class="wrap1">
 								<div class="clearfix">
-									<a class="a1" href="#"></a>
-									<a class="a2" href="#"></a>
+									<a class="a1" href="goods.php?id=1793"></a>
+									<a class="a2" href="goods.php?id=1793"></a>
 								</div>
 							</li>
 							<li class="wrap2">
 								<div class="clearfix">
-									<a class="a1" href="#"></a>
-									<a class="a2" href="#"></a>
+									<a class="a1" href="goods.php?id=1790"></a>
+									<a class="a2" href="goods.php?id=1791"></a>
 								</div>
 							</li>
 						</ul>
@@ -79,21 +79,21 @@
 				<div class="sec-4">
 					<h2><img src="themes/ecmoban_dsc/iamges/20170517/active-10.png" alt=""></h2>
 					<div>
-						<a href="#">祥云沙发</a>
-						<a href="#">祥云书桌+书柜</a>
-						<a href="#">春意圆桌 </a>
+						<a href="goods.php?id=1209">祥云沙发</a>
+						<a href="goods.php?id=1213">祥云书桌+书柜</a>
+						<a href="goods.php?id=133">春意圆桌 </a>
 					</div>
 				</div>
 
 				<div class="sec-5">
 					<h2><img src="themes/ecmoban_dsc/iamges/20170517/active-11.png" alt=""></h2>
 					<div>
-						<a class="a1" href="#">祥云沙发</a>
+						<a class="a1" href="goods.php?id=1211">祥云沙发</a>
 						<ul class="clearfix">
-							<li><a href="#">直角四抽电视柜</a></li>
-							<li><a href="#">财源滚滚沙发</a></li>
-							<li><a href="#">文宝沙发</a></li>
-							<li><a href="#">盛世沙发</a></li>
+							<li><a href="goods.php?id=256">直角四抽电视柜</a></li>
+							<li><a href="goods.php?id=217">财源滚滚沙发</a></li>
+							<li><a href="goods.php?id=220">文宝沙发</a></li>
+							<li><a href="goods.php?id=191">盛世沙发</a></li>
 						</ul>
 					</div>
 				</div>
@@ -101,12 +101,12 @@
 				<div class="sec-6">
 					<h2><img src="themes/ecmoban_dsc/iamges/20170517/active-12.png" alt=""></h2>
 					<div>
-						<a class="a1" href="#">福禄寿餐桌</a>
+						<a class="a1" href="goods.php?id=131">福禄寿餐桌</a>
 						<ul class="clearfix">
-							<li><a href="#">象头圆台</a></li>
-							<li><a href="#">灯挂椅</a></li>
-							<li><a href="#">锦上添花茶台</a></li>
-							<li><a href="#">百子餐台</a></li>
+							<li><a href="goods.php?id=1560">象头圆台</a></li>
+							<li><a href="goods.php?id=920">灯挂椅</a></li>
+							<li><a href="goods.php?id=1234">锦上添花茶台</a></li>
+							<li><a href="goods.php?id=162">百子餐台</a></li>
 						</ul>
 					</div>
 				</div>
@@ -114,12 +114,12 @@
 				<div class="sec-7">
 					<h2><img src="themes/ecmoban_dsc/iamges/20170517/active-13.png" alt=""></h2>
 					<div>
-						<a class="a1" href="#">辉煌大床</a>
+						<a class="a1" href="goods.php?id=22">辉煌大床</a>
 						<ul class="clearfix">
-							<li><a href="#">祥云大床</a></li>
-							<li><a href="#">架子床</a></li>
-							<li><a href="#">锦上添花大床</a></li>
-							<li><a href="#">汉宫雕花大床</a></li>
+							<li><a href="goods.php?id=1212">祥云大床</a></li>
+							<li><a href="goods.php?id=1015">架子床</a></li>
+							<li><a href="goods.php?id=1017">锦上添花大床</a></li>
+							<li><a href="goods.php?id=703">汉宫雕花大床</a></li>
 						</ul>
 					</div>
 				</div>
@@ -127,12 +127,12 @@
 				<div class="sec-8">
 					<h2><img src="themes/ecmoban_dsc/iamges/20170517/active-14.png" alt=""></h2>
 					<div>
-						<a class="a1" href="#">转角书桌</a>
+						<a class="a1" href="goods.php?id=1003">转角书桌</a>
 						<ul class="clearfix">
-							<li><a href="#">步步高博古架</a></li>
-							<li><a href="#">金钱博古架</a></li>
-							<li><a href="#">大班台</a></li>
-							<li><a href="#">如意办公室</a></li>
+							<li><a href="goods.php?id=38">步步高博古架</a></li>
+							<li><a href="goods.php?id=47">金钱博古架</a></li>
+							<li><a href="goods.php?id=705">大班台</a></li>
+							<li><a href="goods.php?id=316">如意办公室</a></li>
 						</ul>
 					</div>
 				</div>
