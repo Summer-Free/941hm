@@ -270,8 +270,8 @@
 										<div class="product-info">
 											<h3>{$ms_re.goods_name|truncate:15}</h3>
 											<p class="clearfix">
-												<ins class="color-aa1920 float-l">{$ms_re.shop_price}</ins>
-												<del class="float-r">{$ms_re.market_price}</del>
+												<ins class="color-aa1920 float-l">￥{$ms_re.shop_price}</ins>
+												<del class="float-r">￥{$ms_re.market_price}</del>
 											</p>
 										</div>
 									</a>
@@ -370,8 +370,8 @@
 				                <div class="wrap-info">
 				                    <h3>{$new_goods.goods_name|truncate:15}</h3>
 				                    <div class="sprice clearfix">
-				                    <ins class="float-l color-aa1920">{$new_goods.shop_price}</ins>
-				                    <del class="float-r">{$new_goods.market_price}</del>
+				                    <ins class="float-l color-aa1920">￥{$new_goods.shop_price}</ins>
+				                    <del class="float-r">￥{$new_goods.market_price}</del>
 				                    </div>
 				                </div>
 				            </a>
@@ -402,8 +402,8 @@
 				                <div class="wrap-info">
 				                    <h3>{$goods_hot.goods_name|truncate:15}</h3>
 				                    <div class="sprice clearfix">
-				                    <ins class="float-l color-aa1920">{$goods_hot.shop_price}</ins>
-				                    <del class="float-r">{$goods_hot.market_price}</del>
+				                    <ins class="float-l color-aa1920">￥{$goods_hot.shop_price}</ins>
+				                    <del class="float-r">￥{$goods_hot.market_price}</del>
 				                    </div>
 				                </div>
 				            </a>
