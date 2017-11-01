@@ -117,30 +117,30 @@ footer dd {
 	left: 0;
 	width: calc(100vw);
 	height: calc(100vh);
-	background-color: rgba(0,0,0,1);
+	background-color: rgba(0,0,0,.5);
 }
 .dialog-Winning .content,
 .dialog-getTel .content {
-	position: absolute;
-	top: 50%;
+	position: fixed;
+	top: 5%;
 	left: 50%;
-	transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,0,0);
 }
 .dialog-getTel .content {
 	width: 15.8333rem;
 	height: 10.1666rem;
-	min-width: 286px;
-	min-height: 183px;
 	border-radius: 8px;
 	background-color: #e5e5e5;
 }
 .dialog-getTel .head {
 	position: relative;
 	height: 2.2777rem;
-	min-height: 41px;
 	border-radius: 8px 8px 0 0;
 	background: -webkit-linear-gradient(#5ce7b3, #6cc1f3); 
 	background:         linear-gradient(#5ce7b3, #6cc1f3); 
+}
+.dialog .close {
+	opacity: 1;
 }
 .dialog-getTel .head .close {
 	position: absolute;
@@ -158,7 +158,7 @@ footer dd {
 	flex-direction: column;
 }
 .dialog-getTel input {
-	padding: 1rem 0 0 .5rem;
+	padding: .8rem 0 0 .5rem;
 	width: 100%;
 	font-size: 16px;
 	border: none;
@@ -202,15 +202,13 @@ footer dd {
 .dialog-Winning .content {
 	width: 14.055rem;
 	height: 22.7222rem;
-	min-width: 202px;
-	min-height: 324px;
 	background: url(../img/newapp/dzp-9.png) no-repeat;
 	background-size: 100% 100%; 
 }
 .dialog-Winning .close {
 	position: absolute;
-	top: 5.5rem;
-	right: -.5rem;
+	top: 6.5rem;
+	right: -.8rem;
 	width: 1.7222rem;
 	height: 1.7222rem;
 	background: url(../img/newapp/dzp-8.png) no-repeat;
@@ -218,18 +216,18 @@ footer dd {
 }
 .dialog-Winning .main-body {
 	position: absolute;
-	bottom: 3rem;
+	bottom: 1rem;
 	left: 0;
 	width: 100%;
 	text-align: center;
 }
 .dialog-Winning .main-body p {
 	color: #e75250;
-	font-size: .777rem;
-	line-height: 2;
+	font-size: 1.111rem;
+	/*line-height: 2;*/
 }
 .dialog-Winning .main-body p:first-child {
-	font-size: 1rem;
+	font-size: 1.222rem;
 }
 .dialog-Winning a {
 	display: inline-block;
@@ -242,4 +240,50 @@ footer dd {
 	border-radius: 2rem;
 	box-shadow: 2px 2px 2px rgba(0,0,0,.3);
 	background-color: #ff5164;
+}
+.dialog-wx-share .content {
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+}
+.dialog-wx-share .arrow {
+	margin: 1rem 2rem 1rem 0;
+	width: 15.94444rem;
+	align-self: flex-end;
+}
+.dialog-wx-share .txt {
+	width: 19.8888rem;
+	align-self: center;
+}
+
+.follow {
+	display: none;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+
+
+@media screen and (max-width: 375px) {
+	.dialog-getTel .content {
+		width: 286px;
+		height: 183px;
+	}
+	.dialog-getTel .head {
+		height: 41px;
+	}
+	.dialog-getTel input {
+		padding: 1.5rem 0 0 .5rem;
+	}
+	.dialog-getTel a {
+		margin-top: 1.3rem;
+		width: 84px;
+		height: 30px;
+		line-height: 30px;
+		font-size: 20px;
+	}
+	.dialog-Winning .content {
+		min-width: 202px;
+		min-height: 324px;
+	}
 }

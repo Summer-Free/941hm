@@ -100,6 +100,12 @@ $(function() {
         })
     };
     init_prize();
+
+    //微信打开时，显示关注公众号广告条
+    if(isWeiXin()) {
+        $(".follow").show();
+    };
+
     //点击牌面，弹出弹窗
     $(".sec-2 li div").on("click",function() {
         prize($(this));
@@ -139,7 +145,7 @@ $(function() {
                 }else {
                     $(".getCode+span").remove();
                     $(".getCode").after("<span class='error'>"+result.info+"</span>");
-                    $(".dialog-getTel a").css("margin-top",".5rem");
+                    // $(".dialog-getTel a").css("margin-top",".5rem");
                 }
             });
         }
@@ -153,10 +159,10 @@ $(function() {
     		if(code == "") {
     			$(".getCode+span").remove();
     			$(".getCode").after("<span class='error'>您的验证码有误</span>");
-    			$(".dialog-getTel a").css("margin-top",".5rem");
+    			// $(".dialog-getTel a").css("margin-top",".5rem");
     		}else {
     			$(".getCode+span").remove();
-    			$(".dialog-getTel a").css("margin-top","2rem");
+    			// $(".dialog-getTel a").css("margin-top","2rem");
     			var param = {phone:tel,code:code};
     			var url = '/mobile/index.php?r=active/index/check';
     			$.post(url,param,function (data) {
@@ -167,7 +173,6 @@ $(function() {
                     }else {
                         $(".getCode+span").remove();
                         $(".getCode").after("<span class='error'>"+result.info+"</span>");
-                        $(".dialog-getTel a").css("margin-top",".5rem");
                         return false;
                     }
 
@@ -187,12 +192,10 @@ $(function() {
             $('.dialog-wx-share').show();
         }else {
             $('.dialog-share').show();
-
         }
     });
 
     $('.dialog-share,.dialog-wx-share').on('click',function () {
         $(this).hide();
     });
-    //<div class="jiathis_style_m"></div>
 });
