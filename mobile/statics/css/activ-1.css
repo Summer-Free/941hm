@@ -262,6 +262,13 @@ footer dd {
 	left: 0;
 	bottom: 0;
 }
+.dialog-share .content {
+	position: fixed;
+	top: 20%;
+	left: 50%;
+	color: #fff;
+	transform: translate3d(-50%,0,0);
+}
 
 
 @media screen and (max-width: 375px) {
