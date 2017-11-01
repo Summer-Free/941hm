@@ -13,11 +13,9 @@
         <dl class="flex">
             <dt>奖品 :</dt>
             <dd>
-                {foreach $config.prize_name as $k => $prize_name}
-                {if $k <= 2}
-                <p>{$config.prize_level[$k]}：{$prize_name}</p>
-                {/if}
-                {/foreach}
+                <p>一等奖:价值16600元博古架</p>
+                <p>二等奖:价值8388元IPHONE X64G</p>
+                <p>三等奖:爱奇艺会员、各种优惠券和小礼物</p>
             </dd>
         </dl>
         <div class="wrap-notice flex">
@@ -80,7 +78,7 @@
     <dl>
         <dt>活动细则:</dt>
         <dd>
-            {$config.rule}
+            {nl2br($config.rule)}
         </dd>
     </dl>
 </footer>
@@ -126,7 +124,6 @@
 </div>
 </body>
 <script src="../mobile/statics/js/active.js"></script>
-
 <!--统计代码-->
 <script type="text/javascript">
     var _hmt = _hmt || [];

@@ -162,8 +162,8 @@ $(function() {
     			$.post(url,param,function (data) {
                     var result = eval('('+data+')');
                     if(result.code == 13){
+                        init_prize();
                         $dialog.hide();
-
                     }else {
                         $(".getCode+span").remove();
                         $(".getCode").after("<span class='error'>"+result.info+"</span>");
