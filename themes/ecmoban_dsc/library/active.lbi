@@ -1,1 +1,122 @@
-<h1>aaaa</h1>>
+<style>
+	.jzj-bar {
+		z-index: 2999999999;
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		padding: 22px 0 10px;
+		background: url(themes/ecmoban_dsc/iamges/20170517/dialog-pic2.png);
+	}
+	.jzj-bar .d1,.jzj-bar .d2,
+	.jzj-bar h2 {
+		float: left;
+		margin-right: 32px;
+	}
+	.jzj-bar button {
+		float: right;
+		width: 140px;
+		color: #fff;
+		font-size: 24px;
+		border: none;
+		border-radius: 10px;
+		background-color: #fa9d53;
+		cursor: pointer;
+	}
+	#user-name,#tel,
+	.jzj-bar button {
+		height: 53px;
+		line-height: 53px;
+	}
+	.jzj-bar h2 {
+		font-size: 30px;
+		color: #fff;
+		text-align: center;
+		line-height: 1.1;
+	}
+	#user-name,#tel {
+		padding-left: 50px;
+		width: 304px;
+		font-size: 18px;
+		border: none;
+		background-color: #fff;
+	}
+	.jzj-bar .d1,
+	.jzj-bar .d2 {
+		position: relative;
+	}
+	.jzj-bar .d1:after,.jzj-bar .d2:after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 50%;
+		background-image: url(themes/ecmoban_dsc/iamges/20170517/jzj-sprite.png);
+		background-repeat: no-repeat;
+	}
+	.jzj-bar .d1:after {
+		left: 12px;
+		top: 12px;
+		width: 26px;
+		height: 31px;
+		background-position: 0 0;
+	}
+	.jzj-bar .d2:after {
+		left: 18px;
+		top: 12px;
+		width: 20px;
+		height: 31px;
+		background-position: -35px 0;
+	}
+	.jzj-bar .close {
+		position: absolute;
+		top: 12px;
+		right: 12px;
+		width: 15px;
+		height: 15px;
+		background-image: url(themes/ecmoban_dsc/iamges/20170517/jzj-sprite.png);
+		background-repeat: no-repeat;
+		background-position: -85px 0;
+		cursor: pointer;
+	}
+</style>
+<div class="jzj-bar">
+	<div class="close"></div>
+	<div class="w1200">
+		<form class="clearfix" action="" id="jzj-form">
+			<h2>家装狂欢节满5000送500<br />全屋定制免费设计</h2>
+			<div class="d1"><input type="text" id="user-name" placeholder="您的姓名"></div>
+			<div class="d2"><input type="text" id="tel" placeholder="您的电话"></div>
+			<button id="submit-d">立即报名</button>
+		</form>
+	</div>
+</div>
+
+<script>
+    $(function(){
+
+    	$(".jzj-bar .close").on("click",function() {
+    		$(".jzj-bar").hide(1000,function() {
+    			$(this).css("width",0)
+    		});
+    	});
+
+        $("#submit-d").click(function(e){
+                e.preventDefault();
+                var userName = $("#user-name").val(),
+                    tel = $("#tel").val(),
+                    reg = /^[\u4e00-\u9fa5]{2,4}$/i;
+                if (!reg.test(userName))
+                {
+                    alert("请输入2-4个汉字！"); 
+                    return false;
+                }
+                else if(!(/^1[34578]\d{9}$/.test(tel)))
+                { 
+                    alert("手机号码有误，请重填");  
+                    return false;
+                };
+
+                $("#jzj-form").submit();
+        });
+    });
+</script>

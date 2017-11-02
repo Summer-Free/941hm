@@ -299,6 +299,11 @@
 
         </div>
         <!--main body end--> 
+
+        <!--家装节广告-->
+        <!-- #BeginLibraryItem "/library/active.lbi" --><!-- #EndLibraryItem -->
+
+        
         <!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->
         <!--本页JS-->     
         <script type="text/javascript" src="themes/ecmoban_dsc/js/js/partner.js"></script>
