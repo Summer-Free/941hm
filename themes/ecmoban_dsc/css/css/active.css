@@ -169,6 +169,12 @@ html,body {
 .sec-10 .wrap1 .a2 {
 	float: right;
 }
+.sec-6 a,
+.sec-7 a,
+.sec-8 a {
+	width: 100%;
+	height: 100%;
+}
 /*.sec-10 .wrap1 div {
 	margin: 0 auto;
 	width: 1292px;
