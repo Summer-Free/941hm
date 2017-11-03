@@ -83,7 +83,7 @@
 	<div class="close"></div>
 	<div class="w1200">
 		<!--<form class="clearfix" action="" id="jzj-form">-->
-			<h2>双十一狂欢节满5000送500<br />全屋定制免费设计</h2>
+			<h2>双11狂欢节满5000送500<br />全屋定制免费设计</h2>
 			<div class="d1"><input type="text" id="user-name" placeholder="您的姓名"></div>
 			<div class="d2"><input type="text" id="tel" placeholder="您的电话"></div>
 			<button id="submit-d">立即报名</button>
