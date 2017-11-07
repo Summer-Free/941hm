@@ -155,10 +155,10 @@
 		                                <dl class="style">
 		                                    <dt>风格 :</dt>
 		                                    <dd>
-		                                        <a href="category.php?id=22">古典式</a>
-		                                        <a href="category.php?id=23">新中式</a>
-		                                        <a href="category.php?id=24">欧美式</a>
-		                                        <a href="category.php?id=25">明式</a>
+		                                        <a href="category.php?id=473">古典式</a>
+		                                        <a href="category.php?id=474">新中式</a>
+		                                        <a href="category.php?id=475">欧美式</a>
+		                                        <a href="category.php?id=476">明式</a>
 		                                    </dd>
 		                                </dl>
 		                            </div>  
@@ -418,12 +418,12 @@
 				<div class="sidebar margin-b-10">
 					<ul class="JS-slide-top">
 						<li>
-							<a href="goods.php?id=1211">
+							<a href="goods.php?id=217">
 								<img class="lazy" width="1200" height="188" data-original="themes/ecmoban_dsc/iamges/20170517/sidebar-1.jpg">
 							</a>
 						</li>
 						<li>
-							<a href="goods.php?id=22">
+							<a href="goods.php?id=131">
 								<img class="lazy" width="1200" height="188" data-original="themes/ecmoban_dsc/iamges/20170517/sidebar-2.jpg">
 							</a>
 						</li>

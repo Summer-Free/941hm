@@ -19,7 +19,7 @@
                     <div class="w1200">
                         <div class="JS-slide">
                             <ul class="content">
-                                <li class="active"><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/ex-pic1.jpg" alt=""></a></li>
+                                <li class="active"><a href="active.php"><img src="themes/ecmoban_dsc/iamges/20170517/ex-pic1.jpg" alt=""></a></li>
                                 <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/ex-pic2.jpg" alt=""></a></li>
                                 <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/ex-pic3.jpg" alt=""></a></li>
                             </ul>

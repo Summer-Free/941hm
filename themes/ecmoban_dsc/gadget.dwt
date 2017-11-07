@@ -15,7 +15,7 @@
                 <div class="w1200">
                     <div class="JS-slide">
                         <ul class="content">
-                            <li class="active"><a href="goods.php?goods_id="><img src="themes/ecmoban_dsc/iamges/20170517/gadget-banner1.jpg" alt=""></a></li>
+                            <li class="active"><a href="active.php"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-banner1.jpg" alt=""></a></li>
                             <li><a href="goods.php?id=1269"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-banner2.jpg" alt=""></a></li>
                             <li><a href="goods.php?id=1257"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-banner3.jpg" alt=""></a></li>
                             <li><a href="goods.php?id=1258"><img src="themes/ecmoban_dsc/iamges/20170517/gadget-banner4.jpg" alt=""></a></li>

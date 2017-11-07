@@ -129,10 +129,10 @@
                                         <dl class="style">
                                             <dt>风格 :</dt>
                                             <dd>
-                                                <a href="category.php?id=22">古典式</a>
-                                                <a href="category.php?id=23">新中式</a>
-                                                <a href="category.php?id=24">欧美式</a>
-                                                <a href="category.php?id=25">明式</a>
+                                                <a href="category.php?id=473">古典式</a>
+                                                <a href="category.php?id=474">新中式</a>
+                                                <a href="category.php?id=475">欧美式</a>
+                                                <a href="category.php?id=476">明式</a>
                                             </dd>
                                         </dl>
                                     </div>  
