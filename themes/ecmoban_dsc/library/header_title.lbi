@@ -5,7 +5,11 @@
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
 		<meta content="{$description}" name="description" />
 		<meta content="{$keywords}" name="Keywords" />
+		<!--{if $page_title}-->
+		<title>{$page_title}</title>
+		<!--{elseif $title}-->
 		<title>{$title}</title>
+		<!--{/if}-->
 		<!--基础css-->
 		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/base.css">
 		<!--通用头部-->
