@@ -389,7 +389,7 @@
 	  filter.keyword  = document.forms['theForm'].elements['keyword1'].value;
 	  filter.act_range = 3;
 	  filter.ru_id  = 0;
-	  Ajax.call('coupons.php?is_ajax=1&act=search', filter, searchResponse1, 'GET', 'JSON');
+	  Ajax.call('favourable.php?is_ajax=1&act=search', filter, searchResponse1, 'GET', 'JSON');
 	}
 
 	function searchResponse1(result)
