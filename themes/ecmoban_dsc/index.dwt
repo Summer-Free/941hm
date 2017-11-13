@@ -149,6 +149,7 @@
 		                                        <a href="category.php?id=449">南美酸枝</a>
 		                                        <a href="category.php?id=446">黄金檀</a>
 		                                        <a href="category.php?id=447">巴西花梨</a>
+		                                        <a href="category.php?id=18">黑酸枝类</a>
 		                                    </dd>
 		                                </dl>
 		                                <dl class="style">
@@ -707,10 +708,12 @@
 			}
 		</style>
 		<!--双十一立即领取弹窗-->
-		<div class="dialog-11">
-			<span class="close"></span>
-			<a href="active.php"><img src="themes/ecmoban_dsc/iamges/20170517/dialog-pic1.png" alt=""></a>
-		</div>
+		<!--
+			<div class="dialog-11">
+				<span class="close"></span>
+				<a href="active.php"><img src="themes/ecmoban_dsc/iamges/20170517/dialog-pic1.png" alt=""></a>
+			</div>
+		-->
 
 
 		<script type="text/javascript" src="themes/ecmoban_dsc/js/sc_common.js"></script>

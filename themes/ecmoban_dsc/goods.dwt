@@ -150,7 +150,11 @@
                             <!--<h2>{$goods.goods_brief}</h2>-->
                             <!--{/if}-->
                         </div>
-                        <a href="active.php"><img src="themes/ecmoban_dsc/iamges/20170517/active-11-pic.jpg" alt="" /></a>
+                        <!-- 这里是商品详情页中的活动海放置点
+                            <a href="active.php">
+                                <img src="themes/ecmoban_dsc/iamges/20170517/active-11-pic.jpg" alt="" />
+                            </a>
+                        -->
                         <div class="summary clearfix">
                             <!--goods页面-->
                             <div class="summary-list">
