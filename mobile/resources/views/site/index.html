@@ -4,44 +4,13 @@
 <div class="con mb-7">
     <div class="index-banner swiper-container box position-rel banner-first imp-class">
         <div class="swiper-wrapper">
-            <!--<div class="swiper-slide">-->
-              <!--活动页面-->
-                <!--
-					<a href="../mobile/index.php?r=preferential">
-                  		<img src="../mobile/statics/img/newapp/active_new16.jpg" alt="" />
-                	</a>
-                -->
-            <!--</div>-->
-            <!--<div class="swiper-slide">-->
-              <!--活动页面-->
-                <!--<a href="../mobile/index.php?r=preferential">
-                  <img src="../mobile/statics/img/newapp/shuang11-2.jpg" alt="" />
-                </a>
-            </div>-->
-            <!--<div class="swiper-slide">-->
-              <!--活动页面-->
-                <!--<a href="../mobile/index.php?r=active/index/index">
-                  <img src="../mobile/statics/img/newapp/shuang11-3.jpg" alt="" />
-                </a>
-            </div>-->
+          <!-- {foreach $ad_res as $key => $ad_res} -->
             <div class="swiper-slide">
-            <!--招商加盟-->
-                  <a href="../mobile/index.php?r=partner">
-                    <img src="../mobile/statics/img/newapp/banner1.jpg" alt="" />
-                  </a>
+		          <a href="{$ad_res.ad_link}">
+              		<img src="../data/afficheimg/{$ad_res.ad_code}" alt="" />
+            	</a>  
             </div>
-            <div class="swiper-slide">
-            <!--注册送礼-->
-                <a href="../mobile/index.php?r=companyintro">
-                    <img src="../mobile/statics/img/newapp/banner2.jpg" alt="" />
-                </a>
-            </div>
-            <!--公司简介-->
-            <div class="swiper-slide">
-                <a href="../mobile/index.php?r=goods&id=1007&u=0">
-                    <img src="../mobile/statics/img/newapp/banner3.jpg" alt="" />
-                </a>
-            </div>
+          <!-- {/foreach} -->
         </div>
         <!-- 分页器 -->
         <div class="swiper-pagination br-half text-c banner-first-pagination"></div>

@@ -17,19 +17,22 @@
                 <!--slide banner start-->
                 <div class="slide-banner bg-color-f5f5f5">      
                     <div class="w1200">
-                        <div class="JS-slide">
-                            <ul class="content">
-                                <li class="active"><a href="active.php"><img src="themes/ecmoban_dsc/iamges/20170517/experience_museum_1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/ex-pic2.jpg" alt=""></a></li>
+                        <div style="width:1920px;margin-left: -350px;">
+                            <!--<ul class="content">
+                                <li class="active"><a href="active.php">-->
+                                     
+                                        <img src="themes/ecmoban_dsc/iamges/20170517/experience_museum_1.jpg" alt="">
+                                    <!--</a></li>-->
+                                <!--<li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/ex-pic2.jpg" alt=""></a></li>
                                 <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/ex-pic3.jpg" alt=""></a></li>
-                            </ul>
-                            <a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
+                            </ul>-->
+                            <!--<a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
                             <a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
                             <ul class="point">
                                 <li class="active"></li>
                                 <li></li>
                                 <li></li>
-                            </ul>
+                            </ul>-->
                         </div>
                     </div>
                 </div>
