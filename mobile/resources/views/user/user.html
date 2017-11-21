@@ -148,7 +148,16 @@
 			</a>
 			{/if}
             {if $drp}
-            <a href="{U('drp/index/index')}">
+            <!--
+            	20171121修改了微店开启时的方式  不再收取代理费
+	            <a href="{U('drp/index/index')}">   
+					<div class="dis-box padding-all wallet-bt">
+						<h3 class="box-flex text-all-span my-u-title-size"><i class="iconfont icon-dianpu is-user-size my-qianbao-color"></i>我的微店</h3>
+						<span class="t-jiantou"><i class="iconfont icon-jiantou tf-180 jian-top"></i></span>
+					</div>
+	            </a>
+        	-->
+            <a href="{U('drp/index/register')}">
 				<div class="dis-box padding-all wallet-bt">
 					<h3 class="box-flex text-all-span my-u-title-size"><i class="iconfont icon-dianpu is-user-size my-qianbao-color"></i>我的微店</h3>
 					<span class="t-jiantou"><i class="iconfont icon-jiantou tf-180 jian-top"></i></span>
