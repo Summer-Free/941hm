@@ -67,36 +67,21 @@ $(function() {
             $("#tel+span").remove();
             $("#tel").after("<span class='error'>您的号码有误</span>");
             return false;
-        } else if(phone != ""){
+        }else if(phone != ""){
             var url = '/mobile/index.php?r=active/index/double';
-            var param = {phone:phone};
-            $.post(url,param,function (data){
-                if(!data){
-                    $("#tel+span").remove();
-                    $("#tel").after("<span class='error'>异常</span>");
-                    return false;
-                }
+            var param = {phone:tel};
+            $.post(url,function (data) {
                 var result = eval('('+data+')');
-                //console.log(data) 
                 if(result.code == 16){
                     $("#tel+span").remove();
-                    $("#tel").after("<span class='error'>您已注册过</span>");
-                    return false;
-                   
-                }else if(result.code == 17){
-                     $("#tel+span").remove();
-                    $("#tel").after("<span class='error'>您已参与过该活动</span>");
-                    return false;
-                }else if(result.code == 18){
-                    return true;
-                }else {
-                    $("#tel+span").remove();
-                    $("#tel").after("<span class='error'>异常</span>");
+                    $("#tel").after("<span class='error'>您已参加过该活动</span>");
                     return false;
                 }
             })
+        }else{
+            $("#tel+span").remove();
+            return true;
         };
-        
     };
     // 判断是否微信
     var isWeiXin =  function () {

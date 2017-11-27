@@ -9,8 +9,14 @@
 </header>
 <main>
     <section class="sec-1 flex">
+        <h2>活动时间：{date("m月d日 H:i:s",strtotime($config.start_time))}-{date("m月d日 H:i:s",strtotime($config.end_time))}</h2>
         <dl class="flex">
-            <dd style="text-align:center;"><img style="width: 70%;" src="../mobile/statics/img/newapp/20171124_1.png"></dd>
+            <dt>奖品 :</dt>
+            <dd>
+                <p>一等奖:红木博古架</p>
+                <p>二等奖:IPHONE手机</p>
+                <p>三等奖:爱奇艺会员、各种优惠券和小礼物</p>
+            </dd>
         </dl>
         <div class="wrap-notice flex">
             <i class="icon"></i>
@@ -63,17 +69,8 @@
         </ul>
     </section>
     <section class="sec-3 flex">
-        <p><img style="width: 40%;" src="../mobile/statics/img/newapp/zeor_gift.png"></p>
-        <div>
-            <img class="img-responsive" width="100%" src="../mobile/statics/img/newapp/active_new15.png" alt="">
-            <div style="margin-top: -205px; position: relative; width: 95%;">
-                <a href=""><img style="width: 35%; height: 110%; " src="../mobile/statics/img/newapp/zeor_gift_1.jpg"></a>
-                <a href="">
-                <img style="width: 35%;" src="../mobile/statics/img/newapp/zeor_gift_2.jpg">
-                </a>
-            </div>
-        </div>
-        
+        <p>每天都有一次翻牌机会，<br />牌牌有奖！翻过不能再翻哦！</p>
+        <img class="img-responsive" width="100%" src="../mobile/statics/img/newapp/active_new15.png" alt="">
     </section>
 </main>
 

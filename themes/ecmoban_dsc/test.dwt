@@ -5,16 +5,16 @@
 <title>姓名检查</title>
 </head>
 <body>	
-<!-- <form method="post" action="test.php">
+<form method="post" action="test.php">
 	文章标题：&nbsp;<input type="text" name="pro_name">
 	<br>
 	文章类型：
 	<select name="pro_type">
 	<!--{foreach from=$cxy_array item=cxy_array}-->
-		<!--<option value="{$cxy_array.c_id}">{$cxy_array.c_name}</option>->
+		<option value="{$cxy_array.c_id}">{$cxy_array.c_name}</option>
 	<!--{/foreach}-->
-	<!--</select>-->
-	<!--<br>
+	</select>
+	<br>
     关键词：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="keywords"><br>
     描述：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="description"><br>
 	文章编辑器：
@@ -24,7 +24,7 @@
 		</iframe>
     </div>
     <input type="submit">
-</form>-->
+</form>
 </body>
 </body>
 </html>

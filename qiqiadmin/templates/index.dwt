@@ -3,7 +3,6 @@
 <head>
 	{include file ='library/admin_html_head.lbi'}
 </head>
-
 <body style="background-color: #31b4e1; overflow:hidden;">
 	{insert_scripts files="adminIndex.js"}
     {include file ='library/pageheader.lbi'}

@@ -381,7 +381,7 @@
                                         <ul class="j-get-one padding-all">
                                             {foreach $payment_list as $payment}
                                             <li class="ect-select goods-site" onclick="selectPayment({$payment.pay_id})" date-code="{$payment.pay_code}">
-                                                <label class="ts-1 {if $order.pay_id == $payment.pay_id}active{/if}" >
+                                                <label class="ts-1 {if $order.pay_id == $payment.pay_id}active{/if}">
                                                     <dd>
                                                         <span>{$payment.pay_name}{if $payment.pay_fee}<em class="t-remark">[手续费]</em>{/if}</span>
                                                         {if $payment.pay_fee}<em class="t-first">{$payment.format_pay_fee}</em>{/if}
