@@ -67,19 +67,21 @@ $(function() {
             $("#tel+span").remove();
             $("#tel").after("<span class='error'>您的号码有误</span>");
             return false;
-        }else if(phone != ""){
-            //alert(phone);
+        }else if(phone == null){
+            var param = {phone:phone};
             var url = '/mobile/index.php?r=active/index/double';
-            var param = {phone:tel};
-            $.post(url,function (data) {
+            $.post(url,param,function (data) 
+            {
                 var result = eval('('+data+')');
-                if(result.code == 16){
+                if(result.code == 16)
+                {
                     $("#tel+span").remove();
-                    $("#tel").after("<span class='error'>您已参加过该活动</span>");
+                    $("#tel").after("<span class='error'>您的号码有误</span>");
                     return false;
-                }
+                } 
             })
-        }else{
+        }
+        else{
             $("#tel+span").remove();
             return true;
         };

@@ -30,7 +30,7 @@
 			<div class="btm">
 				<div class="content w1200">
 					
-					<div class="section-1">
+					<div id="section_1" class="section-1">
 						<h3>只需5步，旧家具换购新家具</h3>
 						<img src="themes/ecmoban_dsc/iamges/20170517/old-pic1.png" alt="">
 						<span class="step-1">描述使用情况</span>
@@ -136,5 +136,6 @@
                 skip_invisible : false
             });
         </script>
+        	
 	</body>
 </html>

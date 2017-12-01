@@ -1,30 +1,32 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>姓名检查</title>
+	<title>测试文件</title>
 </head>
-<body>	
-<form method="post" action="test.php">
-	文章标题：&nbsp;<input type="text" name="pro_name">
-	<br>
-	文章类型：
-	<select name="pro_type">
-	<!--{foreach from=$cxy_array item=cxy_array}-->
-		<option value="{$cxy_array.c_id}">{$cxy_array.c_name}</option>
-	<!--{/foreach}-->
-	</select>
-	<br>
-    关键词：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="keywords"><br>
-    描述：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="description"><br>
-	文章编辑器：
-	<div class="item">
-		<input type="hidden" id="FCKeditor1" name="FCKeditor1" value="" />
-			<iframe id="FCKeditor1_frame" src="../plugins/ueditor/ecmobanEditor.php?item=FCKeditor1" width="100%" height="586" frameborder="0" scrolling="no">
-		</iframe>
-    </div>
-    <input type="submit">
-</form>
-</body>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>{$lang.cp_home}{if $ur_here} - {$ur_here} {/if}</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="shortcut icon" href="../favicon.ico" />
+<link rel="icon" href="../animated_favicon.gif" type="image/gif" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="css/perfect-scrollbar.min.css" rel="stylesheet" type="text/css">
+<link href="css/purebox.css" rel="stylesheet" type="text/css">
+<link href="js/jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css">
+<link href="../js/calendar/calendar.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="js/spectrum-master/spectrum.css">
+{insert_scripts files="jquery-1.9.1.min.js,../js/jquery.json.js,../js/transport_jquery.js,../js/utils.js,listtable.js,listtable_pb.js,perfect-scrollbar.min.js,dsc_admin2.0.js,jquery-ui/jquery-ui.min.js,jquery.cookie.js,../js/calendar/calendar.min.js,jquery.bgColorSelector.js,jquery.validation.min.js,common.js,../js/jquery.form.js,jquery.nyroModal.js"}
+<!--[if lt IE 9]>
+	<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+<script language="JavaScript">
+/*这里把JS用到的所有语言都赋值到这里*/
+{foreach from=$lang.js_languages key=key item=item}
+var {$key} = "{$item}";
+{/foreach}
+</script>
+<body>
+
 </body>
 </html>

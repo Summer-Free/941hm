@@ -167,7 +167,7 @@
 		                        <!--{foreach item=middle_nav from=$nav.middle name=middle_nav}-->
 			                        <!-- {if $middle_nav.name =='首页'}-->
 			                        	<li class="active">
-									<!--{elseif $middle_nav.name =="帮助中心"}-->
+									<!--{elseif $middle_nav.name =="品牌红木"}-->
 										<li class="margin-r-0">
 									<!--{elseif $smarty.foreach.middle_nav.iteration !=1}-->
 										<li>

@@ -68,6 +68,7 @@ $(function() {
             $("#tel").after("<span class='error'>您的号码有误</span>");
             return false;
         } else if(phone != ""){
+            //alert(phone);
             var url = '/mobile/index.php?r=active/index/double';
             var param = {phone:phone};
             $.post(url,param,function (data){
