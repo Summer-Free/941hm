@@ -2,7 +2,7 @@
 <html lang="zh-cn">
 	<head>
 		<!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem -->
-		<title>941hm_金秋送壕礼</title>
+		<title>941hm_双12年终大促销</title>
 		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/active.css">
 		<!-- <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/purebox.css"> -->
         {* 包含脚本文件 *}
@@ -12,153 +12,91 @@
 		
 		<!--head-->
 		<div id="head">
-			<div style="height: 1086px;background: url(themes/ecmoban_dsc/iamges/20170517/active-1.jpg) top center;"></div> 
+			<div id="head_content" style="width: 1920px; height: 2960px; background: url(themes/ecmoban_dsc/iamges/20170517/shuang12_active-2.jpg) top center;"></div> 
 		</div>
-
-		<!--main body-->
-		<div id="main-body">
-			<div class="w1400">
-				<div class="sec-1">
-					<img class="img1" height="900" src="themes/ecmoban_dsc/iamges/20170517/active-1.png" alt="">
-					<img src="themes/ecmoban_dsc/iamges/20170517/active-2.png" alt="">
-					<div class="clearfix">
-						<img class="float-l" src="themes/ecmoban_dsc/iamges/20170517/active-3.png" alt="">
-						<img class="float-r" src="themes/ecmoban_dsc/iamges/20170517/active-4.png" alt="">
-					</div>
-				</div>
-
-				<div class="sec-2">
-					<div class="w1200">
-						<ul class="clearfix">
-							<!--{foreach item=kelingqu_coupons from=$kelingqu_coupons name=kelingqu_coupons}-->
-							
-							<!-- {if $smarty.foreach.kelingqu_coupons.iteration ==1}-->
-							<li><img src="themes/ecmoban_dsc/iamges/20170517/active-5.png" cou_id="{$kelingqu_coupons.cou_id}"   alt="满5000-500">
-							<!--{elseif $smarty.foreach.kelingqu_coupons.iteration ==2}-->
-							<li><img src="themes/ecmoban_dsc/iamges/20170517/active-6.png" cou_id="{$kelingqu_coupons.cou_id}" alt="满1W-1200">
-							<!--{elseif $smarty.foreach.kelingqu_coupons.iteration ==3}-->
-							<li><img src="themes/ecmoban_dsc/iamges/20170517/active-7.png" cou_id="{$kelingqu_coupons.cou_id}" alt="满2W-2600">
-							<!--{elseif $smarty.foreach.kelingqu_coupons.iteration ==4}-->
-							<li class="margin-r-0"><img src="themes/ecmoban_dsc/iamges/20170517/active-8.png" cou_id="{$kelingqu_coupons.cou_id}" alt="满3W-3900">
-							<!--{/if}-->
-							</li>
-							<!--{/foreach}-->
-							
-							
-							
-						</ul>
-					</div>
-				</div>
-
-				<div class="sec-3">
-					<p>1.本次活动商城注册用户均可参与。（活动时间：2017年11月1日00:00点—2017年11月11日24:00）</p>
-					<p>2. 翻牌活动每个账号每天可以翻牌一次。</p>
-					<p>3. 实物抽奖奖品关注微信公众号后联系客服领取，奖品在活动结束后10个工作日内寄出，请确保邮寄地址填写无误。</p>
-					<p>4. 为保证活动的公平性，若发生恶意刷券等非法行为，平台有权回收相关优惠券。</p>
-					<p>5.特价专区商品不参与双十一活动优惠券，双十一活动优惠券仅限双十一活动期间使用，如买家退款订单自动扣除优惠券优惠金额仅退实际付款金额，包邮产品仅限首页活动商品。</p>
-					<p>6. 对本次双十一活动仍有任何疑问，详情可咨询客服。</p>
-					<p>7. 941红木网有权对双十一活动中未尽事宜依法作出解释。</p>
-				</div>
-
-				<div class="sec-10">
-					<div class="w1200">
-						<h2>
-							<img src="themes/ecmoban_dsc/iamges/20170517/active-16.png" alt="">
-							<p>所赠物品款式均为随机</p>
-							<p>买到假的十倍赔，买到贵的双倍赔</p>
-						</h2>
-						<ul>
-							<li><a href="goods.php?id=1787"><img src="themes/ecmoban_dsc/iamges/20170517/active-9.jpg" alt=""></a></li>
-							<li><a href="goods.php?id=1786"><img src="themes/ecmoban_dsc/iamges/20170517/active-10.jpg" alt=""></a></li>
-							<li><a href="goods.php?id=1788"><img src="themes/ecmoban_dsc/iamges/20170517/active-11.jpg" alt=""></a></li>
-							<li><a href="goods.php?id=1789"><img src="themes/ecmoban_dsc/iamges/20170517/active-12.jpg" alt=""></a></li>
-							<li><a href="goods.php?id=1792"><img src="themes/ecmoban_dsc/iamges/20170517/active-13.jpg" alt=""></a></li>
-							<li class="wrap1 clearfix">
-								<a class="a1" href="goods.php?id=1793"><img src="themes/ecmoban_dsc/iamges/20170517/active-14.jpg" alt=""></a>
-								<a class="a2" href="goods.php?id=1793"><img src="themes/ecmoban_dsc/iamges/20170517/active-15.jpg" alt=""></a>
-							</li>
-							<li class="wrap1 clearfix">
-								<a class="a1" href="goods.php?id=1790"><img src="themes/ecmoban_dsc/iamges/20170517/active-16.jpg" alt=""></a>
-								<a class="a2" href="goods.php?id=1791"><img src="themes/ecmoban_dsc/iamges/20170517/active-17.jpg" alt=""></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="sec-4">
-					<h2><img src="themes/ecmoban_dsc/iamges/20170517/active-10.png" alt=""></h2>
-					<div>
-						<a href="goods.php?id=1209">祥云沙发</a>
-						<a href="goods.php?id=1213">祥云书桌+书柜</a>
-						<a href="goods.php?id=133">春意圆桌 </a>
-					</div>
-				</div>
-
-				<div class="sec-5">
-					<h2><img src="themes/ecmoban_dsc/iamges/20170517/active-11.png" alt=""></h2>
-					<div>
-						<a class="a1" href="goods.php?id=1211">祥云沙发</a>
-						<ul class="clearfix">
-							<li><a href="goods.php?id=256">直角四抽电视柜</a></li>
-							<li><a href="goods.php?id=217">财源滚滚沙发</a></li>
-							<li><a href="goods.php?id=220">文宝沙发</a></li>
-							<li><a href="goods.php?id=191">盛世沙发</a></li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="sec-6">
-					<h2><img src="themes/ecmoban_dsc/iamges/20170517/active-12.png" alt=""></h2>
-					<div>
-						<a class="a1" href="goods.php?id=131">福禄寿餐桌</a>
-						<ul class="clearfix">
-							<li><a href="goods.php?id=1560">象头圆台</a></li>
-							<li><a href="goods.php?id=920">灯挂椅</a></li>
-							<li><a href="goods.php?id=1234">锦上添花茶台</a></li>
-							<li><a href="goods.php?id=162">百子餐台</a></li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="sec-7">
-					<h2><img src="themes/ecmoban_dsc/iamges/20170517/active-13.png" alt=""></h2>
-					<div>
-						<a class="a1" href="goods.php?id=22">辉煌大床</a>
-						<ul class="clearfix">
-							<li><a href="goods.php?id=1212">祥云大床</a></li>
-							<li><a href="goods.php?id=1015">架子床</a></li>
-							<li><a href="goods.php?id=1017">锦上添花大床</a></li>
-							<li><a href="goods.php?id=703">汉宫雕花大床</a></li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="sec-8">
-					<h2><img src="themes/ecmoban_dsc/iamges/20170517/active-14.png" alt=""></h2>
-					<div>
-						<a class="a1" href="goods.php?id=1003">转角书桌</a>
-						<ul class="clearfix">
-							<li><a href="goods.php?id=38">步步高博古架</a></li>
-							<li><a href="goods.php?id=47">金钱博古架</a></li>
-							<li><a href="goods.php?id=705">大班台</a></li>
-							<li><a href="goods.php?id=316">如意办公室</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="sec-9">
-				<div class="w1400">
-					  为了让消费者更能放心购买，平台所有商品都具<br /> 有国家红木质检最高机构<i>中国木材木制品流通<br />协会红木流通专业委员会</i>进行检验并出具的纸<br />
-					  质检测报告，且检测结果在平台线上也可进行实时<br />
-					  查询。此外，所有商品由中国人民财产保险有限公<br />
-					  司全程承保，让消费者买得安心，买得放心。
-				</div>
+		<div id="content">
+		<div style="width: 1920px; height: 1520px; background: url(themes/ecmoban_dsc/iamges/20170517/content_1.jpg) top center;">
+			<div id="content_1" style="width :1920px; height: 357px; margin-left: 150px;" >
+				<ul>
+					<li class="li_1"><img src="themes/ecmoban_dsc/iamges/20170517/bouns_1.png"></li>
+					<li class="li_1" style="margin-left: 63px;"><img src="themes/ecmoban_dsc/iamges/20170517/bouns_2.png"></li>
+					<li class="li_1" style="margin-left: 63px;"><img src="themes/ecmoban_dsc/iamges/20170517/bouns_3.png"></li>
+					<li class="li_1" style="margin-left: 63px;"><img src="themes/ecmoban_dsc/iamges/20170517/bouns_4.png"></li>
+					<li class="li_1" style="margin-left: 63px;"><img src="themes/ecmoban_dsc/iamges/20170517/bouns_5.png"></li>
+				</ul>
 			</div>
 		</div>
-		<div id="foot">
-			<a href="index.php">返回首页</a>
+		<div id="content_2" style="width: 1920px; height: 4055px; background: url(themes/ecmoban_dsc/iamges/20170517/content_2.jpg) top center;">
+				<ul style="width: 865px; height: 3333px; margin-left: 530px; padding-top:457px;">
+					<li><img src="themes/ecmoban_dsc/iamges/20170517/content_2_1.png"></li>
+					<li style="margin-top:70px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_2_2.png"></li>
+					<li style="margin-top:72px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_2_3.png"></li>
+					<li style="margin-top:69px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_2_4.png"></li>
+					<li style="margin-top:70px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_2_5.png"></li>
+					<li style="margin-top:72px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_2_6.png"></li>
+				</ul>
 		</div>
 		
+		<div id="content_3" style="width: 1920px; height: 8084px; background: url(themes/ecmoban_dsc/iamges/20170517/content_3.png) top center;">
+		</div>
+		<div id="logo" style="width: 1360px; height: 240px; background: url(themes/ecmoban_dsc/iamges/20170517/product_active.png); margin-top:-8215px; margin-left: 283px;">
+		</div>
+		<div style="width:1200xp; height: 7724px; margin-top: 65px; margin-left: 360px;">
+				<dt>
+					<dd><img src="themes/ecmoban_dsc/iamges/20170517/content_3_1.jpg" alt=""></dd>
+					<dd style="margin-left:624px;  margin-top:-640px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_3_2.jpg" alt=""></dd>
+				</dt>
+				<dt style="margin-top: 69px;">
+					<dd><img src="themes/ecmoban_dsc/iamges/20170517/content_3_3.jpg" alt=""></dd>
+					<dd style="margin-left:624px;  margin-top:-638px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_3_4.jpg" alt=""></dd>
+				</dt>
+				<dt style="margin-top: 69px;">
+					<dd><img src="themes/ecmoban_dsc/iamges/20170517/content_3_5.jpg" alt=""></dd>
+					<dd style="margin-left:624px;  margin-top:-640px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_3_6.jpg" alt=""></dd>
+				</dt>
+				<dt style="margin-top: 69px;">
+					<dd><img src="themes/ecmoban_dsc/iamges/20170517/content_3_5.jpg" alt=""></dd>
+					<dd style="margin-left:624px;  margin-top:-640px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_3_6.jpg" alt=""></dd>
+				</dt>
+				<dt style="margin-top: 69px;">
+					<dd><img src="themes/ecmoban_dsc/iamges/20170517/content_3_5.jpg" alt=""></dd>
+					<dd style="margin-left:624px;  margin-top:-640px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_3_6.jpg" alt=""></dd>
+				</dt>
+				<dt style="margin-top: 69px;">
+					<dd><img src="themes/ecmoban_dsc/iamges/20170517/content_3_7.jpg" alt=""></dd>
+					<dd style="margin-left:624px;  margin-top:-640px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_3_8.jpg" alt=""></dd>
+				</dt>
+				<dt style="margin-top: 69px;">
+					<dd><img src="themes/ecmoban_dsc/iamges/20170517/content_3_9.jpg" alt=""></dd>
+					<dd style="margin-left:624px;  margin-top:-640px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_3_10.jpg" alt=""></dd>
+				</dt>
+				<dt style="margin-top: 69px;">
+					<dd><img src="themes/ecmoban_dsc/iamges/20170517/content_3_11.jpg" alt=""></dd>
+					<dd style="margin-left:624px;  margin-top:-640px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_3_12.jpg" alt=""></dd>
+				</dt>
+				<dt style="margin-top: 69px;">
+					<dd><img src="themes/ecmoban_dsc/iamges/20170517/content_3_13.jpg" alt=""></dd>
+					<dd style="margin-left:624px;  margin-top:-640px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_3_14.jpg" alt=""></dd>
+				</dt>
+				<dt style="margin-top: 69px;">
+					<dd><img src="themes/ecmoban_dsc/iamges/20170517/content_3_15.jpg" alt=""></dd>
+					<dd style="margin-left:624px;  margin-top:-640px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_3_16.jpg" alt=""></dd>
+				</dt>
+				<dt style="margin-top: 69px;">
+					<dd><img src="themes/ecmoban_dsc/iamges/20170517/content_3_17.jpg" alt=""></dd>
+					<dd style="margin-left:624px;  margin-top:-640px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_3_18.jpg" alt=""></dd>
+				</dt>
+				<dt style="margin-top: 69px;">
+					<dd><img src="themes/ecmoban_dsc/iamges/20170517/content_3_19.jpg" alt=""></dd>
+					<dd style="margin-left:624px;  margin-top:-640px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_3_20.jpg" alt=""></dd>
+				</dt>
+				<dt style="margin-top: 69px;">
+					<dd><img src="themes/ecmoban_dsc/iamges/20170517/content_3_21.jpg" alt=""></dd>
+					<dd style="margin-left:624px;  margin-top:-640px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_3_22.jpg" alt=""></dd>
+				</dt>
+		</div>
+		<div id="content_3" style="width: 1920px; height: 1420px; background: url(themes/ecmoban_dsc/iamges/20170517/content_3.png) top center;">
+		</div>
 		<!-- #BeginLibraryItem "/library/user_menu_position.lbi" --><!-- #EndLibraryItem -->
 		<!--<script type="text/javascript" src="themes/ecmoban_dsc/js/js/active.js"></script>-->
 		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/cart_common.js"></script>
