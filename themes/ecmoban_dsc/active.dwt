@@ -5,6 +5,7 @@
         <!--本页专用-->
         <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/active.css">
 	</head>
+<<<<<<< HEAD
 <body>
 	
 	
@@ -21,6 +22,34 @@
 		
 		<div class="bottun">
 			<img src="themes/ecmoban_dsc/iamges/20170517/content_1.jpg"/>
+=======
+	<body>
+		<!--head-->
+		<div id="head">
+			<div id="head_content" style="width: 1920px; height: 2960px; background: url(themes/ecmoban_dsc/iamges/20170517/shuang12_active-2.jpg) top center;"></div> 
+		</div>
+		<div id="content">
+		<div style="width: 1920px; height: 1520px; background: url(themes/ecmoban_dsc/iamges/20170517/content_1.jpg) top center;">
+			<div id="content_1" style="width :1920px; height: 357px; margin-left: 150px;" >
+				<ul>
+					<li class="li_1"><img src="themes/ecmoban_dsc/iamges/20170517/bouns_1.png"></li>
+					<li class="li_1" style="margin-left: 63px;"><img src="themes/ecmoban_dsc/iamges/20170517/bouns_2.png"></li>
+					<li class="li_1" style="margin-left: 63px;"><img src="themes/ecmoban_dsc/iamges/20170517/bouns_3.png"></li>
+					<li class="li_1" style="margin-left: 63px;"><img src="themes/ecmoban_dsc/iamges/20170517/bouns_4.png"></li>
+					<li class="li_1" style="margin-left: 63px;"><img src="themes/ecmoban_dsc/iamges/20170517/bouns_5.png"></li>
+				</ul>
+			</div>
+		</div>
+		<div id="content_2" style="width: 1920px; height: 4055px; background: url(themes/ecmoban_dsc/iamges/20170517/content_2.jpg) top center;">
+				<ul style="width: 865px; height: 3333px; margin-left: 530px; padding-top:457px;">
+					<li><img src="themes/ecmoban_dsc/iamges/20170517/content_2_1.png"></li>
+					<li style="margin-top:70px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_2_2.png"></li>
+					<li style="margin-top:72px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_2_3.png"></li>
+					<li style="margin-top:69px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_2_4.png"></li>
+					<li style="margin-top:70px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_2_5.png"></li>
+					<li style="margin-top:72px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_2_6.png"></li>
+				</ul>
+>>>>>>> 0876709850b9c47449346fa3192cb4ed58f71c0b
 		</div>
 	</div>
 		

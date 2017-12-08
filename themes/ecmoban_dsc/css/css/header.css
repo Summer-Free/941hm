@@ -3,10 +3,10 @@
 }
 #header .nav .logo a {
 	position: absolute;
-	top: 11.5px;
+	/*top: 11.5px;*/
 	/*left: 28px;*/
 	width: 222px;
-	height: 70px;
+	height: 90px;
 	text-indent: -9999px;
 	background: url(../../iamges/20170517/new-logo.jpg) no-repeat left center;
 }

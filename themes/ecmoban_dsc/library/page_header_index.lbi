@@ -9,11 +9,16 @@
                         <ul class="clearfix">
                             <li><a href="manufacturers_settled.php">品牌入驻</a></li>
                             <li><a href="partner.php">加盟商入驻</a></li>
-                            <li><a class="showMsg" href="#">商家中心</a></li>
-                            <li><a href="article_cat.php?id=1007">商城资讯</a></li>
-                            <li><a href="company_profile.php">公司简介</a></li>
-                            <li><a href="company_honor.php">公司荣誉</a></li>
-                            <li class="padding-r-0"><a href="project_introduction.php">项目介绍</a></li>
+                            <!-- <li><a class="showMsg" href="#">商家中心</a></li> -->
+                            <li><a href="project_introduction.php">项目介绍</a></li>
+                            <!-- <li><a href="article_cat.php?id=1007">商城资讯</a></li> -->
+                            <li><a href="article_cat.php?id=1008">帮助中心</a></li>
+                            <li><a class="showMsg" href="#">分销商入口</a></li>
+                            <li><a class="showMsg" href="#">设计师入口</a></li>
+                            <li class="padding-r-0"><a href="partner.php.php">城市运营商</a></li>
+                            <!-- <li><a href="company_profile.php">公司简介</a></li> -->
+                            <!-- <li><a href="company_honor.php">公司荣誉</a></li> -->
+                            <!-- <li class="padding-r-0"><a href="project_introduction.php">项目介绍</a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -139,12 +144,16 @@
                                     </div>  
                                 </li>
                                 <li><a href="index.php">首页</a></li>
-                                <li><a href="experience_museum.php">智能体验馆</a></li>
-                                <li><a href="gadget.php">文艺人小玩意</a></li>
+                                <li><a href="experience_museum.php">VR体验馆</a></li>
+                                <!-- <li><a href="gadget.php">文艺人小玩意</a></li>
                                 <li><a href="personal_tailor.php">家具私人订制</a></li>
-                                <li><a href="old_for_new.php">以物换物</a></li>
+                                <li><a href="old_for_new.php">以物换物</a></li> -->
                                 <li><a href="free_trial.php">免费试用</a></li>
-                                <li class="margin-r-0"><a href="article_cat.php?id=1008">帮助中心</a></li>
+                                <li><a href="category.php?id=474">新中式红木</a></li>
+                                <li><a href="gadget.php">品牌红木</a></li>
+                                <li><a class="showMsg" href="#">找设计师</a></li>
+                                <li class="margin-r-0"><a class="showMsg" href="#">中式在线设计</a></li>
+                                <!-- <li class="margin-r-0"><a href="article_cat.php?id=1008">帮助中心</a></li> -->
                             </ul>
                         </div>
                     </div>
