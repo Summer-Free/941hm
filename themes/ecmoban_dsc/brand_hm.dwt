@@ -258,6 +258,7 @@
 									<div class="list-pro">
 										<ul>
 											<!--{foreach item=jh_brand from=$jh_brand name=jh_brand}-->
+
 					                        <!-- {if $smarty.foreach.jh_brand.iteration !=4}-->
 					                        <li class="list-pro1">
 					                        <!--{elseif $smarty.foreach.jh_brand.iteration ==4}-->
@@ -272,6 +273,22 @@
 					                                </a>
 					                          </li>
 					                        <!--{/foreach}-->
+
+                        <!-- {if $smarty.foreach.jh_brand.iteration !=4}-->
+                        <li class="list-pro1">
+                        <!--{elseif $smarty.foreach.jh_brand.iteration ==4}-->
+                        <li class="list-pro2">
+                        <!--{/if}-->
+                                <a target="_blank" href="goods.php?id={$jh_brand.goods_id}">
+                                    <img class="" src="{$jh_brand.goods_thumb}" data-original="{$jh_brand.goods_thumb}" width="270" height="270" alt="">
+                                    <div class="list-pro-text">
+                                        <h3>{$jh_brand.goods_name|truncate:15}</h3>
+                                        <p>￥{$jh_brand.shop_price}</p>
+                                    </div>
+                                </a>
+                          </li>
+                        <!--{/foreach}-->
+
 										</ul>
 									</div>
 								</div>
