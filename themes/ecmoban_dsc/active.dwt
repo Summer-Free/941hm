@@ -1,145 +1,107 @@
-<!doctype html>
-<html lang="zh-cn">
-	<head>
-		<!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem -->
-		<title>941hm_双12年终大促销</title>
-		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/active.css">
-		<!-- <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/purebox.css"> -->
-        {* 包含脚本文件 *}
-        {insert_scripts files='jquery-1.9.1.min.js,jquery.json.js,transport_jquery.js,cart_quick_links.js,jquery.json.js,transport_jquery.js'}
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+		<!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem --><!--首页CSS以及部分通用部分的合并LBI-->
+        <!--本页专用-->
+        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/active.css">
 	</head>
-	<body>
+<body>
+	
+	
+	<img src="themes/ecmoban_dsc/iamges/20170517/shuang12_active-1.jpg"/>
+	
+	<div id="wrap">
+		<ul id="omg" >
+			<li><img src="themes/ecmoban_dsc/iamges/20170517/bouns_1.png"/></li>
+			<li><img src="themes/ecmoban_dsc/iamges/20170517/bouns_2.png"/></li>
+			<li><img src="themes/ecmoban_dsc/iamges/20170517/bouns_3.png"/></li>
+			<li><img src="themes/ecmoban_dsc/iamges/20170517/bouns_4.png"/></li>
+			<li><img src="themes/ecmoban_dsc/iamges/20170517/bouns_5.png"/></li>
+		</ul>
 		
-		<!--head-->
-		<div id="head">
-			<div id="head_content" style="width: 1920px; height: 2960px; background: url(themes/ecmoban_dsc/iamges/20170517/shuang12_active-2.jpg) top center;"></div> 
+		<div class="bottun">
+			<img src="themes/ecmoban_dsc/iamges/20170517/content_1.jpg"/>
 		</div>
-		<div id="content">
-		<div style="width: 1920px; height: 1520px; background: url(themes/ecmoban_dsc/iamges/20170517/content_1.jpg) top center;">
-			<div id="content_1" style="width :1920px; height: 357px; margin-left: 150px;" >
-				<ul>
-					<li class="li_1"><img src="themes/ecmoban_dsc/iamges/20170517/bouns_1.png"></li>
-					<li class="li_1" style="margin-left: 63px;"><img src="themes/ecmoban_dsc/iamges/20170517/bouns_2.png"></li>
-					<li class="li_1" style="margin-left: 63px;"><img src="themes/ecmoban_dsc/iamges/20170517/bouns_3.png"></li>
-					<li class="li_1" style="margin-left: 63px;"><img src="themes/ecmoban_dsc/iamges/20170517/bouns_4.png"></li>
-					<li class="li_1" style="margin-left: 63px;"><img src="themes/ecmoban_dsc/iamges/20170517/bouns_5.png"></li>
-				</ul>
-			</div>
-		</div>
-		<div id="content_2" style="width: 1920px; height: 4055px; background: url(themes/ecmoban_dsc/iamges/20170517/content_2.jpg) top center;">
-				<ul style="width: 865px; height: 3333px; margin-left: 530px; padding-top:457px;">
-					<li><img src="themes/ecmoban_dsc/iamges/20170517/content_2_1.png"></li>
-					<li style="margin-top:70px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_2_2.png"></li>
-					<li style="margin-top:72px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_2_3.png"></li>
-					<li style="margin-top:69px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_2_4.png"></li>
-					<li style="margin-top:70px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_2_5.png"></li>
-					<li style="margin-top:72px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_2_6.png"></li>
-				</ul>
-		</div>
+	</div>
 		
-		<div id="content_3" style="width: 1920px; height: 8084px; background: url(themes/ecmoban_dsc/iamges/20170517/content_3.png) top center;">
+	<!--特价专区-->
+	
+	<div id="price">
+		<img src="themes/ecmoban_dsc/iamges/20170517/content_2.jpg"/>
+		<div class="img">
+			<img src="themes/ecmoban_dsc/iamges/20170517/content_2_1.png"/>
+			<img src="themes/ecmoban_dsc/iamges/20170517/content_2_2.png"/>
+			<img src="themes/ecmoban_dsc/iamges/20170517/content_2_3.png"/>
+			<img src="themes/ecmoban_dsc/iamges/20170517/content_2_4.png"/>
+			<img src="themes/ecmoban_dsc/iamges/20170517/content_2_5.png"/>
+			<img src="themes/ecmoban_dsc/iamges/20170517/content_2_6.png"/>
+			
 		</div>
-		<div id="logo" style="width: 1360px; height: 240px; background: url(themes/ecmoban_dsc/iamges/20170517/product_active.png); margin-top:-8215px; margin-left: 283px;">
+	</div>
+	
+	
+	<!--活动产品-->
+	
+	<div id="active">
+		<img class="background" src="themes/ecmoban_dsc/iamges/20170517/content_3.png"/>
+		<div class="show_img">
+			<ul class="templet">
+				<li><img src="themes/ecmoban_dsc/iamges/20170517/content_3_1.jpg"/></li>
+				<li class="blank"></li>
+				<li><img src="themes/ecmoban_dsc/iamges/20170517/content_3_2.jpg"/></li>
+			</ul>
+			<ul class="templet">
+				<li><img src="themes/ecmoban_dsc/iamges/20170517/content_3_3.jpg"/></li>
+				<li class="blank"></li>
+				<li><img src="themes/ecmoban_dsc/iamges/20170517/content_3_4.jpg"/></li>
+			</ul>
+			<ul class="templet">
+				<li><img src="themes/ecmoban_dsc/iamges/20170517/content_3_5.jpg"/></li>
+				<li class="blank"></li>
+				<li><img src="themes/ecmoban_dsc/iamges/20170517/content_3_6.jpg"/></li>
+			</ul>
+			<ul class="templet">
+				<li><img src="themes/ecmoban_dsc/iamges/20170517/content_3_7.jpg"/></li>
+				<li class="blank"></li>
+				<li><img src="themes/ecmoban_dsc/iamges/20170517/content_3_8.jpg"/></li>
+			</ul>
+			<ul class="templet">
+				<li><img src="themes/ecmoban_dsc/iamges/20170517/content_3_9.jpg"/></li>
+				<li class="blank"></li>
+				<li><img src="themes/ecmoban_dsc/iamges/20170517/content_3_10.jpg"/></li>
+			</ul>
+			<ul class="templet">
+				<li><img src="themes/ecmoban_dsc/iamges/20170517/content_3_11.jpg"/></li>
+				<li	 class="blank"></li>
+				<li><img src="themes/ecmoban_dsc/iamges/20170517/content_3_12.jpg"/></li>
+			</ul>
+			<ul class="templet">
+				<li><img src="themes/ecmoban_dsc/iamges/20170517/content_3_13.jpg"/></li>
+				<li class="blank"></li>
+				<li><img src="themes/ecmoban_dsc/iamges/20170517/content_3_14.jpg"/></li>
+			</ul>
+			<ul class="templet">
+				<li><img src="themes/ecmoban_dsc/iamges/20170517/content_3_15.jpg"/></li>
+				<li class="blank"></li>
+				<li><img src="themes/ecmoban_dsc/iamges/20170517/content_3_16.jpg"/></li>
+			</ul>
+			<ul class="templet">
+				<li><img src="themes/ecmoban_dsc/iamges/20170517/content_3_17.jpg"/></li>
+				<li class="blank"></li>
+				<li><img src="themes/ecmoban_dsc/iamges/20170517/content_3_18.jpg"/></li>
+			</ul>
+			<ul class="templet">
+				<li><img src="themes/ecmoban_dsc/iamges/20170517/content_3_19.jpg"/></li>
+				<li class="blank"></li>
+				<li><img src="themes/ecmoban_dsc/iamges/20170517/content_3_20.jpg"/></li>
+			</ul>
+			<ul class="templet">
+				<li><img src="themes/ecmoban_dsc/iamges/20170517/content_3_21.jpg"/></li>
+				<li class="blank"></li>
+				<li><img src="themes/ecmoban_dsc/iamges/20170517/content_3_22.jpg"/></li>
+			</ul>
 		</div>
-		<div style="width:1200xp; height: 7724px; margin-top: 65px; margin-left: 360px;">
-				<dt>
-					<dd><img src="themes/ecmoban_dsc/iamges/20170517/content_3_1.jpg" alt=""></dd>
-					<dd style="margin-left:624px;  margin-top:-640px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_3_2.jpg" alt=""></dd>
-				</dt>
-				<dt style="margin-top: 69px;">
-					<dd><img src="themes/ecmoban_dsc/iamges/20170517/content_3_3.jpg" alt=""></dd>
-					<dd style="margin-left:624px;  margin-top:-638px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_3_4.jpg" alt=""></dd>
-				</dt>
-				<dt style="margin-top: 69px;">
-					<dd><img src="themes/ecmoban_dsc/iamges/20170517/content_3_5.jpg" alt=""></dd>
-					<dd style="margin-left:624px;  margin-top:-640px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_3_6.jpg" alt=""></dd>
-				</dt>
-				<dt style="margin-top: 69px;">
-					<dd><img src="themes/ecmoban_dsc/iamges/20170517/content_3_5.jpg" alt=""></dd>
-					<dd style="margin-left:624px;  margin-top:-640px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_3_6.jpg" alt=""></dd>
-				</dt>
-				<dt style="margin-top: 69px;">
-					<dd><img src="themes/ecmoban_dsc/iamges/20170517/content_3_5.jpg" alt=""></dd>
-					<dd style="margin-left:624px;  margin-top:-640px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_3_6.jpg" alt=""></dd>
-				</dt>
-				<dt style="margin-top: 69px;">
-					<dd><img src="themes/ecmoban_dsc/iamges/20170517/content_3_7.jpg" alt=""></dd>
-					<dd style="margin-left:624px;  margin-top:-640px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_3_8.jpg" alt=""></dd>
-				</dt>
-				<dt style="margin-top: 69px;">
-					<dd><img src="themes/ecmoban_dsc/iamges/20170517/content_3_9.jpg" alt=""></dd>
-					<dd style="margin-left:624px;  margin-top:-640px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_3_10.jpg" alt=""></dd>
-				</dt>
-				<dt style="margin-top: 69px;">
-					<dd><img src="themes/ecmoban_dsc/iamges/20170517/content_3_11.jpg" alt=""></dd>
-					<dd style="margin-left:624px;  margin-top:-640px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_3_12.jpg" alt=""></dd>
-				</dt>
-				<dt style="margin-top: 69px;">
-					<dd><img src="themes/ecmoban_dsc/iamges/20170517/content_3_13.jpg" alt=""></dd>
-					<dd style="margin-left:624px;  margin-top:-640px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_3_14.jpg" alt=""></dd>
-				</dt>
-				<dt style="margin-top: 69px;">
-					<dd><img src="themes/ecmoban_dsc/iamges/20170517/content_3_15.jpg" alt=""></dd>
-					<dd style="margin-left:624px;  margin-top:-640px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_3_16.jpg" alt=""></dd>
-				</dt>
-				<dt style="margin-top: 69px;">
-					<dd><img src="themes/ecmoban_dsc/iamges/20170517/content_3_17.jpg" alt=""></dd>
-					<dd style="margin-left:624px;  margin-top:-640px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_3_18.jpg" alt=""></dd>
-				</dt>
-				<dt style="margin-top: 69px;">
-					<dd><img src="themes/ecmoban_dsc/iamges/20170517/content_3_19.jpg" alt=""></dd>
-					<dd style="margin-left:624px;  margin-top:-640px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_3_20.jpg" alt=""></dd>
-				</dt>
-				<dt style="margin-top: 69px;">
-					<dd><img src="themes/ecmoban_dsc/iamges/20170517/content_3_21.jpg" alt=""></dd>
-					<dd style="margin-left:624px;  margin-top:-640px;"><img src="themes/ecmoban_dsc/iamges/20170517/content_3_22.jpg" alt=""></dd>
-				</dt>
-		</div>
-		<div id="content_3" style="width: 1920px; height: 1420px; background: url(themes/ecmoban_dsc/iamges/20170517/content_3.png) top center;">
-		</div>
-		<!-- #BeginLibraryItem "/library/user_menu_position.lbi" --><!-- #EndLibraryItem -->
-		<!--<script type="text/javascript" src="themes/ecmoban_dsc/js/js/active.js"></script>-->
-		<script type="text/javascript" src="themes/ecmoban_dsc/js/js/cart_common.js"></script>
-		<script type="text/javascript" src="themes/ecmoban_dsc/js/notLogin.js"></script>
-		<script type="text/javascript" src="themes/ecmoban_dsc/js/jquery.SuperSlide.2.1.1.js"></script>
-        <!--右侧机器人-->
-		<script src="//wp.qiye.qq.com/qidian/2852152525/c07a0ec2548f94d63eab86933f484853" charset="utf-8"></script>
-        <script type="text/javascript">
-        	$(function() {
-
-        		$('.sec-2 li img').on("click",function() {
-        			var $this = $(this),
-        				str = $this.attr("src"),
-        				id=$this.attr("cou_id"),
-        				arr = str.split(""),
-        				index = str.indexOf("."),
-        				src = (str.indexOf("-1") != -1)?arr.slice(0,index).join("") + ".png":arr.slice(0,index).join("") + "-1.png";
-        				if({$smarty.session.user_id} == 0){
-							window.location.href="user.php?act=active";
-						}else{
-							$.post('coupons.php?act=coupons_receive',{'cou_id':id},function(data){
-								if(data.status=='ok'){
-									$this.attr("src",src);
-								}else{
-									alert ('您已领取过优惠券，请勿重复领取');
-									$this.attr("src",src);
-								}
-							},'json')
-						}
-						
-        		});
-			});
-        </script>
-        <!--百度统计-->
-        <script>
-			var _hmt = _hmt || [];
-			(function() {
-			var hm = document.createElement("script");
-			hm.src = "https://hm.baidu.com/hm.js?1c999c80501029ff2ac0f16167ef78df";
-			var s = document.getElementsByTagName("script")[0]; 
-			s.parentNode.insertBefore(hm, s);
-			})();
-		</script>
-		<!--百度统计-->
-	</body>
-</html>	
+	</div>
+	
+</body>
+</html>

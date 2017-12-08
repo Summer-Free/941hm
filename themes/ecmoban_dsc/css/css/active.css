@@ -6,3 +6,79 @@ ul{
 	list-style: none;
 	float: left;
 }
+
+/*翻盘*/
+
+#wrap{
+	width: 100%;
+	height: 900px;
+	position: relative;
+	/*background-color: red;*/
+}
+#omg{
+	width: 100%;
+	height: 400px;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	position: relative;
+	z-index: 999;
+	/*background-image: url(themes/ecmoban_dsc/iamges/20170517/content_3.jpg);*/
+	/*background-color: red;*/
+}
+#omg li{
+	width: 275px;
+	height: 357px;
+}
+#wrap .bottun{
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	/*height: 400px;*/
+	/*background-color: blue;*/
+}
+
+/*特价 专区*/
+#price{
+	position: relative;
+	top:622px;
+	width: 100%;
+	height: 4051px;
+	/*background-color: red;*/
+	/*background-image: url(themes/ecmoban_dsc/iamges/20170517/content_2.jpg);*/
+}
+#price .img{
+	width: 1920px;
+	height: 4051px;
+	position: absolute;
+	top: 500px;
+}
+#price .img img{
+	width: 867px;
+	height: 501px;
+	margin: 45px 0px 0px 526.5px ;
+}
+
+
+/*活动产品*/
+#active{
+	width: 1920px;
+	position: relative;
+	top: 600px;
+}
+#active .show_img{
+	position: absolute;
+	top: 0px;
+}
+#active .templet{
+	width: 1920px;
+	height: 639px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 80px;
+}
+#active .templet .blank{
+	width: 70px;
+	height: 639px;
+}
