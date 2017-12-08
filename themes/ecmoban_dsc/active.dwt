@@ -9,7 +9,6 @@
         {insert_scripts files='jquery-1.9.1.min.js,jquery.json.js,transport_jquery.js,cart_quick_links.js,jquery.json.js,transport_jquery.js'}
 	</head>
 	<body>
-		
 		<!--head-->
 		<div id="head">
 			<div id="head_content" style="width: 1920px; height: 2960px; background: url(themes/ecmoban_dsc/iamges/20170517/shuang12_active-2.jpg) top center;"></div> 

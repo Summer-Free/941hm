@@ -1,0 +1,52 @@
+.clear{
+	clear: both;
+}
+.bg-color-f5f5f5{
+	background-color: #f5f5f5;
+	width: 1920px;
+}
+.w1200{
+	width: 1200px;
+}
+.show-list{
+	padding-top: 20px;
+}
+.list-blank{
+	background-color: white;
+	height: 460px;
+	padding: 35px;
+}
+.list-text{
+	font-size: 24px;
+	float: left;
+}
+.list-collect{
+	float: right;
+	width: 105px;
+	height: 40px;
+	background-color: #aa1920;
+	color: white;
+	font-size: 18px;
+	text-align:center;
+	line-height:40px;
+	border-radius: 5px;
+}
+.list-pro{
+	height: 385px;
+	padding-top: 20px;
+}
+.list-pro1{
+	float:left;
+	padding-right: 16px;
+}
+.list-pro2{
+	float:left;
+}
+.list-pro-text{
+	padding-top: 20px;
+	text-align: center;
+	line-height: 25px;
+}
+.list-pro-text p{
+	color: #aa1920;
+}

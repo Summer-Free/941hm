@@ -1,11 +1,50 @@
 {include file="page_header"}
+
 		<section class="user-shop-maxbox">
 			<header class="shop-user-max">
-				<div class="user-shop-img-box"><img src="{$shop_info.shop_img}"></div>
-				<div class="user-shop-left-img user-shop-cont padding-allr">
-					<div class="user-head-img-box-2 "><img src="{$shop_info.headimgurl}"></div>
+				<!--<div class="user-shop-img-box"><img src="{$shop_info.shop_img}"></div>-->
+				
+				<!--修改：20171208-->
+				
+				<div class="user-shop-img-box">
+					<section id="banner">
+						<div class="banner">				
+							<div class="banner1">
+								<img src="{$shop_info.shop_img}"/>
+							</div>
+							<div class="banner2">
+								<img src="{$shop_info.shop_img}"/>
+							</div>
+							<div class="banner3">
+								<img src="{$shop_info.shop_img}"/>
+							</div>
+							<div class="banner1">
+								<img src="{$shop_info.shop_img}"/>
+							</div>
+						</div>
+					</div>
+					</div>	
+					<div class="blank">
+						111
+					</div>
+					<!--20141208-->
+				<ul class="nav">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					
 				</div>
-				<h4 class="user-shop-name color-whie">{$shop_info.shop_name}</h4>
+				<div class="user-shop-left-img user-shop-cont padding-allr">
+					<div class="user-head-img-box-2"><img src="{$shop_info.headimgurl}"></div>
+				</div>
+				
+				
+				<!--名称-->
+				<!--<h4 class="user-shop-name color-whie">{$shop_info.shop_name}</h4>-->
+				
+				
+				
 <!--                                {if $shop_info.url}
 				<a href="{$shop_info.url}">
 					<label class="user-shop-shoucang p-a color-whie">分销中心</label>
@@ -97,7 +136,7 @@
         </div>
 
 		<!--引用js-->
-
+			
           <script type="text/javascript" src="{__PUBLIC__}script/jquery.infinite.js"></script>
           <script type="text/javascript" src="{__PUBLIC__}script/template.js"></script>
                  <script type="text/javascript">
@@ -110,11 +149,31 @@
                             $(".ect-index-share").click(function(){
                             $(".share-div").addClass("active");
                                 });
-                                });
-                            $(".share-div").click(function(){
-                            $(".share-div").removeClass("active");
-                        })
-	</script>
+                        });
+                        $(".share-div").click(function(){
+	                            $(".share-div").removeClass("active");
+	                    })
+                            
+					/*20171208*/
+					var i= 0;
+					var length = $(".nav li").length;
+					setInterval(function (){
+						for(var j = 0; j<length; j++){
+							if (i == j) {
+								$(".nav li:eq("+j+")").css({
+									"background-color":"#ccf",
+								});
+							}else{
+								$(".nav li:eq("+j+")").css({
+									"background-color":"white",
+								});
+							}
+						}
+						i++;
+						if(i == 3) i=0;
+					},2500);
+					
+				</script>
 	</body>
 
 </html>
