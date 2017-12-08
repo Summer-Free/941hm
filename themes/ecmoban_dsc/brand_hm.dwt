@@ -63,11 +63,7 @@
                         				<a target="_blank" href="goods.php?id={$lkw_brand.goods_id}">
                             				<img class="" src="{$lkw_brand.goods_thumb}" data-original="{$lkw_brand.goods_thumb}" width="270" height="270" alt="">
                             				<div class="list-pro-text">
-<<<<<<< HEAD
-                               					<h3>{$lkw_brand.goods_name}</h3>
-=======
                                					<h3>{$lkw_brand.goods_name|truncate:15}</h3>
->>>>>>> 0876709850b9c47449346fa3192cb4ed58f71c0b
                                 				<p>￥{$lkw_brand.shop_price}</p>
                             				</div>
                         				</a>
@@ -276,10 +272,6 @@
                                 </a>
                           </li>
                         <!--{/foreach}-->
-<<<<<<< HEAD
-                 
-=======
->>>>>>> 0876709850b9c47449346fa3192cb4ed58f71c0b
 										</ul>
 									</div>
 								</div>
