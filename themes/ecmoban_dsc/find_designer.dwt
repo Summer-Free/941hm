@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--首页CSS以及部分通用部分的合并LBI-->
+        <!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem -->
+		<!--首页专用-->
+		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/find_designer.css">
+
+        {* 包含脚本文件 *}
+        {insert_scripts files='jquery.json.js,transport_jquery.js'}
+</head>
+<body>
+	<!--header start-->
+		<div id="header">
+                
+                <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
+
+                <!--slide banner start-->
+                <div class="slide-banner bg-color-f5f5f5">      
+                    <div class="w1200">
+                        <div style="width:1920px;margin-left: -350px;">
+                            <!--<ul class="content">
+                                <li class="active"><a href="active.php">-->
+                                     
+                                        <a href="#"><img src="themes/ecmoban_dsc/iamges/201712/designer-banner.jpg" alt=""></a>
+                                    <!--</a></li>-->
+                                <!--<li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/ex-pic2.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/ex-pic3.jpg" alt=""></a></li>
+                            </ul>-->
+                            <!--<a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
+                            <a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
+                            <ul class="point">
+                                <li class="active"></li>
+                                <li></li>
+                                <li></li>
+                            </ul>-->
+                        </div>
+                    </div>
+                </div>
+                <!--slide banner end-->
+        </div>
+		<!--header end-->
+
+		<!--main body start-->
+		<div id="main-body">
+			<div class="w1200">
+				<!--设计师团队-->
+				<div class="des_team">
+					<div class="des_title">
+						<div class="des_title_up wrapfix">
+							<div class="des_title_up_z">
+								<i></i>
+								<span>设计师团队</span>
+							</div>
+							<div class="des_title_up_t">
+								由量房设计师、室内设计师、家具设计师、软装设计师组成的强大设计团队，一对一专属定制个性需求与户型特点，让您的生活从此与众不同！
+							</div>
+						</div>
+						<div class="des_title_s">
+							<span>
+								<i>■</i>
+								TEAM OF DESIGNERS
+							</span>
+						</div>
+					</div>
+					<div class="space"></div>
+					<img src="themes/ecmoban_dsc/iamges/20170517/designer_img.jpg" alt="">
+				</div>
+				<!--客户实例-->
+				<div class="des_team">
+					<div class="des_title">
+						<div class="des_title_up wrapfix">
+							<div class="des_title_up_z">
+								<i></i>
+								<span>客户实例</span>
+							</div>
+							<div class="des_title_up_t">
+								万千家庭口碑见证 尚品宅配设计师为约700万客户解决了多种家居问题
+							</div>
+						</div>
+						<div class="des_title_s">
+							<span>
+								<i>■</i>
+								MILLIONS OF CUSTOMER EXAMPLES
+							</span>
+						</div>
+					</div>
+					<div class="space"></div>
+					<ul class="question_ul wrapfix">
+						<li>
+							<a href="#">
+								<img src="themes/ecmoban_dsc/iamges/20170517/des_img1.jpg" alt="">
+							</a>
+							<div class="des_jd">
+								<b class="bt_hs">7㎡书房     伍先生</b>
+								<p>一房两用 小空间大变身</p>
+							</div>
+							<div class="des_jd">
+								<b>客户需求</b>
+								<p>需要书柜+书桌+衣柜+沙发床，最好兼具儿童房功能</p>
+							</div>
+							<div class="des_jd sjsjj">
+								<b>设计师解决</b>
+								<div class="des_fa wrapfix">
+									<span>
+										<a href="#" class="hx_img">
+											<img src="themes/ecmoban_dsc/iamges/20170517/s_psb-52.jpg" alt="">
+										</a>
+										<p>李仕良</p>
+									</span>
+									<label>
+										<p>整体设计简单实用，偏粉色系，考虑到业主家小朋友偶尔要来居住，同时兼并卧房用。沙发床连接着飘窗柜，打造休闲舒适的一角，也可作为临时睡眠区。学习区是书桌+吊柜一体化设计，具有展示收纳功能。</p>
+									</label>
+								</div>
+							</div>
+							<!-- <div class="des_jd sjsjj wrapfix zan">
+								<a href="" class="zan"></a>
+							</div> -->
+						</li>
+						<li>
+							<a href="#">
+								<img src="themes/ecmoban_dsc/iamges/20170517/des_img2.jpg" alt="">
+							</a>
+							<div class="des_jd">
+								<b class="bt_hs">22㎡卧房     莫女士</b>
+								<p>只需要床、衣柜、梳妆台，简单雅致</p>
+							</div>
+							<div class="des_jd">
+								<b>客户需求</b>
+								<p>只需要床、衣柜、梳妆台，简单雅致，具备基本...</p>
+							</div>
+							<div class="des_jd sjsjj">
+								<b>设计师解决</b>
+								<div class="des_fa wrapfix">
+									<span>
+										<a href="#" class="hx_img">
+											<img src="themes/ecmoban_dsc/iamges/20170517/s_1-82.jpg" alt="">
+										</a>
+										<p>朱灿斌</p>
+									</span>
+									<label>
+										<p>应业主需求，整体设计温馨雅致。温暖的枫木搭配少许象白板材，营造温暖雅致的感觉。衣柜到顶设计，美观的同时增加了储物空间。梳妆台与床头柜结合，搭配小吊柜，简单又实用。梳妆台与床头柜结合，搭配小吊柜，简单又实用。</p>
+									</label>
+								</div>
+							</div>
+						</li>
+						<li class="on">
+							<a href="#">
+								<img src="themes/ecmoban_dsc/iamges/20170517/des_img3.jpg" alt="">
+							</a>
+							<div class="des_jd">
+								<b class="bt_hs">28㎡客餐厅     蒋先生</b>
+								<p>因地制宜 规整设计更美观</p>
+							</div>
+							<div class="des_jd">
+								<b>客户需求</b>
+								<p>具备一定的收纳性，喜欢深色板材，沉稳一点</p>
+							</div>
+							<div class="des_jd sjsjj">
+								<b>设计师解决</b>
+								<div class="des_fa wrapfix">
+									<span>
+										<a href="#" class="hx_img">
+											<img src="themes/ecmoban_dsc/iamges/20170517/s_333333-2-333333_2.jpg" alt="">
+										</a>
+										<p>郑纯彬</p>
+									</span>
+									<label>
+										<p>按照户型特点依次设计了玄关换鞋区、用餐区和会客区。玄关和客厅用隔断柜隔开，兼具展示和收纳功能。沙发扶手“暗藏玄机”，可收纳一些零碎物件。餐厅卡座也兼具收纳功能。</p>
+									</label>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+								<img src="themes/ecmoban_dsc/iamges/20170517/des_img4.jpg" alt="">
+							</a>
+							<div class="des_jd">
+								<b class="bt_hs">6㎡厨房     刘先生</b>
+								<p>超强储纳 还你整洁厨房</p>
+							</div>
+							<div class="des_jd">
+								<b>客户需求</b>
+								<p>功能分区明确科学，厨电尽量藏起来，比较省空间</p>
+							</div>
+							<div class="des_jd sjsjj">
+								<b>设计师解决</b>
+								<div class="des_fa wrapfix">
+									<span>
+										<a href="#" class="hx_img">
+											<img src="themes/ecmoban_dsc/iamges/20170517/s_777777_3.jpg" alt="">
+										</a>
+										<p>谭梦妮</p>
+									</span>
+									<label>
+										<p>银丝橡木配亮白面板，营造出一个简洁时尚的厨房空间。该厨房流线分工明确，进门左手是备餐区，紧挨着就是洗手盆，切菜处平台宽裕，且还备有送餐区。大面积的吊柜和地柜，增加了储物功能。</p>
+									</label>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+								<img src="themes/ecmoban_dsc/iamges/20170517/des_img5.jpg" alt="">
+							</a>
+							<div class="des_jd">
+								<b class="bt_hs">10㎡青少年房     辛女士</b>
+								<p>巧妙扩容 腾出更多成长空间</p>
+							</div>
+							<div class="des_jd">
+								<b>客户需求</b>
+								<p>房间需要供两个小孩休息，同时留出活动空间...</p>
+							</div>
+							<div class="des_jd sjsjj">
+								<b>设计师解决</b>
+								<div class="des_fa wrapfix">
+									<span>
+										<a href="#" class="hx_img">
+											<img src="themes/ecmoban_dsc/iamges/20170517/s_YFZX1962-82.jpg" alt="">
+										</a>
+										<p>王月</p>
+									</span>
+									<label>
+										<p>上下床的设计，向上扩展利用空间，同时增加了一些小抽屉和搁板，可放置书本和玩具。大大的趟门衣柜也足够放两个小孩的衣服。靠窗处的折叠小书桌和黑板，打造了小小的学习区，其他空间都可供孩子自由活动。</p>
+									</label>
+								</div>
+							</div>
+						</li>
+						<li class="on">
+							<a href="#">
+								<img src="themes/ecmoban_dsc/iamges/20170517/des_img6.jpg" alt="">
+							</a>
+							<div class="des_jd">
+								<b class="bt_hs">24㎡客餐厅     钟先生</b>
+								<p>清新韩式 营造二人小情调</p>
+							</div>
+							<div class="des_jd">
+								<b>客户需求</b>
+								<p>夫人喜欢韩式小清新，希望能设计成她想要的浪...</p>
+							</div>
+							<div class="des_jd sjsjj">
+								<b>设计师解决</b>
+								<div class="des_fa wrapfix">
+									<span>
+										<a href="#" class="hx_img">
+											<img src="themes/ecmoban_dsc/iamges/20170517/s_456.jpg" alt="">
+										</a>
+										<p>王辉</p>
+									</span>
+									<label>
+										<p>整个空间以白色为主调，点缀一些靓丽的色彩，清新又时尚。玄关的全身镜和换衣凳，贴心实用。亮点是用餐区蓝白色调，打造韩式浪漫感。同时增设迷你吧台，为二人生活增添小情调。</p>
+									</label>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="space"></div>
+		<!--main body end-->
+		<!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

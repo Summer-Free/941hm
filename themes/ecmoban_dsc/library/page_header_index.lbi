@@ -15,7 +15,7 @@
                             <li><a href="article_cat.php?id=1008">帮助中心</a></li>
                             <li><a class="showMsg" href="#">分销商入口</a></li>
                             <li><a class="showMsg" href="#">设计师入口</a></li>
-                            <li class="padding-r-0"><a href="partner.php.php">城市运营商</a></li>
+                            <li class="padding-r-0"><a href="partner.php">城市运营商</a></li>
                             <!-- <li><a href="company_profile.php">公司简介</a></li> -->
                             <!-- <li><a href="company_honor.php">公司荣誉</a></li> -->
                             <!-- <li class="padding-r-0"><a href="project_introduction.php">项目介绍</a></li> -->
