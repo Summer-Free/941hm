@@ -5,7 +5,7 @@
 				<!--<div class="user-shop-img-box"><img src="{$shop_info.shop_img}"></div>-->
 				
 				<!--修改：20171208-->
-				
+				<!--第一张图片和最后一张图片放同一张图片-->
 				<div class="user-shop-img-box">
 					<section id="banner">
 						<div class="banner">				
@@ -23,16 +23,14 @@
 							</div>
 						</div>
 					</div>
-					</div>	
-					<div class="blank">
-						111
-					</div>
-					<!--20141208-->
-				<ul class="nav">
+					<ul class="nav">
 						<li></li>
 						<li></li>
 						<li></li>
 					</ul>
+				</div>	
+					<!--20141208-->
+				
 					
 				</div>
 				<div class="user-shop-left-img user-shop-cont padding-allr">
@@ -155,26 +153,33 @@
 	                    })
                             
 					/*20171208*/
-					var i= 0;
+					
+       				 /*手机端分销轮播导航点  20171211  http://localhost/941hm/mobile/index.php?r=brand*/
+					
+					var count = 0;
 					var length = $(".nav li").length;
-					setInterval(function (){
-						for(var j = 0; j<length; j++){
-							if (i == j) {
-								$(".nav li:eq("+j+")").css({
-									"background-color":"#ccf",
-								});
-							}else{
-								$(".nav li:eq("+j+")").css({
-									"background-color":"white",
-								});
-							}
+					setInterval(function(){			
+						$(".banner").css({				
+							"margin-left" : "-"+count+"00%",			
+							"transition":" all .5s ease",
+						});
+						$(".nav li").css("background-color", "white");
+						$(".nav li:eq("+count+")").css("background-color", "#ccf");
+						if (count > length) {
+							count = 0;
+							$(".banner").css({	
+								"margin-left" : "0px",	
+								"transition":" all .0s ease",
+							});
+							$(".nav li:eq("+count+")").css("background-color", "#ccf");
+						};
+						if (count == 3 ) {
+							$(".nav li:eq(0)").css("background-color", "#ccf");
 						}
-						i++;
-						if(i == 3) i=0;
-						
-						
-						alert($(".banner"))
-					},2500);
+						count++;
+					},2000);
+					
+					
 					
 				</script>
 	</body>
