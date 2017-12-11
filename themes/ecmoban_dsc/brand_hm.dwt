@@ -16,7 +16,7 @@
                 <!--slide banner start-->
                 <div class="slide-banner bg-color-f5f5f5">      
                     <div class="w1200">
-                        <div style="width:1920px;margin-left: -350px;">
+                        <div class="comp" <!--style="width:1920px;margin-left: -350px;"-->>
                             <!--<ul class="content">
                                 <li class="active"><a href="active.php">-->
                                  
@@ -39,7 +39,7 @@
                 <!--slide banner end-->
         </div>
 		<!--header end-->
-
+														<!--21071211  懒加载-->
 		<!--main body start-->
 		<div id="main-body" class="bg-color-f5f5f5">
 			<div class="w1200">
@@ -47,7 +47,7 @@
 					<ul>
 						<li>
 							<div class="list1">
-								<a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/1banner.jpg" alt=""></a>
+								<a href="#"><img class="img-out" data-img="themes/ecmoban_dsc/iamges/20170517/1banner.jpg" src="themes/ecmoban_dsc/iamges/20170517/1banner.jpg" alt=""></a>
 								<div class="list-blank">
 									<div class="list-text">博古王热销</div>
 									<a href="#"><div class="list-collect">收藏品牌</div></a>
@@ -61,7 +61,7 @@
 					                        <li class="list-pro2">
 					                        <!--{/if}-->
 	                        				<a target="_blank" href="goods.php?id={$lkw_brand.goods_id}">
-	                            				<img class="" src="{$lkw_brand.goods_thumb}" data-original="{$lkw_brand.goods_thumb}" width="270" height="270" alt="">
+	                            				<img class="img-in" data-src ="{$lkw_brand.goods_thumb}" src="{$lkw_brand.goods_thumb}" data-original="{$lkw_brand.goods_thumb}" width="270" height="270" alt="">
 	                            				<div class="list-pro-text">
 	                               					<h3>{$lkw_brand.goods_name|truncate:15}</h3>
 	                                				<p>￥{$lkw_brand.shop_price}</p>
@@ -76,7 +76,7 @@
 						</li>
 						<li>
 							<div class="list1">
-								<a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/2banner.jpg" alt=""></a>
+								<a href="#"><img class="img-out" data-img="themes/ecmoban_dsc/iamges/20170517/2banner.jpg"  src="<!--themes/ecmoban_dsc/iamges/20170517/2banner.jpg-->" alt=""></a>
 								<div class="list-blank">
 									<div class="list-text">雅康居热销</div>
 									<a href="#"><div class="list-collect">收藏品牌</div></a>
@@ -90,7 +90,7 @@
 					                        <li class="list-pro2">
 					                        <!--{/if}-->
 					                                <a target="_blank" href="goods.php?id={$ykj_brand.goods_id}">
-					                                    <img class="" src="{$ykj_brand.goods_thumb}" data-original="{$ykj_brand.goods_thumb}" width="270" height="270" alt="">
+					                                    <img class="img-in" data-src ="{$lkw_brand.goods_thumb}" src="{$ykj_brand.goods_thumb}" data-original="{$ykj_brand.goods_thumb}" width="270" height="270" alt="">
 					                                    <div class="list-pro-text">
 					                                        <h3>{$ykj_brand.goods_name|truncate:15}</h3>
 					                                        <p>￥{$ykj_brand.shop_price}</p>
@@ -105,7 +105,7 @@
 						</li>
 						<li>
 							<div class="list1">
-								<a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/3banner.jpg" alt=""></a>
+								<a href="#"><img class="img-out" data-img="themes/ecmoban_dsc/iamges/20170517/3banner.jpg" src="<!--themes/ecmoban_dsc/iamges/20170517/3banner.jpg-->" alt=""></a>
 								<div class="list-blank">
 									<div class="list-text">合家欢热销</div>
 									<a href="#"><div class="list-collect">收藏品牌</div></a>
@@ -119,7 +119,7 @@
 					                        <li class="list-pro2">
 					                        <!--{/if}-->
 					                                <a target="_blank" href="goods.php?id={$hjh_brand.goods_id}">
-					                                    <img class="" src="{$hjh_brand.goods_thumb}" data-original="{$hjh_brand.goods_thumb}" width="270" height="270" alt="">
+					                                    <img class="img-in" data-src ="{$lkw_brand.goods_thumb}" src="{$hjh_brand.goods_thumb}" data-original="{$hjh_brand.goods_thumb}" width="270" height="270" alt="">
 					                                    <div class="list-pro-text">
 					                                        <h3>{$hjh_brand.goods_name|truncate:15}</h3>
 					                                        <p>￥{$hjh_brand.shop_price}</p>
@@ -134,7 +134,7 @@
 						</li>
 						<li>
 							<div class="list1">
-								<a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/4banner.jpg" alt=""></a>
+								<a href="#"><img class="img-out" data-img="themes/ecmoban_dsc/iamges/20170517/4banner.jpg" src="<!--themes/ecmoban_dsc/iamges/20170517/4banner.jpg-->" alt=""></a>
 								<div class="list-blank">
 									<div class="list-text">乾宝阁热销</div>
 									<a href="#"><div class="list-collect">收藏品牌</div></a>
@@ -148,7 +148,7 @@
 					                        <li class="list-pro2">
 					                        <!--{/if}-->
 					                                <a target="_blank" href="goods.php?id={$qbg_brand.goods_id}">
-					                                    <img class="" src="{$qbg_brand.goods_thumb}" data-original="{$qbg_brand.goods_thumb}" width="270" height="270" alt="">
+					                                    <img class="img-in" data-src ="{$lkw_brand.goods_thumb}" src="{$qbg_brand.goods_thumb}" data-original="{$qbg_brand.goods_thumb}" width="270" height="270" alt="">
 					                                    <div class="list-pro-text">
 					                                        <h3>{$qbg_brand.goods_name|truncate:15}</h3>
 					                                        <p>￥{$qbg_brand.shop_price}</p>
@@ -163,7 +163,7 @@
 						</li>
 						<li>
 							<div class="list1">
-								<a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/5banner.jpg" alt=""></a>
+								<a href="#"><img class="img-out" data-img="themes/ecmoban_dsc/iamges/20170517/5banner.jpg" src="<!--themes/ecmoban_dsc/iamges/20170517/5banner.jpg-->" alt=""></a>
 								<div class="list-blank">
 									<div class="list-text">春江红木热销</div>
 									<a href="#"><div class="list-collect">收藏品牌</div></a>
@@ -177,7 +177,7 @@
 					                        <li class="list-pro2">
 					                        <!--{/if}-->
 					                                <a target="_blank" href="goods.php?id={$cj_brand.goods_id}">
-					                                    <img class="" src="{$cj_brand.goods_thumb}" data-original="{$cj_brand.goods_thumb}" width="270" height="270" alt="">
+					                                    <img class="img-in" data-src ="{$lkw_brand.goods_thumb}" src="{$cj_brand.goods_thumb}" data-original="{$cj_brand.goods_thumb}" width="270" height="270" alt="">
 					                                    <div class="list-pro-text">
 					                                        <h3>{$cj_brand.goods_name|truncate:15}</h3>
 					                                        <p>￥{$cj_brand.shop_price}</p>
@@ -192,7 +192,7 @@
 						</li>
 						<li>
 							<div class="list1">
-								<a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/6banner.jpg" alt=""></a>
+								<a href="#"><img class="img-out" data-img="themes/ecmoban_dsc/iamges/20170517/6banner.jpg" src="<!--themes/ecmoban_dsc/iamges/20170517/6banner.jpg-->" alt=""></a>
 								<div class="list-blank">
 									<div class="list-text">展博红木热销</div>
 									<a href="#"><div class="list-collect">收藏品牌</div></a>
@@ -206,7 +206,7 @@
 					                        <li class="list-pro2">
 					                        <!--{/if}-->
 					                                <a target="_blank" href="goods.php?id={$zb_brand.goods_id}">
-					                                    <img class="" src="{$zb_brand.goods_thumb}" data-original="{$zb_brand.goods_thumb}" width="270" height="270" alt="">
+					                                    <img class="img-in" data-src ="{$lkw_brand.goods_thumb}" src="{$zb_brand.goods_thumb}" data-original="{$zb_brand.goods_thumb}" width="270" height="270" alt="">
 					                                    <div class="list-pro-text">
 					                                        <h3>{$zb_brand.goods_name|truncate:15}</h3>
 					                                        <p>￥{$zb_brand.shop_price}</p>
@@ -221,7 +221,7 @@
 						</li>
 						<li>
 							<div class="list1">
-								<a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/7banner.jpg" alt=""></a>
+								<a href="#"><img class="img-out" data-img="themes/ecmoban_dsc/iamges/20170517/7banner.jpg" src="<!--themes/ecmoban_dsc/iamges/20170517/7banner.jpg-->" alt=""></a>
 								<div class="list-blank">
 									<div class="list-text">鼎康红木热销</div>
 									<div class="list-collect">收藏品牌</div>
@@ -235,7 +235,7 @@
 					                        <li class="list-pro2">
 					                        <!--{/if}-->
 					                                <a target="_blank" href="goods.php?id={$dk_brand.goods_id}">
-					                                    <img class="" src="{$dk_brand.goods_thumb}" data-original="{$dk_brand.goods_thumb}" width="270" height="270" alt="">
+					                                    <img class="img-in" data-src ="{$lkw_brand.goods_thumb}" src="{$dk_brand.goods_thumb}" data-original="{$dk_brand.goods_thumb}" width="270" height="270" alt="">
 					                                    <div class="list-pro-text">
 					                                        <h3>{$dk_brand.goods_name|truncate:15}</h3>
 					                                        <p>￥{$dk_brand.shop_price}</p>
@@ -250,7 +250,7 @@
 						</li>
 						<li>
 							<div class="list1">
-								<a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/8banner.jpg" alt=""></a>
+								<a href="#"><img class="img-out" data-img="themes/ecmoban_dsc/iamges/20170517/8banner.jpg" src="<!--themes/ecmoban_dsc/iamges/20170517/8banner.jpg-->" alt=""></a>
 								<div class="list-blank">
 									<div class="list-text">京华红木热销</div>
 									<a href="#"><div class="list-collect">收藏品牌</div></a>
@@ -264,7 +264,7 @@
 					                        <li class="list-pro2">
 					                        <!--{/if}-->
 					                                <a target="_blank" href="goods.php?id={$jh_brand.goods_id}">
-					                                    <img class="" src="{$jh_brand.goods_thumb}" data-original="{$jh_brand.goods_thumb}" width="270" height="270" alt="">
+					                                    <img class="img-in" data-src ="{$lkw_brand.goods_thumb}" src="{$jh_brand.goods_thumb}" data-original="{$jh_brand.goods_thumb}" width="270" height="270" alt="">
 					                                    <div class="list-pro-text">
 					                                        <h3>{$jh_brand.goods_name|truncate:15}</h3>
 					                                        <p>￥{$jh_brand.shop_price}</p>
@@ -285,14 +285,81 @@
 		<!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->
 		<!--本页JS-->     
 		<script type="text/javascript">
-          $(".list-collect").click(function() {
-  				if ($(".list-collect").text() == '收藏' ) {
-   				$(".blist-collect").text('取消收藏');
-  				}
-  				else {
-    				$(".list-collect").text('收藏');
-  				}
-			});
+//        $(".list-collect").click(function() {
+//				if ($(".list-collect").text() == '收藏' ) {
+// 				$(".blist-collect").text('取消收藏');
+//				}
+//				else {
+//  				$(".list-collect").text('收藏');
+//				}
+//			});
+
+
+		//20171211   懒加载
+		
+		var lazyLoad = (function(){
+			var clock;
+			
+			function init(){
+				$(window).on("scroll", function(){
+					if (clock) {
+						clearTimeout(clock);
+					}
+					clock = setTimeout(function(){
+						checkShow();
+					}, 200);
+				})
+				checkShow();
+			}
+			
+			function checkShow(){
+				$(".img-out").each(function(){
+					var $cur =$(this);
+					if($cur.attr('isLoaded')){
+		        		return;
+		      		}
+					if(shouldShow_out($cur)){
+						showImg_out($cur);
+					}
+				})
+				
+				/////////
+				$(".img-in").each(function(){
+					var $cur =$(this);
+					if($cur.attr('isLoaded')){
+		        		return;
+		      		}
+					if(shouldShow($cur)){
+						showImg_in($cur);
+					}
+				})
+			}
+			function shouldShow_in($node){
+				var scrollH = $(window).scrollTop(),
+					winH = $(window).height(),
+					top = $node.offset().top;
+				if(top < winH + scrollH){
+			  		return true;
+			  	}else{
+			  		return false;
+			  	}
+			}
+			function showImg_out($node){
+		    	$node.attr('src', $node.attr('data-img'));
+		    	$node.attr('isLoaded', true);
+			}
+			
+			////////
+			function showImg_in($node){
+		    	$node.attr('src', $node.attr('data-src'));
+		    	$node.attr('isLoaded', true);
+			}
+			return {
+				init: init
+			}
+		})()
+		lazyLoad.init();
+
       </script>
 </body>
 </html>
