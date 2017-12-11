@@ -54,21 +54,21 @@
 									<div class="clear"></div>
 									<div class="list-pro">
 										<ul>
-                      <!--{foreach item=lkw_brand from=$lkw_brand name=lkw_brand}-->
-                        <!-- {if $smarty.foreach.lkw_brand.iteration !=4}-->
+                      						<!--{foreach item=lkw_brand from=$lkw_brand name=lkw_brand}-->
+                        					<!-- {if $smarty.foreach.lkw_brand.iteration !=4}-->
   											<li class="list-pro1">
-                        <!--{elseif $smarty.foreach.lkw_brand.iteration ==4}-->
-                        <li class="list-pro2">
-                        <!--{/if}-->
-                        				<a target="_blank" href="goods.php?id={$lkw_brand.goods_id}">
-                            				<img class="" src="{$lkw_brand.goods_thumb}" data-original="{$lkw_brand.goods_thumb}" width="270" height="270" alt="">
-                            				<div class="list-pro-text">
-                               					<h3>{$lkw_brand.goods_name|truncate:15}</h3>
-                                				<p>￥{$lkw_brand.shop_price}</p>
-                            				</div>
-                        				</a>
-                   				</li>
-                        <!--{/foreach}-->    				
+					                        <!--{elseif $smarty.foreach.lkw_brand.iteration ==4}-->
+					                        <li class="list-pro2">
+					                        <!--{/if}-->
+	                        				<a target="_blank" href="goods.php?id={$lkw_brand.goods_id}">
+	                            				<img class="" src="{$lkw_brand.goods_thumb}" data-original="{$lkw_brand.goods_thumb}" width="270" height="270" alt="">
+	                            				<div class="list-pro-text">
+	                               					<h3>{$lkw_brand.goods_name|truncate:15}</h3>
+	                                				<p>￥{$lkw_brand.shop_price}</p>
+	                            				</div>
+	                        				</a>
+			                   				</li>
+			                        		<!--{/foreach}-->    				
 										</ul>
 									</div>
 								</div>
@@ -84,20 +84,20 @@
 									<div class="list-pro">
 										<ul>
 											<!--{foreach item=ykj_brand from=$ykj_brand name=ykj_brand}-->
-                        <!-- {if $smarty.foreach.ykj_brand.iteration !=4}-->
-                        <li class="list-pro1">
-                        <!--{elseif $smarty.foreach.ykj_brand.iteration ==4}-->
-                        <li class="list-pro2">
-                        <!--{/if}-->
-                                <a target="_blank" href="goods.php?id={$ykj_brand.goods_id}">
-                                    <img class="" src="{$ykj_brand.goods_thumb}" data-original="{$ykj_brand.goods_thumb}" width="270" height="270" alt="">
-                                    <div class="list-pro-text">
-                                        <h3>{$ykj_brand.goods_name|truncate:15}</h3>
-                                        <p>￥{$ykj_brand.shop_price}</p>
-                                    </div>
-                                </a>
-                          </li>
-                        <!--{/foreach}-->
+					                        <!-- {if $smarty.foreach.ykj_brand.iteration !=4}-->
+					                        <li class="list-pro1">
+					                        <!--{elseif $smarty.foreach.ykj_brand.iteration ==4}-->
+					                        <li class="list-pro2">
+					                        <!--{/if}-->
+					                                <a target="_blank" href="goods.php?id={$ykj_brand.goods_id}">
+					                                    <img class="" src="{$ykj_brand.goods_thumb}" data-original="{$ykj_brand.goods_thumb}" width="270" height="270" alt="">
+					                                    <div class="list-pro-text">
+					                                        <h3>{$ykj_brand.goods_name|truncate:15}</h3>
+					                                        <p>￥{$ykj_brand.shop_price}</p>
+					                                    </div>
+					                                </a>
+					                         </li>
+					                        <!--{/foreach}-->
 										</ul>
 									</div>
 								</div>
@@ -113,20 +113,20 @@
 									<div class="list-pro">
 										<ul>
 											<!--{foreach item=hjh_brand from=$hjh_brand name=hjh_brand}-->
-                        <!-- {if $smarty.foreach.hjh_brand.iteration !=4}-->
-                        <li class="list-pro1">
-                        <!--{elseif $smarty.foreach.hjh_brand.iteration ==4}-->
-                        <li class="list-pro2">
-                        <!--{/if}-->
-                                <a target="_blank" href="goods.php?id={$hjh_brand.goods_id}">
-                                    <img class="" src="{$hjh_brand.goods_thumb}" data-original="{$hjh_brand.goods_thumb}" width="270" height="270" alt="">
-                                    <div class="list-pro-text">
-                                        <h3>{$hjh_brand.goods_name|truncate:15}</h3>
-                                        <p>￥{$hjh_brand.shop_price}</p>
-                                    </div>
-                                </a>
-                          </li>
-                        <!--{/foreach}--> 
+					                        <!-- {if $smarty.foreach.hjh_brand.iteration !=4}-->
+					                        <li class="list-pro1">
+					                        <!--{elseif $smarty.foreach.hjh_brand.iteration ==4}-->
+					                        <li class="list-pro2">
+					                        <!--{/if}-->
+					                                <a target="_blank" href="goods.php?id={$hjh_brand.goods_id}">
+					                                    <img class="" src="{$hjh_brand.goods_thumb}" data-original="{$hjh_brand.goods_thumb}" width="270" height="270" alt="">
+					                                    <div class="list-pro-text">
+					                                        <h3>{$hjh_brand.goods_name|truncate:15}</h3>
+					                                        <p>￥{$hjh_brand.shop_price}</p>
+					                                    </div>
+					                                </a>
+					                          </li>
+					                        <!--{/foreach}--> 
 										</ul>
 									</div>
 								</div>
@@ -142,20 +142,20 @@
 									<div class="list-pro">
 										<ul>
 											<!--{foreach item=qbg_brand from=$qbg_brand name=qbg_brand}-->
-                        <!-- {if $smarty.foreach.qbg_brand.iteration !=4}-->
-                        <li class="list-pro1">
-                        <!--{elseif $smarty.foreach.qbg_brand.iteration ==4}-->
-                        <li class="list-pro2">
-                        <!--{/if}-->
-                                <a target="_blank" href="goods.php?id={$qbg_brand.goods_id}">
-                                    <img class="" src="{$qbg_brand.goods_thumb}" data-original="{$qbg_brand.goods_thumb}" width="270" height="270" alt="">
-                                    <div class="list-pro-text">
-                                        <h3>{$qbg_brand.goods_name|truncate:15}</h3>
-                                        <p>￥{$qbg_brand.shop_price}</p>
-                                    </div>
-                                </a>
-                          </li>
-                        <!--{/foreach}-->
+					                        <!-- {if $smarty.foreach.qbg_brand.iteration !=4}-->
+					                        <li class="list-pro1">
+					                        <!--{elseif $smarty.foreach.qbg_brand.iteration ==4}-->
+					                        <li class="list-pro2">
+					                        <!--{/if}-->
+					                                <a target="_blank" href="goods.php?id={$qbg_brand.goods_id}">
+					                                    <img class="" src="{$qbg_brand.goods_thumb}" data-original="{$qbg_brand.goods_thumb}" width="270" height="270" alt="">
+					                                    <div class="list-pro-text">
+					                                        <h3>{$qbg_brand.goods_name|truncate:15}</h3>
+					                                        <p>￥{$qbg_brand.shop_price}</p>
+					                                    </div>
+					                                </a>
+					                         </li>
+					                        <!--{/foreach}-->
 										</ul>
 									</div>
 								</div>
@@ -171,20 +171,20 @@
 									<div class="list-pro">
 										<ul>
 											<!--{foreach item=cj_brand from=$cj_brand name=cj_brand}-->
-                        <!-- {if $smarty.foreach.cj_brand.iteration !=4}-->
-                        <li class="list-pro1">
-                        <!--{elseif $smarty.foreach.cj_brand.iteration ==4}-->
-                        <li class="list-pro2">
-                        <!--{/if}-->
-                                <a target="_blank" href="goods.php?id={$cj_brand.goods_id}">
-                                    <img class="" src="{$cj_brand.goods_thumb}" data-original="{$cj_brand.goods_thumb}" width="270" height="270" alt="">
-                                    <div class="list-pro-text">
-                                        <h3>{$cj_brand.goods_name|truncate:15}</h3>
-                                        <p>￥{$cj_brand.shop_price}</p>
-                                    </div>
-                                </a>
-                          </li>
-                        <!--{/foreach}-->
+					                        <!-- {if $smarty.foreach.cj_brand.iteration !=4}-->
+					                        <li class="list-pro1">
+					                        <!--{elseif $smarty.foreach.cj_brand.iteration ==4}-->
+					                        <li class="list-pro2">
+					                        <!--{/if}-->
+					                                <a target="_blank" href="goods.php?id={$cj_brand.goods_id}">
+					                                    <img class="" src="{$cj_brand.goods_thumb}" data-original="{$cj_brand.goods_thumb}" width="270" height="270" alt="">
+					                                    <div class="list-pro-text">
+					                                        <h3>{$cj_brand.goods_name|truncate:15}</h3>
+					                                        <p>￥{$cj_brand.shop_price}</p>
+					                                    </div>
+					                                </a>
+					                        </li>
+					                        <!--{/foreach}-->
 										</ul>
 									</div>
 								</div>
@@ -200,20 +200,20 @@
 									<div class="list-pro">
 										<ul>
 											<!--{foreach item=zb_brand from=$zb_brand name=zb_brand}-->
-                        <!-- {if $smarty.foreach.zb_brand.iteration !=4}-->
-                        <li class="list-pro1">
-                        <!--{elseif $smarty.foreach.zb_brand.iteration ==4}-->
-                        <li class="list-pro2">
-                        <!--{/if}-->
-                                <a target="_blank" href="goods.php?id={$zb_brand.goods_id}">
-                                    <img class="" src="{$zb_brand.goods_thumb}" data-original="{$zb_brand.goods_thumb}" width="270" height="270" alt="">
-                                    <div class="list-pro-text">
-                                        <h3>{$zb_brand.goods_name|truncate:15}</h3>
-                                        <p>￥{$zb_brand.shop_price}</p>
-                                    </div>
-                                </a>
-                          </li>
-                        <!--{/foreach}-->
+					                        <!-- {if $smarty.foreach.zb_brand.iteration !=4}-->
+					                        <li class="list-pro1">
+					                        <!--{elseif $smarty.foreach.zb_brand.iteration ==4}-->
+					                        <li class="list-pro2">
+					                        <!--{/if}-->
+					                                <a target="_blank" href="goods.php?id={$zb_brand.goods_id}">
+					                                    <img class="" src="{$zb_brand.goods_thumb}" data-original="{$zb_brand.goods_thumb}" width="270" height="270" alt="">
+					                                    <div class="list-pro-text">
+					                                        <h3>{$zb_brand.goods_name|truncate:15}</h3>
+					                                        <p>￥{$zb_brand.shop_price}</p>
+					                                    </div>
+					                                </a>
+					                        </li>
+					                        <!--{/foreach}-->
 										</ul>
 									</div>
 								</div>
@@ -229,20 +229,20 @@
 									<div class="list-pro">
 										<ul>
 											<!--{foreach item=dk_brand from=$dk_brand name=dk_brand}-->
-                        <!-- {if $smarty.foreach.dk_brand.iteration !=4}-->
-                        <li class="list-pro1">
-                        <!--{elseif $smarty.foreach.dk_brand.iteration ==4}-->
-                        <li class="list-pro2">
-                        <!--{/if}-->
-                                <a target="_blank" href="goods.php?id={$dk_brand.goods_id}">
-                                    <img class="" src="{$dk_brand.goods_thumb}" data-original="{$dk_brand.goods_thumb}" width="270" height="270" alt="">
-                                    <div class="list-pro-text">
-                                        <h3>{$dk_brand.goods_name|truncate:15}</h3>
-                                        <p>￥{$dk_brand.shop_price}</p>
-                                    </div>
-                                </a>
-                          </li>
-                        <!--{/foreach}-->
+					                        <!-- {if $smarty.foreach.dk_brand.iteration !=4}-->
+					                        <li class="list-pro1">
+					                        <!--{elseif $smarty.foreach.dk_brand.iteration ==4}-->
+					                        <li class="list-pro2">
+					                        <!--{/if}-->
+					                                <a target="_blank" href="goods.php?id={$dk_brand.goods_id}">
+					                                    <img class="" src="{$dk_brand.goods_thumb}" data-original="{$dk_brand.goods_thumb}" width="270" height="270" alt="">
+					                                    <div class="list-pro-text">
+					                                        <h3>{$dk_brand.goods_name|truncate:15}</h3>
+					                                        <p>￥{$dk_brand.shop_price}</p>
+					                                    </div>
+					                                </a>
+					                          </li>
+					                        <!--{/foreach}-->
 										</ul>
 									</div>
 								</div>
@@ -258,7 +258,6 @@
 									<div class="list-pro">
 										<ul>
 											<!--{foreach item=jh_brand from=$jh_brand name=jh_brand}-->
-
 					                        <!-- {if $smarty.foreach.jh_brand.iteration !=4}-->
 					                        <li class="list-pro1">
 					                        <!--{elseif $smarty.foreach.jh_brand.iteration ==4}-->
@@ -273,22 +272,6 @@
 					                                </a>
 					                          </li>
 					                        <!--{/foreach}-->
-
-                        <!-- {if $smarty.foreach.jh_brand.iteration !=4}-->
-                        <li class="list-pro1">
-                        <!--{elseif $smarty.foreach.jh_brand.iteration ==4}-->
-                        <li class="list-pro2">
-                        <!--{/if}-->
-                                <a target="_blank" href="goods.php?id={$jh_brand.goods_id}">
-                                    <img class="" src="{$jh_brand.goods_thumb}" data-original="{$jh_brand.goods_thumb}" width="270" height="270" alt="">
-                                    <div class="list-pro-text">
-                                        <h3>{$jh_brand.goods_name|truncate:15}</h3>
-                                        <p>￥{$jh_brand.shop_price}</p>
-                                    </div>
-                                </a>
-                          </li>
-                        <!--{/foreach}-->
-
 										</ul>
 									</div>
 								</div>
