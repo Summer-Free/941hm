@@ -1,0 +1,164 @@
+.clear{
+	clear: both;
+}
+.wrapfix{
+	display: block;
+}
+.wrapfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+
+.w1200{
+	width: 1200px;
+}
+.des_team{
+	position: relative;
+	z-index: 1;
+}
+.des_title{
+	margin-top: 20px;
+	width: 100%;
+}
+.des_title_up{
+	position: relative;
+}
+.des_title_up i{
+	display: block;
+	width: 8px;
+	height: 30px;
+	background: #5d5d5d;
+	margin-right: 5px;
+	float: left;
+	margin-top: 7px;
+}
+.des_title_up span{
+	display: block;
+	float: left;
+	color: #da1f2e;
+	font-size: 30px;
+	font-weight: bold;
+	vertical-align: 4px;
+}
+.des_title_up_z{
+	float: left;
+	margin-right: 5px;
+}
+.des_title_up_t{
+	float: left;
+	font-size: 14px;
+	color: #666;
+	position: relative;
+	width: auto;
+	top:20px;
+}
+.des_title_s{
+	height:22px;
+	line-height:22px;
+	width:100%;
+	background:url(../../iamges/20170517/des_title_s_bg.jpg) repeat-x center center;
+	position:relative;
+	text-transform:uppercase;
+}
+.des_title_s span{
+	background:#fff;
+	color:#8d8c8c;
+	font-size:12px;
+	font-weight:bold;
+	padding-left:75px;
+	padding-right:5px;
+	position:relative;
+	top:-4px;
+}
+.des_title_s i{
+	font-size: 20px;
+	font-style: normal;
+}
+.space{
+	height: 10px;
+}
+.des_survice{
+	clear: both;
+}
+.question_ul li{
+	width:370px;
+	height: 608px;
+	float:left;
+	background: url(../../iamges/20170517/sj_bg.png) no-repeat;
+	padding: 6px 8px;
+	margin-right: 45px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	position: relative;
+	border: 0;
+}
+ .question_ul li.on{
+ 	margin-right:0px;
+ }
+.hx_img{
+	width:310px;
+	height:233px;
+}
+.des_jd{
+	border-bottom:#dddcdc solid 1px;
+	padding-bottom:10px;
+	padding:10px;
+	width:95%;
+	margin:0 auto;
+	font-size:13px;
+	line-height:24px;
+	color:#767676;
+}
+.des_jd b{
+	color: #da1f2e;
+	font-size: 12px;
+}
+.des_jd b.bt_hs{
+	color: #333;
+}
+.des_fa{
+	margin-top:5px;
+}
+.des_fa span{
+	float:left;
+	width:74px;
+	text-align:center;
+	padding-top:5px;
+}
+.des_fa span img{
+	width:100%;
+}
+.des_fa label{
+	float:left;
+	width:230px;
+	padding-left:10px;
+	margin-left:5px;
+	font-size:12px;
+	line-height:21px;
+	color:#767676;
+}
+.des_fa label p{
+	font-size:12px;
+	color:#484848;
+}
+.sjsjj{
+	border-bottom:none;
+}
+.zan{
+	color:#da1f2e;
+	background:url(../../iamges/20170517/sma_xin.png) no-repeat;
+	height: 20px;
+	line-height: 13px;
+	padding-left: 21px;
+	position:absolute;
+	right:20px;
+	bottom:10px;
+}
+
+
+
+
