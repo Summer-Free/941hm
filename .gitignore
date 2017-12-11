@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .images/
 upload/
 data_base/
@@ -13,19 +12,4 @@ themes/ecmoban_dsc/crowd_funding.dwt.rej
 sms/20170902/18871716570.log
 api/Connect/doc/QC SDK for php 2.0ÎÄµµ.doc
 api/Connect/doc/QC SDK for php 2.1ÎÄµµ.doc
-=======
-images/
-upload/
-data_base/
-*.php
-*.jpg
-*.jpeg
-*.png
-*.gif
-*.sql
-themes/ecmoban_dsc/crowd_funding.dwt.rej
-.idea/codeStyleSettings.xml
-sms/20170902/18871716570.log
-api/Connect/doc/QC SDK for php 2.0æ–‡æ¡£.doc
-api/Connect/doc/QC SDK for php 2.1æ–‡æ¡£.doc
->>>>>>> 705c74bfdd00b2b65098b267a2458ddc6c6edb63
+
