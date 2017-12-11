@@ -4,6 +4,9 @@
 	width: 100%;
 	/*margin-left: -350px;*/
 }
+.list1{
+	background-image: themes/ecmoban_dsc/images/loadGoods.gif;
+}
 .comp img{
 	width: 100%;
 }
