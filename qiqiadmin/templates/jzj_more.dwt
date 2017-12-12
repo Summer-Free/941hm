@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/perfect-scrollbar.min.css" rel="stylesheet" type="text/css">
+<link href="css/purebox.css" rel="stylesheet" type="text/css">
+<link href="js/jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/dsc_admin2.0.js"></script>
+<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+</head>
+<body class="iframe_body">
+	<div class="title">
+		<a href="index.php?act=main" class="s-back">返回</a>装修意向客户全部信息展示
+	</div>
+	<style>
+		.iframe_body {
+			padding: 0 10px;
+		}
+		.iframe_body .title {
+			padding-top: 20px;
+		}
+		#table-jack {
+			width: 100%;
+			text-align: center;
+			border: 1px solid #ccc;
+			border-right: none;
+			border-bottom: none;
+		}
+		#table-jack caption,
+		#table-jack th {
+			height: 36px;
+			line-height: 36px;
+			color: #333;
+			font-size: 14px;
+			text-align: center;
+		}
+		#table-jack th,
+		#table-jack td {
+			height: 36px;
+			line-height: 36px;
+			border-right: 1px solid #ccc;
+			border-bottom: 1px solid #ccc;
+		}
+		#table-jack a {
+			cursor: pointer;
+		}
+	</style>
+<table id="table-jack">
+	<caption>全部加盟商信息</caption>
+	<tr>
+		<th>用户姓名</th>
+		<th>联系电话</th>
+		<th>意向添加时间</th>
+		<th>操作</th>
+	</tr>
+	<!--{foreach from=$jzj_res item=jzj_res name=jzj_res}-->
+		<tr>
+			<td>{$jzj_res.u_name}</td>
+	        <td>{$jzj_res.u_phone}</td>
+	        <td>{$jzj_res.add_time}</td>
+			<td>
+			<!-- <input type="hidden" type="text" id="this_messge_id" value="{$jzj_res.id}">
+				<a onclick="check_confirm()">删除</a> -->
+			</td>
+		</tr>
+	<!--{/foreach}-->
+</table>
+</body>
+<script>
+	function check_confirm(){
+		var r=confirm('您确定要删除这条数据么？');
+		if(r==true){
+			var id=$("#this_messge_id").val();
+			$.ajax({
+                type:"GET",
+                url:"del.php?id="+id,
+                dataType:"TEXT",
+                success:function(data)
+                {   
+                	window.location.href='index.php?act=more';
+                }
+            });
+		}
+	}
+</script>
+</html>

@@ -123,6 +123,31 @@
                         </div>
                     </div>
                     <!--2017-08-08 新增 结束-->
+
+                    <!--2017-12-12 新增-->
+                    <div class="new-section section">
+                        <div class="new-table">
+                            <table>
+                                <caption class="sc_title">
+                                    <i class="sc_icon"></i>
+                                    <h3 style="overflow: hidden;width: 100%;">装修意愿客户信息&nbsp;<a href="index.php?act=jzj_more" style="float: right;font-weight: normal;font-size: 12px;">查看更多</a></h3>
+                                </caption>
+                                <tr>
+                                    <th>用户姓名</th>
+                                    <th>联系电话</th>
+                                    <th>参与时间</th>
+                                </tr>
+                                <!--{foreach from=$jzj_arr item=jzj_arr name=jzj_arr}-->
+                                <tr>
+                                    <td>{$jzj_arr.u_name}</td>
+                                    <td>{$jzj_arr.u_phone}</td>
+                                    <td>{$jzj_arr.add_time}</td>
+                                </tr>
+                                <!--{/foreach}-->
+                            </table>
+                        </div>
+                    </div>
+                    <!--2017-12-12 新增 结束-->
                     <div class="section goods_section">
                         <div class="sc_title">
                             <i class="sc_icon"></i>

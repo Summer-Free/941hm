@@ -91,7 +91,7 @@
 	</div>
 </div>
 
-<script>
+<script type="text/javascript">
     $(function(){
     	$(".jzj-bar .close").on("click",function() {
     		$(".jzj-bar").hide(1000,function() {
@@ -126,7 +126,7 @@
                     });
                 };
 
-               // $("#jzj-form").submit();
+                //$("#jzj-form").submit();
         });
     });
 </script>
