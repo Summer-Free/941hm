@@ -151,7 +151,7 @@
                                 <li><a href="free_trial.php">免费试用</a></li>
                                 <li><a href="category.php?id=474">新中式红木</a></li>
                                 <li><a href="brand_hm.php">品牌红木</a></li>
-                                <li><a class="showMsg" href="#">找设计师</a></li>
+                                <li><a href="find_designer.php">找设计师</a></li>
                                 <li class="margin-r-0"><a class="showMsg" href="#">中式在线设计</a></li>
                                 <!-- <li class="margin-r-0"><a href="article_cat.php?id=1008">帮助中心</a></li> -->
                             </ul>
