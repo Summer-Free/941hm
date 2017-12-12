@@ -70,7 +70,7 @@ img{ vertical-align:middle; display:inline-block;}
 .adPos_hint section{display: table-cell;vertical-align: middle; padding:20px; line-height:25px; border:1px solid #F00; color:#F00; font-size:14px; position:relative; z-index:99;}
 .p-name a.lh36{ height:36px; line-height:18px; overflow:hidden; display:block;}
 
-.banner-width{ width:1200px; height:auto; margin:auto; position:relative;}
+.banner-width{ width:1920px; height:auto; margin:auto; position:relative;}
 .banner-width a{ display:inline-block; position:absolute; top:0; left:230px;}
 .ecsc-warp{ width:1200px; height:auto; margin:auto; position:relative; z-index:100;}
 .p-name{ width:100%;}
