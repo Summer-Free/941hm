@@ -15,7 +15,7 @@
 </head>
 <body class="iframe_body">
 	<div class="title">
-		<a href="index.php?act=main" class="s-back">返回</a>装修意向客户全部信息展示
+		<a href="index.php?act=main" class="s-back">返回</a>全屋定制意向客户全部信息展示
 	</div>
 	<style>
 		.iframe_body {

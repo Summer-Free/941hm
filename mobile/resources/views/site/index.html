@@ -31,16 +31,14 @@
     <!--menu-->
     <nav class="bg-white ptb-1 index-nav">
         <ul class="box ul-5 text-c bg-white">
-
             {foreach $nav as $key=>$list}
             <li>
                 <a href="{$list.url}">
                     <img src="{__TPL__}img/{$list.pic}">
                     <p class="m-top04">{$list.name}</p>
                 </a>
-			</li>
+			      </li>
             {/foreach}
-
         </ul>
     </nav>
     <!--每日资讯-->

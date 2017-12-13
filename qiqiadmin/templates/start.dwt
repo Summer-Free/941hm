@@ -130,7 +130,7 @@
                             <table>
                                 <caption class="sc_title">
                                     <i class="sc_icon"></i>
-                                    <h3 style="overflow: hidden;width: 100%;">装修意愿客户信息&nbsp;<a href="index.php?act=jzj_more" style="float: right;font-weight: normal;font-size: 12px;">查看更多</a></h3>
+                                    <h3 style="overflow: hidden;width: 100%;">全屋定制客户信息&nbsp;<a href="index.php?act=jzj_more" style="float: right;font-weight: normal;font-size: 12px;">查看更多</a></h3>
                                 </caption>
                                 <tr>
                                     <th>用户姓名</th>

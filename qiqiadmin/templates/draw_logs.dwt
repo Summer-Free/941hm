@@ -57,6 +57,7 @@
                                 <th width="10%"><div class="tDiv">用户名</div></th>
                                 <th width="10%"><div class="tDiv">奖品等级</div></th>
                                 <th width="8%"><div class="tDiv">奖品名</div></th>
+                                <th width="8%"><div class="tDiv">注册时间</div></th>
                                 <th width="8%"><div class="tDiv">是否操作</div></th>
                                 <th width="12%" class="handle">操作</th>
                             </tr>
@@ -70,6 +71,7 @@
                                 <td><div class="tDiv">{$list.u_name}</div></td>
                                 <td><div class="tDiv">{$list.prize_level}</div></td>
                                 <td><div class="tDiv">{$list.prize_name}</div></td>
+                                <td><div class="tDiv">{$list.add_time}</div></td>
                                 <td><div class="tDiv">{if $list.status == 1}是{else}否{/if}</div></td>
 
                                 <td class="handle">
