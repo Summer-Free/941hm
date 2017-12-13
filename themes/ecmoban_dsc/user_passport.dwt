@@ -150,15 +150,15 @@ if(length>1){
 <!--{if $action eq 'register'}-->
 {insert_scripts files='./sms/sms.js'}
 <div class="ecsc-registLogin ecsc-register">
-    <div class="registLogin borderBottom1">
+    <div class="registLogin borderBottom1" style="border: none;">
         <div class="registLogin-header w1200" style="padding-bottom: 0;">
             <a href="./index.php" class="logo"><img src="themes/ecmoban_dsc/iamges/20170517/logo.jpg" /></a>
             <b></b>
             <span class="registLogin-header-fr">有账号<a href="user.php" class="jump">在此登录</a></span>
         </div>
     </div>
-    <div>
-       <div class="registLogin-layout w1200" style="background: url(themes/ecmoban_dsc/iamges/20170517/register.jpg) no-repeat;">
+    <div style="background: url(themes/ecmoban_dsc/iamges/20170517/login.jpg) no-repeat;height: 500px;">
+       <div class="registLogin-layout w1200">
             <div class="regist-wrap">
             	<!--{if $shop_reg_closed neq 1}-->
                 <div class="regist-form" style="overflow:visible;">

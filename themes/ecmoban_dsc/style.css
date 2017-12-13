@@ -1578,7 +1578,7 @@ a.btn-stages:hover {
 	width:570px;
 	min-height:485px;
 	border:1px solid #dad6d6;
-	border-bottom:0;
+	
 	float:right;
 	box-shadow:-2px 0 1px #e9e7e7,/*左边阴影*/2px 0 1px #e9e7e7,/*右边阴影*/0 -2px 1px #e9e7e7, /*顶部阴影*/0 0 0 #e9e7e7; /*底边阴影*/
 	-webkit-box-shadow:-2px 0 1px #e9e7e7,2px 0 1px #e9e7e7,0 -2px 1px #e9e7e7,0 0 0 #e9e7e7;
@@ -4888,7 +4888,7 @@ background: #fff url(images/virtual-spite.png) -36px -6px no-repeat;
 .sellerlist .sellerul li:hover .store_grade_img{ display:block;}
 
 /*新版用户注册*/
-.regist-wrap{ width:470px; margin:-1px 2px; position:relative; z-index:99;background-color: #fff;}
+.regist-wrap{ width:470px; margin:5px 2px; position:relative; z-index:99;background-color: #fff;}
 .regist-banner{ padding:0px; position:absolute; top:130px;left:50px;}
 .registLogin-layout .item{ padding-top:0; padding-bottom:30px; position:relative;}
 .registLogin-layout .item .label{ float:left; width:100px; line-height:40px; font-size:14px; color:#969696;}

@@ -1041,7 +1041,7 @@ a.a-sequence .iconfont.icon-icon-square:before{font-size:3.2rem;}
 .search-logo .icon-moreunfold{font-size:1.5rem}
 .search-logo img{height:2rem; width:auto; margin-right:1rem; position:absolute; top:50%; margin-top:-1rem;}
 .index-nav{padding:.8rem .8rem 1.4rem;}
-.index-nav ul li{padding:.5rem; padding-top:1rem; padding-bottom:0; box-sizing: border-box;}
+.index-nav ul li{padding:.5rem; padding-top:1rem;padding-bottom:0;box-sizing: border-box;}
 .index-nav ul li img{width:80%; height:auto;}
 .index-nav ul li p{height:1.6rem; line-height: 1.6rem;}
 .index-nav ul li a{
