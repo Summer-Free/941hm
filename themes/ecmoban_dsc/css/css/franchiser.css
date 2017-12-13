@@ -1,5 +1,5 @@
 *{
-	font-family: "微软雅黑" sans-serif;
+	font-family:"黑体","微软雅黑",sans-serif;
 }
 #body{
 	background-color: #ccc;
@@ -115,15 +115,17 @@
 	height: 650px;
 	position: relative;
 	overflow:hidden;
-	
 }
-.text{
+.change3:hover{
+	cursor: pointer;
+}
+.change3 .text{
 	width: 1200px;
 	height: 650px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-top: -200px;
+	margin-top: -250px;
 	margin-left: -600px;
 }
 
@@ -189,6 +191,15 @@
 	left: 840px;
 	font-weight: bold;
 	display: none;
+}
+.triangle{
+	width:0px;
+    height:0px;
+	border: 22px  solid white;
+	border-color:transparent white transparent transparent ;
+	position: absolute;
+	left: -48px;
+	top: 90px;
 }
 .detail1{
 	display: block;
@@ -302,7 +313,7 @@
 .mix .img li h4{
 	text-align: center;
 	color: red;
-	font-size: 15px;
+	font-size: 16px;
 	margin-top: 22px;
 	margin-bottom: 12px;
 	font-weight: bold;

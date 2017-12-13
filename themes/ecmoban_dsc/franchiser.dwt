@@ -169,37 +169,40 @@
 				</div>
 				
 				<div class="detail detail1">
+					<div class="triangle"></div>
 					<h2>线上 + 线下</h2>
 					<p>"以互联网为依托,通过运用大数据等技术手段，
 					对商品流通与销售进行技术改造，进而重塑红
 					木，家具业态和生态圈，PC端、移动端线上引
 					流至线下体验门店，突破传统营销模式提升店铺
 					顾客到店率，提高店铺营销利润。"</p>
-					<ul>
+					<ul class="innercircle">
 						<li style="background-color: white;"></li>
 						<li></li>
 						<li></li>
 					</ul>
 				</div>
 				<div class="detail detail2">
+					<div class="triangle"></div>
 					<h2>体验 + 服务</h2>
 					<p>"与消费者形成双向互动关系，利用大数据技术
 					捕捉到每个消费者的个性化需求，打造能够吸
 					引客户的场景。从门店选址、视觉风格、门店
 					选址等全线提升，为消费者提供更好的购物体验"</p>
-					<ul>
+					<ul class="innercircle">
 						<li></li>
 						<li style="background-color: white;"></li>
 						<li ></li>
 					</ul>
 				</div>
 				<div class="detail detail3">
+					<div class="triangle"></div>
 					<h2>数字化智慧门店</h2>
 					<p>"提供全渠道的数字化的智慧门店建设，利用整
 					合合数字技术，在体验店为顾客提供互动化体
 					验，将商品、内容、活动管理系统等数字化手
 					段与企业技术充分融合，推进互联门店战略。”</p>
-					<ul>
+					<ul class="innercircle">
 						<li></li>
 						<li></li>
 						<li style="background-color: white;"></li>
@@ -549,15 +552,68 @@
 			$(".join").click(function(){
 				$(window).scrollTop('9000');
 			})
+			
+			//class="change3" 三角及导航  20171213
 			for(var i=0; i<3 ;i++){
 				!function(i){
 					$(".change3 ul li:eq("+i+")").mouseover(function(){
 						$(".change3 ul li .circle").css("background-color","");
 						$(".change3 ul li:eq("+i+") .circle").css("background-color","white");
 						$(".detail").css("display","none");
-					$(".detail"+(i+1)).css("display","block");
+						$(".detail"+(i+1)).css("display","block");
+						if(i==0){
+							$(".triangle").css({
+								"top":"90px",
+							});
+							$(".innercircle:eq("+i+") li").css("background-color","");
+							$(".innercircle:eq("+i+") li:eq("+i+")").css("background-color","white");
+						} 
+						if(i==1){
+							$(".triangle").css({
+								"top":"180px",
+							});
+							$(".innercircle:eq("+i+") li").css("background-color","");
+							$(".innercircle:eq("+i+") li:eq("+i+")").css("background-color","white");
+						} 
+						if(i==2){
+							$(".triangle").css({
+								"top":"270px",
+							});
+							$(".innercircle:eq("+i+") li").css("background-color","");
+							$(".innercircle:eq("+i+") li:eq("+i+")").css("background-color","white");
+						} 
 					});
-					
+					for(var j=0; j<3; j++){
+						!function(j){
+							$(".innercircle:eq("+i+") li:eq("+j+")").mouseover(function(){
+								$(".innercircle:eq("+i+") li").css("background-color","");
+								$(".innercircle:eq("+i+") li:eq("+j+")").css("background-color","white");
+								$(".detail").css("display","none");
+								$(".detail"+(j+1)).css("display","block");
+								if(j==0){
+									$(".triangle").css({
+										"top":"90px",
+									});
+									$(".change3 ul li .circle").css("background-color","");
+									$(".change3 ul li:eq("+j+") .circle").css("background-color","white");
+								} 
+								if(j==1){
+									$(".triangle").css({
+										"top":"180px",
+									});
+									$(".change3 ul li .circle").css("background-color","");
+									$(".change3 ul li:eq("+j+") .circle").css("background-color","white");
+								} 
+								if(j==2){
+									 $(".triangle").css({
+										"top":"270px",
+									});
+									$(".change3 ul li .circle").css("background-color","");
+									$(".change3 ul li:eq("+j+") .circle").css("background-color","white");
+								}
+							});
+						}(j)
+					}
 				}(i)
 			}
 			
