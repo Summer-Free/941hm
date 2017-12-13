@@ -111,7 +111,7 @@ a:hover.ecsc-btn-grey{background-color: #ccc;border-color: #666 #666 #666 #666; 
 .ecsc-head-layout .admin-logo .logo{
 	margin:10px 10px 0 0;
 	display:block;
-	float:left;
+	/* float:left; */
 }
 .ecsc-head-layout .admin-logo img{
 	float:left;

@@ -12,6 +12,11 @@
 })() 
 </script>
 <![endif]-->
+<style>
+    .logo img{
+        width: 55%;
+    }
+</style>
 <header class="ecsc-head-layout w">
     <div class="wrapper">
         <div class="admin-logo">
