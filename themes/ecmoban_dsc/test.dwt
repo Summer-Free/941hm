@@ -1,32 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>测试文件</title>
+<meta charset="UTF-8">
+<title>测试页面</title>
 </head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>{$lang.cp_home}{if $ur_here} - {$ur_here} {/if}</title>
-<meta name="robots" content="noindex, nofollow">
-<link rel="shortcut icon" href="../favicon.ico" />
-<link rel="icon" href="../animated_favicon.gif" type="image/gif" />
-<link href="css/main.css" rel="stylesheet" type="text/css" />
-<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-<link href="css/perfect-scrollbar.min.css" rel="stylesheet" type="text/css">
-<link href="css/purebox.css" rel="stylesheet" type="text/css">
-<link href="js/jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css">
-<link href="../js/calendar/calendar.min.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="js/spectrum-master/spectrum.css">
-{insert_scripts files="jquery-1.9.1.min.js,../js/jquery.json.js,../js/transport_jquery.js,../js/utils.js,listtable.js,listtable_pb.js,perfect-scrollbar.min.js,dsc_admin2.0.js,jquery-ui/jquery-ui.min.js,jquery.cookie.js,../js/calendar/calendar.min.js,jquery.bgColorSelector.js,jquery.validation.min.js,common.js,../js/jquery.form.js,jquery.nyroModal.js"}
-<!--[if lt IE 9]>
-	<script src="js/css3-mediaqueries.js"></script>
-<![endif]-->
-<script language="JavaScript">
-/*这里把JS用到的所有语言都赋值到这里*/
-{foreach from=$lang.js_languages key=key item=item}
-var {$key} = "{$item}";
-{/foreach}
-</script>
+<script type="text/javascript" src="themes/ecmoban_dsc/js/jquery-1.9.1.min.js"></script>
 <body>
-
+	<a id="qiandao" href="javascript:;" onclick="qiandao()"; value="1" >签到</a>
+	<script type="text/javascript">
+	function qiandao(){
+		var user_id=$("#qiandao").attr('value');;
+		if(user_id>0){
+			//此处打开一个签到的弹框	显示本月日历并且显示已签到的天数和签到时间顺便显示
+		}
+	}
+</script>
 </body>
-</html>
+</html>	
