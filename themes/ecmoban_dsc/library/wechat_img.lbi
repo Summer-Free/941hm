@@ -1,0 +1,43 @@
+<style>
+	.wechat{
+		position: fixed;
+		z-index: 999;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 230px 0 0 750px;
+		background: url(themes/ecmoban_dsc/iamges/20170517/dialog-pic2.png);
+	}
+	.wechat_close{
+		position: absolute;
+		top: 180px;
+		right: 700px;
+		width: 51px;
+		height: 15px;
+		background-repeat: no-repeat;
+		background-position: -85px 0;
+		cursor: pointer;
+	}
+	.wechat_img{
+		width: 35%;
+	}
+</style>
+<div class="wechat">
+	<div class="wechat_close">
+		<img src="themes/ecmoban_dsc/iamges/20170517/index_wechat_sprite.png" alt="" width="100%">
+	</div>
+	<div class="wechat_img">
+		<img src="themes/ecmoban_dsc/iamges/20170517/index_wechat_img.png" alt="" width="100%">
+	</div>
+</div>
+
+<script type="text/javascript">
+    $(function(){
+    	$(".wechat_close").on("click",function() {
+    		$(".wechat").hide(0,function() {
+    			$(this).css("width",0)
+    		});
+    	});
+    });
+</script>

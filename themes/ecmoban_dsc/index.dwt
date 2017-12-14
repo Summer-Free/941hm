@@ -674,6 +674,9 @@
 		<!--家装节广告-->
 		<!-- #BeginLibraryItem "/library/active.lbi" --><!-- #EndLibraryItem -->
 
+		<!--微信公众号-->
+		<!-- #BeginLibraryItem "/library/wechat_img.lbi" --><!-- #EndLibraryItem -->
+
 		<!--footer-->
 		<!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->	
 
