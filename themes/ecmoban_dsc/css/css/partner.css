@@ -1,4 +1,8 @@
-﻿*{
+
+
+
+*{
+
 	font-family:"黑体","微软雅黑",sans-serif;
 }
 #body{
@@ -33,6 +37,7 @@
 	top: 380px;
 	left: 165px;
 }
+
 .outer .join:hover{
 	cursor: pointer;
 }
@@ -179,6 +184,7 @@
 }
 .change3 ul li div{
 	height: 5px;
+<<<<<<< HEAD
 }
 .change3 ul li .span{
 	font-size:60px;
@@ -207,6 +213,36 @@
 .detail1{
 	display: block;
 }
+
+}
+.change3 ul li .span{
+	font-size:60px;
+	color: white;
+	font-weight: 600;
+}
+.detail{
+	width: 500px;
+	height: 415px;
+	border: 4px solid white;
+	position: absolute;
+	bottom: 70px;
+	left: 840px;
+	font-weight: bold;
+	display: none;
+}
+.triangle{
+	width:0px;
+    height:0px;
+	border: 22px  solid white;
+	border-color:transparent white transparent transparent ;
+	position: absolute;
+	left: -48px;
+	top: 90px;
+}
+.detail1{
+	display: block;
+}
+
 .detail h2{
 	font-size: 25px;
 	color: white;
@@ -279,6 +315,42 @@
 .mix .second li{
 	font-size: 25px;
 	overflow: hidden;
+<<<<<<< HEAD
+}
+.mix .second li .blank{
+	margin-left: 35px;
+}
+.mix .second .top{
+	color: gray;
+	font-size: 20px;
+}
+.mix .img{
+	margin-top: 35px;
+	position: relative;
+	width: 1200px;
+	height: 177px;
+	display: flex;
+	justify-content: space-between;
+}
+.mix .img .title{
+	width: 55px;
+	height: 177px;
+	position: absolute;
+	top: 28.5px;
+}
+.mix .img .title li{
+	height: 30px;
+	width: 55px;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+}
+.mix .img li{
+	width: 305px;
+	height: 177px;
+	position: relative;
+}
+
 }
 .mix .second li .blank{
 	margin-left: 35px;
@@ -331,6 +403,17 @@
 	width: 1920px;
 	position: relative;
 }
+}
+.mix .img li p{
+	font-weight: bold;
+	line-height: 20px;
+	font-size: 15px;
+}
+
+.bg-img{
+	width: 1920px;
+	position: relative;
+}
 .two{
 	width: 1200px;
 	margin-left: 355px;
@@ -353,6 +436,22 @@
 	color: white;
 	text-align: center;
 	margin-top: 10px;
+<<<<<<< HEAD
+}
+.two .left .leader{
+	display: inline-block;
+	font-size: 25px;
+	font-weight: bold;
+	position: relative;
+	top: 15px;
+}
+.two .left h2{
+	margin-top: 50px;
+	margin-left: 145px;
+	display: inline-block;
+	font-size: 25px;
+	font-weight: bold;
+}
 }
 .two .left .leader{
 	display: inline-block;
@@ -381,6 +480,59 @@
 }
 .bottom{
 	clear: both;
+}
+.bottom-circle{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	border-radius: 13px;
+	border: 4px solid black;
+}
+.bottom-leader{
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 600;
+	position: relative;
+	top: -3px;
+}
+.bottom-left{
+	width: 620px;
+}
+.bottom-left h2{
+	font-size: 20px;
+	font-weight: 550;
+	position: relative;
+	left: 22px;
+}
+.bottom-left p{
+	margin-left: 22px;
+	margin-top: 33px;
+	font-size: 14px;
+	line-height: 25px;
+}
+.bottom img{
+	margin: 28px 0px;
+}
+.others-circle{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	border-radius: 8px;
+	border: 3px solid black;
+}
+.others-leader{
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 550;
+	position: relative;
+	top: -3px;
+}
+.others-left h2{
+	font-size: 20px;
+	font-weight: 550;
+	position: relative;
+	left: 22px;
+}
 }
 .bottom-circle{
 	width: 20px;
@@ -481,6 +633,36 @@
 .theinner h3{
 	font-size: 20px;
 }
+.partA img{
+	margin: 40px 0px;
+}
+.thered{
+	width: 1920px;
+	position: relative;
+}
+.theinner{
+	width: 1200px;
+	height: 1548px;
+	margin-left: 355px;
+	color: white;
+	position: absolute;
+	top: 90px;
+}
+.theinner P{
+	font-size: 16px;
+	font-size: 20px;
+}
+.theinner h1,
+.theinner h2{
+	font-size: 30px;
+	font-weight: 550;
+}
+.theinner h2{
+	margin-top: 15px;
+}
+.theinner h3{
+	font-size: 20px;
+}
 .themodel{
 	font-size: 20px;
 	margin-top: 30px;
@@ -528,6 +710,17 @@
 	margin-left: 355px;
 	color: red;
 }
+}
+.map{
+	position: relative;
+}
+.map .maptop{
+	position: absolute;
+	top: 80px;
+	width: 1200px;
+	margin-left: 355px;
+	color: red;
+}
 .map .maptop p{
 	font-size: 20px;
 	font-weight: 550;
@@ -548,6 +741,64 @@
 	font-weight: 550;
 	font-size: 18px;
 	margin-top: 55px;
+}
+.map .shop{
+	width: 1200px;
+	position: absolute;
+	left: 355px;
+	top:870px ;
+}
+
+.map .shop li img{
+	float: left;
+	margin-top: 20px;
+}
+.map .shop li .shoptext{
+	width: 287px;
+	float: left;
+	border-left: 1px solid black;
+	margin-left: 15px;
+}
+.map .shop li .shoptext h3{
+	font-size: 20px;
+	font-weight: 550;
+	color: black;
+	margin-left: 10px;
+}
+.map .shop li .shoptext p{
+	font-size: 17px;
+	font-weight: 500;
+	color: black;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+.spe{
+	clear: both;
+}
+.margin{
+	float: right;
+	margin-left: 360px;
+	margin-bottom:50px;
+}
+
+.grand{
+	position: relative;
+}
+.grand .class{
+	position: absolute;
+	top: 135px;
+	left: 355px;
+	width: 1200px;
+	
+}
+.grand .class h2{
+	width: 270px;
+	font-size: 33px;
+	color: white;
+}
+.grand .class .cl-left{
+	width: 530px;
+	float: left;
 }
 .map .shop{
 	width: 1200px;
@@ -692,41 +943,136 @@
 	font-size: 40px;
 	font-weight: 600;
 }
-.sec-8 {
-	padding: 75px 0;
+.grand .class .cl-left li img,
+.grand .class .cl-left li .cl-text {
+	color: white;
+	font-size: 15px;
 }
-.sec-8 h2 {
-	font-size: 36px;
+.cl-text {
+	margin-left: 20px;
+	position: absolute;
+	top: 0px;
+	left: 64px;
+	width: 450px;
+}
+.cl-text p{
+	margin-left: 25px;
+}
+.cl-text2{
+	top: 10px;
+}
+
+.case{
+	width: 1920px;
+	position: relative;
+}
+.case .content{
+	width: 1200px;
+	position: absolute;
+	top: 70px;
+	left: 355px;
+	color: red;
+}
+.content h2{
+	line-height: 50px;
+	font-size: 30px;
+	font-weight: 550;
+}
+.content .wrap{
+	width: 940px;
+	height: 330px;
+	background-color: white;
+	margin-left: 130px;
+	margin-top: 135px;
+	position: relative;
+}
+.content .wrap .wrap-wrap{
+	position: absolute;
+	bottom: 10px;
+	left: 25px;
+} 
+.content .wrap h1{
+	position: absolute;
+	left: 495px;
+	top: -44px;
+	color: white;
+	font-size: 30px;
+}
+.content .wrap p{
+	width: 428px;
+	position: absolute;
+	right: 20px;
+	top: 50px;
+	color: black;
+	font-size: 15px;
+}
+.content .wrap p span{
+	position:absolute;
+	right: 15px;
+	bottom: -30px;
+}
+.contact{
+	position: relative;
+}
+.contact .methed{
+	position: absolute;
+	top: 95px;
+	left: 490px;
+	width: 940px;
+}
+.contact .methed h2,
+.contact .methed h1{
+	color: white;
+	text-align: center;
+	font-size: 20px;
+}
+.contact .methed h1{
+	font-size: 40px;
+	margin-top: 10px;
+}
+.contact .methed form{
+	margin-top: 50px;
+}
+.contact .methed input{
+	width: 300px;
+	height: 50px;
+	border-radius: 10px;
+	border: none;
+	font-size: 20px;
+}
+.contact .methed input:nth-of-type(2){
+	margin: 0 10px;
+}
+.contact .methed textarea{
+	width: 940px;
+	height: 230px;
+	border-radius: 5px;
+	padding: 10px;
+	margin-top: 40px;
+}
+.contact .methed button{
+	width: 330px;
+	height: 50px;
+	background-color: orange;
+	color: white;
+	font-size: 20px;
+	border: none;
+	border-radius: 5px;
+	margin: 40px 305px 0 305px;
+}
+.contact .methed p{
+	color: white;
+	font-size: 20px;
+	margin: 20px 305px 0 305px;
 	text-align: center;
 }
-.sec-8 h2 p {
-	margin-top: 25px;
-	font-size: 14px;
-}
-.sec-8 form {
-	padding-top: 75px;
-	margin: 0 auto;
-	width: 540px;
-}
-.sec-8 button {
-	display: block;
-	margin: 75px auto 0;
-	width: 167px;
-	height: 53px;
-	line-height: 53px;
-	color: #fff;
-	font-size: 24px;
-	border: none;
-	cursor: pointer;
-	background-color: #ff9f29;
-}
-.sec-8 .form-group {
-	margin-bottom: 12px;
-	line-height: 29px;
-}
-.sec-8 label,
-.sec-8 input {
-	float: left;
+.lastbotton{
+	background-color: white;
+	width: 1920px;
+	height: 100px;
+	text-align: center;line-height: 100px;
+	font-size: 40px;
+	font-weight: 600;
 }
 .sec-8 input {
 	padding-left: 8px;

@@ -1,0 +1,360 @@
+.common-h2 {
+    margin-bottom: 106px;
+    font-size: 36px;
+    text-align: center;
+    font-weight: 600;
+}
+.common-h2 p {
+    margin-top: 35px;
+    font-size: 24px;
+    font-weight: normal;
+}
+.bg-color-f5f5f5 {
+	background-color: #fdfdfa!important;
+}
+
+.sec-1 li {
+    position: relative;
+    float: left;
+    width: 300px;
+    text-align: center;
+}
+.sec-1 h3 {
+    margin: 60px 0 30px;
+    font-size: 24px;
+}
+.sec-1 h3 + p {
+    font-size: 14px;
+    color: #999;
+    line-height: 1.5;
+}
+.sec-1 .arrow:after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: ;
+    width: 18px;
+    height: 33px;
+    background-position: -482px 0;
+}
+.icon {
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    background: url(../../iamges/20170517/pprz-1.png);
+}
+.icon:after,.sec-1 .arrow:after {
+    z-index: 5;
+    position: absolute;
+    content: "";
+    display: block;
+    background-image: url(../../iamges/20170517/partner-pic1.png);
+    background-repeat: no-repeat;
+}
+.icon:after {
+    top: 50%;
+    left: 50%;
+}
+.sec-1,
+.sec-2 {
+	padding: 140px 0;
+}
+.sec-1 .icon:after {
+    margin-top: -32.5px;
+    height: 65px;
+}
+.icon-1:after {
+    margin-left: -32.5px;
+    width: 65px;
+    background-position: 0 0;
+}
+.icon-2:after {
+    margin-left: -32.5px;
+    margin-top: -34.5px;
+    width: 76px;
+    height: 69px;
+    background-position: -88px 0;
+}
+.icon-3:after {
+    margin-left: -32px;
+    width: 64px;
+    background-position: -185px 0;
+}
+.icon-4:after {
+    margin-left: -31.5px;
+    margin-top: -31.5px;
+    width: 63px;
+    height: 63px;
+    background-position: -263px 0;
+}
+
+.sec-2 h2 {
+	margin-bottom: 140px;
+	font-size: 36px;
+	text-align: center;
+}
+.sec-2 li {
+	margin: 0 24px 29px 0;
+	float: left;
+	height: 383px;
+	text-align: center;
+	background-color: #fff;
+}
+.sec-2 h3 {
+	margin: 12px 0 25px;
+	font-size: 18px;
+	font-weight: 600;
+}
+.sec-2 p {
+	margin-bottom: 6px;
+	color: #999;
+}
+.sec-3 {
+	padding-top: 75px;
+}
+.sec-3 li {
+	padding-bottom: 75px;
+	float: left;
+	width: 300px;
+	text-align: center;
+}
+.sec-3 h3 {
+	margin: 40px 0 20px;
+	font-size: 24px;
+}
+.sec-3 p {
+	margin-bottom: 3px;
+	color: #999;
+}
+.icon-5:after {
+    margin-left: -30px;
+    margin-top: -28.5px;
+    width: 60px;
+    height: 57px;
+    background-position: 0 -89px;
+}
+.icon-6:after {
+    margin-left: -28px;
+    margin-top: -28.5px;
+    width: 56px;
+    height: 57px;
+    background-position: -88px -89px;
+}
+.icon-7:after {
+    margin-left: -30px;
+    margin-top: -29.5px;
+    width: 60px;
+    height: 59px;
+    background-position: -185px -89px;
+}
+.icon-8:after {
+    margin-left: -31px;
+    margin-top: -27px;
+    width: 62px;
+    height: 54px;
+    background-position: -263px -89px;
+}
+.icon-9:after {
+    margin-left: -31.5px;
+    margin-top: -29.5px;
+    width: 63px;
+    height: 59px;
+    background-position: -347px -89px;
+}
+.icon-10:after {
+    margin-left: -24.5px;
+    margin-top: -28.5px;
+    width: 49px;
+    height: 57px;
+    background-position: -433px -89px;
+}
+.icon-11:after {
+    margin-left: -29px;
+    margin-top: -27.5px;
+    width: 58px;
+    height: 55px;
+    background-position: 0 -170px;
+}
+.icon-12:after {
+    margin-left: -26.5px;
+    margin-top: -27.5px;
+    width: 53px;
+    height: 55px;
+    background-position: -88px -170px;
+}
+.sec-4 {
+	height: 230px;
+	background: url(../../iamges/20170517/partner-pic10.jpg) no-repeat top center;
+}
+.icon-13:after {
+    margin-left: -27.5px;
+    margin-top: -27.5px;
+    width: 55px;
+    height: 55px;
+    background-position: -185px -170px;
+}
+.icon-14:after {
+    margin-left: -28px;
+    margin-top: -27px;
+    width: 56px;
+    height: 54px;
+    background-position: -263px -170px;
+}
+.icon-15:after {
+    margin-left: -27.5px;
+    margin-top: -27.5px;
+    width: 55px;
+    height: 54px;
+    background-position: -347px -170px;
+}
+.icon-16:after {
+    margin-left: -26px;
+    margin-top: -26px;
+    width: 52px;
+    height: 52px;
+    background-position: -433px -170px;
+}
+.icon-17:after {
+    margin-left: -23px;
+    margin-top: -28px;
+    width: 46px;
+    height: 56px;
+    background-position: 0 -252px;
+}
+.icon-18:after {
+    margin-left: -35px;
+    margin-top: -27.5px;
+    width: 70px;
+    height: 55px;
+    background-position: -88px -252px;
+}
+.icon-19:after {
+    margin-left: -28px;
+    margin-top: -28px;
+    width: 56px;
+    height: 56px;
+    background-position: -185px -252px;
+}
+.icon-20:after {
+    margin-left: -29px;
+    margin-top: -29px;
+    width: 58px;
+    height: 58px;
+    background-position: -263px -252px;
+}
+.sec-5 {
+	padding: 152px 0 53px;
+}
+.sec-5 .content .left {
+	float: left;
+}
+.sec-5 .content img {
+	float: right;
+}
+.sec-5 h3 {
+	margin-bottom: 15px;
+	font-size: 24px;
+}
+.sec-5 p {
+	color: #999;
+	line-height: 2.5;
+}
+.sec-5 li {
+	padding-bottom: 20px;
+}
+.sec-5 ul {
+	position: relative;
+	top: 60px;
+}
+.sec-6 {
+	padding: 140px 0;
+}
+.sec-6 h2 {
+	margin-bottom: 140px;
+	font-size: 36px;
+	text-align: center;
+}
+.sec-6 li {
+	padding: 47px 0;
+}
+.sec-6 li h4,
+.sec-6 li div {
+	float: left;
+}
+.sec-6 li h4 {
+	padding-right: 30px;
+	color: #ff9f29;
+	font-size: 30px;
+}
+.sec-6 li h5 {
+	margin-bottom: 12px;
+	font-size: 18px;
+}
+.sec-6 .border-btm-1 {
+	border-bottom: 1px solid #e5e5e5;
+}
+.sec-6 li p {
+	color: #999;
+	line-height: 1.8;
+}
+.sec-7 {
+	padding: 75px 0;
+}
+.sec-7 h2 {
+	margin-bottom: 50px;
+	text-align: center;
+	font-size: 24px;
+}
+.sec-7 h2 i {
+	font-size: 36px;
+	font-style: normal;
+	color: #ff9f2a;
+}
+.sec-7 img {
+	display: inline-block;
+}
+.sec-8 {
+	padding: 75px 0;
+}
+.sec-8 h2 {
+	font-size: 36px;
+	text-align: center;
+}
+.sec-8 h2 p {
+	margin-top: 25px;
+	font-size: 14px;
+}
+.sec-8 form {
+	padding-top: 75px;
+	margin: 0 auto;
+	width: 540px;
+}
+.sec-8 button {
+	display: block;
+	margin: 75px auto 0;
+	width: 167px;
+	height: 53px;
+	line-height: 53px;
+	color: #fff;
+	font-size: 24px;
+	border: none;
+	cursor: pointer;
+	background-color: #ff9f29;
+}
+.sec-8 .form-group {
+	margin-bottom: 12px;
+	line-height: 29px;
+}
+.sec-8 label,
+.sec-8 input {
+	float: left;
+}
+.sec-8 input {
+	padding-left: 8px;
+	margin-left: 40px;
+	width: 440px;
+	height: 29px;
+	border: 1px solid #333;
+}
