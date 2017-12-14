@@ -160,14 +160,7 @@
                 </div>
             </div>
             <!--Navigation end-->
-            <script type="text/javascript">
-                $(document).ready(function(){
-                    $('.nav-content li a').each(function(){
-                        if($($(this))[0].href==String(window.location))
-                            $(this).parent().addClass('active');
-                    });
-                })
-            </script>
+            <script type="text/javascript" src="themes/ecmoban_dsc/js/nav_color.js"></script>
             <style>
                 .active{background-color: #460909;}
             </style>
