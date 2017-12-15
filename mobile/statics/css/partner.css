@@ -340,6 +340,7 @@ body,
 #wrap{
 	width: 100%;
 	margin: 0px auto;
+	padding: 0 10px;
 }
 #banner img{
 	width: 100%;
@@ -357,9 +358,7 @@ body,
 	position: relative;
 	left: -2.5px;
 }
-.banner-af img:last-of-type{
-	height: 270px;
-}
+
 .banner-af .text-top{
 	width: 100%;
 	height: 85px;
@@ -389,33 +388,41 @@ body,
 .banner-af .text-top li span:last-of-type{
 	top: 37.5px;
 }
+.banner-af .text-right img{
+	width: 100%;
+	height: 100%;
+}
 .banner-af .text-right{
-	width: 50%;
-	height: 270px;
-	position: absolute;
-	top: 85px;
-	left: 50%;
+	width: 100%;
+	position: relative;
 	display: flex;
 	flex-direction: column;
-	/*align-items: center;*/
 	justify-content: space-around;
 }
 .banner-af .text-right div{
-	font-size: 1.2rem;
-	width: 100%;
-	height: 25%;
-	padding-right: 10px;
+	font-size: 0.5rem;
+	width: 50%;
+	height: 33.33%;
 	text-align: left;
 	align-self: center;
+	position: absolute;
+	top: 33.33%;
+	left: 50%;
+}
+.banner-af .text-right div:first-of-type{
+	top: 0;
+}
+.banner-af .text-right div:last-of-type{
+	top: 66.66%;
 }
 .banner-af .text-right span{
-	font-size: 20px;
+	font-size:0.8rem;
 }
 .model{
 	position: relative;
 	width: 100%;
 }
-.model img{
+.model>img{
 	width: 100%;
 	height: 85px;
 }
@@ -434,38 +441,42 @@ body,
 }
 .model ul li{
 	width: 100%;
-	height: 250px;
+	height: 100%;
 	position: relative;
 	margin-bottom: 20px;
 }
 .model ul li img{
 	width: 100%;
-	height: 250px;
 	position: relative;
-	top: -16px;
+	top: 0px;
 }
 .model ul li .text-li{
 	width: 50%;
-	height: 250px;
+	height: 100%;
 	position: absolute;
 	top: 0px;
 	left: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content:center ;
 }
 .text-li h3{
 	width: 100%;
-	height: 80px;
-	padding-right: 10px;
-	line-height:80px;
-	text-align: center;
+	height: 10%;
+	font-size: 1rem;
+	line-height:10%;
 }
 .text-li div{
 	width: 100%;
-	height: 220px;
-	font-size: 1.2rem;
-	padding-right: 10px;
+	height: 40%;
+	font-size: 1rem;
+	text-align: center;
 }
 .myth{
 	width: 100%;
+	height: 85px;
+}
+.myth img{
 	height: 85px;
 }
 .myth h1{
@@ -479,20 +490,16 @@ body,
 	top: 0px;
 	margin: 0;
 }
-.myth ul li img{
-	width: 100%;
-	height: 311px;
-}
 .special h3{
 	color: red;
 }
 .img-wrap{
 	width: 100%;
-	height: 486px;
+	height: 100%;
 }
 .img-wrap img{
 	width: 100%;
-	height: 486px;
+	height: 100%;
 }
 .media {
 	width: 100%;
@@ -512,11 +519,11 @@ body,
 }
 .media img{
 	width: 100%;
-	height: 360px;
+	height: 100%;
 }
 .media1 img{
 	width: 100%;
-	height: 116px;
+	height: 100%;
 }
 .media2{
 	position: relative;
@@ -541,7 +548,7 @@ body,
 }
 .media2 img{
 	width: 100%;
-	height: 261px;
+	height: 100%;
 }
 .media2 img:first-of-type{
 	height: 85px;
@@ -579,7 +586,7 @@ body,
 }
 .character img{
 	width: 100%;
-	height: 167px;
+	height: 100%;
 }
 .character h1{
 	width: 100%;
@@ -612,7 +619,7 @@ body,
 }
 .range ul li img{
 	width: 100%;
-	height: 234px;
+	height: 100%;
 	margin-top: 10px;
 }
 .achievement {
@@ -640,10 +647,6 @@ body,
 .achievement dl dd p{
 	width: 100%;
 	padding: 0 20px 0 30px;
-	line-height: 40px;
-}
-.achievement dl dd p:first-of-type{
-	padding: 0 10px;
 }
 .case{
 	width: 100%;
@@ -654,17 +657,20 @@ body,
 	height: 85px;
 	margin: 20px 0;
 }
-.case .img-wrap{
+.case .wrap-img{
 	width: 100%;
-	height: 390px;
+	height: 100%;
+	overflow: hidden;
 }
-.case .img-wrap img{
+.case .wrap-img img:first-of-type{
 	width: 60%;
-	height: 390px;
+	height: 100%;
 	float: left;
 }
-.case .img-wrap img:last-of-type{
+.case .wrap-img img:last-of-type{
 	width: 40%;
+	height: 100%;
+	float: left;
 }
 .case h1{
 	width: 100%;
@@ -720,7 +726,18 @@ body,
 	background-color: #f99021;
 }
 @media only screen and (max-width: 420px) {
-	.special h3{
+	
+	.text-li div{
+		height: 65%;
+	}
+	.text-li1 div h3{
+		font-size: 0.8px;
+	}
+	.text-li1 div{
+		height:65%;
+		font-size: 0.8rem;
+	}
+	/*.special h3{
 		font-size: 1.2rem;
 	}
 	.special,
@@ -741,5 +758,5 @@ body,
 	.achievement dl dd p,
 	.character h1{
 		line-height: 20px;
-	}
+	}*/
 }
