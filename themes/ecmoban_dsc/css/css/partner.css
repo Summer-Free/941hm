@@ -1030,36 +1030,7 @@
 	font-size: 40px;
 	margin-top: 10px;
 }
-.contact .methed form{
-	margin-top: 50px;
-}
-.contact .methed input{
-	width: 300px;
-	height: 50px;
-	border-radius: 10px;
-	border: none;
-	font-size: 20px;
-}
-.contact .methed input:nth-of-type(2){
-	margin: 0 10px;
-}
-.contact .methed textarea{
-	width: 940px;
-	height: 230px;
-	border-radius: 5px;
-	padding: 10px;
-	margin-top: 40px;
-}
-.contact .methed button{
-	width: 330px;
-	height: 50px;
-	background-color: orange;
-	color: white;
-	font-size: 20px;
-	border: none;
-	border-radius: 5px;
-	margin: 40px 305px 0 305px;
-}
+
 .contact .methed p{
 	color: white;
 	font-size: 20px;
@@ -1073,6 +1044,35 @@
 	text-align: center;line-height: 100px;
 	font-size: 40px;
 	font-weight: 600;
+}
+
+.sec-8 form {
+	padding-top: 75px;
+	margin: 0 auto;
+	width: 540px;
+}
+.sec-8 button {
+	display: block;
+	margin: 75px auto 0;
+	width: 167px;
+	height: 53px;
+	line-height: 53px;
+	color: #fff;
+	font-size: 24px;
+	border: none;
+	cursor: pointer;
+	background-color: #ff9f29;
+}
+.sec-8 .form-group {
+	margin-bottom: 12px;
+	line-height: 29px;
+}
+.sec-8 label,
+.sec-8 input {
+	float: left;
+}
+.sec-8 label{
+	color: white;
 }
 .sec-8 input {
 	padding-left: 8px;

@@ -1,4 +1,4 @@
-.container,
+/*.container,
 .col-lg-1, .col-lg-10, 
 .col-lg-11, .col-lg-12, 
 .col-lg-2, .col-lg-3, 
@@ -325,4 +325,421 @@ body {
 .sec-9 h2 {
 	padding-top: 1.5rem;
 	font-size: 3.33rem;
+}*/
+
+
+*{
+	font-family: "微软雅黑","黑体",sans-serif;
+	font-size: 1.5rem;
+}
+body,
+#banner{
+	width: 100%;
+	background-color: #f4f4f4;
+}
+#wrap{
+	width: 100%;
+	margin: 0px auto;
+}
+#banner img{
+	width: 100%;
+}
+.banner-af{
+	width: 100%;
+	overflow: hidden;
+	margin: 10px 0px;
+	position: relative;
+}
+.banner-af img{
+	width: 100%;
+	height: 85px;
+	display: block;
+	position: relative;
+	left: -2.5px;
+}
+.banner-af img:last-of-type{
+	height: 270px;
+}
+.banner-af .text-top{
+	width: 100%;
+	height: 85px;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: 0px;
+	left: -4.5px;
+}
+.banner-af .text-top li{
+	width: 33.3%;
+	height: 85px;
+	text-align: center;
+	color: white;
+	font-size: 1.8rem;
+	position: relative;
+}
+.banner-af .text-top li span{
+	width: 100%;
+	display: inline-block;
+	height: 35px;
+	line-height: 35px;
+	position: absolute;
+	top: 7.5px;
+	left: 0;
+}
+.banner-af .text-top li span:last-of-type{
+	top: 37.5px;
+}
+.banner-af .text-right{
+	width: 50%;
+	height: 270px;
+	position: absolute;
+	top: 85px;
+	left: 50%;
+	display: flex;
+	flex-direction: column;
+	/*align-items: center;*/
+	justify-content: space-around;
+}
+.banner-af .text-right div{
+	font-size: 1.2rem;
+	width: 100%;
+	height: 25%;
+	padding-right: 10px;
+	text-align: left;
+	align-self: center;
+}
+.banner-af .text-right span{
+	font-size: 20px;
+}
+.model{
+	position: relative;
+	width: 100%;
+}
+.model img{
+	width: 100%;
+	height: 85px;
+}
+.model h2{
+	width: 100%;
+	font-size: 1.8rem;
+	color: white;
+	position: absolute;
+	top: 0;
+	text-align: center;
+	line-height: 85px;
+}
+.model ul{
+	width: 100%;
+	overflow: hidden;
+}
+.model ul li{
+	width: 100%;
+	height: 250px;
+	position: relative;
+	margin-bottom: 20px;
+}
+.model ul li img{
+	width: 100%;
+	height: 250px;
+	position: relative;
+	top: -16px;
+}
+.model ul li .text-li{
+	width: 50%;
+	height: 250px;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+}
+.text-li h3{
+	width: 100%;
+	height: 80px;
+	padding-right: 10px;
+	line-height:80px;
+	text-align: center;
+}
+.text-li div{
+	width: 100%;
+	height: 220px;
+	font-size: 1.2rem;
+	padding-right: 10px;
+}
+.myth{
+	width: 100%;
+	height: 85px;
+}
+.myth h1{
+	width: 100%;
+	height: 85px;
+	line-height: 85px;
+	color: white;
+	text-align: center;
+	font-size: 1.8rem;
+	position: absolute;
+	top: 0px;
+	margin: 0;
+}
+.myth ul li img{
+	width: 100%;
+	height: 311px;
+}
+.special h3{
+	color: red;
+}
+.img-wrap{
+	width: 100%;
+	height: 486px;
+}
+.img-wrap img{
+	width: 100%;
+	height: 486px;
+}
+.media {
+	width: 100%;
+}
+.media h1{
+	width: 100%;
+	line-height: 30px;
+	color: red;
+	text-align: center;
+	font-size: 1.5rem;
+}
+.media p{
+	width: 100%;
+	height: 120px;
+	font-size: 1.5rem;
+	padding: 0 20px;
+}
+.media img{
+	width: 100%;
+	height: 360px;
+}
+.media1 img{
+	width: 100%;
+	height: 116px;
+}
+.media2{
+	position: relative;
+}
+.media2 h1{
+	width: 100%;
+	line-height: 30px;
+	color: red;
+	text-align: center;
+	font-size: 1.5rem;
+}
+.media2 h2{
+	width: 100%;
+	height: 85px;
+	line-height: 85px;
+	color: white;
+	text-align: center;
+	font-size: 1.8rem;
+	position: absolute;
+	top: 40px;
+	margin: 0;
+}
+.media2 img{
+	width: 100%;
+	height: 261px;
+}
+.media2 img:first-of-type{
+	height: 85px;
+}
+.all-text{
+	width: 100%;
+}
+.all-text ul{
+	margin-top: 20px;
+}
+.all-text li{
+	width: 100%;
+	margin-bottom: 20px;
+	font-weight: 550;
+}
+.all-text li h4{
+	width: 100%;
+	line-height: 25px;
+}
+.all-text li h4 span{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	font-size: 1.5rem;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 0 5px 2px 15px;
+}
+.all-text li p{
+	width: 100%;
+	padding: 0 10px;
+}
+.character{
+	width: 100%;
+}
+.character img{
+	width: 100%;
+	height: 167px;
+}
+.character h1{
+	width: 100%;
+	font-size: 1.5rem;
+	color: red;
+	text-align: center;
+	padding: 10px 20px 0 20px;
+	line-height: 30px;
+}
+.range{
+	width: 100%;
+	position: relative;
+}
+.range>img{
+	width: 100%;
+	height: 85px;
+}
+.range h1{
+	width: 100%;
+	color: white;
+	position: absolute;
+	top: 0;
+	text-align: center;
+	font-size: 1.8rem;
+	line-height: 85px;
+	margin: 0px;
+}
+.range ul li{
+	
+}
+.range ul li img{
+	width: 100%;
+	height: 234px;
+	margin-top: 10px;
+}
+.achievement {
+	width: 100%;
+	position: relative;
+}
+.achievement img{
+	width: 100%;
+	height: 85px;
+}
+.achievement h1{
+	width: 100%;
+	color: white;
+	position: absolute;
+	top: 0;
+	text-align: center;
+	font-size: 1.8rem;
+	line-height: 85px;
+	margin: 0px;
+}
+.achievement dl dd{
+	width: 100%;
+	margin-top: 20px;
+}
+.achievement dl dd p{
+	width: 100%;
+	padding: 0 20px 0 30px;
+	line-height: 40px;
+}
+.achievement dl dd p:first-of-type{
+	padding: 0 10px;
+}
+.case{
+	width: 100%;
+	position: relative;
+}
+.case>img{
+	width: 100%;
+	height: 85px;
+	margin: 20px 0;
+}
+.case .img-wrap{
+	width: 100%;
+	height: 390px;
+}
+.case .img-wrap img{
+	width: 60%;
+	height: 390px;
+	float: left;
+}
+.case .img-wrap img:last-of-type{
+	width: 40%;
+}
+.case h1{
+	width: 100%;
+	line-height: 85px;
+	text-align: center;
+	font-size: 1.8rem;
+	position: absolute;
+	top: 20px;
+	color: white;
+	margin: 0px;
+}
+.case p{
+	padding: 20px;
+}
+.case p span{
+	display: block;
+	width: 100%;
+	text-align: right;
+}
+.sec-8 {
+	padding: 1rem 0;
+	height: 15.111rem;
+	background: url(../img/newapp/par-pic7.jpg) no-repeat top center;
+	background-size: 100% 100%;
+}
+.sec-8 h2 {
+	margin-bottom: 1rem;
+	color: #f99021;
+	font-weight: 600;
+	text-align: center;
+	font-size: 1.8rem;
+}
+.sec-8 .form-group {
+	margin-bottom: .6rem;
+}
+.sec-8 label {
+	text-align: right;
+}
+.sec-8 label,
+.sec-8 input,
+.sec-8 button,
+.sec-8 select {
+	padding: 0;
+	height: 1.555rem;
+	font-size: 1.333rem;
+	line-height: 1.555rem;
+}
+.sec-8 input {
+	padding-left: .5rem;
+}
+.sec-8 button {
+	color: #fff;
+	background-color: #f99021;
+}
+@media only screen and (max-width: 420px) {
+	.special h3{
+		font-size: 1.2rem;
+	}
+	.special,
+	.special img{
+		height: 200px !important;
+	}
+	.img-wrap,
+	.img-wrap img{
+		height: 400px;
+	}
+	.character img{
+		height: 100px;
+	}
+	.img-wrap,
+	.img-wrap img{
+		height: 300px;
+	}
+	.achievement dl dd p,
+	.character h1{
+		line-height: 20px;
+	}
 }
