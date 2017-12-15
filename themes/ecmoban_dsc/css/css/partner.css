@@ -1011,32 +1011,7 @@
 	right: 15px;
 	bottom: -30px;
 }
-.contact{
-	position: relative;
-}
-.contact .methed{
-	position: absolute;
-	top: 95px;
-	left: 490px;
-	width: 940px;
-}
-.contact .methed h2,
-.contact .methed h1{
-	color: white;
-	text-align: center;
-	font-size: 20px;
-}
-.contact .methed h1{
-	font-size: 40px;
-	margin-top: 10px;
-}
 
-.contact .methed p{
-	color: white;
-	font-size: 20px;
-	margin: 20px 305px 0 305px;
-	text-align: center;
-}
 .lastbotton{
 	background-color: white;
 	width: 1920px;
@@ -1044,8 +1019,33 @@
 	text-align: center;line-height: 100px;
 	font-size: 40px;
 	font-weight: 600;
+	position: relative;
 }
 
+.sec-8,
+.sec-8 .w1200 {
+	padding: 75px 0;
+}
+.sec-8{
+	position: relative;
+}
+.sec-8 img{
+	position: absolute;
+	top: 0px;
+}
+.sec-8 .w1200{
+	position: relative;
+	top: -75px;
+	color: white;
+}
+.sec-8 h2 {
+	font-size: 36px;
+	text-align: center;
+}
+.sec-8 h2 p {
+	margin-top: 25px;
+	font-size: 14px;
+}
 .sec-8 form {
 	padding-top: 75px;
 	margin: 0 auto;
@@ -1070,9 +1070,6 @@
 .sec-8 label,
 .sec-8 input {
 	float: left;
-}
-.sec-8 label{
-	color: white;
 }
 .sec-8 input {
 	padding-left: 8px;

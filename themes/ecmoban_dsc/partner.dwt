@@ -5,9 +5,8 @@
         <!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem -->
         <!--首页专用-->
         <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/partner.css">
-
-        {* 包含脚本文件 *}
-        {insert_scripts files='jquery.json.js,transport_jquery.js'}
+        <link rel="stylesheet" href="themes/ecmoban_dsc/css/css/base.css">
+        
 </head>
 
     <!--header start-->
@@ -517,11 +516,10 @@
                 </div>
             </div>
             
-            <div class="contact sec-8">
+            <div class="sec-8 bg-color-fff">
                 <img src="themes/ecmoban_dsc/iamges/20170517/10.jpg"/>
-                <div class="methed">
-                    <h2>就是要红全国城市合伙人强势招募中</h2>
-                    <h1>报名入口</h1>
+                <div class="w1200">
+                    <h2>报名入口<p>就是要红全国城市合伙人强势招募中</p></h2>
                     <form id="form_info" action="">
                         <div class="form-group clearfix">
                             <label for="bm_name">您的姓名:</label>
@@ -537,9 +535,9 @@
                         </div>
                         <button id="check_submit">确认提交</button>
                     </form>
-                    <p>了解更多优惠政策 请留言</p>
                 </div>
             </div>
+            
             <div class="lastbotton">
                 报名热线：400-666-9338
             </div>
