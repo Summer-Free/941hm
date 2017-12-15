@@ -3,7 +3,7 @@
 
 *{
 
-	font-family:"黑体","微软雅黑",sans-serif;
+	font-family: "Microsoft Yahei";
 }
 #body{
 	background-color: #ccc;
@@ -1011,61 +1011,7 @@
 	right: 15px;
 	bottom: -30px;
 }
-.contact{
-	position: relative;
-}
-.contact .methed{
-	position: absolute;
-	top: 95px;
-	left: 490px;
-	width: 940px;
-}
-.contact .methed h2,
-.contact .methed h1{
-	color: white;
-	text-align: center;
-	font-size: 20px;
-}
-.contact .methed h1{
-	font-size: 40px;
-	margin-top: 10px;
-}
-.contact .methed form{
-	margin-top: 50px;
-}
-.contact .methed input{
-	width: 300px;
-	height: 50px;
-	border-radius: 10px;
-	border: none;
-	font-size: 20px;
-}
-.contact .methed input:nth-of-type(2){
-	margin: 0 10px;
-}
-.contact .methed textarea{
-	width: 940px;
-	height: 230px;
-	border-radius: 5px;
-	padding: 10px;
-	margin-top: 40px;
-}
-.contact .methed button{
-	width: 330px;
-	height: 50px;
-	background-color: orange;
-	color: white;
-	font-size: 20px;
-	border: none;
-	border-radius: 5px;
-	margin: 40px 305px 0 305px;
-}
-.contact .methed p{
-	color: white;
-	font-size: 20px;
-	margin: 20px 305px 0 305px;
-	text-align: center;
-}
+
 .lastbotton{
 	background-color: white;
 	width: 1920px;
@@ -1073,6 +1019,57 @@
 	text-align: center;line-height: 100px;
 	font-size: 40px;
 	font-weight: 600;
+	position: relative;
+}
+
+.sec-8,
+.sec-8 .w1200 {
+	padding: 75px 0;
+}
+.sec-8{
+	position: relative;
+}
+.sec-8 img{
+	position: absolute;
+	top: 0px;
+}
+.sec-8 .w1200{
+	position: relative;
+	top: -75px;
+	color: white;
+}
+.sec-8 h2 {
+	font-size: 36px;
+	text-align: center;
+}
+.sec-8 h2 p {
+	margin-top: 25px;
+	font-size: 14px;
+}
+.sec-8 form {
+	padding-top: 75px;
+	margin: 0 auto;
+	width: 540px;
+}
+.sec-8 button {
+	display: block;
+	margin: 75px auto 0;
+	width: 167px;
+	height: 53px;
+	line-height: 53px;
+	color: #fff;
+	font-size: 24px;
+	border: none;
+	cursor: pointer;
+	background-color: #ff9f29;
+}
+.sec-8 .form-group {
+	margin-bottom: 12px;
+	line-height: 29px;
+}
+.sec-8 label,
+.sec-8 input {
+	float: left;
 }
 .sec-8 input {
 	padding-left: 8px;
