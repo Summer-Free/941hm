@@ -119,9 +119,6 @@ footer dd {
 	height: calc(100vh);
 	background-color: rgba(0,0,0,.5);
 }
-.dialog-getTel {
-	position: relative;
-}
 .dialog-Winning .content,
 .dialog-getTel .content {
 	position: fixed;
@@ -175,6 +172,7 @@ footer dd {
 }
 .dialog-getTel .getCode {
 	position: relative;
+	display: none;
 }
 .dialog-getTel .getCode button {
 	z-index: 10;
@@ -198,8 +196,6 @@ footer dd {
 	border-radius: 20px;
 	box-shadow: 2px 2px 2px rgba(0,0,0,.3);
 	background-color: #3af0d4;
-	position: absolute;
-	bottom: 0rem;
 }
 .dialog-getTel .error {
 	padding-left: .5rem;

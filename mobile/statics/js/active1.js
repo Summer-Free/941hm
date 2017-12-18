@@ -135,10 +135,23 @@ $(function() {
     $(".dialog-getTel .getCode button").on("click",function(e) {
         var tel = $('#tel').val();
         var check_tel = check_phone(tel),$this = $(this);
-        
+       
         if(check_tel){
             var param = {phone:tel};
             var url = '/mobile/index.php?r=active/index/send';
+             $("dialog-getTel a").on("click",function(){
+	        	$.post("",param,function(data){
+	        		 var result = eval('('+data+')');
+               		 console.log(result.code);
+               		 if (result.code == 0) { //未注册
+               		 	$(".dialog-getTel .getCode").css("dispaly","block");
+               		 } else if (result.code == 1){//会员
+               		 	
+               		 }else if(result.code == 2){//老用户
+               		 	
+               		 }
+	        	})
+	        })
             $.post(url,param,function (data) {
             	
                 var result = eval('('+data+')');
