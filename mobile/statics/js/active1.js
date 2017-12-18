@@ -67,24 +67,22 @@ $(function() {
             $("#tel+span").remove();
             $("#tel").after("<span class='error'>您的号码有误</span>");
             return false;
-        }else if(phone == null){
-            var param = {phone:phone};
-            var url = '/mobile/index.php?r=active/index/double';
-            $.post(url,param,function (data) 
-            {
-                var result = eval('('+data+')');
-                if(result.code == 16)
-                {
-                    $("#tel+span").remove();
-                    $("#tel").after("<span class='error'>您的号码有误</span>");
-                    return false;
-                } 
-            })
         }
-        else{
+//      else if(phone != ""){
+//          var url = '/mobile/index.php?r=active/index/double';
+//          var param = {phone:tel};
+//          $.post(url,function (data) {
+//              var result = eval('('+data+')');
+//              if(result.code == 16){
+//                  $("#tel+span").remove();
+//                  $("#tel").after("<span class='error'>您已参加过该活动</span>");
+//                  return false;
+//              }
+//          })
+//      }else{
             $("#tel+span").remove();
             return true;
-        };
+//      };
     };
     // 判断是否微信
     var isWeiXin =  function () {
@@ -118,12 +116,12 @@ $(function() {
     //微信打开时，显示关注公众号广告条
     if(isWeiXin()) {
         $(".follow").show();
-        console.log("111")
     }
 
     //点击牌面，弹出弹窗
     $(".sec-2 li div").on("click",function() {
         prize($(this));
+		getTel();
     });
 
     //点击关闭按钮，关闭弹窗
@@ -137,11 +135,14 @@ $(function() {
     $(".dialog-getTel .getCode button").on("click",function(e) {
         var tel = $('#tel').val();
         var check_tel = check_phone(tel),$this = $(this);
+        
         if(check_tel){
             var param = {phone:tel};
             var url = '/mobile/index.php?r=active/index/send';
             $.post(url,param,function (data) {
+            	
                 var result = eval('('+data+')');
+                console.log(result.code);
                 if(result.code == 10){
                     var time = 60,
                         timer,
