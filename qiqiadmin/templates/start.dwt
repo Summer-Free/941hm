@@ -255,20 +255,6 @@
                         	<div id="total_main" style="height:274px;"></div>
                         </div>
                     </div>
-                    <div class="section section_user_count">
-                        <div class="sc_title">
-                            <i class="sc_icon"></i>
-                            <h3>会员注册统计</h3>
-                            <div class="filter_date">
-                                <a href="javascript:;" onclick="set_statistical_chart(this, 'user', 'week')">七天</a>
-                                <a href="javascript:;" onclick="set_statistical_chart(this, 'user', 'month')">一月</a>
-                                <a href="javascript:;" onclick="set_statistical_chart(this, 'user', 'year')">半年</a>
-                            </div>                          
-                        </div>
-                        <div class="sc_warp">
-                            <div id="total_main" style="height:274px;"></div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="contentWarp bf100">
@@ -402,7 +388,6 @@
     <script type="text/javascript">
 		set_statistical_chart(".section_order_count .filter_date a:first", "order", "week"); //初始设置
 		set_statistical_chart(".section_total_count .filter_date a:first", "sale", "week"); //初始设置
-        set_statistical_chart(".section_user_count .filter_date a:first", "user", "week"); //初始设置
 		function set_statistical_chart(obj, type, date)
 		{
 			var obj = $(obj);
@@ -420,10 +405,7 @@
 					}
 					if(type == 'sale'){
 						var div_id = "total_main";
-					}
-                    if(type == 'user'){
-                        var div_id = "user_main";
-                    }	
+					}	
 					var myChart = echarts.init(document.getElementById(div_id));
 					myChart.setOption(data);
 				}

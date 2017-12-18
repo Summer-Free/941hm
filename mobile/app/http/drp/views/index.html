@@ -1,48 +1,11 @@
 {include file="page_header"}
-
 		<section class="user-shop-maxbox">
 			<header class="shop-user-max">
-				<!--<div class="user-shop-img-box"><img src="{$shop_info.shop_img}"></div>-->
-				
-				<!--修改：20171208-->
-				<!--第一张图片和最后一张图片放同一张图片-->
-				<div class="user-shop-img-box">
-					<section id="banner">
-						<div class="banner">				
-							<div class="banner1">
-								<img src="{$shop_info.shop_img}"/>
-							</div>
-							<div class="banner2">
-								<img src="{$shop_info.shop_img}"/>
-							</div>
-							<div class="banner3">
-								<img src="{$shop_info.shop_img}"/>
-							</div>
-							<div class="banner1">
-								<img src="{$shop_info.shop_img}"/>
-							</div>
-						</div>
-					</div>
-					<ul class="nav">
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-				</div>	
-					<!--20141208-->
-				
-					
-				</div>
+				<div class="user-shop-img-box"><img src="{$shop_info.shop_img}"></div>
 				<div class="user-shop-left-img user-shop-cont padding-allr">
-					<div class="user-head-img-box-2"><img src="{$shop_info.headimgurl}"></div>
+					<div class="user-head-img-box-2 "><img src="{$shop_info.headimgurl}"></div>
 				</div>
-				
-				
-				<!--名称-->
-				<!--<h4 class="user-shop-name color-whie">{$shop_info.shop_name}</h4>-->
-				
-				
-				
+				<h4 class="user-shop-name color-whie">{$shop_info.shop_name}</h4>
 <!--                                {if $shop_info.url}
 				<a href="{$shop_info.url}">
 					<label class="user-shop-shoucang p-a color-whie">分销中心</label>
@@ -134,7 +97,7 @@
         </div>
 
 		<!--引用js-->
-			
+
           <script type="text/javascript" src="{__PUBLIC__}script/jquery.infinite.js"></script>
           <script type="text/javascript" src="{__PUBLIC__}script/template.js"></script>
                  <script type="text/javascript">
@@ -147,36 +110,11 @@
                             $(".ect-index-share").click(function(){
                             $(".share-div").addClass("active");
                                 });
-                        });
-                        $(".share-div").click(function(){
-	                            $(".share-div").removeClass("active");
-	                    })
-                            
-					/*20171208*/
-       				 /*手机端分销轮播导航点  20171211  http://localhost/941hm/mobile/index.php?r=brand*/
-					var count = 0;
-					var length = $(".nav li").length;
-					setInterval(function(){			
-						$(".banner").css({				
-							"margin-left" : "-"+count+"00%",			
-							"transition":" all .5s ease",
-						});
-						$(".nav li").css("background-color", "white");
-						$(".nav li:eq("+count+")").css("background-color", "#ccf");
-						if (count > length) {
-							count = 0;
-							$(".banner").css({	
-								"margin-left" : "0px",	
-								"transition":" all .0s ease",
-							});
-							$(".nav li:eq("+count+")").css("background-color", "#ccf");
-						};
-						if (count == 3 ) {
-							$(".nav li:eq(0)").css("background-color", "#ccf");
-						}
-						count++;
-					},2000);
-				</script>
+                                });
+                            $(".share-div").click(function(){
+                            $(".share-div").removeClass("active");
+                        })
+	</script>
 	</body>
 
 </html>
