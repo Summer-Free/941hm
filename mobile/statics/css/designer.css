@@ -1,0 +1,119 @@
+html,body {
+	background-color: #c1e4ec;
+	font-size: 100px;
+}
+h2 {
+	font-size: 1.66rem;
+}
+.flex {
+	-webkit-display: flex;
+	        display: flex;
+}
+.des_banner{
+	margin: 0.4rem 0.1rem;
+}
+.des_img{
+	margin: 0.4rem 0.1rem 0 0.1rem;
+	background-color: #fff;
+	padding: 0.15rem 0.1rem 0 0.1rem;
+	margin-top: 0.45rem;
+	overflow: hidden;
+}
+.des_con{
+	width: 100%;
+	overflow: hidden;
+}
+.des_img_name{
+	font-size: 0.2rem;
+	position: relative;
+}
+.des_img_name p{
+	float: left;
+	padding-top: 0.05rem;
+}
+.des_img_name img{
+	float: right;
+	position: absolute;
+	top: -0.15rem;
+	right: 0.1rem;
+}
+.des_con_li{
+	width: 49%;
+	float: left;
+	margin-right:2%;
+	margin-bottom: 0.3rem;
+}
+.margin_r_0{
+	margin-right: 0;
+}
+.des_pro{
+	margin: 0.15rem 0.1rem;
+	background-color: #fff;
+	padding: 0.25rem;
+	overflow: hidden;
+}
+.des_pro_title{
+	width: 100%;
+	background: url(../img/newapp/des_icon.png) no-repeat;
+	font-size: 0.24rem;
+	padding:0 0 0.1rem 0.15rem;
+}
+.des_con_pro1{
+	margin-top: 0.1rem;
+}
+.des_con_pro1 img {
+	width: 48.5%;
+	float: left;
+}
+.des_con_pro1_img1{
+	margin-right: 3%;
+}
+.des_con_pro2_img1{
+	width: 48.5%;
+	float: left;
+	margin-right: 3%;
+	display: inline-block;
+}
+.des_con_pro2_img1 img{
+	width: 100%;
+}
+.des_con_pro2{
+	width: 48.5%;
+	float: left;
+	display: inline-block;
+	/* margin-top:-0.31rem; */
+	position: relative;
+}
+.des_con_pro2 img{
+	width: 100%;
+	position: absolute;
+}
+.des_con_pro3{
+	margin-top: -0.04rem;
+	overflow: hidden;
+}
+.des_con_pro3 img {
+	width: 47%;
+	float: left;
+}
+.des_con_pro3_img1{
+	margin-right: 6%;
+	margin-top: 70%;
+}
+.des_con_pro3_img2{
+	margin-right: 0%;
+	margin-top: 70%;
+	left: 53%;
+}
+.des_button{
+	background-color: #00b7ee;
+	margin: 0.15rem 0.1rem;
+	overflow: hidden;
+	padding: 0.15rem 0;
+	border-radius: 0.05rem;
+}
+.des_button p{
+	font-size: 0.2rem;
+	color: #fff;
+	text-align: center;
+}

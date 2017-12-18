@@ -1,18 +1,18 @@
 <style>
 	.wechat{
 		position: fixed;
-		z-index: 999;
+		z-index: 2999999999;
 		top: 0;
 		left: 0;
 		right: 0;
 		bottom: 0;
-		padding: 230px 0 0 750px;
+		/* padding: 230px 0 0 750px; */
 		background: url(themes/ecmoban_dsc/iamges/20170517/dialog-pic2.png);
 	}
 	.wechat_close{
 		position: absolute;
-		top: 180px;
-		right: 700px;
+		top: 30%;
+		right: 35%;
 		width: 51px;
 		height: 15px;
 		background-repeat: no-repeat;
@@ -20,7 +20,11 @@
 		cursor: pointer;
 	}
 	.wechat_img{
-		width: 35%;
+		position: absolute;
+		width: 20%;
+		top: 30%;
+		left: 40%;
+		bottom: 20%;
 	}
 </style>
 <div class="wechat">
