@@ -652,25 +652,15 @@ body,
 	width: 100%;
 	position: relative;
 }
-.case>img{
+.case img:first-of-type{
 	width: 100%;
 	height: 85px;
 	margin: 20px 0;
 }
-.case .wrap-img{
+
+.case img:last-of-type{
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
-}
-.case .wrap-img img:first-of-type{
-	width: 60%;
-	height: 100%;
-	float: left;
-}
-.case .wrap-img img:last-of-type{
-	width: 40%;
-	height: 100%;
-	float: left;
 }
 .case h1{
 	width: 100%;
@@ -737,26 +727,4 @@ body,
 		height:65%;
 		font-size: 0.8rem;
 	}
-	/*.special h3{
-		font-size: 1.2rem;
-	}
-	.special,
-	.special img{
-		height: 200px !important;
-	}
-	.img-wrap,
-	.img-wrap img{
-		height: 400px;
-	}
-	.character img{
-		height: 100px;
-	}
-	.img-wrap,
-	.img-wrap img{
-		height: 300px;
-	}
-	.achievement dl dd p,
-	.character h1{
-		line-height: 20px;
-	}*/
 }

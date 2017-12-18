@@ -9,6 +9,7 @@
 }
 .show-list .active {
 	display: block;
+	background-color: #F5F5F5;
 }
 .show-list li {
 	float: left;
@@ -43,5 +44,5 @@
 }
 .tab-nav .active {
 	color: #fff;
-	background-color: #aa1920;
+	background-color: #AA1920;
 }
