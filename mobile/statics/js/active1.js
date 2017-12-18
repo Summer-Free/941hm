@@ -142,7 +142,7 @@ $(function() {
              $("dialog-getTel a").on("click",function(){
 	        	$.post("",param,function(data){
 	        		 var result = eval('('+data+')');
-               		 console.log(result.code);
+               		 console.log("添加ajax入口");
                		 if (result.code == 0) { //未注册
                		 	$(".dialog-getTel .getCode").css("dispaly","block");
                		 } else if (result.code == 1){//会员
@@ -155,7 +155,7 @@ $(function() {
             $.post(url,param,function (data) {
             	
                 var result = eval('('+data+')');
-                console.log(result.code);
+               
                 if(result.code == 10){
                     var time = 60,
                         timer,
