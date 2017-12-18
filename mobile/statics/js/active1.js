@@ -131,27 +131,42 @@ $(function() {
         $this.parents(".dialog").hide();
     });
 
-    //点击获取验证码
-    $(".dialog-getTel .getCode button").on("click",function(e) {
-        var tel = $('#tel').val();
+    //弹窗验证
+     $(".dialog-getTel a").on("click",function(){
+    	var tel = $('#tel').val();
         var check_tel = check_phone(tel),$this = $(this);
-       
         if(check_tel){
             var param = {phone:tel};
             var url = '/mobile/index.php?r=active/index/send';
-             $("dialog-getTel a").on("click",function(){
-	        	$.post("",param,function(data){
-	        		 var result = eval('('+data+')');
-               		 console.log("添加ajax入口");
-               		 if (result.code == 0) { //未注册
-               		 	$(".dialog-getTel .getCode").css("dispaly","block");
-               		 } else if (result.code == 1){//会员
-               		 	
-               		 }else if(result.code == 2){//老用户
-               		 	
-               		 }
-	        	})
-	        })
+        	$.post(url,param,function(data){
+        		 var result = eval('('+data+')');
+           		 console.log("添加ajax入口");
+           		 console.log(result);
+           		 result.code =0;
+           		 if (result.code == 0) { //未注册
+           		 	alert("111");
+           		 	$(".dialog-getTel .getCode").css("dispaly","block");
+           		 } else if (result.code == 1){//会员
+           		 	
+           		 }else if(result.code == 2){//老用户
+           		 	
+           		 }else{
+           		 	alert(result.code)
+           		 }
+        	})
+	     }else{
+	     	
+	     }
+	})
+	//点击获取验证码
+/*    $(".dialog-getTel .getCode button").on("click",function(e) {
+        var tel = $('#tel').val();
+        var check_tel = check_phone(tel),$this = $(this);
+       alert(tel)
+        if(check_tel){
+            var param = {phone:tel};
+            var url = '/mobile/index.php?r=active/index/send';
+            
             $.post(url,param,function (data) {
             	
                 var result = eval('('+data+')');
@@ -179,9 +194,9 @@ $(function() {
             });
         }
 
-    });
+    });*/
     // 完成验证码登录
-    $(".dialog-getTel a").on("click",function() {
+  /*  $(".dialog-getTel a").on("click",function() {
     	var tel = $("#tel").val(),
     		code = $("#code").val(),
     		$dialog = $(".dialog-getTel");
@@ -209,7 +224,7 @@ $(function() {
                 });
     		};
 
-    });
+    });*/
 
     $(".dialog-Winning a").on("click",function() {
         var $dialog = $(".dialog-Winning");

@@ -16,7 +16,6 @@
             <i class="icon"></i>
             <div class="swiper-container notice">
                 <div class="swiper-wrapper">
-                    <!--中奖消息循环-->
                     {foreach $config.sham as $k => $sham}
                     <div class="swiper-slide">
                         <p>{$sham}</p>
@@ -92,19 +91,14 @@
         <div class="head"><div class="close">关闭</div></div>
         <form class="flex" action="">
             <input id="tel" type="number" pattern="[0-9]*" placeholder="请输入您的手机号" />
-
-            <div class="getCode" style="display: none;">
-                <input id="code" type="number" pattern="[0-9]*" placeholder="填写您的验证码">
-                <button type="button">获取验证码</button>
+            <div class="getCode " style="display: none;">
+                <input id="code" type="number" pattern="[0-9]*" placeholder="填写您的lazy">
+                <button type="button">获取lazy</button>
+            </div>
+            <div class="getCode getPass" style="display: none;">
+                <input id="code" type="number" placeholder="填写您的密码">
             </div>
             <a>下一步</a>
-
-            <div class="getCode">
-                <input id="code" type="number" pattern="[0-9]*" placeholder="填写您的验证码">
-                <button type="button">获取验证码</button>
-            </div>
-            <a>完成</a>
-
         </form>
     </div>
 </div>
@@ -136,8 +130,10 @@
         <img class="txt" src="../mobile/statics/img/newapp/pre-15.png" alt="">
     </div>
 </div>
+
 <div class="follow"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzUyNzAzNDcyOQ==&scene=124#wechat_redirect"><img class="img-responsive" width="100%" src="../mobile/statics/img/newapp/pre-17.png" alt=""></a></div>
 </body>
+
 <!--统计代码-->
 <script type="text/javascript">
     var _hmt = _hmt || [];
@@ -166,9 +162,9 @@
 <!-- JiaThis Button BEGIN -->
 <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_m.js" charset="utf-8"></script>
 <!-- JiaThis Button END -->
+<script src="../mobile/statics/js/active1.js?abc=201711282"></script>
 
-<script>
-
+<script type="text/javascript">
+	
 </script>
-
 </html>
