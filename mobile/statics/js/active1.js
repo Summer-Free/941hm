@@ -1,7 +1,7 @@
 $(function() {
 	
 	//初始化抽奖次数
-	var lcount = localStorage.count?localStorage.count:0;
+	var count = localStorage.count?localStorage.count:0;
 	$(".start span").text(""+count+"");
 	
     var no_img = '../mobile/statics/img/404.png';
@@ -144,21 +144,25 @@ $(function() {
             var url = '../mobile/index.php?r=active/index/user';
         	$.post(url,param,function(data){
         		 var result = eval('('+data+')');
-           		 console.log(result);
-           		 result.code =19;
+           		 //console.log(result);
+           		 //result.code =19;
            		 if (result.code == 19) { //未注册
-           		 	console.log(result.info);
+           		 	console.log('未注册');
            		 	$("#tel").css("disabled","disabled");
            		 	$(".dialog-getTel .getCode1").css("display","block");
                     $(".dialog-getTel .finish").css("display","block");
                     $(".dialog-getTel .next").css("display","none");
                     $(".start span").text(""+ (count+1)+"") ;
-           		 } else if (result.code == 20){//新会员
-           		 	console.log(result.info);
-           		 	testPwd();
-           		 }else if(result.code == 21){//老用户
-           		 	console.log(result.info);
-           		 	testPwd();
+           		 }else if(result.code == 20){//老用户
+           		 	console.log('老用户');
+           		 	$(".dialog-getTel .finish").on("click",function(){
+                        testPwd();
+                     });
+           		 }else if(result.code == 21){//新用户
+           		 	console.log('新用户');
+           		 	$(".dialog-getTel .finish").on("click",function(){
+                        testPwd();
+                     });
            		 }else{
                     console.log("号码错误");
            		 }
