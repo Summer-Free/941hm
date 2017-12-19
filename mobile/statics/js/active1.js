@@ -1,8 +1,11 @@
 $(function() {
 	
 	//初始化抽奖次数
-	var lcount = localStorage.count?localStorage.count:0;
-	$(".start span").text(""+count+"");
+//	var url = '';
+//	$.post(,function(data){
+//		var result = eval('('+data+')');
+//		$(".start span").text();
+//	})
 	
     var no_img = '../mobile/statics/img/404.png';
     // 登录弹窗
@@ -10,6 +13,7 @@ $(function() {
         var $dialog = $(".dialog-getTel");
         $dialog.show();
     };
+    
     //抽奖
     var prize = function (e) {
         if(e.hasClass('is_take')){
@@ -123,19 +127,35 @@ $(function() {
     }
 
     //点击牌面，弹出弹窗
+    /*
+     $(".sec-2 li div").on("click",function() {
+        prize($(this));
+    });
+    */
+    //点击开始，弹出弹窗，
     $(".start button").on("click",function() {
         prize($(this));
 		getTel();
+		$("#tel").focus();
+		
     });
 
     //点击关闭按钮，关闭弹窗
     $(".dialog .close").on("click",function() {
         var $this = $(this);
-
         $this.parents(".dialog").hide();
+        $(".error").remove();
     });
 
-    //弹窗验证
+    
+    /*
+     * 抽奖次数初始化时，应从后台读取 count
+     * 弹窗验证
+     * 		新用户注册：抽奖次数+1，注册成功后，将count+1并返回后台保存
+     * 		新用户登录：抽奖次数+1，登录后，将count+1并返回后台保存
+     * 		老用户登录 ：
+     * 开始抽奖
+     */
      $(".dialog-getTel .next").on("click",function(){
     	var tel = $('#tel').val();
         var check_tel = check_phone(tel),$this = $(this);
@@ -145,48 +165,93 @@ $(function() {
         	$.post(url,param,function(data){
         		 var result = eval('('+data+')');
            		 console.log(result);
-           		 result.code =19;
-           		 if (result.code == 19) { //未注册
+           		 if (result.code == 19) { //未注册,注册成功，抽奖次数+1，积分+20
            		 	console.log(result.info);
-           		 	$("#tel").css("disabled","disabled");
            		 	$(".dialog-getTel .getCode1").css("display","block");
                     $(".dialog-getTel .finish").css("display","block");
                     $(".dialog-getTel .next").css("display","none");
-                    $(".start span").text(""+ (count+1)+"") ;
+                    $('.getCode1').focus();
+                    setInterval(function(){
+                    	if ($('#tel').val() == "") {
+                    		$(".dialog-getTel .getCode1").css("display","none");
+			                $(".dialog-getTel .finish").css("display","none");
+			                $(".dialog-getTel .next").css("display","block");
+                    	} 
+                    },0)
            		 } else if (result.code == 20){//新会员
            		 	console.log(result.info);
-           		 	testPwd();
+           		 	$(".dialog-getTel .getCode1").css("display","none");
+					$(".dialog-getTel .getPass").css("display","block");
+					$(".dialog-getTel .finish").css("display","block");
+			    	$(".dialog-getTel .next").css("display","none");
+			    	$(".dialog-getTel .finish").text("登录");
+			    	//开始验证密码
+           		 	$(".dialog-getTel .finish").on("click",function(){
+           		 	 	testPwd();
+           		 	 });
+           		 	 //用户修改电话号，将重新验证电话号
+           		 	setInterval(function(){
+                    	if ($('#tel').val() != tel) {
+                    		$("#code").val("");
+                    		$(".dialog-getTel .getCode1").css("display","none");
+							$(".dialog-getTel .getPass").css("display","none");
+							$(".dialog-getTel .finish").css("display","none");
+					    	$(".dialog-getTel .next").css("display","block");
+					    	$(".error").remove();
+					    	
+					    	alert($("#code").attr("value"))
+                    	} 
+                    },0)
            		 }else if(result.code == 21){//老用户
            		 	console.log(result.info);
-           		 	testPwd();
-           		 }else{
-                    console.log("号码错误");
+           		 	$(".dialog-getTel .getCode1").css("display","none");
+					$(".dialog-getTel .getPass").css("display","block");
+					$(".dialog-getTel .finish").css("display","block");
+			    	$(".dialog-getTel .next").css("display","none");
+			    	$(".dialog-getTel .finish").text("登录");
+			    	//开始验证密码
+           		 	$(".dialog-getTel .finish").on("click",function(){
+           		 	 	testPwd();
+           		 	 });
+           		 	 //用户修改电话号，将重新验证电话号
+           		 	 setInterval(function(){
+                    	if ($('#tel').val() != tel) {
+                    		$(".dialog-getTel .getCode1").css("display","none");
+							$(".dialog-getTel .getPass").css("display","none");
+							$(".dialog-getTel .finish").css("display","none");
+					    	$(".dialog-getTel .next").css("display","block");
+					    	$(".error").remove();
+                    	} 
+                    },0)
+           		 }
+           		 else{
+                    console.log("输入异常");
            		 }
         	})
 	     }
 	})
      
-     //密码验证
+     //密码验证，验证成功，抽奖次数+1(每日)
      function testPwd(){
-     	$("#tel").css("disabled","disabled");
-		$(".dialog-getTel .getCode1").css("display","none");
-		$(".dialog-getTel .getPass").css("display","block");
-		$(".dialog-getTel .finish").css("display","block");
-    	$(".dialog-getTel .next").css("display","none");
+    	$dialog = $(".dialog-getTel");
      	var tel = $('#tel').val();
 	 	var code = $('#code').val();
 	 	var param = {phone:tel,pwd:code};
         var url = '../mobile/index.php?r=active/index/login';
      	$.post(url,param,function(data){
-    		//密码验证
     		var result = eval('('+data+')');
-    		if(result == "true"){//验证成功
-    			
-    		}else if(result == "false"){//验证失败
-    			alert("密码错误");
+//    		验证成功
+    		if(result == "true"){
+				init_prize();
+                $dialog.hide();
+            //验证失败
+    		}else if(result == "false"){
+    			$(".getCode+span").remove();
+                $(".getPass").after("<span class='error'>密码错误</span>");
     		}
     	});
      }
+     
 	//点击获取验证码
     $(".dialog-getTel .getCode button").on("click",function(e) {
         var tel = $('#tel').val();
@@ -195,7 +260,6 @@ $(function() {
             var param = {phone:tel};
             var url = '../mobile/index.php?r=active/index/send';
             $.post(url,param,function (data) {
-            	
                 var result = eval('('+data+')');
                 console.log(result)
                 if(result.code == 10){
@@ -244,11 +308,9 @@ $(function() {
                     if(result.code == 13){
                         init_prize();
                         $dialog.hide();
-//                      var count = localStorage.counts JSON.parse();
-//						$(".start span").text(""+count+"");
                     }else {
                         $(".getCode+span").remove();
-                        $(".getCode1").after("<span class='error'>"+result.info+"</span>");
+                        $(".getCode1" ).after("<span class='error'>"+result.info+"</span>");
                         return false;
                     }
 
@@ -266,6 +328,7 @@ $(function() {
     $('.share').on('click',function () {
         if(isWeiXin()){
             $('.dialog-wx-share').show();
+            
         }else {
             $('.dialog-share').show();
         }

@@ -119,9 +119,7 @@ footer dd {
 	height: calc(100vh);
 	background-color: rgba(0,0,0,.5);
 }
-.dialog-getTel{
-	position: relative;
-}
+
 .dialog-Winning .content,
 .dialog-getTel .content {
 	position: fixed;
