@@ -148,32 +148,23 @@ $(function() {
            		 console.log(result);
            		 result.code =19;
            		 if (result.code == 19) { //未注册
-           		 	alert("111");
-           		 	$(".dialog-getTel .getCode").css("dispaly","block");
-           		 } else if (result.code == 1){//会员
-           		 	
-           		 }else if(result.code == 2){//老用户
-           		 	
+           		 	console.log(result.info);
+           		 	$(".dialog-getTel .getCode1").css("display","block");
+                    $(".dialog-getTel a").text("完成");
+                    $(".dialog-getTel .content").css("height","11.5rem");
+                    $(".start span").text(""+ (count+1)+"") ;
+           		 } else if (result.code == 20){//新会员
+           		 	console.log(result.info);
+                    var count = Number($(".start span").text());
+                    $(".dialog-getTel a").text("完成");
+                    $(".dialog-getTel .getPass").css("display","block");
+                    $(".start span").text(""+ (count+1)+"") ;
+           		 }else if(result.code == 21){//老用户
+           		 	console.log(result.info);
            		 }else{
+                    console.log("号码错误");
            		 	alert(result.code)
            		 }
-				var code = 0;
-	       		 if (code == 0) { //未注册
-	       		 	$(".dialog-getTel .getCode1").css("display","block");
-	       		 	$(".dialog-getTel a").text("完成");
-	       		 	$(".dialog-getTel .content").css("height","11.5rem");
-	       		 	$(".start span").text(""+ (count+1)+"") ;
-				    
-	       		 } else if (code == 1){//会员
-	       		 	var count = Number($(".start span").text());
-	       		 	$(".dialog-getTel a").text("完成");
-	       		 	$(".dialog-getTel .getPass").css("display","block");
-	       		 	$(".start span").text(""+ (count+1)+"") ;
-	       		 }else if(result.code == 2){//老用户
-	       		 	
-	       		 }else{
-	       		 	alert(result.code)
-	       		 }
         	})
 	     }else{
 	     	
