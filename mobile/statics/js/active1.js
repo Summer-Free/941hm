@@ -9,14 +9,13 @@ $(function() {
     var prize = function (e) {
         if(e.hasClass('is_take')){
             layer.open({content:'这个已经翻过了'})
-
             return false;
         }
         var index = e.index();
         var li_index = e.parent().index();
         var x = li_index*3+index;
         var param = {which:x};
-        var url = '/mobile/index.php?r=active/index/prize';
+        var url = '../mobile/index.php?r=active/index/prize';
         $.post(url,param,function (data) {
             var result = eval('('+data+')');
 
@@ -96,7 +95,7 @@ $(function() {
     }
     //初始化奖品
     var init_prize = function () {
-        var url = '/mobile/index.php?r=active/index/position';
+        var url = '../mobile/index.php?r=active/index/position';
         $.post(url,function (data) {
             var result = eval('('+data+')');
             if(result.code == 4){
@@ -137,13 +136,13 @@ $(function() {
         var check_tel = check_phone(tel),$this = $(this);
         if(check_tel){
             var param = {phone:tel};
-            var url = '/mobile/index.php?r=active/index/send';
+            var url = '../mobile/index.php?r=active/index/user';
         	$.post(url,param,function(data){
         		 var result = eval('('+data+')');
            		 console.log("添加ajax入口");
            		 console.log(result);
-           		 result.code =0;
-           		 if (result.code == 0) { //未注册
+           		 result.code =19;
+           		 if (result.code == 19) { //未注册
            		 	alert("111");
            		 	$(".dialog-getTel .getCode").css("dispaly","block");
            		 } else if (result.code == 1){//会员
