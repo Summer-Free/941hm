@@ -6,7 +6,8 @@ $(function() {
 //		var result = eval('('+data+')');
 //		$(".start span").text();
 //	})
-	
+	var count = localStorage.count?localStorage.count:0;
+	$(".start span").text(""+count+"");
     var no_img = '../mobile/statics/img/404.png';
     // 登录弹窗
     var getTel = function () {
