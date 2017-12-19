@@ -119,6 +119,9 @@ footer dd {
 	height: calc(100vh);
 	background-color: rgba(0,0,0,.5);
 }
+.dialog-getTel{
+	position: relative;
+}
 .dialog-Winning .content,
 .dialog-getTel .content {
 	position: fixed;
@@ -196,6 +199,9 @@ footer dd {
 	border-radius: 20px;
 	box-shadow: 2px 2px 2px rgba(0,0,0,.3);
 	background-color: #3af0d4;
+	display: inline-block;
+	position: absolute;
+	bottom: 1rem;
 }
 .dialog-getTel .error {
 	padding-left: .5rem;
@@ -271,8 +277,19 @@ footer dd {
 	color: #fff;
 	transform: translate3d(-50%,0,0);
 }
-
-
+.start{
+	width: 100%;
+	text-align: center;
+}
+.start button{
+	color: red;
+	background-color: cyan;
+	margin:1rem 0;
+	border: 1px solid cyan;
+}
+.start h4{
+	color: white;
+}
 @media screen and (max-width: 375px) {
 	.dialog-getTel .content {
 		width: 286px;

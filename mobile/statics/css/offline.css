@@ -1,0 +1,45 @@
+*{
+	font-family: "微软雅黑","黑体",sans-serif;
+	font-size: 1.2rem;
+}
+h4{
+	line-height: 2.5rem;
+}
+.banner {
+	width: 100%;
+}
+.wrap{
+	width: 100%;
+	padding: 1.2rem 1.2rem;
+	overflow: hidden;
+	margin-bottom: 5rem;
+}
+.banner img{
+	width: 100%;
+}
+.ul li{
+	width: 100%;
+}
+.ul li ul li{
+	width: 50%;
+	float: left;
+	background-color: white;
+	padding-bottom: 10px;
+}
+.ul li ul li:first-of-type{
+	padding-right: 5px;
+}
+.ul li ul li:last-of-type{
+	padding-left: 5px;
+}
+.ul li ul li img{
+	width: 100%;
+	padding-bottom: 0.5rem;
+}
+.special{
+	margin-bottom: 25px;
+}
+.special1{
+	/*font-size: 1.5rem;*/
+}
+

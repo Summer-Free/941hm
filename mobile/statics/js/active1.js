@@ -1,4 +1,9 @@
 $(function() {
+	
+	//初始化抽奖次数
+	var count = localStorage.count?localStorage.count:0;
+	$(".start span").text(""+count+"");
+	
     var no_img = '../mobile/statics/img/404.png';
     // 登录弹窗
     var getTel = function () {
@@ -118,7 +123,7 @@ $(function() {
     }
 
     //点击牌面，弹出弹窗
-    $(".sec-2 li div").on("click",function() {
+    $(".start button").on("click",function() {
         prize($(this));
 		getTel();
     });
@@ -152,24 +157,39 @@ $(function() {
            		 }else{
            		 	alert(result.code)
            		 }
+				var code = 0;
+	       		 if (code == 0) { //未注册
+	       		 	$(".dialog-getTel .getCode1").css("display","block");
+	       		 	$(".dialog-getTel a").text("完成");
+	       		 	$(".dialog-getTel .content").css("height","11.5rem");
+	       		 	$(".start span").text(""+ (count+1)+"") ;
+				    
+	       		 } else if (code == 1){//会员
+	       		 	var count = Number($(".start span").text());
+	       		 	$(".dialog-getTel a").text("完成");
+	       		 	$(".dialog-getTel .getPass").css("display","block");
+	       		 	$(".start span").text(""+ (count+1)+"") ;
+	       		 }else if(result.code == 2){//老用户
+	       		 	
+	       		 }else{
+	       		 	alert(result.code)
+	       		 }
         	})
 	     }else{
 	     	
 	     }
 	})
 	//点击获取验证码
-/*    $(".dialog-getTel .getCode button").on("click",function(e) {
+    $(".dialog-getTel .getCode button").on("click",function(e) {
         var tel = $('#tel').val();
         var check_tel = check_phone(tel),$this = $(this);
-       alert(tel)
         if(check_tel){
             var param = {phone:tel};
-            var url = '/mobile/index.php?r=active/index/send';
+            var url = '../mobile/index.php?r=active/index/send';
             
             $.post(url,param,function (data) {
             	
                 var result = eval('('+data+')');
-               
                 if(result.code == 10){
                     var time = 60,
                         timer,
@@ -193,9 +213,12 @@ $(function() {
             });
         }
 
-    });*/
+    });
     // 完成验证码登录
-  /*  $(".dialog-getTel a").on("click",function() {
+    $(".dialog-getTel a").on("click",function() {
+    	if($(".dialog-getTel a").text()!="完成"){
+    		return;
+    	}
     	var tel = $("#tel").val(),
     		code = $("#code").val(),
     		$dialog = $(".dialog-getTel");
@@ -223,7 +246,7 @@ $(function() {
                 });
     		};
 
-    });*/
+    });
 
     $(".dialog-Winning a").on("click",function() {
         var $dialog = $(".dialog-Winning");
