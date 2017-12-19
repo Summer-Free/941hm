@@ -67,7 +67,7 @@ $(function() {
     };
     // 验证手机号码
     var check_phone = function (phone) {
-        if(!(/^1[3|4|5|8][0-9]\d{4,8}$/.test(phone))) {
+        if(!(/^1[3|4|5|7|8][0-9]\d{4,8}$/.test(phone))) {
             $("#tel+span").remove();
             $("#tel").after("<span class='error'>您的号码有误</span>");
             return false;
@@ -136,7 +136,7 @@ $(function() {
     });
 
     //弹窗验证
-     $(".dialog-getTel a").on("click",function(){
+     $(".dialog-getTel .next").on("click",function(){
     	var tel = $('#tel').val();
         var check_tel = check_phone(tel),$this = $(this);
         if(check_tel){
@@ -146,25 +146,14 @@ $(function() {
         		 var result = eval('('+data+')');
            		 console.log("添加ajax入口");
            		 console.log(result);
-           		 result.code =19;
-           		 if (result.code == 19) { //未注册
-           		 	alert("111");
-           		 	$(".dialog-getTel .getCode").css("dispaly","block");
-           		 } else if (result.code == 1){//会员
-           		 	
-           		 }else if(result.code == 2){//老用户
-           		 	
-           		 }else{
-           		 	alert(result.code)
-           		 }
-				var code = 0;
-	       		 if (code == 0) { //未注册
+           		result.code =0;
+	       		 if (result.code == 0) { //未注册
 	       		 	$(".dialog-getTel .getCode1").css("display","block");
-	       		 	$(".dialog-getTel a").text("完成");
-	       		 	$(".dialog-getTel .content").css("height","11.5rem");
+//	       		 	$(".dialog-getTel .content").css("height","11.5rem");
 	       		 	$(".start span").text(""+ (count+1)+"") ;
 				    
-	       		 } else if (code == 1){//会员
+	       		 } else if (result.code == 1){//会员
+	       		 	//要传电话号、密码
 	       		 	var count = Number($(".start span").text());
 	       		 	$(".dialog-getTel a").text("完成");
 	       		 	$(".dialog-getTel .getPass").css("display","block");
@@ -190,6 +179,7 @@ $(function() {
             $.post(url,param,function (data) {
             	
                 var result = eval('('+data+')');
+                console.log(result)
                 if(result.code == 10){
                     var time = 60,
                         timer,
@@ -216,7 +206,8 @@ $(function() {
     });
     // 完成验证码登录
     $(".dialog-getTel a").on("click",function() {
-    	if($(".dialog-getTel a").text()!="完成"){
+    	if($(".dialog-getTel a").text()=="下一步"){
+    		alert("下一步");
     		return;
     	}
     	var tel = $("#tel").val(),
@@ -230,9 +221,10 @@ $(function() {
     			$(".getCode+span").remove();
     			// $(".dialog-getTel a").css("margin-top","2rem");
     			var param = {phone:tel,code:code};
-    			var url = '/mobile/index.php?r=active/index/check';
+    			var url = '../mobile/index.php?r=active/index/check';
     			$.post(url,param,function (data) {
                     var result = eval('('+data+')');
+                     console.log(result);
                     if(result.code == 13){
                         init_prize();
                         $dialog.hide();
@@ -242,7 +234,7 @@ $(function() {
                         return false;
                     }
 
-                    console.log(result);
+                   
                 });
     		};
 
