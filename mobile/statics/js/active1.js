@@ -220,7 +220,6 @@ $(function() {
                 }
             });
         }
-
     });
     // 完成验证码登录
     $(".dialog-getTel .finish").on("click",function() {
