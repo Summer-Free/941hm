@@ -146,26 +146,6 @@ $(function() {
         		 var result = eval('('+data+')');
            		 console.log("添加ajax入口");
            		 console.log(result);
-D
-           		result.code =0;
-	       		 if (result.code == 0) { //未注册
-	       		 	$(".dialog-getTel .getCode1").css("display","block");
-//	       		 	$(".dialog-getTel .content").css("height","11.5rem");
-	       		 	$(".start span").text(""+ (count+1)+"") ;
-				    
-	       		 } else if (result.code == 1){//会员
-	       		 	//要传电话号、密码
-	       		 	var count = Number($(".start span").text());
-	       		 	$(".dialog-getTel a").text("完成");
-	       		 	$(".dialog-getTel .getPass").css("display","block");
-	       		 	$(".start span").text(""+ (count+1)+"") ;
-	       		 }else if(result.code == 2){//老用户
-	       		 	
-	       		 }else{
-	       		 	alert(result.code)
-	       		 }
-
-           		 result.code =19;
            		 if (result.code == 19) { //未注册
            		 	console.log(result.info);
            		 	$(".dialog-getTel .getCode1").css("display","block");
@@ -184,7 +164,6 @@ D
                     console.log("号码错误");
            		 	alert(result.code)
            		 }
-
         	})
 	     }else{
 	     	
@@ -224,7 +203,6 @@ D
                 }
             });
         }
-
     });
     // 完成验证码登录
     $(".dialog-getTel a").on("click",function() {
