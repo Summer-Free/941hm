@@ -30,6 +30,7 @@
     </div>
     <!--menu-->
     <style>
+      .index-nav{padding:0.8rem 0rem;}
       .index-nav ul li{padding:.5rem; padding-top:1rem;padding-bottom:1rem;box-sizing: border-box;}
       .index-nav ul li img{width:30%; height:auto;}
       .index-nav ul li p{height:1.6rem; line-height: 1.6rem;margin-top: 0.8rem;}
@@ -50,77 +51,37 @@
             {/foreach}
         </ul>
     </nav>
-    <!--每日资讯-->
-	<section class="dis-box index-new mb-1 position-rel">
-        <h2><a href="{U('article/index/index')}">热门资讯</a></h2>
-		<div class="box-flex">
-			<!-- Swiper -->
-			<div class="swiper-container index-new-list imp-class">
-				<div class="swiper-wrapper">
-          {foreach $article as $vo}
-					<div class="swiper-slide swiper-no-swiping">
-						<div class="index-new-cont clearfix">
-              <a href="{$vo['url']}">
-                  <h4 class="pull-left col-3 f-05 onelist-hidden">{$vo['title']}</h4>
-              </a>
-						</div>
-					</div>
-          {/foreach}
-				</div>
-			</div>
-		</div>
-	</section>
-    
+<!--     每日资讯
+  <section class="dis-box index-new mb-1 position-rel">
+    <h2><a href="{U('article/index/index')}">热门资讯</a></h2>
+    <div class="box-flex">
+      Swiper
+      <div class="swiper-container index-new-list imp-class">
+        <div class="swiper-wrapper">
+      {foreach $article as $vo}
+          <div class="swiper-slide swiper-no-swiping">
+            <div class="index-new-cont clearfix">
+          <a href="{$vo['url']}">
+              <h4 class="pull-left col-3 f-05 onelist-hidden">{$vo['title']}</h4>
+          </a>
+            </div>
+          </div>
+      {/foreach}
+        </div>
+      </div>
+    </div>
+  </section> -->
     <!--四小栏目-->
+    <div class="space"></div>
     <section class="new-section-1">
         <div class="top clearfix">
-          <a href="../mobile/index.php?r=partner">
+          <a href="../mobile/index.php?r=customization">
             <div class="left pull-left border-r-1">
-                <div>
-                    <h2>招商加盟</h2>
-                    <small>一起迈向成功</small>
-                </div>
-                <img src="../mobile/statics/img/newapp/patner.jpg" alt="招商加盟" />
-            </div>
-          </a>
-          <a href="index.php?r=customization">
-            <div class="right pull-left">
                 <div>
                     <h2>全屋定制</h2>
                     <small>定制专属家居</small>
                 </div>
-                <img src="../mobile/statics/img/newapp/qwdz.jpg" alt="全屋定制" />
-            </div>
-          </a>           
-        </div>
-        <div class="top clearfix ">
-          <a href="index.php?r=exchange">
-            <div class="left pull-left border-r-1">
-                <div>
-                    <h2>积分换购</h2>
-                    <small>0元换购商品</small>
-                </div>
-                <img src="../mobile/statics/img/newapp/jfhg.jpg" alt="积分换购" />
-            </div>
-          </a>
-          <a href="index.php?r=brand">
-            <div class="right pull-left">
-                <div>
-                    <h2>品牌街</h2>
-                    <small>好品牌等你挑</small>
-                </div>
-                <img src="../mobile/statics/img/newapp/jwzc.jpg" alt="匠物众筹" />
-            </div>
-          </a>
-        </div>
-        <div class="btm clearfix">
-          <a href="index.php?r=vrhm">
-            <div class="left pull-left border-r-1">
-                <div>
-                    <h2>红木AR</h2>
-                    <small>全景家居体验</small>
-                </div>
-                <img src="../mobile/statics/img/newapp/hmar.jpg" alt="红木AR" />
+                <img class="lazy" src="../mobile/statics/img/newapp/qwdz.png" alt="全屋定制" />
             </div>
           </a>
           <a href="index.php?r=designer">
@@ -129,11 +90,71 @@
                     <h2>找设计师</h2>
                     <small>寻求专属定制</small>
                 </div>
-                <img src="../mobile/statics/img/newapp/zsjs.jpg" alt="找设计师" />
+                <img class="lazy" src="../mobile/statics/img/newapp/zsjs.png" alt="找设计师" />
+            </div>
+          </a>
+        </div>
+<!--         <div class="top clearfix ">
+  <a href="index.php?r=exchange">
+    <div class="left pull-left border-r-1">
+        <div>
+            <h2>积分换购</h2>
+            <small>0元换购商品</small>
+        </div>
+        <img src="../mobile/statics/img/newapp/jfhg.jpg" alt="积分换购" />
+    </div>
+  </a>
+  <a href="index.php?r=brand">
+    <div class="right pull-left">
+        <div>
+            <h2>品牌街</h2>
+            <small>好品牌等你挑</small>
+        </div>
+        <img src="../mobile/statics/img/newapp/jwzc.jpg" alt="匠物众筹" />
+    </div>
+  </a>
+</div> -->
+        <div class="btm clearfix">
+          <a href="index.php?r=exchange">
+            <div class="left pull-left border-r-1">
+                <div>
+                    <h2>积分换购</h2>
+                    <small>0元换购商品</small>
+                </div>
+                <img class="lazy" src="../mobile/statics/img/newapp/jfhg.png" alt="积分换购" />
+            </div>
+          </a>
+          <a href="index.php?r=category/index/products&id=8">
+            <div class="right pull-left">
+                <div>
+                    <h2>小玩意儿</h2>
+                    <small>精致小玩意儿</small>
+                </div>
+                <img class="lazy" src="../mobile/statics/img/newapp/xwyer.png" alt="小玩意儿" />
             </div>
           </a>
         </div>
     </section>
+    <div class="space"></div>
+    <section class="new-section-2">
+        <div class="content">
+          <ul>
+            <li>
+              <a href="index.php?r=vrhm"><img class="lazy" src="../mobile/statics/img/newapp/hmvr.png" alt="红木VR" /></a>
+            </li>
+            <li>
+              <a href="index.php?r=partner"><img class="lazy" src="../mobile/statics/img/newapp/zsjm.png" alt="招商加盟" /></a>
+            </li>
+            <li>
+              <a href="index.php?r=offline"><img class="lazy" src="../mobile/statics/img/newapp/xxst.png" alt="线下实体" /></a>
+            </li>
+            <li>
+              <a href="index.php?r=brand"><img class="lazy" src="../mobile/statics/img/newapp/pphm.png" alt="品牌红木" /></a>
+            </li>
+          </ul>
+        </div>
+    </section>
+    <div class="space"></div>
     <script type="text/javascript">
         var gmt_end_time = {if $end_time}{$end_time}{else}0{/if};
         var day = '<em class="color-whie hour">';

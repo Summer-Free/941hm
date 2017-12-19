@@ -66,7 +66,8 @@
 
 		var base = {
 			duration:500,
-			speed: 4000,
+			/*speed: 4000,原来的导航轮播速度*/
+			speed: 2000,
 			autoPlay: true
 		};
 		var ops = $.extend(base,options);

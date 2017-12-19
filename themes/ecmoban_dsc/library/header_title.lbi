@@ -27,3 +27,30 @@
 
         {* 包含脚本文件 *}
         {insert_scripts files='jquery-1.9.1.min.js,jquery.json.js,transport_jquery.js,cart_quick_links.js'}
+        <!-- 将导航栏固定到顶部 start -->
+		<script type="text/javascript">
+			$(function(){
+			var nav=$(".wrap-nav"); //得到导航对象
+			var win=$(window); //得到窗口对象
+			var sc=$(document);//得到document文档对象。
+			win.scroll(function(){
+			  if(sc.scrollTop()>=123){
+			    nav.addClass("fixednav"); 
+			   $(".navTmp").fadeIn(); 
+			  }else{
+			   nav.removeClass("fixednav");
+			   $(".navTmp").fadeOut();
+			  }
+			})  
+			})
+		</script>
+		<style>
+			.fixednav {
+			    position: fixed;
+			    top: 0px;
+			    left: 0px;
+			    width: 100%;
+			    z-index: 99;
+			}
+		</style>
+		<!-- 将导航栏固定到顶部 end -->

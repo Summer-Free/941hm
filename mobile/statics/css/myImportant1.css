@@ -1,6 +1,12 @@
 .footer-nav {
     z-index: 1000!important;
 }
+.space{
+    width: 100%;
+    height: 1rem;
+    background-color: #f6f6f9;
+    clear: both;
+}
 .margin-tb-1 {
     margin: 1rem auto;
 }
@@ -47,7 +53,7 @@
     background: #a0a0a0; 
 }
 .swiper-pagination-bullet-active {
-    background: #711d1d;
+    background: #fff;
 }
 
 /*热门资讯*/
@@ -88,7 +94,7 @@
 .new-section-1 .pull-left {
     position: relative;
     width: 50%;
-    height: 10rem;
+    height: 6rem;
 }
 .new-section-1 .pull-left>div,
 .new-section-1 .pull-left>img {
@@ -96,10 +102,12 @@
 }
 .new-section-1 .pull-left>div {
     top: 1rem;
-    left: 1rem;
+    left: 1.5rem;
 }
 .new-section-1 .pull-left h2 {
     font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2.1rem;
 }
 .new-section-1 .pull-left small {
     display: block;
@@ -109,8 +117,32 @@
 }
 .new-section-1 .pull-left>img {
     right: 1rem;
-    bottom: 1rem;
-    width: 7.45rem;
+    bottom: 0.1rem;
+    width: 6rem;
+}
+.new-section-2{
+    background-color: #fff;
+    height: 100%;
+    padding: 1rem;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling:touch
+}
+.content{
+    width: 180%;
+    height: 150%;
+    white-space: nowrap;
+}
+
+.new-section-2 ul li{
+    float: left;
+    width: 22.5%;
+    margin-right: 2%;
+}
+.new-section-2 ul li img{
+    width: 100%;
 }
 .border-r-1 {
     border-right: 1px solid #dcdcdc;
