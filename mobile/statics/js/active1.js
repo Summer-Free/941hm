@@ -146,6 +146,7 @@ $(function() {
         		 var result = eval('('+data+')');
            		 console.log("添加ajax入口");
            		 console.log(result);
+D
            		result.code =0;
 	       		 if (result.code == 0) { //未注册
 	       		 	$(".dialog-getTel .getCode1").css("display","block");
@@ -163,6 +164,27 @@ $(function() {
 	       		 }else{
 	       		 	alert(result.code)
 	       		 }
+
+           		 result.code =19;
+           		 if (result.code == 19) { //未注册
+           		 	console.log(result.info);
+           		 	$(".dialog-getTel .getCode1").css("display","block");
+                    $(".dialog-getTel a").text("完成");
+                    $(".dialog-getTel .content").css("height","11.5rem");
+                    $(".start span").text(""+ (count+1)+"") ;
+           		 } else if (result.code == 20){//新会员
+           		 	console.log(result.info);
+                    var count = Number($(".start span").text());
+                    $(".dialog-getTel a").text("完成");
+                    $(".dialog-getTel .getPass").css("display","block");
+                    $(".start span").text(""+ (count+1)+"") ;
+           		 }else if(result.code == 21){//老用户
+           		 	console.log(result.info);
+           		 }else{
+                    console.log("号码错误");
+           		 	alert(result.code)
+           		 }
+
         	})
 	     }else{
 	     	
