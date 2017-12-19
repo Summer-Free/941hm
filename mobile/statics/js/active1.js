@@ -1,7 +1,7 @@
 $(function() {
 	
 	//初始化抽奖次数
-	var count = localStorage.count?localStorage.count:0;
+	var lcount = localStorage.count?localStorage.count:0;
 	$(".start span").text(""+count+"");
 	
     var no_img = '../mobile/statics/img/404.png';
@@ -144,52 +144,49 @@ $(function() {
             var url = '../mobile/index.php?r=active/index/user';
         	$.post(url,param,function(data){
         		 var result = eval('('+data+')');
-           		 console.log("添加ajax入口");
            		 console.log(result);
-D
-           		result.code =0;
-	       		 if (result.code == 0) { //未注册
-	       		 	$(".dialog-getTel .getCode1").css("display","block");
-//	       		 	$(".dialog-getTel .content").css("height","11.5rem");
-	       		 	$(".start span").text(""+ (count+1)+"") ;
-				    
-	       		 } else if (result.code == 1){//会员
-	       		 	//要传电话号、密码
-	       		 	var count = Number($(".start span").text());
-	       		 	$(".dialog-getTel a").text("完成");
-	       		 	$(".dialog-getTel .getPass").css("display","block");
-	       		 	$(".start span").text(""+ (count+1)+"") ;
-	       		 }else if(result.code == 2){//老用户
-	       		 	
-	       		 }else{
-	       		 	alert(result.code)
-	       		 }
-
            		 result.code =19;
            		 if (result.code == 19) { //未注册
            		 	console.log(result.info);
+           		 	$("#tel").css("disabled","disabled");
            		 	$(".dialog-getTel .getCode1").css("display","block");
-                    $(".dialog-getTel a").text("完成");
-                    $(".dialog-getTel .content").css("height","11.5rem");
+                    $(".dialog-getTel .finish").css("display","block");
+                    $(".dialog-getTel .next").css("display","none");
                     $(".start span").text(""+ (count+1)+"") ;
            		 } else if (result.code == 20){//新会员
            		 	console.log(result.info);
-                    var count = Number($(".start span").text());
-                    $(".dialog-getTel a").text("完成");
-                    $(".dialog-getTel .getPass").css("display","block");
-                    $(".start span").text(""+ (count+1)+"") ;
+           		 	testPwd();
            		 }else if(result.code == 21){//老用户
            		 	console.log(result.info);
+           		 	testPwd();
            		 }else{
                     console.log("号码错误");
-           		 	alert(result.code)
            		 }
-
         	})
-	     }else{
-	     	
 	     }
 	})
+     
+     //密码验证
+     function testPwd(){
+     	$("#tel").css("disabled","disabled");
+		$(".dialog-getTel .getCode1").css("display","none");
+		$(".dialog-getTel .getPass").css("display","block");
+		$(".dialog-getTel .finish").css("display","block");
+    	$(".dialog-getTel .next").css("display","none");
+     	var tel = $('#tel').val();
+	 	var code = $('#code').val();
+	 	var param = {phone:tel,pwd:code};
+        var url = '../mobile/index.php?r=active/index/login';
+     	$.post(url,param,function(data){
+    		//密码验证
+    		var result = eval('('+data+')');
+    		if(result == "true"){//验证成功
+    			
+    		}else if(result == "false"){//验证失败
+    			alert("密码错误");
+    		}
+    	});
+     }
 	//点击获取验证码
     $(".dialog-getTel .getCode button").on("click",function(e) {
         var tel = $('#tel').val();
@@ -197,7 +194,6 @@ D
         if(check_tel){
             var param = {phone:tel};
             var url = '../mobile/index.php?r=active/index/send';
-            
             $.post(url,param,function (data) {
             	
                 var result = eval('('+data+')');
@@ -227,9 +223,8 @@ D
 
     });
     // 完成验证码登录
-    $(".dialog-getTel a").on("click",function() {
-    	if($(".dialog-getTel a").text()=="下一步"){
-    		alert("下一步");
+    $(".dialog-getTel .finish").on("click",function() {
+    	if($(".dialog-getTel .getCode1").css("display") =="none"){
     		return;
     	}
     	var tel = $("#tel").val(),
@@ -237,7 +232,7 @@ D
     		$dialog = $(".dialog-getTel");
     		if(code == "") {
     			$(".getCode+span").remove();
-    			$(".getCode").after("<span class='error'>您的验证码有误</span>");
+    			$(".getCode1").after("<span class='error'>您的验证码有误</span>");
     			// $(".dialog-getTel a").css("margin-top",".5rem");
     		}else {
     			$(".getCode+span").remove();
@@ -250,9 +245,11 @@ D
                     if(result.code == 13){
                         init_prize();
                         $dialog.hide();
+//                      var count = localStorage.counts JSON.parse();
+//						$(".start span").text(""+count+"");
                     }else {
                         $(".getCode+span").remove();
-                        $(".getCode").after("<span class='error'>"+result.info+"</span>");
+                        $(".getCode1").after("<span class='error'>"+result.info+"</span>");
                         return false;
                     }
 
