@@ -185,9 +185,8 @@ $(function() {
 			                $(".error").remove();
                     	} 
                     },0)
-           		} else if (result.code == 20){//新用户
-           		 	console.log(result.info);
-           		 	console.log(2020)
+           		 } else if (result.code == 20){//新会员
+           		 	//console.log(result.info);
            		 	$(".dialog-getTel .getCode1").css("display","none");
 					$(".dialog-getTel .getPass").css("display","block");
 					$(".dialog-getTel .finish").css("display","block");
@@ -206,10 +205,9 @@ $(function() {
 					    	$(".dialog-getTel .next").css("display","block");
 					    	$(".error").remove();
 		                };
-                    },0);
-                    
+                    },0);                 
            		}else if(result.code == 21){//老用户,不进行游戏
-           		 	console.log(result.info);
+
            		 	$(".dialog-getTel .getCode1").css("display","none");
 					$(".dialog-getTel .getPass").css("display","block");
 					$(".dialog-getTel .finish").css("display","block");
@@ -250,23 +248,22 @@ $(function() {
 	 	var param = {phone:tel,pwd:code};
 	    var url = '../mobile/index.php?r=active/index/login';
 	 	$.post("",param,function(data){
-    	var result = eval('('+data+')');
-		//验证成功
-		if(result == "true"){
-            var times = parseInt($(".flex span").text())+1;
-            var url = '../mobile/index.php?r=active/index/xx';
-            $(".flex span").text(times);
-			$.post(url,{times:times},function(data){});
-			init_prize();
-            $dialog.hide();
-        //验证失败
-		}else if(result == "false"){
-			$(".getCode+span").remove();
-            $(".getPass").after("<span class='error'>密码错误</span>");
-		}
-    	});
-     }
-     
+	    	var result = eval('('+data+')');
+			//验证成功
+			if(result == "true"){
+	            var times = parseInt($(".flex span").text())+1;
+	            var url = '../mobile/index.php?r=active/index/xx';
+	            $(".flex span").text(times);
+				$.post(url,{times:times},function(data){});
+				init_prize();
+	            $dialog.hide();
+	        //验证失败
+			}else if(result == "false"){
+				$(".getCode+span").remove();
+	            $(".getPass").after("<span class='error'>密码错误</span>");
+			}
+		})
+   }
      
      //验证成功，抽奖次数+1
     
