@@ -165,9 +165,9 @@ $(function() {
             var url = '../mobile/index.php?r=active/index/user';
         	$.post(url,param,function(data){
         		 var result = eval('('+data+')');
-           		 console.log(result);
+           		 //console.log(result);
            		 if (result.code == 19) { //未注册,注册成功，抽奖次数+1，积分+20
-           		 	console.log(result.info);
+           		 	//console.log(result.info);
            		 	$(".dialog-getTel .getCode1").css("display","block");
                     $(".dialog-getTel .finish").css("display","block");
                     $(".dialog-getTel .next").css("display","none");
@@ -180,7 +180,7 @@ $(function() {
                     	} 
                     },0)
            		 } else if (result.code == 20){//新会员
-           		 	console.log(result.info);
+           		 	//console.log(result.info);
            		 	$(".dialog-getTel .getCode1").css("display","none");
 					$(".dialog-getTel .getPass").css("display","block");
 					$(".dialog-getTel .finish").css("display","block");
@@ -204,7 +204,7 @@ $(function() {
                     	} 
                     },0)
            		 }else if(result.code == 21){//老用户
-           		 	console.log(result.info);
+           		 	//console.log(result.info);
            		 	$(".dialog-getTel .getCode1").css("display","none");
 					$(".dialog-getTel .getPass").css("display","block");
 					$(".dialog-getTel .finish").css("display","block");
@@ -236,17 +236,20 @@ $(function() {
      function testPwd(){
     	$dialog = $(".dialog-getTel");
      	var tel = $('#tel').val();
-	 	var code = $('#code').val();
+	 	var code = $('#pwd').val();
 	 	var param = {phone:tel,pwd:code};
         var url = '../mobile/index.php?r=active/index/login';
+        console.log(tel);
+        console.log(code);
      	$.post(url,param,function(data){
+            //console.log(data);
     		var result = eval('('+data+')');
-//    		验证成功
-    		if(result == "true"){
+            //验证成功
+    		if(result.code == 13){
 				init_prize();
                 $dialog.hide();
             //验证失败
-    		}else if(result == "false"){
+    		}else if(result.code != 13){
     			$(".getCode+span").remove();
                 $(".getPass").after("<span class='error'>密码错误</span>");
     		}
