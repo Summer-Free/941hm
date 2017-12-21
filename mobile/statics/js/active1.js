@@ -44,6 +44,11 @@ $(function() {
                     $('.sec-2 div').eq(x).find('img').attr('src',result.textfile);
                     var $dialog = $(".dialog-Winning");
                     $dialog.show();
+                    var url = '../mobile/index.php?r=active/index/count';
+                    $(".flex span").text(times);
+                    $.post(url,{phone:tel},function(data){
+                        
+                    });
                     break;
                 case '1' :
                     //活动未开始
@@ -180,6 +185,11 @@ $(function() {
                     $(".dialog-getTel .finish").css("display","block");
                     $(".dialog-getTel .next").css("display","none");
                     $('#code').val("").focus();
+                    var url = '../mobile/index.php?r=active/index/count';
+                    $(".flex span").text(times);
+                    $.post(url,{phone:tel},function(data){
+                        
+                    });
                     setInterval(function(){
                     	if ($('#tel').val() != tel) {
                     		$(".dialog-getTel .getCode1").css("display","none");
@@ -210,7 +220,6 @@ $(function() {
 		                };
                     },0);                 
            		}else if(result.code == 20){//老用户,不进行游戏
-
            		 	$(".dialog-getTel .getCode1").css("display","none");
 					$(".dialog-getTel .getPass").css("display","block");
 					$(".dialog-getTel .finish").css("display","block");
@@ -258,9 +267,11 @@ $(function() {
 			if(result.code == 13){
 	            /* var times = parseInt($(".flex span").text())+1;*/
                 //抽奖次数
-	            var url = '../mobile/index.php?r=active/index/xx';
+	            var url = '../mobile/index.php?r=active/index/count';
 	            $(".flex span").text(times);
-				$.post(url,{times:times},function(data){});
+				$.post(url,{phone:tel},function(data){
+
+                });
 				init_prize();
 	            $dialog.hide();
 	        //验证失败
@@ -285,6 +296,11 @@ $(function() {
 		//  验证成功
 			if(result == "true"){
 	            $dialog.hide();
+                var url = '../mobile/index.php?r=active/index/count';
+                $(".flex span").text(times);
+                $.post(url,{phone:tel},function(data){
+                    
+                });
 	        //验证失败
 			}else if(result == "false"){
 				$(".getCode+span").remove();
