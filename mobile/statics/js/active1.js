@@ -2,14 +2,14 @@ $(function() {
 	is20 = false;
 	//初始化抽奖次数
 
-    var url = '../mobile/index.php?r=active/index/count';
-    var tel = 0;
-    var times = 0;
-    var param = {phone:tel,times:times};
-	$.post(url,param,function(data){
-		var result = eval('('+data+')');
-		$(".sec-2 span").text(rsult.times);
-	})
+//  var url = '../mobile/index.php?r=active/index/count';
+//  var tel = 0;
+//  var times = 0;
+//  var param = {phone:tel,times:times};
+//	$.post(url,param,function(data){
+//		var result = eval('('+data+')');
+//		$(".sec-2 span").text(rsult.times);
+//	})
 
     var no_img = '../mobile/statics/img/404.png';
     // 登录弹窗
@@ -484,12 +484,16 @@ $(function() {
 				$(".cla1 td:eq("+i+")").text(j);
 			}
 			var a=1;
-			for(var i=8-firstDay; i<=days;i++){
-				$(".cla1 td:eq("+a+")").text(j);
-				if (!(a%7)) {
-					document.write("</tr>");
+			for(var j=1; j<=6;j++){
+				for(var i=8-firstDay; i<=days;i++){
+					$(".cla"+j+" td:eq("+a+")").text(j);
+					if (!(a%7)) {
+						break;
+					}
+					a++;
 				}
 			}
+			
 			
     }
     cal();
