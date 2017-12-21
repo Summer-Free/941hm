@@ -79,6 +79,20 @@
 	                    </div>  
 	                </div>
 	            </div> 
+				<script type="text/javascript">
+					$(document).ready(function(){
+						var min_height = 153;
+						$(window).scroll(function(){
+							var s =$(window).scrollTop();
+							if(s > min_height){
+								$(".dropdown-menu").hide(500)
+							}
+							else{
+								$(".dropdown-menu").show(500)
+							}
+						});
+					})
+				</script>
 	            <div class="wrap-nav bg-color-95b0b2"> 
 		            <div class="w1200">
 		                <div class="nav-content">
