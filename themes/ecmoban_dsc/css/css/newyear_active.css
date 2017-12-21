@@ -1,0 +1,224 @@
+body{
+	margin: 0;
+}
+.all{
+	background-color: #de2834;
+	width: 100%;
+}
+.active_header{
+	background: url(../../iamges/20170517/nyactive_img1.png) no-repeat;
+	width: 100%;
+	height: 1385px;
+	text-align: center;
+}
+.active_header img{
+	display:block;
+	margin-left: 393px;
+	padding-top: 360px;
+	width: 1122px;
+}
+.active_command{
+	padding-bottom: 85px;
+}
+.active_command_img{
+	background: url(../../iamges/20170517/nyactive_img2.png) no-repeat;
+	width: 965px;
+	height: 510px;
+	margin-left: 470px;
+}
+.active_command_img h5{
+	padding:8% 0 2% 0;
+	font-size: 68px;
+	margin: 0;
+	color: #ffcc00;
+	text-align: center;
+	font-weight: normal;
+}
+.active_command_img p{
+	font-size: 40px;
+	margin: 0;
+	text-align: center;
+	color: #fff;
+	line-height: 50px;
+}
+.active_customization{
+	background: url(../../iamges/20170517/nyactive_img3.png) no-repeat;
+	width: 1920px;
+	margin-left: 400px;
+	padding-bottom: 89px;
+}
+.active_customization img{
+	padding-top: 1140px;
+	margin-left: 380px;
+	padding-bottom: 60px;
+}
+.active_surprise1{
+	background: url(../../iamges/20170517/nyactive_img4.jpg) no-repeat;
+	width: 1920px;
+	height: 1916px;
+}
+.active_customization_img{
+	width: 38%;
+	margin-left:580px;
+	padding-top: 6%;
+	padding-bottom: 4%;
+}
+.active_travel{
+	width: 80%;
+	margin: 0 auto;
+}
+.active_travel ul li{
+	float: left;
+	margin-right: 8%;
+	list-style: none;
+	width: 28%;
+}
+.active_travel2{
+	clear: both;
+	padding: 20px 23%;
+}
+.active_travel2 ul li{
+	float: left;
+	margin-right: 20%;
+	list-style: none;
+	width: 40%;
+}
+.active_surprise1 p{
+	font-size: 36px;
+	color: #cb0000;
+	text-align: center;
+	margin: 10px 0;
+}
+.active_surprise2{
+	background: url(../../iamges/20170517/nyactive_img5.jpg) no-repeat;
+	height: 1297px;
+}
+.active_tv{
+	width: 1082px;
+	margin-left:560px;
+	padding-top: 300px;
+}
+.active_surprise3_1{
+	background: url(../../iamges/20170517/nyactive_img6.jpg) no-repeat;
+	height: 2091px;
+}
+.active_surprise3_1 img{
+	margin-left: 115px;
+}
+.active_millon{
+	padding-top: 168px;
+}
+.active_millon img{
+	margin-left:510px;
+	width: 851px;
+}
+.active_surprise3_2{
+	background: url(../../iamges/20170517/nyactive_img7.png) no-repeat;
+	width: 1920px;
+	height: 2387px;
+}
+.active_surprise3_2_con{
+	width:65%;
+	margin: 0 auto;
+}
+.surprise3_2_con1{
+	background: url(../../iamges/20170517/nyactive_con5.png) no-repeat;
+	width: 1230px;
+	height: 650px;
+	padding-left: 48%;
+	padding-top: 25%;
+	margin-top: 8%;
+}
+.surprise3_2_con1 p{
+	font-size: 34px;
+	line-height: 60px;
+	color:#fad99a;
+	text-align: center;
+}
+.surprise3_2_con2{
+	background: url(../../iamges/20170517/nyactive_con6.png) no-repeat;
+	width: 1230px;
+	height: 650px;
+	padding-left: 49%;
+	padding-top: 17%;
+	margin-top: 8%;
+}
+.surprise3_2_con2 p{
+	font-size: 34px;
+	line-height: 48px;
+	color:#fad99a;
+	text-align: center;
+}
+.surprise3_2_con3{
+	background: url(../../iamges/20170517/nyactive_con7.png) no-repeat;
+	width: 1230px;
+	height: 650px;
+	padding-left: 48%;
+	padding-top: 15%;
+	margin-top: 8%;
+}
+.surprise3_2_con3 p{
+	font-size: 34px;
+	line-height: 60px;
+	color:#fad99a;
+	text-align: center;
+}
+.active_pro{
+	width: 80%;
+	margin: auto;
+}
+.active_pro_title{
+	background: url(../../iamges/20170517/nyactive_title3.png) no-repeat;
+	font-size: 60px;
+	color: #de2834;
+	line-height: 100px;
+	height: 260px;
+	width: 578px;
+	margin: 0 auto 50px auto;
+	position: relative;
+}
+.active_pro_title p{
+	padding: 17% 28%;
+}
+.active_pro_con1{
+	background: url(../../iamges/20170517/nyactive_img8.png) no-repeat;
+	height: 1150px;
+	width: 1058px;
+	margin: 0 auto;
+	padding: 3% 5%;
+	font-size: 30px;
+	color: #ea3b41;
+	text-align: center;
+}
+.active_pro_con1 ul li{
+	float: left;
+	width: 50%;
+}
+.active_pro_con1 img{
+	display: inline;
+}
+.active_pro_con2{
+	background: url(../../iamges/20170517/nyactive_img9.png) no-repeat;
+	height: 700px;
+	width: 1058px;
+	margin: 0 auto;
+	padding: 5% 5%;
+	font-size: 30px;
+	color: #ea3b41;
+	text-align: center;
+}
+.active_pro_con2 ul li{
+	float: left;
+	width: 50%;
+}
+.active_pro_con2 img{
+	display: inline;
+}
+.footer{
+	background-color: #2c080a;
+	color: #fff;
+	font-size: 50px;
+	text-align: center;
+	height: 100px;
+	line-height: 100px
+}
