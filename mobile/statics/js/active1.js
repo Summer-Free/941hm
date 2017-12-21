@@ -1,7 +1,16 @@
 $(function() {
 	is20 = false;
 	//初始化抽奖次数
-	$(".sec-1 dl").css("display","none");
+
+    var url = '../mobile/index.php?r=active/index/count';
+    var tel = 0;
+    var times = 0;
+    var param = {phone:tel,times:times};
+	$.post(url,param,function(data){
+		var result = eval('('+data+')');
+		$(".sec-2 span").text(rsult.times);
+	})
+
     var no_img = '../mobile/statics/img/404.png';
     // 登录弹窗
     var getTel = function () {
@@ -33,7 +42,7 @@ $(function() {
    getTime();
     //抽奖
     var prize = function (e) {
-        if(e.hasClass('is_take')){
+        if(e.hasClass('is_take')){+
             layer.open({content:'这个已经翻过了'})
             return false;
         }
@@ -59,8 +68,16 @@ $(function() {
                     $('.sec-2 div').eq(x).find('img').attr('src',result.textfile);
                     var $dialog = $(".dialog-Winning");
                     $dialog.show();
+
                     //领取成功jpg
                     $(".tling").css("display","block");
+
+                    var url = '../mobile/index.php?r=active/index/count';
+                    $(".sec-2 span").text(times);
+                    $.post(url,{phone:tel},function(data){
+                        
+                    });
+
                     break;
                 case '1' :
                     //活动未开始
@@ -200,6 +217,11 @@ $(function() {
                     $(".dialog-getTel .finish").css("display","block");
                     $(".dialog-getTel .next").css("display","none");
                     $('#code').val("").focus();
+                    var url = '../mobile/index.php?r=active/index/count';
+                    $(".flex span").text(times);
+                    $.post(url,{phone:tel},function(data){
+                        
+                    });
                     setInterval(function(){
                     	if ($('#tel').val() != tel) {
                     		$(".dialog-getTel .getCode1").css("display","none");
@@ -269,17 +291,21 @@ $(function() {
 	 	var code = $('#pwd').val();
 	 	var param = {phone:tel,pwd:code};
 	    var url = '../mobile/index.php?r=active/index/login';
-	 	$.post("",param,function(data){
+        console.log(tel);
+        console.log(code);
+	 	$.post(url,param,function(data){
 	    	var result = eval('('+data+')');
 			//验证成功
 			if(result.code == 13){
+
 				var tel = $('#tel').val();
+	            /* var times = parseInt($(".flex span").text())+1;*/
+                //抽奖次数
 	            var url = '../mobile/index.php?r=active/index/count';
-				$.post(url,{tel:tel},function(data){
-					var result = eval('('+data+')');
-					$(".flex span").text(result.times);
-					$(".sec-1 dl").css("display","none");
-				});
+	            $(".sec-2 span").text(times);
+				$.post(url,{phone:tel},function(data){
+
+                });
 				init_prize();
 	            $dialog.hide();
 	        //验证失败
@@ -296,14 +322,19 @@ $(function() {
 	  function testPwd21(){
 		$dialog = $(".dialog-getTel");
 	 	var tel = $('#tel').val();
-	 	var code = $('#code').val();
+	 	var code = $('#pwd').val();
 	 	var param = {phone:tel,pwd:code};
 	    var url = '../mobile/index.php?r=active/index/login';
-	 	$.post("",param,function(data){
+	 	$.post(url,param,function(data){
 	  		var result = eval('('+data+')');
 		//  验证成功
 			if(result == "true"){
 	            $dialog.hide();
+                var url = '../mobile/index.php?r=active/index/count';
+                $(".flex span").text(times);
+                $.post(url,{phone:tel},function(data){
+                    
+                });
 	        //验证失败
 			}else if(result == "false"){
 				$(".getCode+span").remove();

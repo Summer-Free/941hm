@@ -120,12 +120,12 @@
 	width:95%;
 	margin:0 auto;
 	font-size:13px;
-	line-height:24px;
+	line-height:30px;
 	color:#767676;
 }
 .des_jd b{
 	color: #da1f2e;
-	font-size: 12px;
+	font-size: 14px;
 }
 .des_jd b.bt_hs{
 	color: #333;
@@ -140,19 +140,20 @@
 	padding-top:5px;
 }
 .des_fa span img{
-	width:100%;
+	width:120%;
 }
 .des_fa label{
 	float:left;
 	width:230px;
-	padding-left:10px;
+	padding-left:30px;
+	padding-right: 5px;
 	margin-left:5px;
 	font-size:12px;
-	line-height:21px;
+	line-height:25px;
 	color:#767676;
 }
 .des_fa label p{
-	font-size:12px;
+	font-size:13px;
 	color:#484848;
 }
 .sjsjj{

@@ -1,0 +1,812 @@
+From da93ab8a6aa220812ca606eb2557c1aa745a59cb Mon Sep 17 00:00:00 2001
+From: me961798852 <961798852@qq.com>
+Date: Thu, 21 Dec 2017 15:15:02 +0800
+Subject: [PATCH] =?UTF-8?q?From=20QN=20=E4=BF=AE=E6=94=B9=E4=BA=86PC?=
+ =?UTF-8?q?=E7=AB=AF=E6=89=BE=E8=AE=BE=E8=AE=A1=E5=B8=88=E9=A1=B5=E9=9D=A2?=
+ =?UTF-8?q?=E7=9A=84=E5=86=85=E5=AE=B9=EF=BC=9B=E5=8A=A0=E4=BA=86=E5=85=A8?=
+ =?UTF-8?q?=E9=83=A8=E5=88=86=E7=B1=BB=E6=B6=88=E5=A4=B1=E7=9A=84=E6=95=88?=
+ =?UTF-8?q?=E6=9E=9C=EF=BC=9B=E6=96=B0=E5=A2=9E=E4=BA=86PC=E7=AB=AF?=
+ =?UTF-8?q?=E5=8F=8C=E6=97=A6=E6=B4=BB=E5=8A=A8=E9=A1=B5=E9=9D=A2?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+---
+ mobile/resources/views/base/page_header.html     |   2 +-
+ themes/ecmoban_dsc/css/css/find_designer.css     |  13 +-
+ themes/ecmoban_dsc/css/css/newyear_active.css    | 224 +++++++++++++++++++++++
+ themes/ecmoban_dsc/find_designer.dwt             |  90 ++++-----
+ themes/ecmoban_dsc/index.dwt                     |  14 ++
+ themes/ecmoban_dsc/library/page_header_index.lbi |  26 +--
+ themes/ecmoban_dsc/newyear_active.dwt            | 210 +++++++++++++++++++++
+ 7 files changed, 507 insertions(+), 72 deletions(-)
+ create mode 100644 themes/ecmoban_dsc/css/css/newyear_active.css
+ create mode 100644 themes/ecmoban_dsc/newyear_active.dwt
+
+diff --git a/mobile/resources/views/base/page_header.html b/mobile/resources/views/base/page_header.html
+index 14825e5..54613fc 100644
+--- a/mobile/resources/views/base/page_header.html
++++ b/mobile/resources/views/base/page_header.html
+@@ -141,7 +141,7 @@
+ 		
+ 		/*20171208  brand_street部分*/
+ 		.con{
+-			position: absolute;
++			/* position: absolute; */
+ 		}
+ 		.brand-right-box {
+ 			width: 200px;
+diff --git a/themes/ecmoban_dsc/css/css/find_designer.css b/themes/ecmoban_dsc/css/css/find_designer.css
+index f3a3515..c1ceb91 100644
+--- a/themes/ecmoban_dsc/css/css/find_designer.css
++++ b/themes/ecmoban_dsc/css/css/find_designer.css
+@@ -120,12 +120,12 @@
+ 	width:95%;
+ 	margin:0 auto;
+ 	font-size:13px;
+-	line-height:24px;
++	line-height:30px;
+ 	color:#767676;
+ }
+ .des_jd b{
+ 	color: #da1f2e;
+-	font-size: 12px;
++	font-size: 14px;
+ }
+ .des_jd b.bt_hs{
+ 	color: #333;
+@@ -140,19 +140,20 @@
+ 	padding-top:5px;
+ }
+ .des_fa span img{
+-	width:100%;
++	width:120%;
+ }
+ .des_fa label{
+ 	float:left;
+ 	width:230px;
+-	padding-left:10px;
++	padding-left:30px;
++	padding-right: 5px;
+ 	margin-left:5px;
+ 	font-size:12px;
+-	line-height:21px;
++	line-height:25px;
+ 	color:#767676;
+ }
+ .des_fa label p{
+-	font-size:12px;
++	font-size:13px;
+ 	color:#484848;
+ }
+ .sjsjj{
+diff --git a/themes/ecmoban_dsc/css/css/newyear_active.css b/themes/ecmoban_dsc/css/css/newyear_active.css
+new file mode 100644
+index 0000000..58e5d97
+--- /dev/null
++++ b/themes/ecmoban_dsc/css/css/newyear_active.css
+@@ -0,0 +1,224 @@
++body{
++	margin: 0;
++}
++.all{
++	background-color: #de2834;
++	width: 100%;
++}
++.active_header{
++	background: url(../../iamges/20170517/nyactive_img1.png) no-repeat;
++	width: 100%;
++	height: 1385px;
++	text-align: center;
++}
++.active_header img{
++	display:block;
++	margin-left: 393px;
++	padding-top: 360px;
++	width: 1122px;
++}
++.active_command{
++	padding-bottom: 85px;
++}
++.active_command_img{
++	background: url(../../iamges/20170517/nyactive_img2.png) no-repeat;
++	width: 965px;
++	height: 510px;
++	margin-left: 470px;
++}
++.active_command_img h5{
++	padding:8% 0 2% 0;
++	font-size: 68px;
++	margin: 0;
++	color: #ffcc00;
++	text-align: center;
++	font-weight: normal;
++}
++.active_command_img p{
++	font-size: 40px;
++	margin: 0;
++	text-align: center;
++	color: #fff;
++	line-height: 50px;
++}
++.active_customization{
++	background: url(../../iamges/20170517/nyactive_img3.png) no-repeat;
++	width: 1920px;
++	margin-left: 400px;
++	padding-bottom: 89px;
++}
++.active_customization img{
++	padding-top: 1140px;
++	margin-left: 380px;
++	padding-bottom: 60px;
++}
++.active_surprise1{
++	background: url(../../iamges/20170517/nyactive_img4.jpg) no-repeat;
++	width: 1920px;
++	height: 1916px;
++}
++.active_customization_img{
++	width: 38%;
++	margin-left:580px;
++	padding-top: 6%;
++	padding-bottom: 4%;
++}
++.active_travel{
++	width: 80%;
++	margin: 0 auto;
++}
++.active_travel ul li{
++	float: left;
++	margin-right: 8%;
++	list-style: none;
++	width: 28%;
++}
++.active_travel2{
++	clear: both;
++	padding: 20px 23%;
++}
++.active_travel2 ul li{
++	float: left;
++	margin-right: 20%;
++	list-style: none;
++	width: 40%;
++}
++.active_surprise1 p{
++	font-size: 36px;
++	color: #cb0000;
++	text-align: center;
++	margin: 10px 0;
++}
++.active_surprise2{
++	background: url(../../iamges/20170517/nyactive_img5.jpg) no-repeat;
++	height: 1297px;
++}
++.active_tv{
++	width: 1082px;
++	margin-left:560px;
++	padding-top: 300px;
++}
++.active_surprise3_1{
++	background: url(../../iamges/20170517/nyactive_img6.jpg) no-repeat;
++	height: 2091px;
++}
++.active_surprise3_1 img{
++	margin-left: 115px;
++}
++.active_millon{
++	padding-top: 168px;
++}
++.active_millon img{
++	margin-left:510px;
++	width: 851px;
++}
++.active_surprise3_2{
++	background: url(../../iamges/20170517/nyactive_img7.png) no-repeat;
++	width: 1920px;
++	height: 2387px;
++}
++.active_surprise3_2_con{
++	width:65%;
++	margin: 0 auto;
++}
++.surprise3_2_con1{
++	background: url(../../iamges/20170517/nyactive_con5.png) no-repeat;
++	width: 1230px;
++	height: 650px;
++	padding-left: 48%;
++	padding-top: 25%;
++	margin-top: 8%;
++}
++.surprise3_2_con1 p{
++	font-size: 34px;
++	line-height: 60px;
++	color:#fad99a;
++	text-align: center;
++}
++.surprise3_2_con2{
++	background: url(../../iamges/20170517/nyactive_con6.png) no-repeat;
++	width: 1230px;
++	height: 650px;
++	padding-left: 49%;
++	padding-top: 17%;
++	margin-top: 8%;
++}
++.surprise3_2_con2 p{
++	font-size: 34px;
++	line-height: 48px;
++	color:#fad99a;
++	text-align: center;
++}
++.surprise3_2_con3{
++	background: url(../../iamges/20170517/nyactive_con7.png) no-repeat;
++	width: 1230px;
++	height: 650px;
++	padding-left: 48%;
++	padding-top: 15%;
++	margin-top: 8%;
++}
++.surprise3_2_con3 p{
++	font-size: 34px;
++	line-height: 60px;
++	color:#fad99a;
++	text-align: center;
++}
++.active_pro{
++	width: 80%;
++	margin: auto;
++}
++.active_pro_title{
++	background: url(../../iamges/20170517/nyactive_title3.png) no-repeat;
++	font-size: 60px;
++	color: #de2834;
++	line-height: 100px;
++	height: 260px;
++	width: 578px;
++	margin: 0 auto 50px auto;
++	position: relative;
++}
++.active_pro_title p{
++	padding: 17% 28%;
++}
++.active_pro_con1{
++	background: url(../../iamges/20170517/nyactive_img8.png) no-repeat;
++	height: 1150px;
++	width: 1058px;
++	margin: 0 auto;
++	padding: 3% 5%;
++	font-size: 30px;
++	color: #ea3b41;
++	text-align: center;
++}
++.active_pro_con1 ul li{
++	float: left;
++	width: 50%;
++}
++.active_pro_con1 img{
++	display: inline;
++}
++.active_pro_con2{
++	background: url(../../iamges/20170517/nyactive_img9.png) no-repeat;
++	height: 700px;
++	width: 1058px;
++	margin: 0 auto;
++	padding: 5% 5%;
++	font-size: 30px;
++	color: #ea3b41;
++	text-align: center;
++}
++.active_pro_con2 ul li{
++	float: left;
++	width: 50%;
++}
++.active_pro_con2 img{
++	display: inline;
++}
++.footer{
++	background-color: #2c080a;
++	color: #fff;
++	font-size: 50px;
++	text-align: center;
++	height: 100px;
++	line-height: 100px
++}
+\ No newline at end of file
+diff --git a/themes/ecmoban_dsc/find_designer.dwt b/themes/ecmoban_dsc/find_designer.dwt
+index f175d0c..b13ec40 100644
+--- a/themes/ecmoban_dsc/find_designer.dwt
++++ b/themes/ecmoban_dsc/find_designer.dwt
+@@ -150,27 +150,23 @@
+ 					<ul class="question_ul wrapfix">
+ 						<li>
+ 							<a href="#">
+-								<img src="themes/ecmoban_dsc/iamges/20170517/des_img1.jpg" alt="">
++								<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/des_img1.jpg" alt="">
+ 							</a>
+ 							<div class="des_jd">
+ 								<b class="bt_hs">7㎡书房     伍先生</b>
+-								<p>一房两用 小空间大变身</p>
+-							</div>
+-							<div class="des_jd">
+-								<b>客户需求</b>
+-								<p>设计一个书房，简洁大方</p>
++								<p>小空间大变身</p>
+ 							</div>
+ 							<div class="des_jd sjsjj">
+-								<b>设计师解决</b>
++								<b>设计说明</b>
+ 								<div class="des_fa wrapfix">
+ 									<span>
+ 										<a href="#" class="hx_img">
+-											<img src="themes/ecmoban_dsc/iamges/20170517/designer_img1.jpg" alt="">
++											<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/designer_img1.jpg" alt="">
+ 										</a>
+ 										<p>吴俊豪</p>
+ 									</span>
+ 									<label>
+-										<p>整体设计简单实用，考虑到业主家小朋友偶尔要来居住，同时兼并卧房用。沙发床连接着飘窗柜，打造休闲舒适的一角，也可作为临时睡眠区。学习区是书桌+吊柜一体化设计，具有展示收纳功能。</p>
++										<p>整体设计简洁大方，以暖色调为主，消除红木冷冰外表带来的不适感。角落储物柜可放置杂物，上置摆件，不显得太空荡。六边形透窗正对桌子，提供了良好的室内光线，两个鼓凳在来客人时可以坐。</p>
+ 									</label>
+ 								</div>
+ 							</div>
+@@ -180,135 +176,115 @@
+ 						</li>
+ 						<li>
+ 							<a href="#">
+-								<img src="themes/ecmoban_dsc/iamges/20170517/des_img2.jpg" alt="">
++								<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/des_img2.jpg" alt="">
+ 							</a>
+ 							<div class="des_jd">
+-								<b class="bt_hs">22㎡卧房     莫女士</b>
+-								<p>只需要床、衣柜、梳妆台，简单雅致</p>
+-							</div>
+-							<div class="des_jd">
+-								<b>客户需求</b>
+-								<p>只需要床、衣柜、梳妆台，简单雅致，具备基本...</p>
++								<b class="bt_hs">22㎡客厅     莫女士</b>
++								<p>只需要桌、椅、柜，简单雅致</p>
+ 							</div>
+ 							<div class="des_jd sjsjj">
+-								<b>设计师解决</b>
++								<b>设计说明</b>
+ 								<div class="des_fa wrapfix">
+ 									<span>
+ 										<a href="#" class="hx_img">
+-											<img src="themes/ecmoban_dsc/iamges/20170517/designer_img2.jpg" alt="">
++											<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/designer_img2.jpg" alt="">
+ 										</a>
+ 										<p>廖昕红</p>
+ 									</span>
+ 									<label>
+-										<p>应业主需求，整体设计温馨雅致。温暖的枫木搭配少许象白板材，营造温暖雅致的感觉。衣柜到顶设计，美观的同时增加了储物空间。梳妆台与床头柜结合，搭配小吊柜，简单又实用。梳妆台与床头柜结合，搭配小吊柜，简单又实用。</p>
++										<p>采用开放式格局，通过帘子隔开各个空间，整体设计简单雅致。置物柜与餐桌采用同款材质制作，与房间色调搭配相得益彰。置物柜旁、餐桌上、画架顶各放置了护眼的绿植，营造出温馨舒适的感觉，又不容易产生视觉疲劳。</p>
+ 									</label>
+ 								</div>
+ 							</div>
+ 						</li>
+ 						<li class="on">
+ 							<a href="#">
+-								<img src="themes/ecmoban_dsc/iamges/20170517/des_img3.jpg" alt="">
++								<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/des_img3.jpg" alt="">
+ 							</a>
+ 							<div class="des_jd">
+ 								<b class="bt_hs">28㎡客餐厅     蒋先生</b>
+ 								<p>因地制宜 规整设计更美观</p>
+ 							</div>
+-							<div class="des_jd">
+-								<b>客户需求</b>
+-								<p>具备一定的收纳性，喜欢深色板材，沉稳一点</p>
+-							</div>
+ 							<div class="des_jd sjsjj">
+-								<b>设计师解决</b>
++								<b>设计说明</b>
+ 								<div class="des_fa wrapfix">
+ 									<span>
+ 										<a href="#" class="hx_img">
+-											<img src="themes/ecmoban_dsc/iamges/20170517/designer_img3.jpg" alt="">
++											<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/designer_img3.jpg" alt="">
+ 										</a>
+ 										<p>李宇鸿</p>
+ 									</span>
+ 									<label>
+-										<p>按照户型特点依次设计了玄关换鞋区、用餐区和会客区。玄关和客厅用隔断柜隔开，兼具展示和收纳功能。沙发扶手“暗藏玄机”，可收纳一些零碎物件。餐厅卡座也兼具收纳功能。</p>
++										<p>采用深色木料制作的沙发，与电视柜电视机搭配，营造出沉稳大气的感觉。选用多抽屉电视柜，使之兼具展示和收纳的功能。沙发后方博古架充分起到装饰的作用，嵌入墙体的设计节省了大量空间，使客厅看起来更加宽阔。</p>
+ 									</label>
+ 								</div>
+ 							</div>
+ 						</li>
+ 						<li>
+ 							<a href="#">
+-								<img src="themes/ecmoban_dsc/iamges/20170517/des_img4.jpg" alt="">
++								<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/des_img4.jpg" alt="">
+ 							</a>
+ 							<div class="des_jd">
+ 								<b class="bt_hs">6㎡厨房     刘先生</b>
+ 								<p>超强储纳 还你整洁厨房</p>
+ 							</div>
+-							<div class="des_jd">
+-								<b>客户需求</b>
+-								<p>功能分区明确科学，厨电尽量藏起来，比较省空间</p>
+-							</div>
+ 							<div class="des_jd sjsjj">
+-								<b>设计师解决</b>
++								<b>设计说明</b>
+ 								<div class="des_fa wrapfix">
+ 									<span>
+ 										<a href="#" class="hx_img">
+-											<img src="themes/ecmoban_dsc/iamges/20170517/designer_img4.jpg" alt="">
++											<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/designer_img4.jpg" alt="">
+ 										</a>
+ 										<p>张晴</p>
+ 									</span>
+ 									<label>
+-										<p>银丝橡木配亮白面板，营造出一个简洁时尚的厨房空间。该厨房流线分工明确，进门左手是备餐区，紧挨着就是洗手盆，切菜处平台宽裕，且还备有送餐区。大面积的吊柜和地柜，增加了储物功能。</p>
++										<p>整体采用红白基调，辅以棕色装饰墙，布局合理科学，营造出简洁时尚的厨房空间。餐桌为六人位，可容纳多人同时用餐。餐边柜采用多抽屉设计，具有超强储物功能。吊顶灯与周围小灯搭配交相辉映，照亮厨房的每个角落。</p>
+ 									</label>
+ 								</div>
+ 							</div>
+ 						</li>
+ 						<li>
+ 							<a href="#">
+-								<img src="themes/ecmoban_dsc/iamges/20170517/des_img5.jpg" alt="">
++								<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/des_img5.jpg" alt="">
+ 							</a>
+ 							<div class="des_jd">
+ 								<b class="bt_hs">10㎡青少年房     辛女士</b>
+ 								<p>巧妙扩容 腾出更多成长空间</p>
+ 							</div>
+-							<div class="des_jd">
+-								<b>客户需求</b>
+-								<p>房间需要供两个小孩休息，同时留出活动空间...</p>
+-							</div>
+ 							<div class="des_jd sjsjj">
+-								<b>设计师解决</b>
++								<b>设计说明</b>
+ 								<div class="des_fa wrapfix">
+ 									<span>
+ 										<a href="#" class="hx_img">
+-											<img src="themes/ecmoban_dsc/iamges/20170517/designer_img5.jpg" alt="">
++											<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/designer_img5.jpg" alt="">
+ 										</a>
+ 										<p>王丽婷</p>
+ 									</span>
+ 									<label>
+-										<p>上下床的设计，向上扩展利用空间，同时增加了一些小抽屉和搁板，可放置书本和玩具。大大的趟门衣柜也足够放两个小孩的衣服。靠窗处的折叠小书桌和黑板，打造了小小的学习区，其他空间都可供孩子自由活动。</p>
++										<p>采用深色调沙发加白色软垫经典配色，舒适性高，减小孩子被磕碰的几率，侧柜可放置孩子的书本及玩具等物品。高吊顶灯款式新颖，与房间装修风格搭配极佳，多灯设计让室内光线充足，对孩子的视力有一定的保护作用。</p>
+ 									</label>
+ 								</div>
+ 							</div>
+ 						</li>
+ 						<li class="on">
+ 							<a href="#">
+-								<img src="themes/ecmoban_dsc/iamges/20170517/des_img6.jpg" alt="">
++								<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/des_img6.jpg" alt="">
+ 							</a>
+ 							<div class="des_jd">
+ 								<b class="bt_hs">24㎡客餐厅     钟先生</b>
+-								<p>清新韩式 营造二人小情调</p>
+-							</div>
+-							<div class="des_jd">
+-								<b>客户需求</b>
+-								<p>夫人喜欢韩式小清新，希望能设计成她想要的浪...</p>
++								<p>复古典雅 营造二人小情调</p>
+ 							</div>
+ 							<div class="des_jd sjsjj">
+-								<b>设计师解决</b>
++								<b>设计说明</b>
+ 								<div class="des_fa wrapfix">
+ 									<span>
+ 										<a href="#" class="hx_img">
+-											<img src="themes/ecmoban_dsc/iamges/20170517/designer_img2.jpg" alt="">
++											<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/designer_img2.jpg" alt="">
+ 										</a>
+ 										<p>廖昕红</p>
+ 									</span>
+ 									<label>
+-										<p>整个空间以白色为主调，点缀一些靓丽的色彩，清新又时尚。玄关的全身镜和换衣凳，贴心实用。亮点是用餐区蓝白色调，打造韩式浪漫感。同时增设迷你吧台，为二人生活增添小情调。</p>
++										<p>以红木加大红色为主调，给人以温暖的感觉，客厅中放置了绿植，使整体色彩不至于太过单调。屏风式隔断复古别致，与圈椅搭配相得益彰，为整体风格起到画龙点睛的作用，展现一派中式家居的独特趣味。</p>
+ 									</label>
+ 								</div>
+ 							</div>
+@@ -320,5 +296,15 @@
+ 		<div class="space"></div>
+ 		<!--main body end-->
+ 		<!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->
++		<!--懒加载-->
++    	<script type="text/javascript" src="js/jquery.lazyload.js"></script>
++		<!--开启懒加载-->
++        <script type="text/javascript">
++            $("img.lazy").lazyload({
++                placeholder: "themes/ecmoban_dsc/images/loadGoods.gif",
++                effect : "fadeIn",
++                threshold : 1000
++            });
++        </script>
+ </body>
+ </html>
+\ No newline at end of file
+diff --git a/themes/ecmoban_dsc/index.dwt b/themes/ecmoban_dsc/index.dwt
+index 5018153..be8efed 100644
+--- a/themes/ecmoban_dsc/index.dwt
++++ b/themes/ecmoban_dsc/index.dwt
+@@ -79,6 +79,20 @@
+ 	                    </div>  
+ 	                </div>
+ 	            </div> 
++				<script type="text/javascript">
++					$(document).ready(function(){
++						var min_height = 153;
++						$(window).scroll(function(){
++							var s =$(window).scrollTop();
++							if(s > min_height){
++								$(".dropdown-menu").hide(500)
++							}
++							else{
++								$(".dropdown-menu").show(500)
++							}
++						});
++					})
++				</script>
+ 	            <div class="wrap-nav bg-color-95b0b2"> 
+ 		            <div class="w1200">
+ 		                <div class="nav-content">
+diff --git a/themes/ecmoban_dsc/library/page_header_index.lbi b/themes/ecmoban_dsc/library/page_header_index.lbi
+index 467bbd4..acd61a0 100644
+--- a/themes/ecmoban_dsc/library/page_header_index.lbi
++++ b/themes/ecmoban_dsc/library/page_header_index.lbi
+@@ -162,23 +162,23 @@
+             <!--Navigation end-->
+             <script type="text/javascript" src="themes/ecmoban_dsc/js/nav_color.js"></script>
+             <style>
+-                .active{background-color: #460909;}
++                /* .active{background-color: #460909;} */
+             </style>
+             <!-- 将导航栏固定到顶部 start -->
+             <script type="text/javascript">
+                 $(function(){
+-                var nav=$(".wrap-nav"); //得到导航对象
+-                var win=$(window); //得到窗口对象
+-                var sc=$(document);//得到document文档对象。
+-                win.scroll(function(){
+-                  if(sc.scrollTop()>=123){
+-                    nav.addClass("fixednav"); 
+-                   $(".navTmp").fadeIn(); 
+-                  }else{
+-                   nav.removeClass("fixednav");
+-                   $(".navTmp").fadeOut();
+-                  }
+-                })  
++                    var nav=$(".wrap-nav"); //得到导航对象
++                    var win=$(window); //得到窗口对象
++                    var sc=$(document);//得到document文档对象。
++                    win.scroll(function(){
++                      if(sc.scrollTop()>=123){
++                        nav.addClass("fixednav");
++                       $(".navTmp").fadeIn();
++                      }else{
++                       nav.removeClass("fixednav");
++                       $(".navTmp").fadeOut();
++                      }
++                    })
+                 })
+             </script>
+             <style>
+diff --git a/themes/ecmoban_dsc/newyear_active.dwt b/themes/ecmoban_dsc/newyear_active.dwt
+new file mode 100644
+index 0000000..4db766e
+--- /dev/null
++++ b/themes/ecmoban_dsc/newyear_active.dwt
+@@ -0,0 +1,210 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++	<meta charset="UTF-8">
++	<title>新年活动</title>
++	<!--首页CSS以及部分通用部分的合并LBI-->
++        <!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem -->
++		<!--首页专用-->
++	<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/newyear_active.css">
++	 {* 包含脚本文件 *}
++        {insert_scripts files='jquery.json.js,transport_jquery.js'}
++</head>
++<body>
++		<!--header start-->
++		<div id="header">
++                <!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
++        </div>
++		<!--header end-->
++	<div class="all">
++		<div class="active_header">
++			<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_title1.png" alt="">
++		</div>
++		<div class="active_command">
++			<div class="active_command_img">
++				<h5>活动要求</h5>
++				<p>需在本商城下单，<br>
++					且在12月1日-1月31日出生的<br>
++					顾客凭本人有效身份证，<br>
++					可参加本次活动限前五十名，<br>
++					先来先得。
++				</p>
++			</div>
++		</div>
++		<div class="active_customization">
++			<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_con1.png" alt="">
++		</div>
++		<div class="active_surprise1">
++			<div class="active_customization_img">
++				<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_con2.png" alt="">
++			</div>
++			<div class="active_travel">
++				<ul>
++					<li>
++						<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_travel1.jpg" alt="">
++						<p>云南</p>
++					</li>
++					<li>
++						<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_travel2.jpg" alt="">
++						<p>桂林</p>
++					</li>
++					<li style="margin-right: 0">
++						<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_travel3.jpg" alt="">
++						<p>海南</p>
++					</li>
++				</ul>
++			</div>
++			<div class="active_travel2">
++				<ul>
++					<li>
++						<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_travel4.jpg" alt="">
++						<p>港澳</p>
++					</li>
++					<li style="margin-right: 0">
++						<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_travel5.jpg" alt="">
++						<p>泰国</p>
++					</li>
++				</ul>
++			</div>
++		</div>
++		<div class="active_surprise2">
++			<div class="active_tv">
++				<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_con3.png" alt="">
++			</div>
++		</div>
++		<div class="active_surprise3_1">
++			<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_con4.png" alt="">
++			<div class="active_millon">
++				<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_title2.png" alt="">
++			</div>
++		</div>
++		<div class="active_surprise3_2">
++			<div class="active_surprise3_2_con">
++				<div class="surprise3_2_con1">
++					<p style="color: #fff">订单金额满一万就送</p>
++					<p>价值5980元的志高空气净化器</p>
++					<p>价值4368元的茅台白金酒坊N20</p>
++				</div>
++				<div class="surprise3_2_con2">
++					<p style="color: #fff">订单金额满两万就送</p>
++					<p>送价值11960元的志高空气净化器*2</p>
++					<p>价值8736元的茅台白金酒坊N20*2</p>
++					<p>价值7799元海南黄花梨手串</p>
++					<p>价值2280的志高超滤净水机</p>
++				</div>
++				<div class="surprise3_2_con3">
++					<p style="color: #fff">订单金额满三万就送</p>
++					<p>价值36900一台的豪华按摩椅</p>
++					<p>11960元志高空气净化器*2</p>
++					<p>价值2280的志高超滤净水机</p>
++					<p></p>
++				</div>
++			</div>
++		</div>
++		<div class="active_pro">
++			<div class="active_pro_title">
++				<p>活动产品</p>
++			</div>
++			<div class="active_pro_con1">
++				<ul>
++					<a href="http://www.941hm.com/goods.php?id=1797">
++						<li>
++							<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_pro1.jpg" alt="">
++							<p>非洲花梨  双用茶台</p>
++							<p>￥11300<img src="themes/ecmoban_dsc/iamges/20170517/nyactive_buy.png" alt=""></p>
++						</li>
++					</a>
++					<a href="http://www.941hm.com/goods.php?id=1560">
++						<li>
++							<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_pro2.jpg" alt="">
++							<p>非花缅花 象头圆台</p>
++							<p>￥18400<img src="themes/ecmoban_dsc/iamges/20170517/nyactive_buy.png" alt=""></p>
++						</li>
++					</a>
++					<a href="http://www.941hm.com/goods.php?id=22">
++						<li>
++							<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_pro3.jpg" alt="">
++							<p>非缅阔叶 辉煌大床</p>
++							<p>￥19800<img src="themes/ecmoban_dsc/iamges/20170517/nyactive_buy.png" alt=""></p>
++						</li>
++					</a>
++					<a href="http://www.941hm.com/goods.php?id=1800">
++						<li>
++							<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_pro4.jpg" alt="">
++							<p>非花刺猬阔叶 半圆博古架</p>
++							<p>￥19900<img src="themes/ecmoban_dsc/iamges/20170517/nyactive_buy.png" alt=""></p>
++						</li>
++					</a>
++				</ul>
++			</div>
++			<div class="active_pro_con1">
++				<ul>
++					<a href="http://www.941hm.com/goods.php?id=1407">
++						<li>
++							<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_pro5.jpg" alt="">
++							<p>阔叶黄檀  罗汉宝座沙发</p>
++							<p>￥49800<img src="themes/ecmoban_dsc/iamges/20170517/nyactive_buy.png" alt=""></p>
++						</li>
++					</a>
++					<a href="http://www.941hm.com/goods.php?id=1424">
++						<li>
++							<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_pro6.jpg" alt="">
++							<p>阔叶黄檀 罗汉床</p>
++							<p>￥32800<img src="themes/ecmoban_dsc/iamges/20170517/nyactive_buy.png" alt=""></p>
++						</li>
++					</a>
++					<a href="http://www.941hm.com/goods.php?id=1427">
++						<li>
++							<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_pro7.jpg" alt="">
++							<p>阔叶黄檀 山水顶箱柜</p>
++							<p>￥51000<img src="themes/ecmoban_dsc/iamges/20170517/nyactive_buy.png" alt=""></p>
++						</li>
++					</a>
++					<a href="http://www.941hm.com/goods.php?id=1417">
++						<li>
++							<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_pro8.jpg" alt="">
++							<p>阔叶黄檀 1.38米汉宫圆台</p>
++							<p>￥36000<img src="themes/ecmoban_dsc/iamges/20170517/nyactive_buy.png" alt=""></p>
++						</li>
++					</a>
++				</ul>
++			</div>
++			<div class="active_pro_con2">
++				<ul>
++					<a href="http://www.941hm.com/goods.php?id=1811">
++						<li>
++							<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_pro9.jpg" alt="">
++							<p>南美黄花梨 财源滚滚沙发</p>
++							<p>￥37800<img src="themes/ecmoban_dsc/iamges/20170517/nyactive_buy.png" alt=""></p>
++						</li>
++					</a>
++					<a href="http://www.941hm.com/goods.php?id=75">
++						<li>
++							<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_pro10.jpg" alt="">
++							<p>南美酸枝 山水顶箱柜</p>
++							<p>￥27990<img src="themes/ecmoban_dsc/iamges/20170517/nyactive_buy.png" alt=""></p>
++						</li>
++					</a>
++				</ul>
++			</div>
++		</div>
++		<a href="http://www.941hm.com">
++			<div class="footer">
++				<p>返回首页</p>
++			</div>
++		</a>
++	</div>
++
++	<!-- #BeginLibraryItem "/library/page_footer_new.lbi" --><!-- #EndLibraryItem -->
++	<!--懒加载-->
++    <script type="text/javascript" src="js/jquery.lazyload.js"></script>
++	<!--开启懒加载-->
++    <script type="text/javascript">
++        $("img.lazy").lazyload({
++            placeholder: "themes/ecmoban_dsc/images/loadGoods.gif",
++            effect : "fadeIn",
++            threshold : 1000
++        });
++    </script>
++</body>
++</html>
+\ No newline at end of file
+-- 
+2.14.1.windows.1
+
