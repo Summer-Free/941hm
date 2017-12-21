@@ -1,18 +1,36 @@
 $(function() {
 	is20 = false;
 	//初始化抽奖次数
-/*	var url = '../mobile/index.php?r=active/index/xx';
-	$.post(url,function(data){
-		var result = eval('('+data+')');
-		$(".start span").text(rsult.times);
-	})*/
+	$(".sec-1 dl").css("display","none");
     var no_img = '../mobile/statics/img/404.png';
     // 登录弹窗
     var getTel = function () {
         var $dialog = $(".dialog-getTel");
         $dialog.show();
     };
-    
+    //已签到
+    var finish = function(){
+    	$(".calendar .true").css("display","none");
+    	$(".calendar .false").css("display","block");
+    	$(".tqian").css("display","block");
+    }
+    //取到当天日期
+   var getTime =  function(){
+			var dates = new Date();
+			var year = dates.getFullYear();
+			var month = dates.getMonth() +1;
+			var date = dates.getDate();
+			var day = dates.getDay();
+			var weeks = ["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+			var week = document.getElementById("week");
+			var time = document.getElementById("time");
+			var intime = document.getElementById("intime");
+			week.innerText=(weeks[day]);
+			time.innerText=(year+"年"+(month+1)+"月"+date+"日");
+			intime.innerText=(year+"年"+(month)+"月");
+			setTimeout(arguments.callee,1000);
+	}
+   getTime();
     //抽奖
     var prize = function (e) {
         if(e.hasClass('is_take')){
@@ -41,6 +59,8 @@ $(function() {
                     $('.sec-2 div').eq(x).find('img').attr('src',result.textfile);
                     var $dialog = $(".dialog-Winning");
                     $dialog.show();
+                    //领取成功jpg
+                    $(".tling").css("display","block");
                     break;
                 case '1' :
                     //活动未开始
@@ -61,6 +81,10 @@ $(function() {
                 case '4' :
                     // 用户未登录
                     getTel();
+                     break;
+                case '7':
+                	//用户已登录，签到
+                	finish();
                     break;
                 default:
                     //
@@ -127,8 +151,7 @@ $(function() {
     }
 
     //点击牌面，弹出弹窗
-    
-     $(".sec-2 li div").on("click",function() {
+     $(".sec-2 li div,.true").on("click",function() {
         prize($(this));
         $("#tel").val("").focus();
 		$("#pwd").val("");
@@ -185,7 +208,7 @@ $(function() {
 			                $(".error").remove();
                     	} 
                     },0)
-           		 } else if (result.code == 20){//新会员
+           		 } else if (result.code == 21){//新会员
            		 	//console.log(result.info);
            		 	$(".dialog-getTel .getCode1").css("display","none");
 					$(".dialog-getTel .getPass").css("display","block");
@@ -196,7 +219,6 @@ $(function() {
 			    	//开始验证密码
 					is20 = true;		
            		 	 //用户修改电话号，将重新验证电话号
-           		 	 alert(is20)
            		 	setInterval(function(){
                     	if ($('#tel').val() != tel) {
                     		$(".dialog-getTel .getCode1").css("display","none");
@@ -206,7 +228,7 @@ $(function() {
 					    	$(".error").remove();
 		                };
                     },0);                 
-           		}else if(result.code == 21){//老用户,不进行游戏
+           		}else if(result.code == 20){//老用户,不进行游戏
 
            		 	$(".dialog-getTel .getCode1").css("display","none");
 					$(".dialog-getTel .getPass").css("display","block");
@@ -250,15 +272,18 @@ $(function() {
 	 	$.post("",param,function(data){
 	    	var result = eval('('+data+')');
 			//验证成功
-			if(result == "true"){
-	            var times = parseInt($(".flex span").text())+1;
-	            var url = '../mobile/index.php?r=active/index/xx';
-	            $(".flex span").text(times);
-				$.post(url,{times:times},function(data){});
+			if(result.code == 13){
+				var tel = $('#tel').val();
+	            var url = '../mobile/index.php?r=active/index/count';
+				$.post(url,{tel:tel},function(data){
+					var result = eval('('+data+')');
+					$(".flex span").text(result.times);
+					$(".sec-1 dl").css("display","none");
+				});
 				init_prize();
 	            $dialog.hide();
 	        //验证失败
-			}else if(result == "false"){
+			}else if(result.code != 13){
 				$(".getCode+span").remove();
 	            $(".getPass").after("<span class='error'>密码错误</span>");
 			}
@@ -342,14 +367,13 @@ $(function() {
                     if(result.code == 13){
                         init_prize();
                         $dialog.hide();
-                        /*
-                        var times = Number($(".flex span").text()) + 1;
-                        var url = '../mobile/index.php?r=active/index/xx';
-                        $(".flex span").text(times);
-						$.post(url,{times:times},function(data){});
-						*/
+                        var url = '../mobile/index.php?r=active/index/count';
+						$.post(url,{tel:tel},function(data){
+							var result = eval('('+data+')');
+							$(".flex span").text(result.times);
+							$(".sec-1 dl").css("display","none");
+						});
 	                    }else {
-                    	
                         $(".getCode+span").remove();
                         $(".getCode1" ).after("<span class='error'>"+result.info+"</span>");
                         return false;
@@ -375,4 +399,67 @@ $(function() {
     $('.dialog-share,.dialog-wx-share').on('click',function () {
         $(this).hide();
     });
+    
+    //签到记录页
+    $(".img").on("click",function(){
+    	$("main,footer,header").css("display","none");
+    	$(".ago").css("display","block");
+    })
+    $(".ago").on("click",function(){
+    	$("main,footer,header").css("display","block");
+    	$(".ago").css("display","none");
+    })
+    //签到
+     $(".tqian").on("click",function(){
+    	$(".tqian").css("display","none");
+    })
+      //领取
+     $(".tling").on("click",function(){
+    	$(".tling").css("display","none");
+    });
+    
+    //签到记录日历
+    var cal = function(){
+    	var dates = new Date();
+			var year = dates.getFullYear();
+			var month = dates.getMonth()+1;
+			var date = dates.getDate();
+			var day = dates.getDay();
+			var weeks = ["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+			var b = year % 4;
+			var c = year % 100;
+			var d = year % 400;
+	
+			//判断当月天数
+			if(month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10|| month == 12 ){
+				var days = 31;
+			}else if(month == 2){
+				
+				if((b == 0 && c != 0) || d == 0 ){
+					days = 29;
+				}else{
+					days = 8;
+				}
+			}else{
+				days = 30;
+			}
+			//判断当月第一天是周几
+			var firstDay =  + "0123456".split("")[new Date(Date.UTC(year, month-1, 1)).getDay()];
+			//开始打印
+			for(var i=0; i< firstDay; i++){
+				$(".cla1 td:eq("+i+")").text("");
+			}
+			for(var j=1, i= firstDay; j<=7-firstDay; j++,i++) {
+				$(".cla1 td:eq("+i+")").text(j);
+			}
+			var a=1;
+			for(var i=8-firstDay; i<=days;i++){
+				$(".cla1 td:eq("+a+")").text(j);
+				if (!(a%7)) {
+					document.write("</tr>");
+				}
+			}
+			
+    }
+    cal();
 });
