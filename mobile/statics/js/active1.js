@@ -253,8 +253,6 @@ $(function() {
         	$.post(url,param,function(data){
         		 var result = eval('('+data+')');
            		 console.log(data);
-           		 var result  = {};
-           		 result.code = 20
            		if (result.code == 19) { //未注册,注册成功，抽奖次数+1，积分+20
            		 	console.log(result.info);
            		 	$(".dialog-getTel .getCodes").css("display","block");
