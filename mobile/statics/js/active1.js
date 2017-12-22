@@ -213,4 +213,19 @@ $(function() {
     $('.dialog-share,.dialog-wx-share').on('click',function () {
         $(this).hide();
     });
+    
+    
+ ////////////////////////////分割线/////////////////////////////
+    //签到
+    $(".qian button").on("click",function(){
+    	var url = '/mobile/index.php?r=active/index/click';
+    	$.post(url,function(data){
+    		var result = eval('('+data+')');
+    		if(result.code !=4){//已登录
+    			 $(".qian button").text("已签到");
+    		}else{
+    			console.log("未登录");
+    		}
+    	})
+    })
 });
