@@ -34,101 +34,81 @@
 		<div class="active_customization">
 			<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_con1.png" alt="">
 		</div>
-		<div class="active_surprise1">
-			<div class="active_customization_img">
-				<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_con2.png" alt="">
-			</div>
-			<div class="active_travel">
-				<ul>
-					<li>
-						<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_travel1.jpg" alt="">
-						<p>云南</p>
-					</li>
-					<li>
-						<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_travel2.jpg" alt="">
-						<p>桂林</p>
-					</li>
-					<li style="margin-right: 0">
-						<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_travel3.jpg" alt="">
-						<p>海南</p>
-					</li>
-				</ul>
-			</div>
-			<div class="active_travel2">
-				<ul>
-					<li>
-						<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_travel4.jpg" alt="">
-						<p>港澳</p>
-					</li>
-					<li style="margin-right: 0">
-						<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_travel5.jpg" alt="">
-						<p>泰国</p>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="active_surprise2">
-			<div class="active_tv">
-				<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_con3.png" alt="">
-			</div>
-		</div>
-		<div class="active_surprise3_1">
-			<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_con4.png" alt="">
-			<div class="active_millon">
-				<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_title2.png" alt="">
-			</div>
-		</div>
-		<div class="active_surprise3_2">
-			<div class="active_surprise3_2_con">
-				<div class="surprise3_2_con1">
-					<p style="color: #fff">订单金额满一万就送</p>
-					<p>价值5980元的志高空气净化器</p>
-					<p>价值4368元的茅台白金酒坊N20</p>
+		<div class="white">
+			<div class="active_surprise1">
+				<div class="active_customization_img">
+					<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_con2.png" alt="">
 				</div>
-				<div class="surprise3_2_con2">
-					<p style="color: #fff">订单金额满两万就送</p>
-					<p>送价值11960元的志高空气净化器*2</p>
-					<p>价值8736元的茅台白金酒坊N20*2</p>
-					<p>价值7799元海南黄花梨手串</p>
-					<p>价值2280的志高超滤净水机</p>
+				<div class="active_travel">
+					<ul>
+						<li>
+							<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_travel1.jpg" alt="">
+							<p>云南</p>
+						</li>
+						<li>
+							<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_travel2.jpg" alt="">
+							<p>桂林</p>
+						</li>
+						<li style="margin-right: 0">
+							<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_travel3.jpg" alt="">
+							<p>海南</p>
+						</li>
+					</ul>
 				</div>
-				<div class="surprise3_2_con3">
-					<p style="color: #fff">订单金额满三万就送</p>
-					<p>价值36900一台的豪华按摩椅</p>
-					<p>11960元志高空气净化器*2</p>
-					<p>价值2280的志高超滤净水机</p>
-					<p></p>
+				<div class="active_travel2">
+					<ul>
+						<li>
+							<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_travel4.jpg" alt="">
+							<p>港澳</p>
+						</li>
+						<li style="margin-right: 0">
+							<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_travel5.jpg" alt="">
+							<p>泰国</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="active_surprise2">
+				<div class="active_tv">
+					<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_con3.png" alt="">
+				</div>
+			</div>
+			<div class="active_surprise3_1">
+				<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_con4.png" alt="">
+				<div class="active_millon">
+					<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_title2.png" alt="">
 				</div>
 			</div>
 		</div>
+
 		<div class="active_pro">
 			<div class="active_pro_title">
 				<p>活动产品</p>
 			</div>
 			<div class="active_pro_con1">
 				<ul>
-					<a href="http://www.941hm.com/goods.php?id=1797">
+					<a href="goods.php?id=1797">
 						<li>
 							<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_pro1.jpg" alt="">
 							<p>非洲花梨  双用茶台</p>
 							<p>￥8700<img src="themes/ecmoban_dsc/iamges/20170517/nyactive_buy.png" alt=""></p>
 						</li>
 					</a>
-					<a href="http://www.941hm.com/goods.php?id=1560">
+					<a href="goods.php?id=1560">
 						<li>
 							<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_pro2.jpg" alt="">
 							<p>非洲花梨 象头圆台</p>
 							<p>￥15600<img src="themes/ecmoban_dsc/iamges/20170517/nyactive_buy.png" alt=""></p>
 						</li>
 					</a>
-					<a href="http://www.941hm.com/goods.php?id=22">
+					<a href="goods.php?id=22">
 						<li>
 							<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_pro3.jpg" alt="">
 							<p>非洲花梨 辉煌大床</p>
 							<p>￥13800<img src="themes/ecmoban_dsc/iamges/20170517/nyactive_buy.png" alt=""></p>
 						</li>
 					</a>
-					<a href="http://www.941hm.com/goods.php?id=1800">
+					<a href="goods.php?id=1800">
 						<li>
 							<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_pro4.jpg" alt="">
 							<p>非洲花梨 半圆博古架</p>
@@ -139,28 +119,28 @@
 			</div>
 			<div class="active_pro_con1">
 				<ul>
-					<a href="http://www.941hm.com/goods.php?id=1407">
+					<a href="goods.php?id=1407">
 						<li>
 							<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_pro5.jpg" alt="">
 							<p>阔叶黄檀  罗汉宝座沙发</p>
 							<p>￥49800<img src="themes/ecmoban_dsc/iamges/20170517/nyactive_buy.png" alt=""></p>
 						</li>
 					</a>
-					<a href="http://www.941hm.com/goods.php?id=1424">
+					<a href="goods.php?id=1424">
 						<li>
 							<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_pro6.jpg" alt="">
 							<p>阔叶黄檀 罗汉床</p>
 							<p>￥32800<img src="themes/ecmoban_dsc/iamges/20170517/nyactive_buy.png" alt=""></p>
 						</li>
 					</a>
-					<a href="http://www.941hm.com/goods.php?id=1427">
+					<a href="goods.php?id=1427">
 						<li>
 							<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_pro7.jpg" alt="">
 							<p>阔叶黄檀 山水顶箱柜</p>
 							<p>￥51000<img src="themes/ecmoban_dsc/iamges/20170517/nyactive_buy.png" alt=""></p>
 						</li>
 					</a>
-					<a href="http://www.941hm.com/goods.php?id=1417">
+					<a href="goods.php?id=1417">
 						<li>
 							<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_pro8.jpg" alt="">
 							<p>阔叶黄檀 1.38米汉宫圆台</p>
@@ -171,14 +151,14 @@
 			</div>
 			<div class="active_pro_con2">
 				<ul>
-					<a href="http://www.941hm.com/goods.php?id=1811">
+					<a href="goods.php?id=1811">
 						<li>
 							<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_pro9.jpg" alt="">
 							<p>南美黄花梨 财源滚滚沙发</p>
 							<p>￥37800<img src="themes/ecmoban_dsc/iamges/20170517/nyactive_buy.png" alt=""></p>
 						</li>
 					</a>
-					<a href="http://www.941hm.com/goods.php?id=75">
+					<a href="goods.php?id=75">
 						<li>
 							<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_pro10.jpg" alt="">
 							<p>南美酸枝 山水顶箱柜</p>
@@ -188,7 +168,7 @@
 				</ul>
 			</div>
 		</div>
-		<a href="http://www.941hm.com">
+		<a href="index.php">
 			<div class="footer">
 				<p>返回首页</p>
 			</div>
