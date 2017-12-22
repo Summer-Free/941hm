@@ -12,21 +12,20 @@
 		<!--header start-->
 		<div id="header">
 			<!--top slide bar start-->
-			<!--
 			<div class="slide-top-bar">
-				<ul class="JS-slide-top">-->	
+				<ul class="JS-slide-top">
 				<!--{foreach item=top_banner_res from=$top_banner_res name=top_banner_res}-->	
-					<!--<li>
+					<li>
 						<a href="{$top_banner_res.ad_link}" style="background-image: url(data/afficheimg/{$top_banner_res.ad_code});"></a>
-					</li>-->
+					</li>
 				<!--{/foreach}-->
-				<!--</ul>
+				</ul>
 				<div class="wrap-close">
 					<div class="w1200">
 						<a class="close" href="javascript:void(0);" title="关闭">关闭</a>
 					</div>
 				</div>
-			</div>-->		
+			</div>	
 			<!--top slide bar end-->
 			<!--top start-->
             <div class="top">
