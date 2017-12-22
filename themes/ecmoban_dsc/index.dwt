@@ -681,6 +681,45 @@
 						</dd>
 					</dl>
 				</div>
+
+				<div class="section-10 margin-b-10">
+					<dl>
+						<dt>
+							<h2 class="common-h2-1 clearfix">
+								<span ><i></i>热点新闻</span>
+								<span style="float: right;font-size: 16px;">查看更多>></span>
+							</h2>
+						</dt>
+						<dd class="index_news clearfix">
+							<ul>
+								<li>
+									<div class="index_news_con">
+										<p class="left">●  你知道红木家具定制设计装修是怎么样的吗</p>
+										<p class="right">2017-12-21 11：12:47</p>
+									</div>
+								</li>
+								<li>
+									<div class="index_news_con">
+										<p class="left">●  你知道红木家具定制设计装修是怎么样的吗</p>
+										<p class="right">2017-12-21 11：12:47</p>
+									</div>
+								</li>
+								<li>
+									<div class="index_news_con">
+										<p class="left">●  你知道红木家具定制设计装修是怎么样的吗</p>
+										<p class="right">2017-12-21 11：12:47</p>
+									</div>
+								</li>
+								<li>
+									<div class="index_news_con">
+										<p class="left">●  你知道红木家具定制设计装修是怎么样的吗</p>
+										<p class="right">2017-12-21 11：12:47</p>
+									</div>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
 			</li>
 		</div>
 		<!--main body end-->
