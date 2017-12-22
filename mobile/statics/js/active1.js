@@ -42,11 +42,12 @@ $(function() {
    getTime();
     //抽奖
     var prize = function (e) {
-        if(e.hasClass('is_take')){+
+        if(e.hasClass('is_take')){
             layer.open({content:'这个已经翻过了'})
             return false;
         }
         var index = e.index();
+
         var li_index = e.parent().index();
         var x = li_index*3+index;
         var param = {which:x};
@@ -100,7 +101,8 @@ $(function() {
                     getTel();
                      break;
                 case '7':
-                	//用户已登录，签到
+                	//1.用户已登录，签到
+
                 	finish();
                     break;
                 default:
