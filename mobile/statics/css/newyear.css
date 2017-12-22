@@ -1,0 +1,123 @@
+body{
+	margin: 0;
+}
+img{
+	width: 100%;
+	display: inline;
+}
+.all{
+	background-color: #da212c;
+	width: 100%;
+}
+.pro1{
+	background: url(../img/newapp/ny_pro1.jpg) no-repeat;
+	height: 400px;
+	background-size: 100%;
+	padding: 5% 12%;
+}
+.pro1 ul li{
+	float: left;
+	width: 45%;
+	font-size: 1.2rem;
+	text-align: center;
+	margin-right: 8%;
+}
+.pro1 ul li img{
+	width: 85%;
+}
+.pro1 ul li p{
+	line-height: 20px;
+}
+.pro1 ul li p img{
+	width: 40%;
+}
+.pro2{
+	background: url(../img/newapp/ny_pro2.jpg) no-repeat;
+	height: 263px;
+	background-size: 100%;
+	padding: 10% 10%;
+}
+.pro2 ul li{
+	float: left;
+	width: 45%;
+	font-size: 1.2rem;
+	text-align: center;
+	margin-right: 8%;
+}
+.pro2 ul li img{
+	width: 85%;
+}
+.pro2 ul li p{
+	line-height: 20px;
+}
+.pro2 ul li p img{
+	width: 40%;
+}
+.footer{
+	background-color: #2c080a;
+	color: #fff;
+	font-size: 2rem;
+	text-align: center;
+	height: 50px;
+	line-height: 50px
+}
+@media (max-width: 375px){
+	.pro1{
+		height: 360px;
+	}
+	.pro2{
+		height: 240px;
+	}
+}
+@media (max-width: 330px){
+	.pro1{
+		height: 330px;
+	}
+	.pro1 ul li p{
+		line-height: 17px;
+	}
+	.pro2{
+		height: 200px;
+	}
+	.pro2 ul li p{
+		line-height: 17px;
+	}
+}
+@media (min-width: 768px){
+	.pro1{
+		height: 750px;
+	}
+	.pro1 ul li p{
+		line-height: 35px;
+	}
+	.pro2{
+		height: 500px;
+	}
+	.pro2 ul li p{
+		line-height: 35px;
+	}
+	.footer{
+		height: 90px;
+		line-height: 90px;
+	}
+}
+@media (min-width: 1024px){
+	.pro1{
+		height: 1000px;
+	}
+	.pro1 ul li p{
+		line-height: 55px;
+		font-size: 1.6rem;
+	}
+	.pro2{
+		height: 670px;
+	}
+	.pro2 ul li p{
+		line-height: 55px;
+		font-size: 1.6rem;
+	}
+	.footer{
+		height: 90px;
+		line-height: 90px;
+	}
+}

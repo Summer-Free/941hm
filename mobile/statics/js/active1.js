@@ -68,7 +68,7 @@ $(function() {
                     $('.sec-2 div').eq(x).find('img').attr('src',result.textfile);
                     var $dialog = $(".dialog-Winning");
                     $dialog.show();
-
+					
                     //领取成功jpg
                     $(".tling").css("display","block");
 
@@ -174,15 +174,6 @@ $(function() {
 		$("#pwd").val("");
 		$("#code").val("");
     });
-    
-    //点击开始，弹出弹窗，
-/*    $(".start button").on("click",function() {
-        prize($(this));
-		getTel();
-		$("#tel").val("").focus();
-		$("#pwd").val("");
-		$("#code").val("");
-    });*/
 
     //点击关闭按钮，关闭弹窗
     $(".dialog .close").on("click",function() {
@@ -209,8 +200,6 @@ $(function() {
         	$.post(url,param,function(data){
         		 var result = eval('('+data+')');
            		 console.log(result);
-//				var result = {};
-//				result.code = 20;
            		if (result.code == 19) { //未注册,注册成功，抽奖次数+1，积分+20
            		 	console.log(result.info);
            		 	$(".dialog-getTel .getCode1").css("display","block");
@@ -309,6 +298,7 @@ $(function() {
                 });
 				init_prize();
 	            $dialog.hide();
+	            location = location.href+"&tel="+tel;
 	        //验证失败
 			}else if(result.code != 13){
 				$(".getCode+span").remove();
@@ -426,16 +416,26 @@ $(function() {
         }else {
             $('.dialog-share').show();
         }
+        var href = location.href;
+        var length = href.split("&").length;
+		var tel = href.split("&")[length-1];
+		if(tel != undefined){
+			var url = '../mobile/index.php?r=active/index/count';
+			$.post(url,{tel:tel},function(data){
+				var result = eval('('+data+')');
+				$(".sec-2 span").text("result.times");
+			});
+			
+			
+		}
     });
-
     $('.dialog-share,.dialog-wx-share').on('click',function () {
         $(this).hide();
     });
     
     //签到记录页
     $(".img").on("click",function(){
-    	$("main,footer,header").css("display","none");
-    	$(".ago").css("display","block");
+    	 cal();
     })
     $(".ago").on("click",function(){
     	$("main,footer,header").css("display","block");
@@ -453,49 +453,73 @@ $(function() {
     //签到记录日历
     var cal = function(){
     	var dates = new Date();
-			var year = dates.getFullYear();
-			var month = dates.getMonth()+1;
-			var date = dates.getDate();
-			var day = dates.getDay();
-			var weeks = ["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
-			var b = year % 4;
-			var c = year % 100;
-			var d = year % 400;
-	
-			//判断当月天数
-			if(month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10|| month == 12 ){
-				var days = 31;
-			}else if(month == 2){
-				
-				if((b == 0 && c != 0) || d == 0 ){
-					days = 29;
-				}else{
-					days = 8;
-				}
+		var year = dates.getFullYear();
+		var month = dates.getMonth()+1;
+		var date = dates.getDate();
+		var day = dates.getDay();
+		var weeks = ["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+		var b = year % 4;
+		var c = year % 100;
+		var d = year % 400;
+		
+		var href = location.href;
+		var length = href.split("&").length;
+		var tel = href.split("&")[length-1];
+		if(tel == undefined){
+			$(".no").show();
+			setTimeout(function(){
+				$(".no").hide();
+			},1000)
+			return;
+		}
+		//判断当月天数
+		if(month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10|| month == 12 ){
+			var days = 31;
+		}else if(month == 2){
+			
+			if((b == 0 && c != 0) || d == 0 ){
+				days = 29;
 			}else{
-				days = 30;
+				days = 8;
 			}
-			//判断当月第一天是周几
-			var firstDay =  + "0123456".split("")[new Date(Date.UTC(year, month-1, 1)).getDay()];
-			//开始打印
-			for(var i=0; i< firstDay; i++){
-				$(".cla1 td:eq("+i+")").text("");
+		}else{
+			days = 30;
+		}
+		//判断当月第一天是周几
+		var firstDay =  + "0123456".split("")[new Date(Date.UTC(year, month-1, 1)).getDay()];
+		//开始打印
+		for(var i=0; i< firstDay; i++){
+			$(".cla1 td:eq("+i+")").text("");
+		}
+		for(var j=1, i= firstDay; j<=7-firstDay; j++,i++) {
+			$(".cla1 td:eq("+i+")").text(j);
+		}
+		var a =2;
+		var b = 0; 
+		for(var i=8-firstDay; i<=days;i++){
+			var url = '../mobile/index.php?r=active/index/record';
+			$.post("",{tel:tel},function(data){//data:签到日期 记录+ 积分
+//				console.log(data);
+			})
+			if(date == i){
+				$(".cla"+a+" td:eq("+b+")").css({
+					"border-radius":"3rem",
+					"background-color": "#fed055"
+				});
 			}
-			for(var j=1, i= firstDay; j<=7-firstDay; j++,i++) {
-				$(".cla1 td:eq("+i+")").text(j);
+			$(".cla"+a+" td:eq("+b+")").text(i);
+			if(b==6){
+				b=0;
+				a++;
+			}else{
+				b++;
 			}
-			var a=1;
-			for(var j=1; j<=6;j++){
-				for(var i=8-firstDay; i<=days;i++){
-					$(".cla"+j+" td:eq("+a+")").text(j);
-					if (!(a%7)) {
-						break;
-					}
-					a++;
-				}
-			}
+			
+		}
+	$("main,footer,header").css("display","none");
+    $(".ago").css("display","block");
 			
 			
     }
-    cal();
+   
 });
