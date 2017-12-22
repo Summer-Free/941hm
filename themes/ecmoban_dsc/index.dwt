@@ -687,12 +687,20 @@
 						<dt>
 							<h2 class="common-h2-1 clearfix">
 								<span ><i></i>热点新闻</span>
-								<span style="float: right;font-size: 16px;">查看更多>></span>
+								<span style="float: right;font-size: 16px;"><a href="article_cat.php?id=1007">查看更多>></a></span>
 							</h2>
 						</dt>
 						<dd class="index_news clearfix">
 							<ul>
+								<!--{foreach from=$message_hot item=message_hot name=message_hot}-->
 								<li>
+									<div class="index_news_con">
+										<p class="left">●  <a href="article.php?id={$message_hot.article_id}">{$message_hot.title}</a></p>
+										<p class="right">{$message_hot.add_time}</p>
+									</div>
+								</li>
+								<!--{/foreach}-->
+								<!-- <li>
 									<div class="index_news_con">
 										<p class="left">●  你知道红木家具定制设计装修是怎么样的吗</p>
 										<p class="right">2017-12-21 11：12:47</p>
@@ -709,13 +717,7 @@
 										<p class="left">●  你知道红木家具定制设计装修是怎么样的吗</p>
 										<p class="right">2017-12-21 11：12:47</p>
 									</div>
-								</li>
-								<li>
-									<div class="index_news_con">
-										<p class="left">●  你知道红木家具定制设计装修是怎么样的吗</p>
-										<p class="right">2017-12-21 11：12:47</p>
-									</div>
-								</li>
+								</li> -->
 							</ul>
 						</dd>
 					</dl>
