@@ -1,71 +1,79 @@
 body{
 	margin: 0;
 }
+.clear{
+	clear: both;
+}
 .all{
 	background-color: #de2834;
 	width: 100%;
 }
 .active_header{
 	background: url(../../iamges/20170517/nyactive_img1.png) no-repeat;
-	width: 100%;
-	height: 1385px;
-	text-align: center;
+	background-size: 100%;
+	padding-bottom: 35%;
 }
 .active_header img{
 	display:block;
-	margin-left: 393px;
+	width: 50%;
+	margin:auto;
 	padding-top: 360px;
-	width: 1122px;
 }
 .active_command{
-	padding-bottom: 85px;
+	padding-bottom: 70px;
 }
 .active_command_img{
 	background: url(../../iamges/20170517/nyactive_img2.png) no-repeat;
-	width: 965px;
+	background-size: 100%;
+	width: 50%;
 	height: 510px;
-	margin-left: 470px;
+	margin: auto;
 }
 .active_command_img h5{
-	padding:8% 0 2% 0;
-	font-size: 68px;
+	padding:7% 0 1% 0;
+	font-size: 55px;
 	margin: 0;
 	color: #ffcc00;
 	text-align: center;
 	font-weight: normal;
 }
 .active_command_img p{
-	font-size: 40px;
+	font-size: 35px;
 	margin: 0;
 	text-align: center;
 	color: #fff;
 	line-height: 50px;
 }
 .active_customization{
-	background: url(../../iamges/20170517/nyactive_img3.png) no-repeat;
-	width: 1920px;
-	margin-left: 400px;
 	padding-bottom: 89px;
 }
 .active_customization img{
-	padding-top: 1140px;
-	margin-left: 380px;
 	padding-bottom: 60px;
-}
-.active_surprise1{
-	background: url(../../iamges/20170517/nyactive_img4.jpg) no-repeat;
-	width: 1920px;
-	height: 1916px;
+	width: 80%;
+	margin: auto;
 }
 .active_customization_img{
-	width: 38%;
-	margin-left:580px;
+	width:100%;
 	padding-top: 6%;
 	padding-bottom: 4%;
+	margin: auto;
+}
+.active_customization_img img{
+	width: 40%;
+	margin: auto;
+}
+.white{
+	background: url(../../iamges/20170517/nyactive_img3.jpg) no-repeat;
+	background-size: 100%;
+}
+.active_surprise1{
+	background: url(../../iamges/20170517/nyactive_img4.png) no-repeat;
+	background-size: 100%;
 }
 .active_travel{
 	width: 80%;
 	margin: 0 auto;
+	overflow: hidden;
 }
 .active_travel ul li{
 	float: left;
@@ -73,15 +81,22 @@ body{
 	list-style: none;
 	width: 28%;
 }
+.active_travel img{
+	width: 100%;
+}
 .active_travel2{
-	clear: both;
-	padding: 20px 23%;
+	width: 60%;
+	margin: 0 auto;
+	overflow: hidden;
 }
 .active_travel2 ul li{
 	float: left;
-	margin-right: 20%;
+	margin-right: 15%;
 	list-style: none;
 	width: 40%;
+}
+.active_travel2 img{
+	width: 100%;
 }
 .active_surprise1 p{
 	font-size: 36px;
@@ -90,31 +105,33 @@ body{
 	margin: 10px 0;
 }
 .active_surprise2{
-	background: url(../../iamges/20170517/nyactive_img5.jpg) no-repeat;
-	height: 1297px;
+	background: url(../../iamges/20170517/nyactive_img5.png) no-repeat;
+	background-size: 100%;
 }
 .active_tv{
-	width: 1082px;
-	margin-left:560px;
-	padding-top: 300px;
+	padding-top: 17%;
+}
+.active_tv img{
+	width: 60%;
+	margin: auto;
 }
 .active_surprise3_1{
-	background: url(../../iamges/20170517/nyactive_img6.jpg) no-repeat;
-	height: 2091px;
+	background: url(../../iamges/20170517/nyactive_img6.png) no-repeat;
+	background-size: 100%;
 }
 .active_surprise3_1 img{
-	margin-left: 115px;
+	width: 90%;
+	margin: auto;
 }
 .active_millon{
-	padding-top: 168px;
+	padding-top: 90px;
 }
 .active_millon img{
-	margin-left:510px;
-	width: 851px;
+	width: 100%;
 }
 .active_surprise3_2{
 	background: url(../../iamges/20170517/nyactive_img7.png) no-repeat;
-	width: 1920px;
+	background-size: 100%;
 	height: 2387px;
 }
 .active_surprise3_2_con{
