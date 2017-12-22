@@ -302,9 +302,10 @@ $(function() {
 	            /* var times = parseInt($(".flex span").text())+1;*/
                 //抽奖次数
 	            var url = '../mobile/index.php?r=active/index/count';
-	            $(".sec-2 span").text(times);
 				$.post(url,{phone:tel},function(data){
-
+                    var result = eval('('+data+')');
+                    $(".sec-2 span").text(times);//修改前台显示的抽奖次数
+                    alert('此时返回抽奖次数');
                 });
 				init_prize();
 	            $dialog.hide();
