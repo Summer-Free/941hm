@@ -1,6 +1,6 @@
 body {
 	font-size: 1.333rem;
-	background-color: #fecb4c;
+	background-color: #e74143;
 }
 button {
 	-webkit-appearance: none;
@@ -31,73 +31,58 @@ header .share {
 	background: url(../img/newapp/dzp-2.png) no-repeat;
 	background-size: 100% 100%;
 }
-.no{
-	color: red;
-	display: none;
-	margin: 0;
-}
 .sec-1 {
+	padding-top: .55rem;
 	flex-direction: column;
-	position: relative;
 }
-.sec-1 .inner {
-	position: absolute;
-	top: 0px;
-	width: 100%;
-	display: block;
+.sec-1 h2 {
+	margin: 0 auto;
+	width: 25.333rem;
+	height: 2.1666rem;
+	line-height: 2.1666rem;
+	color: #e74143;
+	font-size: 1.333rem;
+	text-align: center;
+	border-radius: 3rem;
+	background-color: #fdd100;
 }
-.sec-1 .inner .img{
-	width: 100%;
-	position: absolute;
-	top: 10px;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-}
-.sec-1 .inner .img h3:last-of-type{
-	margin: 0 2rem 0 2rem;
-}
-.sec-1 .inner .wrap{
-	width: 100%;
-	height: 100%;
+.sec-1 dl,
+.sec-1 .wrap-notice,
+.sec-2 {
 	justify-content: center;
-	align-items: center;
 }
-.sec-1 .inner .calendar{
-	width: 65%;
-	position: absolute;
-	top: 50%;
-	margin-top: 18%;
+.sec-1 dl {
+	padding-top: .8rem;
+	color: #fdd400;
 }
-
-.sec-1 .inner .calendar img{
-	width: 100;
+.sec-1 dt {
+	font-size: 2rem;
 }
-.sec-1 .inner .calendar .text{
-	position: absolute;
-	bottom: 2rem;
-	width: 100%;
-	text-align: center;
+.sec-1 dd {
+	padding: .8rem 0 0 .4rem;
 }
-.sec-1 .inner .calendar .text h3{
-	width: 100%;
-	padding: 0 0 0.5rem 0;
+.sec-1 .wrap-notice {
+	padding-top: .5rem;
 }
-.sec-2  h3{
-	width: 100%;
-	background-color: #FED056;
-	text-align: center;
-	color: white;
+.sec-1 .wrap-notice .icon {
+	margin-right: 1rem;
+	width: 1.555rem;
+	height: 1.555rem;
+	background: url(../img/newapp/dzp_4.png) no-repeat;
+	background-size: 100% 100%;
+}
+.sec-1 .swiper-container {
 	margin: 0;
-	padding: 0;
+	height: 2rem;
+	color: #fff;
+	font-size: 1rem;
 }
 .sec-2 ul {
-	padding-top: 2rem;
-	background-color: #FED056;
+	padding: 1rem 4.1666rem 0;
 }
 .sec-2 li {
 	margin-bottom: 1.5rem;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 .sec-2 li div {
 	width: 9.111rem;
@@ -105,156 +90,17 @@ header .share {
 	box-shadow: 0 0 1.277rem rgba(122,9,41,.5);
 }
 .sec-3 {
-	padding: 0;
+	padding: 1rem 1rem 0;
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
 	color: #fdd500;
 }
-.sec-3>img{
-	width: 100%;
-}
-.zero{
-	width: 100%;
-	position: relative;
-}
-.zero img{
-	width: 100%;
-}
-.zero ul{
-	width: 100%;
-	height: 50%;
-	position: absolute;
-	top: 0;
-	padding: 10rem 1rem 0rem 1rem;
-}
-.zero ul:last-of-type{
-	top: 49%;
-	
-}
-.zero ul li{
-	width: 50%;
-	height: 100%;
-	display: block;
-	/*justify-content: center;*/
-}
-.sec-4{
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	flex-direction: column;
-	justify-content: space-around;
-}
-.sec-4 button{
-	color: #c29214;
-	background-color: white;
-	padding: 0.2rem 0.5rem;
-	border: none;
-	position: absolute;
-	right: 3rem;
-	top: 50%;
-	margin-top: -1rem;
-	height: 2rem;
-	font-size: 1.2rem;
-	border-radius: 0.5rem;
-}
-.ago{
-	position: relative;
-	width: 100%;
-}
-.ago img{
-	width: 100%;
-}
-.ago .cal{
-	width: 100%;
-	height: 100vh;
-	position: absolute;
-	top: 0;
-}
-.ago .cal .inner-cal{
-	position: absolute;
-	top: 5rem;
-	width: 80%;
-	padding: 2rem 2rem 0 2rem;
-	left: 50%;
-	margin-left: -40%;
-	background-color: white;
-	border-radius: 3rem;
-}
-.ago .cal .inner-cal .table{
-	width: 100%;
-}
-.table tr{
-	width: 100%;
-	
-}
-.table tr td,
-.table tr th{
-	width: 14%;
-	border-top: 1px solid white;
-	text-align: center;
-}
-.table tr th{
-	color: #fed66c;
-}
-.ago .cal .inner-cal h3{
-	text-align: center;
-	font-size: 2rem;
-}
-.ago .cal .texts{
-	width: 100%;
-	position: absolute;
-	bottom: 10rem;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-.ago .cal .texts ul{
-	width: 75%;
-	/*left: 50%;
-	margin-left: -50%;*/
-	color: white;
-	flex-direction: row;
-	justify-content: flex-end;
-}
-.ago .cal .texts ul li{
-	width: 70%;
-	font-size: 2rem;
-}
-.ago .cal .texts ul li:last-of-type{
-	width: 30%;
-	text-align: center;
-}
-.tqian,
-.tling{
-	width: 100%;
-	height: 100vh;
-	position: fixed;
-	z-index: 900;
-	top: 0;
-	justify-content: center;align-items: center;
-}
-.tqian img:first-of-type,
-.tqian img:first-of-type{
-	width: 80%;
-	position: relative;
-	z-index: 999 !important;
-} 
-.zhe{
-	width: 100vw;
-	height: 100vh;
-	position: absolute;
-	top: 0;
-}
-hr{
-	color: #f0f0f0;
-	width: 4px;
-}
 footer {
 	padding: 1rem 1.5rem 5.555rem;
 	color: #fff;
+	background: url(../img/newapp/dzp-7.png) no-repeat bottom center;
 	background-size: 34.888rem 8.777rem; 
-	background-color: #fecb4c;
 }
 footer dd {
 	padding-left: 2rem;
@@ -273,7 +119,6 @@ footer dd {
 	height: calc(100vh);
 	background-color: rgba(0,0,0,.5);
 }
-
 .dialog-Winning .content,
 .dialog-getTel .content {
 	position: fixed;
@@ -282,10 +127,8 @@ footer dd {
 	transform: translate3d(-50%,0,0);
 }
 .dialog-getTel .content {
-	/*width: 15.8333rem;
-	height: 10.1666rem;*/
-	width: 286px;
-	height: 183px;
+	width: 15.8333rem;
+	height: 10.1666rem;
 	border-radius: 8px;
 	background-color: #e5e5e5;
 }
@@ -313,7 +156,6 @@ footer dd {
 .dialog-getTel form {
 	padding: .5rem;
 	flex-direction: column;
-	justify-content: center;
 }
 .dialog-getTel input {
 	padding: .8rem 0 0 .5rem;
@@ -329,8 +171,6 @@ footer dd {
 }
 .dialog-getTel .getCode {
 	position: relative;
-	display: none;
-	margin: 2rem 0;
 }
 .dialog-getTel .getCode button {
 	z-index: 10;
@@ -345,18 +185,15 @@ footer dd {
 	align-self: center;
 	margin-top: 2rem;
 	width: 4.666rem;
-	height: 1.8rem;
-	line-height: 1.8rem;
+	height: 1.666rem;
+	line-height: 1.666rem;
 	color: #fff;
-	font-size: 1.2rem;
+	font-size: 1.111rem;
 	text-align: center;
 	vertical-align: middle;
 	border-radius: 20px;
 	box-shadow: 2px 2px 2px rgba(0,0,0,.3);
 	background-color: #3af0d4;
-	display: inline-block;
-	position: absolute;
-	bottom: 1rem;
 }
 .dialog-getTel .error {
 	padding-left: .5rem;
@@ -432,6 +269,8 @@ footer dd {
 	color: #fff;
 	transform: translate3d(-50%,0,0);
 }
+
+
 @media screen and (max-width: 375px) {
 	.dialog-getTel .content {
 		width: 286px;
@@ -453,70 +292,5 @@ footer dd {
 	.dialog-Winning .content {
 		min-width: 202px;
 		min-height: 324px;
-	}
-	.ago .cal .texts{
-		bottom: 10rem;
-	}
-	.ago .cal .texts ul{
-		padding: 0.2rem 0;
-	}
-}
-@media screen and (min-width: 1000px) and (min-height:1300px){
-	.text h3{
-		font-size: 3.5rem;
-	}
-	.text{
-		bottom: 4rem;
-	}
-	.sec-2  h3{
-		font-size: 3.5rem;
-	}
-	.dialog-getTel .content {
-		width: 30rem;
-		height: 19rem;
-	}
-	.dialog-getTel .head {
-		height: 41px;
-	}
-	.dialog-getTel input {
-		padding: 1.5rem 0 0 .5rem;
-		height: 5rem;
-		font-size: 3rem;
-	}
-	.dialog-getTel a {
-		margin-top: 1.3rem;
-		width: 9rem;
-		height: 4rem;
-		line-height: 4rem;
-		font-size: 2.5rem;
-	}
-	.dialog-getTel button{
-		width: 6rem;
-		height: 4rem;
-		font-size: 1.5rem;
-	}
-	.sec-4 button{
-		padding: 0.3rem 0.5rem;
-		margin-top: -1.4rem;
-		height: 2.8rem;
-		font-size: 1.7rem;
-		border-radius: 0.7rem;
-	}
-	.ago .cal .texts{
-		bottom: -1rem;
-	}
-	.ago .cal .texts ul{
-		padding: 1rem 0;
-	}
-}
-@media screen and (min-width: 760px) and (min-height:1000px){
-	.text h3{
-		font-size: 3rem;
-	}
-	.sec-2  h3{
-		font-size: 3.5rem;
-	}
-	.ago .cal .texts{
-		bottom: -5rem;
 	}
 }
