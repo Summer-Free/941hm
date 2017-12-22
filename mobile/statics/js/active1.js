@@ -13,6 +13,7 @@ $(function() {
             return false;
         }
         var index = e.index();
+
         var li_index = e.parent().index();
         var x = li_index*3+index;
         var param = {which:x};
@@ -52,8 +53,11 @@ $(function() {
                 case '4' :
                     // 用户未登录
                     getTel();
+                     break;
+                case '7':
+                	//1.用户已登录，签到
+                	finish();
                     break;
-
                 default:
                     //
                     layer.open({content:'未知错误'})
