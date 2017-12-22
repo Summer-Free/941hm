@@ -17,7 +17,7 @@ $(function() {
         var li_index = e.parent().index();
         var x = li_index*3+index;
         var param = {which:x};
-        var url = '/mobile/index.php?r=active/index/prize';
+        var url = '../mobile/index.php?r=active/index/prize';
         $.post(url,param,function (data) {
             var result = eval('('+data+')');
 
@@ -73,7 +73,7 @@ $(function() {
             return false;
         }else if(phone == null){
             var param = {phone:phone};
-            var url = '/mobile/index.php?r=active/index/double';
+            var url = '../mobile/index.php?r=active/index/double';
             $.post(url,param,function (data) 
             {
                 var result = eval('('+data+')');
@@ -102,7 +102,7 @@ $(function() {
     }
     //初始化奖品
     var init_prize = function () {
-        var url = '/mobile/index.php?r=active/index/position';
+        var url = '../mobile/index.php?r=active/index/position';
         $.post(url,function (data) {
             var result = eval('('+data+')');
             if(result.code == 4){
@@ -143,7 +143,7 @@ $(function() {
         var check_tel = check_phone(tel),$this = $(this);
         if(check_tel){
             var param = {phone:tel};
-            var url = '/mobile/index.php?r=active/index/send';
+            var url = '../mobile/index.php?r=active/index/send';
             $.post(url,param,function (data) {
                 var result = eval('('+data+')');
                 if(result.code == 10){
@@ -183,7 +183,7 @@ $(function() {
     			$(".getCode+span").remove();
     			// $(".dialog-getTel a").css("margin-top","2rem");
     			var param = {phone:tel,code:code};
-    			var url = '/mobile/index.php?r=active/index/check';
+    			var url = '../mobile/index.php?r=active/index/check';
     			$.post(url,param,function (data) {
                     var result = eval('('+data+')');
                     if(result.code == 13){
@@ -217,4 +217,16 @@ $(function() {
     $('.dialog-share,.dialog-wx-share').on('click',function () {
         $(this).hide();
     });
+    //签到方法
+    $("#today_click").on('click',function (){
+        var url = '../mobile/index.php?r=active/index/click';
+        $.post(url,function (data) {
+            var result = eval('('+data+')');
+            if (result.code == 4) {
+                console.log("进入登录方法");
+            }else if (result.code == 19){
+                console.log("签到成功");
+            }
+        });
+    }) 
 });
