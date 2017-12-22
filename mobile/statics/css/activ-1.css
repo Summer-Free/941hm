@@ -31,6 +31,11 @@ header .share {
 	background: url(../img/newapp/dzp-2.png) no-repeat;
 	background-size: 100% 100%;
 }
+.no{
+	color: red;
+	display: none;
+	margin: 0;
+}
 .sec-1 {
 	flex-direction: column;
 	position: relative;
@@ -49,8 +54,8 @@ header .share {
 	flex-direction: row;
 	justify-content: flex-end;
 }
-.sec-1 .inner .img h3{
-	margin: 0 3rem 0 2rem;
+.sec-1 .inner .img h3:last-of-type{
+	margin: 0 2rem 0 2rem;
 }
 .sec-1 .inner .wrap{
 	width: 100%;
@@ -80,15 +85,15 @@ header .share {
 }
 .sec-2  h3{
 	width: 100%;
-	background-color: #FED055;
+	background-color: #FED056;
 	text-align: center;
 	color: white;
 	margin: 0;
 	padding: 0;
 }
 .sec-2 ul {
-	padding: 1rem 4.1666rem 1rem;
-	background-color: #FED055;
+	padding-top: 2rem;
+	background-color: #FED056;
 }
 .sec-2 li {
 	margin-bottom: 1.5rem;
@@ -168,12 +173,29 @@ header .share {
 }
 .ago .cal .inner-cal{
 	position: absolute;
-	top: 10rem;
+	top: 5rem;
 	width: 80%;
-	padding: 2rem;
+	padding: 2rem 2rem 0 2rem;
 	left: 50%;
 	margin-left: -40%;
-	background-color: red;
+	background-color: white;
+	border-radius: 3rem;
+}
+.ago .cal .inner-cal .table{
+	width: 100%;
+}
+.table tr{
+	width: 100%;
+	
+}
+.table tr td,
+.table tr th{
+	width: 14%;
+	border-top: 1px solid white;
+	text-align: center;
+}
+.table tr th{
+	color: #fed66c;
 }
 .ago .cal .inner-cal h3{
 	text-align: center;
@@ -226,7 +248,7 @@ header .share {
 }
 hr{
 	color: #f0f0f0;
-	height: 2px;
+	width: 4px;
 }
 footer {
 	padding: 1rem 1.5rem 5.555rem;
@@ -308,6 +330,7 @@ footer dd {
 .dialog-getTel .getCode {
 	position: relative;
 	display: none;
+	margin: 2rem 0;
 }
 .dialog-getTel .getCode button {
 	z-index: 10;
@@ -322,10 +345,10 @@ footer dd {
 	align-self: center;
 	margin-top: 2rem;
 	width: 4.666rem;
-	height: 1.666rem;
-	line-height: 1.666rem;
+	height: 1.8rem;
+	line-height: 1.8rem;
 	color: #fff;
-	font-size: 1.111rem;
+	font-size: 1.2rem;
 	text-align: center;
 	vertical-align: middle;
 	border-radius: 20px;
@@ -432,7 +455,7 @@ footer dd {
 		min-height: 324px;
 	}
 	.ago .cal .texts{
-		bottom: -0rem;
+		bottom: 10rem;
 	}
 	.ago .cal .texts ul{
 		padding: 0.2rem 0;
