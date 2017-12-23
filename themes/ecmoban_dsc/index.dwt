@@ -12,21 +12,20 @@
 		<!--header start-->
 		<div id="header">
 			<!--top slide bar start-->
-			<!--
 			<div class="slide-top-bar">
-				<ul class="JS-slide-top">-->	
+				<ul class="JS-slide-top">
 				<!--{foreach item=top_banner_res from=$top_banner_res name=top_banner_res}-->	
-					<!--<li>
+					<li>
 						<a href="{$top_banner_res.ad_link}" style="background-image: url(data/afficheimg/{$top_banner_res.ad_code});"></a>
-					</li>-->
+					</li>
 				<!--{/foreach}-->
-				<!--</ul>
+				</ul>
 				<div class="wrap-close">
 					<div class="w1200">
 						<a class="close" href="javascript:void(0);" title="关闭">关闭</a>
 					</div>
 				</div>
-			</div>-->		
+			</div>	
 			<!--top slide bar end-->
 			<!--top start-->
             <div class="top">
@@ -657,7 +656,29 @@
 						<!--{/foreach}-->						
 					</ul>
 				</div>-->
-
+				<!-- 热点新闻 -->
+				<div class="section-10 margin-b-10">
+					<dl>
+						<dt>
+							<h2 class="common-h2-1 clearfix">
+								<span ><i></i>热点新闻</span>
+								<a href="article_cat.php?id=1007"><span style="float: right;font-size: 16px;">查看更多>></a></span>
+							</h2>
+						</dt>
+						<dd class="index_news clearfix">
+							<ul>
+								<!--{foreach from=$message_hot item=message_hot name=message_hot}-->
+								<li>
+									<div class="index_news_con">
+										<p class="left">●  <a href="article.php?id={$message_hot.article_id}">{$message_hot.title}</a></p>
+										<p class="right">{$message_hot.add_time}</p>
+									</div>
+								</li>
+								<!--{/foreach}-->
+							</ul>
+						</dd>
+					</dl>
+				</div>
 				<div class="section-10 margin-b-10">
 					<dl>
 						<dt>
@@ -678,45 +699,6 @@
 						<!--{foreach from=$yqlj_sql item=yqlj_sql name=yqlj_sql}-->
 							<a href="{$yqlj_sql.link_url}" target="_blank" title="{$yqlj_sql.link_name}" >{$yqlj_sql.link_name}</a>
 						<!--{/foreach}-->
-						</dd>
-					</dl>
-				</div>
-
-				<div class="section-10 margin-b-10">
-					<dl>
-						<dt>
-							<h2 class="common-h2-1 clearfix">
-								<span ><i></i>热点新闻</span>
-								<span style="float: right;font-size: 16px;">查看更多>></span>
-							</h2>
-						</dt>
-						<dd class="index_news clearfix">
-							<ul>
-								<li>
-									<div class="index_news_con">
-										<p class="left">●  你知道红木家具定制设计装修是怎么样的吗</p>
-										<p class="right">2017-12-21 11：12:47</p>
-									</div>
-								</li>
-								<li>
-									<div class="index_news_con">
-										<p class="left">●  你知道红木家具定制设计装修是怎么样的吗</p>
-										<p class="right">2017-12-21 11：12:47</p>
-									</div>
-								</li>
-								<li>
-									<div class="index_news_con">
-										<p class="left">●  你知道红木家具定制设计装修是怎么样的吗</p>
-										<p class="right">2017-12-21 11：12:47</p>
-									</div>
-								</li>
-								<li>
-									<div class="index_news_con">
-										<p class="left">●  你知道红木家具定制设计装修是怎么样的吗</p>
-										<p class="right">2017-12-21 11：12:47</p>
-									</div>
-								</li>
-							</ul>
 						</dd>
 					</dl>
 				</div>
