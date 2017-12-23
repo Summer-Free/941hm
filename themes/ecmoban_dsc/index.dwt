@@ -698,25 +698,6 @@
 										<p class="right">{$message_hot.add_time}</p>
 									</div>
 								</li>
-								<!--{/foreach}-->
-								<!-- <li>
-									<div class="index_news_con">
-										<p class="left">●  你知道红木家具定制设计装修是怎么样的吗</p>
-										<p class="right">2017-12-21 11：12:47</p>
-									</div>
-								</li>
-								<li>
-									<div class="index_news_con">
-										<p class="left">●  你知道红木家具定制设计装修是怎么样的吗</p>
-										<p class="right">2017-12-21 11：12:47</p>
-									</div>
-								</li>
-								<li>
-									<div class="index_news_con">
-										<p class="left">●  你知道红木家具定制设计装修是怎么样的吗</p>
-										<p class="right">2017-12-21 11：12:47</p>
-									</div>
-								</li> -->
 							</ul>
 						</dd>
 					</dl>
