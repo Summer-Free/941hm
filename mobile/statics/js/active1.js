@@ -14,7 +14,6 @@ $(function() {
     var prize = function (e) {
         if(e.hasClass('is_take')){
             layer.open({content:'这个已经翻过了'})
-
             return false;
         }
         var index = e.index();
@@ -28,7 +27,7 @@ $(function() {
 
             switch (result.code){
                 case '0' :
-                    // 抽奖成功
+                    // 抽奖成功，已登录
                     if(result.prize_type == 1){
                         result.prize_name = result.prize_name.split(',')[1];
                     }
@@ -59,9 +58,9 @@ $(function() {
                     // 用户未登录
                     getTel();
                      break;
-                case '7':
-                	//1.用户已登录，签到
-                	finish();
+                case ' ':
+                	
+                	
                     break;
                 default:
                     //
@@ -197,10 +196,8 @@ $(function() {
                         init_prize();
                         $dialog.hide();
                         var url = '../mobile/index.php?r=active/index/count';
-						$.post(url,{tel:tel},function(data){
-							var result = eval('('+data+')');
-							$(".flex span").text(result.times);
-							$(".sec-1 dl").css("display","none");
+						$.post(url,function(data){
+							
 						});
 	                    }else {
                         $(".getCode+span").remove();
@@ -237,8 +234,12 @@ $(function() {
                 console.log("进入登录方法");
                //登录、注册弹窗
                 getTel();
-            }else if (result.code == 19){
-                console.log("签到成功");
+            }else if (result.code == 13){
+                console.log("签到成功"); 
+                var url = '../mobile/index.php?r=active/index/count';
+                $.post(url,function(data){
+                	var result = eval('('+data+')');
+                });
             }
         });
     }) 
@@ -262,7 +263,6 @@ $(function() {
                     var url = '../mobile/index.php?r=active/index/count';
                     $.post("",{phone:tel},function(data){
                     	var result = eval('('+data+')');
-                        $(".sec-2 span").text(result.times);
                     });
                     setInterval(function(){
                     	if ($('#tel').val() != tel) {
@@ -335,15 +335,12 @@ $(function() {
 	    	var result = eval('('+data+')');
 			//验证成功
 			if(result.code == 13){
-
 				var tel = $('#tel').val();
-	            /* var times = parseInt($(".flex span").text())+1;*/
                 //抽奖次数
-//	            var url = '../mobile/index.php?r=active/index/count';
-//	            $(".sec-2 span").text(times);
-//				$.post(url,{phone:tel},function(data){
-//
-//              });
+	            var url = '../mobile/index.php?r=active/index/count';
+				$.post(url,function(data){
+					
+                });
 				init_prize();
 	            $dialog.hide();
 	        //验证失败
@@ -368,10 +365,6 @@ $(function() {
 		//  验证成功
 			if(result.code == 13){
 	            $dialog.hide();
-                var url = '../mobile/index.php?r=active/index/count';
-                $.post(url,{phone:tel},function(data){
-                    
-                });
 	        //验证失败
 			}else if(result.code == 22){
 				$(".getCode+span").remove();
