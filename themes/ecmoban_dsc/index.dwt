@@ -656,7 +656,29 @@
 						<!--{/foreach}-->						
 					</ul>
 				</div>-->
-
+				<!-- 热点新闻 -->
+				<div class="section-10 margin-b-10">
+					<dl>
+						<dt>
+							<h2 class="common-h2-1 clearfix">
+								<span ><i></i>热点新闻</span>
+								<a href="article_cat.php?id=1007"><span style="float: right;font-size: 16px;">查看更多>></a></span>
+							</h2>
+						</dt>
+						<dd class="index_news clearfix">
+							<ul>
+								<!--{foreach from=$message_hot item=message_hot name=message_hot}-->
+								<li>
+									<div class="index_news_con">
+										<p class="left">●  <a href="article.php?id={$message_hot.article_id}">{$message_hot.title}</a></p>
+										<p class="right">{$message_hot.add_time}</p>
+									</div>
+								</li>
+								<!--{/foreach}-->
+							</ul>
+						</dd>
+					</dl>
+				</div>
 				<div class="section-10 margin-b-10">
 					<dl>
 						<dt>
@@ -677,28 +699,6 @@
 						<!--{foreach from=$yqlj_sql item=yqlj_sql name=yqlj_sql}-->
 							<a href="{$yqlj_sql.link_url}" target="_blank" title="{$yqlj_sql.link_name}" >{$yqlj_sql.link_name}</a>
 						<!--{/foreach}-->
-						</dd>
-					</dl>
-				</div>
-
-				<div class="section-10 margin-b-10">
-					<dl>
-						<dt>
-							<h2 class="common-h2-1 clearfix">
-								<span ><i></i>热点新闻</span>
-								<span style="float: right;font-size: 16px;"><a href="article_cat.php?id=1007">查看更多>></a></span>
-							</h2>
-						</dt>
-						<dd class="index_news clearfix">
-							<ul>
-								<!--{foreach from=$message_hot item=message_hot name=message_hot}-->
-								<li>
-									<div class="index_news_con">
-										<p class="left">●  <a href="article.php?id={$message_hot.article_id}">{$message_hot.title}</a></p>
-										<p class="right">{$message_hot.add_time}</p>
-									</div>
-								</li>
-							</ul>
 						</dd>
 					</dl>
 				</div>
