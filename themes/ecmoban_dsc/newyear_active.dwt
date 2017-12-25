@@ -80,7 +80,11 @@
 				</div>
 			</div>
 		</div>
-
+		<div class="active_surprise2">
+			<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_con5.jpg" alt="">
+			<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_con6.jpg" alt="">
+			<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/nyactive_con7.jpg" alt="">
+		</div>
 		<div class="active_pro">
 			<div class="active_pro_title">
 				<p>活动产品</p>

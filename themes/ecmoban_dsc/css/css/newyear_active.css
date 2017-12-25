@@ -25,7 +25,7 @@ body{
 .active_command_img{
 	background: url(../../iamges/20170517/nyactive_img2.png) no-repeat;
 	background-size: 100%;
-	width: 50%;
+	width: 900px;
 	height: 510px;
 	margin: auto;
 }
@@ -108,6 +108,9 @@ body{
 	background: url(../../iamges/20170517/nyactive_img5.png) no-repeat;
 	background-size: 100%;
 }
+.active_surprise2 img{
+	width: 100%;
+}
 .active_tv{
 	padding-top: 17%;
 }
@@ -129,56 +132,10 @@ body{
 .active_millon img{
 	width: 100%;
 }
-.active_surprise3_2{
+.surprise3_2_con1{
 	background: url(../../iamges/20170517/nyactive_img7.png) no-repeat;
 	background-size: 100%;
-	height: 2387px;
-}
-.active_surprise3_2_con{
-	width:65%;
-	margin: 0 auto;
-}
-.surprise3_2_con1{
-	background: url(../../iamges/20170517/nyactive_con5.png) no-repeat;
-	width: 1230px;
-	height: 650px;
-	padding-left: 48%;
-	padding-top: 25%;
-	margin-top: 8%;
-}
-.surprise3_2_con1 p{
-	font-size: 34px;
-	line-height: 60px;
-	color:#fad99a;
-	text-align: center;
-}
-.surprise3_2_con2{
-	background: url(../../iamges/20170517/nyactive_con6.png) no-repeat;
-	width: 1230px;
-	height: 650px;
-	padding-left: 49%;
-	padding-top: 17%;
-	margin-top: 8%;
-}
-.surprise3_2_con2 p{
-	font-size: 34px;
-	line-height: 48px;
-	color:#fad99a;
-	text-align: center;
-}
-.surprise3_2_con3{
-	background: url(../../iamges/20170517/nyactive_con7.png) no-repeat;
-	width: 1230px;
-	height: 650px;
-	padding-left: 48%;
-	padding-top: 15%;
-	margin-top: 8%;
-}
-.surprise3_2_con3 p{
-	font-size: 34px;
-	line-height: 60px;
-	color:#fad99a;
-	text-align: center;
+	width: 80%;
 }
 .active_pro{
 	width: 80%;
