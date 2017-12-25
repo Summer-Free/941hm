@@ -215,8 +215,8 @@
 							<ul class="point">
 								<li class="active"></li>
 								<li></li>
-								<li></li>
-								<li></li>
+								 <!--<li></li>
+								<li></li> -->
 								<li class="margin-r-0"></li>
 							</ul>
 						</div>
