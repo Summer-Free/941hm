@@ -143,17 +143,17 @@
                                         </dl>
                                     </div>  
                                 </li>
-                                <li><a href="index.php">首页</a></li>
-                                <li><a href="experience_museum.php">VR体验馆</a></li>
+                                <li class="newactive"><a href="index.php">首页</a></li>
+                                <li class="newactive"><a href="experience_museum.php">VR体验馆</a></li>
                                 <!-- <li><a href="gadget.php">文艺人小玩意</a></li>
                                 <li><a href="personal_tailor.php">家具私人订制</a></li>
                                 <li><a href="old_for_new.php">以物换物</a></li> -->
-                                <li><a href="category.php?id=474">新中式红木</a></li>
-                                <li><a href="brand_hm.php">品牌红木</a></li>
-                                <li><a href="find_designer.php">找设计师</a></li>
-                                <li class="margin-r-0"><a href="https://www.kujiale.com/signin?redir=/huxing/flash">中式在线设计</a></li>
-                                <li><a href="free_trial.php">免费试用</a></li>
-                                <li><a href="article_cat.php?id=1008">帮助中心</a></li>
+                                <li class="newactive"><a href="category.php?id=474">新中式红木</a></li>
+                                <li class="newactive"><a href="brand_hm.php">品牌红木</a></li>
+                                <li class="newactive"><a href="find_designer.php">找设计师</a></li>
+                                <li class="newactive margin-r-0"><a href="https://www.kujiale.com/signin?redir=/huxing/flash">中式在线设计</a></li>
+                                <li class="newactive"><a href="free_trial.php">免费试用</a></li>
+                                <li class="newactive"><a href="article_cat.php?id=1008">帮助中心</a></li>
                                 <!-- <li class="margin-r-0"><a href="article_cat.php?id=1008">帮助中心</a></li> -->
                             </ul>
                         </div>
@@ -163,7 +163,7 @@
             <!--Navigation end-->
             <script type="text/javascript" src="themes/ecmoban_dsc/js/nav_color.js"></script>
             <style>
-                .active{background-color: #460909;}
+                .navactive{background-color: #460909;}
             </style>
             <!-- 将导航栏固定到顶部 start -->
             <script type="text/javascript">
