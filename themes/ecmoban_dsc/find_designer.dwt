@@ -20,10 +20,10 @@
                         <div style="width:1920px;margin-left: -350px;">
                             <!--<ul class="content">
                                 <li class="active"><a href="active.php">-->
-                                        <a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/designer-banner.jpg" alt=""></a>
+                                        <a href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/designer-banner.jpg" alt=""></a>
                                     <!--</a></li>-->
-                                <!--<li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/ex-pic2.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/ex-pic3.jpg" alt=""></a></li>
+                                <!--<li><a href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/ex-pic2.jpg" alt=""></a></li>
+                                <li><a href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/ex-pic3.jpg" alt=""></a></li>
                             </ul>-->
                             <!--<a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
                             <a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
@@ -65,62 +65,62 @@
 					<div class="des_team_con">
 						<ul>
 							<li>
-								<a href="#">
+								<a href="javascript:void(0);">
 									<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/designer_img1.jpg" alt="">
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="javascript:void(0);">
 									<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/designer_img2.jpg" alt="">
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="javascript:void(0);">
 									<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/designer_img3.jpg" alt="">
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="javascript:void(0);">
 									<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/designer_img4.jpg" alt="">
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="javascript:void(0);">
 									<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/designer_img5.jpg" alt="">
 								</a>
 							</li>
 							<li class="on">
-								<a href="#">
+								<a href="javascript:void(0);">
 									<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/designer_img6.jpg" alt="">
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="javascript:void(0);">
 									<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/designer_img7.jpg" alt="">
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="javascript:void(0);">
 									<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/designer_img8.jpg" alt="">
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="javascript:void(0);">
 									<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/designer_img9.jpg" alt="">
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="javascript:void(0);">
 									<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/designer_img10.jpg" alt="">
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="javascript:void(0);">
 									<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/designer_img11.jpg" alt="">
 								</a>
 							</li>
 							<li class="on">
-								<a href="#">
+								<a href="javascript:void(0);">
 									<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/designer_img12.jpg" alt="">
 								</a>
 							</li>
@@ -149,7 +149,7 @@
 					<div class="space"></div>
 					<ul class="question_ul wrapfix">
 						<li>
-							<a href="#">
+							<a href="javascript:void(0);">
 								<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/des_img1.jpg" alt="">
 							</a>
 							<div class="des_jd">
@@ -160,7 +160,7 @@
 								<b>设计说明</b>
 								<div class="des_fa wrapfix">
 									<span>
-										<a href="#" class="hx_img">
+										<a href="javascript:void(0);" class="hx_img">
 											<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/designer_img1.jpg" alt="">
 										</a>
 										<p>吴俊豪</p>
@@ -175,7 +175,7 @@
 							</div> -->
 						</li>
 						<li>
-							<a href="#">
+							<a href="javascript:void(0);">
 								<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/des_img2.jpg" alt="">
 							</a>
 							<div class="des_jd">
@@ -186,7 +186,7 @@
 								<b>设计说明</b>
 								<div class="des_fa wrapfix">
 									<span>
-										<a href="#" class="hx_img">
+										<a href="javascript:void(0);" class="hx_img">
 											<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/designer_img2.jpg" alt="">
 										</a>
 										<p>廖昕红</p>
@@ -198,7 +198,7 @@
 							</div>
 						</li>
 						<li class="on">
-							<a href="#">
+							<a href="javascript:void(0);">
 								<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/des_img3.jpg" alt="">
 							</a>
 							<div class="des_jd">
@@ -209,7 +209,7 @@
 								<b>设计说明</b>
 								<div class="des_fa wrapfix">
 									<span>
-										<a href="#" class="hx_img">
+										<a href="javascript:void(0);" class="hx_img">
 											<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/designer_img3.jpg" alt="">
 										</a>
 										<p>李宇鸿</p>
@@ -221,7 +221,7 @@
 							</div>
 						</li>
 						<li>
-							<a href="#">
+							<a href="javascript:void(0);">
 								<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/des_img4.jpg" alt="">
 							</a>
 							<div class="des_jd">
@@ -232,7 +232,7 @@
 								<b>设计说明</b>
 								<div class="des_fa wrapfix">
 									<span>
-										<a href="#" class="hx_img">
+										<a href="javascript:void(0);" class="hx_img">
 											<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/designer_img4.jpg" alt="">
 										</a>
 										<p>张晴</p>
@@ -244,7 +244,7 @@
 							</div>
 						</li>
 						<li>
-							<a href="#">
+							<a href="javascript:void(0);">
 								<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/des_img5.jpg" alt="">
 							</a>
 							<div class="des_jd">
@@ -255,7 +255,7 @@
 								<b>设计说明</b>
 								<div class="des_fa wrapfix">
 									<span>
-										<a href="#" class="hx_img">
+										<a href="javascript:void(0);" class="hx_img">
 											<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/designer_img5.jpg" alt="">
 										</a>
 										<p>王丽婷</p>
@@ -267,7 +267,7 @@
 							</div>
 						</li>
 						<li class="on">
-							<a href="#">
+							<a href="javascript:void(0);">
 								<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/des_img6.jpg" alt="">
 							</a>
 							<div class="des_jd">
@@ -278,7 +278,7 @@
 								<b>设计说明</b>
 								<div class="des_fa wrapfix">
 									<span>
-										<a href="#" class="hx_img">
+										<a href="javascript:void(0);" class="hx_img">
 											<img class="lazy" src="themes/ecmoban_dsc/iamges/20170517/designer_img2.jpg" alt="">
 										</a>
 										<p>廖昕红</p>
