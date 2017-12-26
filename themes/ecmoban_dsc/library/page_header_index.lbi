@@ -200,12 +200,7 @@
 	                       })
 	                   });
 	                   
-	                  $("#header .classification .dropdown-menu").css({
-	                  	"background-color": "#EDEAF1",
-						"width": "0px",
-						"height": "0px",
-						"overflow": "hidden"
-	                  })
+	                 
                 })
             </script>
             <style>
