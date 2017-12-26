@@ -234,10 +234,7 @@
 	padding: 10px 10px 0;
 	width: 289px;
 	height: 525px;
-	/*background-color: #666;*/
-	width: 0px;
-	height: 0px;
-	overflow: hidden;
+	background-color: #666;
 }
 #header .classification dl {
 	overflow: hidden;
