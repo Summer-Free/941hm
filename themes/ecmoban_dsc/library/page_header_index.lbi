@@ -173,13 +173,23 @@
                 var sc=$(document);//得到document文档对象。
                 win.scroll(function(){
                   if(sc.scrollTop()>=123){
-                    nav.addClass("fixednav"); 
-                   $(".navTmp").fadeIn(); 
+                    /*console.log(sc.scrollTop());*/
+                    $(".dropdown-menu").hide();
+                    nav.addClass("fixednav");
+                   $(".navTmp").fadeIn();
+                   $(".classification").hover(function() {
+                       /*console.log('in');*/
+                       $(".dropdown-menu").show();
+                   }, function() {
+                       /*console.log('out');*/
+                       $(".dropdown-menu").hide();
+                   });
                   }else{
+                    $(".dropdown-menu").hide();
                    nav.removeClass("fixednav");
                    $(".navTmp").fadeOut();
                   }
-                })  
+                })
                 })
             </script>
             <style>
