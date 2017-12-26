@@ -178,10 +178,10 @@
                     nav.addClass("fixednav");
                    $(".navTmp").fadeIn();
                    $(".classification").hover(function() {
-                       /*console.log('in');*/
+                     console.log('in');
                        $(".dropdown-menu").show();
                    }, function() {
-                       /*console.log('out');*/
+                       console.log('out');
                        $(".dropdown-menu").hide();
                    });
                   }else{
