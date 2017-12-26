@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    $('.nav-content li a').each(function(){
+    $('.newactive a').each(function(){
         if($($(this))[0].href==String(window.location))
-            $(this).parent().addClass('active');
+            $(this).parent().addClass('navactive');
     });
 })

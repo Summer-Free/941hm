@@ -230,11 +230,14 @@
 	position: absolute;
 	top: 100%;
 	right: 0;
-	z-index: 10;
+	z-index: 999 !important;
 	padding: 10px 10px 0;
 	width: 289px;
 	height: 525px;
-	background-color: #666;
+	/*background-color: #666;*/
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
 }
 #header .classification dl {
 	overflow: hidden;

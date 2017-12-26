@@ -770,8 +770,13 @@
                 threshold : 1000,
                 skip_invisible : false
             });
-
+			
             $(function() {
+            	$(".dropdown-menu").css({
+               		"width": "289px",
+               		"height": "517px",
+               		"background-color": "#666"
+               })
             	(function() {
             		var	$ul = $("#header .btm .JS-slide .point"),
             			margin = $ul.outerWidth(true) / 2;
