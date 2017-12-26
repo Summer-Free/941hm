@@ -562,7 +562,7 @@
                             reg = /^[\u4e00-\u9fa5]{2,4}$/i;
                         if (!reg.test(bm_name))
                             {
-                                alert("请输入2-4个汉字！"); 
+                                alert("请输入2-4个汉字！");
                                 return false;
                             }
                         else if(!(/^1[34578]\d{9}$/.test(bm_phone)))
@@ -574,9 +574,9 @@
                             { 
                                 alert("请填写地址");  
                                 return false; 
-                            };
-
-                        $("#form_info").submit();
+                            }
+                            $("#form_info").submit();
+                        }
                 })
             //立即加入
             $(".join").click(function(){
