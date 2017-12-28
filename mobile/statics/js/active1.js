@@ -1,4 +1,35 @@
 $(function() {
+	
+	//签到初始化
+	var qian = function(){
+		var url = '../mobile/index.php?r=active/index/sign';
+		$.post(url,function (data){
+			var result = eval('('+data+')');
+			if(result.code == 22){
+				$(".true").hide();
+				$(".false").show();
+			}
+		});
+	}
+	qian();
+	//当天日期
+	 var getTime =  function(){
+		var dates = new Date();
+		var year = dates.getFullYear();
+		var month = dates.getMonth() +1;
+		var date = dates.getDate();
+		var day = dates.getDay();
+		var weeks = ["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+		var week = document.getElementById("week");
+		var time = document.getElementById("time");
+		var intime = document.getElementById("intime");
+		week.innerText=(weeks[day]);
+		time.innerText=(year+"年"+(month)+"月"+date+"日");
+		intime.innerText=(year+"年"+(month)+"月");
+		setTimeout(arguments.callee,1000);
+		return date;
+	}
+   getTime();
     var no_img = '../mobile/statics/img/404.png';
     // 登录弹窗
     var getTel = function () {
@@ -9,7 +40,6 @@ $(function() {
     var prize = function (e) {
         if(e.hasClass('is_take')){
             layer.open({content:'这个已经翻过了'})
-
             return false;
         }
         var index = e.index();
@@ -18,9 +48,7 @@ $(function() {
         var param = {which:x};
         var url = '../mobile/index.php?r=active/index/prize';
         $.post(url,param,function (data) {
-            console.log(data);
             var result = eval('('+data+')');
-
             switch (result.code){
                 case '0' :
                     // 抽奖成功
@@ -31,7 +59,7 @@ $(function() {
                     $('.sec-2 div').eq(x).addClass('is_take');
 
                     $('.sec-2 div').eq(x).find('img').attr('src',result.textfile);
-                    var $dialog = $(".dialog-Winning");
+                    var $dialog = $(".tling");
                     $dialog.show();
                     break;
                 case '1' :
@@ -58,7 +86,6 @@ $(function() {
                     // 用户未登录
                     getTel();
                     break;
-
                 default:
                     //
                     layer.open({content:'未知错误'})
@@ -68,7 +95,7 @@ $(function() {
     };
     // 验证手机号码
     var check_phone = function (phone) {
-        if(!(/^1[3|4|5|8][0-9]\d{4,8}$/.test(phone))) {
+        if(!(/^1[3|4|5|7|8][0-9]\d{4,8}$/.test(phone))) {
             $("#tel+span").remove();
             $("#tel").after("<span class='error'>您的号码有误</span>");
             return false;
@@ -123,7 +150,6 @@ $(function() {
     //微信打开时，显示关注公众号广告条
     if(isWeiXin()) {
         $(".follow").show();
-        console.log("111")
     }
 
     //点击牌面，弹出弹窗
@@ -134,7 +160,6 @@ $(function() {
     //点击关闭按钮，关闭弹窗
     $(".dialog .close").on("click",function() {
         var $this = $(this);
-
         $this.parents(".dialog").hide();
     });
 
@@ -172,7 +197,7 @@ $(function() {
 
     });
     // 完成验证码登录
-    $(".dialog-getTel a").on("click",function() {
+    $(".dialog-getTel .finish").on("click",function() {
     	var tel = $("#tel").val(),
     		code = $("#code").val(),
     		$dialog = $(".dialog-getTel");
@@ -190,16 +215,14 @@ $(function() {
                     if(result.code == 13){
                         init_prize();
                         $dialog.hide();
+                        qian();
                     }else {
                         $(".getCode+span").remove();
                         $(".getCode").after("<span class='error'>"+result.info+"</span>");
                         return false;
                     }
-
-                    console.log(result);
                 });
     		};
-
     });
 
     $(".dialog-Winning a").on("click",function() {
@@ -218,4 +241,130 @@ $(function() {
     $('.dialog-share,.dialog-wx-share').on('click',function () {
         $(this).hide();
     });
+      $(".false").on("click",function(){
+      	layer.open({content:'今天已签到'});
+      })
+    //签到
+    $(".true").on("click",function(){
+    	var url = '../mobile/index.php?r=active/index/sign';
+    	$.post(url,function (data){
+    		var result = eval('('+data+')');
+    		if(result.code == 20){
+    			$(".true").hidden();
+    			$(".false").show();
+    			$(".tqian").show();
+    		}else if(result.code == 4){
+    			getTel();
+    		}else if(result.code == 21){
+    			 layer.open({content:result.info});
+    		}
+    	})
+    });
+    //签到记录
+    $(".img").on("click",function(){
+    	var url = '../mobile/index.php?r=active/index/signlog';
+    	$.post(url,function (data){
+    		var result = eval('('+data+')');
+    		if(result.code == 0){
+    			var arr = [];
+    			$(".ago").show();
+    			$("main,header,footer").hide();
+    			for(var j = 0; j<result.account_log.length; j++){
+ 					var time = parseInt(result.account_log[j].change_time) + 28800 ;
+    				var local = new Date(parseInt(time) * 1000).toLocaleString();
+    				var localtime = local.split("/")[2].split(" ")[0];
+    				arr.push(localtime);
+    			}
+    			cal(arr);
+				var count = arr.length;
+				var length = result.account_log.length;
+				//当月签到天数
+				$(".texts ul:eq(1) li:eq(1)").text(count);
+				//当月签到积分
+				$(".texts ul:eq(0) li:eq(1)").text(count*20 );
+				//累计积分
+				$(".texts ul:eq(2) li:eq(1)").text(length*20 );
+    		}else if(result.code == 4){
+    			layer.open({content:result.info});
+    		}
+    	})
+    });
+    //关闭签到记录页
+    $(".ago").on("click",function(){
+    	$(".ago").hide();
+    	$("main,header,footer").show();
+    })
+    //关闭签到提示
+    $(".tqian").on("click",function(){
+    	$(".tqian").hide();
+    })
+    //关闭领取提示
+    $(".tling").on("click",function(){
+    	$(".tling").hide();
+    })
+    //关闭验证框
+    $(".cansle").on("click",function(){
+    	$(".dialog-getTel").hide()
+    })
+	var cal = function(arr){
+    	var dates = new Date();
+		var year = dates.getFullYear();
+		var month = dates.getMonth()+1;
+		var date = dates.getDate();
+		var day = dates.getDay();
+		var weeks = ["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+		var b = year % 4;
+		var c = year % 100;
+		var d = year % 400;
+		//判断当月天数
+		if(month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10|| month == 12 ){
+			var days = 31;
+		}else if(month == 2){
+			
+			if((b == 0 && c != 0) || d == 0 ){
+				days = 29;
+			}else{
+				days = 8;
+			}
+		}else{
+			days = 30;
+		}
+		//判断当月第一天是周几
+		var firstDay =  + "0123456".split("")[new Date(Date.UTC(year, month-1, 1)).getDay()];
+		//开始打印
+		for(var i=0; i< firstDay; i++){
+			$(".cla1 td:eq("+i+")").text("");
+		}
+		for(var j=1, i= firstDay; j<=7-firstDay; j++,i++) {
+			$(".cla1 td:eq("+i+")").text(j);
+		}
+		var a =2;
+		var b = 0; 
+		var times = 0;
+		for(var i=8-firstDay; i<=days;i++){
+//			if(date == i){
+//				$(".cla"+a+" td:eq("+b+")").css({
+//					"border-radius":"3rem",
+//					"background-color": "#fed055"
+//				});
+//			}
+			for(var j=0; j<arr.length;j++){
+				if(arr[j] == i){
+					$(".cla"+a+" td:eq("+b+")").css({
+						"background": "url(../mobile/statics/img/newapp/dui.jpg) no-repeat",
+						"background-size":"contain",
+						"background-position":"50%"
+					});
+				}
+			}
+			$(".cla"+a+" td:eq("+b+")").text(i);
+			if(b==6){
+				b=0;
+				a++;
+			}else{
+				b++;
+			}
+		} 
+	}
 });
+//18871716570

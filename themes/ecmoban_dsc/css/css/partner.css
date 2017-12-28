@@ -10,10 +10,12 @@
 	overflow: hidden;
 }
 .comp,
-.w1200,
 .special,
-.comp img{
+.comp{
 	width:100%;
+}
+.comp img{
+	width: 100%;
 }
 .comp{
 	position: relative;
