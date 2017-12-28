@@ -163,7 +163,7 @@
             <!--Navigation end-->
             <script type="text/javascript" src="themes/ecmoban_dsc/js/nav_color.js"></script>
             <style>
-                .navactive{background-color: #460909;}
+                .navactive{background-color: #770622;}
             </style>
             <!-- 将导航栏固定到顶部 start -->
             <script type="text/javascript">

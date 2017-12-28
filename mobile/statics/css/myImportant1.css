@@ -8,7 +8,7 @@
     clear: both;
 }
 .margin-tb-1 {
-    margin: 1rem auto 0 auto;
+    margin: 1rem auto;
 }
 .mb-1 {
     margin-bottom: 1rem!important;
@@ -181,6 +181,7 @@
 }
 .con_pro_title{
     width: 100%;
+    margin-top: 1rem;
 }
 .title_left{
     float: left;
