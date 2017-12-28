@@ -167,295 +167,350 @@
             catch (e) {}
         }
     </script>
-    <!--每日秒杀-->
-    <div class="index-banner swiper-container box banner-second margin-tb-1">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <a href="index.php?r=category/index/products&intro=hot">
-                    <img class="lazy" data-original="../mobile/statics/img/newapp/index-pic15.jpg" alt="" />
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    <!--每日秒杀相关产品-->
-    <section class="product-list-medium imp-class">
-        <ul class="clearfix">
-          <!-- {foreach $sql_ms as $key => $sql_ms} --><!--原来是：foreach $hot_goods as $key => $best-->
-          <!--<li>
-            <div class="product-div">
-              <a class="product-div-link" href="{$best.url}"></a>
-              <img class="product-list-img lazy" data-original="{$best.goods_thumb}" />
-              <div class="product-text">
-                  <h4 class="onelist-hidden">{$best.goods_name}</h4>
-                  <p class="text-center"><span class="p-price t-first ">{$best.current_price}</span></p>
-              </div>
-            </div>
-          </li>-->
-          <li>
-            <div class="product-div">
-              <a class="product-div-link" href="../mobile/index.php?r=goods&id={$sql_ms.goods_id}&u=0"></a>
-                <img class="product-list-img lazy" data-original="../{$sql_ms.goods_thumb}" />
-              <div class="product-text">
-                <h4 class="onelist-hidden">{$sql_ms.goods_name}</h4>
-                <p class="text-center">
-                  <span class="p-price t-first ">
-                  <em>￥</em>{$sql_ms.shop_price}</span></p>
-              </div>
-            </div>
-          </li>
-          <!-- {/foreach} -->
-        </ul>
-    </section>
-    <!--匠物众筹-->
-    <!--
-    <div class="index-banner swiper-container box mb-1 banner-second">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <a href="index.php?r=crowd_funding">
-                    <img class="lazy" data-original="../mobile/statics/img/newapp/index-pic16.jpg" alt="" />
-                </a>
-            </div>
-        </div>
-    </div>-->
-    
-    <!--匠物众筹相关产品-->
-    <!--<section class="product-list-medium new-zc">
-        <ul class="clearfix">-->
-          <!-- {foreach $zc_list as $key => $zc_list} -->
-          <!--<li>
-            <div class="product-div">
-              <a class="product-div-link" href="{$zc_list.url}"></a>
-              <img class="product-list-img lazy" data-original="../{$zc_list.title_img}" />
-              <div class="product-text">
-                  <h4 class="text-center onelist-hidden">{$zc_list.title}</h4>-->
-                  <!--<p><span class="p-price t-first ">{$best.current_price}</span></p>-->
-              <!--</div>
-            </div>
-          </li>-->
-          <!-- {/foreach} -->
-        <!--</ul>
-    </section>-->
-    
-    <!--节日精选-->
-    <div class="index-banner swiper-container box banner-second margin-tb-1">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <a href="#">
-                    <img class="lazy" data-original="../mobile/statics/img/newapp/index-pic19.jpg" alt="" />
-                </a>
-            </div>
-        </div>
-    </div>
-    <!--节日精选相关产品-->
-    <section class="product-list-medium imp-class">
-        <ul class="clearfix">
-          <!-- {foreach $sql_jx as $key => $sql_jx} --><!--原来是：foreach $hot_goods as $key => $best-->
-          <!--<li>
-            <div class="product-div">
-              <a class="product-div-link" href="{$best.url}"></a>
-              <img class="product-list-img lazy" data-original="{$best.goods_thumb}" />
-              <div class="product-text">
-                  <h4 class="onelist-hidden">{$best.goods_name}</h4>
-                  <p class="text-center"><span class="p-price t-first ">{$best.current_price}</span></p>
-              </div>
-            </div>
-          </li>-->
-          <li>
-            <div class="product-div">
-              <a class="product-div-link" href="../mobile/index.php?r=goods&id={$sql_jx.goods_id}&u=0"></a>
-                <img class="product-list-img lazy" data-original="../{$sql_jx.goods_thumb}" />
-              <div class="product-text">
-                <h4 class="onelist-hidden">{$sql_jx.goods_name}</h4>
-                <p class="text-center">
-                  <span class="p-price t-first ">
-                  <em>￥</em>{$sql_jx.shop_price}</span></p>
-              </div>
-            </div>
-          </li>
-          <!-- {/foreach} -->
-        </ul>
-    </section>
 
-
-
-
-
-    <!--餐厅-->
-    <div class="index-banner swiper-container box mb-1 banner-second imp-class">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <a href="index.php?r=category/index/products&id=453">
-                    <img class="lazy" data-original="../mobile/statics/img/newapp/index-pic11.jpg" alt="" />
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    <!--餐厅系列相关产品-->
-    <section class="product-list-medium imp-class">
-        <ul class="clearfix">
-          <!-- {foreach $sql_ct as $key => $sql_ct} -->
-          <li>
-            <div class="product-div">
-              <a class="product-div-link" href="../mobile/index.php?r=goods&id={$sql_ct.goods_id}&u=0"></a>
-              <img class="product-list-img lazy" data-original="../{$sql_ct.goods_thumb}" />
-              <div class="product-text">
-                  <h4 class="onelist-hidden">{$sql_ct.goods_name}</h4>
-                  <p class="text-center"><span class="p-price t-first "><em>￥</em>{$sql_ct.shop_price}</span></p>
-              </div>
-            </div>
-          </li>
-          <!-- {/foreach} -->
-        </ul>
-    </section>
-
-    <!--客厅-->
-    <div class="index-banner swiper-container box mb-1 banner-second">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <a href="index.php?r=category/index/products&id=113">
-                    <img class="lazy" data-original="../mobile/statics/img/newapp/index-pic12.jpg" alt="" />
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    <!--客厅系列相关产品-->
-    <section class="product-list-medium imp-class">
-        <ul class="clearfix">
-          <!-- {foreach $sql_kt as $key => $sql_kt} -->
-          <li>
-            <div class="product-div">
-              <a class="product-div-link" href="../mobile/index.php?r=goods&id={$sql_kt.goods_id}&u=0"></a>
-              <img class="product-list-img lazy" data-original="../{$sql_kt.goods_thumb}" />
-              <div class="product-text">
-                  <h4 class="onelist-hidden">{$sql_kt.goods_name}</h4>
-                  <p class="text-center"><span class="p-price t-first "><em>￥</em>{$sql_kt.shop_price}</span></p>
-              </div>
-            </div>
-          </li>
-          <!-- {/foreach} -->
-        </ul>
-    </section>
-
-    <!--书房-->
-    <div class="index-banner swiper-container box mb-1 banner-second imp-class">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <a href="index.php?r=category/index/products&id=147">
-                    <img class="lazy" data-original="../mobile/statics/img/newapp/index-pic13.jpg" alt="" />
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    <!--书房系列相关产品-->
-    <section class="product-list-medium imp-class">
-        <ul class="clearfix">
-          <!-- {foreach $sql_sf as $key => $sql_sf} -->
-          <li>
-            <div class="product-div">
-              <a class="product-div-link" href="../mobile/index.php?r=goods&id={$sql_sf.goods_id}&u=0"></a>
-              <img class="product-list-img lazy" data-original="../{$sql_sf.goods_thumb}" />
-              <div class="product-text">
-                  <h4 class="onelist-hidden">{$sql_sf.goods_name}</h4>
-                  <p class="text-center"><span class="p-price t-first "><em>￥</em>{$sql_sf.shop_price}</span></p>
-              </div>
-            </div>
-          </li>
-          <!-- {/foreach} -->
-        </ul>
-    </section>
-
-    <!--卧室-->
-    <div class="index-banner swiper-container box mb-1 banner-second imp-class">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <a href="index.php?r=category/index/products&id=14">
-                    <img class="lazy" data-original="../mobile/statics/img/newapp/index-pic14.jpg" alt="" />
-                </a>
-            </div>
-        </div>
-    </div> 
-    <!--卧室系列相关产品-->
-    <section class="product-list-medium imp-class">
-        <ul class="clearfix">
-          <!-- {foreach $sql_ws as $key => $sql_ws} -->
-          <li>
-            <div class="product-div">
-              <a class="product-div-link" href="../mobile/index.php?r=goods&id={$sql_ws.goods_id}&u=0"></a>
-              <img class="product-list-img lazy" data-original="../{$sql_ws.goods_thumb}" />
-              <div class="product-text">
-                  <h4 class="onelist-hidden">{$sql_ws.goods_name}</h4>
-                  <p class="text-center">
-                        <span class="p-price t-first ">
-                            <em>￥</em>
-                          <!--{if $key.market_price == 0}-->
-                            {$sql_ws.shop_price}
-                          <!--{/if}-->
-                        </span>
-                    </p>
-              </div>
-            </div>
-          </li>
-          <!-- {/foreach} -->
-        </ul>
-    </section>
-
-    <!--精品推荐-->
-    <div class="box title inx-ms">
-        <div class="index-banner swiper-container box mb-1 banner-second imp-class">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <a href="index.php?r=category/index/products&intro=best">
-                        <img class="lazy" data-original="../mobile/statics/img/newapp/index-pic17.jpg" alt="" />
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <section class="product-list-medium imp-class">
-            <ul class="clearfix">
-              <!-- {foreach $best_goods as $key => $best} -->
-              <li>
-                <div class="product-div">
-                  <a class="product-div-link" href="{$best.url}"></a>
-                  <img class="product-list-img lazy" data-original="{$best.goods_thumb}" />
-                  <div class="product-text">
-                      <h4 class="onelist-hidden">{$best.goods_name}</h4>
-                      <p class="text-center"><span class="p-price t-first ">{$best.current_price}</span></p>
-                  </div>
-                </div>
-              </li>
-              <!-- {/foreach} -->
-            </ul>
-        </section>
-
-    </div>
-
-    <!--like-->
-    <p class="index-title padding-all text-c imp-class">猜你喜欢</p>
-    <section class="product-list j-product-list product-list-medium" data="1">
-		<script id="j-product" type="text/html">
-		<ul>
-			<%each list as goods%>
-			<li>
-				<div class="product-div">
-					<a class="product-div-link" href="<%goods.url%>"></a>
-					<img class="product-list-img" src="<%goods.goods_thumb%>" />
-					<div class="product-text">
-              <h4 class="onelist-hidden"><%goods.goods_name%></h4>
-              <p class="text-center"><span class="p-price t-first "><%#goods.current_price%><small></small></span></p>
-              <a href="javascript:void(0)" class="icon-flow-cart fr j-goods-attr"><i class="iconfont icon-gouwuche"></i></a>
+    <div class="con_pro">
+      <!--每日秒杀-->
+      <div class="index-banner swiper-container box banner-second margin-tb-1">
+        <!-- <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <a href="index.php?r=category/index/products&intro=hot">
+                  <img class="lazy" data-original="../mobile/statics/img/newapp/index-pic15.jpg" alt="" />
+              </a>
           </div>
-				</div>
-			</li>
-			<%/each%>
-		</ul>
-		</script>
-    </section>
+        </div> -->
+        <div class="con_pro_title">
+            <div class="title_left">每日秒杀</div>
+            <a href="index.php?r=category/index/products&intro=hot">
+              <div class="title_right">查看更多</div>
+            </a>
+        </div>
+     </div>
+      
+      <!--每日秒杀相关产品-->
+      <section class="product-list-medium imp-class">
+          <ul class="clearfix">
+            <!-- {foreach $sql_ms as $key => $sql_ms} --><!--原来是：foreach $hot_goods as $key => $best-->
+            <!--<li>
+              <div class="product-div">
+                <a class="product-div-link" href="{$best.url}"></a>
+                <img class="product-list-img lazy" data-original="{$best.goods_thumb}" />
+                <div class="product-text">
+                    <h4 class="onelist-hidden">{$best.goods_name}</h4>
+                    <p class="text-center"><span class="p-price t-first ">{$best.current_price}</span></p>
+                </div>
+              </div>
+            </li>-->
+            <li>
+              <div class="product-div">
+                <a class="product-div-link" href="../mobile/index.php?r=goods&id={$sql_ms.goods_id}&u=0"></a>
+                  <img class="product-list-img lazy" data-original="../{$sql_ms.goods_thumb}" />
+                <div class="product-text">
+                  <h4 class="onelist-hidden">{$sql_ms.goods_name}</h4>
+                  <p>
+                    <span class="p-price t-first ">
+                    <!-- <em>￥</em> -->{$sql_ms.shop_price}元/件</span></p>
+                </div>
+              </div>
+            </li>
+            <!-- {/foreach} -->
+          </ul>
+      </section>
+      <!--匠物众筹-->
+      <!--
+      <div class="index-banner swiper-container box mb-1 banner-second">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <a href="index.php?r=crowd_funding">
+                      <img class="lazy" data-original="../mobile/statics/img/newapp/index-pic16.jpg" alt="" />
+                  </a>
+              </div>
+          </div>
+      </div>-->
+      
+      <!--匠物众筹相关产品-->
+      <!--<section class="product-list-medium new-zc">
+          <ul class="clearfix">-->
+            <!-- {foreach $zc_list as $key => $zc_list} -->
+            <!--<li>
+              <div class="product-div">
+                <a class="product-div-link" href="{$zc_list.url}"></a>
+                <img class="product-list-img lazy" data-original="../{$zc_list.title_img}" />
+                <div class="product-text">
+                    <h4 class="text-center onelist-hidden">{$zc_list.title}</h4>-->
+                    <!--<p><span class="p-price t-first ">{$best.current_price}</span></p>-->
+                <!--</div>
+              </div>
+            </li>-->
+            <!-- {/foreach} -->
+          <!--</ul>
+      </section>-->
+      
+      <!--节日精选-->
+      <div class="index-banner swiper-container box banner-second margin-tb-1">
+          <!-- <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <a href="#">
+                      <img class="lazy" data-original="../mobile/statics/img/newapp/index-pic19.jpg" alt="" />
+                  </a>
+              </div>
+          </div> -->
+          <div class="con_pro_title">
+            <div class="title_left">节日精选</div>
+            <!-- <a href="javascript:void(0)">
+              <div class="title_right">查看更多</div>
+            </a> -->
+          </div>
+      </div>
+      <!--节日精选相关产品-->
+      <section class="product-list-medium imp-class">
+          <ul class="clearfix">
+            <!-- {foreach $sql_jx as $key => $sql_jx} --><!--原来是：foreach $hot_goods as $key => $best-->
+            <!--<li>
+              <div class="product-div">
+                <a class="product-div-link" href="{$best.url}"></a>
+                <img class="product-list-img lazy" data-original="{$best.goods_thumb}" />
+                <div class="product-text">
+                    <h4 class="onelist-hidden">{$best.goods_name}</h4>
+                    <p class="text-center"><span class="p-price t-first ">{$best.current_price}</span></p>
+                </div>
+              </div>
+            </li>-->
+            <li>
+              <div class="product-div">
+                <a class="product-div-link" href="../mobile/index.php?r=goods&id={$sql_jx.goods_id}&u=0"></a>
+                  <img class="product-list-img lazy" data-original="../{$sql_jx.goods_thumb}" />
+                <div class="product-text">
+                  <h4 class="onelist-hidden">{$sql_jx.goods_name}</h4>
+                  <p>
+                    <span class="p-price t-first ">
+                    <!-- <em>￥</em> -->{$sql_jx.shop_price}元/件</span></p>
+                </div>
+              </div>
+            </li>
+            <!-- {/foreach} -->
+          </ul>
+      </section>
 
+
+
+
+
+      <!--餐厅-->
+      <div class="index-banner swiper-container box margin-tb-1 banner-second ">
+          <!-- <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <a href="index.php?r=category/index/products&id=453">
+                      <img class="lazy" data-original="../mobile/statics/img/newapp/index-pic11.jpg" alt="" />
+                  </a>
+              </div>
+          </div> -->
+          <div class="con_pro_title">
+            <div class="title_left">餐厅系列</div>
+            <a href="index.php?r=category/index/products&id=453">
+              <div class="title_right">查看更多</div>
+            </a>
+          </div>
+      </div>
+      
+      <!--餐厅系列相关产品-->
+      <section class="product-list-medium imp-class">
+          <ul class="clearfix">
+            <!-- {foreach $sql_ct as $key => $sql_ct} -->
+            <li>
+              <div class="product-div">
+                <a class="product-div-link" href="../mobile/index.php?r=goods&id={$sql_ct.goods_id}&u=0"></a>
+                <img class="product-list-img lazy" data-original="../{$sql_ct.goods_thumb}" />
+                <div class="product-text">
+                    <h4 class="onelist-hidden">{$sql_ct.goods_name}</h4>
+                    <p><span class="p-price t-first "><!-- <em>￥</em> -->{$sql_ct.shop_price}元/件</span></p>
+                </div>
+              </div>
+            </li>
+            <!-- {/foreach} -->
+          </ul>
+      </section>
+
+      <!--客厅-->
+      <div class="index-banner swiper-container box margin-tb-1 banner-second ">
+          <!-- <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <a href="index.php?r=category/index/products&id=113">
+                      <img class="lazy" data-original="../mobile/statics/img/newapp/index-pic12.jpg" alt="" />
+                  </a>
+              </div>
+          </div> -->
+          <div class="con_pro_title">
+            <div class="title_left">客厅系列</div>
+            <a href="index.php?r=category/index/products&id=113">
+              <div class="title_right">查看更多</div>
+            </a>
+          </div>
+      </div>
+      
+      <!--客厅系列相关产品-->
+      <section class="product-list-medium imp-class">
+          <ul class="clearfix">
+            <!-- {foreach $sql_kt as $key => $sql_kt} -->
+            <li>
+              <div class="product-div">
+                <a class="product-div-link" href="../mobile/index.php?r=goods&id={$sql_kt.goods_id}&u=0"></a>
+                <img class="product-list-img lazy" data-original="../{$sql_kt.goods_thumb}" />
+                <div class="product-text">
+                    <h4 class="onelist-hidden">{$sql_kt.goods_name}</h4>
+                    <p><span class="p-price t-first "><<!-- em>￥</em> -->{$sql_kt.shop_price}元/件</span></p>
+                </div>
+              </div>
+            </li>
+            <!-- {/foreach} -->
+          </ul>
+      </section>
+
+      <!--书房-->
+      <div class="index-banner swiper-container box margin-tb-1 banner-second">
+          <!-- <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <a href="index.php?r=category/index/products&id=147">
+                      <img class="lazy" data-original="../mobile/statics/img/newapp/index-pic13.jpg" alt="" />
+                  </a>
+              </div>
+          </div> -->
+          <div class="con_pro_title">
+            <div class="title_left">书房系列</div>
+            <a href="index.php?r=category/index/products&id=147">
+              <div class="title_right">查看更多</div>
+            </a>
+          </div>
+      </div>
+      
+      <!--书房系列相关产品-->
+      <section class="product-list-medium imp-class">
+          <ul class="clearfix">
+            <!-- {foreach $sql_sf as $key => $sql_sf} -->
+            <li>
+              <div class="product-div">
+                <a class="product-div-link" href="../mobile/index.php?r=goods&id={$sql_sf.goods_id}&u=0"></a>
+                <img class="product-list-img lazy" data-original="../{$sql_sf.goods_thumb}" />
+                <div class="product-text">
+                    <h4 class="onelist-hidden">{$sql_sf.goods_name}</h4>
+                    <p><span class="p-price t-first "><!-- <em>￥</em> -->{$sql_sf.shop_price}元/件</span></p>
+                </div>
+              </div>
+            </li>
+            <!-- {/foreach} -->
+          </ul>
+      </section>
+
+      <!--卧室-->
+      <div class="index-banner swiper-container box margin-tb-1 banner-second">
+          <!-- <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <a href="index.php?r=category/index/products&id=14">
+                      <img class="lazy" data-original="../mobile/statics/img/newapp/index-pic14.jpg" alt="" />
+                  </a>
+              </div>
+          </div> -->
+          <div class="con_pro_title">
+            <div class="title_left">卧室系列</div>
+            <a href="index.php?r=category/index/products&id=14">
+              <div class="title_right">查看更多</div>
+            </a>
+          </div>
+      </div> 
+      <!--卧室系列相关产品-->
+      <section class="product-list-medium imp-class">
+          <ul class="clearfix">
+            <!-- {foreach $sql_ws as $key => $sql_ws} -->
+            <li>
+              <div class="product-div">
+                <a class="product-div-link" href="../mobile/index.php?r=goods&id={$sql_ws.goods_id}&u=0"></a>
+                <img class="product-list-img lazy" data-original="../{$sql_ws.goods_thumb}" />
+                <div class="product-text">
+                    <h4 class="onelist-hidden">{$sql_ws.goods_name}</h4>
+                    <p>
+                          <span class="p-price t-first ">
+                              <!-- <em>￥</em> -->
+                            <!--{if $key.market_price == 0}-->
+                              {$sql_ws.shop_price}元/件
+                            <!--{/if}-->
+                          </span>
+                      </p>
+                </div>
+              </div>
+            </li>
+            <!-- {/foreach} -->
+          </ul>
+      </section>
+
+      <!--精品推荐-->
+      <div class="box title inx-ms">
+          <div class="index-banner swiper-container box margin-tb-1 banner-second">
+              <!-- <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <a href="index.php?r=category/index/products&intro=best">
+                          <img class="lazy" data-original="../mobile/statics/img/newapp/index-pic17.jpg" alt="" />
+                      </a>
+                  </div>
+              </div> -->
+              <div class="con_pro_title">
+                <div class="title_left">精品推荐</div>
+                <a href="index.php?r=category/index/products&intro=best">
+                  <div class="title_right">查看更多</div>
+                </a>
+              </div>
+          </div>
+
+          <section class="product-list-medium imp-class">
+              <ul class="clearfix">
+                <!-- {foreach $best_goods as $key => $best} -->
+                <li>
+                  <div class="product-div">
+                    <a class="product-div-link" href="{$best.url}"></a>
+                    <img class="product-list-img lazy" data-original="{$best.goods_thumb}" />
+                    <div class="product-text">
+                        <h4 class="onelist-hidden">{$best.goods_name}</h4>
+                        <p><span class="p-price t-first ">{$best.current_price}元/件</span></p>
+                    </div>
+                  </div>
+                </li>
+                <!-- {/foreach} -->
+              </ul>
+          </section>
+
+      </div>
+
+      <!--like-->
+      <div class="index-banner swiper-container box margin-tb-1 banner-second">
+              <!-- <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <a href="index.php?r=category/index/products&intro=best">
+                          <img class="lazy" data-original="../mobile/statics/img/newapp/index-pic17.jpg" alt="" />
+                      </a>
+                  </div>
+              </div> -->
+              <div class="con_pro_title">
+                <div class="title_left">猜你喜欢</div>
+              </div>
+          </div>
+      <section class="product-list j-product-list product-list-medium" data="1">
+  		<script id="j-product" type="text/html">
+  		<ul>
+  			<%each list as goods%>
+  			<li>
+  				<div class="product-div">
+  					<a class="product-div-link" href="<%goods.url%>"></a>
+  					<img class="product-list-img" src="<%goods.goods_thumb%>" />
+  					<div class="product-text">
+                <h4 class="onelist-hidden"><%goods.goods_name%></h4>
+                <p><span class="p-price t-first "><%#goods.current_price%>元/件<small></small></span></p>
+                <a href="javascript:void(0)" class="icon-flow-cart fr j-goods-attr"><i class="iconfont icon-gouwuche"></i></a>
+            </div>
+  				</div>
+  			</li>
+  			<%/each%>
+  		</ul>
+  		</script>
+      </section>
+    </div>
     <div class="n-footer-box" style="display: none;">
         <ul class="n-footer-minbox">
             <li>
