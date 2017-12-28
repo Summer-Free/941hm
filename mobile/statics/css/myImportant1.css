@@ -154,15 +154,15 @@
     padding: 0 0 .2rem;
 }
 .product-list-medium.imp-class .product-text {
-    padding: .8rem 0 0 0;
+    padding: 2rem 0 0 0;
 }
 .product-list-medium h4 {
     height: auto;
     line-height: 1;
 }
-.product-text p {
+/* .product-text p {
     padding: 0;
-}
+} */
 .new-zc .product-text {
     padding: 1.1rem 0 .6rem 0;
 }
@@ -174,3 +174,26 @@
     line-height: 2rem;
     font-size: 1.5rem;
 }
+/* 首页产品样式 start */
+.con_pro{
+    width: 90%;
+    margin: 0 auto;
+}
+.con_pro_title{
+    width: 100%;
+    margin-top: 1rem;
+}
+.title_left{
+    float: left;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.title_right{
+    float: right;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+}
+.t-first{
+    color: #666666;
+}
+/* 首页产品样式 end */
