@@ -1,13 +1,16 @@
 <style>
 	.wechat{
 		position: fixed;
-		z-index: 2999999999;
-		top: 0;
+		z-index: 99;
+		/* top: 0;
 		left: 0;
 		right: 0;
-		bottom: 0;
+		bottom: 0; */
 		/* padding: 230px 0 0 750px; */
-		background: url(themes/ecmoban_dsc/iamges/20170517/dialog-pic2.png);
+		top: 300px;
+		left: 80px;
+		width: 200px;
+		/* background: url(themes/ecmoban_dsc/iamges/20170517/dialog-pic2.png); */
 	}
 	.wechat_close{
 		position: absolute;
@@ -20,17 +23,17 @@
 		cursor: pointer;
 	}
 	.wechat_img{
-		position: absolute;
+		/* position: absolute;
 		width: 20%;
 		top: 30%;
 		left: 40%;
-		bottom: 20%;
+		bottom: 20%; */
 	}
 </style>
 <div class="wechat">
-	<div class="wechat_close">
+	<!-- <div class="wechat_close">
 		<img src="themes/ecmoban_dsc/iamges/20170517/index_wechat_sprite.png" alt="" width="100%">
-	</div>
+	</div> -->
 	<div class="wechat_img">
 		<img src="themes/ecmoban_dsc/iamges/20170517/index_wechat_img.png" alt="" width="100%">
 	</div>

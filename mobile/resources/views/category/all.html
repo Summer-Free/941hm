@@ -54,12 +54,48 @@
             <%/each%>
             </script>
         </section>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                var id="{$val.id}";
-                
-            });
-        </script>
+        <style>
+            .con{
+                background: #fff;
+            }
+            .swiper-wrapper{
+                background: #f9f9f9;
+            }
+            .menu-left ul li{
+                width: 10rem;
+                font-size: 1.4rem;
+            }
+            .menu-left ul li.active{
+                color: #333;
+                font-weight: bold;
+                font-size: 1.8rem;
+            }
+            .menu-left ul li.active:before{
+                width: 4px;
+                height:50%;
+                top:1.1rem;
+            }
+            .category-top .search{
+                background: #fff;
+            }
+            .search .input-text{
+                padding: 0;
+                background: #f0f0f0;
+                border-radius: 5px;
+                height: 3rem;
+            }
+            .search .n-input-text.i-search-input input, .search .n-input-text.i-search-input .nav-soso{
+                font-size: 1.5rem;
+            }
+            .i-search-input i.icon-sousuo{
+                font-size: 1.6rem;
+                color: #333;
+                top: 58%;
+            }
+            .menu-right{
+                margin-left: 10rem;
+            }
+        </style>
     </div>
     	<!--悬浮菜单s-->
 	<div class="filter-top filter-top-index" id="scrollUp">
