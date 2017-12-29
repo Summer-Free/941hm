@@ -59,7 +59,6 @@ header .share {
 	position: absolute;
 	top: 50%;
 	margin-top: 18%;
-	border-radius: 1rem;
 }
 
 .sec-1 .inner .calendar img{
@@ -109,29 +108,29 @@ header .share {
 .zero{
 	width: 100%;
 	position: relative;
+	overflow: hidden;
+	z-index: 999 !important;
 }
 .zero img{
 	width: 100%;
+	
 }
-.zero ul{
+.zero1 ul,
+.zero2 ul{
 	width: 100%;
 	height: 50%;
 	position: absolute;
 	top: 0;
-	padding: 10rem 1rem 0rem 1rem;
-	background-color: blue;
 }
-.zero ul:last-of-type{
-	top: 49%;
-	width: 100%;
-	/*background-color: blue;*/
+.zero1 ul:last-of-type,
+.zero2 ul:last-of-type{
+	position: absolute;
+	top:50%;
 }
-
-.zero ul li{
-	width: 50%;
+.zero1 ul li,
+.zero2 ul li{
+	width:50vw;
 	height: 100%;
-	display: block;
-	background-color: red;
 }
 .sec-4{
 	position: fixed;
@@ -451,10 +450,7 @@ s}
 }
 @media screen and (max-width: 375px) {
 	.dialog-getTel .content {
-		width: 250px;
-	}
-	.dialog-getTel .head {
-		height: 41px;
+		/*width: 250px;*/
 	}
 	.dialog-getTel a {
 		width: 84px;
@@ -466,8 +462,8 @@ s}
 		font-size: 0.5rem;
 	}
 	.dialog-Winning .content {
-		min-width: 202px;
-		min-height: 324px;
+		/*min-width: 202px;
+		min-height: 324px;*/
 	}
 	.ago .cal .texts{
 		bottom: 10rem;
