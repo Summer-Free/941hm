@@ -119,16 +119,19 @@ header .share {
 	position: absolute;
 	top: 0;
 	padding: 10rem 1rem 0rem 1rem;
+	background-color: blue;
 }
 .zero ul:last-of-type{
 	top: 49%;
-	
+	width: 100%;
+	/*background-color: blue;*/
 }
 
 .zero ul li{
 	width: 50%;
 	height: 100%;
 	display: block;
+	background-color: red;
 }
 .sec-4{
 	position: fixed;
