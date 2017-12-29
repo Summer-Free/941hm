@@ -16,7 +16,7 @@ body{
 .active_header img{
 	display:block;
 	width: 50%;
-	margin:auto;
+	margin: auto 35%;
 	padding-top: 360px;
 }
 .active_command{
