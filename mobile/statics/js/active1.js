@@ -1,5 +1,5 @@
 $(function() {
-	
+	var istrueimg = 0;
 	//签到初始化
 	var qian = function(){
 		var url = '../mobile/index.php?r=active/index/sign';
@@ -178,7 +178,7 @@ $(function() {
                         action = function() {
                             time--;
                             if(time > 0) {
-                                $this.text(time + "秒后可重新获取");
+                                $this.text(time + "秒后重新获取");
                             }else {
                                 $this.text("获取验证码").prop("disabled",false);
                                 clearInterval(timer);
@@ -216,6 +216,7 @@ $(function() {
                         init_prize();
                         $dialog.hide();
                         qian();
+                        if(istrueimg) $(".tqian").show();
                     }else {
                         $(".getCode+span").remove();
                         $(".getCode").after("<span class='error'>"+result.info+"</span>");
@@ -255,6 +256,7 @@ $(function() {
     			$(".tqian").show();
     		}else if(result.code == 4){
     			getTel();
+    			istrueimg =1;
     		}else if(result.code == 21){
     			 layer.open({content:result.info});
     		}
@@ -273,7 +275,12 @@ $(function() {
  					var time = parseInt(result.account_log[j].change_time) + 28800 ;
     				var local = new Date(parseInt(time) * 1000).toLocaleString();
     				var localtime = local.split("/")[2].split(" ")[0];
-    				arr.push(localtime);
+    				var localmonth = local.split("/")[1];
+    				var dates = new Date();
+					var month = dates.getMonth() +1;
+					if(month == localmonth){
+						arr.push(localtime);
+					}
     			}
     			cal(arr);
 				var count = arr.length;
@@ -304,7 +311,8 @@ $(function() {
     })
     //关闭验证框
     $(".cansle").on("click",function(){
-    	$(".dialog-getTel").hide()
+    	$(".dialog-getTel").hide();
+    	istrueimg = 0;
     })
 	var cal = function(arr){
     	var dates = new Date();

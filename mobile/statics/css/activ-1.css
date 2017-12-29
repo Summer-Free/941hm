@@ -34,6 +34,7 @@ header .share {
 .sec-1 {
 	flex-direction: column;
 	position: relative;
+	overflow: hidden;
 }
 .sec-1 .inner {
 	position: absolute;
@@ -41,16 +42,11 @@ header .share {
 	width: 100%;
 	display: block;
 }
-.sec-1 .inner .img{
+.sec-1 .inner .imgs{
 	width: 100%;
-	position: absolute;
-	top: 10px;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
 }
-.sec-1 .inner .img h3:last-of-type{
-	margin: 0 2rem 0 2rem;
+.sec-1 .inner .imgs .img{
+	width: 100%;
 }
 .sec-1 .inner .wrap{
 	width: 100%;
@@ -63,6 +59,7 @@ header .share {
 	position: absolute;
 	top: 50%;
 	margin-top: 18%;
+	border-radius: 1rem;
 }
 
 .sec-1 .inner .calendar img{
@@ -70,7 +67,7 @@ header .share {
 }
 .sec-1 .inner .calendar .text{
 	position: absolute;
-	bottom: 2rem;
+	bottom: 3rem;
 	width: 100%;
 	text-align: center;
 }
@@ -127,11 +124,11 @@ header .share {
 	top: 49%;
 	
 }
+
 .zero ul li{
 	width: 50%;
 	height: 100%;
 	display: block;
-	/*justify-content: center;*/
 }
 .sec-4{
 	position: fixed;
@@ -152,6 +149,9 @@ header .share {
 	height: 2rem;
 	font-size: 1rem;
 	border-radius: 0.5rem;
+}
+.sec-4 a{
+	box-shadow: none;
 }
 .ago{
 	position: relative;
@@ -206,8 +206,6 @@ header .share {
 }
 .ago .cal .texts ul{
 	width: 75%;
-	/*left: 50%;
-	margin-left: -50%;*/
 	color: white;
 	flex-direction: row;
 	justify-content: flex-end;
@@ -230,7 +228,6 @@ header .share {
 	justify-content: center;
 	align-items: center;
 }
-/*.tqian img:first-of-type,*/
 .tqian .first{
 	width:70%;
 	z-index: 999;
@@ -271,9 +268,6 @@ footer {
 footer dd {
 	padding-left: 2rem;
 }
-
-
-
 .dialog {
 	overflow: hidden;
 	display: none;
@@ -302,7 +296,7 @@ footer dd {
 }
 .dialog-getTel .content {
 	width: 70%;
-	border-radius: 10px;
+	border-radius: 1rem;
 	background-color: #f19149;
 	flex-direction: column;
 	justify-content: center;
@@ -313,29 +307,9 @@ footer dd {
 	width: 70%;
 	margin-left: 15%;
 }
-/*.dialog-getTel .head {
-	position: relative;
-	height: 2.2777rem;
-	border-radius: 8px 8px 0 0;
-	background: -webkit-linear-gradient(#5ce7b3, #6cc1f3); 
-	background:         linear-gradient(#5ce7b3, #6cc1f3); 
-}
-.dialog .close {
-	opacity: 1;
-}*/
-/*.dialog-getTel .head .close {
-	position: absolute;
-	top: 5px;
-	right: 5px;
-	width: 1.7222rem;
-	height: 1.7222rem;
-	text-indent: -9999px;
-	border-radius: 50%;
-	background: url(../img/newapp/qwdz-close.png) no-repeat;
-	background-size: 100% 100%; 
-}*/
 .dialog-getTel form {
 	padding: .5rem;
+	padding-top: 1rem;
 	flex-direction: column;
 	justify-content: center;
 	color: #999999;
@@ -372,10 +346,9 @@ footer dd {
 	color: #00b5d2;
 	background-color: #db6e1d;
 	border: none;
-	border-radius: 1rem;
+	border-radius: 1.2rem;
 	color: white;
-	/*font-size: 12px;*/
-}
+s}
 .fora{
 	flex-direction: row;
 	justify-content: space-around;
@@ -480,15 +453,14 @@ footer dd {
 	.dialog-getTel .head {
 		height: 41px;
 	}
-	.dialog-getTel input {
-		/*padding: 1.5rem 0 0 .5rem;*/
-	}
 	.dialog-getTel a {
-		/*margin-top: 1.3rem;*/
 		width: 84px;
 		height: 30px;
 		line-height: 30px;
 		font-size: 20px;
+	}
+	.dialog-getTel button{
+		font-size: 0.5rem;
 	}
 	.dialog-Winning .content {
 		min-width: 202px;
@@ -499,6 +471,11 @@ footer dd {
 	}
 	.ago .cal .texts ul{
 		padding: 0.2rem 0;
+	}
+}
+@media screen and (max-width: 420px) {
+	.dialog-getTel button{
+		font-size: 0.5rem;
 	}
 }
 @media screen and (min-width: 760px) and (min-height:1000px){
@@ -513,7 +490,6 @@ footer dd {
 	}
 	.dialog-getTel .content {
 		width: 25rem;
-		/*height: 19rem;*/
 	}
 	.dialog-getTel .head {
 		height: 41px;
@@ -524,24 +500,18 @@ footer dd {
 		font-size: 2rem;
 	}
 	.dialog-getTel a {
-		/*margin-top: 1.3rem;*/
 		width: 9rem;
 		height: 3rem;
 		line-height: 3rem;
 		font-size: 2rem;
 	}
-	.dialog-getTel button{
-		width: 6rem;
-		height: 4rem;
-		font-size: 1.5rem;
-	}
 }
 @media screen and (min-width: 1000px) and (min-height:1300px){
-	.text h3{
+	.sec-1 .inner .calenda .text h3{
 		font-size: 3.5rem;
 	}
-	.text{
-		bottom: 4rem;
+	.sec-1 .inner .calenda .text{
+		bottom: 5rem !important;
 	}
 	.sec-2  h3{
 		font-size: 3.5rem;
@@ -554,18 +524,13 @@ footer dd {
 	}
 	.dialog-getTel input {
 		height: 4rem;
-		/*font-size: 3rem;*/
 	}
 	.dialog-getTel a {
 		margin-top: 1.3rem;
 		width: 7rem;
-		/*height: 7rem;
-		line-height: 7rem;*/
 		font-size: 2rem;
 	}
 	.dialog-getTel button{
-		width: 9rem;
-		/*height: 9rem;*/
 		font-size: 1.5rem;
 	}
 	.sec-4 button{
