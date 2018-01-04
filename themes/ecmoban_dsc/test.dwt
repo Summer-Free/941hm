@@ -5,6 +5,7 @@
 <title>测试页面</title>
 </head>
 <script type="text/javascript" src="themes/ecmoban_dsc/js/jquery-1.9.1.min.js"></script>
+
 <body>
 	<!-- <a id="qiandao" href="javascript:;" onclick="qiandao()"; value="1" >签到</a> -->
 	<!-- <script type="text/javascript"> -->
@@ -15,7 +16,7 @@
 		}
 	} -->
 <!-- </script> -->
-		<form id="form_info" action="test.php" method="post">
+		<!-- <form id="form_info" action="test.php" method="post"> -->
             <div class="clearfix">
                 <div class="left">
                     <h3><span>关于您/</span>About you</h3>
@@ -27,39 +28,35 @@
                 <div class="right">
                     <h3><span>关于您的品牌</span>/About your brand</h3>
                     <div class="form-group clearfix">
-                        <label for="brand-name">品牌名称 :</label>
-                        <input id="brand-name" type="text" name="brand_name" />
+                        <label for="brand_name">品牌名称 :</label>
+                        <input id="brand_name" type="text" name="brand_name" />
                     </div>
                 </div>
             </div>
             <button id="submit">确认提交</button>
-        </form>
+        <!-- </form> -->
         <script type="text/javascript">
-        	var submit=function(name) {
-        		var url="test.php";
-        		var param={"username":name,"brand_name":brand_name};
-        		$.post(url,param,function (data){
-        			var result = eval('('+data+')');
-        			var reg = /^[\u4e00-\u9fa5]{2,4}$/i;
-        			if(!reg.test($("#name"))){
-	                    $("#name").parent().find(".error").remove();
-	                    $("#name").parent().append("<span class='error'>请输入2-4个汉字！</span>");
-	                    return false;
-	                }
-	                else {
-                        $("#name").parent().find(".error").remove();
-                    }
-	                if(!$("#brand-name")){
-	                	$("#brand-name").parent().find(".error").remove();
-                        $("#brand-name").parent().append("<span class='error'>品牌名不能为空</span>")
-                        return false;
-	                }
-	                else {
-                        $("#brand-name").parent().find(".error").remove();
-                    }
-        		})
-        		document.getElementById("form_info").submit();
-        	};
+            $(function(){
+                $('#submit').click(function() {
+                   var name =$('#name').val();
+                   var brand_name =$('#brand_name').val();
+                   // console.log(name);
+                   // console.log(brand_name);
+                   $.ajax({
+                       url: 'test.php',
+                       type: 'POST',
+                       dataType: 'json',
+                       data: {name: name,brand_name: brand_name},
+                   })
+                   .done(function(res) {
+                       console.log(res.id);
+                       console.log(res.info);
+                       alert(res.info);
+                       alert(res.id);
+                   });
+                   
+                });
+            });
         </script>
 </body>
 </html>	

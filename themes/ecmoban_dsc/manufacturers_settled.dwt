@@ -242,7 +242,7 @@
                         品牌合作
                         <span>由于寻求合作方较多，您提交以下合作需求后，我们将在2个工作日内与您取得联系</span>
                     </h2>
-                    <form id="form_info" action="manufacturers_settled.php" method="post">
+                    <!-- <form id="form_info" action="manufacturers_settled.php" method="post"> -->
                         <div class="clearfix">
                             <div class="left">
                                 <h3><span>关于您/</span>About you</h3>
@@ -262,8 +262,8 @@
                             <div class="right">
                                 <h3><span>关于您的品牌</span>/About your brand</h3>
                                 <div class="form-group clearfix">
-                                    <label for="brand-name">品牌名称 :</label>
-                                    <input id="brand-name" type="text" name="brand_name" />
+                                    <label for="brand_name">品牌名称 :</label>
+                                    <input id="brand_name" type="text" name="brand_name" />
                                 </div>
                                 <div class="form-group clearfix">
                                     <label for="type">行业类型 :</label>
@@ -276,7 +276,7 @@
                             </div>
                         </div>
                         <button id="submit">确认提交</button>
-                    </form>
+                    <!-- </form> -->
                 </div>
             </div>
         </div>
@@ -296,7 +296,7 @@
                     var name=$("#name").val(),
                         tel=$("#tel").val(),
                         address=$("#address").val(),
-                        brandName = $("#brand-name").val(),
+                        brand_name = $("#brand_name").val(),
                         type = $("#type").val(),
                         profile = $("#profile").val(),
                         reg = /^[\u4e00-\u9fa5]{2,4}$/i;
@@ -324,13 +324,13 @@
                         }else {
                             $("#address").parent().find(".error").remove();
                         };
-                        if (!brandName)
+                        if (!brand_name)
                         {
-                            $("#brand-name").parent().find(".error").remove();
-                            $("#brand-name").parent().append("<span class='error'>品牌名不能为空</span>")
+                            $("#brand_name").parent().find(".error").remove();
+                            $("#brand_name").parent().append("<span class='error'>品牌名不能为空</span>")
                             return false;
                         }else {
-                            $("#brand-name").parent().find(".error").remove();
+                            $("#brand_name").parent().find(".error").remove();
                         };
                         if (!type)
                         {
@@ -348,8 +348,20 @@
                         }else {
                             $("#profile").parent().find(".error").remove();
                         };
-                        $('#form_info').submit(function(){
-                            alert("表单提交成功!");
+                        // $('#form_info').submit(function(){
+                        //     alert("表单提交成功!");
+                        // });
+                        $.ajax({
+                           url: 'manufacturers_settled.php',
+                           type: 'POST',
+                           dataType: 'json',
+                           data: {name: name,tel: tel,address: address,brand_name:brand_name,type:type,profile:profile},
+                        })
+                       .done(function(res) {
+                           console.log(res.id);
+                           console.log(res.info);
+                           //alert(res.info);
+                           //alert(res.id);
                         });
                 });
             });
