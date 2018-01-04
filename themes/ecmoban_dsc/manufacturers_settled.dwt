@@ -242,7 +242,6 @@
                         品牌合作
                         <span>由于寻求合作方较多，您提交以下合作需求后，我们将在2个工作日内与您取得联系</span>
                     </h2>
-                    <!-- <form id="form_info" action="manufacturers_settled.php" method="post"> -->
                         <div class="clearfix">
                             <div class="left">
                                 <h3><span>关于您/</span>About you</h3>
@@ -276,7 +275,6 @@
                             </div>
                         </div>
                         <button id="submit">确认提交</button>
-                    <!-- </form> -->
                 </div>
             </div>
         </div>
