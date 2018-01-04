@@ -348,7 +348,7 @@
                         }else {
                             $("#profile").parent().find(".error").remove();
                         };
-                        $('#form_info').submit(function() {
+                        $('#form_info').submit(function(){
                             alert("表单提交成功!");
                         });
                 });

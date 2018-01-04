@@ -6,14 +6,14 @@
 </head>
 <script type="text/javascript" src="themes/ecmoban_dsc/js/jquery-1.9.1.min.js"></script>
 <body>
-	<a id="qiandao" href="javascript:;" onclick="qiandao()"; value="1" >签到</a>
-	<script type="text/javascript">
-	function qiandao(){
+	<!-- <a id="qiandao" href="javascript:;" onclick="qiandao()"; value="1" >签到</a> -->
+	<!-- <script type="text/javascript"> -->
+	<!-- function qiandao(){
 		var user_id=$("#qiandao").attr('value');;
 		if(user_id>0){
 			//此处打开一个签到的弹框	显示本月日历并且显示已签到的天数和签到时间顺便显示
 		}
-	}
-</script>
+	} -->
+<!-- </script> -->
 </body>
 </html>	
