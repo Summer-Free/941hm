@@ -59,8 +59,8 @@ header .share {
 	position: absolute;
 	top: 50%;
 	margin-top: 18%;
+	border-radius: 1rem;
 }
-
 .sec-1 .inner .calendar img{
 	width: 100;
 }
@@ -113,7 +113,6 @@ header .share {
 }
 .zero img{
 	width: 100%;
-	
 }
 .zero1 ul,
 .zero2 ul{
@@ -183,7 +182,6 @@ header .share {
 }
 .table tr{
 	width: 100%;
-	
 }
 .table tr td,
 .table tr th{
@@ -281,7 +279,6 @@ footer dd {
 	height: calc(100vh);
 	background-color: rgba(0,0,0,.5);
 }
-
 .dialog-Winning .content,
 .dialog-getTel .content {
 	position: fixed;
@@ -350,7 +347,7 @@ footer dd {
 	border: none;
 	border-radius: 1.2rem;
 	color: white;
-s}
+}
 .fora{
 	flex-direction: row;
 	justify-content: space-around;
@@ -434,7 +431,6 @@ s}
 	width: 19.8888rem;
 	align-self: center;
 }
-
 .follow {
 	display: none;
 	position: fixed;
@@ -450,7 +446,10 @@ s}
 }
 @media screen and (max-width: 375px) {
 	.dialog-getTel .content {
-		/*width: 250px;*/
+		width: 250px;
+	}
+	.dialog-getTel .head {
+		height: 41px;
 	}
 	.dialog-getTel a {
 		width: 84px;
@@ -462,8 +461,8 @@ s}
 		font-size: 0.5rem;
 	}
 	.dialog-Winning .content {
-		/*min-width: 202px;
-		min-height: 324px;*/
+		min-width: 202px;
+		min-height: 324px;
 	}
 	.ago .cal .texts{
 		bottom: 10rem;
@@ -546,5 +545,3 @@ s}
 		padding: 1rem 0;
 	}
 }
-
-

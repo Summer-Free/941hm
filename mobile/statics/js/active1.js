@@ -4,6 +4,7 @@ $(function() {
 	var qian = function(){
 		var url = '../mobile/index.php?r=active/index/sign';
 		$.post(url,function (data){
+			console.log(data)
 			var result = eval('('+data+')');
 			if(result.code == 22){
 				$(".true").hide();
@@ -13,7 +14,7 @@ $(function() {
 	}
 	qian();
 	//当天日期
-	 var getTime =  function(){
+	var getTime =  function(){
 		var dates = new Date();
 		var year = dates.getFullYear();
 		var month = dates.getMonth() +1;
@@ -26,10 +27,10 @@ $(function() {
 		week.innerText=(weeks[day]);
 		time.innerText=(year+"年"+(month)+"月"+date+"日");
 		intime.innerText=(year+"年"+(month)+"月");
-		setTimeout(arguments.callee,1000);
+		setTimeout(arguments.callee,0);
 		return date;
 	}
-   getTime();
+    getTime();
     var no_img = '../mobile/statics/img/404.png';
     // 登录弹窗
     var getTel = function () {
@@ -87,7 +88,6 @@ $(function() {
                     getTel();
                     break;
                 default:
-                    //
                     layer.open({content:'未知错误'})
                     break;
             }
@@ -146,23 +146,19 @@ $(function() {
         })
     };
     init_prize();
-
     //微信打开时，显示关注公众号广告条
     if(isWeiXin()) {
         $(".follow").show();
     }
-
     //点击牌面，弹出弹窗
     $(".sec-2 li div").on("click",function() {
         prize($(this));
     });
-
     //点击关闭按钮，关闭弹窗
     $(".dialog .close").on("click",function() {
         var $this = $(this);
         $this.parents(".dialog").hide();
     });
-
     //点击获取验证码
     $(".dialog-getTel .getCode button").on("click",function(e) {
         var tel = $('#tel').val();
@@ -194,7 +190,6 @@ $(function() {
                 }
             });
         }
-
     });
     // 完成验证码登录
     $(".dialog-getTel .finish").on("click",function() {
@@ -225,7 +220,6 @@ $(function() {
                 });
     		};
     });
-
     $(".dialog-Winning a").on("click",function() {
         var $dialog = $(".dialog-Winning");
         $dialog.hide();
@@ -238,7 +232,6 @@ $(function() {
             $('.dialog-share').show();
         }
     });
-
     $('.dialog-share,.dialog-wx-share').on('click',function () {
         $(this).hide();
     });
@@ -328,11 +321,10 @@ $(function() {
 		if(month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10|| month == 12 ){
 			var days = 31;
 		}else if(month == 2){
-			
 			if((b == 0 && c != 0) || d == 0 ){
 				days = 29;
 			}else{
-				days = 8;
+				days = 28;
 			}
 		}else{
 			days = 30;
@@ -341,7 +333,7 @@ $(function() {
 		var firstDay =  + "0123456".split("")[new Date(Date.UTC(year, month-1, 1)).getDay()];
 		//开始打印
 		for(var i=0; i< firstDay; i++){
-			$(".cla1 td:eq("+i+")").text("");
+			$(".cla1 td:eq("+i+")").text(" ");
 		}
 		for(var j=1, i= firstDay; j<=7-firstDay; j++,i++) {
 			$(".cla1 td:eq("+i+")").text(j);
@@ -350,12 +342,6 @@ $(function() {
 		var b = 0; 
 		var times = 0;
 		for(var i=8-firstDay; i<=days;i++){
-//			if(date == i){
-//				$(".cla"+a+" td:eq("+b+")").css({
-//					"border-radius":"3rem",
-//					"background-color": "#fed055"
-//				});
-//			}
 			for(var j=0; j<arr.length;j++){
 				if(arr[j] == i){
 					$(".cla"+a+" td:eq("+b+")").css({
@@ -375,4 +361,3 @@ $(function() {
 		} 
 	}
 });
-//18871716570

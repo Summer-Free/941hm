@@ -15,5 +15,51 @@
 		}
 	} -->
 <!-- </script> -->
+		<form id="form_info" action="test.php" method="post">
+            <div class="clearfix">
+                <div class="left">
+                    <h3><span>关于您/</span>About you</h3>
+                    <div class="form-group clearfix">
+                        <label for="name">您的姓名 :</label>
+                        <input id="name" type="text" name="username" />
+                    </div>
+                </div>
+                <div class="right">
+                    <h3><span>关于您的品牌</span>/About your brand</h3>
+                    <div class="form-group clearfix">
+                        <label for="brand-name">品牌名称 :</label>
+                        <input id="brand-name" type="text" name="brand_name" />
+                    </div>
+                </div>
+            </div>
+            <button id="submit">确认提交</button>
+        </form>
+        <script type="text/javascript">
+        	var submit=function(name) {
+        		var url="test.php";
+        		var param={"username":name,"brand_name":brand_name};
+        		$.post(url,param,function (data){
+        			var result = eval('('+data+')');
+        			var reg = /^[\u4e00-\u9fa5]{2,4}$/i;
+        			if(!reg.test($("#name"))){
+	                    $("#name").parent().find(".error").remove();
+	                    $("#name").parent().append("<span class='error'>请输入2-4个汉字！</span>");
+	                    return false;
+	                }
+	                else {
+                        $("#name").parent().find(".error").remove();
+                    }
+	                if(!$("#brand-name")){
+	                	$("#brand-name").parent().find(".error").remove();
+                        $("#brand-name").parent().append("<span class='error'>品牌名不能为空</span>")
+                        return false;
+	                }
+	                else {
+                        $("#brand-name").parent().find(".error").remove();
+                    }
+        		})
+        		document.getElementById("form_info").submit();
+        	};
+        </script>
 </body>
 </html>	
