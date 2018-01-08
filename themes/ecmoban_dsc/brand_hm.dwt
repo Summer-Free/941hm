@@ -277,6 +277,64 @@
 								</div>
 							</div>
 						</li>
+						<li>
+							<div class="list1">
+								<a href="javascript:void(0);"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/9banner.jpg" src="<!--themes/ecmoban_dsc/iamges/20170517/9banner.jpg-->" alt=""></a>
+								<div class="list-blank">
+									<div class="list-text">梨想家红木热销</div>
+									<a href="javascript:void(0);"><div class="list-collect">收藏品牌</div></a>
+									<div class="clear"></div>
+									<div class="list-pro">
+										<ul>
+											<!--{foreach item=jh_brand from=$jh_brand name=jh_brand}-->
+					                        <!-- {if $smarty.foreach.jh_brand.iteration !=4}-->
+					                        <li class="list-pro1">
+					                        <!--{elseif $smarty.foreach.jh_brand.iteration ==4}-->
+					                        <li class="list-pro2">
+					                        <!--{/if}-->
+					                                <a target="_blank" href="goods.php?id={$jh_brand.goods_id}">
+					                                    <img class="lazy"  src="<!--{$jh_brand.goods_thumb}-->" data-original="{$jh_brand.goods_thumb}" width="270" height="270" alt="">
+					                                    <div class="list-pro-text">
+					                                        <h3>{$jh_brand.goods_name|truncate:15}</h3>
+					                                        <p>￥{$jh_brand.shop_price}</p>
+					                                    </div>
+					                                </a>
+					                          </li>
+					                        <!--{/foreach}-->
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="list1">
+								<a href="javascript:void(0);"><img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/10banner.jpg" src="<!--themes/ecmoban_dsc/iamges/20170517/10banner.jpg-->" alt=""></a>
+								<div class="list-blank">
+									<div class="list-text">哈得屋</div>
+									<a href="javascript:void(0);"><div class="list-collect">收藏品牌</div></a>
+									<div class="clear"></div>
+									<div class="list-pro">
+										<ul>
+											<!--{foreach item=jh_brand from=$jh_brand name=jh_brand}-->
+					                        <!-- {if $smarty.foreach.jh_brand.iteration !=4}-->
+					                        <li class="list-pro1">
+					                        <!--{elseif $smarty.foreach.jh_brand.iteration ==4}-->
+					                        <li class="list-pro2">
+					                        <!--{/if}-->
+					                                <a target="_blank" href="goods.php?id={$jh_brand.goods_id}">
+					                                    <img class="lazy"  src="<!--{$jh_brand.goods_thumb}-->" data-original="{$jh_brand.goods_thumb}" width="270" height="270" alt="">
+					                                    <div class="list-pro-text">
+					                                        <h3>{$jh_brand.goods_name|truncate:15}</h3>
+					                                        <p>￥{$jh_brand.shop_price}</p>
+					                                    </div>
+					                                </a>
+					                          </li>
+					                        <!--{/foreach}-->
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
 					</ul>
 				</div>
 			</div>
