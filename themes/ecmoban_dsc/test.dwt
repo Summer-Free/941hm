@@ -17,7 +17,7 @@
 	} -->
 <!-- </script> -->
 		<!-- <form id="form_info" action="test.php" method="post"> -->
-            <div class="clearfix">
+           <!--  <div class="clearfix">
                 <div class="left">
                     <h3><span>关于您/</span>About you</h3>
                     <div class="form-group clearfix">
@@ -35,8 +35,8 @@
             </div>
             <button id="submit">确认提交</button>
         <!-- </form> -->
-        <script type="text/javascript">
-            $(function(){
+        <!-- <script type="text/javascript"> -->
+           <!--  $(function(){
                 $('#submit').click(function() {
                    var name =$('#name').val();
                    var brand_name =$('#brand_name').val();
@@ -56,7 +56,7 @@
                    });
                    
                 });
-            });
-        </script>
+            }); -->
+        <!-- </script> --> -->
 </body>
 </html>	

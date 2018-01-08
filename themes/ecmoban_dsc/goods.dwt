@@ -151,9 +151,9 @@
                             <!--{/if}-->
                         </div>
                         <!-- 这里是商品详情页中的活动海放置点-->
-                            <a href="newyear_active.php">
+                            <!-- <a href="newyear_active.php">
                                 <img src="themes/ecmoban_dsc/iamges/20170517/active-11-pic.jpg" alt="" />
-                            </a>
+                            </a> -->
                         
                         <div class="summary clearfix">
                             <!--goods页面-->
