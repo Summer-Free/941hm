@@ -293,3 +293,48 @@
     background-color: #ff9f29;
     cursor: pointer;
 }
+.ms_form{
+    padding-top: 82px;
+}
+.tip{
+    display: none;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    width: 100%;
+    top: -350px;
+    z-index: 2999999999;
+}
+.tip p{
+    line-height: 40px;
+}
+.tip_title{
+    position: absolute;
+    width: 350px;
+    height: 220px;
+    background-color: #155794;
+    color: #dadada;
+    margin: auto 40%;
+}
+.tip_con{
+    width: 350px;
+    height: 120px;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #e6e6e6;
+    padding: 30px;
+    color: #7c7c7c;
+}
+.tip_button{
+    height: 60px;
+    padding-top: 10px;
+    background-color: #e6e6e6;
+}
+.tip_button button{
+    width: 100px;
+    height: 35px;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+    background-color: #dadada;
+    color: #555;
+}
