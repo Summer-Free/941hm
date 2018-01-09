@@ -1109,9 +1109,9 @@ a.btn-stages:hover {
 .choose-suit .dt, .choose-type .dt, .choose-version .dt em{ padding-right:24px;}
 
 .seller-pop{ float:right; width:210px; border:1px solid #dcdcdc; position:relative;}
-.seller-logo{ height:60px; width:100%; text-align:center; line-height:60px; font-size:12px; font-weight:bold;}
-.seller-logo a{ display:inline-block; width:180px; height:60px;}
-.seller-logo img{ float:none; width:120px; padding-top:10px;} 
+.seller-logo{ height:80px; width:100%; text-align:center; line-height:60px; font-size:12px; font-weight:bold;}
+.seller-logo a{ display:inline-block;/*  width:180px; */ height:60px;}
+.seller-logo img{ float:none; width:171px;height: 80px; /* padding-top:10px; */} 
 .seller-infor{ padding:0 20px; height:32px; line-height:32px; border-top:1px solid #dcdcdc; position:relative; text-align:center;}
 .seller-infor .name{ color:#3a78bf;}
 .seller-infor .name:hover{ color:#ec5051; text-decoration:underline;}
@@ -1130,7 +1130,7 @@ a.btn-stages:hover {
 .score-part .score-desc{ display: inline-block;width: 85px;color: #666;}
 .score-part .score-desc em{ color:#333; margin-left:5px;}
 .score-part .score-change em{ color:#333; padding-left:15px; display:inline-block; width:32px;}
-.seller-address{ padding:5px 0px 5px 19px;border-top:1px solid #dcdcdc;}
+.seller-address{ padding:5px 0px 5px 55px;border-top:1px solid #dcdcdc;}
 .seller-address .item{ line-height:25px;}
 .seller-address .item .label{ color:#999;} 
 .seller-address .item .text{ color:#333;}

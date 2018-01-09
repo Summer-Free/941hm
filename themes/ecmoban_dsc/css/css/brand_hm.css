@@ -24,6 +24,9 @@
 .show-list{
 	padding-top: 20px;
 }
+.show-list ul li{
+	padding-bottom: 20px;
+}
 .list-blank{
 	background-color: white;
 	height: 460px;
