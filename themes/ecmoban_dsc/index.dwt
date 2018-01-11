@@ -51,7 +51,7 @@
 	                    <h1 class="logo">
 	                    	<a href="index.php">941红木</a>
                         </h1>
-                        <img style="padding-left: 230px;" src="themes/ecmoban_dsc/iamges/20170517/lcw_logo.png" alt="">
+                        <img style="padding-left: 200px;width: 455px;padding-top: 8px;" src="themes/ecmoban_dsc/iamges/20170517/lcw_logo.png" alt="">
 	                </div>
 	                <img class="float-r" src="themes/ecmoban_dsc/iamges/20170517/wechat.png" alt="二维码">
 	                <div class="float-r">

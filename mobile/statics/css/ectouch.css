@@ -766,6 +766,8 @@ transform: rotate(135deg);background:#fff; bottom:-.6rem; z-index: -1; left:50%;
 .product-list-medium ul li{float:left; width:50%; padding:2rem 0 1rem 0;border-bottom: 1px solid #ccc;}
 .product-list-medium ul li:nth-child(2n-1){padding-right:0.2rem; /* border-right: 1px solid #ccc; */}
 .product-list-medium ul li:nth-child(2n){padding-left:0.2rem;}
+/* .product-list-medium ul li:last-child{border-bottom:none;}
+.product-list-medium ul li:nth-last-child(2){border-bottom:none;} */
 
 .product-list-medium .product-text{padding:.8rem;}
 
