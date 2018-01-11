@@ -197,3 +197,5 @@
     color: #666666;
 }
 /* 首页产品样式 end */
+.product-list-medium ul li:last-child{border-bottom:none;}
+.product-list-medium ul li:nth-last-child(2){border-bottom:none;}
