@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/mobile/vendor/composer" />
+      <path value="$PROJECT_DIR$/mobile/vendor/sentry/sentry" />
+      <path value="$PROJECT_DIR$/mobile/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/mobile/vendor/ectouch/framework" />
+      <path value="$PROJECT_DIR$/mobile/vendor/overtrue/pinyin" />
+      <path value="$PROJECT_DIR$/mobile/vendor/ectouch/libraries" />
+      <path value="$PROJECT_DIR$/mobile/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/mobile/vendor/ectouch/wechat" />
+      <path value="$PROJECT_DIR$/mobile/vendor/ectouch/verify" />
+      <path value="$PROJECT_DIR$/mobile/vendor/phpoffice/phpexcel" />
+    </include_path>
+  </component>
+</project>

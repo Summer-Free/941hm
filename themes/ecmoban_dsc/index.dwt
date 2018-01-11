@@ -101,6 +101,8 @@
 		                        	<!--全部分类-->
 		                            全部分类
 		                            <div class="dropdown-menu">
+		                            </div>
+		                            <!-- <div class="dropdown-menu">
 		                                <dl class="position">
 		                                    <dt>餐厅 :</dt>
 		                                    <dd>
@@ -176,7 +178,7 @@
 		                                        <a href="category.php?id=476">明式</a>
 		                                    </dd>
 		                                </dl>
-		                            </div>  
+		                            </div>   -->
 		                        </li>
 		                        <!--{foreach item=middle_nav from=$nav.middle name=middle_nav}-->
 			                        <!-- {if $middle_nav.name =='首页'}-->
