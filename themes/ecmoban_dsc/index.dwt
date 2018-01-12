@@ -81,7 +81,7 @@
 	            </div> 
 				<script type="text/javascript">
 					$(document).ready(function(){
-						var min_height = 153;
+						var min_height = 123;
 						$(window).scroll(function(){
 							var s =$(window).scrollTop();
 							if(s > min_height){
@@ -100,8 +100,33 @@
 		                        <li class="classification">
 		                        	<!--全部分类-->
 		                            全部分类
-		                            <div class="dropdown-menu">
+		                            <div class="dropdown-menu" style="overflow:visible;padding: 0px;">
+		                            	<div class="dropdown_menu_all">
+		                            		<div class="dropdown_menu_title">
+			                            		<ul class="dropdown_menu_titlename">
+				                            		<li>餐厅</li>
+				                            		<li>客厅</li>
+				                            		<li>书房</li>
+				                            		<li>卧室</li>
+				                            		<li>材质</li>
+				                            		<li>风格</li>
+				                            	</ul>
+			                            	</div>
+			                            	<div class="dropdown_menu_con">
+			                            		<div class="dropdown_menu_con_item">
+			                            			餐桌圆桌酒柜/酒架四方桌餐边柜
+			                            		</div>
+			                            	</div>
+		                            	</div>
 		                            </div>
+		                            <script type="text/javascript">
+		                            	$(".dropdown_menu_titlename li").mouseenter(function(){
+											$(".dropdown_menu_con").css('display', 'block');
+										})
+										$(".dropdown_menu_all").mouseleave(function(){
+											$(".dropdown_menu_con").css('display', 'none');
+										})
+		                            </script>
 		                            <!-- <div class="dropdown-menu">
 		                                <dl class="position">
 		                                    <dt>餐厅 :</dt>

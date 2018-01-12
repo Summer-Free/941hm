@@ -54,9 +54,9 @@
                        alert(res.info);
                        alert(res.id);
                    });
-                   
+
                 });
             }); -->
         <!-- </script> --> -->
 </body>
-</html>	
+</html>
