@@ -365,10 +365,9 @@
     font-size: 20px;
     line-height: 85px;
 }
-.dropdown_menu_all ul li:hover{
+.dropdown_menu_all ul li:hover,.menu_hover{
 	background-color: #ccc;
 }
-#dropdown_menu_title{}
 .dropdown_menu_con{
 	display: none;
 	position: absolute;
@@ -383,7 +382,6 @@
 }
 .dropdown_menu_con_item{
 	padding: 20px;
-	color: #000 !important;
 }
 
 /* 首页左侧导航栏  end */
