@@ -238,6 +238,7 @@
 	width: 0px;
 	height: 0px;
 	overflow: hidden;
+	margin-top: 10px;
 }
 #header .classification dl {
 	overflow: hidden;
@@ -354,3 +355,35 @@
 	height: 50px;
 }
 /*禅学院的下拉菜单 end*/
+/* 首页左侧导航栏  start */
+.dropdown_menu_all{
+	position: relative;
+}
+.dropdown_menu_all ul li{
+	width: 100%;
+    height: 86px;
+    font-size: 20px;
+    line-height: 85px;
+}
+.dropdown_menu_all ul li:hover{
+	background-color: #ccc;
+}
+#dropdown_menu_title{}
+.dropdown_menu_con{
+	display: none;
+	position: absolute;
+	width: 721px;
+	height: 517px;
+	top: 0;
+	left: 289px;
+	background-color: #fff;
+}
+.dropdown_menu_con:hover{
+	display: block;
+}
+.dropdown_menu_con_item{
+	padding: 20px;
+	color: #000 !important;
+}
+
+/* 首页左侧导航栏  end */
