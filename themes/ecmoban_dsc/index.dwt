@@ -123,7 +123,7 @@
 												  dataType:"json",//传输格式
 												  data:{category_id: category_id},
 												  success: function(res) {
-												  	console.log(res.name);
+												  	console.log(res);
 ;												  }
 											});
 											$(".dropdown_menu_con").fadeIn();
@@ -134,7 +134,6 @@
 											$(".dropdown_menu_con").fadeOut();
 											$(".menu_hover").removeClass("menu_hover");
 										})
-										$.ajax
 		                            </script>
 		                            <!-- <div class="dropdown-menu">
 		                                <dl class="position">

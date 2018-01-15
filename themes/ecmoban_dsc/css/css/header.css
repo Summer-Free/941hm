@@ -358,12 +358,13 @@
 /* 首页左侧导航栏  start */
 .dropdown_menu_all{
 	position: relative;
+	height:516px;
 }
 .dropdown_menu_all ul li{
 	width: 100%;
-    height: 86px;
+    height: 73px;
     font-size: 20px;
-    line-height: 85px;
+    line-height: 73px;
 }
 .dropdown_menu_all ul li:hover,.menu_hover{
 	background-color: #ccc;
