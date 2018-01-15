@@ -103,12 +103,9 @@
 		                            <div class="dropdown-menu" style="overflow:visible;padding: 0px;">
 		                            	<div class="dropdown_menu_all">
 		                            		<ul class="dropdown_menu_titlename">
-			                            		<li>餐厅</li>
-			                            		<li>客厅</li>
-			                            		<li>书房</li>
-			                            		<li>卧室</li>
-			                            		<li>材质</li>
-			                            		<li>风格</li>
+		                            			<!--{foreach item=top_catgory_info from=$top_catgory_info name=top_catgory_info}-->
+			                            			<li value="{$top_catgory_info.cat_id}">{$top_catgory_info.cat_name}</li>
+			                            		<!--{/foreach}-->
 			                            	</ul>
 			                            	<div class="dropdown_menu_con">
 			                            		<div class="dropdown_menu_con_item" style="color:#000;">
@@ -119,6 +116,16 @@
 		                            </div>
 		                            <script type="text/javascript">
 		                            	$(".dropdown_menu_titlename li").mouseenter(function(){
+		                            		var category_id = $(this).attr("value");
+		        							$.ajax({
+												  url:"index.php",
+												  type:"POST",
+												  dataType:"json",//传输格式
+												  data:{category_id: category_id},
+												  success: function(res) {
+												  	console.log(res.name);
+;												  }
+											});
 											$(".dropdown_menu_con").fadeIn();
 											$(this).addClass("menu_hover").siblings().removeClass("menu_hover");
 										})
