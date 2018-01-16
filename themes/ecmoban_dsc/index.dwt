@@ -108,25 +108,37 @@
 			                            		<!--{/foreach}-->
 			                            	</ul>
 			                            	<div class="dropdown_menu_con">
-			                            		<div class="dropdown_menu_con_item" style="color:#000;">
-			                            			餐桌圆桌酒柜/酒架四方桌餐边柜
+			                            		<div class="dropdown_menu_con_item" id="dropdown_menu_con_item" style="color:#000;">
+			                            			<!--餐桌圆桌酒柜/酒架四方桌餐边柜<--></-->
 			                            		</div>
 			                            	</div>
 		                            	</div>
 		                            </div>
 		                            <script type="text/javascript">
 		                            	$(".dropdown_menu_titlename li").mouseenter(function(){
-		                            		var category_id = $(this).attr("value");
+		                            		var category_id = $(this).val();
 		        							$.ajax({
 												  url:"index.php",
 												  type:"POST",
 												  dataType:"json",//传输格式
 												  data:{category_id: category_id},
 												  success: function(res) {
-												  	console.log(res);
-;												  }
+												  	//console.log(res);
+												  	var html="";
+												  	for(var i=0;i<res.length;i++){
+												  		//console.log(res[i]);
+												  		html +="<span>"+res[i].cat_name+"</span>";
+												  		/*for(var j=0;j<i.length;j++){
+												  			console.log(j);
+												  		}*/
+												  		//console.log(html);
+												  	}
+												  	console.log(html);
+												  	$(".dropdown_menu_con_item").html(html);
+												  	$(".dropdown_menu_con").fadeIn();
+												  }
 											});
-											$(".dropdown_menu_con").fadeIn();
+											//$(".dropdown_menu_con").fadeIn();
 											$(this).addClass("menu_hover").siblings().removeClass("menu_hover");
 										})
 										$(".dropdown_menu_all").mouseleave(function(){
