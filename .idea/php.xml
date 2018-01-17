@@ -12,6 +12,9 @@
       <path value="$PROJECT_DIR$/mobile/vendor/ectouch/wechat" />
       <path value="$PROJECT_DIR$/mobile/vendor/ectouch/verify" />
       <path value="$PROJECT_DIR$/mobile/vendor/phpoffice/phpexcel" />
+      <path value="$PROJECT_DIR$/mobile/vendor/phpqrcode/bindings" />
+      <path value="$PROJECT_DIR$/mobile/vendor/phpqrcode/tools" />
+      <path value="$PROJECT_DIR$/mobile/vendor/phpqrcode/cache" />
     </include_path>
   </component>
 </project>
