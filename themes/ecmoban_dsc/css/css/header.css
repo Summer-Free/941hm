@@ -382,7 +382,12 @@
 	display: block;
 }
 .dropdown_menu_con_item{
-	padding: 20px;
+	padding: 20px 50px;
+	text-align: left;
 }
-
+#header .nav-content span{
+	color: #000;
+	font-size: 16px;
+	margin-right: 20px;
+}
 /* 首页左侧导航栏  end */
