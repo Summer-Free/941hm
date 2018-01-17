@@ -42,8 +42,38 @@ header .share {
 	width: 100%;
 	display: block;
 }
+.sec-1 .inner .active_rule{
+	width: 28%;
+    position: absolute;
+    margin-left: 60%;
+}
+.sec-1 .inner .active_rule_con{
+	position: absolute;
+	margin: 0 18%;
+	width: 64%;
+	z-index: 999;
+}
+.sec-1 .inner .active_rule_close{
+	position: absolute;
+	z-index: 999;
+	top: 2%;
+    left: 85%;
+}
+.sec-1 .inner .active_rule_text{
+	position: absolute;
+	z-index: 999;
+	top: 8%;
+    left: 15%;
+    right: 15%;
+}
+.sec-1 .inner .active_rule_text p{
+	font-size: 20px;
+}
 .sec-1 .inner .imgs{
-	width: 100%;
+	width: 28%;
+    position: absolute;
+    margin-top: 73%;
+    margin-left: 36%;
 }
 .sec-1 .inner .imgs .img{
 	width: 100%;
@@ -58,11 +88,12 @@ header .share {
 	width: 65%;
 	position: absolute;
 	top: 50%;
-	margin-top: 18%;
+	margin-top: 15%;
 	border-radius: 1rem;
 }
+
 .sec-1 .inner .calendar img{
-	width: 100;
+	width: 100%;
 }
 .sec-1 .inner .calendar .text{
 	position: absolute;
@@ -84,7 +115,7 @@ header .share {
 }
 .sec-2 ul {
 	padding-top: 2rem;
-	background-color: #FED056;
+	background-color: #fecb4c;
 }
 .sec-2 li {
 	margin-bottom: 1.5rem;
@@ -110,9 +141,11 @@ header .share {
 	position: relative;
 	overflow: hidden;
 	z-index: 999 !important;
+	margin-top: 20px;
 }
 .zero img{
 	width: 100%;
+	
 }
 .zero1 ul,
 .zero2 ul{
@@ -137,6 +170,7 @@ header .share {
 	width: 100%;
 	flex-direction: column;
 	justify-content: space-around;
+	z-index: 999;
 }
 .sec-4 button{
 	color: #c29214;
@@ -182,6 +216,7 @@ header .share {
 }
 .table tr{
 	width: 100%;
+	
 }
 .table tr td,
 .table tr th{
@@ -260,7 +295,7 @@ hr{
 	width: 4px;
 }
 footer {
-	padding: 1rem 1.5rem 5.555rem;
+	padding: 1.5rem 0rem 3.1rem;
 	color: #fff;
 	background-size: 34.888rem 8.777rem; 
 	background-color: #fecb4c;
@@ -279,6 +314,7 @@ footer dd {
 	height: calc(100vh);
 	background-color: rgba(0,0,0,.5);
 }
+
 .dialog-Winning .content,
 .dialog-getTel .content {
 	position: fixed;
@@ -347,7 +383,7 @@ footer dd {
 	border: none;
 	border-radius: 1.2rem;
 	color: white;
-}
+s}
 .fora{
 	flex-direction: row;
 	justify-content: space-around;
@@ -431,6 +467,7 @@ footer dd {
 	width: 19.8888rem;
 	align-self: center;
 }
+
 .follow {
 	display: none;
 	position: fixed;
@@ -545,3 +582,5 @@ footer dd {
 		padding: 1rem 0;
 	}
 }
+
+

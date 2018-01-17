@@ -360,4 +360,10 @@ $(function() {
 			}
 		} 
 	}
+    $(".active_rule").on("click",function(){
+        $(".active_rule_con").show();
+    });
+    $(".active_rule_close").on("click",function(){
+        $(".active_rule_con").hide();
+    });
 });
