@@ -14,13 +14,13 @@
     	 <img  width="100%" src="../mobile/statics/img/newapp/q4.jpg" alt="" />
     	 <div class="inner">
             <img class="active_rule" src="../mobile/statics/img/newapp/rule_icon.png" alt="" />
-            <div class="active_rule_con" style="display: block;">
+            <div class="active_rule_con" style="display: none;">
                 <img width="100%" src="../mobile/statics/img/newapp/rule_bg.jpg" alt="">
                 <div class="active_rule_close">
                     <img width="85%" src="../mobile/statics/img/newapp/rule_close.png" alt="">
                 </div>
                 <div class="active_rule_text">
-                    <p>活动规则</p>
+                    <!-- <p>活动规则</p> -->
                     {nl2br($config.rule)}
                 </div>
             </div>
@@ -141,7 +141,9 @@
             {nl2br($config.rule)}
         </dd>
     </dl> -->
-    <img width="100%" src="../mobile/statics/img/newapp/extension_banner.jpg" alt="">
+    <a href="javascript:void(0)">
+        <img width="100%" src="../mobile/statics/img/newapp/extension_banner.jpg" alt="">
+    </a>
 </footer>
 <!--<div class="dialog-getTel dialog" >
     <div class="content" >
@@ -158,7 +160,7 @@
 </div>-->
 <div class="dialog-getTel dialog flex" >
 	<!--<img class="img-responsive" src="../mobile/statics/img/newapp/yan.png" alt="">-->
-    <div class="content"style="margin-top: 200px;"><!---->
+    <div class="content" style="margin-top: 200px;"><!---->
         <form class="flex" action="">
             <input id="tel" type="number" pattern="[0-9]*" placeholder="请输入您的手机号" />
             <div class="getCode flex" >
@@ -166,11 +168,11 @@
                 <button type="button">获取验证码</button>
             </div>
             <div class="flex fora">
-            	<div class="kong"></div>
+            	<!-- <div class="kong"></div> -->
             	 <a class="finish">完成</a>
-            	 <div class="kong"></div>
-            	 <a class="cansle">取消</a>
-            	 <div class="kong"></div>
+            	 <!-- <div class="kong"></div>
+                 <a class="cansle">取消</a>
+                 <div class="kong"></div> -->
             </div>
         </form>
     </div>
