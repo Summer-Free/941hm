@@ -163,6 +163,7 @@ $(function() {
     $(".dialog-getTel .getCode button").on("click",function(e) {
         var tel = $('#tel').val();
         var check_tel = check_phone(tel),$this = $(this);
+        console.log(check_tel)
         if(check_tel){
             var param = {phone:tel};
             var url = '../mobile/index.php?r=active/index/send';
