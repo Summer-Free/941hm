@@ -32,13 +32,20 @@
                         <h1 class="logo">
                             <a href="index.php">941红木</a>
                         </h1>
+                        <img style="padding-left: 200px;width: 455px;padding-top: 8px;" src="themes/ecmoban_dsc/iamges/20170517/lcw_logo.png" alt="">
                     </div>
                     <img class="float-r" src="themes/ecmoban_dsc/iamges/20170517/wechat.png" alt="二维码">
                     <div class="float-r">
                         <div class="wrap-search clearfix">
                             <div class="shopCart">
+                                <a class="color-ff0000" href="user.php">
+                                    <img src="themes/ecmoban_dsc/iamges/20170517/personal_center.png" alt="">
+                                    <!-- <span class="cart_num" style="text-align: center;"></span> -->
+                                </a>
+                            </div>
+                            <div class="shopCart">
                                 <a class="color-ff0000" href="flow.php">
-                                    <i></i>我的购物车
+                                    <img src="themes/ecmoban_dsc/iamges/20170517/flow.png" alt="">
                                     <!-- <span class="cart_num" style="text-align: center;"></span> -->
                                 </a>
                             </div>
@@ -59,12 +66,62 @@
                         </div>  
                     </div>
                 </div>    
-                <div class="wrap-nav bg-color-95b0b2">
+                <div class="wrap-nav bg-color-fff bg_nav_style">
                     <div class="w1200">
                         <div class="nav-content">
                             <ul class="main-nav clearfix">
                                 <li class="classification"><!--全部分类-->
-                                    全部分类
+                                    <img src="themes/ecmoban_dsc/iamges/20170517/icon_classification.png" alt="">全部分类
+                                    <div class="dropdown-menu" style="overflow:visible;padding: 0px;">
+                                        <div class="dropdown_menu_all">
+                                            <ul class="dropdown_menu_titlename">
+                                                <!--{foreach item=top_catgory_info from=$top_catgory_info name=top_catgory_info}-->
+                                                    <li value="{$top_catgory_info.cat_id}">
+                                                        {$top_catgory_info.cat_name}<img src="themes/ecmoban_dsc/iamges/20170517/icon_right.png" alt="">
+                                                    </li>
+                                                <!--{/foreach}-->
+                                            </ul>
+                                            <div class="dropdown_menu_con">
+                                                <div class="dropdown_menu_con_item">
+                                                    <!--餐桌圆桌酒柜/酒架四方桌餐边柜<--></-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript">
+                                        $(".dropdown_menu_titlename li").mouseenter(function(){
+                                            var category_id = $(this).val();
+                                            $.ajax({
+                                                  url:"index.php",
+                                                  type:"POST",
+                                                  dataType:"json",//传输格式
+                                                  data:{category_id: category_id},
+                                                  success: function(res) {
+                                                    //console.log(res);
+                                                    var html="";
+                                                    for(var i=0;i<res.length;i++){
+                                                        //console.log(res[i]);
+                                                        html +="<a href="+res[i].url+" alt="+res[i].cat_name+"><span>"+res[i].cat_name+"</span></a>";
+                                                        /*for(var j=0;j<i.length;j++){
+                                                            console.log(j);
+                                                        }*/
+                                                        //console.log(html);
+                                                    }
+                                                    //console.log(html);
+                                                    $(".dropdown_menu_con_item").html(html);
+                                                    $(".dropdown_menu_con").fadeIn();
+                                                  }
+                                            });
+                                            //$(".dropdown_menu_con").fadeIn();
+                                            $(this).addClass("menu_hover").siblings().removeClass("menu_hover");
+                                        })
+                                        $(".dropdown_menu_all").mouseleave(function(){
+                                            //$(".dropdown_menu_con").css('display', 'none');
+                                            $(".dropdown_menu_con").fadeOut();
+                                            $(".menu_hover").removeClass("menu_hover");
+                                        })
+                                    </script>
+                                    <!-- 全部分类
                                     <div class="dropdown-menu">
                                         <dl class="position">
                                             <dt>餐厅 :</dt>
@@ -141,7 +198,7 @@
                                                 <a href="category.php?id=476">明式</a>
                                             </dd>
                                         </dl>
-                                    </div>  
+                                    </div>   -->
                                 </li>
                                 <li class="newactive"><a href="index.php">首页</a></li>
                                 <li class="newactive"><a href="experience_museum.php">VR体验馆</a></li>
@@ -163,7 +220,7 @@
             <!--Navigation end-->
             <script type="text/javascript" src="themes/ecmoban_dsc/js/nav_color.js"></script>
             <style>
-                .navactive{background-color: #770622;}
+                .navactive a{color: red;}
             </style>
             <!-- 将导航栏固定到顶部 start -->
             <script type="text/javascript">

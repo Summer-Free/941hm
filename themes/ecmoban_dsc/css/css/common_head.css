@@ -1,6 +1,8 @@
 /*头部下拉菜单hover效果 需要加上此段代码 start*/
 #header .classification {
 	background-color: transparent;
+	background-color: #aa1920;
+	color: #fff;
 }
 /* #header .classification .dropdown-menu {
 	display: none\9; IE8 hack
@@ -20,9 +22,9 @@
 	opacity: 1;
 	display: block\9; IE8 hack
 } */
-#header .classification:hover {
+/* #header .classification:hover {
 	background-color: #aa1920;
-}
+} */
 /*头部下拉菜单hover效果 需要加上此端代码 end*/
 
 
