@@ -20,7 +20,7 @@
             </div>
             <div class="flex fora">
             	<div class="kong"></div>
-            	 <a id="finish">完成</a>
+            	 <a class="finish">完成</a>
             	 <div class="kong"></div>
             	 <a class="cansle">取消</a>
             	 <div class="kong"></div>
@@ -97,7 +97,31 @@
 	                } 
 	            })
 	        }
-		})
+		});
+		//完成验证码登录
+		$(".finish").click(function() {
+			var tel = $("#tel").val();
+    		var code = $("#code").val();
+    		console.log(tel);
+    		console.log(code);
+    		if(code == "") {
+    			//$(".getCode+span").remove();
+    			$(".getCode").after("<span class='error'>您的验证码有误</span>");
+    		}
+    		else {
+    			//$(".getCode+span").remove();
+    			var param = {phone:tel,code:code};
+    			var url = '../mobile/index.php?r=collect/index/check';
+    			$.post(url,param,function (data) {
+                    var result = eval('('+data+')');
+                    if(result.id == 8){
+                        console.log(result);
+                    }else {
+                        console.log(result);
+                    }
+                });
+    		};
+		});
 	})
 </script>
 </html>
