@@ -86,13 +86,12 @@
 			                                clearInterval(timer);
 			                            }
 			                        };
-			                    // e.preventDefault();
+
 			                    $(this).prop("disabled",true);
 			                    timer = setInterval(action,1000);
 			                }else {
 			                    $(".getCode+span").remove();
 			                    $(".getCode").after("<span class='error'>"+result.info+"</span>");
-			                    // $(".dialog-getTel a").css("margin-top",".5rem");
 			                }
 			            });
 	                } 
