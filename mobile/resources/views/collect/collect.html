@@ -57,7 +57,7 @@
 	            $.post(url,param,function(data) 
 	            {
 	                var result = eval('('+data+')');
-	                console.log(result);
+	                //console.log(result);
 	                if(result.id == 1)//这个用户是老用户  不可参加活动
 	                {
 	                    $("#tel+span").remove();
@@ -66,23 +66,28 @@
 	                }else if (result.id == 2) {//新用户
 	                	//console.log(tel);
 	                	var param = {phone:tel};
-            			var url = '../mobile/index.php?r=active/index/send';
+            			var url = '../mobile/index.php?r=collect/index/send';
             			$.post(url,param,function (data) {
 			                var result = eval('('+data+')');
+			                //console.log(result);
 			                if(result.id == 3){
 			                    var time = 60,
 			                        timer,
 			                        action = function() {
+			                        	//console.log(time);
 			                            time--;
-			                            if(time > 0) {
-			                                $this.text(time + "秒后重新获取");
-			                            }else {
-			                                $this.text("获取验证码").prop("disabled",false);
+			                            if(time>0) {
+			                            	//console.log(time);
+			                                $("#gcode").text(time + "秒后重新获取");
+			                            }else if(time<=0){
+			                            	//console.log(time);
+			                                $("#gcode").text("获取验证码");
+			                                $(this).prop("disabled",false);
 			                                clearInterval(timer);
 			                            }
 			                        };
 			                    // e.preventDefault();
-			                    $this.prop("disabled",true);
+			                    $(this).prop("disabled",true);
 			                    timer = setInterval(action,1000);
 			                }else {
 			                    $(".getCode+span").remove();
