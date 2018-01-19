@@ -1,14 +1,24 @@
 header{
 	position: relative;
 }
-.header{
+.header,.header_code{
 	position: absolute;
 	top: 0;
 }
 .header img{
 	width: 66%;
 	margin: 3rem 17% 1.5rem;
-} 
+}
+.header_code img{
+	width: 40%;
+	margin: 5rem 30% 2rem;
+}
+.header_code p{
+	font-size: 1.6rem;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 2rem;
+}
 .button{
 	width: 80%;
 	margin: 0 auto;
@@ -78,6 +88,7 @@ header{
     padding: 2rem 0;
     color: #fff;
     overflow: hidden;
+    height: 19rem;
 }
 .active_con1 ul li{
 	line-height: 3rem;
@@ -151,6 +162,12 @@ header{
 	margin-top: 2rem;
 	width: 55%;
 	float: left;
+	font-size: 1.6rem;
+}
+.rule_con{
+	padding: 2rem 10%;
+	color: #ea5340;
+	font-size: 1.4rem;
 }
 #gcode{
 	width: 40%;
@@ -185,11 +202,19 @@ header{
 	background-color: #ea5340;
 	color: #fff;
 	padding: 0.5rem 0;
+	text-align: center;
+}
+.rule_finish{
+	background-color: #ea5340;
+	color: #fff;
+	padding: 0.5rem 0;
+	text-align: center;
+	margin-top: 1rem;
 }
 .message_close{
-	padding: 0.5rem 0;
+	padding: 1rem 0;
 	color: #666;
-	font-size: 1.6rem;
+	font-size: 1.5rem;
 }
 @media only screen and (max-width: 420px) and (max-height: 668px) {
 

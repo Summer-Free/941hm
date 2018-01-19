@@ -73,8 +73,8 @@ $(function(){
     $(".finish").click(function() {
         var tel = $("#tel").val();
         var code = $("#code").val();
-        console.log(tel);
-        console.log(code);
+        //console.log(tel);
+        //console.log(code);
         if(code == "") {
             //$(".getCode+span").remove();
             $("#tips").html("<span class='error'>验证码有误</span>");
