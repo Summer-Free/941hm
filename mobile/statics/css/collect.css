@@ -1,0 +1,196 @@
+header{
+	position: relative;
+}
+.header{
+	position: absolute;
+	top: 0;
+}
+.header img{
+	width: 66%;
+	margin: 3rem 17% 1.5rem;
+} 
+.button{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	height: 4rem;
+}
+#show{
+	float: left;
+	width: 50%;
+}
+#rule{
+	float: left;
+	width: 50%;
+}
+.button img{
+	width: 85%;
+	margin: 0;
+}
+.major_active{
+	background-color: #ffeac2;
+	padding: 1rem 0;
+}
+.major_active img{
+	width: 100%;
+	margin: 1rem 0;
+}
+.active_con{
+	margin: 3% 3% 2.5rem 3%;
+	background-color: #ea5340;
+    width: 94%;
+    border-radius: 1rem;
+    padding: 0rem 1.5rem;
+}
+.active_con_top{
+	width: 100%;
+}
+.active_con_left{
+	width: 35%;
+	float: left;
+}
+.active_con_left p{
+	color:#ffeac2;
+	font-size: 1.5rem;
+}
+.active_con_right{
+	width: 60%;
+	float: left;
+	margin-left: 5%;
+	position: relative;
+}
+.collect_sheet{
+	position: absolute;
+	top: -2.5rem;
+	right: 0;
+}
+.active_con_bottom{
+	clear: both;
+	color: #fcfafa;
+	font-size: 1.6rem;
+	padding: 1rem 0;
+}
+.active_con1{
+	margin: 3%;
+	background-color: #ea5340;
+    width: 94%;
+    border-radius: 1rem;
+    padding: 2rem 0;
+    color: #fff;
+    overflow: hidden;
+}
+.active_con1 ul li{
+	line-height: 3rem;
+	clear: both;
+}
+.list_span1{
+	float: left;
+	text-align: center;
+	width: 33%;
+}
+.list_span2{
+	float: right;
+}
+.flex_message{
+	position: fixed;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99;
+	width: 100%;
+	background: url(../img/newapp/des_title_s_bg.png) repeat;
+	display: none;
+}
+.flex_message p{
+	line-height: 2.5rem;
+}
+.flex_rule{
+	position: fixed;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99;
+	width: 100%;
+	background: url(../img/newapp/des_title_s_bg.png) repeat;
+	display: none;
+}
+.flex_rule p{
+	line-height: 2.5rem;
+}
+.collect_sms{
+	display: block;
+	position: absolute;
+	width: 80%;
+	height: 33rem;
+	margin: 0 auto;
+	left: 10%;
+	border-radius: 2rem;
+	background-color: #fff;
+	top: 25%;
+}
+.sms_title{
+	padding-top: 1rem;
+	height: 7rem;
+	background-color: #ea5340;
+	color: #fff;
+	text-align: center;
+	font-size: 1.6rem;
+	border-radius: 2rem 2rem 0 0;
+}
+.sms_con{
+	padding: 2rem 10%;
+	text-align: center;
+	color: #ea5340;
+	overflow: hidden;
+}
+.sms_con input{
+	border-bottom: 1px solid #ea5340;
+	margin-top: 2rem;
+	width: 55%;
+	float: left;
+}
+#gcode{
+	width: 40%;
+	margin: 1.7rem 0 0 5%;
+	float: left;
+	border: 1px solid #ea5340;
+	font-size: 1.6rem;
+}
+#code{
+	margin-bottom: 3rem;
+}
+#tips{
+	color: #666;
+	font-size: 1.4rem;
+	padding: 2rem 0 0 1.5rem;
+    float: left;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #fa9c90;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #fa9c90;
+}
+:-ms-input-placeholder{
+    color: #fa9c90;
+}
+::-webkit-input-placeholder{
+    color: #fa9c90;
+}
+.finish{
+	clear: both;
+	background-color: #ea5340;
+	color: #fff;
+	padding: 0.5rem 0;
+}
+.message_close{
+	padding: 0.5rem 0;
+	color: #666;
+	font-size: 1.6rem;
+}
+@media only screen and (max-width: 420px) and (max-height: 668px) {
+
+}
+

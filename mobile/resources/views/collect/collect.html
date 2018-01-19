@@ -1,128 +1,108 @@
 {include file="page_header-nav"}
-<link rel="stylesheet" href="../mobile/statics/css/partner.css">
+<link rel="stylesheet" href="../mobile/statics/css/collect.css">
 <!-- <script src="../mobile/statics/js/jquery-2.1.4.min.js"></script> -->
 <body>
-	<img src="{$img}" alt="">
-	<button id="show" type="button" value="{$user_id}">
-		点赞助力	
-	</button>
-	<button id="colect" type="button" value="{$user_id}">
-		我要参与	
-	</button>
+	<header>
+		<img width="100%" src="../mobile/statics/img/newapp/collect_title_bg.jpg" alt="">
+		<div class="header">
+			<img src="../mobile/statics/img/newapp/collect_title.png" alt="">
+			<div class="button">
+				<a href="javascript:void(0)" id="show" value="{$user_id}">
+					<img src="../mobile/statics/img/newapp/collect_button_zan.png" alt="">
+				</a>
+				<a href="javascript:void(0)" id="rule">
+					<img src="../mobile/statics/img/newapp/collect_button_rule.png" alt="">
+				</a>
+			</div>
+		</div>
+		
+	</header>
+	<section class="major_active">
+		<img src="../mobile/statics/img/newapp/collect_title2.png" alt="">
+		<div class="active_con">
+			<div class="active_con_top">
+				<div class="active_con_left">
+					<img src="../mobile/statics/img/newapp/collect_zan.png" alt="">
+					<p>价值110的</p>
+					<p>抱枕1个</p>
+					<p>共50个</p>
+				</div>
+				<div class="active_con_right">
+					<img src="../mobile/statics/img/newapp/collect_pillow.png" alt="">
+				</div>
+			</div>
+			<div class="active_con_bottom">
+				<p>高档棉麻面料枕套，aa级高弹pp棉枕芯，欧美标准级印花，结实耐用不褪色，蓬松柔软无异味。</p>
+			</div>
+		</div>
+		<div class="active_con">
+			<div class="active_con_top">
+				<div class="active_con_left">
+					<img src="../mobile/statics/img/newapp/collect_zan2.png" alt="">
+					<p>价值1088的</p>
+					<p>床上四件套一套</p>
+					<p>共5套</p>
+				</div>
+				<div class="active_con_right">
+					<img width="90%" class="collect_sheet" src="../mobile/statics/img/newapp/collect_sheet.png" alt="">
+				</div>
+			</div>
+			<div class="active_con_bottom">
+				<p>选用长绒棉贡缎面料，触感柔软舒适。经典刺绣拼接工艺，层次丰富，立体感强。</p>
+			</div>
+		</div>
+		<div class="active_con1">
+			<ul>
+				<li>
+					<span class="list_span1">尾号3621</span><span class="list_span1">抱枕</span><span class="list_span1">2016-01-24</span>
+				</li>
+				<li>
+					<span class="list_span1">尾号3621</span><span class="list_span1">抱枕</span><span class="list_span1">2016-01-24</span>
+				</li>
+				<li>
+					<span class="list_span1">尾号3621</span><span class="list_span1">抱枕</span><span class="list_span1">2016-01-24</span>
+				</li>
+				<li>
+					<span class="list_span1">尾号3621</span><span class="list_span1">抱枕</span><span class="list_span1">2016-01-24</span>
+				</li>
+				<li>
+					<span class="list_span1">尾号3621</span><span class="list_span1">抱枕</span><span class="list_span1">2016-01-24</span>
+				</li>
+			</ul>
+		</div>
+	</section>
 	<!-- <div id="output" style="display: none;">
 		<img src="../mobile/statics/img/newapp/zsjm.png" alt="aaa">
 	</div> -->
-        <form class="flex" action="" style="display: none;">
-            <input id="tel" type="number" pattern="[0-9]*" placeholder="请输入您的手机号" />
-            <div class="getCode flex" >
-                <input id="code" type="number" pattern="[0-9]*" placeholder="您的验证码">
-                <button id="gcode" type="button">获取验证码</button>
-            </div>
-            <div class="flex fora">
-            	<div class="kong"></div>
-            	 <a class="finish">完成</a>
-            	 <div class="kong"></div>
-            	 <a class="cansle">取消</a>
-            	 <div class="kong"></div>
-            </div>
-        </form>
+	<div class="flex_message">
+		<div class="collect_sms ">
+			<div class="sms_title">
+				<p>短信验证</p>
+				<p>941红木商城</p>
+			</div>
+			<div class="sms_con">
+				<p>为防止重复集赞</p>
+				<p>请进行短信验证</p>
+				<input id="tel" type="number" pattern="[0-9]*" placeholder="请输入您的手机号" />
+				<p id="gcode">获取验证码</p>
+	            <input id="code"  class="getCode" type="number" pattern="[0-9]*" placeholder="您的验证码">
+	            <p id="tips"></p>
+	            <a href="javascript:void(0)"><div class="finish">确认</div></a>
+	            <a href="javascript:void(0)"><div id="message_close" class="message_close">关闭</div></a>
+			</div>
+		</div>
+	</div>
+	<div class="flex_rule">
+		<div class="collect_sms ">
+			<div class="sms_title">
+				<p>活动规则</p>
+				<p>941红木商城</p>
+			</div>
+			<div class="sms_con">
+				<a href="javascript:void(0)"><div id="rule_close" class="finish">确认</div></a>
+			</div>
+		</div>
+	</div>
 </body>
-<script type="text/javascript">
-	$(function(){
-		//判断是否登录
-		$("#show").click(function(){
-				var user_id=$(this).attr("value");
-				//console.log(user_id);
-				//如果用户未登录   进入登录过程 
-				if(user_id <= 0){
-					$(".flex").show();
-					//当用户是新用户   可参加活动   if  注册时间<活动开始时间 给Tips  
-				}else{
-					//如果用户已经登录 会有两个按钮 一个是我要助力  另一个是我要参加
-				}
-			 	// $("#output").css('display',"block");
-			});
-		//获取当前的手机号
-		$("#gcode").click(function(){
-			var tel=$("#tel").val();
-			if(!(/^1[3|4|5|7|8][0-9]\d{4,8}$/.test(tel))) {
-	            $("#tel+span").remove();
-	            $("#tel").after("<span class='error'>您的号码有误</span>");
-	            return false;
-	        }else{
-
-	        	var param = {phone:tel};
-	            //console.log(tel);
-	            var url = '../mobile/index.php?r=collect/index/checknum';
-	            $.post(url,param,function(data) 
-	            {
-	                var result = eval('('+data+')');
-	                //console.log(result);
-	                if(result.id == 1)//这个用户是老用户  不可参加活动
-	                {
-	                    $("#tel+span").remove();
-	                    $("#tel").after("<span class='error'>老用户无法参加此活动</span>");
-	                    return false;
-	                }else if (result.id == 2) {//新用户
-	                	//console.log(tel);
-	                	var param = {phone:tel};
-            			var url = '../mobile/index.php?r=collect/index/send';
-            			$.post(url,param,function (data) {
-			                var result = eval('('+data+')');
-			                //console.log(result);
-			                if(result.id == 3){
-			                    var time = 60,
-			                        timer,
-			                        action = function() {
-			                        	//console.log(time);
-			                            time--;
-			                            if(time>0) {
-			                            	//console.log(time);
-			                                $("#gcode").text(time + "秒后重新获取");
-			                            }else if(time<=0){
-			                            	//console.log(time);
-			                                $("#gcode").text("获取验证码");
-			                                $(this).prop("disabled",false);
-			                                clearInterval(timer);
-			                            }
-			                        };
-			                    // e.preventDefault();
-			                    $(this).prop("disabled",true);
-			                    timer = setInterval(action,1000);
-			                }else {
-			                    $(".getCode+span").remove();
-			                    $(".getCode").after("<span class='error'>"+result.info+"</span>");
-			                    // $(".dialog-getTel a").css("margin-top",".5rem");
-			                }
-			            });
-	                } 
-	            })
-	        }
-		});
-		//完成验证码登录
-		$(".finish").click(function() {
-			var tel = $("#tel").val();
-    		var code = $("#code").val();
-    		console.log(tel);
-    		console.log(code);
-    		if(code == "") {
-    			//$(".getCode+span").remove();
-    			$(".getCode").after("<span class='error'>您的验证码有误</span>");
-    		}
-    		else {
-    			//$(".getCode+span").remove();
-    			var param = {phone:tel,code:code};
-    			var url = '../mobile/index.php?r=collect/index/check';
-    			$.post(url,param,function (data) {
-                    var result = eval('('+data+')');
-                    if(result.id == 8){
-                        console.log(result);
-                    }else {
-                        console.log(result);
-                    }
-                });
-    		};
-		});
-	})
-</script>
+<script src="../mobile/statics/js/collect.js?abc=20171228"></script>
 </html>
