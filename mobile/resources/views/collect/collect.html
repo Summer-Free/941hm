@@ -4,7 +4,7 @@
 <body>
 	<img src="{$img}" alt="">
 	<button id="show" type="button" value="{$user_id}">
-		点赞助力	
+		点赞助力
 	</button>
 	<button id="colect" type="button" value="{$user_id}">
 		我要参与	
@@ -71,6 +71,7 @@
 			                var result = eval('('+data+')');
 			                //console.log(result);
 			                if(result.id == 3){
+			                	console.log(result);
 			                    var time = 60,
 			                        timer,
 			                        action = function() {
@@ -114,8 +115,10 @@
     			var url = '../mobile/index.php?r=collect/index/check';
     			$.post(url,param,function (data) {
                     var result = eval('('+data+')');
+                    console.log(result);
                     if(result.id == 8){
                         console.log(result);
+                        window.location.href="../mobile/index.php?r=collect/collect";
                     }else {
                         console.log(result);
                     }
