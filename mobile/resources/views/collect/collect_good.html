@@ -1,10 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
+{include file="page_header-nav"}
+<link rel="stylesheet" href="../mobile/statics/css/collect.css">
 <body>
-	
+	<section class="command_head">
+		<p>您的好友正在集赞</p>
+		<div class="collect_gift">
+			<div class="collect_gift_left">
+				<img width="100%" src="../mobile/statics/img/newapp/collect_gift_pillow.png" alt="">
+				<img class="collect_zan" src="../mobile/statics/img/newapp/collect_zan3.png" alt="">
+			</div>
+			<div class="collect_gift_right">
+				<img width="100%" src="../mobile/statics/img/newapp/collect_gift_sheet.png" alt="">
+				<img class="collect_zan" src="../mobile/statics/img/newapp/collect_zan4.png" alt="">
+			</div>
+		</div>
+		<div class="button">
+			<a href="javascript:void(0)" class="collect_button_help"  value="{$user_id}">
+				<img class="collect_button_help1" src="../mobile/statics/img/newapp/collect_button_help.png" alt="">
+				<img class="collect_button_help2" src="../mobile/statics/img/newapp/collect_button_help2.png" alt="">
+			</a>
+			<a href="javascript:void(0)" class="exchange_sheet">
+				<img src="../mobile/statics/img/newapp/collect_button_zan2.png" alt="">
+			</a>
+		</div>
+		<div class="zan_count">
+			<p>当前点赞人数：35</p>
+			<div class="zan_count_con">
+				<ul>
+					<li>0324已为您点赞</li>
+					<li>0324已为您点赞</li>
+					<li>0324已为您点赞</li>
+					<li>0324已为您点赞</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<div class="flex_message">
+		<div class="collect_sms ">
+			<div class="sms_title">
+				<p>短信验证</p>
+				<p>941红木商城</p>
+			</div>
+			<div class="sms_con">
+				<p>为防止重复集赞</p>
+				<p>请进行短信验证</p>
+				<input id="tel" type="number" pattern="[0-9]*" placeholder="请输入您的手机号" />
+				<p id="gcode">获取验证码</p>
+	            <input id="code"  class="getCode" type="number" pattern="[0-9]*" placeholder="您的验证码">
+	            <span class="tips"></span>
+	            <a href="javascript:void(0)"><div class="finish">确认</div></a>
+	            <a href="javascript:void(0)"><div id="message_close" class="message_close">关闭</div></a>
+			</div>
+		</div>
+	</div>
+	<div class="flex_rule">
+		<div class="collect_sms ">
+			<div class="sms_title">
+				<p>恭喜您</p>
+				<p>941红木商城</p>
+			</div>
+			<div class="zan_ok">
+				<img src="../mobile/statics/img/newapp/collect_button_ok.png" alt="">
+				<a href="javascript:void(0)"><div class="rule_finish">确认</div></a>
+			</div>
+		</div>
+	</div>
 </body>
+<script src="../mobile/statics/js/collect_good.js?abc=20180119"></script>
 </html>

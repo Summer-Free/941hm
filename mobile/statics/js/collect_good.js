@@ -1,17 +1,4 @@
 $(function(){
-    //判断是否登录
-    $(".show").click(function(){
-            var user_id=$(this).attr("value");
-            //console.log(user_id);
-            //如果用户未登录   进入登录过程 
-            if(user_id <= 0){
-                $(".flex_message").show();
-                //当用户是新用户   可参加活动   if  注册时间<活动开始时间 给Tips  
-            }else{
-                //如果用户已经登录 会有两个按钮 一个是我要助力  另一个是我要参加
-            }
-            // $("#output").css('display',"block");
-        });
     //获取当前的手机号
     $("#gcode").click(function(){
         var tel=$("#tel").val();
@@ -36,7 +23,7 @@ $(function(){
                 }else if (result.id == 2) {//新用户
                     //console.log(tel);
                     var param = {phone:tel};
-                    var url = '../mobile/index.php?r=collect/index/send';
+                    var url = '../mobile/index.php?r=collect/index/send';  
                     $.post(url,param,function (data) {
                         var result = eval('('+data+')');
                         //console.log(result);
@@ -87,49 +74,50 @@ $(function(){
                 var result = eval('('+data+')');
                 if(result.id == 8){
                     console.log(result);
-                    window.location.href="../mobile/index.php?r=collect/collect";
+                    window.location.href="index.php?r=collect/collect/cogoods";
+                    console.log(result);
+                    //$(".flex_message").hide();
                 }else {
                     console.log(result);
                 }
             });
         };
     });
-    //点击查看规则
-    $("#rule").click(function(){
-        $(".flex_rule").show();
-    });
-    //点击换取抱枕、四件套
-    $(".exchange_pillow").click(function() {
-        $(".flex_information").show();
+    //帮助点赞
+    $(".collect_button_help").click(function() {
+        var user_id=$(this).attr("value");
+        if(user_id <= 0){
+            $(".flex_message").show();
+            //当用户是新用户   可参加活动   if  注册时间<活动开始时间 给Tips
+        }
+        else{
+            console.log(user_id);
+            //防止重复点击集赞按钮
+            var url='../mobile/index.php?r=collect/collect/ggood';
+            var param={user_id:user_id};
+            $.post(url, param, function(data) {
+                var result = eval('('+data+')');
+                if(result.id){
+                    //此时判断为真
+                    //$(".collect_button_help1").hide();
+                    //$(".collect_button_help2").show();
+                }
+                else{
+                    //显示点赞成功
+                    $(".flex_rule").show();
+                }
+            });
+            $(".collect_button_help1").hide();
+            $(".collect_button_help2").show();
+
+            //如果用户已经登录 可以点赞
+        }
     });
     //关闭
     $(".message_close").click(function() {
         $(".flex_message").hide();
-        $(".flex_information").hide();
     });
     $(".rule_finish").click(function() {
         $(".flex_rule").hide();
-    });
-    //点击集赞进行页面中的确认
-    $("#information_finish").click(function() {
-        var tel=$("#tel").val();
-        var name=$("#name").val();
-        var addr=$("#addr").val();
-        if(tel=="" || name=="" || addr==""){
-            $(".tips").html("<span class='error'>信息不能为空</span>");
-            return false;
-        }
-        else{
-            if(!(/^1[3|4|5|7|8][0-9]\d{4,8}$/.test(tel))) {
-                $(".tips").html("<span class='error'>您的号码有误</span>");
-                return false;
-            }
-            var sheng=addr.substring(2, 3);
-            var shi=addr.substring(5, 6);
-            var qu=addr.substring(8, 9);
-            /*else if(addr.substring() ){
-
-            }*/
-        }
     });
 });
