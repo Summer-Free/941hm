@@ -1,6 +1,70 @@
 {include file="page_header-nav"}
 <link rel="stylesheet" href="../mobile/statics/css/collect.css">
 <body>
+	<section class="command_head">
+		<p>您的集赞正在进行</p>
+		<div class="collect_gift">
+			<div class="collect_gift_left">
+				<img width="100%" src="../mobile/statics/img/newapp/collect_gift_pillow.png" alt="">
+				<img class="collect_zan" src="../mobile/statics/img/newapp/collect_zan3.png" alt="">
+			</div>
+			<div class="collect_gift_right">
+				<img width="100%" src="../mobile/statics/img/newapp/collect_gift_sheet.png" alt="">
+				<img class="collect_zan" src="../mobile/statics/img/newapp/collect_zan3.png" alt="">
+			</div>
+		</div>
+		<div class="button">
+			<a href="javascript:void(0)" class="exchange_pillow">
+				<img src="../mobile/statics/img/newapp/collect_button_pillow.png" alt="">
+			</a>
+			<a href="javascript:void(0)" class="exchange_sheet">
+				<img src="../mobile/statics/img/newapp/collect_button_sheet.png" alt="">
+			</a>
+		</div>
+		<div class="zan_count">
+			<p>当前点赞人数：35</p>
+			<div class="zan_count_con">
+				<ul>
+					<li>0324已为您点赞</li>
+					<li>0324已为您点赞</li>
+					<li>0324已为您点赞</li>
+					<li>0324已为您点赞</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<div class="flex_information">
+		<div class="collect_sms ">
+			<div class="sms_title">
+				<p>恭喜您集赞成功</p>
+				<p>请完善您的地址信息</p>
+			</div>
+			<div class="sms_con">
+				<p><span>您的姓名：</span><input id="name" class="getInformation" type="text" pattern="[0-9]*" ></p>
+	            <p><span>您的电话：</span><input id="tel" class="getInformation" type="number" pattern="[0-9]*"></p>
+	            <p><span>您的地址：</span><input id="addr"  class="getInformation" type="text" pattern="[0-9]*"></p>
+	            <div class="tips info_tips"></div>
+	            <a href="javascript:void(0)"><div id="information_finish" class="finish">确认</div></a>
+	            <a href="javascript:void(0)"><div class="message_close">关闭</div></a>
+			</div>
+		</div>
+	</div>
+	<div class="collect_prize">
+		<div class="collect_prize_pillow">
+			<img class="collect_prize_img" src="../mobile/statics/img/newapp/collect_prize_text1.png" alt="">
+			<img width="60%" src="../mobile/statics/img/newapp/collect_gift_pillow.png" alt="">
+			<a href="../mobile/index.php?r=collect">
+				<img class="collect_prize_button" src="../mobile/statics/img/newapp/collect_button_back.png" alt="">
+			</a>
+		</div>
+		<div class="collect_prize_sheet">
+			<img class="collect_prize_img" src="../mobile/statics/img/newapp/collect_prize_text2.png" alt="">
+			<img width="100%" src="../mobile/statics/img/newapp/collect_gift_sheet.png" alt="">
+			<a href="../mobile/index.php?r=collect">
+				<img class="collect_prize_button" src="../mobile/statics/img/newapp/collect_button_back.png" alt="">
+			</a>
+		</div>
+	</div>
 </body>
-
+<script src="../mobile/statics/js/collect.js?abc=20180119"></script>
 </html>
