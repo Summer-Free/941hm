@@ -20,6 +20,7 @@ header{
 	margin-bottom: 2rem;
 }
 .button{
+	clear: both;
 	width: 80%;
 	margin: 0 auto;
 	text-align: center;
@@ -179,7 +180,7 @@ header{
 #code{
 	margin-bottom: 3rem;
 }
-#tips{
+.tips{
 	color: #666;
 	font-size: 1.4rem;
 	padding: 2rem 0 0 1.5rem;
@@ -215,6 +216,121 @@ header{
 	padding: 1rem 0;
 	color: #666;
 	font-size: 1.5rem;
+}
+/* 集赞进程页面 */
+.command_head{
+	background-color: #ea5340;
+	color: #fff;
+	padding: 3rem 0;
+	text-align: center;
+	font-size: 2rem;
+}
+.collect_gift{
+	width: 90%;
+	margin: 4rem 5%;
+	overflow: hidden;
+}
+.collect_gift_left{
+	float: left;
+	width: 48%;
+	margin-right: 4%;
+}
+.collect_gift_right{
+	float: left;
+	width: 48%;
+}
+.exchange_pillow,.exchange_sheet{
+	float: left;
+	width: 50%;
+}
+.collect_zan{
+	width: 60%;
+	margin-top: 1rem;
+}
+.zan_count{
+	width: 90%;
+	margin: 3rem 5%;
+	box-shadow: 0px 20px 50px -15px rgba(0,0,0,0.5);
+}
+.zan_count p{
+	clear: both;
+	text-align: center;
+	width: 100%;
+	background-color: #d72b15;
+	line-height: 4rem;
+}
+.zan_count_con{
+	background-color: #f9f8c0;
+	color: #000;
+	padding: 2rem;
+	line-height: 4rem;
+}
+.flex_information{
+	position: fixed;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99;
+	width: 100%;
+	background: url(../img/newapp/des_title_s_bg.png) repeat;
+	display: none;
+	line-height: 2.5rem;
+	font-size: 1.6rem;
+}
+.flex_information input{
+	margin-top: 1.5rem;
+	width: 60%;
+	border: none;
+	color: #666;
+}
+.info_tips{
+    margin-bottom: 1.5rem;
+    padding: 0;
+    line-height: 1rem;
+    height: 2.5rem;
+}
+.flex_information .sms_con{
+	padding: 1rem 10%;
+}
+.flex_information .sms_con p{
+	clear: both;
+    height: 4.5rem;
+    border-bottom: 1px solid #ea5340;
+}
+.sms_con span{
+	float: left;
+    padding-top: 1.5rem;
+}
+/* 换取奖品页面 */
+.collect_prize{
+	position: fixed;
+	width: 100%;
+	background-color: #ea5340;
+    height: 70rem;
+    z-index: 99;
+    top: 0;
+    display: none;
+}
+.collect_prize_pillow{
+	width: 70%;
+	margin: 10rem auto;
+	text-align: center;
+	display: none;
+}
+.collect_prize_sheet{
+	width: 70%;
+	margin: 10rem auto;
+	text-align: center;
+	display: none;
+}
+.collect_prize_img{
+	width: 100%;
+	margin-bottom: 5rem;
+}
+.collect_prize_button{
+	width: 50%;
+	margin-top: 5rem;
 }
 @media only screen and (max-width: 420px) and (max-height: 668px) {
 

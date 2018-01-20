@@ -17,7 +17,7 @@ $(function(){
         var tel=$("#tel").val();
         if(!(/^1[3|4|5|7|8][0-9]\d{4,8}$/.test(tel))) {
             $("#tel+span").remove();
-            $("#tips").html("<span class='error'>您的号码有误</span>");
+            $(".tips").html("<span class='error'>您的号码有误</span>");
             return false;
         }else{
 
@@ -31,7 +31,7 @@ $(function(){
                 if(result.id == 1)//这个用户是老用户  不可参加活动
                 {
                     $("#tel+span").remove();
-                    $("#tips").html("<span class='error'>活动限新用户</span>");
+                    $(".tips").html("<span class='error'>活动限新用户</span>");
                     return false;
                 }else if (result.id == 2) {//新用户
                     //console.log(tel);
@@ -61,7 +61,7 @@ $(function(){
                             timer = setInterval(action,1000);
                         }else {
                             $(".getCode+span").remove();
-                            $("#tips").html("<span class='error'>"+result.info+"</span>");
+                            $(".tips").html("<span class='error'>"+result.info+"</span>");
                             // $(".dialog-getTel a").css("margin-top",".5rem");
                         }
                     });
@@ -77,7 +77,7 @@ $(function(){
         //console.log(code);
         if(code == "") {
             //$(".getCode+span").remove();
-            $("#tips").html("<span class='error'>验证码有误</span>");
+            $(".tips").html("<span class='error'>验证码有误</span>");
         }
         else {
             //$(".getCode+span").remove();
@@ -98,11 +98,26 @@ $(function(){
     $("#rule").click(function(){
         $(".flex_rule").show();
     });
+    //点击换取抱枕、四件套
+    $(".exchange_pillow").click(function() {
+        $(".flex_information").show();
+    });
     //关闭
-    $("#message_close").click(function() {
+    $(".message_close").click(function() {
         $(".flex_message").hide();
+        $(".flex_information").hide();
     });
     $("#rule_close").click(function() {
         $(".flex_rule").hide();
+    });
+    //点击集赞进行页面中的确认
+    $("#information_finish").click(function() {
+        var tel=$("#name").val();
+        var name=$("#tel").val();
+        var addr=$("#addr").val();
+        if(!(/^1[3|4|5|7|8][0-9]\d{4,8}$/.test(tel))) {
+            $(".tips").html("<span class='error'>您的号码有误</span>");
+            return false;
+        }
     });
 });
