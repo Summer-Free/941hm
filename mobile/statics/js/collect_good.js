@@ -90,6 +90,9 @@ $(function(){
         else{
             console.log(user_id);
             //防止重复点击集赞按钮
+            var pro_url=window.location.search;
+            var pro_id=pro_url.substring(29);
+            console.log(pro_id);
             var url='../mobile/index.php?r=collect/collect/ggood';
             var param={user_id:user_id};
             $.post(url, param, function(data) {
