@@ -75,10 +75,8 @@ $(function(){
                 if(result.id == 8){
                     console.log(result);
                     window.location.href="index.php?r=collect/collect/cogoods";
-                    console.log(result);
-                    //$(".flex_message").hide();
                 }else {
-                    console.log(result);
+                    $(".tips").html("<span class='error'>result.info</span>");
                 }
             });
         };
@@ -88,7 +86,6 @@ $(function(){
         var user_id=$(this).attr("value");
         if(user_id <= 0){
             $(".flex_message").show();
-            //当用户是新用户   可参加活动   if  注册时间<活动开始时间 给Tips
         }
         else{
             console.log(user_id);
