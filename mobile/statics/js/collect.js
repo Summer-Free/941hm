@@ -98,10 +98,6 @@ $(function(){
     $("#rule").click(function(){
         $(".flex_rule").show();
     });
-    //点击换取抱枕、四件套
-    $(".exchange_pillow").click(function() {
-        $(".flex_information").show();
-    });
     //关闭
     $(".message_close").click(function() {
         $(".flex_message").hide();
@@ -110,26 +106,62 @@ $(function(){
     $(".rule_finish").click(function() {
         $(".flex_rule").hide();
     });
-    //点击集赞进行页面中的确认
-    $("#information_finish").click(function() {
-        var tel=$("#tel").val();
-        var name=$("#name").val();
-        var addr=$("#addr").val();
-        if(tel=="" || name=="" || addr==""){
-            $(".tips").html("<span class='error'>信息不能为空</span>");
-            return false;
-        }
-        else{
-            if(!(/^1[3|4|5|7|8][0-9]\d{4,8}$/.test(tel))) {
+    //点击换取靠枕
+    $(".exchange_pillow").click(function() {
+        $(".flex_information").show();
+        $("#information_finish").click(function() {
+            var tel=$("#tel").val();
+            var name=$("#name").val();
+            var addr=$("#addr").val();
+            if(tel=="" || name=="" || addr==""){
+                $(".tips").html("<span class='error'>信息不能为空</span>");
+                return false;
+            }
+            else if(!(/^1[3|4|5|7|8][0-9]\d{4,8}$/.test(tel))) {
                 $(".tips").html("<span class='error'>您的号码有误</span>");
                 return false;
             }
-            var sheng=addr.substring(2, 3);
-            var shi=addr.substring(5, 6);
-            var qu=addr.substring(8, 9);
-            /*else if(addr.substring() ){
-
-            }*/
-        }
+                /*var sheng=addr.substring(2, 3);
+                var shi=addr.substring(5, 6);
+                var qu=addr.substring(8, 9);
+                else if(sheng != "省"&&shi != "市"&&qu != "区"){
+                    $(".tips").html("<span class='error'>请输入正确的地址</span>");
+                    return false;
+                }*/
+            else{
+                //验证成功并跳转到成功领取靠枕页面
+                $(".collect_prize").show();
+                $(".collect_prize_pillow").show();
+            }
+        });
+    });
+    //点击换取四件套
+    $(".exchange_sheet").click(function() {
+        $(".flex_information").show();
+        $("#information_finish").click(function() {
+            var tel=$("#tel").val();
+            var name=$("#name").val();
+            var addr=$("#addr").val();
+            if(tel=="" || name=="" || addr==""){
+                $(".tips").html("<span class='error'>信息不能为空</span>");
+                return false;
+            }
+            else if(!(/^1[3|4|5|7|8][0-9]\d{4,8}$/.test(tel))) {
+                $(".tips").html("<span class='error'>您的号码有误</span>");
+                return false;
+            }
+                /*var sheng=addr.substring(2, 3);
+                var shi=addr.substring(5, 6);
+                var qu=addr.substring(8, 9);
+                else if(sheng != "省"&&shi != "市"&&qu != "区"){
+                    $(".tips").html("<span class='error'>请输入正确的地址</span>");
+                    return false;
+                }*/
+            else{
+                //验证成功并跳转到成功领取靠枕页面
+                $(".collect_prize").show();
+                $(".collect_prize_sheet").show();
+            }
+        });
     });
 });
