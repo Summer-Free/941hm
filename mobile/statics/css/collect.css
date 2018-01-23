@@ -91,6 +91,10 @@ header{
     overflow: hidden;
     height: 19rem;
 }
+.active_con1 ul{
+	height: 15rem;
+	overflow: hidden;
+}
 .active_con1 ul li{
 	line-height: 3rem;
 	clear: both;
@@ -136,7 +140,7 @@ header{
 	display: block;
 	position: absolute;
 	width: 80%;
-	height: 33rem;
+	height: 35rem;
 	margin: 0 auto;
 	left: 10%;
 	border-radius: 2rem;
@@ -264,6 +268,11 @@ header{
 	color: #000;
 	padding: 2rem;
 	line-height: 4rem;
+	/* height: 19rem; */
+	overflow: hidden;
+}
+.zan_count_con ul{
+	height: 15rem;
 }
 .flex_information{
 	position: fixed;
@@ -283,12 +292,16 @@ header{
 	width: 60%;
 	border: none;
 	color: #666;
+	height: 2.5rem;
 }
 .info_tips{
     margin-bottom: 1.5rem;
     padding: 0;
     line-height: 1rem;
     height: 2.5rem;
+}
+.flex_information .collect_sms{
+	height: 33rem;
 }
 .flex_information .sms_con{
 	padding: 1rem 10%;
@@ -351,7 +364,12 @@ header{
 	width: 60%;
 	margin: 2rem 0;
 }
-@media only screen and (max-width: 420px) and (max-height: 668px) {
-
+@media only screen and (max-width: 400px) {
+	.sms_con input{
+		font-size: 1.4rem;
+	}
+	.collect_sms{
+		height: 36rem;
+	}
 }
 

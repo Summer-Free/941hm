@@ -56,19 +56,19 @@
 					<span class="list_span1">尾号3621</span><span class="list_span1">抱枕</span><span class="list_span1">2016-01-24</span>
 				</li>
 				<li>
-					<span class="list_span1">尾号3621</span><span class="list_span1">抱枕</span><span class="list_span1">2016-01-24</span>
+					<span class="list_span1">尾号3545</span><span class="list_span1">抱枕</span><span class="list_span1">2016-01-24</span>
 				</li>
 				<li>
 					<span class="list_span1">尾号3621</span><span class="list_span1">抱枕</span><span class="list_span1">2016-01-24</span>
 				</li>
 				<li>
-					<span class="list_span1">尾号3621</span><span class="list_span1">抱枕</span><span class="list_span1">2016-01-24</span>
+					<span class="list_span1">尾号3555</span><span class="list_span1">抱枕</span><span class="list_span1">2016-01-24</span>
 				</li>
 				<li>
 					<span class="list_span1">尾号3621</span><span class="list_span1">抱枕</span><span class="list_span1">2016-01-24</span>
 				</li>
 				<li>
-					<span class="list_span1">尾号3621</span><span class="list_span1">抱枕</span><span class="list_span1">2016-01-24</span>
+					<span class="list_span1">尾号3555</span><span class="list_span1">抱枕</span><span class="list_span1">2016-01-24</span>
 				</li>
 				<li>
 					<span class="list_span1">尾号3621</span><span class="list_span1">抱枕</span><span class="list_span1">2016-01-24</span>
@@ -85,9 +85,35 @@
 			</ul>
 		</div>
 	</section>
-	<!-- <div id="output" style="display: none;">
-		<img src="../mobile/statics/img/newapp/zsjm.png" alt="aaa">
-	</div> -->
+	<!-- <script>
+	function AutoScroll(obj) {
+	    $(obj).find("ul").animate({
+	        marginTop: "-52px"
+	    },
+	    500,
+	    function() {
+	        $(this).css({
+	            marginTop: "0px"
+	        }).find("li:first").appendTo(this);
+	    });
+	}
+	$(document).ready(function() {
+	    setInterval('AutoScroll(".active_con1")', 3000)
+	});
+	</script> -->
+	<script type="text/javascript">
+	    function autoScroll(obj){
+	    	//var n=$(obj).find("li").height();
+	        $(obj).find("ul").animate({
+	            marginTop : "0rem"
+	        },500,function(){
+	            $(this).css({marginTop : "0rem"}).find("li:first").appendTo(this);
+	        })
+	    }
+	    $(function(){
+	        setInterval('autoScroll(".active_con1")',3000);
+	    })
+	</script>
 	<div class="flex_message">
 		<div class="collect_sms ">
 			<div class="sms_title">

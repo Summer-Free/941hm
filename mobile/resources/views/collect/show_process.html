@@ -26,13 +26,30 @@
 			<div class="zan_count_con">
 				<ul>
 					<li>0324已为您点赞</li>
+					<li>0325已为您点赞</li>
+					<li>0326已为您点赞</li>
+					<li>0327已为您点赞</li>
 					<li>0324已为您点赞</li>
-					<li>0324已为您点赞</li>
-					<li>0324已为您点赞</li>
+					<li>0325已为您点赞</li>
+					<li>0326已为您点赞</li>
+					<li>0327已为您点赞</li>
 				</ul>
 			</div>
 		</div>
 	</section>
+	<script type="text/javascript">
+    function autoScroll(obj){
+    	//var n=$(obj).find("li").height();
+        $(obj).find("ul").animate({
+            marginTop : "0rem"
+        },500,function(){
+            $(this).css({marginTop : "0rem"}).find("li:first").appendTo(this);
+        })
+    }
+    $(function(){
+        setInterval('autoScroll(".zan_count_con")',3000);
+    })
+	</script>
 	<div class="flex_information">
 		<div class="collect_sms ">
 			<div class="sms_title">
