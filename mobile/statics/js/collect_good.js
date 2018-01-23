@@ -73,7 +73,10 @@ $(function(){
                 if(result.id == 8){
                     console.log(result);
                     //获取当前的URL
-                    var now_url=;
+                    var now_url=window.location.href;
+                    //alert(now_url);
+                    //window.location.href=now_url;
+                    window.location.replace(now_url);
                     //window.location.reload();
                 }else {
                     $(".tips").html("<span class='error'>result.info</span>");
