@@ -60,8 +60,6 @@ $(function(){
     $(".finish").click(function() {
         var tel = $("#tel").val();
         var code = $("#code").val();
-        //console.log(tel);
-        //console.log(code);
         if(code == "") {
             //$(".getCode+span").remove();
             $(".tips").html("<span class='error'>验证码有误</span>");
@@ -74,7 +72,9 @@ $(function(){
                 var result = eval('('+data+')');
                 if(result.id == 8){
                     console.log(result);
-                    window.location.href="index.php?r=collect/collect/cogoods";
+                    //获取当前的URL
+                    var now_url=;
+                    //window.location.reload();
                 }else {
                     $(".tips").html("<span class='error'>result.info</span>");
                 }
@@ -92,23 +92,23 @@ $(function(){
             //防止重复点击集赞按钮
             var pro_url=window.location.search;
             var pro_id=pro_url.substring(29);
-            console.log(pro_id);
+            //console.log(pro_id);
             var url='../mobile/index.php?r=collect/collect/ggood';
-            var param={user_id:user_id};
+            var param={user_id:user_id,pro_id:pro_id};
             $.post(url, param, function(data) {
                 var result = eval('('+data+')');
-                if(result.id){
-                    //此时判断为真
-                    //$(".collect_button_help1").hide();
-                    //$(".collect_button_help2").show();
+                if(result.id == 20){
+                    //此时点赞成功
+                    $(".collect_button_help1").hide();
+                    $(".collect_button_help2").show();
                 }
                 else{
-                    //显示点赞成功
+                    //显示点赞失败
                     $(".flex_rule").show();
                 }
             });
-            $(".collect_button_help1").hide();
-            $(".collect_button_help2").show();
+            // $(".collect_button_help1").hide();
+            // $(".collect_button_help2").show();
 
             //如果用户已经登录 可以点赞
         }
