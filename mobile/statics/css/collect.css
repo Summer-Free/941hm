@@ -89,11 +89,13 @@ header{
     padding: 2rem 0;
     color: #fff;
     overflow: hidden;
-    height: 19rem;
+    height: 21rem;
 }
 .active_con1 ul{
-	height: 15rem;
+	height: 16rem;
 	overflow: hidden;
+	clear: both;
+	padding-top: 1rem;
 }
 .active_con1 ul li{
 	line-height: 3rem;
@@ -244,6 +246,11 @@ header{
 	width: 48%;
 }
 .exchange_pillow,.exchange_sheet{
+	float: left;
+	width: 50%;
+	display: none;
+}
+.exchange_pillow_grey,.exchange_sheet_grey{
 	float: left;
 	width: 50%;
 }
