@@ -102,12 +102,13 @@ $(function(){
                 var result = eval('('+data+')');
                 if(result.id == 20){
                     //此时点赞成功
+                    $(".flex_rule").show();
                     $(".collect_button_help1").hide();
                     $(".collect_button_help2").show();
                 }
                 else{
-                    //显示点赞失败
-                    $(".flex_rule").show();
+                    $(".collect_button_help1").hide();
+                    $(".collect_button_help2").show();
                 }
             });
             // $(".collect_button_help1").hide();

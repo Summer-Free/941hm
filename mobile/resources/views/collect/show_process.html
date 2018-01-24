@@ -14,25 +14,20 @@
 			</div>
 		</div>
 		<div class="button">
-			<a href="javascript:void(0)" class="exchange_pillow">
+			<a href="javascript:void(0)" class="exchange_pillow" count="{$show_process_count_res}">
 				<img src="../mobile/statics/img/newapp/collect_button_pillow.png" alt="">
 			</a>
-			<a href="javascript:void(0)" class="exchange_sheet">
+			<a href="javascript:void(0)" class="exchange_sheet" count="{$show_process_count_res}">
 				<img src="../mobile/statics/img/newapp/collect_button_sheet.png" alt="">
 			</a>
 		</div>
 		<div class="zan_count">
-			<p>当前点赞人数：35</p>
+			<p>当前点赞人数：{$show_process_count_res}</p>
 			<div class="zan_count_con">
 				<ul>
-					<li>0324已为您点赞</li>
-					<li>0325已为您点赞</li>
-					<li>0326已为您点赞</li>
-					<li>0327已为您点赞</li>
-					<li>0324已为您点赞</li>
-					<li>0325已为您点赞</li>
-					<li>0326已为您点赞</li>
-					<li>0327已为您点赞</li>
+					<!-- {foreach $show_process_res as $key => $show_process_res} -->
+						<li>{$show_process_res.user_name}已为您点赞</li>
+					<!-- {/foreach} -->
 				</ul>
 			</div>
 		</div>

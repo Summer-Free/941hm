@@ -8,7 +8,7 @@ $(function(){
                 $(".flex_message").show();
                 //当用户是新用户   可参加活动   if  注册时间<活动开始时间 给Tips  
             }else{
-                //如果用户已经登录 会有两个按钮 一个是我要助力  另一个是我要参加
+                window.location.href = "../mobile/index.php?r=collect/collect";
             }
             // $("#output").css('display',"block");
         });
@@ -136,7 +136,7 @@ $(function(){
         });
     });
     //点击换取四件套
-    $(".exchange_sheet").click(function() {
+    $(".exchange_sheet").click(function(){
         $(".flex_information").show();
         $("#information_finish").click(function() {
             var tel=$("#tel").val();
