@@ -1,0 +1,182 @@
+.top{
+	width: 100%;
+	overflow: hidden;
+}
+.top img{
+	float: left;
+	width: 25%;
+}
+.gift_give{
+	overflow: hidden;
+}
+.gift_give img{
+	float: left;
+	width: 50%;
+}
+.limited_exchange img{
+	float: left;
+	width: 50%;
+}
+.limited_exchange{
+	position: relative;
+	overflow: hidden;
+}
+.ex_pro{
+	position: absolute;
+	top: 210px;
+	overflow: hidden;
+	width: 100%;
+}
+.limited_exchange .ex_pro p{
+	color: #f5ea91;
+	font-size: 24px;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+}
+.ex_pro_con{
+	width: 56%;
+	margin: 0 auto 40px;
+	overflow: hidden;
+}
+.limited_exchange .ex_pro .ex_pro_con span{
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	font-size: 16px;
+	line-height: 60px;
+	font-size: 22px;
+}
+.ex_pro_con ul li{
+	float: left;
+	width: 23.5%;
+	margin-right: 2%;
+	text-align: center;
+}
+.ex_pro_con1{
+	width: 100%;
+	background-color: #fff;
+	overflow: hidden;
+}
+.ex_pro_con1 img{
+	width: 100%;
+}
+.active_select1{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.active_select1 img{
+	float: left;
+	width: 33.3333333%;
+}
+.active_select1 .active_select_pro{
+	position: absolute;
+	top: 380px;
+	left: 25.5%;
+	width: 48%;
+}
+.active_select1 .active_select_pro img{
+	width: 100%;
+	margin-bottom: 50px;
+}
+.active_select1 .active_select_pro2 img{
+	float: left;
+	width: 48%;
+	margin-right: 4%;
+}
+.active_select2{
+	width: 100%;
+	position: relative;
+}
+.active_select2 img{
+	float: left;
+	width: 33.3333333%;
+}
+.active_select2 .active_select_pro3{
+	position: absolute;
+	top: 380px;
+	left: 25.5%;
+	width: 48%;
+	overflow: hidden;
+}
+.active_select2 .active_select_pro3 img{
+	width: 100%;
+	margin-bottom: 50px;
+}
+.active_select2 .active_select_pro4{
+	overflow: hidden;
+	clear: both;
+}
+.active_select2 .active_select_pro4 img{
+	float: left;
+	width: 48%;
+	margin-right: 4%;
+}
+.active_select2 .active_select_pro4 .active_gift_top{
+	width: 22%;
+	margin: 0 auto;
+	clear: both;
+	padding-top: 180px;
+}
+.active_select2 .active_select_pro4 .active_gift_top img{
+	width: 100%;
+}
+@media only screen and (max-width: 1850px){
+	.ex_pro{
+		top: 200px;
+	}
+	.ex_pro_con{
+		margin: 0 auto 30px;
+	}
+}
+@media only screen and (max-width: 1700px){
+	.ex_pro{
+		top: 180px;
+	}
+	.active_select1 .active_select_pro{
+		top: 350px;
+	}
+	.active_select2 .active_select_pro3{
+		top: 350px;
+	}
+	.active_select2 .active_select_pro4 .active_gift_top{
+		padding-top: 120px;
+	}
+}
+@media only screen and (max-width: 1600px){
+	.ex_pro{
+		top: 170px;
+	}
+	.active_select1 .active_select_pro{
+		top: 320px;
+	}
+	.active_select2 .active_select_pro3{
+		top: 320px;
+	}
+	.active_select2 .active_select_pro4 .active_gift_top{
+		padding-top: 120px;
+	}
+}
+@media only screen and (max-width: 1500px){
+	.ex_pro{
+		top: 150px;
+	}
+	.active_select1 .active_select_pro{
+		top: 300px;
+	}
+	.active_select1 .active_select_pro img{
+		margin-bottom: 40px;
+	}
+	.active_select2 .active_select_pro3{
+		top: 300px;
+	}
+	.active_select2 .active_select_pro3 img{
+		margin-bottom: 40px;
+	}
+	.active_select2 .active_select_pro4 .active_gift_top{
+		padding-top: 100px;
+	}
+}
+

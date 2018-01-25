@@ -1,0 +1,133 @@
+img{
+	display: inherit;
+}
+.top img{
+	width: 100%;
+}
+.limited_exchange{
+	position: relative;
+	overflow: hidden;
+}
+.limited_exchange img{
+	width: 100%;
+}
+.ex_pro{
+	position: absolute;
+	top: 5.5rem;
+	overflow: hidden;
+	width: 100%;
+}
+.ex_pro_con{
+	width: 68%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.ex_pro_con ul li{
+	float: left;
+	width: 23.5%;
+	margin-right: 2%;
+	text-align: center;
+}
+.ex_pro_con1{
+	width: 100%;
+	overflow: hidden;
+}
+.ex_pro_con1 img{
+	width: 100%;
+}
+.active_select1{
+	position: relative;
+}
+.active_select1 img{
+	width: 100%;
+}
+.active_select1 .active_select_pro{
+	position: absolute;
+	top: 8.5rem;
+	width: 70%;
+	left: 15%;
+	overflow: hidden;
+}
+.active_select1 .active_select_pro img{
+	margin-bottom: 1.5rem;
+}
+.active_select1 .active_select_pro2 img{
+	float: left;
+	width: 48%;
+	margin-right: 4%;
+}
+.active_select2{
+	width: 100%;
+	position: relative;
+}
+.active_select2 img{
+	width: 100%;
+}
+.active_select2 .active_select_pro3{
+	position: absolute;
+	top: 8.5rem;
+	left: 15%;
+	width: 70%;
+	overflow: hidden;
+}
+.active_select2 .active_select_pro3 img{
+	margin-bottom: 1.5rem;
+}
+.active_select2 .active_select_pro4 img{
+	float: left;
+	width: 48%;
+	margin-right: 4%;
+}
+.active_select2 .active_select_pro4 .active_gift_top{
+	width: 15%;
+	margin: 0 auto;
+	clear: both;
+	padding-top: 0;
+}
+.active_select2 .active_select_pro4 .active_gift_top img{
+	width: 100%;
+}
+@media only screen and (min-width: 750px){
+	.ex_pro_con{
+		margin: 1rem auto;
+	}
+	.active_select1 .active_select_pro{
+		top: 10rem;
+	}
+	.active_select2 .active_select_pro3{
+		top: 10rem;
+	}
+	.active_select2 .active_select_pro4 .active_gift_top{
+		padding-top: 1rem;
+	}
+}
+@media only screen and (min-width: 680px){
+	.ex_pro_con{
+		margin: 1rem auto;
+	}
+}
+@media only screen and (min-width: 500px){
+	.ex_pro_con{
+		margin: 1rem auto;
+	}
+}
+@media only screen and (min-width: 450px){
+	.ex_pro_con{
+		margin: 0.8rem auto;
+	}
+}
+@media only screen and (max-width: 400px){
+	.ex_pro_con{
+		width: 65%;
+		margin: 0.6rem auto;
+	}
+	.active_select1 .active_select_pro img{
+		margin-bottom: 1rem;
+	}
+	.active_select2 .active_select_pro3 img{
+		margin-bottom: 1rem;
+	}
+	.active_select2 .active_select_pro4 .active_gift_top{
+		padding-top: 0.3rem;
+	}
+}
