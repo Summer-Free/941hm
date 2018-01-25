@@ -245,14 +245,25 @@ header{
 	float: left;
 	width: 48%;
 }
-.exchange_pillow,.exchange_sheet{
+.exchange_pillow{
 	float: left;
 	width: 50%;
 	display: none;
 }
-.exchange_pillow_grey,.exchange_sheet_grey{
+.exchange_sheet{
 	float: left;
 	width: 50%;
+	display: none;
+}
+.exchange_pillow_grey{
+	float: left;
+	width: 50%;
+	/* display: none; */
+}
+.exchange_sheet_grey{
+	float: left;
+	width: 50%;
+	/* display: none; */
 }
 .collect_zan{
 	width: 60%;

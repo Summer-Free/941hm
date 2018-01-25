@@ -166,20 +166,26 @@ $(function(){
     });
     //预加载时间，判断点赞数量
     $(document).ready(function(){
-        var pnum=$(".exchange_pillow").attr("count");
+        var pnum = $(".exchange_pillow").attr("count");
         console.log(pnum);
-        if(pnum>=88){
+        if(pnum >= 88){
             console.log(">=88");
             $(".exchange_pillow").show();
             $(".exchange_pillow_grey").hide();
             $(".exchange_sheet").show();
             $(".exchange_sheet_grey").hide();
         }
-        else if(pnum<20){
+        else if(pnum < 20){
             console.log("小于20");
+            /*$(".exchange_pillow_grey").css("display":"block");
+            $(".exchange_sheet_grey").css("display":"block");
+            $(".exchange_pillow").css("display":"none");
+            $(".exchange_sheet").css("display":"none");*/
+            $(".exchange_pillow_grey").show();
+            $(".exchange_sheet_grey").show();
         }
         else{
-            console.log("20<=pnum<88");
+            console.log("20-88");
             $(".exchange_pillow").show();
             $(".exchange_pillow_grey").hide();
         }
