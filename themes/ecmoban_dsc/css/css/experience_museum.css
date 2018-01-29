@@ -17,18 +17,64 @@
 	width: 380px;
 	background-color: #fff;
 }
-.show-list li div {
-	padding: 5px 15px 25px 15px;
-	font-size: 16px;
+.show-list li .work_con{
+	padding: 18px 10px 16px;
+	height: 80px;
 }
 .show-list li h3 {
-	padding: 12px 0;
-	font-weight: 600;
+	font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    float: left;
+    max-width: 180px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
-.show-list sup {
-	display: inline-block;
-	font-size: 10px;
-	-webkit-transform: scale(.8);
+.show-list li .work_mark{
+	float: right;
+}
+.show-list li .work_mark span{
+	float: left;
+    margin-right: 7px;
+    color: #999;
+}
+.show-list li .work_mark span:before{
+	content: '';
+    width: 17px;
+    height: 15px;
+    display: inline-block;
+    margin-bottom: -2px;
+    margin-right: 5px;
+}
+.show-list li .work_mark img{
+	display: inline;
+	margin-right: 2px;
+}
+.show-list li .work_mark .work_save:before{
+	background: url(../../iamges/20170517/icon-collection.png) center no-repeat;
+}
+.show-list li .work_mark .work_recommend:before{
+	background: url(../../iamges/20170517/icon-comment.png) center no-repeat;
+}
+.show-list li .work_mark .work_like:before{
+	background: url(../../iamges/20170517/icon-like.png) center no-repeat;
+}
+.show-list li .work_style{
+	clear: both;
+	padding-top: 6px;
+}
+.show-list li .work_style span{
+    color: #666;
+    max-width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+.show-list li .work_style span:after{
+	margin-right: 20px;
+	content: '';
 }
 .tab-nav {
 	padding-bottom: 10px;
