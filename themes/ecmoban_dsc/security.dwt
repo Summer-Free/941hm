@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--首页CSS以及部分通用部分的合并LBI-->
+        <!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem -->
+		<!--首页专用-->
+		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/find_designer.css">
+
+        {* 包含脚本文件 *}
+        {insert_scripts files='jquery.json.js,transport_jquery.js'}
+<style>
+	body{
+		/* background:url("themes/ecmoban_dsc/iamges/20170517/security_bg1.jpg") 0 0 no-repeat,
+		                   url("themes/ecmoban_dsc/iamges/20170517/security_bg2.jpg") 0px 540px no-repeat;
+		background-size: 100% 100%; */
+        height: 100%;
+        margin: 0;
+        padding: 0;
+	}
+	.security_body{
+		background:url("themes/ecmoban_dsc/iamges/20170517/security_bg1.jpg") 0 0 no-repeat,
+		           url("themes/ecmoban_dsc/iamges/20170517/security_bg2.jpg") 0px 540px no-repeat;
+		background-size: 100% auto;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+	}
+</style>
+</head>
+<body>
+	<div class="security_body">
+		<!-- <img width="100%" src="themes/ecmoban_dsc/iamges/20170517/security_bg1.jpg" alt="">
+		<img width="100%" src="themes/ecmoban_dsc/iamges/20170517/security_bg2.jpg" alt=""> -->
+		aaaaaaaaaaaaaaaaaaaaaaaaaaaa
+	</div>
+
+</body>
+</html>
