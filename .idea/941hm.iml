@@ -33,9 +33,6 @@
           <root url="file://$MODULE_DIR$/mobile/vendor/monolog/monolog" />
           <root url="file://$MODULE_DIR$/mobile/vendor/overtrue/pinyin" />
           <root url="file://$MODULE_DIR$/mobile/vendor/phpoffice/phpexcel" />
-          <root url="file://$MODULE_DIR$/mobile/vendor/phpqrcode/bindings" />
-          <root url="file://$MODULE_DIR$/mobile/vendor/phpqrcode/cache" />
-          <root url="file://$MODULE_DIR$/mobile/vendor/phpqrcode/tools" />
           <root url="file://$MODULE_DIR$/mobile/vendor/psr/log" />
           <root url="file://$MODULE_DIR$/mobile/vendor/sentry/sentry" />
         </CLASSES>
@@ -48,9 +45,6 @@
           <root url="file://$MODULE_DIR$/mobile/vendor/monolog/monolog" />
           <root url="file://$MODULE_DIR$/mobile/vendor/overtrue/pinyin" />
           <root url="file://$MODULE_DIR$/mobile/vendor/phpoffice/phpexcel" />
-          <root url="file://$MODULE_DIR$/mobile/vendor/phpqrcode/bindings" />
-          <root url="file://$MODULE_DIR$/mobile/vendor/phpqrcode/cache" />
-          <root url="file://$MODULE_DIR$/mobile/vendor/phpqrcode/tools" />
           <root url="file://$MODULE_DIR$/mobile/vendor/psr/log" />
           <root url="file://$MODULE_DIR$/mobile/vendor/sentry/sentry" />
         </SOURCES>

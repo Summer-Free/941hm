@@ -168,7 +168,7 @@ $(function(){
     $(document).ready(function(){
         var pnum=$(".exchange_pillow").attr("count");
         console.log(pnum);
-        if(pnum>=88){
+        if(pnum>0=88){
             console.log(">=88");
             $(".exchange_pillow").show();
             $(".exchange_pillow_grey").hide();
