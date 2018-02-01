@@ -46,164 +46,616 @@
                 <div class="show-list">
                     <ul class="active clearfix">
                         <li>
+                            <a target="_blank" href="http://3d.fuwo.com/pano/single/c523a98adbc311e7930b00163e0018da/">
+                                <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic01.jpg" width="380" height="285" alt="">
+                                <div class="work_con">
+                                    <h3>昌吉欧亚国际-客厅</h3>
+                                    <div class="work_mark">
+                                        <span class="work_save">916</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">653</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">面积：90-120m²</span>
+                                        <span>中式/客厅</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://3d.fuwo.com/pano/single/1af424eae3d811e7a5ae00163e0018da/">
+                                <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic02.jpg" width="380" height="285" alt="">
+                                <div class="work_con">
+                                    <h3>天峦湖-153平-中式</h3>
+                                    <div class="work_mark">
+                                        <span class="work_save">933</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">816</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">面积：150-200m²</span>
+                                        <span>中式/卧室</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="margin-r-0">
+                            <a target="_blank" href="http://3d.fuwo.com/pano/single/60a2db58e56811e7a07700163e0018da/">
+                                <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic03.jpg" width="380" height="285" alt="">
+                                <div class="work_con">
+                                    <h3>天峦湖-153平-中式</h3>
+                                    <div class="work_mark">
+                                        <span class="work_save">750</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">670</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">面积：150-200m²</span>
+                                        <span>中式/餐厅</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://3d.fuwo.com/pano/single/c1123802dbc311e7a49600163e0018da/">
+                                <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic01.jpg" width="380" height="285" alt="">
+                                <div class="work_con">
+                                    <h3>昌吉欧亚国际-餐厅</h3>
+                                    <div class="work_mark">
+                                        <span class="work_save">916</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">653</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">面积：90-120m²</span>
+                                        <span>中式/餐厅</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://3d.fuwo.com/pano/single/a8988982db1b11e7836d00163e0018da/">
+                                <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic05.jpg" width="380" height="285" alt="">
+                                <div class="work_con">
+                                    <h3>昌吉欧亚国际-主卧</h3>
+                                    <div class="work_mark">
+                                        <span class="work_save">504</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">690</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">面积：90-120m²</span>
+                                        <span>中式/卧室</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="margin-r-0">
+                            <a target="_blank" href="http://3d.fuwo.com/pano/single/869a97c0db1c11e7a76600163e0018da/">
+                                <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic06.jpg" width="380" height="285" alt="">
+                                <div class="work_con">
+                                    <h3>昌吉欧亚国际-次卧</h3>
+                                    <div class="work_mark">
+                                        <span class="work_save">735</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">443</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">面积：90-120m²</span>
+                                        <span>中式/卧室</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://3d.fuwo.com/pano/single/c003aff2db1b11e7a56d00163e0018da/">
+                                <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic07.jpg" width="380" height="285" alt="">
+                                <div class="work_con">
+                                    <h3>昌吉欧亚国际-书房</h3>
+                                    <div class="work_mark">
+                                        <span class="work_save">493</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">673</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">面积：90-120m²</span>
+                                        <span>中式/书房</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://3d.fuwo.com/pano/single/6885d2ccdbee11e7822d00163e0018da/">
+                                <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic08.jpg" width="380" height="285" alt="">
+                                <div class="work_con">
+                                    <h3>昌吉欧亚国际-厨房</h3>
+                                    <div class="work_mark">
+                                        <span class="work_save">499</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">628</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">面积：90-120m²</span>
+                                        <span>中式/厨房</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="margin-r-0">
+                            <a target="_blank" href="http://3d.fuwo.com/pano/single/d3f92026bd5e11e7962b00163e0018da/">
+                                <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic09.jpg" width="380" height="285" alt="">
+                                <div class="work_con">
+                                    <h3>百替华府中式客厅</h3>
+                                    <div class="work_mark">
+                                        <span class="work_save">129</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">143</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">面积：120-150m²</span>
+                                        <span>中式/客厅</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://3d.fuwo.com/pano/single/bffd7a0ebd5e11e789ac00163e0018da/">
+                                <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic010.jpg" width="380" height="285" alt="">
+                                <div class="work_con">
+                                    <h3>百替华府中式书房</h3>
+                                    <div class="work_mark">
+                                        <span class="work_save">53</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">50</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">面积：120-150m²</span>
+                                        <span>中式/书房</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://3d.fuwo.com/pano/single/ba6c5f12bd6611e7980600163e0018da/">
+                                <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic011.jpg" width="380" height="285" alt="">
+                                <div class="work_con">
+                                    <h3>昌吉欧亚国际-厨房</h3>
+                                    <div class="work_mark">
+                                        <span class="work_save">49</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">33</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">面积：120-150m²</span>
+                                        <span>中式/厨房</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="margin-r-0">
+                            <a target="_blank" href="http://3d.fuwo.com/pano/single/cb79934abd5e11e7962b00163e0018da/">
+                                <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic012.jpg" width="380" height="285" alt="">
+                                <div class="work_con">
+                                    <h3>百替华府中式次卧</h3>
+                                    <div class="work_mark">
+                                        <span class="work_save">80</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">101</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">面积：120-150m²</span>
+                                        <span>中式/卧室</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://3d.fuwo.com/pano/single/3d322016ceac11e7be0100163e0018da/">
+                                <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic013.jpg" width="380" height="285" alt="">
+                                <div class="work_con">
+                                    <h3>嘉兴慕容城三室两厅-客厅</h3>
+                                    <div class="work_mark">
+                                        <span class="work_save">917</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">907</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">面积：120-150m²</span>
+                                        <span>中式/客厅</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://3d.fuwo.com/pano/single/9062af5cce6711e7a75f00163e0018da/">
+                                <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic014.jpg" width="380" height="285" alt="">
+                                <div class="work_con">
+                                    <h3>嘉兴慕容城三室两厅-书房</h3>
+                                    <div class="work_mark">
+                                        <span class="work_save">372</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">487</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">面积：150-200m²</span>
+                                        <span>中式/书房</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="margin-r-0">
+                            <a target="_blank" href="http://3d.fuwo.com/pano/single/994c81dec05b11e797b600163e0018da/">
+                                <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic015.jpg" width="380" height="285" alt="">
+                                <div class="work_con">
+                                    <h3>英地泰和院中式客厅</h3>
+                                    <div class="work_mark">
+                                        <span class="work_save">643</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">482</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">面积：90-120m²</span>
+                                        <span>中式/客厅</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://3d.fuwo.com/pano/single/b4493df8b2df11e7a03900163e0018da/">
+                                <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic016.jpg" width="380" height="285" alt="">
+                                <div class="work_con">
+                                    <h3>新中式绿地新都会 客厅</h3>
+                                    <div class="work_mark">
+                                        <span class="work_save">31</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">8</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">面积：90-120m²</span>
+                                        <span>中式/客厅</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://3d.fuwo.com/pano/single/bc378ecab2df11e7be1600163e0018da/">
+                                <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic017.jpg" width="380" height="285" alt="">
+                                <div class="work_con">
+                                    <h3>新中式绿地新都会  餐厅</h3>
+                                    <div class="work_mark">
+                                        <span class="work_save">15</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">3</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">面积：90-120m²</span>
+                                        <span>中式/餐厅</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="margin-r-0">
+                            <a target="_blank" href="http://3d.fuwo.com/pano/single/1927df2cb2e011e7bfc300163e0018da/">
+                                <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic018.jpg" width="380" height="285" alt="">
+                                <div class="work_con">
+                                    <h3>新中式绿地新都会 主卧</h3>
+                                    <div class="work_mark">
+                                        <span class="work_save">11</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">2</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">面积：90-120m²</span>
+                                        <span>中式/卧室</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="clearfix">
+                        <li>
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4IRHBVYAW/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic4.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>新中式复式</h3>
-                                    <p>户型：3室3厅3卫1厨  面积：293.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">957</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">883</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：3室3厅3卫1厨</span>
+                                        <span>面积：293.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4IUXRI3B8/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic5.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>金域蓝湾</h3>
-                                    <p>户型：3室2厅2卫1厨  面积：132.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">920</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">815</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：3室2厅2卫1厨</span>
+                                        <span>面积：132.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li class="margin-r-0">
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4INV80NDC/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic6.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>HOMEWORK</h3>
-                                    <p>户型：3室2厅2卫1厨  面积：103.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">873</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">801</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：3室2厅2卫1厨</span>
+                                        <span>面积：103.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4ITGTGQ4U/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic7.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>111方时代豪庭四居</h3>
-                                    <p>户型：2室2厅0卫0厨  面积：111.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">830</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">753</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：2室2厅0卫0厨</span>
+                                        <span>面积：111.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4JAOWD45N/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic8.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>110方现代中式三居</h3>
-                                    <p>户型：3室0厅1卫0厨  面积：110.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">790</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">713</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：3室0厅1卫0厨</span>
+                                        <span>面积：110.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li class="margin-r-0">
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4ITQCWL0A/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic9.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>129新中式两居</h3>
-                                    <p>户型：2室1厅0卫1厨  面积：129.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">726</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">650</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：2室1厅0卫1厨</span>
+                                        <span>面积：129.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4IIEEH2I9/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic10.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>126方新中式二居</h3>
-                                    <p>户型：3室1厅0卫1厨  面积：126.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">660</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">598</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：3室1厅0卫1厨</span>
+                                        <span>面积：126.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4IULS05QY/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic11.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>118方水韵金沙三居</h3>
-                                    <p>户型：2室2厅0卫1厨  面积：118.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">630</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">883</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：2室2厅0卫1厨</span>
+                                        <span>面积：118.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li class="margin-r-0">
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4IU45A2D0/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic12.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>117方盛世荣华四居</h3>
-                                    <p>户型：3室3厅3卫1厨  面积：293.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">467</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">563</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：3室3厅3卫1厨</span>
+                                        <span>面积：293.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4IW1GPUU8/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic13.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>104方中式三居</h3>
-                                    <p>户型：3室0厅2卫1厨  面积：106.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">762</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">760</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：3室0厅2卫1厨</span>
+                                        <span>面积：106.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4INLAJ5E6/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic14.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>99方中式两居</h3>
-                                    <p>户型：3室2厅1卫1厨  面积：99.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">550</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">492</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：3室2厅1卫1厨</span>
+                                        <span>面积：99.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li class="margin-r-0">
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4IH9EMV9G/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic15.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>中式风格四居室</h3>
-                                    <p>户型：4室2厅3卫1厨  面积：236.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">746</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">981</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：4室2厅3卫1厨</span>
+                                        <span>面积：236.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4IVP173IL/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic16.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>271方新中式别墅</h3>
-                                    <p>户型：1室2厅1卫1厨  面积：271.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">456</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">780</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：1室2厅1卫1厨</span>
+                                        <span>面积：271.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4IIB8BX4T/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic17.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>243方新中式四居</h3>
-                                    <p>户型：4室2厅1卫1厨  面积：236.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">456</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">564</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：4室2厅1卫1厨</span>
+                                        <span>面积：236.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li class="margin-r-0">
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4IH9RP7F8/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic18.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>新中式全房</h3>
-                                    <p>户型：4室2厅0卫1厨  面积：166.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">789</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">879</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：4室2厅0卫1厨</span>
+                                        <span>面积：166.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4IU0LD7XY/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic19.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>雅居全案设计</h3>
-                                    <p>户型：3室4厅1卫1厨  面积：116.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">456</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">564</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：3室4厅1卫1厨</span>
+                                        <span>面积：116.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4IT4R4MTX/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic20.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>新中式品诺</h3>
-                                    <p>户型：1室1厅0卫1厨  面积：134.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">320</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">290</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：1室1厅0卫1厨</span>
+                                        <span>面积：134.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li class="margin-r-0">
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4IRUQLUCM/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic21.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>79方新中式3居</h3>
-                                    <p>户型：3室2厅1卫1厨  面积：79.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">450</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">563</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：3室2厅1卫1厨</span>
+                                        <span>面积：79.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
@@ -212,162 +664,306 @@
                         <li>
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4IU5VMX6D/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic22.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>《檀香》</h3>
-                                    <p>户型：2室2厅2卫0厨  面积：196.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">230</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">196</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：2室2厅2卫0厨</span>
+                                        <span>面积：196.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4J6RQRDBB/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic23.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>282方中式三居</h3>
-                                    <p>户型：4室2厅2卫1厨  面积：282.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">590</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">681</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：4室2厅2卫1厨</span>
+                                        <span>面积：282.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li class="margin-r-0">
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4IGLMP5LI/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic24.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>106方新中式三居</h3>
-                                    <p>户型：3室2厅1卫1厨  面积：106.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">890</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">650</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：3室2厅1卫1厨</span>
+                                        <span>面积：106.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4IURYA8FY/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic25.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>玉栖苑-复式楼</h3>
-                                    <p>户型：3室1厅2卫0厨  面积：138.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">340</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">216</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：3室1厅2卫0厨</span>
+                                        <span>面积：138.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4IUW31BBM/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic26.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>淡墨秋山|轻中式</h3>
-                                    <p>户型：2室2厅3卫1厨  面积：224.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">560</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">860</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：2室2厅3卫1厨</span>
+                                        <span>面积：224.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li class="margin-r-0">
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4J7RWW3T9/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic27.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>83方新中式两居</h3>
-                                    <p>户型：2室2厅1卫1厨  面积：83.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">390</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">465</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：2室2厅1卫1厨</span>
+                                        <span>面积：83.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4IRJ06VR0/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic28.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>中国风红胡桃木</h3>
-                                    <p>户型：4室2厅3卫1厨  面积：189.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">650</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">564</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：4室2厅3卫1厨</span>
+                                        <span>面积：189.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4JFMP25Y0/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic29.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>112方新中式·客餐厅</h3>
-                                    <p>户型：3室2厅2卫1厨  面积：112.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">860</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">871</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：3室2厅2卫1厨</span>
+                                        <span>面积：112.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li class="margin-r-0">
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4IDU5PRQU/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic30.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>217方新中式别墅客餐厅</h3>
-                                    <p>户型：2室2厅1卫1厨  面积：217.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">490</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">495</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：2室2厅1卫1厨</span>
+                                        <span>面积：217.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4ISPM5B2P/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic31.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>115方中式三居</h3>
-                                    <p>户型：3室2厅1卫1厨  面积：115.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">640</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">670</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：3室2厅1卫1厨</span>
+                                        <span>面积：115.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4JCSY8B42/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic32.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>中式客餐厅</h3>
-                                    <p>户型：0室1厅0卫0厨  面积：74.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">150</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">129</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：0室1厅0卫0厨</span>
+                                        <span>面积：74.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li class="margin-r-0">
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4IRG8P6A4/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic33.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>93方新中式一居</h3>
-                                    <p>户型：1室2厅0卫0厨  面积：93.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">461</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">340</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：1室2厅0卫0厨</span>
+                                        <span>面积：93.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4IW12TVKV/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic34.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>别墅主卧</h3>
-                                    <p>户型：1室0厅1卫0厨  面积：75.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">460</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">550</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：1室0厅1卫0厨</span>
+                                        <span>面积：75.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4JCOXL8D0/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic35.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>新中式客餐厅</h3>
-                                    <p>户型：2室2厅2卫1厨  面积：164.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">546</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">766</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：2室2厅2卫1厨</span>
+                                        <span>面积：164.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li class="margin-r-0">
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4IVLHR9AN/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic36.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>150方新中式三居</h3>
-                                    <p>户型：4室1厅1卫1厨  面积：150.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">456</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">454</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：4室1厅1卫1厨</span>
+                                        <span>面积：150.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4ILHNYI2X/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic37.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>72方中式两居</h3>
-                                    <p>户型：1室2厅0卫0厨  面积：72.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">234</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">348</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：1室2厅0卫0厨</span>
+                                        <span>面积：72.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4IXJCTIAP/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic38.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>屈氏设计</h3>
-                                    <p>户型：0室2厅1卫1厨  面积：135.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">455</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">674</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：0室2厅1卫1厨</span>
+                                        <span>面积：135.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
                         <li class="margin-r-0">
                             <a target="_blank" href="https://yun.kujiale.com/design/3FO4IVONOTIT/show">
                                 <img class="lazy" data-original="themes/ecmoban_dsc/iamges/20170517/ex-pic39.jpg" width="380" height="285" alt="">
-                                <div>
+                                <div class="work_con">
                                     <h3>醉爱中国画</h3>
-                                    <p>户型：3室2厅2卫0厨  面积：262.00m<sup>2</sup></p>
+                                    <div class="work_mark">
+                                        <span class="work_save">462</span>
+                                        <span class="work_recommend">0</span>
+                                        <span class="work_like">415</span>
+                                    </div>
+                                    <div class="work_style">
+                                        <span class="work_area">户型：3室2厅2卫0厨</span>
+                                        <span>面积：262.00m²</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
@@ -376,6 +972,7 @@
                 <div class="tab-nav">
                     <a class="active transition" href="javascript:void(0);">1</a>
                     <a class="transition" href="javascript:void(0);">2</a>
+                    <a class="transition" href="javascript:void(0);">3</a>
                 </div>
             </div>
         </div>
