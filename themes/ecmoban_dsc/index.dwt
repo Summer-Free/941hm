@@ -234,7 +234,7 @@
 										<!-- {if $smarty.foreach.tyg_banner_res.iteration ==1  } -->
 										<span>智能线上体验馆</span>
 										<!-- {elseif $smarty.foreach.tyg_banner_res.iteration ==2 } -->
-										<span>智能场景定制</span>
+										<span>用户追溯系统</span>
 										<!--{/if}-->
 										<i></i>
 									</a>
