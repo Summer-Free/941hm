@@ -10,32 +10,121 @@
         {insert_scripts files='jquery.json.js,transport_jquery.js'}
 <style>
 	body{
-		/* background:url("themes/ecmoban_dsc/iamges/20170517/security_bg1.jpg") 0 0 no-repeat,
-		                   url("themes/ecmoban_dsc/iamges/20170517/security_bg2.jpg") 0px 540px no-repeat;
-		background-size: 100% 100%; */
-        height: 100%;
         margin: 0;
         padding: 0;
+        min-height: 490px;
+        max-width: 600px;
+	    overflow: hidden;
+	    /*position: relative;*/
+	}
+	img{
+		display: inline;
 	}
 	.security_body{
-		background:url("themes/ecmoban_dsc/iamges/20170517/security_bg1.jpg") 0 0 no-repeat,
-		           url("themes/ecmoban_dsc/iamges/20170517/security_bg2.jpg") 0px 540px no-repeat;
-		background-size: 100% auto;
+		width: 100%;
+	    height: 100%;
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    background-image: url("themes/ecmoban_dsc/iamges/20170517/security_bg1.jpg");
+	    background-size: 100% 100%;
+	    background-repeat: no-repeat;
+	    padding: 2% 3%;
+	}
+	.security_logo{
+		width: 227px;
+	}
+	.security_con{
+		width: 614px;
+		margin: 0 auto;
+	}
+	.security_title{
+		width: 55%;
+		margin: 120px  0 100px 15%;
+	}
+	.security_search_con{
+		height: 60px;
+		width: 85%;
+		background-color: #f0f0f0;
+		border-radius: 60px;
+		float: left;
+		position: relative;
+	}
+	.security_search_con .span{
 		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		height: 100%;
+		top: 15px;
+		left: 68px;
+		width: 80%;
+		font-size: 20px;
+		color: #999;
+	}
+	.security_search_con div{
+		float: left;
+		width: 8%;
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+	.security_search_con div img{
+		padding: 15px 0;
+		width: 100%;
+	}
+	.security_search_con input{
+		border: 0;
+		height: 40px;
+		width: 75%;
+		margin-top: 10px;
+		font-size: 20px;
+		color: #333;
+		background-color: #f0f0f0;
+	}
+	input::-webkit-input-placeholder { /* WebKit browsers */
+	    color:#999;
+	}
+	input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	    color:#999;
+	}
+	input::-moz-placeholder { /* Mozilla Firefox 19+ */
+	    color:#999;
+	}
+	input:-ms-input-placeholder { /* Internet Explorer 10+ */
+	    color:#999;
+	}
+	.security_search_text{
+		font-size: 30px;
+		color: #666;
+		float: left;
+		width: 15%;
+		text-align: center;
+		padding: 10px;
 	}
 </style>
 </head>
 <body>
 	<div class="security_body">
-		<!-- <img width="100%" src="themes/ecmoban_dsc/iamges/20170517/security_bg1.jpg" alt="">
-		<img width="100%" src="themes/ecmoban_dsc/iamges/20170517/security_bg2.jpg" alt=""> -->
-		aaaaaaaaaaaaaaaaaaaaaaaaaaaa
+		<div class="security_logo">
+			<img width="100%" src="themes/ecmoban_dsc/iamges/20170517/security_logo.png" alt="">
+		</div>
+		<div class="security_con">
+			<div class="security_title">
+				<img width="100%" src="themes/ecmoban_dsc/iamges/20170517/security_title.png" alt="">
+			</div>
+			<div class="security_search">
+				<div class="security_search_con">
+					<div><img src="themes/ecmoban_dsc/iamges/20170517/security_search.png" alt=""></div>
+					<!-- <div class="span">请输入产品条形码</div> -->
+					<input type="text" placeholder="请输入产品条形码">
+				</div>
+				<a href="javascript:void(0)">
+					<div class="security_search_text">搜索</div>
+				</a>
+			</div>
+		</div>
 	</div>
+	<script>
+		$(".span").click(function() {
+			$(".span").hide();
+		});
 
+	</script>
 </body>
 </html>
