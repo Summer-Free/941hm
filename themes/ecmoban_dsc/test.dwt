@@ -7,56 +7,6 @@
 <script type="text/javascript" src="themes/ecmoban_dsc/js/jquery-1.9.1.min.js"></script>
 
 <body>
-	<!-- <a id="qiandao" href="javascript:;" onclick="qiandao()"; value="1" >签到</a> -->
-	<!-- <script type="text/javascript"> -->
-	<!-- function qiandao(){
-		var user_id=$("#qiandao").attr('value');;
-		if(user_id>0){
-			//此处打开一个签到的弹框	显示本月日历并且显示已签到的天数和签到时间顺便显示
-		}
-	} -->
-<!-- </script> -->
-		<!-- <form id="form_info" action="test.php" method="post"> -->
-           <!--  <div class="clearfix">
-                <div class="left">
-                    <h3><span>关于您/</span>About you</h3>
-                    <div class="form-group clearfix">
-                        <label for="name">您的姓名 :</label>
-                        <input id="name" type="text" name="username" />
-                    </div>
-                </div>
-                <div class="right">
-                    <h3><span>关于您的品牌</span>/About your brand</h3>
-                    <div class="form-group clearfix">
-                        <label for="brand_name">品牌名称 :</label>
-                        <input id="brand_name" type="text" name="brand_name" />
-                    </div>
-                </div>
-            </div>
-            <button id="submit">确认提交</button>
-        <!-- </form> -->
-        <!-- <script type="text/javascript"> -->
-           <!--  $(function(){
-                $('#submit').click(function() {
-                   var name =$('#name').val();
-                   var brand_name =$('#brand_name').val();
-                   // console.log(name);
-                   // console.log(brand_name);
-                   $.ajax({
-                       url: 'test.php',
-                       type: 'POST',
-                       dataType: 'json',
-                       data: {name: name,brand_name: brand_name},
-                   })
-                   .done(function(res) {
-                       console.log(res.id);
-                       console.log(res.info);
-                       alert(res.info);
-                       alert(res.id);
-                   });
-
-                });
-            }); -->
-        <!-- </script> --> -->
+	
 </body>
 </html>
