@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9bc95e9f-669c-4859-8d24-32c8e2b90604" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/mobile/composer.json</pharConfigPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="120" column="45" lean-forward="true" selection-start-line="120" selection-start-column="45" selection-end-line="120" selection-end-column="45" />
+              <folding>
+                <marker date="1520565458623" expanded="true" signature="15241:15303" ph="select * fro... dsc_ad" />
+                <marker date="1520565458623" expanded="true" signature="15455:15531" ph="select * fro... dsc_ad" />
+                <marker date="1520565458623" expanded="true" signature="15722:15771" ph="select * fro... dsc_ad" />
+                <marker date="1520565458623" expanded="true" signature="15914:15991" ph="select * fro... dsc_brand" />
+                <marker date="1520565458623" expanded="true" signature="16138:16246" ph="select id,ti... dsc_zc_project" />
+                <marker date="1520565458623" expanded="true" signature="17020:17297" ph="select goods... dsc_goods" />
+                <marker date="1520565458623" expanded="true" signature="17115:17163" ph="select cat_i... dsc_category" />
+                <marker date="1520565458623" expanded="true" signature="17388:17464" ph="select * fro... dsc_goods" />
+                <marker date="1520565458623" expanded="true" signature="17695:17788" ph="SELECT goods... dsc_goods" />
+                <marker date="1520565458623" expanded="true" signature="17952:18056" ph="SELECT artic... dsc_article" />
+                <marker date="1520565458623" expanded="true" signature="18181:18235" ph="SELECT link_... dsc_friend_link" />
+                <marker date="1520565458623" expanded="true" signature="18437:18511" ph="select * fro... dsc_goods" />
+                <marker date="1520565458623" expanded="true" signature="18548:18622" ph="select * fro... dsc_goods" />
+                <marker date="1520565458623" expanded="true" signature="18738:18853" ph="SELECT artic... dsc_article" />
+                <marker date="1520565458623" expanded="true" signature="19425:19484" ph="SELECT * fro... dsc_category" />
+                <marker date="1520565458623" expanded="true" signature="19635:19722" ph="select cat_i... dsc_category" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myship.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myship.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="517">
+              <caret line="81" column="1" lean-forward="true" selection-start-line="81" selection-start-column="1" selection-end-line="81" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new_arrival.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/new_arrival.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new_url.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/new_url.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="news.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/news.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3666">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1511399698030" expanded="true" signature="2007:2107" ph="SELECT cat_n... ${$ecs-&gt;table('article_cat')}" />
+                <marker date="1511399698030" expanded="true" signature="9180:9278" ph="SELECT cat_i... ${$GLOBALS['ecs']-&gt;table('article_cat')}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/index.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
+    <include_path>
+      <path value="$PROJECT_DIR$/mobile/vendor/composer" />
+      <path value="$PROJECT_DIR$/mobile/vendor/sentry/sentry" />
+      <path value="$PROJECT_DIR$/mobile/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/mobile/vendor/ectouch/framework" />
+      <path value="$PROJECT_DIR$/mobile/vendor/overtrue/pinyin" />
+      <path value="$PROJECT_DIR$/mobile/vendor/ectouch/libraries" />
+      <path value="$PROJECT_DIR$/mobile/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/mobile/vendor/ectouch/wechat" />
+      <path value="$PROJECT_DIR$/mobile/vendor/ectouch/verify" />
+      <path value="$PROJECT_DIR$/mobile/vendor/phpoffice/phpexcel" />
+      <path value="$PROJECT_DIR$/mobile/vendor/phpqrcode/bindings" />
+      <path value="$PROJECT_DIR$/mobile/vendor/phpqrcode/tools" />
+      <path value="$PROJECT_DIR$/mobile/vendor/phpqrcode/cache" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="2028" />
+    <option name="y" value="34" />
+    <option name="width" value="1818" />
+    <option name="height" value="992" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="941hm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="941hm" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/941hm/index.php" />
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9bc95e9f-669c-4859-8d24-32c8e2b90604" name="Default" comment="" />
+      <created>1520411179768</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1520411179768</updated>
+      <workItem from="1520411180982" duration="89000" />
+      <workItem from="1520411271208" duration="2236000" />
+      <workItem from="1520416675321" duration="472000" />
+      <workItem from="1520430444305" duration="907000" />
+      <workItem from="1520562464576" duration="327000" />
+      <workItem from="1520836808927" duration="738000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4769000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="2028" y="34" width="1818" height="992" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13333334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902467" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902467" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5346651" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902467" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1520565458623" expanded="true" signature="15241:15303" ph="select * fro... dsc_ad" />
+            <marker date="1520565458623" expanded="true" signature="15455:15531" ph="select * fro... dsc_ad" />
+            <marker date="1520565458623" expanded="true" signature="15722:15771" ph="select * fro... dsc_ad" />
+            <marker date="1520565458623" expanded="true" signature="15914:15991" ph="select * fro... dsc_brand" />
+            <marker date="1520565458623" expanded="true" signature="16138:16246" ph="select id,ti... dsc_zc_project" />
+            <marker date="1520565458623" expanded="true" signature="17020:17297" ph="select goods... dsc_goods" />
+            <marker date="1520565458623" expanded="true" signature="17115:17163" ph="select cat_i... dsc_category" />
+            <marker date="1520565458623" expanded="true" signature="17388:17464" ph="select * fro... dsc_goods" />
+            <marker date="1520565458623" expanded="true" signature="17695:17788" ph="SELECT goods... dsc_goods" />
+            <marker date="1520565458623" expanded="true" signature="17952:18056" ph="SELECT artic... dsc_article" />
+            <marker date="1520565458623" expanded="true" signature="18181:18235" ph="SELECT link_... dsc_friend_link" />
+            <marker date="1520565458623" expanded="true" signature="18437:18511" ph="select * fro... dsc_goods" />
+            <marker date="1520565458623" expanded="true" signature="18548:18622" ph="select * fro... dsc_goods" />
+            <marker date="1520565458623" expanded="true" signature="18738:18853" ph="SELECT artic... dsc_article" />
+            <marker date="1520565458623" expanded="true" signature="19425:19484" ph="SELECT * fro... dsc_category" />
+            <marker date="1520565458623" expanded="true" signature="19635:19722" ph="select cat_i... dsc_category" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <marker date="1520565458623" expanded="true" signature="15241:15303" ph="select * fro... dsc_ad" />
+            <marker date="1520565458623" expanded="true" signature="15455:15531" ph="select * fro... dsc_ad" />
+            <marker date="1520565458623" expanded="true" signature="15722:15771" ph="select * fro... dsc_ad" />
+            <marker date="1520565458623" expanded="true" signature="15914:15991" ph="select * fro... dsc_brand" />
+            <marker date="1520565458623" expanded="true" signature="16138:16246" ph="select id,ti... dsc_zc_project" />
+            <marker date="1520565458623" expanded="true" signature="17020:17297" ph="select goods... dsc_goods" />
+            <marker date="1520565458623" expanded="true" signature="17115:17163" ph="select cat_i... dsc_category" />
+            <marker date="1520565458623" expanded="true" signature="17388:17464" ph="select * fro... dsc_goods" />
+            <marker date="1520565458623" expanded="true" signature="17695:17788" ph="SELECT goods... dsc_goods" />
+            <marker date="1520565458623" expanded="true" signature="17952:18056" ph="SELECT artic... dsc_article" />
+            <marker date="1520565458623" expanded="true" signature="18181:18235" ph="SELECT link_... dsc_friend_link" />
+            <marker date="1520565458623" expanded="true" signature="18437:18511" ph="select * fro... dsc_goods" />
+            <marker date="1520565458623" expanded="true" signature="18548:18622" ph="select * fro... dsc_goods" />
+            <marker date="1520565458623" expanded="true" signature="18738:18853" ph="SELECT artic... dsc_article" />
+            <marker date="1520565458623" expanded="true" signature="19425:19484" ph="SELECT * fro... dsc_category" />
+            <marker date="1520565458623" expanded="true" signature="19635:19722" ph="select cat_i... dsc_category" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10842">
+          <caret line="428" column="0" lean-forward="false" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
+          <folding>
+            <marker date="1502935274215" expanded="true" signature="10952:11064" ph="select user_... ${$GLOBALS['ecs']-&gt;table('admin_user')}" />
+            <marker date="1502935274215" expanded="true" signature="11222:11332" ph="select user_... ${$GLOBALS['ecs']-&gt;table('admin_user')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="806">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <marker date="1520565458623" expanded="true" signature="15241:15303" ph="select * fro... dsc_ad" />
+            <marker date="1520565458623" expanded="true" signature="15455:15531" ph="select * fro... dsc_ad" />
+            <marker date="1520565458623" expanded="true" signature="15722:15771" ph="select * fro... dsc_ad" />
+            <marker date="1520565458623" expanded="true" signature="15914:15991" ph="select * fro... dsc_brand" />
+            <marker date="1520565458623" expanded="true" signature="16138:16246" ph="select id,ti... dsc_zc_project" />
+            <marker date="1520565458623" expanded="true" signature="17020:17297" ph="select goods... dsc_goods" />
+            <marker date="1520565458623" expanded="true" signature="17115:17163" ph="select cat_i... dsc_category" />
+            <marker date="1520565458623" expanded="true" signature="17388:17464" ph="select * fro... dsc_goods" />
+            <marker date="1520565458623" expanded="true" signature="17695:17788" ph="SELECT goods... dsc_goods" />
+            <marker date="1520565458623" expanded="true" signature="17952:18056" ph="SELECT artic... dsc_article" />
+            <marker date="1520565458623" expanded="true" signature="18181:18235" ph="SELECT link_... dsc_friend_link" />
+            <marker date="1520565458623" expanded="true" signature="18437:18511" ph="select * fro... dsc_goods" />
+            <marker date="1520565458623" expanded="true" signature="18548:18622" ph="select * fro... dsc_goods" />
+            <marker date="1520565458623" expanded="true" signature="18738:18853" ph="SELECT artic... dsc_article" />
+            <marker date="1520565458623" expanded="true" signature="19425:19484" ph="SELECT * fro... dsc_category" />
+            <marker date="1520565458623" expanded="true" signature="19635:19722" ph="select cat_i... dsc_category" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7410">
+          <caret line="296" column="0" lean-forward="true" selection-start-line="296" selection-start-column="0" selection-end-line="296" selection-end-column="0" />
+          <folding>
+            <marker date="1502935274215" expanded="true" signature="10952:11064" ph="select user_... ${$GLOBALS['ecs']-&gt;table('admin_user')}" />
+            <marker date="1502935274215" expanded="true" signature="11222:11332" ph="select user_... ${$GLOBALS['ecs']-&gt;table('admin_user')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="806">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <marker date="1520565458623" expanded="true" signature="15241:15303" ph="select * fro... dsc_ad" />
+            <marker date="1520565458623" expanded="true" signature="15455:15531" ph="select * fro... dsc_ad" />
+            <marker date="1520565458623" expanded="true" signature="15722:15771" ph="select * fro... dsc_ad" />
+            <marker date="1520565458623" expanded="true" signature="15914:15991" ph="select * fro... dsc_brand" />
+            <marker date="1520565458623" expanded="true" signature="16138:16246" ph="select id,ti... dsc_zc_project" />
+            <marker date="1520565458623" expanded="true" signature="17020:17297" ph="select goods... dsc_goods" />
+            <marker date="1520565458623" expanded="true" signature="17115:17163" ph="select cat_i... dsc_category" />
+            <marker date="1520565458623" expanded="true" signature="17388:17464" ph="select * fro... dsc_goods" />
+            <marker date="1520565458623" expanded="true" signature="17695:17788" ph="SELECT goods... dsc_goods" />
+            <marker date="1520565458623" expanded="true" signature="17952:18056" ph="SELECT artic... dsc_article" />
+            <marker date="1520565458623" expanded="true" signature="18181:18235" ph="SELECT link_... dsc_friend_link" />
+            <marker date="1520565458623" expanded="true" signature="18437:18511" ph="select * fro... dsc_goods" />
+            <marker date="1520565458623" expanded="true" signature="18548:18622" ph="select * fro... dsc_goods" />
+            <marker date="1520565458623" expanded="true" signature="18738:18853" ph="SELECT artic... dsc_article" />
+            <marker date="1520565458623" expanded="true" signature="19425:19484" ph="SELECT * fro... dsc_category" />
+            <marker date="1520565458623" expanded="true" signature="19635:19722" ph="select cat_i... dsc_category" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4524">
+          <caret line="185" column="18" lean-forward="true" selection-start-line="185" selection-start-column="18" selection-end-line="185" selection-end-column="18" />
+          <folding>
+            <marker date="1502935274215" expanded="true" signature="10952:11064" ph="select user_... ${$GLOBALS['ecs']-&gt;table('admin_user')}" />
+            <marker date="1502935274215" expanded="true" signature="11222:11332" ph="select user_... ${$GLOBALS['ecs']-&gt;table('admin_user')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax_dialog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="17" column="50" lean-forward="true" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alipay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AliyunClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/animated_favicon.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mod_db.sql" />
+    <entry file="file://$PROJECT_DIR$/languages/en_us/admin/log_action.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="422" column="1" lean-forward="true" selection-start-line="422" selection-start-column="1" selection-end-line="422" selection-end-column="1" />
+          <folding>
+            <marker date="1502935274215" expanded="true" signature="10952:11064" ph="select user_... ${$GLOBALS['ecs']-&gt;table('admin_user')}" />
+            <marker date="1502935274215" expanded="true" signature="11222:11332" ph="select user_... ${$GLOBALS['ecs']-&gt;table('admin_user')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wholesale.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="106" column="65" lean-forward="true" selection-start-line="106" selection-start-column="65" selection-end-line="106" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article_cat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="67" column="22" lean-forward="false" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goods.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
+          <caret line="1111" column="26" lean-forward="false" selection-start-line="1111" selection-start-column="26" selection-end-line="1111" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="838" column="26" lean-forward="false" selection-start-line="838" selection-start-column="26" selection-end-line="838" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1111crowdfunding.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="52" column="18" lean-forward="false" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="120" column="45" lean-forward="true" selection-start-line="120" selection-start-column="45" selection-end-line="120" selection-end-column="45" />
+          <folding>
+            <marker date="1520565458623" expanded="true" signature="15241:15303" ph="select * fro... dsc_ad" />
+            <marker date="1520565458623" expanded="true" signature="15455:15531" ph="select * fro... dsc_ad" />
+            <marker date="1520565458623" expanded="true" signature="15722:15771" ph="select * fro... dsc_ad" />
+            <marker date="1520565458623" expanded="true" signature="15914:15991" ph="select * fro... dsc_brand" />
+            <marker date="1520565458623" expanded="true" signature="16138:16246" ph="select id,ti... dsc_zc_project" />
+            <marker date="1520565458623" expanded="true" signature="17020:17297" ph="select goods... dsc_goods" />
+            <marker date="1520565458623" expanded="true" signature="17115:17163" ph="select cat_i... dsc_category" />
+            <marker date="1520565458623" expanded="true" signature="17388:17464" ph="select * fro... dsc_goods" />
+            <marker date="1520565458623" expanded="true" signature="17695:17788" ph="SELECT goods... dsc_goods" />
+            <marker date="1520565458623" expanded="true" signature="17952:18056" ph="SELECT artic... dsc_article" />
+            <marker date="1520565458623" expanded="true" signature="18181:18235" ph="SELECT link_... dsc_friend_link" />
+            <marker date="1520565458623" expanded="true" signature="18437:18511" ph="select * fro... dsc_goods" />
+            <marker date="1520565458623" expanded="true" signature="18548:18622" ph="select * fro... dsc_goods" />
+            <marker date="1520565458623" expanded="true" signature="18738:18853" ph="SELECT artic... dsc_article" />
+            <marker date="1520565458623" expanded="true" signature="19425:19484" ph="SELECT * fro... dsc_category" />
+            <marker date="1520565458623" expanded="true" signature="19635:19722" ph="select cat_i... dsc_category" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myship.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="81" column="1" lean-forward="true" selection-start-line="81" selection-start-column="1" selection-end-line="81" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new_arrival.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new_url.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3666">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1511399698030" expanded="true" signature="2007:2107" ph="SELECT cat_n... ${$ecs-&gt;table('article_cat')}" />
+            <marker date="1511399698030" expanded="true" signature="9180:9278" ph="SELECT cat_i... ${$GLOBALS['ecs']-&gt;table('article_cat')}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
