@@ -25,7 +25,7 @@
 						<a class="close" href="javascript:void(0);" title="关闭">关闭</a>
 					</div>
 				</div> -->
-			<!-- </div> -->
+			<!-- </div>	 -->
 			<!--top slide bar end-->
 			<!--top start-->
             <div class="top">
@@ -56,9 +56,15 @@
 	                <img class="float-r" src="themes/ecmoban_dsc/iamges/20170517/wechat.png" alt="二维码">
 	                <div class="float-r">
 	                    <div class="wrap-search clearfix">
+	                    	<div class="shopCart">
+		                    	<a class="color-ff0000" href="user.php">
+									<img src="themes/ecmoban_dsc/iamges/20170517/personal_center.png" alt="">
+									<!-- <span class="cart_num" style="text-align: center;"></span> -->
+								</a>
+		                    </div>
 		                    <div class="shopCart">
 		                    	<a class="color-ff0000" href="flow.php">
-									<i></i>我的购物车
+									<img src="themes/ecmoban_dsc/iamges/20170517/flow.png" alt="">
 									<!-- <span class="cart_num" style="text-align: center;"></span> -->
 								</a>
 		                    </div>
@@ -81,7 +87,7 @@
 	            </div> 
 				<script type="text/javascript">
 					$(document).ready(function(){
-						var min_height = 153;
+						var min_height = 123;
 						$(window).scroll(function(){
 							var s =$(window).scrollTop();
 							if(s > min_height){
@@ -93,14 +99,63 @@
 						});
 					})
 				</script>
-	            <div class="wrap-nav bg-color-95b0b2"> 
+	            <div class="wrap-nav bg-color-fff bg_nav_style"> 
 		            <div class="w1200">
 		                <div class="nav-content">
 		                    <ul class="main-nav clearfix">
-		                        <li class="classification">
+		                        <li class="classification" >
 		                        	<!--全部分类-->
-		                            全部分类
-		                            <div class="dropdown-menu">
+		                            <img src="themes/ecmoban_dsc/iamges/20170517/icon_classification.png" alt="">全部分类
+		                            <div class="dropdown-menu" style="overflow:visible;padding: 0px;">
+		                            	<div class="dropdown_menu_all">
+		                            		<ul class="dropdown_menu_titlename">
+		                            			<!--{foreach item=top_catgory_info from=$top_catgory_info name=top_catgory_info}-->
+			                            			<li value="{$top_catgory_info.cat_id}">
+			                            				{$top_catgory_info.cat_name}<img src="themes/ecmoban_dsc/iamges/20170517/icon_right.png" alt="">
+			                            			</li>
+			                            		<!--{/foreach}-->
+			                            	</ul>
+			                            	<div class="dropdown_menu_con">
+			                            		<div class="dropdown_menu_con_item">
+			                            			<!--餐桌圆桌酒柜/酒架四方桌餐边柜<--></-->
+			                            		</div>
+			                            	</div>
+		                            	</div>
+		                            </div>
+		                            <script type="text/javascript">
+		                            	$(".dropdown_menu_titlename li").mouseenter(function(){
+		                            		var category_id = $(this).val();
+		        							$.ajax({
+												  url:"index.php",
+												  type:"POST",
+												  dataType:"json",//传输格式
+												  data:{category_id: category_id},
+												  success: function(res) {
+												  	//console.log(res);
+												  	var html="";
+												  	for(var i=0;i<res.length;i++){
+												  		//console.log(res[i]);
+												  		html +="<a href="+res[i].url+" alt="+res[i].cat_name+"><span>"+res[i].cat_name+"</span></a>";
+												  		/*for(var j=0;j<i.length;j++){
+												  			console.log(j);
+												  		}*/
+												  		//console.log(html);
+												  	}
+												  	//console.log(html);
+												  	$(".dropdown_menu_con_item").html(html);
+												  	$(".dropdown_menu_con").fadeIn();
+												  }
+											});
+											//$(".dropdown_menu_con").fadeIn();
+											$(this).addClass("menu_hover").siblings().removeClass("menu_hover");
+										})
+										$(".dropdown_menu_all").mouseleave(function(){
+											//$(".dropdown_menu_con").css('display', 'none');
+											$(".dropdown_menu_con").fadeOut();
+											$(".menu_hover").removeClass("menu_hover");
+										})
+		                            </script>
+		                            <!-- <div class="dropdown-menu">
 		                                <dl class="position">
 		                                    <dt>餐厅 :</dt>
 		                                    <dd>
@@ -176,7 +231,7 @@
 		                                        <a href="category.php?id=476">明式</a>
 		                                    </dd>
 		                                </dl>
-		                            </div>  
+		                            </div>   -->
 		                        </li>
 		                        <!--{foreach item=middle_nav from=$nav.middle name=middle_nav}-->
 			                        <!-- {if $middle_nav.name =='首页'}-->
@@ -195,63 +250,110 @@
 		        </div>
 	        </div> 
             <!--Navigation end-->
-			
-			<div class="wrap-btm bg-color-f5f5f5">
+			<!--slide banner start-->
+            <div class="slide-banner bg-color-f5f5f5">      
+                <div class="w1200">
+                    <div class="comp" style="width:1920px;margin-left: -350px;">
+                        <!--<ul class="content">
+                            <li class="active"><a href="active.php">-->
+                             
+                                    <a href="partner.php">
+                                      <img src="themes/ecmoban_dsc/iamges/20170517/index_banner.jpg" alt=""></a>
+                                <!--</a></li>-->
+                            <!--<li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/ex-pic2.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="themes/ecmoban_dsc/iamges/20170517/ex-pic3.jpg" alt=""></a></li>
+                        </ul>-->
+                        <!--<a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
+                        <a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
+                        <ul class="point">
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                        </ul>-->
+                    </div>
+                </div>
+            </div>
+                <!--slide banner end-->
+            <div class="bg-color-f5f5f5">
+            	<div class="w1200 bottom_child">
+            		<ul>
+            			<li>
+            				<a href="experience_museum.php">
+            					<img src="themes/ecmoban_dsc/iamges/20170517/index_experience.jpg" alt="">
+            					<p>线上体验馆<br><span>智能 3 D</span></p>
+            				</a>
+            			</li>
+            			<li>
+            				<a href="experience_hall.php">
+            					<img src="themes/ecmoban_dsc/iamges/20170517/index_offline.jpg" alt="">
+            					<p>线下实体店<br><span>亲身体验</span></p>
+            				</a>
+            			</li>
+            			<li class="margin-r-0">
+            				<a href="article_cat.php?id=1007">
+            					<img src="themes/ecmoban_dsc/iamges/20170517/index_news.jpg" alt="">
+            					<p>红木资讯<br><span>每日更新</span></p>
+            				</a>
+            			</li>
+            		</ul>
+            	</div>
+            </div>
+			<!-- <div class="wrap-btm bg-color-f5f5f5">
 				<div class="btm w1200 clearfix">
 					<div class="left-child">
 						<div class="JS-slide">
 							<ul class="content">
-								<!--{foreach item=index_banner_res from=$index_banner_res name=index_banner_res}-->
-								<!-- {if $smarty.foreach.index_banner_res.iteration ==1}-->
+								{foreach item=index_banner_res from=$index_banner_res name=index_banner_res}
+								{if $smarty.foreach.index_banner_res.iteration ==1}
 								<li class="active">
-								<!--{elseif $smarty.foreach.index_banner_res.iteration !=1}-->
+								{elseif $smarty.foreach.index_banner_res.iteration !=1}
 								<li>
-								<!--{/if}-->
+								{/if}
 									<a href="{$index_banner_res.ad_link}"><img src="data/afficheimg/{$index_banner_res.ad_code}" alt="{$index_banner_res.ad_name}" /></a>
 								</li>
-								<!--{/foreach}-->
+								{/foreach}
 							</ul>
 							<a class="left-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/left-Arrow.png" alt="向左"></a>
 							<a class="right-btn" href="javascript:void(0);"><img src="themes/ecmoban_dsc/iamges/20170517/right-Arrow.png" alt="向右"></a>
 							<ul class="point">
 								<li class="active"></li>
 								<li></li>
-								 <!--<li></li>
-								<li></li> -->
+								 <li></li>
+								<li></li>
 								<li class="margin-r-0"></li>
 							</ul>
 						</div>
 						<div class="side-bar">
 							<ul class="clearfix">
-								<!--{foreach item=tyg_banner_res from=$tyg_banner_res name=tyg_banner_res} -->
-								<!-- {if $smarty.foreach.tyg_banner_res.iteration ==1  } -->
+								{foreach item=tyg_banner_res from=$tyg_banner_res name=tyg_banner_res}
+								{if $smarty.foreach.tyg_banner_res.iteration ==1  }
 								<li>
-								<!-- {elseif $smarty.foreach.tyg_banner_res.iteration ==2 } -->
-								<li class="margin-r-0">
-								<!--{/if}-->
+								{elseif $smarty.foreach.tyg_banner_res.iteration ==2 }
+								<li class="showMsg margin-r-0">
+								{/if}
 									<a href="{$tyg_banner_res.ad_link}">
 										<img src="data/afficheimg/{$tyg_banner_res.ad_code}" alt="">
-										<!-- {if $smarty.foreach.tyg_banner_res.iteration ==1  } -->
+										{if $smarty.foreach.tyg_banner_res.iteration ==1  }
 										<span>智能线上体验馆</span>
-										<!-- {elseif $smarty.foreach.tyg_banner_res.iteration ==2 } -->
-										<span>用户追溯系统</span>
-										<!--{/if}-->
+										{elseif $smarty.foreach.tyg_banner_res.iteration ==2 }
+										<span>智能场景定制</span>
+										{/if}
 										<i></i>
 									</a>
 								</li>
-								<!--{/foreach}-->
+								{/foreach}
 							</ul>
 						</div>
 					</div>
 					<div class="right-child">
-						<!--login-->
+						login
 						{insert name='member_info'}
 						<div class="news">
 							<h2><a href="article_cat.php?id=1007">每日资讯</a></h2>
 							<ul>
-							<!--{foreach item=message from=$message name=message} -->
+							{foreach item=message from=$message name=message}
 								<li><a href="article.php?id={$message.article_id}">{$message.title|truncate:12}</a></li>
-							<!--{/foreach}-->
+							{/foreach}
 							</ul>
 						</div>
 						<div class="experience-hall">
@@ -260,12 +362,12 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 		<!--header end-->
 
 		<!--main body start-->
-		<div id="main-body" class="bg-color-f5f5f5">
+		<div id="main-body" class="bg-color-f5f5f5 clear">
 			<div class="w1200">
 
 				<!--每日秒杀-->
