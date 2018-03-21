@@ -74,7 +74,13 @@
         <div class="keyword">
         {if $searchkeywords}
             <ul>
-                {foreach from=$searchkeywords item=val} <li><a href="{$site_domain}search.php?keywords={$val|escape:url}" target="_blank">{$val}</a></li> {/foreach}
+                {foreach from=$searchkeywords item=val} 
+                    <li>
+                        <a href="{$site_domain}search.php?keywords={$val|escape:url}" target="_blank">
+                        {$val}
+                        </a>
+                    </li>
+                {/foreach}
             </ul>
             {/if}
         </div>

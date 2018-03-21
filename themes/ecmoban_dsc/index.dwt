@@ -109,7 +109,7 @@
 		                            <div class="dropdown-menu" style="overflow:visible;padding: 0px;">
 		                            	<div class="dropdown_menu_all">
 		                            		<ul class="dropdown_menu_titlename">
-		                            			<!--{foreach item=top_catgory_info from=$top_catgory_info name=top_catgory_info}-->
+		                            			<!--{foreach item=top_catgory_info from=$top_catgory_info}-->
 			                            			<li value="{$top_catgory_info.cat_id}">
 			                            				{$top_catgory_info.cat_name}<img src="themes/ecmoban_dsc/iamges/20170517/icon_right.png" alt="">
 			                            			</li>
