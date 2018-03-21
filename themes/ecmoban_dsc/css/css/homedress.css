@@ -1,0 +1,212 @@
+body{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #f2e5df;
+}
+.homedress_giftone{
+	background: url(../../iamges/20170517/homedress_bg1.jpg) no-repeat;
+	padding-top: 50px;
+	height: 670px;
+}
+.giftone_title{
+	width: 100%;
+	font-size: 56px;
+	text-align: center;
+}
+.giftone_title p{
+	width: 724px;
+	margin: 0 auto;
+	color: #a98169;
+	border-bottom: 4px solid #ad8e79;
+	padding-bottom: 5px;
+}
+.giftone_title p span{
+	color: #cc0033;
+	margin-left: 40px;
+}
+.giftone_present{
+	width: 645px;
+	margin: 0 auto;
+}
+.homedress_giftone_tip{
+	background: url(../../iamges/20170517/homedress_giftone4.png) no-repeat;
+	padding: 100px 0 40px 630px;
+}
+.homedress_giftone_tipcon{
+	font-size: 30px;
+	line-height: 48px;
+	color: #737373;
+}
+.homedress_giftone_tipcon p{
+	margin-left: 90px;
+}
+.homedress_giftone_tipcon p span{
+	margin-left: 25px;
+}
+.homedress_seckill{
+	background: url(../../iamges/20170517/homedress_bg2.jpg) no-repeat;
+	padding: 295px 0 105px;
+}
+.homedress_seckill ul li p{
+	position: absolute;
+	/* bottom: 45px;
+	left: 65px; */
+	width: 236px;
+	height: 45px;
+	background-color: #e60012;
+	color: #ffffff;
+	left: 0;
+	right: 0;
+	top: 45px;
+	margin: auto;
+	font-size: 30px;
+	line-height: 45px;
+	text-align: center;
+}
+.homedress_seckill ul li span{
+	position: absolute;
+	width: 240px;
+	left: 0;
+	right: 0;
+	top: 90px;
+	margin: auto;
+	font-size: 30px;
+	line-height: 50px;
+	color: #333;
+	text-align: center;
+}
+.gifttwo_title{
+	width: 100%;
+	font-size: 56px;
+	text-align: center;
+	margin: 100px 0 125px 0;
+}
+.gifttwo_title p{
+	width: 622px;
+	margin: 0 auto;
+	color: #a98169;
+	border-bottom: 4px solid #ad8e79;
+	padding-bottom: 5px;
+}
+.gifttwo_title p span{
+	color: #cc0033;
+	margin-left: 40px;
+}
+.giftthree_title{
+	width: 100%;
+	font-size: 56px;
+	text-align: center;
+	margin: 100px 0;
+}
+.giftthree_title p{
+	width: 724px;
+	margin: 0 auto;
+	color: #a98169;
+	border-bottom: 4px solid #ad8e79;
+	padding-bottom: 5px;
+}
+.giftthree_title p span{
+	color: #cc0033;
+	margin-left: 40px;
+}
+.giftfour_title{
+	width: 100%;
+	font-size: 56px;
+	text-align: center;
+	padding: 50px 0 10px 0;
+	background: url(../../iamges/20170517/homedress_bg3.jpg) no-repeat;
+	background-size: 100%;
+}
+.giftfour_title p{
+	width: 1041px;
+	margin: 0 auto;
+	color: #a98169;
+	border-bottom: 4px solid #ad8e79;
+	padding-bottom: 5px;
+}
+.giftfour_title p span{
+	color: #cc0033;
+	margin-left: 40px;
+}
+.giftfour_title_tip{
+	width: 1376px;
+	font-size: 30px;
+	line-height: 48px;
+	color: #999999;
+	text-align: left;
+	margin: 30px auto;
+}
+.giftfour_title_tip span{
+	color: #999999;
+	border: none;
+	margin-left: 90px;
+}
+.homedress_giftfour{
+	width: 100%;
+	background: url(../../iamges/20170517/homedress_bg4.jpg) no-repeat;
+}
+.homedress_giftfour1{
+	width: 1224px;
+	margin:  0 24px 0 331px;
+	padding: 28px 0 83px 0;
+	overflow: hidden;
+}
+.homedress_giftfour ul li{
+	float: left;
+	margin-right: 16px;
+	margin-bottom: 25px;
+}
+.homedress_giftfour ul li:nth-child(3n){
+	margin-right:0;
+}
+.homedress_giftfour2{
+	width: 1224px;
+	margin:  110px 24px 0 331px;
+	padding: 28px 0 83px 0;
+	overflow: hidden;
+}
+.homedress_freetitle{
+	width: 321px;
+	margin: 100px auto;
+}
+.homedress_free{
+	background: url(../../iamges/20170517/homedress_bg5.jpg) no-repeat;
+	padding: 125px 0 54px;
+}
+.homedress_freecon{
+	width: 1500px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.homedress_freecon li{
+	float: left;
+	position: relative;
+	width: 500px;
+	height: 450px;
+}
+.homedress_back{
+	font-size: 36px;
+	border-radius: 20px;
+	border: solid 2px #ffffff;
+	width: 246px;
+	height: 72px;
+	line-height: 70px;
+	color: #fffdfe;
+	text-align: center;
+	margin: 65px auto 0;
+}
+.homedress_free ul li p{
+	position: absolute;
+	/* bottom: 45px;
+	left: 65px; */
+	width: 390px;
+	left: 0;
+	right: 0;
+	bottom: 45px;
+	margin: auto;
+	font-size: 30px;
+	line-height: 59px;
+	color: #ffffff;
+	text-align: center;
+}

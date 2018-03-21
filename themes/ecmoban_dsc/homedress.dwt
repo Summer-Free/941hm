@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--首页CSS以及部分通用部分的合并LBI-->
+        <!-- #BeginLibraryItem "/library/header_title.lbi" --><!-- #EndLibraryItem -->
+		<!--首页专用-->
+		<link rel="stylesheet" href="themes/ecmoban_dsc/css/css/homedress.css">
+
+        {* 包含脚本文件 *}
+        {insert_scripts files='jquery.json.js,transport_jquery.js'}
+</head>
+<body>
+	<header>
+		<img width="100%;" src="themes/ecmoban_dsc/iamges/20170517/homedress_banner.jpg" alt="">
+	</header>
+	<div class="homedress_giftone">
+		<div class="giftone_title">
+			<p>好礼一重奏<span>实付好礼等您拿</span></p>
+		</div>
+		<div class="giftone_present">
+			<a href="personal_tailor.php">
+				<img width="100%;" src="themes/ecmoban_dsc/iamges/20170517/homedress_giftone1.png" alt="">
+			</a>
+			<a href="personal_tailor.php">
+				<img width="100%;" src="themes/ecmoban_dsc/iamges/20170517/homedress_giftone2.png" alt="">
+			</a>
+		</div>
+	</div>
+	<img width="100%;" src="themes/ecmoban_dsc/iamges/20170517/homedress_giftone3.jpg" alt="">
+	<div class="homedress_giftone_tip">
+		<div class="homedress_giftone_tipcon">
+			<span>细则：1.每个ID只能享受一次，不能重复领取。</span>
+			<p>2.只能选一件产品。<br>
+				<span>例：满50000元，可选任意一件2000内产品，不能选两件1000+1000的产品</span>
+			</p>
+			<p>3.颜色随机发送。</p>
+		</div>
+	</div>
+	<div class="homedress_seckill">
+		<ul class="homedress_freecon">
+			<li>
+				<a href="goods.php?id=1560">
+					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_seckill1.jpg" alt="">
+					<span>1.38米圆台</span><br>
+					<p>4月1日  9：41</p>
+				</a>
+			</li>
+			<li>
+				<a href="goods.php?id=22">
+					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_seckill2.jpg" alt="">
+					<span>辉煌大床</span><br>
+					<p>4月3日  9：41</p>
+				</a>
+			</li>
+			<li>
+				<a href="goods.php?id=1800">
+					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_seckill3.jpg" alt="">
+					<span>圆角博古架</span><br>
+					<p>4月6日  9：41</p>
+				</a>
+			</li>
+			<li>
+				<a href="goods.php?id=1407">
+					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_seckill4.jpg" alt="">
+					<span>罗汉宝座沙发</span><br>
+					<p>4月9日  9：41</p>
+				</a>
+			</li>
+			<li>
+				<a href="goods.php?id=1427">
+					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_seckill5.jpg" alt="">
+					<span>山水顶箱柜</span><br>
+					<p>4月12日  9：41</p>
+				</a>
+			</li>
+			<li>
+				<a href="goods.php?id=258">
+					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_seckill6.jpg" alt="">
+					<span>四抽弯角电视柜</span><br>
+					<p>4月15日  9：41</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="gifttwo_title">
+		<p>好礼二重奏<span>优惠大换购</span></p>
+	</div>
+	<img width="100%;" src="themes/ecmoban_dsc/iamges/20170517/homedress_gifttwo.jpg" alt="">
+	<div class="giftthree_title">
+		<p>好礼三重奏<span>组合购买拿好礼</span></p>
+	</div>
+	<img width="100%;" src="themes/ecmoban_dsc/iamges/20170517/homedress_giftthree1.jpg" alt="">
+	<img width="100%;" src="themes/ecmoban_dsc/iamges/20170517/homedress_giftthree2.jpg" alt="">
+	<div class="giftfour_title">
+		<p>好礼四重奏<span>抢现金大奖（仅限前20名）</span></p>
+		<div class="giftfour_title_tip">
+			注释：现金活动仅限订单实付金额满三万元以上买家参与，中奖名单在活动结束后15个工作日内公布，<br>
+         	<span>中奖买家由我们工作人员按照买家下单联系方式通知。</span>
+		</div>
+	</div>
+	<div class="homedress_giftfour">
+		<ul class="homedress_giftfour1">
+			<li>
+				<a href="goods.php?id=1840">
+					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_pro1.jpg" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="goods.php?id=1845">
+					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_pro2.jpg" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="goods.php?id=1836">
+					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_pro3.jpg" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="goods.php?id=1843">
+					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_pro4.jpg" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="goods.php?id=1833">
+					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_pro5.jpg" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="goods.php?id=1818">
+					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_pro6.jpg" alt="">
+				</a>
+			</li>
+		</ul>
+		<ul class="homedress_giftfour2">
+			<li>
+				<a href="goods.php?id=701">
+					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_pro7.jpg" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="goods.php?id=241">
+					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_pro8.jpg" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="goods.php?id=703">
+					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_pro9.jpg" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="goods.php?id=72">
+					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_pro10.jpg" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="goods.php?id=53">
+					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_pro11.jpg" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="goods.php?id=700">
+					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_pro12.jpg" alt="">
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="homedress_freetitle">
+		<img src="themes/ecmoban_dsc/iamges/20170517/homedress_freetitle.png" alt="">
+	</div>
+	<div class="homedress_free">
+		<ul class="homedress_freecon">
+			<li>
+				<a href="goods.php?id=1811">
+					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_free1.jpg" alt="">
+					<p>【财源滚滚沙发】南美黄花梨</p>
+				</a>
+			</li>
+			<li>
+				<a href="goods.php?id=75">
+					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_free2.jpg" alt="">
+					<p>【山水顶箱柜】 南美酸枝</p>
+				</a>
+			</li>
+			<li>
+				<a href="goods.php?id=1806">
+					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_free3.jpg" alt="">
+					<p>【团圆大床】缅甸花梨</p>
+				</a>
+			</li>
+			<li>
+				<a href="oods.php?id=1417">
+					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_free4.jpg" alt="">
+					<p>【汉宫圆台】阔叶黄檀黑酸枝</p>
+				</a>
+			</li>
+			<li>
+				<a href="goods.php?id=1801">
+					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_free5.jpg" alt="">
+					<p>【财源大床】 阔叶黄檀</p>
+				</a>
+			</li>
+			<li>
+				<a href="goods.php?id=201">
+					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_free6.jpg" alt="">
+					<p>【花雨转角沙发】 非花 缅花</p>
+				</a>
+			</li>
+		</ul>
+		<a href="index.php">
+			<div  class="homedress_back">
+				返回首页
+			</div>
+		</a>
+	</div>
+	<!--懒加载-->
+	<script type="text/javascript" src="js/jquery.lazyload.js"></script>
+	<!--开启懒加载-->
+    <script type="text/javascript">
+        $("img.lazy").lazyload({
+            placeholder: "themes/ecmoban_dsc/images/loadGoods.gif",
+            effect : "fadeIn",
+            threshold : 1000
+        });
+    </script>
+</body>
+</html>

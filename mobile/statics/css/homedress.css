@@ -1,0 +1,237 @@
+body{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #f2e5df;
+}
+.homedress_giftone{
+	background: url(../img/newapp/homedress_bg1.jpg) no-repeat;
+	background-size: 100%;
+	padding: 1rem 0;
+}
+.giftone_title{
+	width: 100%;
+	font-size: 1.6rem;
+	text-align: center;
+}
+.giftone_title p{
+	width: 55%;
+	margin: 0 auto;
+	color: #a98169;
+	border-bottom: 2px solid #ad8e79;
+	padding-bottom: 3px;
+}
+.giftone_title p span{
+	color: #cc0033;
+	margin-left: 1rem;
+}
+.giftone_present{
+	width: 40%;
+	margin: 0 auto;
+}
+.homedress_giftone_tip{
+	background: url(../img/newapp/homedress_giftone4.png) no-repeat;
+	background-size: 100%;
+	padding: 1.6rem 0 0 9rem;
+}
+.homedress_giftone_tipcon{
+	font-size: 1rem;
+	line-height: 1.2rem;
+	color: #737373;
+}
+.homedress_giftone_tipcon p{
+	margin-left: 3rem;
+}
+.homedress_giftone_tipcon p span{
+	margin-left: 0.9rem;
+}
+.homedress_seckill{
+	background: url(../img/newapp/homedress_bg2.jpg) no-repeat;
+	background-size: 100%;
+	padding: 5.5rem 0 1rem;
+}
+.homedress_seckill ul li p{
+	position: absolute;
+	/* bottom: 45px;
+	left: 65px; */
+	width: 7rem;
+	height: 1.2rem;
+	background-color: #e60012;
+	color: #ffffff;
+	left: 0;
+	right: 0;
+	top: 0.8rem;
+	margin: auto;
+	font-size: 1rem;
+	line-height: 1.4rem;
+	text-align: center;
+}
+.homedress_seckill ul li span{
+	position: absolute;
+	width: 7rem;
+	left: 0;
+	right: 0;
+	top: 2.2rem;
+	margin: auto;
+	font-size: 1rem;
+	line-height: 1rem;
+	color: #333;
+	text-align: center;
+}
+.gifttwo_title{
+	width: 100%;
+	font-size: 1.6rem;
+	text-align: center;
+	margin: 2rem 0;
+}
+.gifttwo_title p{
+	width: 50%;
+	margin: 0 auto;
+	color: #a98169;
+	border-bottom: 2px solid #ad8e79;
+	padding-bottom: 3px;
+}
+.gifttwo_title p span{
+	color: #cc0033;
+	margin-left: 1rem;
+}
+.giftthree_title{
+	width: 100%;
+	font-size: 1.6rem;
+	text-align: center;
+	margin: 2rem 0;
+}
+.giftthree_title p{
+	width: 55%;
+	margin: 0 auto;
+	color: #a98169;
+	border-bottom: 2px solid #ad8e79;
+	padding-bottom: 3px;
+}
+.giftthree_title p span{
+	color: #cc0033;
+	margin-left: 1rem;
+}
+.giftfour_title{
+	width: 100%;
+	font-size: 1.6rem;
+	text-align: center;
+	padding: 2.5rem 0 1rem;
+	background: url(../img/newapp/homedress_bg3.jpg) no-repeat;
+	background-size: 100%;
+}
+.giftfour_title p{
+	width: 80%;
+	margin: 0 auto;
+	color: #a98169;
+	border-bottom: 2px solid #ad8e79;
+	padding-bottom: 3px;
+}
+.giftfour_title p span{
+	color: #cc0033;
+	margin-left: 1rem;
+}
+.giftfour_title_tip{
+	width: 90%;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	color: #999999;
+	text-align: left;
+	margin: 1rem auto;
+}
+.homedress_giftfour{
+	width: 100%;
+	background: url(../img/newapp/homedress_bg4.jpg) no-repeat;
+	background-size: 100%;
+}
+.homedress_giftfour1{
+	width: 100%;
+	margin: 0 3%;
+	padding: 8rem 0 0;
+	overflow: hidden;
+}
+.homedress_giftfour ul li{
+	width: 30%;
+	float: left;
+	margin-right: 2%;
+	margin-bottom: 1.5rem;
+}
+.homedress_giftfour ul li:nth-child(3n){
+	margin-right:0;
+}
+.homedress_giftfour2{
+	width: 100%;
+	margin: 0 3%;
+	padding: 2rem 0 0;
+	overflow: hidden;
+}
+.homedress_freetitle{
+	width: 20%;
+	margin: 0.5rem auto 1.5rem;
+}
+.homedress_free{
+	background: url(../img/newapp/homedress_bg5.jpg) no-repeat;
+	background-size: 100%;
+	padding: 1rem 0;
+}
+.homedress_freecon{
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.homedress_freecon img{
+	width: 100%;
+}
+.homedress_freecon li{
+	float: left;
+	position: relative;
+	width: 33.33%;
+}
+.homedress_back{
+	font-size: 1.6rem;
+	border-radius: 1rem;
+	border: solid 2px #ffffff;
+	width: 8rem;
+	height: 2.6rem;
+	line-height: 2.6rem;
+	color: #fffdfe;
+	text-align: center;
+	margin: 1rem auto 0;
+}
+.homedress_free ul li p{
+	position: absolute;
+	/* bottom: 45px;
+	left: 65px; */
+	width: 10rem;
+	height: 1.2rem;
+	left: 0;
+	right: 0;
+	bottom: 1.5rem;
+	margin: auto;
+	font-size: 1.2rem;
+	line-height: 1.2rem;
+	color: #ffffff;
+	text-align: center;
+}
+@media screen and (max-width: 400px){
+	.homedress_giftfour2{
+		padding: 0.5rem 0 0;
+	}
+}
+@media screen and (min-width: 500px){
+	.homedress_freetitle{
+		margin: 0.5rem auto 1.5rem;
+	}
+	.homedress_giftfour2{
+		padding: 3rem 0 0;
+	}
+	.homedress_free ul li p{
+		bottom: 2rem;
+		line-height: 1.4rem;
+	}
+}
+@media screen and (min-width: 750px){
+	.homedress_giftfour1{
+		padding: 9rem 0 0;
+	}
+}
