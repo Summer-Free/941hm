@@ -38,48 +38,15 @@
 	</div>
 	<div class="homedress_seckill">
 		<ul class="homedress_freecon">
-			<li>
-				<a href="goods.php?id=1560">
-					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_seckill1.jpg" alt="">
-					<span>1.38米圆台</span><br>
-					<p>4月1日  9：41</p>
-				</a>
-			</li>
-			<li>
-				<a href="goods.php?id=22">
-					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_seckill2.jpg" alt="">
-					<span>辉煌大床</span><br>
-					<p>4月3日  9：41</p>
-				</a>
-			</li>
-			<li>
-				<a href="goods.php?id=1800">
-					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_seckill3.jpg" alt="">
-					<span>圆角博古架</span><br>
-					<p>4月6日  9：41</p>
-				</a>
-			</li>
-			<li>
-				<a href="goods.php?id=1407">
-					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_seckill4.jpg" alt="">
-					<span>罗汉宝座沙发</span><br>
-					<p>4月9日  9：41</p>
-				</a>
-			</li>
-			<li>
-				<a href="goods.php?id=1427">
-					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_seckill5.jpg" alt="">
-					<span>山水顶箱柜</span><br>
-					<p>4月12日  9：41</p>
-				</a>
-			</li>
-			<li>
-				<a href="goods.php?id=258">
-					<img src="themes/ecmoban_dsc/iamges/20170517/homedress_seckill6.jpg" alt="">
-					<span>四抽弯角电视柜</span><br>
-					<p>4月15日  9：41</p>
-				</a>
-			</li>
+		    <!--{foreach item=acgoods from=$activ_goods}-->
+                <li>
+                    <a onclick='active_pro({$acgoods.id})'>
+                        <img src="themes/ecmoban_dsc/iamges/20170517/{$acgoods.bg_img}" alt="">
+                        <span>{$acgoods.goods_name}</span><br>
+                        <p>{$acgoods.time}</p>
+                    </a>
+                </li>
+			<!--{/foreach}-->
 		</ul>
 	</div>
 	<div class="gifttwo_title">
@@ -221,6 +188,20 @@
             effect : "fadeIn",
             threshold : 1000
         });
+        function active_pro(id)
+        {
+            var goods_id = id;
+            $.ajax({
+			   type: "POST",
+			   url: "homedress.php",
+			   data: {goods_id:goods_id},
+			   dataType:'json',
+			   success: function(data){
+				 alert(data.message);
+			   }
+			});
+        }
+
     </script>
 </body>
 </html>
