@@ -49,6 +49,22 @@ body{
 	background: url(../img/newapp/homedress_bg2.jpg) no-repeat;
 	background-size: 100%;
 	padding: 5.5rem 0 1rem;
+	position: relative;
+}
+.homedress_tip{
+	display: block;
+	position: absolute;
+	top:6.5rem;
+	left:0;
+	right:0;
+	margin:auto;
+	width: 55%;
+}
+.homedress_tip_start{
+	display: block;
+}
+.homedress_tip_end{
+	display: none;
 }
 .homedress_seckill ul li p{
 	position: absolute;
