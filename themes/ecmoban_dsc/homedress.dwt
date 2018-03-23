@@ -81,7 +81,15 @@
 				</a>
 			</li>
 		</ul>
+		<div class="homedress_tip">
+			<img class="homedress_tip_start" src="themes/ecmoban_dsc/iamges/20170517/homedress_start.png" alt="">
+			<img class="homedress_tip_end" src="themes/ecmoban_dsc/iamges/20170517/homedress_end.png" alt="">
+		</div>
 	</div>
+	<script>
+		
+		$(".homedress_tip_start").show();
+	</script>
 	<div class="gifttwo_title">
 		<p>好礼二重奏<span>优惠大换购</span></p>
 	</div>

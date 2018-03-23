@@ -50,6 +50,7 @@ body{
 	background: url(../../iamges/20170517/homedress_bg2.jpg) no-repeat;
 	background-size: 100% 100%;
 	padding: 295px 0 105px;
+	position: relative;
 }
 .homedress_seckill ul li p{
 	position: absolute;
@@ -78,6 +79,21 @@ body{
 	line-height: 50px;
 	color: #333;
 	text-align: center;
+}
+.homedress_tip{
+	display: block;
+	position: absolute;
+	top:320px;
+	left:0;
+	right:0;
+	margin:auto;width: 822px;
+	height: 854px;
+}
+.homedress_tip_start{
+	display: none;
+}
+.homedress_tip_end{
+	display: none;
 }
 .gifttwo_title{
 	width: 100%;
