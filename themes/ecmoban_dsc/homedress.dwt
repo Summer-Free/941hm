@@ -49,8 +49,12 @@
 			<!--{/foreach}-->
 		</ul>
 		<div class="homedress_tip">
-			<img class="homedress_tip_start" src="themes/ecmoban_dsc/iamges/20170517/homedress_start.png" alt="">
-			<img class="homedress_tip_end" src="themes/ecmoban_dsc/iamges/20170517/homedress_end.png" alt="">
+			<a href="javascript:void(0);" class="go_homedress">
+				<img class="homedress_tip_start" src="themes/ecmoban_dsc/iamges/20170517/homedress_start.png" alt="">
+			</a>
+			<a href="">
+				<img class="homedress_tip_end" src="themes/ecmoban_dsc/iamges/20170517/homedress_end.png" alt="">
+			</a>
 		</div>
 	</div>
 	<!-- <script>
@@ -215,7 +219,6 @@
 			   	}
 			});
         }
-
     </script>
 </body>
 </html>
