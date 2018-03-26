@@ -6,6 +6,7 @@ body{
 }
 .homedress_giftone{
 	background: url(../../iamges/20170517/homedress_bg1.jpg) no-repeat;
+	background-size: 100%;
 	padding-top: 50px;
 	height: 670px;
 }
@@ -31,6 +32,7 @@ body{
 }
 .homedress_giftone_tip{
 	background: url(../../iamges/20170517/homedress_giftone4.png) no-repeat;
+	background-size: 100% 100%;
 	padding: 100px 0 40px 630px;
 }
 .homedress_giftone_tipcon{
@@ -46,7 +48,9 @@ body{
 }
 .homedress_seckill{
 	background: url(../../iamges/20170517/homedress_bg2.jpg) no-repeat;
+	background-size: 100% 100%;
 	padding: 295px 0 105px;
+	position: relative;
 }
 .homedress_seckill ul li p{
 	position: absolute;
@@ -58,7 +62,7 @@ body{
 	color: #ffffff;
 	left: 0;
 	right: 0;
-	top: 45px;
+	top: 35px;
 	margin: auto;
 	font-size: 30px;
 	line-height: 45px;
@@ -69,12 +73,27 @@ body{
 	width: 240px;
 	left: 0;
 	right: 0;
-	top: 90px;
+	top: 75px;
 	margin: auto;
 	font-size: 30px;
 	line-height: 50px;
 	color: #333;
 	text-align: center;
+}
+.homedress_tip{
+	display: block;
+	position: absolute;
+	top:320px;
+	left:0;
+	right:0;
+	margin:auto;width: 822px;
+	height: 854px;
+}
+.homedress_tip_start{
+	display: none;
+}
+.homedress_tip_end{
+	display: none;
 }
 .gifttwo_title{
 	width: 100%;
@@ -145,14 +164,17 @@ body{
 .homedress_giftfour{
 	width: 100%;
 	background: url(../../iamges/20170517/homedress_bg4.jpg) no-repeat;
+	background-size: 100% 100%;
 }
 .homedress_giftfour1{
 	width: 1224px;
+	/* width: 100%; */
 	margin:  0 24px 0 331px;
 	padding: 28px 0 83px 0;
 	overflow: hidden;
 }
 .homedress_giftfour ul li{
+	/* width: 33.33%; */
 	float: left;
 	margin-right: 16px;
 	margin-bottom: 25px;
@@ -172,6 +194,7 @@ body{
 }
 .homedress_free{
 	background: url(../../iamges/20170517/homedress_bg5.jpg) no-repeat;
+	background-size: 100%;
 	padding: 125px 0 54px;
 }
 .homedress_freecon{
@@ -180,6 +203,7 @@ body{
 	overflow: hidden;
 }
 .homedress_freecon li{
+	/* width: 33.33%; */
 	float: left;
 	position: relative;
 	width: 500px;
