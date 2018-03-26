@@ -60,8 +60,18 @@ body{
 	margin:auto;
 	width: 55%;
 }
+.homedress_tip_con{
+	position: relative;
+}
+.homedress_tip_close{
+	position: absolute;
+	width: 10%;
+	top: 0px;
+	right: 0px;
+	display: none;
+}
 .homedress_tip_start{
-	display: block;
+	display: none;
 }
 .homedress_tip_end{
 	display: none;
