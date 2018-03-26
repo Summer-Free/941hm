@@ -61,7 +61,7 @@ body{
 	width: 55%;
 }
 .homedress_tip_start{
-	display: block;
+	display: none;
 }
 .homedress_tip_end{
 	display: none;
