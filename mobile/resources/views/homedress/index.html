@@ -183,8 +183,12 @@
 			$.post(url,param,function (data){
 				var result = eval('('+data+')');
 				//console.log(result);
-				alert(result.message);
+				if(result.id == 1){
+					$(".homedress_tip_end").show();
+				}else{
+					$(".homedress_tip_start").show();
+				};
 			});
 		}
 	</script>
-</html>zz
+</html>
