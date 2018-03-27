@@ -50,9 +50,9 @@
 		</ul>
 		<div class="homedress_tip">
 			<div class="homedress_tip_con">
-				<img width="100%;" class="homedress_tip_start" src="themes/ecmoban_dsc/iamges/20170517/homedress_start.png" alt="">
-				<img width="100%;" class="homedress_tip_end" src="themes/ecmoban_dsc/iamges/20170517/homedress_end.png" alt="">
-				<div class="homedress_tip_close">
+				<img width="100%;" onclick="location_start1()" class="homedress_tip_start" src="themes/ecmoban_dsc/iamges/20170517/homedress_start.png">
+				<img width="100%;" onclick="location_end1()" class="homedress_tip_end" src="themes/ecmoban_dsc/iamges/20170517/homedress_end.png">
+				<div onclick="close_tip()" class="homedress_tip_close">
 					<img width="100%;" src="themes/ecmoban_dsc/iamges/20170517/homedress_tip_close.png" alt="">
 				</div>
 			</div>
@@ -210,16 +210,41 @@
 			   data: {goods_id:goods_id},
 			   dataType:'json',
 			   success: function(data){
+			   	console.log(data);
                     //1=已结束
                     //2=未开始
                     if (data.id == 1) {
+                    	var id = data.goods_id; 
                         $(".homedress_tip_end").show();
+                        $(".homedress_tip_end").attr('alt',id);
+                        $(".homedress_tip_close").show();
+                        $(".homedress_tip").show();
                     }else{
                         $(".homedress_tip_start").show();
+                        $(".homedress_tip_end").attr('alt',id);
+                        $(".homedress_tip_close").show();
+                        $(".homedress_tip").show();
                     }
 			   	}
 			});
-        }
+        };
+        function close_tip(){
+			$(".homedress_tip_end").hide();
+			$(".homedress_tip_start").hide();
+			$(".homedress_tip_close").hide();
+			$(".homedress_tip").hide();
+		};
+		function location_end1(){
+			var goods_id =$(".homedress_tip_end").attr('alt');
+			console.log(goods_id);
+			
+		}
+		function location_start1(){
+			var goods_id =$(".homedress_tip_start").attr('alt');
+			console.log(goods_id);
+			//alert(goods_id);
+			
+		}
     </script>
 </body>
 </html>

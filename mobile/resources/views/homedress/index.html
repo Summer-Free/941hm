@@ -41,9 +41,9 @@
 			</ul>
 			<div class="homedress_tip">
 				<div class="homedress_tip_con">
-					<img width="100%;" class="homedress_tip_start" src="../mobile/statics/img/newapp/homedress_start.png" alt="">
-					<img width="100%;" class="homedress_tip_end" src="../mobile/statics/img/newapp/homedress_end.png" alt="">
-					<div class="homedress_tip_close">
+					<img width="100%;" onclick="location_start()" class="homedress_tip_start" src="../mobile/statics/img/newapp/homedress_start.png" >
+					<img width="100%;" onclick="location_end()" class="homedress_tip_end" src="../mobile/statics/img/newapp/homedress_end.png" >
+					<div onclick="close_tip()" class="homedress_tip_close">
 						<img width="100%;" src="../mobile/statics/img/newapp/homedress_tip_close.png" alt="">
 					</div>
 				</div>
@@ -190,10 +190,27 @@
 				//console.log(result);
 				if(result.id == 1){
 					$(".homedress_tip_end").show();
+					$(".homedress_tip_end").attr('alt',result.goods_id);
+					$(".homedress_tip_close").show();
 				}else{
 					$(".homedress_tip_start").show();
+					$(".homedress_tip_start").attr('alt',result.goods_id);
+					$(".homedress_tip_close").show();
 				};
 			});
+		}
+		function close_tip(){
+			$(".homedress_tip_end").hide();
+			$(".homedress_tip_start").hide();
+			$(".homedress_tip_close").hide();
+		}
+		function location_end(){
+			var goods_id =$(".homedress_tip_end").attr('alt');
+			window.location.href = '../mobile/index.php?r=goods&id='+goods_id+'&u=0';
+		}
+		function location_start(){
+			var goods_id =$(".homedress_tip_start").attr('alt');
+			window.location.href = '../mobile/index.php?r=goods&id='+goods_id+'&u=0';
 		}
 	</script>
 </html>
