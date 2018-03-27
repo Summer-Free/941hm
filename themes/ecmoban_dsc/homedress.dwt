@@ -50,8 +50,8 @@
 		</ul>
 		<div class="homedress_tip">
 			<div class="homedress_tip_con">
-				<img width="100%;" onclick="location_start1()" class="homedress_tip_start" src="themes/ecmoban_dsc/iamges/20170517/homedress_start.png">
-				<img width="100%;" onclick="location_end1()" class="homedress_tip_end" src="themes/ecmoban_dsc/iamges/20170517/homedress_end.png">
+				<img width="100%;" onclick="location_start1()" class="homedress_tip_start" src="themes/ecmoban_dsc/iamges/20170517/homedress_start.png" alt="">
+				<img width="100%;" onclick="location_end1()" class="homedress_tip_end" src="themes/ecmoban_dsc/iamges/20170517/homedress_end.png" alt="">
 				<div onclick="close_tip()" class="homedress_tip_close">
 					<img width="100%;" src="themes/ecmoban_dsc/iamges/20170517/homedress_tip_close.png" alt="">
 				</div>
@@ -72,7 +72,7 @@
 	<img width="100%;" src="themes/ecmoban_dsc/iamges/20170517/homedress_giftthree1.jpg" alt="">
 	<img width="100%;" src="themes/ecmoban_dsc/iamges/20170517/homedress_giftthree2.jpg" alt="">
 	<div class="giftfour_title">
-		<p>好礼四重奏<span>抢现金大奖（仅限前20名）</span></p>
+		<p>好礼四重奏<span>抢两千元现金大奖（仅限前20名）</span></p>
 		<div class="giftfour_title_tip">
 			注释：现金活动仅限订单实付金额满三万元以上买家参与，中奖名单在活动结束后15个工作日内公布，<br>
          	<span>中奖买家由我们工作人员按照买家下单联系方式通知。</span>
@@ -214,14 +214,15 @@
                     //1=已结束
                     //2=未开始
                     if (data.id == 1) {
-                    	var id = data.goods_id; 
                         $(".homedress_tip_end").show();
-                        $(".homedress_tip_end").attr('alt',id);
+                        $(".homedress_tip_end").attr("alt",'100');
+                        // data.goods_id
                         $(".homedress_tip_close").show();
                         $(".homedress_tip").show();
                     }else{
                         $(".homedress_tip_start").show();
-                        $(".homedress_tip_end").attr('alt',id);
+                        $(".homedress_tip_end").attr("alt",'100');
+                        console.log($(".homedress_tip_start").attr("alt"));
                         $(".homedress_tip_close").show();
                         $(".homedress_tip").show();
                     }
@@ -235,12 +236,13 @@
 			$(".homedress_tip").hide();
 		};
 		function location_end1(){
-			var goods_id =$(".homedress_tip_end").attr('alt');
+			var goods_id =$(".homedress_tip_end").attr('value');
 			console.log(goods_id);
+			//alert(goods_id);
 			
 		}
 		function location_start1(){
-			var goods_id =$(".homedress_tip_start").attr('alt');
+			var goods_id =$(".homedress_tip_start").attr('value');
 			console.log(goods_id);
 			//alert(goods_id);
 			
