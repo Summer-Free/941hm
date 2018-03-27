@@ -20,7 +20,6 @@ $(function(){
             $(".tips").html("<span class='error'>您的号码有误</span>");
             return false;
         }else{
-
             var param = {phone:tel};
             //console.log(tel);
             var url = '../mobile/index.php?r=collect/index/checknum';
