@@ -210,18 +210,18 @@
 			   data: {goods_id:goods_id},
 			   dataType:'json',
 			   success: function(data){
-			   	console.log(data);
+			   	//console.log(data);
                     //1=已结束
                     //2=未开始
                     if (data.id == 1) {
                         $(".homedress_tip_end").show();
-                        $(".homedress_tip_end").attr("alt",'100');
+                        $(".homedress_tip_end").attr("alt",data.goods_id);
                         // data.goods_id
                         $(".homedress_tip_close").show();
                         $(".homedress_tip").show();
                     }else{
                         $(".homedress_tip_start").show();
-                        $(".homedress_tip_end").attr("alt",'100');
+                        $(".homedress_tip_start").attr("alt",data.goods_id);
                         console.log($(".homedress_tip_start").attr("alt"));
                         $(".homedress_tip_close").show();
                         $(".homedress_tip").show();
@@ -236,15 +236,13 @@
 			$(".homedress_tip").hide();
 		};
 		function location_end1(){
-			var goods_id =$(".homedress_tip_end").attr('value');
-			console.log(goods_id);
-			//alert(goods_id);
+			var goods_id =$(".homedress_tip_end").attr('alt');
+			window.location.href = 'goods.php?id='+goods_id;
 			
 		}
 		function location_start1(){
-			var goods_id =$(".homedress_tip_start").attr('value');
-			console.log(goods_id);
-			//alert(goods_id);
+			var goods_id =$(".homedress_tip_start").attr('alt');
+			window.location.href = 'goods.php?id='+goods_id;
 			
 		}
     </script>

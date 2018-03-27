@@ -81,7 +81,7 @@ body{
 	text-align: center;
 }
 .homedress_tip{
-	display: block;
+	display: none;
 	position: absolute;
 	top:320px;
 	left:0;
