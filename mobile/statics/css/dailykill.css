@@ -66,3 +66,77 @@ header{
 	width: 9rem;
 	margin: 0 auto;
 }
+/* 活动规则 */
+.rule_title{
+	width: 90%;
+	margin: 2rem auto;
+	overflow: hidden;
+	position: relative;
+}
+.rule_title div{
+	float: left;
+	width: 4rem;
+	height: 4rem;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.rule_title p{
+	width: 100%;
+	float: left;
+	text-align: center;
+	font-size: 2.5rem;
+	line-height: 4rem;
+	color: #fff;
+}
+.rule_con{
+	width: 85%;
+	margin: 0 auto 5rem;
+	background-color: #fde4c5;
+	border-radius: 3rem;
+	padding: 4rem 3rem;
+	font-size: 1.8rem;
+	line-height: 3rem;
+}
+.rule_con p{
+	margin-bottom: 2rem;
+	color: #666;
+}
+.rule_con p span{
+	color: #cc0000;
+}
+.pro_top{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.pro_top div{
+	float: left;
+	width: 4rem;
+	height: 4rem;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-top: 1rem;
+}
+.pro_con{
+	width: 90%;
+	margin: 2rem auto 4rem;
+	line-height: 3.5rem;
+}
+.pro_rule span{
+	color: #cc0000;
+}
+.pro_button{
+	width: 20rem;
+	height: 4rem;
+	background-color: #f89218;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 1rem;
+	font-size: 1.8rem;
+	color: #fff;
+	margin-top: 2rem;
+}

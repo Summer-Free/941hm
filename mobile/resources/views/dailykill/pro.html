@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +6,34 @@
 	<title>Document</title>
 </head>
 <body>
-	111aaa
+{include file="page_header-nav"}
+	<link rel="stylesheet" href="../mobile/statics/css/dailykill.css">
+<body style="background-color: #fff;">
+	<div class="pro_top">
+		<div onclick="rule_back()">
+			<img width="30%" src="../mobile/statics/img/newapp/pro_back.png" alt=""></div>
+		<img width="100%" src="../mobile/statics/img/newapp/dailykill_product1.jpg" alt="">
+	</div>
+	<div class="pro_con">
+		<div class="pro_name">产品名称：<span>象头圆桌</span></div>
+		<div class="pro_time">活动时间：<span>2018年4月1日09:41</span></div>
+		<div>活动名额：1</div>
+		<div class="pro_rule">活动细则：<span onclick="rule()">点此查阅</span></div>
+	</div>
+	<div class="pro_button" onclick="pro_button()">
+		点击秒杀
+	</div>
+	<script type="text/javascript">
+		function rule_back(){;
+			window.location.href ='../mobile/index.php?r=dailykill';
+		}
+		function rule(){
+			window.location.href ='../mobile/index.php?r=dailykill/dailykill/rule';
+		}
+		function pro_button(){
+			window.location.href ='../mobile/index.php?r=';
+		}
+	</script>
+
 </body>
 </html>
