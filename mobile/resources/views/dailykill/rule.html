@@ -1,10 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
+{include file="page_header-nav"}
+	<link rel="stylesheet" href="../mobile/statics/css/dailykill.css">
 <body>
-	<h1>111</h1>
+	<div class="rule_title">
+		<div onclick="rule_back()"><img width="40%" src="../mobile/statics/img/newapp/rule_back.png" alt=""></div>
+		<p>活动规则</p>
+	</div>
+	<div class="rule_con">
+		<p>1.每个ID限秒杀活动产品1个，<span>限1次</span>，重复购买或者购买数量1个以上无效。</p>
+		<p>2.进入指定页面后，<span>先注册</span>，在当日9点41分秒杀时间到时， 刷新页面进入秒杀。</p>
+		<p>3.秒杀抢购成功 完成订单在线支付即秒杀成功</p>
+		<p>4.秒杀成功的客户在<span>10分钟</span>内未完成支付的客户视为无效。</p>
+		<p>5.秒杀成功的客户，客服会在<span>15个工作日</span>内核对订单信息，安排发货</p>
+		<p>6.秒杀本身为优惠活动，<span>不再参加其它任何优惠活动</span>，如：秒杀商品的价格和数量，不再累积于满件、满额而产生的减免、抵扣和赠送活动、秒杀商品不被优惠券抵扣价格。</p>
+	</div>
+	<script type="text/javascript">
+		function rule_back(){;
+			window.location.href ='../mobile/index.php?r=dailykill';
+		}
+	</script>
 </body>
 </html>
