@@ -1,0 +1,68 @@
+html,body {
+	background-color: #fc9814;
+}
+header{
+	width: 100%;
+	text-align: center;
+}
+.dailykill_rule{
+	background-color: #09aec7;
+	width: 65%;
+	margin: 1rem auto 3rem;
+	color: #fff;
+	font-size: 2.5rem;
+	letter-spacing: 0.5rem;
+	line-height: 3.5rem;
+    text-align: center;
+}
+.dailykill_active{
+	width:95%;
+	margin: 3rem auto;
+	text-align: center;
+}
+.dailykill_active_con{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 2rem;
+}
+.dailykill_active_con ul{
+	list-style: none;
+}
+.dailykill_active_pro{
+	background-color: #cc6600;
+	overflow: hidden;
+	padding: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+.dailykill_active_pro img{
+	width: 60%;
+	float: left;
+}
+.dailykill_active_text{
+	width: 40%;
+	float: left;
+	padding: 0.5rem 0 1.5rem 0.5rem;
+}
+.dailykill_active_text p{
+	font-size: 2rem;
+	color: #fff;
+	line-height: 4rem;
+}
+.dailykill_active_text span{
+	background-color: #ff9900;
+	color: #fff;
+	padding: 0.1rem 0.5rem;
+	font-size: 1.7rem;
+}
+.dailykill_active_text p span{
+	font-size: 4rem;
+	background-color: #cc6600;
+}
+.dailykill_active_button{
+	border-radius: 1rem;
+	background-color: #f88817;
+	font-size: 1.8rem;
+	color: #fff;
+	width: 9rem;
+	margin: 0 auto;
+}
