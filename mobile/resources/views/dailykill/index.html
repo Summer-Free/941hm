@@ -10,72 +10,19 @@
 			<img width="90%" src="../mobile/statics/img/newapp/dailykill_title1.png" alt="">
 			<div class="dailykill_active_con">
 				<ul>
-					<li>
+					<!-- {foreach $goods as $key => $goods} -->
+					<li onclick="goods({$goods.id},'{$goods.goods_name}')">
 						<div class="dailykill_active_pro">
-							<img width="100%" src="../mobile/statics/img/newapp/dailykill_pro1.jpg" alt="">
+							<img width="100%" src="../mobile/statics/img/newapp/{$goods.bg_img}" alt="">
 							<div class="dailykill_active_text">
-								<p>1.38米圆台</p>
-								<span>4月1日 9:41开抢</span>
+								<p>{$goods.goods_name}</p>
+								<span>{$goods.time}开抢</span>
 								<p>￥<span>1</span>.00</p>
 								<div class="dailykill_active_button">立即抢购</div>
 							</div>
 						</div>
 					</li>
-					<li>
-						<div class="dailykill_active_pro">
-							<img width="100%" src="../mobile/statics/img/newapp/dailykill_pro2.jpg" alt="">
-							<div class="dailykill_active_text">
-								<p>辉煌大床</p>
-								<span>4月1日 9:41开抢</span>
-								<p>￥<span>1</span>.00</p>
-								<div class="dailykill_active_button">立即抢购</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="dailykill_active_pro">
-							<img width="100%" src="../mobile/statics/img/newapp/dailykill_pro3.jpg" alt="">
-							<div class="dailykill_active_text">
-								<p>圆角博古架</p>
-								<span>4月1日 9:41开抢</span>
-								<p>￥<span>1</span>.00</p>
-								<div class="dailykill_active_button">立即抢购</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="dailykill_active_pro">
-							<img width="100%" src="../mobile/statics/img/newapp/dailykill_pro4.jpg" alt="">
-							<div class="dailykill_active_text">
-								<p>罗汉宝座沙发</p>
-								<span>4月1日 9:41开抢</span>
-								<p>￥<span>1</span>.00</p>
-								<div class="dailykill_active_button">立即抢购</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="dailykill_active_pro">
-							<img width="100%" src="../mobile/statics/img/newapp/dailykill_pro5.jpg" alt="">
-							<div class="dailykill_active_text">
-								<p>山水顶箱柜</p>
-								<span>4月1日 9:41开抢</span>
-								<p>￥<span>1</span>.00</p>
-								<div class="dailykill_active_button">立即抢购</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="dailykill_active_pro">
-							<img width="100%" src="../mobile/statics/img/newapp/dailykill_pro6.jpg" alt="">
-							<div class="dailykill_active_text">
-								<p>四抽弯角电视柜</p>
-								<span>4月1日 9:41开抢</span>
-								<p>￥<span>1</span>.00</p>
-								<div class="dailykill_active_button">立即抢购</div>
-							</div>
-						</div>
-					</li>
+					<!-- {/foreach} -->
 				</ul>
 			</div>
 		</section>
@@ -98,8 +45,16 @@
 			</div>
 		</section>
 		<script type="text/javascript">
+			// 活动规则
 			function rule(){
 				window.location.href ='../mobile/index.php?r=dailykill/dailykill/rule';
+			}
+			/*产品详情页打开*/
+			function goods(id,name){
+				var goods_id = id;
+				var goods_name = name;
+				window.location.href = '../mobile/index.php?r=dailykill/dailykill/pro&goods_id='+goods_id+'&goods_name='+goods_name;
+			
 			}
 		</script>
 	</body>
