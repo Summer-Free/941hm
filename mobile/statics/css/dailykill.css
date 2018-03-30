@@ -140,3 +140,58 @@ header{
 	color: #fff;
 	margin-top: 2rem;
 }
+.pro_tip_fixed{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 999;
+    overflow: hidden;
+}
+.pro_tip_fixed2{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 999;
+    overflow: hidden;
+}
+.pro_tip{
+    width: 18rem;
+    height: 16rem;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 3rem;
+    background-color: #ff9900;
+    padding: 1rem;
+}
+.pro_tip h1{
+	font-size: 2.5rem;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 1.5rem;
+	margin-top: 1rem;
+}
+.pro_tip p{
+	font-size: 1.6rem;
+	color: #fff;
+	margin: 0.5rem 0.5rem;
+}
+.pro_tip_close{
+	background-color: #fff;
+	width: 6rem;
+	font-size: 2rem;
+	line-height: 2.5rem;
+	border-radius: 3rem;
+	color: #ff9900;
+	text-align: center;
+	margin: 1.5rem auto 0;
+}
