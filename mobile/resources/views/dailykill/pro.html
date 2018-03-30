@@ -32,7 +32,7 @@
 		function pro_button(id){
 			var goods_id = id;
 			var param = {goods_id:goods_id};
-			var url = '../mobile/index.php?r=dailykill/dailykill/end':
+			var url = '../mobile/index.php?r=dailykill/dailykill/end';
 			$.post(url,param,function (data){
 				var result = eval('('+data+')');
 				console.log(result);
