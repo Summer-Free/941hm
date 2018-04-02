@@ -15,12 +15,32 @@
 	<div class="pro_button" onclick="pro_button({$goods_res.goods_id})">
 		点击秒杀
 	</div>
+	<div class="pro_tip_fixed" style="display: none;">
+		<div class="pro_tip">
+			<h1>很遗憾</h1>
+			<p>您来晚了，</p>
+			<p>宝贝已经被人抢走了哦！</p>
+			<div class="pro_tip_close" onclick="tip_close()">关闭</div>
+		</div>
+	</div>
+	<div class="pro_tip_fixed2" style="display: none;">
+		<div class="pro_tip">
+			<h1>很遗憾</h1>
+			<p>您来早了，</p>
+			<p>活动还没开始哦！</p>
+			<div class="pro_tip_close" onclick="tip_close()">关闭</div>
+		</div>
+	</div>
 	<script type="text/javascript">
 		function rule_back(){;
 			window.location.href ='../mobile/index.php?r=dailykill';
 		}
 		function rule(){
 			window.location.href ='../mobile/index.php?r=dailykill/dailykill/rule';
+		}
+		function tip_close(){;
+			$(".pro_tip_fixed").hide();
+			$(".pro_tip_fixed2").hide();
 		}
 		function pro_button(id){
 			var goods_id = id;
@@ -29,9 +49,15 @@
 			$.post(url,param,function (data){
 				var result = eval('('+data+')');
 				console.log(result);
-				
+				if(data.id==1){
+					$(".pro_tip_fixed").show();
+				}
+				else{
+					$(".pro_tip_fixed2").show();
+				}
 			});
 		}
+		
 	</script>
 
 </body>
