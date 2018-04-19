@@ -35,7 +35,7 @@
 <script type="text/javascript" src="{$site_domain}themes/ecmoban_dsc/js/notLogin.js"></script>
 </head>
 <body>
-<!-- #BeginLibraryItem "/library/page_header_store.lbi" --><!-- #EndLibraryItem -->
+
 <div class="jShopHeader">
 	<div class="jFixWidth">
     	<div class="jShopHeaderArea">
@@ -61,24 +61,30 @@
             				<tbody id="jRatingTotal_table">
             					<tr>
             						<td>商品评分：</td>
-            						<td><span class="jNum">{$merch_cmt.cmt.commentRank.zconments.score} 分</span></td>
             						<td>
-            						                						<span class="jIconHigh">{$merch_cmt.cmt.commentRank.zconments.goodReview}%</span>
-                					            						</td>
+                                        <span class="jNum">{$merch_cmt.cmt.commentRank.zconments.score} 分</span>
+                                    </td>
+            						<td>
+            						    <span class="jIconHigh">{$merch_cmt.cmt.commentRank.zconments.goodReview}%</span>
+                					</td>
             					</tr>
             					<tr>
             						<td>服务评分：</td>
-            						<td><span class="jNum">{$merch_cmt.cmt.commentServer.zconments.score} 分</span></td>
             						<td>
-            						                						<span class="jIconHigh">{$merch_cmt.cmt.commentServer.zconments.goodReview}%</span>
-                					                                    </td>
+                                        <span class="jNum">{$merch_cmt.cmt.commentServer.zconments.score} 分</span>
+                                    </td>
+            						<td>
+            						    <span class="jIconHigh">{$merch_cmt.cmt.commentServer.zconments.goodReview}%</span>
+                		            </td>
             					</tr>
             					<tr>
             						<td>时效评分：</td>
-            						<td><span class="jNum">{$merch_cmt.cmt.commentDelivery.zconments.score} 分</span></td>
             						<td>
-            						                						<span class="jIconHigh">{$merch_cmt.cmt.commentDelivery.zconments.goodReview}%</span>
-                					                                    </td>
+                                        <span class="jNum">{$merch_cmt.cmt.commentDelivery.zconments.score} 分</span>
+                                    </td>
+            						<td>
+            						    <span class="jIconHigh">{$merch_cmt.cmt.commentDelivery.zconments.goodReview}%</span>
+                				    </td>
             					</tr>
             				</tbody>
             			</table>
@@ -132,7 +138,7 @@
                             <div class="jOneLevelarea user_temp_one">
                                 <div class="jTwoLevel">
                                     <span class="square_box"></span>
-                                     <a href="{$cat.url}">{$cat.cat_name}</a>
+                                     <!-- <a href="{$cat.url}">{$cat.cat_name}</a> -->
                                 </div>
                                 <div class="s_b">
                                 	{foreach from=$cat.child_tree item=tree}

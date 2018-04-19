@@ -13,77 +13,44 @@
     <div class="w1200 dorpdown">
         {* 941红木 提醒您：根据用户id来调用header_region_style.lbi显示不同的界面  *}{insert name='header_region'}
         <div class="ecsc-login" id="ECS_MEMBERZONE">
-        	{* 941红木 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'}
-        </div>
-        <ul class="quick-menu fr">
-        	<!--{if $navigator_list.top}-->
-            <!-- {foreach name=nav_top_list from=$navigator_list.top item=nav key=key} -->
-            <!--{if $smarty.foreach.nav_top_list.index < 4}-->
-            <li>
-            	<div class="dt"><a href="{$nav.url}" {if $nav.opennew}target="_blank"{/if}>{$nav.name}</a></div>
-            </li>
-            <li class="spacer"></li>
-            <!--{/if}-->
-            <!-- {/foreach} -->
-            <!-- {/if} -->
-            <!--{if $navigator_list.top}-->
-            <li class="li_dorpdown">
-            	<div class="dt"><a href="javascript:;" >网站导航</a><i class="ci-right"><s>◇</s></i></div>
-                <div class="dd dorpdown-layer">
-                	<div class="dd-spacer"></div>
-                    <!-- {foreach name=nav_top_list from=$navigator_list.top item=nav key=key} -->
-            			<!--{if $smarty.foreach.nav_top_list.index >= 4}-->
-                    		<div class="item"><a href="{$nav.url}" {if $nav.opennew}target="_blank"{/if}>{$nav.name}</a></div>
-                    	<!--{/if}-->
-            		<!-- {/foreach} -->
-                </div>
-            </li>
-            <!-- {/if} -->
-        </ul>
-        <div class="shopcart-2015" id="ECS_CARTINFO" data-carteveval="0">
-        	{insert name='cart_info'}
         </div>
     </div>
 </div>
-<div class="header w1200">
-    <div class="ecsc-logo"><a href="{$url_index}" class="logo"><img src="{$site_domain}themes/ecmoban_dsc/images/logo.gif" /></a></div>
-    <div class="ecsc-join"><a href="{$url_merchants}" target="_blank"><img src="{$site_domain}themes/ecmoban_dsc/images/ecsc-join.gif" /></a></div>
-    <div class="ecsc-search">
-        <form id="searchForm" name="searchForm" method="get" action="{$site_domain}search.php" onSubmit="return checkSearchForm()" class="ecsc-search-form">
-            <div class="ecsc-search-tabs">
-                <i class="sc-icon-right"></i>
-                <ul class="shop_search" id="shop_search">
-                {if $search_type eq 1}
-                    <li rev="1"><span>店铺</span></li>
-                    <li rev="0" class="curr"><span>商品</span></li>
-                {else}
-                    <li rev="0"><span>商品</span></li>
-                    <li rev="1" class="curr"><span>店铺</span></li>
-                {/if}   
-                </ul>
-            </div>
-            <input autocomplete="off" onKeyUp="lookup(this.value);" name="keywords" type="text" id="keyword" value="{insert name='rand_keyword'}" class="ecsc-search-input"/>
-            <input type="hidden" name="store_search_cmt" value="{$search_type|default:0}">
-            <button type="submit" class="ecsc-search-button"><i></i></button>
-        </form>
-        <div class="keyword">
-        {if $searchkeywords}
-            <ul>
-                {foreach from=$searchkeywords item=val} <li><a href="{$site_domain}search.php?keywords={$val|escape:url}" target="_blank">{$val}</a></li> {/foreach}
-            </ul>
-            {/if}
-        </div>
-        <!-- @Author guan 搜索栏提示 start -->
-            <div class="suggestions_box" id="suggestions" style="display:none;">
-                <div class="suggestions_list" id="auto_suggestions_list">
-                &nbsp;
-                </div>
-            </div>
-        <!-- @Author guan 搜索栏提示 end -->
+<div class="header w1200" style="padding: 15px 0 15px 0;height: 90px;width: 220px;">
+    <div class="ecsc-logo">
+        <a href="{$url_index}" class="logo"><img src="{$site_domain}themes/ecmoban_dsc/iamges/20170517/new-logo.jpg" /></a>
     </div>
-    <div class="site-commitment">
-        <div class="site-commitment-front"><a style="background:url({$site_commitment}) -404px -2px no-repeat;" href="#" target="_blank"></a></div>
-        <div class="site-commitment-back"><a style="background:url({$site_commitment}) -404px -2px no-repeat;" href="#" target="_blank"></a></div>
+    <img width="80px;" style="width: 255px;padding-top: 8px;" src="themes/ecmoban_dsc/iamges/20170517/lcw_logo.png" alt="">
+    <img class="float-r" style="float: right;" src="themes/ecmoban_dsc/iamges/20170517/wechat.png" alt="二维码">
+    <div class="float-r" style="float: right;">
+        <div class="wrap-search clearfix" style="margin: 25px 0 0 0;">
+            <div class="shopCart" style="margin-right: 30px;position: relative;float: right;height: 44px;line-height: 44px;font-size: 12px;color: #ff0000;">
+                <a class="color-ff0000" href="user.php">
+                    <img style="margin-top: 5px" src="themes/ecmoban_dsc/iamges/20170517/personal_center.png" alt="">
+                    <!-- <span class="cart_num" style="text-align: center;"></span> -->
+                </a>
+            </div>
+            <div class="shopCart" style="margin-right: 30px;position: relative;float: right;height: 44px;line-height: 44px;font-size: 12px;color: #ff0000;">
+                <a class="color-ff0000" href="flow.php">
+                    <img style="margin-top: 5px" src="themes/ecmoban_dsc/iamges/20170517/flow.png" alt="">
+                    <!-- <span class="cart_num" style="text-align: center;"></span> -->
+                </a>
+            </div>
+            <div class="ecsc-search"  style="position: relative;float: right;margin-right: 30px;">
+                <form class="clearfix ecsc-search-form" id="searchForm" name="searchForm" action="search.php" method="get" onSubmit="return checkSearchForm()" sytle="position: relative;">
+                    <input type="text" autocomplete="off" onKeyUp="lookup(this.value);" name="keywords" id="keyword" value="请输入搜索内容" class="ecsc-search-input" style="display: block;padding-right: 79px;padding-left: 8px;width: 380px;height: 44px;line-height: 44px;color: #999;font-size: 12px;border: 2px solid #aa1920;"/>
+                    <input type="hidden" name="store_search_cmt" value="{$search_type|default:0}" style="font-size: 100%;">
+                    <button class="icon-search ecsc-search-button" type="submit" style="position: absolute;top: 0;right: 0;width: 79px;height: 46px;line-height: 46px;color: #fff;font-size: 16px;cursor: pointer;border: 0 none;background-color: #aa1920;background-image: none;">搜索</button>
+                </form>
+                <!-- @Author guan 搜索栏提示 start -->
+                    <div class="suggestions_box" id="suggestions" style="display:none;top: 50px;width: 448px;background: white;border: 1px solid #9c9c9a;position: absolute;z-index: 99999;padding: 0 5px;left: 0px;">
+                        <div class="suggestions_list" id="auto_suggestions_list">
+                        &nbsp;
+                        </div>
+                    </div>
+                <!-- @Author guan 搜索栏提示 end -->
+            </div>
+        </div>  
     </div>
 </div>
 <div class="nav ecsc-zoom">

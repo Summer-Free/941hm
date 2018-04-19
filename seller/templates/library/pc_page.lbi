@@ -8,7 +8,7 @@
             </div>
         </div>
     </div>
-    <div class="nav_bg" style="background-color:#131010;">
+    <!-- <div class="nav_bg" style="background-color:#131010;">
         <div class="nav lyrow ui-draggable ui-box-display w1200" data-mode="nav_mode" data-purebox="nav">
             <div class="store_nav_left w200">
                 <div class="all_box">
@@ -26,7 +26,7 @@
                 <a href="javascript:void(0);" class="move-edit" ectype="model_edit"><i class="icon icon-edit"></i>编辑</a>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
 <div class="prompt" data-html="not">以上为页头区域</div>
 <div class="demo ui-sortable"></div>
